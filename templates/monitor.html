@@ -1,0 +1,1455 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Monitor Sísmico ML1 - Bogotá</title>
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<link
+    rel="stylesheet"
+    href="/static/monitor.css"
+/>
+
+<style>
+    /* =========================================================
+       ALERTAS
+       ========================================================= */
+
+    .sin-alertas {
+        padding: 15px;
+        text-align: center;
+        color: #666;
+    }
+
+    .alerta-item {
+        margin-bottom: 10px;
+        padding: 12px;
+        border-radius: 6px;
+        background: #f5f5f5;
+    }
+
+    .alerta-profunda {
+        border-left: 5px solid #d32f2f;
+    }
+
+    .alerta-cercana {
+        border-left: 5px solid #ef8c00;
+    }
+
+    /* =========================================================
+       POPUP SÍSMICO
+       ========================================================= */
+
+    .popup-sismo {
+        min-width: 310px;
+        max-width: 380px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .popup-titulo {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .popup-alerta-profunda {
+        color: #d32f2f;
+    }
+
+    .popup-alerta-cercana {
+        color: #ef8c00;
+    }
+
+    .popup-evento {
+        color: #1976d2;
+    }
+
+    .popup-seccion {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .popup-fila {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        line-height: 1.7;
+        font-size: 13px;
+    }
+
+    .popup-etiqueta {
+        font-weight: bold;
+        color: #374151;
+    }
+
+    .popup-valor {
+        text-align: right;
+        color: #111827;
+    }
+
+    .popup-id {
+        font-size: 11px;
+        color: #6b7280;
+        word-break: break-all;
+    }
+
+    /* =========================================================
+       BANNER DE ALERTA VISUAL
+       ========================================================= */
+
+    .banner-alerta {
+        display: none;
+        margin-bottom: 15px;
+        padding: 18px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+    }
+
+    .banner-alerta-profunda {
+        background: #d32f2f;
+    }
+
+    .banner-alerta-cercana {
+        background: #ef8c00;
+    }
+
+    .banner-titulo {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .banner-detalle {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.6;
+    }
+
+    .banner-cerrar {
+        float: right;
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    /* =========================================================
+       TABLA
+       ========================================================= */
+
+    .fila-alerta-profunda {
+        background: #ffebee;
+    }
+
+    .fila-alerta-cercana {
+        background: #fff3e0;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+
+```
+<div>
+    <h1>MONITOR SISMICO ACTIVO - ML1</h1>
+
+    <div>
+        
+    </div>
+</div>
+
+<div class="estado-monitor">
+    <span class="indicador-verde"></span>
+    
+</div>
+```
+
+</header>
+
+<main>
+
+```
+<!-- =========================================================
+     TARJETAS DE INFORMACIÓN
+     ========================================================= -->
+
+<section class="tarjetas">
+
+    <div class="tarjeta">
+
+        <div class="tarjeta-titulo">
+            ÚLTIMA CONSULTA
+        </div>
+
+        <div
+            id="ultimaConsulta"
+            class="tarjeta-valor">
+            --
+        </div>
+
+    </div>
+
+
+    <div class="tarjeta">
+
+        <div class="tarjeta-titulo">
+            PRÓXIMA CONSULTA
+        </div>
+
+        <div
+            id="proximaConsulta"
+            class="tarjeta-valor">
+            --
+        </div>
+
+    </div>
+
+
+    <div class="tarjeta">
+
+        <div class="tarjeta-titulo">
+            EVENTOS RECIBIDOS
+        </div>
+
+        <div
+            id="eventosRecibidos"
+            class="tarjeta-valor">
+            0
+        </div>
+
+    </div>
+
+
+    <div class="tarjeta">
+
+        <div class="tarjeta-titulo">
+            SISMOS PROFUNDOS
+        </div>
+
+        <div
+            id="sismosProfundos"
+            class="tarjeta-valor">
+            0
+        </div>
+
+    </div>
+
+
+    <div class="tarjeta">
+
+        <div class="tarjeta-titulo">
+            SISMOS CERCANOS
+        </div>
+
+        <div
+            id="sismosCercanos"
+            class="tarjeta-valor">
+            0
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BANNER DE ALERTA VISUAL
+     ========================================================= -->
+
+<section
+    id="bannerAlerta"
+    class="banner-alerta">
+
+    <button
+        class="banner-cerrar"
+        onclick="cerrarBannerAlerta()">
+        ×
+    </button>
+
+    <div
+        id="bannerTitulo"
+        class="banner-titulo">
+    </div>
+
+    <div
+        id="bannerDetalle"
+        class="banner-detalle">
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MAPA
+     ========================================================= -->
+
+<section class="panel">
+
+    <h2>
+        MAPA SÍSMICO
+    </h2>
+
+    <div id="mapa"></div>
+
+</section>
+
+
+<!-- =========================================================
+     ALERTAS
+     ========================================================= -->
+
+<section class="panel">
+
+    <h2>
+        ALERTAS DETECTADAS
+    </h2>
+
+    <div id="alertas">
+
+        <div class="sin-alertas">
+            No hay alertas activas.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HISTORIAL
+     ========================================================= -->
+
+<section class="panel">
+
+    <h2>
+        HISTORIAL DE EVENTOS
+    </h2>
+
+    <div style="overflow-x:auto;">
+
+        <table id="tablaEventos">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Fecha local
+                    </th>
+
+                    <th>
+                        Magnitud
+                    </th>
+
+                    <th>
+                        Profundidad km
+                    </th>
+
+                    <th>
+                        Distancia km
+                    </th>
+
+                    <th>
+                        Lugar
+                    </th>
+
+                    <th>
+                        Alerta
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+```
+
+</main>
+
+<footer>
+
+```
+Monitor Sísmico ML1 — Bogotá, Colombia
+```
+
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+    // ============================================================
+    // CONFIGURACIÓN
+    // ============================================================
+
+    const LAT_BOGOTA = 4.7110;
+    const LON_BOGOTA = -74.0721;
+
+    const INTERVALO_CONSULTA = 60 * 60 * 1000;
+
+
+    // ============================================================
+    // VARIABLES GLOBALES
+    // ============================================================
+
+    let eventosSGC = [];
+
+    let primeraConsulta = true;
+
+    const alertasProcesadas = new Set();
+
+
+    // ============================================================
+    // MAPA
+    // ============================================================
+
+    const mapa = L.map("mapa").setView(
+        [LAT_BOGOTA, LON_BOGOTA],
+        6
+    );
+
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            attribution:
+                "&copy; OpenStreetMap contributors"
+        }
+    ).addTo(mapa);
+
+
+    // ============================================================
+    // MARCADOR DE BOGOTÁ
+    // ============================================================
+
+    L.marker(
+        [LAT_BOGOTA, LON_BOGOTA]
+    )
+    .addTo(mapa)
+    .bindPopup(
+        "<b>Bogotá</b><br>" +
+        "Referencia para cálculo de distancia"
+    );
+
+
+    // ============================================================
+    // RADIO 100 KM
+    // ============================================================
+
+    L.circle(
+        [LAT_BOGOTA, LON_BOGOTA],
+        {
+            radius: 100000,
+            color: "#ff9800",
+            fill: false,
+            weight: 2,
+            dashArray: "8, 8"
+        }
+    )
+    .addTo(mapa)
+    .bindTooltip(
+        "Radio de alerta: 100 km"
+    );
+
+
+    // ============================================================
+    // RADIO 200 KM
+    // ============================================================
+
+    L.circle(
+        [LAT_BOGOTA, LON_BOGOTA],
+        {
+            radius: 200000,
+            color: "#d32f2f",
+            fill: false,
+            weight: 2,
+            dashArray: "8, 8"
+        }
+    )
+    .addTo(mapa)
+    .bindTooltip(
+        "Radio de alerta: 200 km"
+    );
+
+
+    // ============================================================
+    // CAPA DE SISMOS REALES
+    // ============================================================
+
+    const capaSismos =
+        L.layerGroup().addTo(mapa);
+
+
+    // ============================================================
+    // OBTENER COORDENADAS
+    // ============================================================
+
+    function obtenerCoordenadas(evento) {
+
+        if (!evento) {
+            return null;
+        }
+
+        let lat = Number(evento.lat);
+        let lon = Number(evento.lon);
+
+        if (
+            !Number.isFinite(lat) ||
+            !Number.isFinite(lon)
+        ) {
+            return null;
+        }
+
+        /*
+         * El SGC utiliza GeoJSON:
+         *
+         * [longitud, latitud, profundidad]
+         *
+         * Esta comprobación evita errores si algún
+         * registro histórico llega invertido.
+         */
+
+        if (
+            Math.abs(lat) > 20 &&
+            Math.abs(lon) <= 20
+        ) {
+
+            const temporal = lat;
+
+            lat = lon;
+            lon = temporal;
+        }
+
+        return {
+            lat: lat,
+            lon: lon
+        };
+    }
+
+
+    // ============================================================
+    // DETERMINAR TIPO DE ALERTA
+    // ============================================================
+
+    function obtenerTipoAlerta(evento) {
+
+        if (
+            evento.alertas &&
+            evento.alertas.includes(
+                "SISMO PROFUNDO"
+            )
+        ) {
+            return "profunda";
+        }
+
+        if (
+            evento.alertas &&
+            evento.alertas.includes(
+                "SISMO CERCANO Y SUPERFICIAL"
+            )
+        ) {
+            return "cercana";
+        }
+
+        return null;
+    }
+
+
+    // ============================================================
+    // POPUP DETALLADO
+    // ============================================================
+
+    function construirPopup(evento) {
+
+        const coordenadas =
+            obtenerCoordenadas(evento);
+
+        const latitud =
+            coordenadas
+                ? coordenadas.lat.toFixed(5)
+                : "--";
+
+        const longitud =
+            coordenadas
+                ? coordenadas.lon.toFixed(5)
+                : "--";
+
+        const alertas =
+            evento.alertas &&
+            evento.alertas.length
+                ? evento.alertas
+                : [];
+
+        let titulo =
+            "Evento sísmico";
+
+        let claseTitulo =
+            "popup-evento";
+
+
+        if (
+            alertas.includes(
+                "SISMO PROFUNDO"
+            )
+        ) {
+
+            titulo =
+                "?? SISMO PROFUNDO";
+
+            claseTitulo =
+                "popup-alerta-profunda";
+
+        } else if (
+            alertas.includes(
+                "SISMO CERCANO Y SUPERFICIAL"
+            )
+        ) {
+
+            titulo =
+                "?? SISMO CERCANO Y SUPERFICIAL";
+
+            claseTitulo =
+                "popup-alerta-cercana";
+        }
+
+
+        return `
+
+            <div class="popup-sismo">
+
+                <div
+                    class="popup-titulo ${claseTitulo}"
+                >
+                    ${titulo}
+                </div>
+
+
+                <div class="popup-seccion">
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Lugar:
+                        </span>
+
+                        <span class="popup-valor">
+                            ${evento.lugar ?? "--"}
+                        </span>
+
+                    </div>
+
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            ID:
+                        </span>
+
+                        <span class="popup-valor popup-id">
+                            ${evento.id ?? "--"}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="popup-seccion">
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Magnitud:
+                        </span>
+
+                        <span class="popup-valor">
+
+                            ${evento.magnitud ?? "--"}
+
+                            ${
+                                evento.tipo_magnitud
+                                    ? `(${evento.tipo_magnitud})`
+                                    : ""
+                            }
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Profundidad:
+                        </span>
+
+                        <span class="popup-valor">
+                            ${evento.profundidad ?? "--"} km
+                        </span>
+
+                    </div>
+
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Distancia a Bogotá:
+                        </span>
+
+                        <span class="popup-valor">
+                            ${evento.distancia ?? "--"} km
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="popup-seccion">
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Latitud:
+                        </span>
+
+                        <span class="popup-valor">
+                            ${latitud}
+                        </span>
+
+                    </div>
+
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Longitud:
+                        </span>
+
+                        <span class="popup-valor">
+                            ${longitud}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="popup-seccion">
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Fecha local:
+                        </span>
+
+                        <span class="popup-valor">
+                            ${evento.fecha_local ?? "--"}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="popup-seccion">
+
+                    <div class="popup-fila">
+
+                        <span class="popup-etiqueta">
+                            Agencia:
+                        </span>
+
+                        <span class="popup-valor">
+                            ${evento.agencia ?? "--"}
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        `;
+    }
+
+
+    // ============================================================
+    // DIBUJAR SISMOS
+    // ============================================================
+
+    function dibujarSismos(eventos) {
+
+        capaSismos.clearLayers();
+
+        eventos.forEach(evento => {
+
+            const coordenadas = obtenerCoordenadas(evento);
+
+            if (!coordenadas) {
+                return;
+            }
+
+            const magnitud = Number(evento.magnitud) || 0;
+            const profundidad = Number(evento.profundidad) || 0;
+            const distancia = Number(evento.distancia) || 9999;
+
+            // ========================================================
+            // CLASIFICACION AUTOMATICA
+            // ========================================================
+
+            const esProfundo =
+                magnitud >= 5.0 &&
+                distancia <= 200 &&
+                profundidad >= 100 &&
+                profundidad <= 125;
+
+            const esCercano =
+                magnitud >= 4.0 &&
+                distancia <= 100 &&
+                profundidad <= 50;
+
+            // ========================================================
+            // CONFIGURACION DEL MARCADOR
+            // ========================================================
+
+            let color = '#1976d2';
+            let fillColor = '#1976d2';
+            let radio = 5;
+            let peso = 1.5;
+            let opacidad = 0.65;
+
+            if (esProfundo) {
+
+                color = '#d32f2f';
+                fillColor = '#d32f2f';
+                radio = Math.max(12, Math.min(18, magnitud * 2.2));
+                peso = 3;
+                opacidad = 0.90;
+
+            } else if (esCercano) {
+
+                color = '#ef8c00';
+                fillColor = '#ef8c00';
+                radio = Math.max(11, Math.min(17, magnitud * 2.2));
+                peso = 3;
+                opacidad = 0.90;
+
+            } else {
+
+                radio = Math.max(
+                    4,
+                    Math.min(
+                        10,
+                        magnitud * 1.5
+                    )
+                );
+            }
+
+            // ========================================================
+            // MARCADOR DEL EPICENTRO
+            // ========================================================
+
+            const marcador = L.circleMarker(
+                [
+                    coordenadas.lat,
+                    coordenadas.lon
+                ],
+                {
+                    radius: radio,
+                    color: color,
+                    fillColor: fillColor,
+                    fillOpacity: opacidad,
+                    weight: peso
+                }
+            );
+
+            marcador
+                .bindPopup(
+                    construirPopup(evento)
+                )
+                .addTo(capaSismos);
+
+        });
+
+        console.log(
+            'Sismos reales dibujados:',
+            eventos.length
+        );
+    }
+
+
+    // ============================================================
+    // MOSTRAR ALERTAS
+    // ============================================================
+
+    function mostrarAlertas(eventos) {
+
+        const contenedor =
+            document.getElementById(
+                "alertas"
+            );
+
+
+        const alertas =
+            eventos.filter(
+                evento =>
+                    evento.alertas &&
+                    evento.alertas.length > 0
+            );
+
+
+        if (alertas.length === 0) {
+
+            contenedor.innerHTML = `
+
+                <div class="sin-alertas">
+
+                    No hay alertas activas.
+
+                </div>
+
+            `;
+
+            return;
+        }
+
+
+        contenedor.innerHTML = "";
+
+
+        alertas.forEach(evento => {
+
+            const esProfundo =
+                evento.alertas.includes(
+                    "SISMO PROFUNDO"
+                );
+
+
+            const clase =
+                esProfundo
+                    ? "alerta-profunda"
+                    : "alerta-cercana";
+
+
+            const div =
+                document.createElement(
+                    "div"
+                );
+
+
+            div.className =
+                `alerta-item ${clase}`;
+
+
+            div.innerHTML = `
+
+                <strong>
+
+                    ${
+                        esProfundo
+                            ? "??"
+                            : "??"
+                    }
+
+                    ${evento.alertas.join(", ")}
+
+                </strong>
+
+                <br><br>
+
+                <b>Magnitud:</b>
+                ${evento.magnitud ?? "--"}
+
+                &nbsp;&nbsp;
+
+                <b>Profundidad:</b>
+                ${evento.profundidad ?? "--"} km
+
+                &nbsp;&nbsp;
+
+                <b>Distancia:</b>
+                ${evento.distancia ?? "--"} km
+
+                <br>
+
+                <b>Lugar:</b>
+                ${evento.lugar ?? "--"}
+
+            `;
+
+
+            contenedor.appendChild(div);
+
+        });
+    }
+
+
+    // ============================================================
+    // MOSTRAR TABLA
+    // ============================================================
+
+    function mostrarTabla(eventos) {
+
+        const tbody =
+            document.querySelector(
+                "#tablaEventos tbody"
+            );
+
+
+        tbody.innerHTML = "";
+
+
+        eventos
+            .slice(0, 100)
+            .forEach(evento => {
+
+                const fila =
+                    document.createElement(
+                        "tr"
+                    );
+
+
+                const tipoAlerta =
+                    obtenerTipoAlerta(evento);
+
+
+                if (
+                    tipoAlerta === "profunda"
+                ) {
+
+                    fila.classList.add(
+                        "fila-alerta-profunda"
+                    );
+
+                } else if (
+                    tipoAlerta === "cercana"
+                ) {
+
+                    fila.classList.add(
+                        "fila-alerta-cercana"
+                    );
+
+                }
+
+
+                const alerta =
+                    evento.alertas &&
+                    evento.alertas.length
+                        ? evento.alertas.join(", ")
+                        : "";
+
+
+                fila.innerHTML = `
+
+                    <td>
+                        ${evento.fecha_local ?? "--"}
+                    </td>
+
+                    <td>
+                        ${evento.magnitud ?? "--"}
+                    </td>
+
+                    <td>
+                        ${evento.profundidad ?? "--"}
+                    </td>
+
+                    <td>
+                        ${evento.distancia ?? "--"}
+                    </td>
+
+                    <td>
+                        ${evento.lugar ?? "--"}
+                    </td>
+
+                    <td>
+                        ${alerta}
+                    </td>
+
+                `;
+
+
+                tbody.appendChild(fila);
+
+            });
+    }
+
+
+    // ============================================================
+    // ACTUALIZAR CONTADORES
+    // ============================================================
+
+    function actualizarContadores(datos) {
+
+        document.getElementById(
+            "eventosRecibidos"
+        ).textContent =
+            datos.eventos_recibidos ?? 0;
+
+
+        document.getElementById(
+            "sismosProfundos"
+        ).textContent =
+            datos.sismos_profundos ?? 0;
+
+
+        document.getElementById(
+            "sismosCercanos"
+        ).textContent =
+            datos.sismos_cercanos ?? 0;
+    }
+
+
+    // ============================================================
+    // ACTUALIZAR PRÓXIMA CONSULTA
+    // ============================================================
+
+    function actualizarProximaConsulta() {
+
+        const ahora =
+            new Date();
+
+
+        const proxima =
+            new Date(
+                ahora.getTime() +
+                INTERVALO_CONSULTA
+            );
+
+
+        document.getElementById(
+            "proximaConsulta"
+        ).textContent =
+
+            proxima.toLocaleString(
+                "es-CO",
+                {
+                    day: "2-digit",
+                    month: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit"
+                }
+            );
+    }
+
+
+    // ============================================================
+    // BANNER DE ALERTA
+    // ============================================================
+
+    function mostrarBannerAlerta(evento) {
+
+        const banner =
+            document.getElementById(
+                "bannerAlerta"
+            );
+
+        const titulo =
+            document.getElementById(
+                "bannerTitulo"
+            );
+
+        const detalle =
+            document.getElementById(
+                "bannerDetalle"
+            );
+
+
+        const tipo =
+            obtenerTipoAlerta(evento);
+
+
+        if (!tipo) {
+            return;
+        }
+
+
+        if (tipo === "profunda") {
+
+            banner.className =
+                "banner-alerta banner-alerta-profunda";
+
+            titulo.textContent =
+                "?? ALERTA: SISMO PROFUNDO";
+
+        } else {
+
+            banner.className =
+                "banner-alerta banner-alerta-cercana";
+
+            titulo.textContent =
+                "?? ALERTA: SISMO CERCANO Y SUPERFICIAL";
+        }
+
+
+        detalle.innerHTML = `
+
+            <b>Magnitud:</b>
+            ${evento.magnitud ?? "--"}
+
+            &nbsp;&nbsp;
+
+            <b>Profundidad:</b>
+            ${evento.profundidad ?? "--"} km
+
+            &nbsp;&nbsp;
+
+            <b>Distancia:</b>
+            ${evento.distancia ?? "--"} km
+
+            <br>
+
+            <b>Lugar:</b>
+            ${evento.lugar ?? "--"}
+
+            <br>
+
+            <b>Fecha:</b>
+            ${evento.fecha_local ?? "--"}
+
+        `;
+
+
+        banner.style.display =
+            "block";
+    }
+
+
+    // ============================================================
+    // CERRAR BANNER
+    // ============================================================
+
+    function cerrarBannerAlerta() {
+
+        document.getElementById(
+            "bannerAlerta"
+        ).style.display =
+            "none";
+    }
+
+
+    // ============================================================
+    // VERIFICAR NUEVAS ALERTAS
+    // ============================================================
+
+    function verificarNuevasAlertas(eventos) {
+
+        /*
+         * En la primera consulta NO se muestra un banner
+         * para eventos históricos que ya estaban en el feed.
+         */
+
+        if (primeraConsulta) {
+
+            eventos.forEach(evento => {
+
+                if (
+                    evento.id &&
+                    obtenerTipoAlerta(evento)
+                ) {
+
+                    alertasProcesadas.add(
+                        evento.id
+                    );
+                }
+
+            });
+
+            primeraConsulta = false;
+
+            return;
+        }
+
+
+        /*
+         * En consultas posteriores solamente se muestra
+         * alerta para un ID nuevo.
+         */
+
+        for (
+            const evento of eventos
+        ) {
+
+            const tipo =
+                obtenerTipoAlerta(evento);
+
+
+            if (
+                !tipo ||
+                !evento.id
+            ) {
+                continue;
+            }
+
+
+            if (
+                alertasProcesadas.has(
+                    evento.id
+                )
+            ) {
+                continue;
+            }
+
+
+            alertasProcesadas.add(
+                evento.id
+            );
+
+
+            mostrarBannerAlerta(
+                evento
+            );
+
+        }
+    }
+
+
+    // ============================================================
+    // ACTUALIZAR MONITOR
+    // ============================================================
+
+    function actualizarMonitor(datos) {
+
+        eventosSGC =
+            datos.eventos || [];
+
+
+        document.getElementById(
+            "ultimaConsulta"
+        ).textContent =
+            datos.fecha_consulta || "--";
+
+
+        actualizarContadores(
+            datos
+        );
+
+
+        actualizarProximaConsulta();
+
+
+        dibujarSismos(
+            eventosSGC
+        );
+
+
+        mostrarAlertas(
+            eventosSGC
+        );
+
+
+        mostrarTabla(
+            eventosSGC
+        );
+
+
+        verificarNuevasAlertas(
+            eventosSGC
+        );
+    }
+
+
+    // ============================================================
+    // CARGAR EVENTOS DEL SGC
+    // ============================================================
+
+    async function cargarEventos() {
+
+        console.log(
+            "Consultando API del SGC..."
+        );
+
+
+        try {
+
+            const respuesta =
+                await fetch(
+                    "/api/eventos"
+                );
+
+
+            if (!respuesta.ok) {
+
+                throw new Error(
+                    "Error HTTP " +
+                    respuesta.status
+                );
+
+            }
+
+
+            const datos =
+                await respuesta.json();
+
+
+            console.log(
+                "Eventos recibidos:",
+                datos
+            );
+
+
+            actualizarMonitor(
+                datos
+            );
+
+
+        } catch (error) {
+
+            console.error(
+                "Error consultando API:",
+                error
+            );
+
+        }
+    }
+
+
+    // ============================================================
+    // INICIALIZACIÓN
+    // ============================================================
+
+    cargarEventos();
+
+
+    // ============================================================
+    // ACTUALIZACIÓN AUTOMÁTICA
+    // CADA 60 MINUTOS
+    // ============================================================
+
+    setInterval(
+        cargarEventos,
+        INTERVALO_CONSULTA
+    );
+
+</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Monitor Sísmico SGC</title>
+
+<link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='monitor.css') }}"
+>
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+>
+```
+
+</head>
+
+<body>
+
+<header class="header">
+
+```
+<div>
+
+    <h1>MONITOR SÍSMICO SGC</h1>
+
+    <p>
+        Sistema de monitoreo sísmico para Bogotá
+    </p>
+
+</div>
+
+
+<div class="estado">
+
+    <span class="indicador"></span>
+
+    MONITOR ACTIVO
+
+</div>
+```
+
+</header>
+
+<!-- ====================================================== -->
+
+<!-- TARJETAS -->
+
+<!-- ====================================================== -->
+
+<section class="tarjetas">
+
+```
+<div class="tarjeta">
+
+    <div class="tarjeta-titulo">
+        ÚLTIMA CONSULTA
+    </div>
+
+    <div
+        class="tarjeta-valor"
+        id="ultimaConsulta">
+        --
+    </div>
+
+</div>
+
+
+<div class="tarjeta">
+
+    <div class="tarjeta-titulo">
+        PRÓXIMA CONSULTA
+    </div>
+
+    <div
+        class="tarjeta-valor"
+        id="proximaConsulta">
+        --
+    </div>
+
+</div>
+
+
+<div class="tarjeta">
+
+    <div class="tarjeta-titulo">
+        EVENTOS RECIBIDOS
+    </div>
+
+    <div
+        class="tarjeta-valor"
+        id="eventosRecibidos">
+        --
+    </div>
+
+</div>
+
+
+<div class="tarjeta">
+
+    <div class="tarjeta-titulo">
+        SISMOS PROFUNDOS
+    </div>
+
+    <div
+        class="tarjeta-valor"
+        id="sismosProfundos">
+        0
+    </div>
+
+</div>
+
+
+<div class="tarjeta">
+
+    <div class="tarjeta-titulo">
+        SISMOS CERCANOS
+    </div>
+
+    <div
+        class="tarjeta-valor"
+        id="sismosCercanos">
+        0
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ====================================================== -->
+
+<!-- MAPA -->
+
+<!-- ====================================================== -->
+
+<section class="panel">
+
+```
+<div class="panel-titulo">
+
+    <h2>MAPA SÍSMICO</h2>
+
+    <span id="estadoMapa">
+        Esperando datos...
+    </span>
+
+</div>
+
+
+<div id="mapa"></div>
+```
+
+</section>
+
+<!-- ====================================================== -->
+
+<!-- ALERTAS -->
+
+<!-- ====================================================== -->
+
+<section class="panel">
+
+```
+<div class="panel-titulo">
+
+    <h2>ALERTAS SÍSMICAS</h2>
+
+</div>
+
+
+<div id="alertas">
+
+    <div class="sin-alertas">
+        No hay alertas sísmicas activas.
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ====================================================== -->
+
+<!-- HISTORIAL -->
+
+<!-- ====================================================== -->
+
+<section class="panel">
+
+```
+<div class="panel-titulo">
+
+    <h2>HISTORIAL DE EVENTOS</h2>
+
+    <span id="contadorEventos">
+        0 eventos
+    </span>
+
+</div>
+
+
+<div class="tabla-contenedor">
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>FECHA LOCAL</th>
+                <th>MAG.</th>
+                <th>PROF. (km)</th>
+                <th>DISTANCIA (km)</th>
+                <th>LUGAR</th>
+                <th>ESTADO</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="tablaEventos">
+
+            <tr>
+
+                <td colspan="6">
+                    Esperando datos del SGC...
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
+
+<footer>
+
+```
+Monitor Sísmico SGC |
+Bogotá, Colombia
+```
+
+</footer>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js">
+</script>
+
+<script>
+
+
+// ==========================================================
+// CONFIGURACIÓN
+// ==========================================================
+
+const LAT_BOGOTA = 4.7110;
+
+const LON_BOGOTA = -74.0721;
+
+
+// ==========================================================
+// MAPA
+// ==========================================================
+
+const mapa = L.map('mapa').setView(
+    [LAT_BOGOTA, LON_BOGOTA],
+    6
+);
+
+
+L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 19
+    }
+).addTo(mapa);
+
+
+// ==========================================================
+// BOGOTÁ
+// ==========================================================
+
+L.marker(
+    [LAT_BOGOTA, LON_BOGOTA]
+)
+.addTo(mapa)
+.bindPopup(
+    '<b>BOGOTÁ</b><br>Centro de referencia'
+);
+
+
+// ==========================================================
+// RADIO 100 KM
+// ==========================================================
+
+L.circle(
+    [LAT_BOGOTA, LON_BOGOTA],
+    {
+
+        radius: 100000,
+
+        color: '#f59e0b',
+
+        fillColor: '#f59e0b',
+
+        fillOpacity: 0.08,
+
+        weight: 2,
+
+        dashArray: '8, 8'
+
+    }
+)
+.addTo(mapa)
+.bindPopup(
+    '<b>Radio 100 km</b><br>' +
+    'Sismos cercanos y superficiales'
+);
+
+
+// ==========================================================
+// RADIO 200 KM
+// ==========================================================
+
+L.circle(
+    [LAT_BOGOTA, LON_BOGOTA],
+    {
+
+        radius: 200000,
+
+        color: '#dc2626',
+
+        fillColor: '#dc2626',
+
+        fillOpacity: 0.05,
+
+        weight: 2,
+
+        dashArray: '8, 8'
+
+    }
+)
+.addTo(mapa)
+.bindPopup(
+    '<b>Radio 200 km</b><br>' +
+    'Sismos profundos'
+);
+
+
+// ==========================================================
+// CAPA DE SISMOS
+// ==========================================================
+
+const capaSismos =
+    L.layerGroup().addTo(mapa);
+
+
+// ==========================================================
+// OBTENER COORDENADAS CORRECTAS
+// ==========================================================
+//
+// Colombia está aproximadamente entre:
+//
+// Latitud:    -5 a +13
+// Longitud:  -80 a -66
+//
+// Si recibimos algo como:
+//
+// lat = -76.71
+// lon =   4.45
+//
+// claramente están invertidas.
+//
+// Lo corregimos:
+//
+// lat =   4.45
+// lon = -76.71
+//
+// ==========================================================
+
+function obtenerCoordenadas(evento) {
+
+    let lat = Number(evento.lat);
+
+    let lon = Number(evento.lon);
+
+
+    // ------------------------------------------------------
+    // Validar números
+    // ------------------------------------------------------
+
+    if (
+        !Number.isFinite(lat) ||
+        !Number.isFinite(lon)
+    ) {
+
+        return null;
+
+    }
+
+
+    // ------------------------------------------------------
+    // Detectar coordenadas invertidas
+    // ------------------------------------------------------
+    //
+    // Caso detectado actualmente:
+    //
+    // lat = -76.71
+    // lon =   4.45
+    //
+    // Para Colombia esto es imposible como latitud.
+    //
+    // ------------------------------------------------------
+
+    if (
+        Math.abs(lat) > 20 &&
+        Math.abs(lon) <= 20
+    ) {
+
+        const temporal = lat;
+
+        lat = lon;
+
+        lon = temporal;
+
+
+        console.log(
+            'Coordenadas corregidas:',
+            lat,
+            lon
+        );
+
+    }
+
+
+    // ------------------------------------------------------
+    // Validación geográfica general
+    // ------------------------------------------------------
+
+    if (
+        lat < -90 ||
+        lat > 90 ||
+        lon < -180 ||
+        lon > 180
+    ) {
+
+        return null;
+
+    }
+
+
+    return {
+        lat: lat,
+        lon: lon
+    };
+
+}
+
+
+// ==========================================================
+// CARGAR EVENTOS
+// ==========================================================
+
+async function cargarEventos() {
+
+    try {
+
+        console.log(
+            'Consultando API del SGC...'
+        );
+
+
+        const respuesta =
+            await fetch('/api/eventos');
+
+
+        if (!respuesta.ok) {
+
+            throw new Error(
+                `HTTP ${respuesta.status}`
+            );
+
+        }
+
+
+        const datos =
+            await respuesta.json();
+
+
+        if (!datos.ok) {
+
+            throw new Error(
+                datos.error ||
+                'Error en API'
+            );
+
+        }
+
+
+        console.log(
+            'Eventos recibidos:',
+            datos
+        );
+
+
+        // ==================================================
+        // TARJETAS
+        // ==================================================
+
+        document.getElementById(
+            'eventosRecibidos'
+        ).textContent =
+            datos.eventos_recibidos;
+
+
+        document.getElementById(
+            'sismosProfundos'
+        ).textContent =
+            datos.sismos_profundos;
+
+
+        document.getElementById(
+            'sismosCercanos'
+        ).textContent =
+            datos.sismos_cercanos;
+
+
+        document.getElementById(
+            'ultimaConsulta'
+        ).textContent =
+            datos.fecha_consulta;
+
+
+        // ==================================================
+        // PRÓXIMA CONSULTA
+        // ==================================================
+
+        const ahora = new Date();
+
+
+        const proxima =
+            new Date(
+                ahora.getTime()
+                +
+                60 * 60 * 1000
+            );
+
+
+        document.getElementById(
+            'proximaConsulta'
+        ).textContent =
+            proxima.toLocaleTimeString(
+                'es-CO',
+                {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                }
+            );
+
+
+        // ==================================================
+        // CONTADOR
+        // ==================================================
+
+        document.getElementById(
+            'contadorEventos'
+        ).textContent =
+            `${datos.eventos_validos} eventos`;
+
+
+        // ==================================================
+        // MAPA
+        // ==================================================
+
+        dibujarSismos(
+            datos.eventos
+        );
+
+
+        // ==================================================
+        // TABLA
+        // ==================================================
+
+        llenarTabla(
+            datos.eventos
+        );
+
+
+        // ==================================================
+        // ALERTAS
+        // ==================================================
+
+        mostrarAlertas(
+            datos.eventos
+        );
+
+
+        document.getElementById(
+            'estadoMapa'
+        ).textContent =
+            `${datos.eventos_validos} eventos cargados`;
+
+    }
+    catch (error) {
+
+        console.error(
+            'Error consultando SGC:',
+            error
+        );
+
+
+        document.getElementById(
+            'estadoMapa'
+        ).textContent =
+            'Error consultando SGC';
+
+    }
+
+}
+
+
+// ==========================================================
+// DIBUJAR SISMOS
+// ==========================================================
+
+function dibujarSismos(eventos) {
+
+
+    capaSismos.clearLayers();
+
+
+    let eventosDibujados = 0;
+
+
+    eventos.forEach(
+        evento => {
+
+
+            const coordenadas =
+                obtenerCoordenadas(
+                    evento
+                );
+
+
+            if (!coordenadas) {
+
+                return;
+
+            }
+
+
+            const lat =
+                coordenadas.lat;
+
+            const lon =
+                coordenadas.lon;
+
+
+            // ------------------------------------------------
+            // COLOR
+            // ------------------------------------------------
+
+            let color = '#2563eb';
+
+
+            if (
+                Array.isArray(evento.alertas) &&
+                evento.alertas.includes(
+                    'SISMO PROFUNDO'
+                )
+            ) {
+
+                color = '#dc2626';
+
+            }
+
+            else if (
+                Array.isArray(evento.alertas) &&
+                evento.alertas.includes(
+                    'SISMO CERCANO Y SUPERFICIAL'
+                )
+            ) {
+
+                color = '#f59e0b';
+
+            }
+
+
+            // ------------------------------------------------
+            // RADIO SEGÚN MAGNITUD
+            // ------------------------------------------------
+
+            const magnitud =
+                Number(evento.magnitud);
+
+
+            let radio = 5;
+
+
+            if (
+                Number.isFinite(magnitud)
+            ) {
+
+                radio =
+                    Math.max(
+                        5,
+                        Math.min(
+                            14,
+                            magnitud * 2
+                        )
+                    );
+
+            }
+
+
+            // ------------------------------------------------
+            // MARCADOR
+            // ------------------------------------------------
+
+            const marcador =
+                L.circleMarker(
+                    [lat, lon],
+                    {
+
+                        radius: radio,
+
+                        color: color,
+
+                        fillColor: color,
+
+                        fillOpacity: 0.85,
+
+                        weight: 1.5
+
+                    }
+                );
+
+
+            // ------------------------------------------------
+            // POPUP
+            // ------------------------------------------------
+
+            marcador.bindPopup(
+
+                `<div style="min-width:220px">` +
+
+                `<b>EVENTO SÍSMICO</b><br><br>` +
+
+                `<b>Magnitud:</b> ` +
+                `${evento.magnitud ?? '--'}<br>` +
+
+                `<b>Profundidad:</b> ` +
+                `${evento.profundidad ?? '--'} km<br>` +
+
+                `<b>Distancia a Bogotá:</b> ` +
+                `${evento.distancia ?? '--'} km<br>` +
+
+                `<b>Lugar:</b> ` +
+                `${evento.lugar || 'Sin información'}<br>` +
+
+                `<b>Fecha local:</b> ` +
+                `${evento.fecha_local || '--'}<br>` +
+
+                `<b>Agencia:</b> ` +
+                `${evento.agencia || '--'}<br>` +
+
+                `</div>`
+
+            );
+
+
+            marcador.addTo(
+                capaSismos
+            );
+
+
+            eventosDibujados++;
+
+        }
+    );
+
+
+    console.log(
+        'Sismos dibujados:',
+        eventosDibujados
+    );
+
+}
+
+
+// ==========================================================
+// TABLA
+// ==========================================================
+
+function llenarTabla(eventos) {
+
+
+    const tabla =
+        document.getElementById(
+            'tablaEventos'
+        );
+
+
+    tabla.innerHTML = '';
+
+
+    const eventosOrdenados =
+        [...eventos].sort(
+            (a, b) => {
+
+                const fechaA =
+                    new Date(
+                        a.fecha_utc || 0
+                    );
+
+                const fechaB =
+                    new Date(
+                        b.fecha_utc || 0
+                    );
+
+                return fechaB - fechaA;
+
+            }
+        );
+
+
+    eventosOrdenados
+        .slice(0, 100)
+        .forEach(
+            evento => {
+
+
+                let estado =
+                    'NORMAL';
+
+
+                if (
+                    Array.isArray(evento.alertas) &&
+                    evento.alertas.length > 0
+                ) {
+
+                    estado =
+                        evento.alertas.join(
+                            ' / '
+                        );
+
+                }
+
+
+                const fila =
+                    document.createElement(
+                        'tr'
+                    );
+
+
+                fila.innerHTML = `
+
+                    <td>
+                        ${evento.fecha_local || '--'}
+                    </td>
+
+                    <td>
+                        ${evento.magnitud ?? '--'}
+                    </td>
+
+                    <td>
+                        ${evento.profundidad ?? '--'}
+                    </td>
+
+                    <td>
+                        ${evento.distancia ?? '--'}
+                    </td>
+
+                    <td>
+                        ${evento.lugar || '--'}
+                    </td>
+
+                    <td>
+                        ${estado}
+                    </td>
+
+                `;
+
+
+                tabla.appendChild(
+                    fila
+                );
+
+            }
+        );
+
+}
+
+
+// ==========================================================
+// ALERTAS
+// ==========================================================
+
+function mostrarAlertas(eventos) {
+
+
+    const contenedor =
+        document.getElementById(
+            'alertas'
+        );
+
+
+    const alertas =
+        eventos.filter(
+            evento =>
+                Array.isArray(evento.alertas) &&
+                evento.alertas.length > 0
+        );
+
+
+    if (alertas.length === 0) {
+
+        contenedor.innerHTML = `
+
+            <div class="sin-alertas">
+
+                No hay alertas sísmicas activas.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    contenedor.innerHTML = '';
+
+
+    alertas.forEach(
+        evento => {
+
+
+            const div =
+                document.createElement(
+                    'div'
+                );
+
+
+            div.className =
+                'alerta';
+
+
+            div.innerHTML = `
+
+                <strong>
+                    ${evento.alertas.join(
+                        ' / '
+                    )}
+                </strong>
+
+                <br><br>
+
+                Magnitud:
+                ${evento.magnitud}
+
+                &nbsp; | &nbsp;
+
+                Profundidad:
+                ${evento.profundidad} km
+
+                &nbsp; | &nbsp;
+
+                Distancia:
+                ${evento.distancia} km
+
+                <br><br>
+
+                ${evento.lugar || ''}
+
+            `;
+
+
+            contenedor.appendChild(
+                div
+            );
+
+        }
+    );
+
+}
+
+
+// ==========================================================
+// PRIMERA CONSULTA
+// ==========================================================
+
+cargarEventos();
+
+
+// ==========================================================
+// ACTUALIZACIÓN CADA 60 MINUTOS
+// ==========================================================
+
+setInterval(
+    cargarEventos,
+    60 * 60 * 1000
+);
+
+
+</script>
+
+</body>
+
+</html>

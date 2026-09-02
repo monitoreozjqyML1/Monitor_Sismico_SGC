@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef1f4;
+    color: #1f2933;
+}
+
+
+/* ========================================================= */
+/* ENCABEZADO */
+/* ========================================================= */
+
+.encabezado {
+    background: #17212b;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.encabezado p {
+    margin-top: 5px;
+    color: #b8c4ce;
+}
+
+.estado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.indicador {
+    width: 13px;
+    height: 13px;
+    background: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #22c55e;
+}
+
+
+/* ========================================================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================================================= */
+
+.contenedor {
+    padding: 20px 30px;
+}
+
+
+/* ========================================================= */
+/* TARJETAS DE ESTADÍSTICAS */
+/* ========================================================= */
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.titulo {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.valor {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.alerta-profunda {
+    border-left: 5px solid #dc2626;
+}
+
+.alerta-cercana {
+    border-left: 5px solid #f59e0b;
+}
+
+
+/* ========================================================= */
+/* PANELES */
+/* ========================================================= */
+
+.panel {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.panel-titulo {
+    padding: 14px 18px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* ========================================================= */
+/* MAPA LEAFLET */
+/* ========================================================= */
+
+#mapa {
+    height: 500px;
+    width: 100%;
+}
+
+
+/* ========================================================= */
+/* ALERTAS */
+/* ========================================================= */
+
+.sin-alertas {
+    padding: 25px;
+    text-align: center;
+    color: #6b7280;
+}
+
+
+/* ========================================================= */
+/* TABLA */
+/* ========================================================= */
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f8fafc;
+    font-size: 12px;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+}
+
+.sin-datos {
+    text-align: center;
+    color: #6b7280;
+    padding: 25px;
+}
+
+
+/* ========================================================= */
+/* PIE DE PÁGINA */
+/* ========================================================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+
+/* ========================================================= */
+/* ADAPTACIÓN A PANTALLAS MEDIANAS */
+/* ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .estadisticas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================================= */
+/* ADAPTACIÓN A CELULARES */
+/* ========================================================= */
+
+@media (max-width: 600px) {
+
+    .estadisticas {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
