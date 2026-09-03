@@ -20,6 +20,19 @@ DIAS_RETENCION = 30
 
 
 # ============================================================
+# TELEGRAM
+# ============================================================
+
+TELEGRAM_BOT_TOKEN = os.getenv(
+    "TELEGRAM_BOT_TOKEN"
+)
+
+TELEGRAM_CHAT_ID = os.getenv(
+    "TELEGRAM_CHAT_ID"
+)
+
+
+# ============================================================
 # BOGOTÁ
 # ============================================================
 
@@ -31,19 +44,12 @@ LON_BOGOTA = -74.0721
 # RADIO GENERAL DE SEGUIMIENTO
 # ============================================================
 
-# TODOS los sismos dentro de este radio serán registrados,
-# independientemente de magnitud y profundidad.
-
 DISTANCIA_REGISTRO = 200.0
 
 
 # ============================================================
 # CRITERIO 1 - SISMO PROFUNDO
 # ============================================================
-
-# Magnitud >= 5.0
-# Distancia <= 200 km
-# Profundidad entre 80 y 125 km, inclusive.
 
 MAGNITUD_PROFUNDO = 5.0
 DISTANCIA_PROFUNDO = 200.0
@@ -54,15 +60,6 @@ PROFUNDIDAD_MAX_PROFUNDO = 125.0
 # ============================================================
 # CRITERIO 2 - SISMO CERCANO Y SUPERFICIAL
 # ============================================================
-
-# Magnitud >= 4.0
-# Distancia <= 100 km
-# Profundidad >= 0 km y < 80 km.
-#
-# IMPORTANTE:
-# A 80 km exactos NO se considera cercano/superficial.
-# A 80 km exactos pertenece al criterio de sismo profundo
-# si además cumple magnitud y distancia.
 
 MAGNITUD_CERCANO = 4.0
 DISTANCIA_CERCANO = 100.0
@@ -368,6 +365,123 @@ def calcular_distancia_km(
 
 
 # ============================================================
+# ENVIAR ALERTA POR TELEGRAM
+# ============================================================
+
+def enviar_alerta_telegram(
+    resultado
+):
+
+    if not TELEGRAM_BOT_TOKEN:
+
+        print(
+            "⚠️ TELEGRAM_BOT_TOKEN no está configurado."
+        )
+
+        return False
+
+    if not TELEGRAM_CHAT_ID:
+
+        print(
+            "⚠️ TELEGRAM_CHAT_ID no está configurado."
+        )
+
+        return False
+
+    url = (
+        "https://api.telegram.org/bot"
+        f"{TELEGRAM_BOT_TOKEN}"
+        "/sendMessage"
+    )
+
+    alertas = resultado.get(
+        "alertas",
+        []
+    )
+
+    tipo_alerta = ", ".join(
+        alertas
+    )
+
+    lugar = resultado.get(
+        "lugar"
+    ) or "No informado"
+
+    fecha_local = resultado.get(
+        "fecha_local"
+    ) or "No informada"
+
+    agencia = resultado.get(
+        "agencia"
+    ) or "No informada"
+
+    tipo_magnitud = resultado.get(
+        "tipo_magnitud"
+    ) or "No informado"
+
+    mensaje = (
+        "🚨 <b>ALERTA SÍSMICA SGC</b>\n"
+        "\n"
+        f"<b>Magnitud:</b> {resultado['magnitud']}\n"
+        f"<b>Profundidad:</b> {resultado['profundidad']} km\n"
+        f"<b>Distancia a Bogotá:</b> "
+        f"{resultado['distancia_bogota']} km\n"
+        f"<b>Ubicación:</b> {lugar}\n"
+        f"<b>Tipo de alerta:</b> {tipo_alerta}\n"
+        f"<b>Hora local:</b> {fecha_local}\n"
+        f"<b>ID SGC:</b> {resultado['id']}\n"
+        f"<b>Agencia:</b> {agencia}\n"
+        f"<b>Tipo de magnitud:</b> {tipo_magnitud}\n"
+        "\n"
+        "Fuente: Servicio Geológico Colombiano"
+    )
+
+    datos = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": mensaje,
+        "parse_mode": "HTML"
+    }
+
+    try:
+
+        respuesta = requests.post(
+            url,
+            data=datos,
+            timeout=30
+        )
+
+        respuesta.raise_for_status()
+
+        resultado_telegram = respuesta.json()
+
+        if resultado_telegram.get("ok"):
+
+            print(
+                "    📱 Alerta enviada correctamente por Telegram."
+            )
+
+            return True
+
+        print(
+            "⚠️ Telegram respondió con error:"
+        )
+
+        print(
+            resultado_telegram
+        )
+
+        return False
+
+    except Exception as error:
+
+        print(
+            f"⚠️ Error enviando alerta por Telegram: {error}"
+        )
+
+        return False
+
+
+# ============================================================
 # ANALIZAR EVENTO
 # ============================================================
 
@@ -462,8 +576,6 @@ def analizar_evento(
 
         # ----------------------------------------------------
         # FILTRO GENERAL
-        #
-        # TODO SISMO DENTRO DE 200 KM SE REGISTRA
         # ----------------------------------------------------
 
         if distancia > DISTANCIA_REGISTRO:
@@ -704,7 +816,7 @@ def realizar_consulta():
     print("=" * 70)
 
     print(
-        "       MONITOR SÍSMICO SGC - GITHUB ACTIONS"
+        "       MONITOR SISMICO SGC - GITHUB ACTIONS"
     )
 
     print("=" * 70)
@@ -750,9 +862,6 @@ def realizar_consulta():
         f"{len(eventos_registrados_original)}"
     )
 
-    # Hacemos una copia para poder detectar posteriormente
-    # si realmente hubo cambios en los registros.
-
     eventos_registrados = dict(
         eventos_registrados_original
     )
@@ -768,7 +877,7 @@ def realizar_consulta():
     )
 
     # ========================================================
-    # CONTADORES DE LA CONSULTA
+    # CONTADORES
     # ========================================================
 
     sismos_200km_nuevos = 0
@@ -776,7 +885,7 @@ def realizar_consulta():
     nuevas_alertas = 0
 
     # ========================================================
-    # ANALIZAR TODOS LOS EVENTOS DEL SGC
+    # ANALIZAR EVENTOS
     # ========================================================
 
     for evento in eventos:
@@ -811,7 +920,7 @@ def realizar_consulta():
         sismos_200km_nuevos += 1
 
         # ----------------------------------------------------
-        # SI ES ALERTA, MOSTRAR EN CONSOLA
+        # SI ES ALERTA
         # ----------------------------------------------------
 
         if resultado[
@@ -861,8 +970,16 @@ def realizar_consulta():
                 f"{', '.join(resultado['alertas'])}"
             )
 
+            # ------------------------------------------------
+            # ENVIAR TELEGRAM
+            # ------------------------------------------------
+
+            enviar_alerta_telegram(
+                resultado
+            )
+
     # ========================================================
-    # GENERAR RESUMEN DE TODOS LOS EVENTOS RETENIDOS
+    # GENERAR RESUMEN
     # ========================================================
 
     resumen = generar_resumen(
@@ -870,7 +987,7 @@ def realizar_consulta():
     )
 
     # ========================================================
-    # DETECTAR SI REALMENTE HUBO CAMBIOS
+    # DETECTAR CAMBIOS
     # ========================================================
 
     hubo_cambios = (
@@ -880,7 +997,7 @@ def realizar_consulta():
     )
 
     # ========================================================
-    # GUARDAR SOLO SI HUBO CAMBIOS
+    # GUARDAR
     # ========================================================
 
     if hubo_cambios:
@@ -909,7 +1026,7 @@ def realizar_consulta():
         )
 
     # ========================================================
-    # MOSTRAR RESULTADOS
+    # RESUMEN
     # ========================================================
 
     print()
