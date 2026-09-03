@@ -239,8 +239,8 @@ def analizar_evento(evento):
 
     try:
 
-        lat = float(coordenadas[0])
-        lon = float(coordenadas[1])
+        lon = float(coordenadas[0])
+        lat = float(coordenadas[1])
         profundidad = float(coordenadas[2])
 
     except (TypeError, ValueError):
@@ -558,6 +558,8 @@ if __name__ == "__main__":
         port=5000,
         debug=False
     )
+
+
 
 
 
