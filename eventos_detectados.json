@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-03 18:43:26",
+    "actualizado": "2026-09-03 21:55:18",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "sismos_200km": 55,
+        "sismos_200km": 56,
         "total_alertas": 0,
         "alertas_profundas": 0,
         "alertas_cercanas_superficiales": 0,
-        "sismos_sin_alerta": 55,
+        "sismos_sin_alerta": 56,
         "porcentaje_alertas": 0.0
     },
     "eventos": {
@@ -834,6 +834,21 @@
             "categoria": "SIN ALERTA",
             "alertas": [],
             "fecha_deteccion": "2026-09-03 18:43:26"
+        },
+        "SGC2026rjgdir": {
+            "id": "SGC2026rjgdir",
+            "magnitud": 1.6,
+            "profundidad": 143.0,
+            "latitud": 5.238,
+            "longitud": -73.721,
+            "distancia_bogota": 70.33,
+            "lugar": "Cucunubá - Cundinamarca, Colombia",
+            "fecha_local": "2026-09-03 14:43",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_3",
+            "categoria": "SIN ALERTA",
+            "alertas": [],
+            "fecha_deteccion": "2026-09-03 21:55:18"
         }
     }
 }
