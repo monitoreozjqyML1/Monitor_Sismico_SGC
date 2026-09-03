@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-03 16:33:32",
+    "actualizado": "2026-09-03 18:43:26",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "sismos_200km": 54,
+        "sismos_200km": 55,
         "total_alertas": 0,
         "alertas_profundas": 0,
         "alertas_cercanas_superficiales": 0,
-        "sismos_sin_alerta": 54,
+        "sismos_sin_alerta": 55,
         "porcentaje_alertas": 0.0
     },
     "eventos": {
@@ -819,6 +819,21 @@
             "categoria": "SIN ALERTA",
             "alertas": [],
             "fecha_deteccion": "2026-09-03 16:33:32"
+        },
+        "SGC2026riormf": {
+            "id": "SGC2026riormf",
+            "magnitud": 1.7,
+            "profundidad": 25.0,
+            "latitud": 4.739772493638297,
+            "longitud": -74.7665490428317,
+            "distancia_bogota": 77.02,
+            "lugar": "Beltrán - Cundinamarca, Colombia",
+            "fecha_local": "2026-09-03 05:56",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SIN ALERTA",
+            "alertas": [],
+            "fecha_deteccion": "2026-09-03 18:43:26"
         }
     }
 }
