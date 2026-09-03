@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 # ============================================================
-# CONFIGURACIÃ“N SGC
+# CONFIGURACIÓN SGC
 # ============================================================
 
 URL_SGC = (
@@ -109,8 +109,16 @@ def obtener_alertas_almacenadas():
 
             datos = json.load(archivo)
 
+        # ----------------------------------------------------
+        # FORMATO: LISTA
+        # ----------------------------------------------------
+
         if isinstance(datos, list):
             return datos
+
+        # ----------------------------------------------------
+        # FORMATO: DICCIONARIO
+        # ----------------------------------------------------
 
         if isinstance(datos, dict):
 
@@ -149,6 +157,10 @@ def obtener_alertas_almacenadas():
         return []
 
 
+# ============================================================
+# NORMALIZAR EVENTO ALMACENADO
+# ============================================================
+
 def normalizar_alerta_almacenada(alerta):
 
     return {
@@ -165,7 +177,9 @@ def normalizar_alerta_almacenada(alerta):
             alerta.get("lon")
         ),
 
-        "magnitud": alerta.get("magnitud"),
+        "magnitud": alerta.get(
+            "magnitud"
+        ),
 
         "tipo_magnitud": alerta.get(
             "tipo_magnitud",
@@ -181,7 +195,9 @@ def normalizar_alerta_almacenada(alerta):
             alerta.get("distancia")
         ),
 
-        "lugar": alerta.get("lugar"),
+        "lugar": alerta.get(
+            "lugar"
+        ),
 
         "fecha_local": alerta.get(
             "fecha_local"
@@ -196,10 +212,15 @@ def normalizar_alerta_almacenada(alerta):
             []
         ),
 
+        "categoria": alerta.get(
+            "categoria"
+        ),
+
         "fecha_deteccion": alerta.get(
             "fecha_deteccion"
         )
     }
+
 
 # ============================================================
 # ANALIZAR EVENTO DEL SGC
@@ -232,7 +253,7 @@ def analizar_evento(evento):
     # --------------------------------------------------------
     # IMPORTANTE:
     #
-    # GeoJSON utiliza:
+    # GeoJSON del SGC:
     #
     # [LONGITUD, LATITUD, PROFUNDIDAD]
     # --------------------------------------------------------
@@ -261,21 +282,25 @@ def analizar_evento(evento):
     # MAGNITUD
     # --------------------------------------------------------
 
-    magnitud_raw = propiedades.get("mag")
+    magnitud_raw = propiedades.get(
+        "mag"
+    )
 
     if magnitud_raw is None:
         return None
 
     try:
 
-        magnitud = float(magnitud_raw)
+        magnitud = float(
+            magnitud_raw
+        )
 
     except (TypeError, ValueError):
 
         return None
 
     # --------------------------------------------------------
-    # DISTANCIA A BOGOTÃ
+    # DISTANCIA A BOGOTÁ
     # --------------------------------------------------------
 
     distancia = distancia_km(
@@ -285,11 +310,15 @@ def analizar_evento(evento):
         lon
     )
 
+    # ========================================================
+    # ALERTAS ESPECIALES
+    # ========================================================
+
     alertas = []
 
-    # ========================================================
+    # --------------------------------------------------------
     # SISMO PROFUNDO
-    # ========================================================
+    # --------------------------------------------------------
 
     if (
         magnitud >= MAG_PROFUNDO
@@ -302,9 +331,9 @@ def analizar_evento(evento):
             "SISMO PROFUNDO"
         )
 
-    # ========================================================
+    # --------------------------------------------------------
     # SISMO CERCANO Y SUPERFICIAL
-    # ========================================================
+    # --------------------------------------------------------
 
     if (
         magnitud >= MAG_CERCANO
@@ -317,12 +346,45 @@ def analizar_evento(evento):
         )
 
     # ========================================================
+    # CATEGORÍA GENERAL
+    # ========================================================
+
+    if (
+        magnitud >= MAG_PROFUNDO
+        and distancia <= RADIO_PROFUNDO
+        and profundidad >= PROF_MIN_PROFUNDO
+        and profundidad <= PROF_MAX_PROFUNDO
+    ):
+
+        categoria = "SISMO PROFUNDO"
+
+    elif (
+        magnitud >= MAG_CERCANO
+        and distancia <= RADIO_CERCANO
+        and profundidad <= PROF_MAX_CERCANO
+    ):
+
+        categoria = "SISMO CERCANO Y SUPERFICIAL"
+
+    elif distancia <= 200:
+
+        categoria = (
+            "SISMO DENTRO DEL RADIO DE 200 KM"
+        )
+
+    else:
+
+        categoria = None
+
+    # ========================================================
     # DEVOLVER EVENTO
     # ========================================================
 
     return {
 
-        "id": evento.get("id"),
+        "id": evento.get(
+            "id"
+        ),
 
         "lat": lat,
 
@@ -353,11 +415,14 @@ def analizar_evento(evento):
             "agency"
         ),
 
-        "alertas": alertas
+        "alertas": alertas,
+
+        "categoria": categoria
     }
 
+
 # ============================================================
-# PÃGINA PRINCIPAL
+# PÁGINA PRINCIPAL
 # ============================================================
 
 @app.route("/")
@@ -420,12 +485,15 @@ def api_eventos():
                 )
 
         # ====================================================
-        # AGREGAR ALERTAS ALMACENADAS
+        # AGREGAR EVENTOS ALMACENADOS
         # ====================================================
 
         ids_eventos = {
+
             evento.get("id")
+
             for evento in eventos
+
             if evento.get("id")
         }
 
@@ -434,7 +502,7 @@ def api_eventos():
         )
 
         print(
-            "Alertas almacenadas encontradas:",
+            "Eventos almacenados encontrados:",
             len(alertas_almacenadas)
         )
 
@@ -497,6 +565,19 @@ def api_eventos():
             )
         )
 
+        dentro_radio = sum(
+
+            1
+
+            for evento in eventos
+
+            if evento.get(
+                "categoria"
+            ) == (
+                "SISMO DENTRO DEL RADIO DE 200 KM"
+            )
+        )
+
         # ====================================================
         # RESPUESTA
         # ====================================================
@@ -524,6 +605,9 @@ def api_eventos():
 
             "sismos_cercanos":
                 cercanos,
+
+            "sismos_dentro_radio":
+                dentro_radio,
 
             "eventos":
                 eventos
@@ -553,14 +637,23 @@ def api_eventos():
 
 if __name__ == "__main__":
 
-    app.run(
-        host="127.0.0.1",
-        port=5000,
-        debug=False
+    # --------------------------------------------------------
+    # LOCAL:
+    #   http://127.0.0.1:5000
+    #
+    # RENDER:
+    #   utiliza la variable de entorno PORT
+    # --------------------------------------------------------
+
+    puerto = int(
+        os.environ.get(
+            "PORT",
+            5000
+        )
     )
 
-
-
-
-
-
+    app.run(
+        host="0.0.0.0",
+        port=puerto,
+        debug=False
+    )
