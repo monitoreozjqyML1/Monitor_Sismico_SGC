@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-03 09:29:15",
+    "actualizado": "2026-09-03 16:33:32",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "sismos_200km": 52,
+        "sismos_200km": 54,
         "total_alertas": 0,
         "alertas_profundas": 0,
         "alertas_cercanas_superficiales": 0,
-        "sismos_sin_alerta": 52,
+        "sismos_sin_alerta": 54,
         "porcentaje_alertas": 0.0
     },
     "eventos": {
@@ -789,6 +789,36 @@
             "categoria": "SIN ALERTA",
             "alertas": [],
             "fecha_deteccion": "2026-09-03 09:24:04"
+        },
+        "SGC2026riguun": {
+            "id": "SGC2026riguun",
+            "magnitud": 1.1,
+            "profundidad": 125.0,
+            "latitud": 4.4145,
+            "longitud": -75.64216666666667,
+            "distancia_bogota": 177.13,
+            "lugar": "Córdoba - Quindío, Colombia",
+            "fecha_local": "2026-09-03 01:59",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SIN ALERTA",
+            "alertas": [],
+            "fecha_deteccion": "2026-09-03 16:33:32"
+        },
+        "SGC2026rifpor": {
+            "id": "SGC2026rifpor",
+            "magnitud": 0.8,
+            "profundidad": 19.0,
+            "latitud": 5.71375316881679,
+            "longitud": -74.6849467853167,
+            "distancia_bogota": 130.53,
+            "lugar": "La Dorada - Caldas, Colombia",
+            "fecha_local": "2026-09-03 01:22",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SIN ALERTA",
+            "alertas": [],
+            "fecha_deteccion": "2026-09-03 16:33:32"
         }
     }
 }
