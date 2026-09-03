@@ -48,7 +48,7 @@ DISTANCIA_REGISTRO = 200.0
 
 
 # ============================================================
-# CRITERIO 1 - SISMO PROFUNDO
+# CRITERIO - SISMO PROFUNDO
 # ============================================================
 
 MAGNITUD_PROFUNDO = 5.0
@@ -58,7 +58,7 @@ PROFUNDIDAD_MAX_PROFUNDO = 125.0
 
 
 # ============================================================
-# CRITERIO 2 - SISMO CERCANO Y SUPERFICIAL
+# CRITERIO - SISMO CERCANO Y SUPERFICIAL
 # ============================================================
 
 MAGNITUD_CERCANO = 4.0
@@ -365,7 +365,7 @@ def calcular_distancia_km(
 
 
 # ============================================================
-# ENVIAR ALERTA POR TELEGRAM
+# ENVIAR EVENTO POR TELEGRAM
 # ============================================================
 
 def enviar_alerta_telegram(
@@ -403,6 +403,10 @@ def enviar_alerta_telegram(
         alertas
     )
 
+    categoria = resultado.get(
+        "categoria"
+    ) or "No clasificado"
+
     lugar = resultado.get(
         "lugar"
     ) or "No informado"
@@ -420,14 +424,16 @@ def enviar_alerta_telegram(
     ) or "No informado"
 
     mensaje = (
-        "🚨 <b>ALERTA SÍSMICA SGC</b>\n"
+        "📡 <b>MONITOR SÍSMICO SGC</b>\n"
         "\n"
         f"<b>Magnitud:</b> {resultado['magnitud']}\n"
         f"<b>Profundidad:</b> {resultado['profundidad']} km\n"
         f"<b>Distancia a Bogotá:</b> "
         f"{resultado['distancia_bogota']} km\n"
         f"<b>Ubicación:</b> {lugar}\n"
-        f"<b>Tipo de alerta:</b> {tipo_alerta}\n"
+        f"<b>Categoría:</b> {categoria}\n"
+        f"<b>Alerta especial:</b> "
+        f"{tipo_alerta or 'Ninguna'}\n"
         f"<b>Hora local:</b> {fecha_local}\n"
         f"<b>ID SGC:</b> {resultado['id']}\n"
         f"<b>Agencia:</b> {agencia}\n"
@@ -457,7 +463,7 @@ def enviar_alerta_telegram(
         if resultado_telegram.get("ok"):
 
             print(
-                "    📱 Alerta enviada correctamente por Telegram."
+                "    📱 Evento enviado correctamente por Telegram."
             )
 
             return True
@@ -475,7 +481,7 @@ def enviar_alerta_telegram(
     except Exception as error:
 
         print(
-            f"⚠️ Error enviando alerta por Telegram: {error}"
+            f"⚠️ Error enviando evento por Telegram: {error}"
         )
 
         return False
@@ -511,13 +517,16 @@ def analizar_evento(
 
         # ----------------------------------------------------
         # COORDENADAS DEL FEED SGC
+        #
+        # GeoJSON utiliza:
+        # [longitud, latitud, profundidad]
         # ----------------------------------------------------
 
-        lat = float(
+        lon = float(
             coordenadas[0]
         )
 
-        lon = float(
+        lat = float(
             coordenadas[1]
         )
 
@@ -583,7 +592,7 @@ def analizar_evento(
             return None
 
         # ====================================================
-        # EVALUAR ALERTAS
+        # EVALUAR ALERTAS ESPECIALES
         # ====================================================
 
         alertas = []
@@ -644,17 +653,21 @@ def analizar_evento(
                 "SISMO CERCANO Y SUPERFICIAL"
             )
 
-        # ----------------------------------------------------
+        # ====================================================
         # CATEGORÍA GENERAL
-        # ----------------------------------------------------
+        # ====================================================
 
-        if alertas:
+        if cumple_profundo:
 
-            categoria = "ALERTA"
+            categoria = "SISMO PROFUNDO"
+
+        elif cumple_cercano:
+
+            categoria = "SISMO CERCANO Y SUPERFICIAL"
 
         else:
 
-            categoria = "SIN ALERTA"
+            categoria = "SISMO DENTRO DEL RADIO DE 200 KM"
 
         # ----------------------------------------------------
         # REGISTRO
@@ -727,13 +740,13 @@ def generar_resumen(
         eventos
     )
 
-    alertas_profundas = 0
+    sismos_profundos = 0
 
-    alertas_cercanas = 0
+    sismos_cercanos_superficiales = 0
+
+    sismos_dentro_radio = 0
 
     total_alertas = 0
-
-    sismos_sin_alerta = 0
 
     for evento in eventos.values():
 
@@ -743,37 +756,30 @@ def generar_resumen(
         ):
             continue
 
+        categoria = evento.get(
+            "categoria"
+        )
+
         alertas = evento.get(
             "alertas",
             []
         )
 
-        if (
-            "SISMO PROFUNDO"
-            in alertas
-        ):
+        if categoria == "SISMO PROFUNDO":
 
-            alertas_profundas += 1
+            sismos_profundos += 1
 
-        if (
-            "SISMO CERCANO Y SUPERFICIAL"
-            in alertas
-        ):
+        elif categoria == "SISMO CERCANO Y SUPERFICIAL":
 
-            alertas_cercanas += 1
+            sismos_cercanos_superficiales += 1
 
-        if (
-            evento.get(
-                "categoria"
-            )
-            == "ALERTA"
-        ):
+        elif categoria == "SISMO DENTRO DEL RADIO DE 200 KM":
+
+            sismos_dentro_radio += 1
+
+        if alertas:
 
             total_alertas += 1
-
-        else:
-
-            sismos_sin_alerta += 1
 
     porcentaje_alertas = 0.0
 
@@ -794,13 +800,15 @@ def generar_resumen(
 
         "sismos_200km": total_sismos,
 
+        "sismos_profundos": sismos_profundos,
+
+        "sismos_cercanos_superficiales":
+            sismos_cercanos_superficiales,
+
+        "sismos_dentro_radio":
+            sismos_dentro_radio,
+
         "total_alertas": total_alertas,
-
-        "alertas_profundas": alertas_profundas,
-
-        "alertas_cercanas_superficiales": alertas_cercanas,
-
-        "sismos_sin_alerta": sismos_sin_alerta,
 
         "porcentaje_alertas": porcentaje_alertas
 
@@ -920,63 +928,65 @@ def realizar_consulta():
         sismos_200km_nuevos += 1
 
         # ----------------------------------------------------
-        # SI ES ALERTA
+        # CONTAR ALERTAS ESPECIALES
         # ----------------------------------------------------
 
-        if resultado[
-            "categoria"
-        ] == "ALERTA":
+        if resultado["alertas"]:
 
             nuevas_alertas += 1
 
-            print()
+        # ----------------------------------------------------
+        # MOSTRAR NUEVO SISMO
+        # ----------------------------------------------------
 
-            print(
-                "🚨 NUEVA ALERTA SÍSMICA"
-            )
+        print()
 
-            print(
-                f"    ID:          "
-                f"{resultado['id']}"
-            )
+        print(
+            "📡 NUEVO SISMO DENTRO DE 200 KM"
+        )
 
-            print(
-                f"    Magnitud:    "
-                f"{resultado['magnitud']}"
-            )
+        print(
+            f"    ID:          "
+            f"{resultado['id']}"
+        )
 
-            print(
-                f"    Profundidad: "
-                f"{resultado['profundidad']} km"
-            )
+        print(
+            f"    Magnitud:    "
+            f"{resultado['magnitud']}"
+        )
 
-            print(
-                f"    Distancia:   "
-                f"{resultado['distancia_bogota']} km"
-            )
+        print(
+            f"    Profundidad: "
+            f"{resultado['profundidad']} km"
+        )
 
-            print(
-                f"    Lugar:       "
-                f"{resultado['lugar']}"
-            )
+        print(
+            f"    Distancia:   "
+            f"{resultado['distancia_bogota']} km"
+        )
 
-            print(
-                f"    Categoría:   "
-                f"{resultado['categoria']}"
-            )
+        print(
+            f"    Lugar:       "
+            f"{resultado['lugar']}"
+        )
 
-            print(
-                f"    Alerta:      "
-                f"{', '.join(resultado['alertas'])}"
-            )
+        print(
+            f"    Categoría:   "
+            f"{resultado['categoria']}"
+        )
 
-            # ------------------------------------------------
-            # ENVIAR TELEGRAM
-            # ------------------------------------------------
+        print(
+            f"    Alerta:      "
+            f"{', '.join(resultado['alertas']) if resultado['alertas'] else 'Ninguna'}"
+        )
 
-            enviar_alerta_telegram(
-                resultado
-            )
+        # ----------------------------------------------------
+        # ENVIAR TELEGRAM
+        # ----------------------------------------------------
+
+        enviar_alerta_telegram(
+            resultado
+        )
 
     # ========================================================
     # GENERAR RESUMEN
@@ -1041,22 +1051,22 @@ def realizar_consulta():
     )
 
     print(
-        f"    Sismos sin alerta: "
-        f"{resumen['sismos_sin_alerta']}"
+        f"    Sismos profundos: "
+        f"{resumen['sismos_profundos']}"
     )
 
     print(
-        f"    Alertas profundas: "
-        f"{resumen['alertas_profundas']}"
+        f"    Sismos cercanos/superficiales: "
+        f"{resumen['sismos_cercanos_superficiales']}"
     )
 
     print(
-        f"    Alertas cercanas/superficiales: "
-        f"{resumen['alertas_cercanas_superficiales']}"
+        f"    Sismos dentro del radio: "
+        f"{resumen['sismos_dentro_radio']}"
     )
 
     print(
-        f"    Total de alertas: "
+        f"    Total de alertas especiales: "
         f"{resumen['total_alertas']}"
     )
 
@@ -1071,7 +1081,7 @@ def realizar_consulta():
     )
 
     print(
-        f"    Nuevas alertas: "
+        f"    Nuevas alertas especiales: "
         f"{nuevas_alertas}"
     )
 
