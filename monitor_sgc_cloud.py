@@ -1,4 +1,4 @@
-﻿import requests
+import requests
 import json
 import os
 import math
@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 
 # ============================================================
-# CONFIGURACIÓN
+# CONFIGURACI�N
 # ============================================================
 
 URL_SGC = (
@@ -33,7 +33,7 @@ TELEGRAM_CHAT_ID = os.getenv(
 
 
 # ============================================================
-# BOGOTÁ
+# BOGOT�
 # ============================================================
 
 LAT_BOGOTA = 4.7110
@@ -166,7 +166,7 @@ def cargar_eventos_registrados():
     except Exception as error:
 
         print(
-            f"⚠️ Error leyendo {ARCHIVO_EVENTOS}: {error}"
+            f"?? Error leyendo {ARCHIVO_EVENTOS}: {error}"
         )
 
         return {}
@@ -272,7 +272,7 @@ def limpiar_eventos_antiguos(
             ] = evento
 
     print(
-        f"    Eventos eliminados por antigüedad: "
+        f"    Eventos eliminados por antig�edad: "
         f"{eliminados}"
     )
 
@@ -301,7 +301,7 @@ def obtener_eventos():
 
 
 # ============================================================
-# CALCULAR DISTANCIA A BOGOTÁ
+# CALCULAR DISTANCIA A BOGOT�
 # ============================================================
 
 def calcular_distancia_km(
@@ -375,7 +375,7 @@ def enviar_alerta_telegram(
     if not TELEGRAM_BOT_TOKEN:
 
         print(
-            "⚠️ TELEGRAM_BOT_TOKEN no está configurado."
+            "?? TELEGRAM_BOT_TOKEN no est� configurado."
         )
 
         return False
@@ -383,7 +383,7 @@ def enviar_alerta_telegram(
     if not TELEGRAM_CHAT_ID:
 
         print(
-            "⚠️ TELEGRAM_CHAT_ID no está configurado."
+            "?? TELEGRAM_CHAT_ID no est� configurado."
         )
 
         return False
@@ -424,22 +424,22 @@ def enviar_alerta_telegram(
     ) or "No informado"
 
     mensaje = (
-        "📡 <b>MONITOR SÍSMICO SGC</b>\n"
+        "\U0001F4E1 <b>MONITOR SÍSMICO SGC</b>\n"
         "\n"
         f"<b>Magnitud:</b> {resultado['magnitud']}\n"
         f"<b>Profundidad:</b> {resultado['profundidad']} km\n"
-        f"<b>Distancia a Bogotá:</b> "
-        f"{resultado['distancia_bogota']} km\n"
+        f"<b>Distancia a Bogotá:</b> {resultado['distancia_bogota']} km\n"
         f"<b>Ubicación:</b> {lugar}\n"
         f"<b>Categoría:</b> {categoria}\n"
-        f"<b>Alerta especial:</b> "
-        f"{tipo_alerta or 'Ninguna'}\n"
+        f"<b>Alerta especial:</b> {tipo_alerta or 'Ninguna'}\n"
         f"<b>Hora local:</b> {fecha_local}\n"
         f"<b>ID SGC:</b> {resultado['id']}\n"
         f"<b>Agencia:</b> {agencia}\n"
         f"<b>Tipo de magnitud:</b> {tipo_magnitud}\n"
         "\n"
-        "Fuente: Servicio Geológico Colombiano"
+        "Fuente: Servicio Geológico Colombiano\n"
+        "\n"
+        "\U0001F310 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico</a>"
     )
 
     datos = {
@@ -463,13 +463,13 @@ def enviar_alerta_telegram(
         if resultado_telegram.get("ok"):
 
             print(
-                "    📱 Evento enviado correctamente por Telegram."
+                "    ?? Evento enviado correctamente por Telegram."
             )
 
             return True
 
         print(
-            "⚠️ Telegram respondió con error:"
+            "?? Telegram respondi� con error:"
         )
 
         print(
@@ -481,7 +481,7 @@ def enviar_alerta_telegram(
     except Exception as error:
 
         print(
-            f"⚠️ Error enviando evento por Telegram: {error}"
+            f"?? Error enviando evento por Telegram: {error}"
         )
 
         return False
@@ -575,7 +575,7 @@ def analizar_evento(
             return None
 
         # ----------------------------------------------------
-        # DISTANCIA A BOGOTÁ
+        # DISTANCIA A BOGOT�
         # ----------------------------------------------------
 
         distancia = calcular_distancia_km(
@@ -654,7 +654,7 @@ def analizar_evento(
             )
 
         # ====================================================
-        # CATEGORÍA GENERAL
+        # CATEGOR�A GENERAL
         # ====================================================
 
         if cumple_profundo:
@@ -816,7 +816,7 @@ def generar_resumen(
 
 
 # ============================================================
-# CONSULTA ÚNICA
+# CONSULTA �NICA
 # ============================================================
 
 def realizar_consulta():
@@ -852,7 +852,7 @@ def realizar_consulta():
     except Exception as error:
 
         print(
-            f"❌ Error consultando SGC: {error}"
+            f"? Error consultando SGC: {error}"
         )
 
         return 1
@@ -875,7 +875,7 @@ def realizar_consulta():
     )
 
     # ========================================================
-    # LIMPIAR EVENTOS DE MÁS DE 30 DÍAS
+    # LIMPIAR EVENTOS DE M�S DE 30 D�AS
     # ========================================================
 
     eventos_registrados = (
@@ -942,7 +942,7 @@ def realizar_consulta():
         print()
 
         print(
-            "📡 NUEVO SISMO DENTRO DE 200 KM"
+            "?? NUEVO SISMO DENTRO DE 200 KM"
         )
 
         print(
@@ -971,7 +971,7 @@ def realizar_consulta():
         )
 
         print(
-            f"    Categoría:   "
+            f"    Categor�a:   "
             f"{resultado['categoria']}"
         )
 
@@ -1020,7 +1020,7 @@ def realizar_consulta():
         print()
 
         print(
-            "    💾 Se actualizó eventos_detectados.json"
+            "    ?? Se actualiz� eventos_detectados.json"
         )
 
     else:
@@ -1028,11 +1028,11 @@ def realizar_consulta():
         print()
 
         print(
-            "    ℹ️ No hubo cambios en los eventos registrados."
+            "    ?? No hubo cambios en los eventos registrados."
         )
 
         print(
-            "    ℹ️ No se modificó eventos_detectados.json."
+            "    ?? No se modific� eventos_detectados.json."
         )
 
     # ========================================================
@@ -1099,7 +1099,7 @@ def realizar_consulta():
 
 
 # ============================================================
-# EJECUCIÓN
+# EJECUCI�N
 # ============================================================
 
 if __name__ == "__main__":
