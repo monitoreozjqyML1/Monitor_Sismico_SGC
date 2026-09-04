@@ -253,15 +253,15 @@ def analizar_evento(evento):
     # --------------------------------------------------------
     # IMPORTANTE:
     #
-    # GeoJSON del SGC:
+    # FEED DEL SGC:
     #
-    # [LONGITUD, LATITUD, PROFUNDIDAD]
+    # [LATITUD, LONGITUD, PROFUNDIDAD]
     # --------------------------------------------------------
 
     try:
 
-        lon = float(coordenadas[0])
-        lat = float(coordenadas[1])
+        lat = float(coordenadas[0])
+        lon = float(coordenadas[1])
         profundidad = float(coordenadas[2])
 
     except (TypeError, ValueError):
