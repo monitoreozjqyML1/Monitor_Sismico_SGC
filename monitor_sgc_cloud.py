@@ -424,7 +424,7 @@ def enviar_alerta_telegram(
     ) or "No informado"
 
     mensaje = (
-        "\U0001F4E1 <b>MONITOR SÍSMICO SGC</b>\n"
+        "\U0001F4E1 <b>MONITOR SÍSMICO SGC - ML1</b>\n"
         "\n"
         f"<b>Magnitud:</b> {resultado['magnitud']}\n"
         f"<b>Profundidad:</b> {resultado['profundidad']} km\n"
@@ -439,7 +439,7 @@ def enviar_alerta_telegram(
         "\n"
         "Fuente: Servicio Geológico Colombiano\n"
         "\n"
-        "\U0001F310 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico</a>"
+        "\U0001F310 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico SGC - ML1</a>"
     )
 
     datos = {
