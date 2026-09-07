@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-07 16:55:14",
+    "actualizado": "2026-09-07 18:10:16",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 552,
+        "total_eventos": 554,
         "eventos_mayor_igual_4": 13,
         "total_candidatos_acelerograficos": 13,
         "total_alertas": 13,
-        "porcentaje_alertas": 2.36
+        "porcentaje_alertas": 2.35
     },
     "eventos": {
         "SGC2026rijgnt": {
@@ -12282,6 +12282,52 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-07 16:55:14"
+        },
+        "SGC2026rqlctj": {
+            "id": "SGC2026rqlctj",
+            "magnitud": 1.6,
+            "profundidad": 153.0,
+            "latitud": 6.8065,
+            "longitud": -73.02766666666666,
+            "distancia_bogota": 260.08,
+            "lugar": "Los Santos - Santander, Colombia",
+            "fecha_local": "2026-09-07 12:44",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_3",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-07 18:10:16"
+        },
+        "SGC2026rpbnnb": {
+            "id": "SGC2026rpbnnb",
+            "magnitud": 1.8,
+            "profundidad": 27.0,
+            "latitud": 7.131666666666667,
+            "longitud": -77.07466666666667,
+            "distancia_bogota": 427.45,
+            "lugar": "Carmen del Darién  (Curbaradó) - Chocó, Colombia",
+            "fecha_local": "2026-09-06 18:51",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-07 18:10:16"
         }
     }
 }
