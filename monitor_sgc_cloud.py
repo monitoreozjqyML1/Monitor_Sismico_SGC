@@ -3,6 +3,7 @@ import json
 import os
 import math
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 
 # ============================================================
@@ -38,33 +39,17 @@ TELEGRAM_CHAT_ID = os.getenv(
 
 LAT_BOGOTA = 4.7110
 LON_BOGOTA = -74.0721
+ZONA_HORARIA = ZoneInfo("America/Bogota")
 
 
 # ============================================================
-# RADIO GENERAL DE SEGUIMIENTO
+# CRITERIO PRINCIPAL DE MAGNITUD
 # ============================================================
+# La distancia y la profundidad NO son filtros de alerta.
+# Todo evento SGC se registra y la distancia a Bogotá se conserva
+# únicamente como dato informativo.
 
-DISTANCIA_REGISTRO = 200.0
-
-
-# ============================================================
-# CRITERIO - SISMO PROFUNDO
-# ============================================================
-
-MAGNITUD_PROFUNDO = 5.0
-DISTANCIA_PROFUNDO = 200.0
-PROFUNDIDAD_MIN_PROFUNDO = 80.0
-PROFUNDIDAD_MAX_PROFUNDO = 125.0
-
-
-# ============================================================
-# CRITERIO - SISMO CERCANO Y SUPERFICIAL
-# ============================================================
-
-MAGNITUD_CERCANO = 4.0
-DISTANCIA_CERCANO = 100.0
-PROFUNDIDAD_MIN_CERCANO = 0.0
-PROFUNDIDAD_MAX_CERCANO = 80.0
+MAGNITUD_CANDIDATO_ACELEROGRAFICO = 4.0
 
 
 # ============================================================
@@ -185,7 +170,7 @@ def guardar_eventos_registrados(
 
     datos = {
 
-        "actualizado": datetime.now().strftime(
+        "actualizado": datetime.now(ZONA_HORARIA).strftime(
             "%Y-%m-%d %H:%M:%S"
         ),
 
@@ -220,7 +205,7 @@ def limpiar_eventos_antiguos(
 ):
 
     limite = (
-        datetime.now()
+        datetime.now(ZONA_HORARIA)
         -
         timedelta(
             days=DIAS_RETENCION
@@ -253,7 +238,7 @@ def limpiar_eventos_antiguos(
             fecha_evento = datetime.strptime(
                 fecha_texto,
                 "%Y-%m-%d %H:%M:%S"
-            )
+            ).replace(tzinfo=ZONA_HORARIA)
 
             if fecha_evento >= limite:
 
@@ -399,13 +384,15 @@ def enviar_alerta_telegram(
         []
     )
 
+    # Los eventos normales se registran sin enviar Telegram.
+    # Esto evita saturar el canal mientras la alerta estructural
+    # basada en PGA queda pendiente de integración.
+    if not alertas:
+        return False
+
     tipo_alerta = ", ".join(
         alertas
     )
-
-    categoria = resultado.get(
-        "categoria"
-    ) or "No clasificado"
 
     lugar = resultado.get(
         "lugar"
@@ -415,31 +402,18 @@ def enviar_alerta_telegram(
         "fecha_local"
     ) or "No informada"
 
-    agencia = resultado.get(
-        "agencia"
-    ) or "No informada"
-
-    tipo_magnitud = resultado.get(
-        "tipo_magnitud"
-    ) or "No informado"
-
     mensaje = (
-        "\U0001F4E1 <b>MONITOR SÍSMICO SGC - ML1</b>\n"
+        "🚨 <b>MONITOR SÍSMICO SGC - ML1</b>\n"
         "\n"
+        f"<b>Alerta:</b> {tipo_alerta}\n"
         f"<b>Magnitud:</b> {resultado['magnitud']}\n"
         f"<b>Profundidad:</b> {resultado['profundidad']} km\n"
         f"<b>Distancia a Bogotá:</b> {resultado['distancia_bogota']} km\n"
         f"<b>Ubicación:</b> {lugar}\n"
-        f"<b>Categoría:</b> {categoria}\n"
-        f"<b>Alerta especial:</b> {tipo_alerta or 'Ninguna'}\n"
         f"<b>Hora local:</b> {fecha_local}\n"
-        f"<b>ID SGC:</b> {resultado['id']}\n"
-        f"<b>Agencia:</b> {agencia}\n"
-        f"<b>Tipo de magnitud:</b> {tipo_magnitud}\n"
         "\n"
         "Fuente: Servicio Geológico Colombiano\n"
-        "\n"
-        "\U0001F310 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico SGC - ML1</a>"
+        "🌐 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico SGC - ML1</a>"
     )
 
     datos = {
@@ -518,15 +492,15 @@ def analizar_evento(
         # ----------------------------------------------------
         # COORDENADAS DEL FEED SGC
         #
-        # GeoJSON utiliza:
-        # [longitud, latitud, profundidad]
+        # El feed actual del SGC publica:
+        # [latitud, longitud, profundidad]
         # ----------------------------------------------------
 
-        lon = float(
+        lat = float(
             coordenadas[0]
         )
 
-        lat = float(
+        lon = float(
             coordenadas[1]
         )
 
@@ -575,101 +549,40 @@ def analizar_evento(
             return None
 
         # ----------------------------------------------------
-        # DISTANCIA A BOGOT�
+        # DISTANCIA A BOGOTÁ (INFORMATIVA)
         # ----------------------------------------------------
+        # La distancia se calcula y se conserva como información
+        # del evento, pero NO interviene en la decisión de alerta.
 
         distancia = calcular_distancia_km(
             lat,
             lon
         )
 
-        # ----------------------------------------------------
-        # FILTRO GENERAL
-        # ----------------------------------------------------
-
-        if distancia > DISTANCIA_REGISTRO:
-
-            return None
-
         # ====================================================
-        # EVALUAR ALERTAS ESPECIALES
+        # CRITERIO ÚNICO ACTUAL: MAGNITUD
         # ====================================================
+
+        candidato_acelerografico = (
+            magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO
+        )
 
         alertas = []
 
-        # ----------------------------------------------------
-        # CRITERIO 1 - SISMO PROFUNDO
-        # ----------------------------------------------------
-
-        cumple_profundo = (
-
-            magnitud >= MAGNITUD_PROFUNDO
-
-            and
-
-            distancia <= DISTANCIA_PROFUNDO
-
-            and
-
-            profundidad >= PROFUNDIDAD_MIN_PROFUNDO
-
-            and
-
-            profundidad <= PROFUNDIDAD_MAX_PROFUNDO
-
-        )
-
-        if cumple_profundo:
+        if candidato_acelerografico:
 
             alertas.append(
-                "SISMO PROFUNDO"
+                f"SISMO M >= {MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f}"
             )
 
-        # ----------------------------------------------------
-        # CRITERIO 2 - SISMO CERCANO Y SUPERFICIAL
-        # ----------------------------------------------------
-
-        cumple_cercano = (
-
-            magnitud >= MAGNITUD_CERCANO
-
-            and
-
-            distancia <= DISTANCIA_CERCANO
-
-            and
-
-            profundidad >= PROFUNDIDAD_MIN_CERCANO
-
-            and
-
-            profundidad < PROFUNDIDAD_MAX_CERCANO
-
-        )
-
-        if cumple_cercano:
-
-            alertas.append(
-                "SISMO CERCANO Y SUPERFICIAL"
+        if candidato_acelerografico:
+            categoria = (
+                "SISMO CANDIDATO ACELEROGRÁFICO "
+                f"(M >= {MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f})"
             )
-
-        # ====================================================
-        # CATEGOR�A GENERAL
-        # ====================================================
-
-        if cumple_profundo:
-
-            categoria = "SISMO PROFUNDO"
-
-        elif cumple_cercano:
-
-            categoria = "SISMO CERCANO Y SUPERFICIAL"
-
         else:
+            categoria = "SISMO SIN CRITERIO DE MAGNITUD"
 
-            categoria = "SISMO DENTRO DEL RADIO DE 200 KM"
-
-        # ----------------------------------------------------
         # REGISTRO
         # ----------------------------------------------------
 
@@ -708,9 +621,19 @@ def analizar_evento(
 
             "categoria": categoria,
 
+            "candidato_acelerografico": candidato_acelerografico,
+
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": None,
+                "estacion_critica": None,
+                "componente_critica": None
+            },
+
             "alertas": alertas,
 
-            "fecha_deteccion": datetime.now().strftime(
+            "fecha_deteccion": datetime.now(ZONA_HORARIA).strftime(
                 "%Y-%m-%d %H:%M:%S"
             )
 
@@ -736,89 +659,36 @@ def generar_resumen(
     eventos
 ):
 
-    total_sismos = len(
-        eventos
-    )
-
-    sismos_profundos = 0
-
-    sismos_cercanos_superficiales = 0
-
-    sismos_dentro_radio = 0
-
-    total_alertas = 0
+    total_eventos = len(eventos)
+    eventos_mayor_igual_4 = 0
+    total_candidatos_acelerograficos = 0
 
     for evento in eventos.values():
-
-        if not isinstance(
-            evento,
-            dict
-        ):
+        if not isinstance(evento, dict):
             continue
 
-        categoria = evento.get(
-            "categoria"
-        )
+        magnitud = evento.get("magnitud", 0)
 
-        alertas = evento.get(
-            "alertas",
-            []
-        )
+        if magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
+            eventos_mayor_igual_4 += 1
+            total_candidatos_acelerograficos += 1
 
-        if categoria == "SISMO PROFUNDO":
-
-            sismos_profundos += 1
-
-        elif categoria == "SISMO CERCANO Y SUPERFICIAL":
-
-            sismos_cercanos_superficiales += 1
-
-        elif categoria == "SISMO DENTRO DEL RADIO DE 200 KM":
-
-            sismos_dentro_radio += 1
-
-        if alertas:
-
-            total_alertas += 1
+    total_alertas = total_candidatos_acelerograficos
 
     porcentaje_alertas = 0.0
-
-    if total_sismos > 0:
-
+    if total_eventos > 0:
         porcentaje_alertas = round(
-            (
-                total_alertas
-                /
-                total_sismos
-            )
-            *
-            100,
+            (total_alertas / total_eventos) * 100,
             2
         )
 
     return {
-
-        "sismos_200km": total_sismos,
-
-        "sismos_profundos": sismos_profundos,
-
-        "sismos_cercanos_superficiales":
-            sismos_cercanos_superficiales,
-
-        "sismos_dentro_radio":
-            sismos_dentro_radio,
-
+        "total_eventos": total_eventos,
+        "eventos_mayor_igual_4": eventos_mayor_igual_4,
+        "total_candidatos_acelerograficos": total_candidatos_acelerograficos,
         "total_alertas": total_alertas,
-
         "porcentaje_alertas": porcentaje_alertas
-
     }
-
-
-# ============================================================
-# CONSULTA �NICA
-# ============================================================
-
 def realizar_consulta():
 
     print("=" * 70)
@@ -832,7 +702,7 @@ def realizar_consulta():
     print()
 
     print(
-        f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] "
+        f"[{datetime.now(ZONA_HORARIA).strftime('%Y-%m-%d %H:%M:%S')}] "
         "Consultando SGC..."
     )
 
@@ -888,7 +758,11 @@ def realizar_consulta():
     # CONTADORES
     # ========================================================
 
-    sismos_200km_nuevos = 0
+    eventos_nuevos = 0
+
+    nuevos_eventos_mayor_igual_4 = 0
+
+    nuevos_candidatos_acelerograficos = 0
 
     nuevas_alertas = 0
 
@@ -925,7 +799,11 @@ def realizar_consulta():
             evento_id
         ] = resultado
 
-        sismos_200km_nuevos += 1
+        eventos_nuevos += 1
+
+        if resultado["magnitud"] >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
+            nuevos_eventos_mayor_igual_4 += 1
+            nuevos_candidatos_acelerograficos += 1
 
         # ----------------------------------------------------
         # CONTAR ALERTAS ESPECIALES
@@ -942,7 +820,7 @@ def realizar_consulta():
         print()
 
         print(
-            "?? NUEVO SISMO DENTRO DE 200 KM"
+            "?? NUEVO EVENTO SGC REGISTRADO"
         )
 
         print(
@@ -966,6 +844,11 @@ def realizar_consulta():
         )
 
         print(
+            f"    Candidato acelerográfico: "
+            f"{'SÍ' if resultado.get('candidato_acelerografico') else 'NO'}"
+        )
+
+        print(
             f"    Lugar:       "
             f"{resultado['lugar']}"
         )
@@ -984,9 +867,11 @@ def realizar_consulta():
         # ENVIAR TELEGRAM
         # ----------------------------------------------------
 
-        enviar_alerta_telegram(
-            resultado
-        )
+        if resultado["alertas"]:
+
+            enviar_alerta_telegram(
+                resultado
+            )
 
     # ========================================================
     # GENERAR RESUMEN
@@ -1046,23 +931,18 @@ def realizar_consulta():
     )
 
     print(
-        f"    Sismos registrados <= 200 km: "
-        f"{resumen['sismos_200km']}"
+        f"    Total de eventos registrados: "
+        f"{resumen['total_eventos']}"
     )
 
     print(
-        f"    Sismos profundos: "
-        f"{resumen['sismos_profundos']}"
+        f"    Eventos M >= 4: "
+        f"{resumen['eventos_mayor_igual_4']}"
     )
 
     print(
-        f"    Sismos cercanos/superficiales: "
-        f"{resumen['sismos_cercanos_superficiales']}"
-    )
-
-    print(
-        f"    Sismos dentro del radio: "
-        f"{resumen['sismos_dentro_radio']}"
+        f"    Candidatos acelerográficos (M >= {MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f}): "
+        f"{resumen['total_candidatos_acelerograficos']}"
     )
 
     print(
@@ -1076,8 +956,18 @@ def realizar_consulta():
     )
 
     print(
-        f"    Nuevos sismos <= 200 km: "
-        f"{sismos_200km_nuevos}"
+        f"    Nuevos eventos: "
+        f"{eventos_nuevos}"
+    )
+
+    print(
+        f"    Nuevos eventos M >= 4: "
+        f"{nuevos_eventos_mayor_igual_4}"
+    )
+
+    print(
+        f"    Nuevos candidatos acelerográficos: "
+        f"{nuevos_candidatos_acelerograficos}"
     )
 
     print(
