@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 
 
 # ============================================================
-# CONFIGURACI�N
+# CONFIGURACIÓN
 # ============================================================
 
 URL_SGC = (
@@ -34,7 +34,7 @@ TELEGRAM_CHAT_ID = os.getenv(
 
 
 # ============================================================
-# BOGOT�
+# BOGOTÁ
 # ============================================================
 
 LAT_BOGOTA = 4.7110
@@ -45,9 +45,14 @@ ZONA_HORARIA = ZoneInfo("America/Bogota")
 # ============================================================
 # CRITERIO PRINCIPAL DE MAGNITUD
 # ============================================================
+# Solo los eventos ubicados en Colombia son de interés.
+#
+# La magnitud >= 4.0 determina si el evento es candidato
+# acelerográfico.
+#
 # La distancia y la profundidad NO son filtros de alerta.
-# Todo evento SGC se registra y la distancia a Bogotá se conserva
-# únicamente como dato informativo.
+# La distancia a Bogotá se conserva únicamente como dato
+# informativo.
 
 MAGNITUD_CANDIDATO_ACELEROGRAFICO = 4.0
 
@@ -151,7 +156,7 @@ def cargar_eventos_registrados():
     except Exception as error:
 
         print(
-            f"?? Error leyendo {ARCHIVO_EVENTOS}: {error}"
+            f"⚠️ Error leyendo {ARCHIVO_EVENTOS}: {error}"
         )
 
         return {}
@@ -257,7 +262,7 @@ def limpiar_eventos_antiguos(
             ] = evento
 
     print(
-        f"    Eventos eliminados por antig�edad: "
+        f"    Eventos eliminados por antigüedad: "
         f"{eliminados}"
     )
 
@@ -286,7 +291,7 @@ def obtener_eventos():
 
 
 # ============================================================
-# CALCULAR DISTANCIA A BOGOT�
+# CALCULAR DISTANCIA A BOGOTÁ
 # ============================================================
 
 def calcular_distancia_km(
@@ -350,6 +355,22 @@ def calcular_distancia_km(
 
 
 # ============================================================
+# VERIFICAR SI EL EVENTO ES DE COLOMBIA
+# ============================================================
+
+def es_evento_colombia(
+    lugar
+):
+
+    if not isinstance(lugar, str):
+        return False
+
+    return lugar.strip().lower().endswith(
+        ", colombia"
+    )
+
+
+# ============================================================
 # ENVIAR EVENTO POR TELEGRAM
 # ============================================================
 
@@ -360,7 +381,7 @@ def enviar_alerta_telegram(
     if not TELEGRAM_BOT_TOKEN:
 
         print(
-            "?? TELEGRAM_BOT_TOKEN no est� configurado."
+            "⚠️ TELEGRAM_BOT_TOKEN no está configurado."
         )
 
         return False
@@ -368,7 +389,7 @@ def enviar_alerta_telegram(
     if not TELEGRAM_CHAT_ID:
 
         print(
-            "?? TELEGRAM_CHAT_ID no est� configurado."
+            "⚠️ TELEGRAM_CHAT_ID no está configurado."
         )
 
         return False
@@ -385,8 +406,8 @@ def enviar_alerta_telegram(
     )
 
     # Los eventos normales se registran sin enviar Telegram.
-    # Esto evita saturar el canal mientras la alerta estructural
-    # basada en PGA queda pendiente de integración.
+    # Solo los eventos M >= 4.0 generan el mensaje actual.
+
     if not alertas:
         return False
 
@@ -437,13 +458,13 @@ def enviar_alerta_telegram(
         if resultado_telegram.get("ok"):
 
             print(
-                "    ?? Evento enviado correctamente por Telegram."
+                "    📲 Evento enviado correctamente por Telegram."
             )
 
             return True
 
         print(
-            "?? Telegram respondi� con error:"
+            "⚠️ Telegram respondió con error:"
         )
 
         print(
@@ -455,7 +476,7 @@ def enviar_alerta_telegram(
     except Exception as error:
 
         print(
-            f"?? Error enviando evento por Telegram: {error}"
+            f"⚠️ Error enviando evento por Telegram: {error}"
         )
 
         return False
@@ -475,6 +496,22 @@ def analizar_evento(
             "properties",
             {}
         )
+
+        lugar = propiedades.get(
+            "place"
+        )
+
+        # ----------------------------------------------------
+        # FILTRO TERRITORIAL: SOLO COLOMBIA
+        # ----------------------------------------------------
+        # No se utiliza distancia ni profundidad para filtrar.
+        # Solo se procesan eventos que el SGC identifica
+        # como ubicados en Colombia.
+
+        if not es_evento_colombia(
+            lugar
+        ):
+            return None
 
         geometria = evento.get(
             "geometry",
@@ -549,10 +586,8 @@ def analizar_evento(
             return None
 
         # ----------------------------------------------------
-        # DISTANCIA A BOGOTÁ (INFORMATIVA)
+        # DISTANCIA A BOGOTÁ - INFORMATIVA
         # ----------------------------------------------------
-        # La distancia se calcula y se conserva como información
-        # del evento, pero NO interviene en la decisión de alerta.
 
         distancia = calcular_distancia_km(
             lat,
@@ -576,15 +611,21 @@ def analizar_evento(
             )
 
         if candidato_acelerografico:
+
             categoria = (
                 "SISMO CANDIDATO ACELEROGRÁFICO "
                 f"(M >= {MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f})"
             )
-        else:
-            categoria = "SISMO SIN CRITERIO DE MAGNITUD"
 
+        else:
+
+            categoria = (
+                "SISMO SIN CRITERIO DE MAGNITUD"
+            )
+
+        # ====================================================
         # REGISTRO
-        # ----------------------------------------------------
+        # ====================================================
 
         registro = {
 
@@ -603,9 +644,7 @@ def analizar_evento(
                 2
             ),
 
-            "lugar": propiedades.get(
-                "place"
-            ),
+            "lugar": lugar,
 
             "fecha_local": propiedades.get(
                 "localTime"
@@ -624,16 +663,24 @@ def analizar_evento(
             "candidato_acelerografico": candidato_acelerografico,
 
             "acelerografia_bogota": {
+
                 "estado": "PENDIENTE",
+
                 "estaciones": [],
+
                 "pga_maximo_cm_s2": None,
+
                 "estacion_critica": None,
+
                 "componente_critica": None
+
             },
 
             "alertas": alertas,
 
-            "fecha_deteccion": datetime.now(ZONA_HORARIA).strftime(
+            "fecha_deteccion": datetime.now(
+                ZONA_HORARIA
+            ).strftime(
                 "%Y-%m-%d %H:%M:%S"
             )
 
@@ -659,45 +706,92 @@ def generar_resumen(
     eventos
 ):
 
-    total_eventos = len(eventos)
+    total_eventos = len(
+        eventos
+    )
+
     eventos_mayor_igual_4 = 0
+
     total_candidatos_acelerograficos = 0
 
     for evento in eventos.values():
-        if not isinstance(evento, dict):
+
+        if not isinstance(
+            evento,
+            dict
+        ):
             continue
 
-        magnitud = evento.get("magnitud", 0)
+        magnitud = evento.get(
+            "magnitud",
+            0
+        )
 
-        if magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
+        if (
+            magnitud
+            >=
+            MAGNITUD_CANDIDATO_ACELEROGRAFICO
+        ):
+
             eventos_mayor_igual_4 += 1
+
             total_candidatos_acelerograficos += 1
 
-    total_alertas = total_candidatos_acelerograficos
+    total_alertas = (
+        total_candidatos_acelerograficos
+    )
 
     porcentaje_alertas = 0.0
+
     if total_eventos > 0:
+
         porcentaje_alertas = round(
-            (total_alertas / total_eventos) * 100,
+            (
+                total_alertas
+                /
+                total_eventos
+            )
+            *
+            100,
             2
         )
 
     return {
+
         "total_eventos": total_eventos,
-        "eventos_mayor_igual_4": eventos_mayor_igual_4,
-        "total_candidatos_acelerograficos": total_candidatos_acelerograficos,
-        "total_alertas": total_alertas,
-        "porcentaje_alertas": porcentaje_alertas
+
+        "eventos_mayor_igual_4":
+            eventos_mayor_igual_4,
+
+        "total_candidatos_acelerograficos":
+            total_candidatos_acelerograficos,
+
+        "total_alertas":
+            total_alertas,
+
+        "porcentaje_alertas":
+            porcentaje_alertas
+
     }
+
+
+# ============================================================
+# REALIZAR CONSULTA
+# ============================================================
+
 def realizar_consulta():
 
-    print("=" * 70)
-
     print(
-        "       MONITOR SISMICO SGC - GITHUB ACTIONS"
+        "=" * 70
     )
 
-    print("=" * 70)
+    print(
+        "       MONITOR SÍSMICO SGC - GITHUB ACTIONS"
+    )
+
+    print(
+        "=" * 70
+    )
 
     print()
 
@@ -722,7 +816,7 @@ def realizar_consulta():
     except Exception as error:
 
         print(
-            f"? Error consultando SGC: {error}"
+            f"❌ Error consultando SGC: {error}"
         )
 
         return 1
@@ -745,7 +839,7 @@ def realizar_consulta():
     )
 
     # ========================================================
-    # LIMPIAR EVENTOS DE M�S DE 30 D�AS
+    # LIMPIAR EVENTOS DE MÁS DE 30 DÍAS
     # ========================================================
 
     eventos_registrados = (
@@ -801,8 +895,14 @@ def realizar_consulta():
 
         eventos_nuevos += 1
 
-        if resultado["magnitud"] >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
+        if (
+            resultado["magnitud"]
+            >=
+            MAGNITUD_CANDIDATO_ACELEROGRAFICO
+        ):
+
             nuevos_eventos_mayor_igual_4 += 1
+
             nuevos_candidatos_acelerograficos += 1
 
         # ----------------------------------------------------
@@ -820,7 +920,7 @@ def realizar_consulta():
         print()
 
         print(
-            "?? NUEVO EVENTO SGC REGISTRADO"
+            "📍 NUEVO EVENTO SGC REGISTRADO"
         )
 
         print(
@@ -854,7 +954,7 @@ def realizar_consulta():
         )
 
         print(
-            f"    Categor�a:   "
+            f"    Categoría:   "
             f"{resultado['categoria']}"
         )
 
@@ -905,7 +1005,7 @@ def realizar_consulta():
         print()
 
         print(
-            "    ?? Se actualiz� eventos_detectados.json"
+            "💾 Se actualizó eventos_detectados.json"
         )
 
     else:
@@ -913,11 +1013,11 @@ def realizar_consulta():
         print()
 
         print(
-            "    ?? No hubo cambios en los eventos registrados."
+            "ℹ️ No hubo cambios en los eventos registrados."
         )
 
         print(
-            "    ?? No se modific� eventos_detectados.json."
+            "ℹ️ No se modificó eventos_detectados.json."
         )
 
     # ========================================================
@@ -941,7 +1041,8 @@ def realizar_consulta():
     )
 
     print(
-        f"    Candidatos acelerográficos (M >= {MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f}): "
+        f"    Candidatos acelerográficos (M >= "
+        f"{MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f}): "
         f"{resumen['total_candidatos_acelerograficos']}"
     )
 
@@ -989,7 +1090,7 @@ def realizar_consulta():
 
 
 # ============================================================
-# EJECUCI�N
+# EJECUCIÓN
 # ============================================================
 
 if __name__ == "__main__":
