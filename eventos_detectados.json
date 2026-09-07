@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-07 16:45:14",
+    "actualizado": "2026-09-07 16:50:17",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 550,
+        "total_eventos": 551,
         "eventos_mayor_igual_4": 13,
         "total_candidatos_acelerograficos": 13,
         "total_alertas": 13,
@@ -12236,6 +12236,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-07 16:45:14"
+        },
+        "SGC2026rqfpgp": {
+            "id": "SGC2026rqfpgp",
+            "magnitud": 1.5,
+            "profundidad": 130.0,
+            "latitud": 6.878666666666667,
+            "longitud": -73.17366666666666,
+            "distancia_bogota": 260.72,
+            "lugar": "Zapatoca - Santander, Colombia",
+            "fecha_local": "2026-09-07 09:58",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_3",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-07 16:50:17"
         }
     }
 }
