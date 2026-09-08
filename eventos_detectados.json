@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 16:50:17",
+    "actualizado": "2026-09-08 17:05:18",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 599,
+        "total_eventos": 600,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -13345,6 +13345,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 16:50:17"
+        },
+        "SGC2026rskflv": {
+            "id": "SGC2026rskflv",
+            "magnitud": 0.7,
+            "profundidad": 3.0,
+            "latitud": 5.29550196682646,
+            "longitud": -75.76622329624014,
+            "distancia_bogota": 198.6,
+            "lugar": "Guática - Risaralda, Colombia",
+            "fecha_local": "2026-09-08 14:26",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 17:05:18"
         }
     }
 }
