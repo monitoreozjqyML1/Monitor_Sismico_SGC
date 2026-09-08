@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 09:45:18",
+    "actualizado": "2026-09-08 10:00:15",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 558,
+        "total_eventos": 559,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -12402,6 +12402,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 09:45:18"
+        },
+        "SGC2026rrkdik": {
+            "id": "SGC2026rrkdik",
+            "magnitud": 2.2,
+            "profundidad": 142.0,
+            "latitud": 6.821333333333333,
+            "longitud": -73.139,
+            "distancia_bogota": 256.36,
+            "lugar": "Los Santos - Santander, Colombia",
+            "fecha_local": "2026-09-08 01:19",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_3",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 10:00:15"
         }
     }
 }
