@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 12:45:18",
+    "actualizado": "2026-09-08 12:50:17",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 577,
+        "total_eventos": 579,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -12839,6 +12839,52 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 12:45:18"
+        },
+        "SGC2026rsgujx": {
+            "id": "SGC2026rsgujx",
+            "magnitud": 2.4,
+            "profundidad": 113.0,
+            "latitud": 6.808569431304932,
+            "longitud": -73.16613006591797,
+            "distancia_bogota": 253.86,
+            "lugar": "Los Santos - Santander, Colombia",
+            "fecha_local": "2026-09-08 12:43",
+            "agencia": "SGC",
+            "tipo_magnitud": "M",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 12:50:17"
+        },
+        "SGC2026rrpgjb": {
+            "id": "SGC2026rrpgjb",
+            "magnitud": 1.2,
+            "profundidad": 87.0,
+            "latitud": 4.750833333333333,
+            "longitud": -76.5895,
+            "distancia_bogota": 279.0,
+            "lugar": "Nóvita - Chocó, Colombia",
+            "fecha_local": "2026-09-08 03:54",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 12:50:17"
         }
     }
 }
