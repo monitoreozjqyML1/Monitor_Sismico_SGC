@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 10:30:19",
+    "actualizado": "2026-09-08 10:35:13",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 564,
+        "total_eventos": 565,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -12540,6 +12540,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 10:30:19"
+        },
+        "SGC2026rrlcop": {
+            "id": "SGC2026rrlcop",
+            "magnitud": 2.5,
+            "profundidad": 123.0,
+            "latitud": 6.577166666666667,
+            "longitud": -73.3225,
+            "distancia_bogota": 223.47,
+            "lugar": "Hato - Santander, Colombia",
+            "fecha_local": "2026-09-08 01:49",
+            "agencia": "SGC",
+            "tipo_magnitud": "M",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 10:35:13"
         }
     }
 }
