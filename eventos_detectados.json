@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 12:50:17",
+    "actualizado": "2026-09-08 12:55:19",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 579,
+        "total_eventos": 580,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -12885,6 +12885,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 12:50:17"
+        },
+        "SGC2026rrphas": {
+            "id": "SGC2026rrphas",
+            "magnitud": 1.3,
+            "profundidad": 51.0,
+            "latitud": 5.731731096588814,
+            "longitud": -76.1788163647364,
+            "distancia_bogota": 259.43,
+            "lugar": "El Carmen - Chocó, Colombia",
+            "fecha_local": "2026-09-08 03:54",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 12:55:19"
         }
     }
 }
