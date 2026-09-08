@@ -1,4 +1,4 @@
-import requests
+﻿import requests
 import json
 import os
 import math
@@ -175,7 +175,9 @@ def guardar_eventos_registrados(
 
     datos = {
 
-        "actualizado": datetime.now(ZONA_HORARIA).strftime(
+        "actualizado": datetime.now(
+            ZONA_HORARIA
+        ).strftime(
             "%Y-%m-%d %H:%M:%S"
         ),
 
@@ -243,7 +245,9 @@ def limpiar_eventos_antiguos(
             fecha_evento = datetime.strptime(
                 fecha_texto,
                 "%Y-%m-%d %H:%M:%S"
-            ).replace(tzinfo=ZONA_HORARIA)
+            ).replace(
+                tzinfo=ZONA_HORARIA
+            )
 
             if fecha_evento >= limite:
 
@@ -424,7 +428,7 @@ def enviar_alerta_telegram(
     ) or "No informada"
 
     mensaje = (
-        "🚨 <b>MONITOR SÍSMICO SGC - ML1</b>\n"
+        "🚨 <b>MONITOR SÍSMICO ML1</b>\n"
         "\n"
         f"<b>Alerta:</b> {tipo_alerta}\n"
         f"<b>Magnitud:</b> {resultado['magnitud']}\n"
@@ -434,7 +438,9 @@ def enviar_alerta_telegram(
         f"<b>Hora local:</b> {fecha_local}\n"
         "\n"
         "Fuente: Servicio Geológico Colombiano\n"
-        "🌐 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico SGC - ML1</a>"
+        "🌐 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico ML1</a>\n"
+        "\n"
+        "<i>Desarrollado por: ML1 - TQMD - ZJQY</i>"
     )
 
     datos = {
@@ -660,7 +666,8 @@ def analizar_evento(
 
             "categoria": categoria,
 
-            "candidato_acelerografico": candidato_acelerografico,
+            "candidato_acelerografico":
+                candidato_acelerografico,
 
             "acelerografia_bogota": {
 
@@ -1098,3 +1105,4 @@ if __name__ == "__main__":
     raise SystemExit(
         realizar_consulta()
     )
+
