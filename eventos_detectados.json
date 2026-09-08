@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 10:20:22",
+    "actualizado": "2026-09-08 10:30:19",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 561,
+        "total_eventos": 564,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -12471,6 +12471,75 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 10:20:22"
+        },
+        "SGC2026rryono": {
+            "id": "SGC2026rryono",
+            "magnitud": 1.5,
+            "profundidad": 126.0,
+            "latitud": 7.754666666666667,
+            "longitud": -73.326,
+            "distancia_bogota": 348.34,
+            "lugar": "La Esperanza - Norte de Santander, Colombia",
+            "fecha_local": "2026-09-08 08:35",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_vmm",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 10:30:19"
+        },
+        "SGC2026rrkurx": {
+            "id": "SGC2026rrkurx",
+            "magnitud": 1.5,
+            "profundidad": 17.0,
+            "latitud": 4.603666666666666,
+            "longitud": -76.8815,
+            "distancia_bogota": 311.59,
+            "lugar": "Istmina - Chocó, Colombia",
+            "fecha_local": "2026-09-08 01:39",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 10:30:19"
+        },
+        "SGC2026rrktac": {
+            "id": "SGC2026rrktac",
+            "magnitud": 1.1,
+            "profundidad": 129.0,
+            "latitud": 7.342,
+            "longitud": -73.27416666666667,
+            "distancia_bogota": 305.57,
+            "lugar": "Rionegro - Santander, Colombia",
+            "fecha_local": "2026-09-08 01:38",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_vmm",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 10:30:19"
         }
     }
 }
