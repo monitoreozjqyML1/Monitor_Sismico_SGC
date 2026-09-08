@@ -1,0 +1,29 @@
+﻿name: Prueba Telegram
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prueba-telegram:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Probar alerta Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -c "import monitor_sgc_cloud as m; e={'magnitud':4.5,'profundidad':150.0,'distancia_bogota':596.94,'lugar':'PRUEBA CONTROLADA - Colombia','fecha_local':'2026-09-08 10:30:00','alertas':['SISMO M >= 4.0']}; print('Resultado Telegram:', m.enviar_alerta_telegram(e))"
