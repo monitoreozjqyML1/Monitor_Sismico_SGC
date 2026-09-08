@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 16:00:23",
+    "actualizado": "2026-09-08 16:10:16",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 597,
+        "total_eventos": 598,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -13299,6 +13299,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 16:00:23"
+        },
+        "SGC2026rshzvn": {
+            "id": "SGC2026rshzvn",
+            "magnitud": 1.5,
+            "profundidad": 13.0,
+            "latitud": 7.001818817424179,
+            "longitud": -76.2969421790812,
+            "distancia_bogota": 354.18,
+            "lugar": "Dabeiba - Antioquia, Colombia",
+            "fecha_local": "2026-09-08 13:19",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 16:10:16"
         }
     }
 }
