@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 17:55:15",
+    "actualizado": "2026-09-08 18:00:15",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 606,
+        "total_eventos": 608,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -13506,6 +13506,52 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 17:55:15"
+        },
+        "SGC2026rsmssl": {
+            "id": "SGC2026rsmssl",
+            "magnitud": 1.1,
+            "profundidad": 20.0,
+            "latitud": 2.4505,
+            "longitud": -75.46416666666667,
+            "distancia_bogota": 295.03,
+            "lugar": "Gigante - Huila, Colombia",
+            "fecha_local": "2026-09-08 15:42",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 18:00:15"
+        },
+        "SGC2026rsamug": {
+            "id": "SGC2026rsamug",
+            "magnitud": 1.6,
+            "profundidad": 151.0,
+            "latitud": 7.588166666666667,
+            "longitud": -73.01316666666666,
+            "distancia_bogota": 340.67,
+            "lugar": "Suratá - Santander, Colombia",
+            "fecha_local": "2026-09-08 09:33",
+            "agencia": "SGC",
+            "tipo_magnitud": "M",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 18:00:15"
         }
     }
 }
