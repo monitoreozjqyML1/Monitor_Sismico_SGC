@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-08 07:15:17",
+    "actualizado": "2026-09-08 07:45:15",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 591,
+        "total_eventos": 592,
         "eventos_mayor_igual_4": 14,
         "total_candidatos_acelerograficos": 14,
         "total_alertas": 14,
-        "porcentaje_alertas": 2.37
+        "porcentaje_alertas": 2.36
     },
     "eventos": {
         "SGC2026rijgnt": {
@@ -13181,6 +13181,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 07:15:17"
+        },
+        "SGC2026rrvoft": {
+            "id": "SGC2026rrvoft",
+            "magnitud": 0.9,
+            "profundidad": 13.0,
+            "latitud": 5.496960510389438,
+            "longitud": -75.54780291384249,
+            "distancia_bogota": 185.34,
+            "lugar": "Pácora - Caldas, Colombia",
+            "fecha_local": "2026-09-08 07:04",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 07:45:15"
         }
     }
 }
