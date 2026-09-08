@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-08 17:15:16",
+    "actualizado": "2026-09-08 17:20:17",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 601,
+        "total_eventos": 603,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
-        "porcentaje_alertas": 0.67
+        "porcentaje_alertas": 0.66
     },
     "eventos": {
         "SGC2026rijgnt": {
@@ -13391,6 +13391,52 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 17:15:16"
+        },
+        "SGC2026rskyze": {
+            "id": "SGC2026rskyze",
+            "magnitud": 1.7,
+            "profundidad": 98.0,
+            "latitud": 6.0335,
+            "longitud": -73.96733333333333,
+            "distancia_bogota": 147.51,
+            "lugar": "Sucre - Santander, Colombia",
+            "fecha_local": "2026-09-08 14:49",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_vmm",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 17:20:17"
+        },
+        "SGC2026rrztoh": {
+            "id": "SGC2026rrztoh",
+            "magnitud": 1.4,
+            "profundidad": 118.0,
+            "latitud": 7.693166666666666,
+            "longitud": -73.40066666666667,
+            "distancia_bogota": 339.81,
+            "lugar": "La Esperanza - Norte de Santander, Colombia",
+            "fecha_local": "2026-09-08 09:11",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_vmm",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 17:20:17"
         }
     }
 }
