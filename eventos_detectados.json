@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 15:40:15",
+    "actualizado": "2026-09-08 15:50:18",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 594,
+        "total_eventos": 595,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -13230,6 +13230,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 15:40:15"
+        },
+        "SGC2026rshiya": {
+            "id": "SGC2026rshiya",
+            "magnitud": 2.1,
+            "profundidad": 74.0,
+            "latitud": 4.929,
+            "longitud": -76.56533333333333,
+            "distancia_bogota": 277.32,
+            "lugar": "Nóvita - Chocó, Colombia",
+            "fecha_local": "2026-09-08 13:00",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 15:50:18"
         }
     }
 }
