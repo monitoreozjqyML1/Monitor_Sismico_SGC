@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 12:10:15",
+    "actualizado": "2026-09-08 12:35:23",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 574,
+        "total_eventos": 575,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -12770,6 +12770,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 12:10:15"
+        },
+        "SGC2026rrosbr": {
+            "id": "SGC2026rrosbr",
+            "magnitud": 1.0,
+            "profundidad": 29.0,
+            "latitud": 9.938,
+            "longitud": -74.0275,
+            "distancia_bogota": 581.24,
+            "lugar": "Ariguaní (El Dificil) - Magdalena, Colombia",
+            "fecha_local": "2026-09-08 03:37",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_4",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 12:35:23"
         }
     }
 }
