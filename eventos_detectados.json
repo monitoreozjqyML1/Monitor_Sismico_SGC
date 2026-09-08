@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 13:50:18",
+    "actualizado": "2026-09-08 13:55:17",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 584,
+        "total_eventos": 585,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -13000,6 +13000,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 13:50:18"
+        },
+        "SGC2026rrqeun": {
+            "id": "SGC2026rrqeun",
+            "magnitud": 1.9,
+            "profundidad": 74.0,
+            "latitud": 5.295166666666667,
+            "longitud": -77.15766666666667,
+            "distancia_bogota": 347.91,
+            "lugar": "Bajo Baudó (Pizarro) - Chocó, Colombia",
+            "fecha_local": "2026-09-08 04:22",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 13:55:17"
         }
     }
 }
