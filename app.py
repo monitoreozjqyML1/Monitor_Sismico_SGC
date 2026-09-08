@@ -5,9 +5,7 @@ import json
 import os
 from datetime import datetime
 
-
 app = Flask(__name__)
-
 
 # ============================================================
 # CONFIGURACIÓN SGC
@@ -23,24 +21,15 @@ LON_BOGOTA = -74.0721
 
 ARCHIVO_EVENTOS = "eventos_detectados.json"
 
-
 # ============================================================
-# CRITERIO 1 - SISMO PROFUNDO
+# CRITERIO ACTUAL
 # ============================================================
-
-MAG_PROFUNDO = 5.0
-RADIO_PROFUNDO = 200.0
-PROF_MIN_PROFUNDO = 100.0
-PROF_MAX_PROFUNDO = 125.0
-
-
-# ============================================================
-# CRITERIO 2 - SISMO CERCANO Y SUPERFICIAL
+# Unicamente eventos de Colombia.
+# M >= 4.0 = candidato acelerografico.
+# Distancia y profundidad son informativas.
 # ============================================================
 
-MAG_CERCANO = 4.0
-RADIO_CERCANO = 100.0
-PROF_MAX_CERCANO = 50.0
+MAGNITUD_CANDIDATO_ACELEROGRAFICO = 4.0
 
 
 # ============================================================
@@ -70,6 +59,18 @@ def distancia_km(lat1, lon1, lat2, lon2):
     )
 
     return radio_tierra * c
+
+
+# ============================================================
+# VALIDAR EVENTO DE COLOMBIA
+# ============================================================
+
+def es_evento_colombia(lugar):
+
+    if not isinstance(lugar, str):
+        return False
+
+    return lugar.strip().lower().endswith(", colombia")
 
 
 # ============================================================
@@ -109,16 +110,8 @@ def obtener_alertas_almacenadas():
 
             datos = json.load(archivo)
 
-        # ----------------------------------------------------
-        # FORMATO: LISTA
-        # ----------------------------------------------------
-
         if isinstance(datos, list):
             return datos
-
-        # ----------------------------------------------------
-        # FORMATO: DICCIONARIO
-        # ----------------------------------------------------
 
         if isinstance(datos, dict):
 
@@ -150,7 +143,7 @@ def obtener_alertas_almacenadas():
     except Exception as error:
 
         print(
-            "Error leyendo alertas almacenadas:",
+            "Error leyendo eventos almacenados:",
             error
         )
 
@@ -218,6 +211,10 @@ def normalizar_alerta_almacenada(alerta):
 
         "fecha_deteccion": alerta.get(
             "fecha_deteccion"
+        ),
+
+        "acelerografia_bogota": alerta.get(
+            "acelerografia_bogota"
         )
     }
 
@@ -232,6 +229,15 @@ def analizar_evento(evento):
         "properties",
         {}
     )
+
+    # --------------------------------------------------------
+    # FILTRO: SOLO COLOMBIA
+    # --------------------------------------------------------
+
+    lugar = propiedades.get("place")
+
+    if not es_evento_colombia(lugar):
+        return None
 
     geometria = evento.get(
         "geometry",
@@ -251,10 +257,7 @@ def analizar_evento(evento):
         return None
 
     # --------------------------------------------------------
-    # IMPORTANTE:
-    #
-    # FEED DEL SGC:
-    #
+    # FEED SGC:
     # [LATITUD, LONGITUD, PROFUNDIDAD]
     # --------------------------------------------------------
 
@@ -268,10 +271,6 @@ def analizar_evento(evento):
 
         return None
 
-    # --------------------------------------------------------
-    # VALIDAR COORDENADAS
-    # --------------------------------------------------------
-
     if not (-90 <= lat <= 90):
         return None
 
@@ -282,25 +281,24 @@ def analizar_evento(evento):
     # MAGNITUD
     # --------------------------------------------------------
 
-    magnitud_raw = propiedades.get(
-        "mag"
-    )
+    magnitud_raw = propiedades.get("mag")
 
     if magnitud_raw is None:
         return None
 
     try:
 
-        magnitud = float(
-            magnitud_raw
-        )
+        magnitud = float(magnitud_raw)
 
     except (TypeError, ValueError):
 
         return None
 
     # --------------------------------------------------------
-    # DISTANCIA A BOGOTÁ
+    # DISTANCIA A BOGOTA
+    # --------------------------------------------------------
+    # SOLO INFORMACION.
+    # NO ES CRITERIO DE ALERTA.
     # --------------------------------------------------------
 
     distancia = distancia_km(
@@ -311,70 +309,26 @@ def analizar_evento(evento):
     )
 
     # ========================================================
-    # ALERTAS ESPECIALES
+    # CANDIDATO ACELEROGRAFICO
     # ========================================================
 
     alertas = []
 
-    # --------------------------------------------------------
-    # SISMO PROFUNDO
-    # --------------------------------------------------------
-
-    if (
-        magnitud >= MAG_PROFUNDO
-        and distancia <= RADIO_PROFUNDO
-        and profundidad >= PROF_MIN_PROFUNDO
-        and profundidad <= PROF_MAX_PROFUNDO
-    ):
+    if magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
 
         alertas.append(
-            "SISMO PROFUNDO"
+            "SISMO M >= 4.0"
         )
-
-    # --------------------------------------------------------
-    # SISMO CERCANO Y SUPERFICIAL
-    # --------------------------------------------------------
-
-    if (
-        magnitud >= MAG_CERCANO
-        and distancia <= RADIO_CERCANO
-        and profundidad <= PROF_MAX_CERCANO
-    ):
-
-        alertas.append(
-            "SISMO CERCANO Y SUPERFICIAL"
-        )
-
-    # ========================================================
-    # CATEGORÍA GENERAL
-    # ========================================================
-
-    if (
-        magnitud >= MAG_PROFUNDO
-        and distancia <= RADIO_PROFUNDO
-        and profundidad >= PROF_MIN_PROFUNDO
-        and profundidad <= PROF_MAX_PROFUNDO
-    ):
-
-        categoria = "SISMO PROFUNDO"
-
-    elif (
-        magnitud >= MAG_CERCANO
-        and distancia <= RADIO_CERCANO
-        and profundidad <= PROF_MAX_CERCANO
-    ):
-
-        categoria = "SISMO CERCANO Y SUPERFICIAL"
-
-    elif distancia <= 200:
 
         categoria = (
-            "SISMO DENTRO DEL RADIO DE 200 KM"
+            "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)"
         )
 
     else:
 
-        categoria = None
+        categoria = (
+            "SISMO SIN CRITERIO DE MAGNITUD"
+        )
 
     # ========================================================
     # DEVOLVER EVENTO
@@ -382,9 +336,7 @@ def analizar_evento(evento):
 
     return {
 
-        "id": evento.get(
-            "id"
-        ),
+        "id": evento.get("id"),
 
         "lat": lat,
 
@@ -403,9 +355,7 @@ def analizar_evento(evento):
             1
         ),
 
-        "lugar": propiedades.get(
-            "place"
-        ),
+        "lugar": lugar,
 
         "fecha_local": propiedades.get(
             "localTime"
@@ -417,12 +367,20 @@ def analizar_evento(evento):
 
         "alertas": alertas,
 
-        "categoria": categoria
+        "categoria": categoria,
+
+        "acelerografia_bogota": {
+            "estado": "PENDIENTE",
+            "estaciones": [],
+            "pga_maximo_cm_s2": None,
+            "estacion_critica": None,
+            "componente_critica": None
+        }
     }
 
 
 # ============================================================
-# PÁGINA PRINCIPAL
+# PAGINA PRINCIPAL
 # ============================================================
 
 @app.route("/")
@@ -442,10 +400,6 @@ def api_eventos():
 
     try:
 
-        # ----------------------------------------------------
-        # OBTENER EVENTOS DEL SGC
-        # ----------------------------------------------------
-
         eventos_sgc = obtener_eventos()
 
         eventos = []
@@ -453,7 +407,7 @@ def api_eventos():
         eventos_invalidos = 0
 
         # ----------------------------------------------------
-        # PROCESAR EVENTOS
+        # PROCESAR EVENTOS DEL SGC
         # ----------------------------------------------------
 
         for evento in eventos_sgc:
@@ -514,6 +468,15 @@ def api_eventos():
                 )
             )
 
+            # ------------------------------------------------
+            # SOLO COLOMBIA
+            # ------------------------------------------------
+
+            if not es_evento_colombia(
+                alerta_normalizada.get("lugar")
+            ):
+                continue
+
             alerta_id = (
                 alerta_normalizada.get("id")
             )
@@ -535,46 +498,25 @@ def api_eventos():
         # CONTADORES
         # ====================================================
 
-        profundos = sum(
+        candidatos_acelerograficos = sum(
 
             1
 
             for evento in eventos
 
-            if (
-                "SISMO PROFUNDO"
-                in evento.get(
-                    "alertas",
-                    []
-                )
-            )
+            if evento.get("magnitud") is not None
+            and evento.get("magnitud")
+            >= MAGNITUD_CANDIDATO_ACELEROGRAFICO
         )
 
-        cercanos = sum(
+        eventos_colombia = sum(
 
             1
 
             for evento in eventos
 
-            if (
-                "SISMO CERCANO Y SUPERFICIAL"
-                in evento.get(
-                    "alertas",
-                    []
-                )
-            )
-        )
-
-        dentro_radio = sum(
-
-            1
-
-            for evento in eventos
-
-            if evento.get(
-                "categoria"
-            ) == (
-                "SISMO DENTRO DEL RADIO DE 200 KM"
+            if es_evento_colombia(
+                evento.get("lugar")
             )
         )
 
@@ -600,14 +542,14 @@ def api_eventos():
             "eventos_invalidos":
                 eventos_invalidos,
 
-            "sismos_profundos":
-                profundos,
+            "eventos_colombia":
+                eventos_colombia,
 
-            "sismos_cercanos":
-                cercanos,
+            "candidatos_acelerograficos":
+                candidatos_acelerograficos,
 
-            "sismos_dentro_radio":
-                dentro_radio,
+            "eventos_magnitud_4_o_mas":
+                candidatos_acelerograficos,
 
             "eventos":
                 eventos
@@ -636,14 +578,6 @@ def api_eventos():
 # ============================================================
 
 if __name__ == "__main__":
-
-    # --------------------------------------------------------
-    # LOCAL:
-    #   http://127.0.0.1:5000
-    #
-    # RENDER:
-    #   utiliza la variable de entorno PORT
-    # --------------------------------------------------------
 
     puerto = int(
         os.environ.get(
