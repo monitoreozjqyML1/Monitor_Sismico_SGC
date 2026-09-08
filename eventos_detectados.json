@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-08 17:20:17",
+    "actualizado": "2026-09-08 17:25:19",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 603,
+        "total_eventos": 604,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -13437,6 +13437,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-08 17:20:17"
+        },
+        "SGC2026rslgny": {
+            "id": "SGC2026rslgny",
+            "magnitud": 1.5,
+            "profundidad": 20.0,
+            "latitud": 6.819924489377815,
+            "longitud": -76.1972331405083,
+            "distancia_bogota": 332.06,
+            "lugar": "Frontino - Antioquia, Colombia",
+            "fecha_local": "2026-09-08 14:58",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-08 17:25:19"
         }
     }
 }
