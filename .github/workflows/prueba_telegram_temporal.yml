@@ -25,4 +25,4 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          python -c "import monitor_sgc_cloud as m; r=m.enviar_alerta_telegram({'magnitud':4.5,'profundidad':40.0,'distancia_bogota':123.4,'lugar':'PRUEBA CONTROLADA - Colombia','fecha_local':'2026-09-08 10:30:00'}, 'SISMO M >= 4.0'); print('Resultado Telegram:', r)"
+          python -c "import monitor_sgc_cloud as m; r=m.enviar_alerta_telegram({'magnitud':4.5,'profundidad':40.0,'distancia_bogota':123.4,'lugar':'PRUEBA CONTROLADA - Colombia','fecha_local':'2026-09-08 10:30:00','tipo_alerta':'SISMO M >= 4.0'}); print('Resultado Telegram:', r)"
