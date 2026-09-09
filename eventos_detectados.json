@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-09T15:10:17.892304-05:00",
+  "actualizado": "2026-09-09T15:15:19.240647-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 692,
@@ -11629,11 +11629,26 @@
       "categoria": "SISMO CANDIDATO ACELEROGRÁFICO (M >= 4.0)",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 295.0,
+            "distanceHipocentral": 298.0,
+            "pgaE": 0.135837,
+            "pgaN": 0.075609,
+            "pgaZ": 0.037906
+          }
+        ],
+        "pga_maximo_cm_s2": 0.135837,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "alertas": [
         "SISMO M >= 4.0"
