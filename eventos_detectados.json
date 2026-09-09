@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-09 10:30:21",
+    "actualizado": "2026-09-09 10:50:16",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 673,
+        "total_eventos": 676,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -15047,6 +15047,75 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-09 10:30:21"
+        },
+        "SGC2026rtfqkh": {
+            "id": "SGC2026rtfqkh",
+            "magnitud": 1.8,
+            "profundidad": 59.0,
+            "latitud": 11.1705,
+            "longitud": -72.7895,
+            "distancia_bogota": 732.01,
+            "lugar": "Riohacha - la Guajira, Colombia",
+            "fecha_local": "2026-09-09 01:13",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_4",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 10:50:16"
+        },
+        "SGC2026rtewiy": {
+            "id": "SGC2026rtewiy",
+            "magnitud": 1.9,
+            "profundidad": 157.0,
+            "latitud": 6.893666666666666,
+            "longitud": -73.22016666666667,
+            "distancia_bogota": 260.36,
+            "lugar": "Zapatoca - Santander, Colombia",
+            "fecha_local": "2026-09-09 00:49",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_3",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 10:50:16"
+        },
+        "SGC2026rtdzdj": {
+            "id": "SGC2026rtdzdj",
+            "magnitud": 1.3,
+            "profundidad": 11.0,
+            "latitud": 5.183404299542072,
+            "longitud": -75.55130051453287,
+            "distancia_bogota": 172.08,
+            "lugar": "Neira - Caldas, Colombia",
+            "fecha_local": "2026-09-09 00:22",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 10:50:16"
         }
     }
 }
