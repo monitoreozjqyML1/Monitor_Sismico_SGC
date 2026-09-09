@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-09T18:10:17.831175-05:00",
+  "actualizado": "2026-09-09T18:15:16.814263-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 700,
+    "total_eventos": 701,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -15776,6 +15776,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-09T18:05:16.839942-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ruckpr": {
+      "id": "SGC2026ruckpr",
+      "magnitud": 1.1,
+      "profundidad": 25.0,
+      "latitud": 5.643333333333334,
+      "longitud": -74.28533333333333,
+      "distancia_km": 106.32599668220396,
+      "lugar": "Otanche - Boyacá, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.643333333333334,
+      "lon": -74.28533333333333,
+      "distancia_bogota": 106.3,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-09 12:40",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-09T18:15:15.933061-05:00",
       "alerta_enviada": false
     }
   }
