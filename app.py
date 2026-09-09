@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 app = Flask(__name__)
 
 # ============================================================
-# CONFIGURACIÓN SGC
+# CONFIGURACIÃ“N SGC
 # ============================================================
 
 URL_SGC = (
