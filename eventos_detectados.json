@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-09 09:55:17",
+    "actualizado": "2026-09-09 10:05:22",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 670,
+        "total_eventos": 671,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -14978,6 +14978,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-09 09:55:17"
+        },
+        "SGC2026rtjmcm": {
+            "id": "SGC2026rtjmcm",
+            "magnitud": 1.7,
+            "profundidad": 158.0,
+            "latitud": 7.298,
+            "longitud": -73.0895,
+            "distancia_bogota": 307.5,
+            "lugar": "Matanza - Santander, Colombia",
+            "fecha_local": "2026-09-09 03:08",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_3",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 10:05:22"
         }
     }
 }
