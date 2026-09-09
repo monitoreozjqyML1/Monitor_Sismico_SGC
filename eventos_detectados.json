@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-09-09T17:00:17.994540-05:00",
+  "actualizado": "2026-09-09T17:05:15.757441-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 695,
+    "total_eventos": 696,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
-    "porcentaje_m4_o_mayores": 0.58,
+    "porcentaje_m4_o_mayores": 0.57,
     "eventos_mayor_igual_4": 4,
     "total_candidatos_acelerograficos": 4,
     "total_alertas": 4,
-    "porcentaje_alertas": 0.58
+    "porcentaje_alertas": 0.57
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -15636,6 +15636,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-09T16:55:15.595133-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rtyhja": {
+      "id": "SGC2026rtyhja",
+      "magnitud": 1.5,
+      "profundidad": 166.0,
+      "latitud": 7.279,
+      "longitud": -73.18283333333333,
+      "distancia_km": 302.0054558456874,
+      "lugar": "Rionegro - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 7.279,
+      "lon": -73.18283333333333,
+      "distancia_bogota": 302.0,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-09 10:35",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-09T17:05:15.419937-05:00",
       "alerta_enviada": false
     }
   }
