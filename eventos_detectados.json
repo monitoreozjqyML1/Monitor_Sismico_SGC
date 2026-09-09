@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-09T12:30:14.746732-05:00",
+  "actualizado": "2026-09-09T12:40:14.813582-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 685,
+    "total_eventos": 686,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -15327,6 +15327,34 @@
       },
       "alertas": [],
       "fecha_deteccion": "2026-09-09 12:15:14"
+    },
+    "SGC2026rtpbxi": {
+      "id": "SGC2026rtpbxi",
+      "magnitud": 0.7,
+      "profundidad": 2.0,
+      "latitud": 5.176530385982181,
+      "longitud": -75.51553539964158,
+      "distancia_km": 168.0750361634905,
+      "lugar": "Neira - Caldas, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.176530385982181,
+      "lon": -75.51553539964158,
+      "distancia_bogota": 168.1,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-09 05:57",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-09T12:40:14.685078-05:00",
+      "alerta_enviada": false
     }
   }
 }
