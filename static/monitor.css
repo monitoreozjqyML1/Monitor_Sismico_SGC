@@ -1,218 +1,1173 @@
+```css
+/* ============================================================
+   MONITOR SÍSMICO ML1 - BOGOTÁ
+   INTERFAZ VISUAL
+   ============================================================ */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #eef1f4;
-    color: #1f2933;
+:root {
+    --bg: #eef2f6;
+    --surface: #ffffff;
+    --surface-soft: #f7f9fc;
+    --border: #dfe5ec;
+    --text: #17212b;
+    --text-soft: #64748b;
+    --text-muted: #94a3b8;
+
+    --blue: #1769aa;
+    --blue-dark: #0f4773;
+    --blue-soft: #e8f2fb;
+
+    --green: #16a34a;
+    --green-soft: #e9f8ef;
+
+    --orange: #ea8a00;
+    --orange-soft: #fff4df;
+
+    --red: #dc2626;
+    --red-soft: #feecec;
+
+    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.09);
+    --radius: 14px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-/* ========================================================= */
-/* ENCABEZADO */
-/* ========================================================= */
+body {
+    min-height: 100vh;
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
-.encabezado {
-    background: #17212b;
-    color: white;
-    padding: 20px 30px;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(23, 105, 170, 0.07),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.5;
+}
+
+/* ============================================================
+   ENCABEZADO
+   ============================================================ */
+
+header {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    min-height: 86px;
+    padding: 18px 34px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d263b 0%,
+            #123b59 55%,
+            #1769aa 100%
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 18px rgba(15, 23, 42, 0.18);
+
+    overflow: hidden;
 }
 
-.encabezado h1 {
-    font-size: 25px;
-    letter-spacing: 1px;
+header::after {
+    content: "";
+
+    position: absolute;
+    width: 280px;
+    height: 280px;
+
+    right: -100px;
+    top: -150px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.05);
 }
 
-.encabezado p {
-    margin-top: 5px;
-    color: #b8c4ce;
+header > div {
+    position: relative;
+    z-index: 1;
 }
 
-.estado {
+header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+}
+
+header h1::before {
+    content: "●";
+    display: inline-block;
+
+    margin-right: 10px;
+
+    color: #39e27d;
+    font-size: 14px;
+
+    vertical-align: middle;
+
+    text-shadow:
+        0 0 8px rgba(57, 226, 125, 0.9);
+}
+
+.estado-monitor {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 14px;
+    gap: 9px;
+
+    padding: 9px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+
+    backdrop-filter: blur(8px);
 }
 
-.indicador {
-    width: 13px;
-    height: 13px;
-    background: #22c55e;
+.estado-monitor::after {
+    content: "SISTEMA ACTIVO";
+
+    color: #ffffff;
+}
+
+.indicador-verde {
+    width: 11px;
+    height: 11px;
+
+    display: inline-block;
+
     border-radius: 50%;
-    box-shadow: 0 0 10px #22c55e;
+
+    background: #39e27d;
+
+    box-shadow:
+        0 0 0 4px rgba(57, 226, 125, 0.14),
+        0 0 12px rgba(57, 226, 125, 0.85);
+
+    animation: pulso-verde 2s infinite;
 }
 
+@keyframes pulso-verde {
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 4px rgba(57, 226, 125, 0.14),
+            0 0 12px rgba(57, 226, 125, 0.85);
+    }
 
-/* ========================================================= */
-/* CONTENEDOR PRINCIPAL */
-/* ========================================================= */
-
-.contenedor {
-    padding: 20px 30px;
+    50% {
+        box-shadow:
+            0 0 0 7px rgba(57, 226, 125, 0.06),
+            0 0 18px rgba(57, 226, 125, 0.95);
+    }
 }
 
+/* ============================================================
+   CONTENIDO PRINCIPAL
+   ============================================================ */
 
-/* ========================================================= */
-/* TARJETAS DE ESTADÍSTICAS */
-/* ========================================================= */
+main {
+    width: 100%;
+    max-width: 1700px;
 
-.estadisticas {
+    margin: 0 auto;
+
+    padding: 26px 30px 10px;
+}
+
+/* ============================================================
+   TARJETAS PRINCIPALES
+   ============================================================ */
+
+.tarjetas {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin-bottom: 22px;
 }
 
 .tarjeta {
-    background: white;
-    border-radius: 8px;
-    padding: 18px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+
+    min-height: 116px;
+
+    padding: 19px 20px;
+
+    background: var(--surface);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-sm);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
 }
 
-.titulo {
-    font-size: 12px;
-    color: #6b7280;
-    margin-bottom: 8px;
+.tarjeta::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background: var(--blue);
 }
 
-.valor {
-    font-size: 24px;
-    font-weight: bold;
+.tarjeta:hover {
+    transform: translateY(-2px);
+
+    border-color: #cbd5e1;
+
+    box-shadow: var(--shadow-md);
 }
 
-.alerta-profunda {
-    border-left: 5px solid #dc2626;
+.tarjeta-titulo {
+    margin-bottom: 9px;
+
+    color: var(--text-soft);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 
-.alerta-cercana {
-    border-left: 5px solid #f59e0b;
+.tarjeta-valor {
+    color: var(--text);
+
+    font-size: 23px;
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    word-break: break-word;
 }
 
+/* Última consulta */
 
-/* ========================================================= */
-/* PANELES */
-/* ========================================================= */
+.tarjeta:nth-child(1)::before {
+    background: #64748b;
+}
+
+/* Próxima consulta */
+
+.tarjeta:nth-child(2)::before {
+    background: var(--blue);
+}
+
+/* Eventos recibidos */
+
+.tarjeta:nth-child(3)::before {
+    background: #2563eb;
+}
+
+/* Eventos Colombia */
+
+.tarjeta:nth-child(4)::before {
+    background: #0891b2;
+}
+
+/* Candidatos */
+
+.tarjeta:nth-child(5) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fffafa
+        );
+}
+
+.tarjeta:nth-child(5)::before {
+    background: var(--red);
+}
+
+.tarjeta:nth-child(5) .tarjeta-valor {
+    color: var(--red);
+}
+
+/* ============================================================
+   BANNER DE ALERTA
+   ============================================================ */
+
+.banner-alerta {
+    position: relative;
+
+    display: none;
+
+    margin-bottom: 22px;
+
+    padding: 20px 52px 20px 22px;
+
+    border-radius: var(--radius);
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 24px rgba(220, 38, 38, 0.20);
+
+    animation:
+        entrada-alerta 0.35s ease-out;
+}
+
+.banner-alerta-candidato {
+    background:
+        linear-gradient(
+            135deg,
+            #991b1b,
+            #dc2626
+        );
+
+    border-left:
+        6px solid
+        #7f1d1d;
+}
+
+.banner-titulo {
+    margin-bottom: 7px;
+
+    font-size: 19px;
+    font-weight: 800;
+
+    letter-spacing: 0.2px;
+}
+
+.banner-detalle {
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.7;
+}
+
+.banner-cerrar {
+    position: absolute;
+
+    top: 12px;
+    right: 14px;
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.banner-cerrar:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: rotate(90deg);
+}
+
+@keyframes entrada-alerta {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================================
+   PANELES
+   ============================================================ */
 
 .panel {
-    background: white;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+
+    background: var(--surface);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-sm);
+
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.panel-titulo {
-    padding: 14px 18px;
-    background: #f8fafc;
-    border-bottom: 1px solid #e5e7eb;
-    font-weight: bold;
+.panel h2 {
+    display: flex;
+    align-items: center;
+
+    min-height: 58px;
+
+    padding: 16px 20px;
+
+    background:
+        linear-gradient(
+            to right,
+            #f8fafc,
+            #ffffff
+        );
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    color: var(--text);
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+.panel h2::before {
+    content: "";
+
+    width: 4px;
+    height: 20px;
+
+    margin-right: 11px;
+
+    border-radius: 4px;
+
+    background: var(--blue);
+}
+
+/* ============================================================
+   MAPA
+   ============================================================ */
+
+#mapa {
+    width: 100%;
+    height: 540px;
+
+    background: #dbe5ec;
+}
+
+.leaflet-container {
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    background: #dbe5ec;
+}
+
+.leaflet-control-zoom {
+    border: none !important;
+
+    box-shadow:
+        0 3px 12px
+        rgba(15, 23, 42, 0.15) !important;
+}
+
+.leaflet-control-zoom a {
+    color: var(--text) !important;
+
+    background: #ffffff !important;
+
+    border-bottom:
+        1px solid
+        var(--border) !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background: #f1f5f9 !important;
+}
+
+/* ============================================================
+   CANDIDATOS ACELEROGRÁFICOS
+   ============================================================ */
+
+#alertas {
+    padding: 18px;
+}
+
+.alerta-item {
+    position: relative;
+
+    margin-bottom: 14px;
+
+    padding: 19px 20px;
+
+    border:
+        1px solid
+        #fecaca;
+
+    border-left:
+        5px solid
+        var(--red);
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffafa,
+            #ffffff
+        );
+
+    box-shadow:
+        0 4px 14px
+        rgba(220, 38, 38, 0.07);
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.alerta-item:last-child {
+    margin-bottom: 0;
+}
+
+.alerta-item strong:first-child {
+    display: inline-block;
+
+    margin-bottom: 3px;
+
+    color: var(--red);
+
+    font-size: 15px;
+    font-weight: 900;
+
+    letter-spacing: 0.4px;
+}
+
+.alerta-item b {
+    color: #334155;
+}
+
+.alerta-candidato {
+    border-left-color: var(--red);
+}
+
+.sin-alertas {
+    padding: 34px 20px;
+
+    text-align: center;
+
+    color: var(--text-soft);
+
     font-size: 14px;
 }
 
+.sin-alertas::before {
+    content: "✓";
 
-/* ========================================================= */
-/* MAPA LEAFLET */
-/* ========================================================= */
+    display: block;
 
-#mapa {
-    height: 500px;
+    width: 42px;
+    height: 42px;
+
+    margin:
+        0 auto 10px;
+
+    padding-top: 7px;
+
+    border-radius: 50%;
+
+    background: var(--green-soft);
+
+    color: var(--green);
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* ============================================================
+   SECCIONES PGA DENTRO DE CANDIDATOS
+   ============================================================ */
+
+.alerta-item .popup-seccion {
+    margin-top: 15px;
+
+    padding: 15px 16px;
+
+    border:
+        1px solid
+        #dbeafe;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7fbff,
+            #eef7ff
+        );
+
+    color: #334155;
+
+    line-height: 1.8;
+}
+
+.alerta-item .popup-seccion strong {
+    color: var(--blue);
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+}
+
+.alerta-item .popup-seccion b {
+    color: #1e3a5f;
+}
+
+/* ============================================================
+   TABLA HISTORIAL
+   ============================================================ */
+
+#tablaEventos {
     width: 100%;
-}
 
+    border-collapse: separate;
+    border-spacing: 0;
 
-/* ========================================================= */
-/* ALERTAS */
-/* ========================================================= */
-
-.sin-alertas {
-    padding: 25px;
-    text-align: center;
-    color: #6b7280;
-}
-
-
-/* ========================================================= */
-/* TABLA */
-/* ========================================================= */
-
-.tabla-contenedor {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    background: #f8fafc;
-    font-size: 12px;
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-td {
-    padding: 12px;
-    border-bottom: 1px solid #e5e7eb;
     font-size: 13px;
 }
 
-.sin-datos {
-    text-align: center;
-    color: #6b7280;
-    padding: 25px;
+#tablaEventos thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    padding: 13px 14px;
+
+    background:
+        #f1f5f9;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    color: #475569;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.6px;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
 }
 
+#tablaEventos tbody td {
+    padding: 12px 14px;
 
-/* ========================================================= */
-/* PIE DE PÁGINA */
-/* ========================================================= */
+    border-bottom:
+        1px solid
+        #edf1f5;
+
+    color: #334155;
+
+    vertical-align: middle;
+}
+
+#tablaEventos tbody tr {
+    transition:
+        background 0.15s ease;
+}
+
+#tablaEventos tbody tr:hover {
+    background: #f8fafc;
+}
+
+#tablaEventos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#tablaEventos tbody td:nth-child(2) {
+    font-weight: 800;
+}
+
+#tablaEventos tbody td:nth-child(3),
+#tablaEventos tbody td:nth-child(4) {
+    color: #475569;
+    white-space: nowrap;
+}
+
+#tablaEventos tbody td:nth-child(5) {
+    max-width: 350px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.fila-alerta-candidato {
+    background:
+        linear-gradient(
+            90deg,
+            #fff1f2,
+            #ffffff
+        ) !important;
+
+    border-left:
+        4px solid
+        var(--red);
+}
+
+.fila-alerta-candidato td {
+    color: #7f1d1d !important;
+}
+
+.fila-alerta-candidato td:nth-child(2) {
+    color: var(--red) !important;
+    font-weight: 900;
+}
+
+.fila-alerta-candidato td:last-child {
+    font-weight: 800;
+
+    color: var(--red) !important;
+}
+
+/* ============================================================
+   POPUPS DEL MAPA
+   ============================================================ */
+
+.leaflet-popup-content-wrapper {
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.18);
+}
+
+.leaflet-popup-content {
+    margin: 15px 16px;
+
+    line-height: 1.5;
+}
+
+.popup-sismo {
+    min-width: 310px;
+    max-width: 390px;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    color: var(--text);
+}
+
+.popup-titulo {
+    padding-bottom: 9px;
+
+    margin-bottom: 10px;
+
+    border-bottom:
+        2px solid
+        var(--border);
+
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.popup-candidato {
+    color: var(--red);
+
+    border-bottom-color:
+        #fecaca;
+}
+
+.popup-evento {
+    color: var(--blue);
+
+    border-bottom-color:
+        #bfdbfe;
+}
+
+.popup-seccion {
+    margin-top: 9px;
+
+    padding-top: 9px;
+
+    border-top:
+        1px solid
+        #e5e7eb;
+}
+
+.popup-fila {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    min-height: 25px;
+
+    font-size: 13px;
+}
+
+.popup-etiqueta {
+    flex: 0 0 auto;
+
+    color: #475569;
+
+    font-weight: 800;
+}
+
+.popup-valor {
+    text-align: right;
+
+    color: #111827;
+
+    overflow-wrap: anywhere;
+}
+
+.popup-id {
+    max-width: 190px;
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    word-break: break-all;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
 
 footer {
+    max-width: 1700px;
+
+    margin: 0 auto;
+
+    padding:
+        18px 30px 26px;
+
+    color: var(--text-muted);
+
+    font-size: 11px;
+
     text-align: center;
-    padding: 20px;
-    color: #6b7280;
-    font-size: 12px;
+
+    letter-spacing: 0.3px;
 }
 
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
 
-/* ========================================================= */
-/* ADAPTACIÓN A PANTALLAS MEDIANAS */
-/* ========================================================= */
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
 
-@media (max-width: 1000px) {
+::-webkit-scrollbar-track {
+    background: #e9eef3;
+}
 
-    .estadisticas {
-        grid-template-columns: repeat(2, 1fr);
+::-webkit-scrollbar-thumb {
+    background: #b7c2ce;
+
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* ============================================================
+   PANTALLAS GRANDES
+   ============================================================ */
+
+@media (min-width: 1500px) {
+    main {
+        padding-left: 38px;
+        padding-right: 38px;
     }
 
+    #mapa {
+        height: 600px;
+    }
+
+    .tarjeta {
+        min-height: 124px;
+    }
+
+    .tarjeta-valor {
+        font-size: 25px;
+    }
 }
 
+/* ============================================================
+   TABLETS / PANTALLAS MEDIANAS
+   ============================================================ */
 
-/* ========================================================= */
-/* ADAPTACIÓN A CELULARES */
-/* ========================================================= */
+@media (max-width: 1200px) {
+    .tarjetas {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    #mapa {
+        height: 500px;
+    }
+}
+
+/* ============================================================
+   TABLETS PEQUEÑAS
+   ============================================================ */
+
+@media (max-width: 850px) {
+    header {
+        padding: 17px 22px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        padding:
+            20px 18px 8px;
+    }
+
+    .tarjetas {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .panel h2 {
+        min-height: 54px;
+
+        padding:
+            14px 17px;
+    }
+
+    #mapa {
+        height: 460px;
+    }
+
+    footer {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+/* ============================================================
+   CELULARES
+   ============================================================ */
 
 @media (max-width: 600px) {
-
-    .estadisticas {
-        grid-template-columns: 1fr;
-    }
-
-    .encabezado {
+    header {
         flex-direction: column;
+
         align-items: flex-start;
-        gap: 15px;
+
+        gap: 13px;
+
+        min-height: auto;
+
+        padding:
+            17px 18px 18px;
     }
 
+    header h1 {
+        font-size: 17px;
+
+        letter-spacing: 0.5px;
+    }
+
+    header h1::before {
+        margin-right: 7px;
+    }
+
+    .estado-monitor {
+        align-self: flex-start;
+
+        padding:
+            7px 12px;
+
+        font-size: 10px;
+    }
+
+    main {
+        padding:
+            15px 12px 5px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-bottom: 15px;
+    }
+
+    .tarjeta {
+        min-height: 92px;
+
+        padding:
+            15px 16px;
+    }
+
+    .tarjeta-valor {
+        font-size: 21px;
+    }
+
+    .panel {
+        margin-bottom: 15px;
+
+        border-radius: 11px;
+    }
+
+    .panel h2 {
+        min-height: 50px;
+
+        padding:
+            13px 15px;
+
+        font-size: 12px;
+    }
+
+    #mapa {
+        height: 390px;
+    }
+
+    #alertas {
+        padding: 12px;
+    }
+
+    .alerta-item {
+        padding:
+            15px;
+
+        font-size: 13px;
+    }
+
+    .banner-alerta {
+        margin-bottom: 15px;
+
+        padding:
+            17px 45px 17px 17px;
+    }
+
+    .banner-titulo {
+        font-size: 16px;
+    }
+
+    .banner-detalle {
+        font-size: 13px;
+    }
+
+    .popup-sismo {
+        min-width: 250px;
+        max-width: 300px;
+    }
+
+    .leaflet-popup-content {
+        margin:
+            12px 13px;
+    }
+
+    .popup-fila {
+        gap: 8px;
+
+        font-size: 12px;
+    }
+
+    #tablaEventos {
+        min-width: 700px;
+    }
+
+    footer {
+        padding:
+            15px 12px 22px;
+    }
 }
+
+/* ============================================================
+   REDUCCIÓN DE MOVIMIENTO
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+}
+```
