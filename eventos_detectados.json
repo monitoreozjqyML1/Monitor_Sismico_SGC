@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-09 11:25:19",
+    "actualizado": "2026-09-09 12:10:15",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 682,
+        "total_eventos": 684,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
-        "porcentaje_alertas": 0.59
+        "porcentaje_alertas": 0.58
     },
     "eventos": {
         "SGC2026rijgnt": {
@@ -15254,6 +15254,52 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-09 11:25:19"
+        },
+        "SGC2026rtlkdq": {
+            "id": "SGC2026rtlkdq",
+            "magnitud": 1.5,
+            "profundidad": 55.0,
+            "latitud": 1.809,
+            "longitud": -75.98866666666666,
+            "distancia_bogota": 386.51,
+            "lugar": "Acevedo - Huila, Colombia",
+            "fecha_local": "2026-09-09 04:06",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_2",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 12:10:15"
+        },
+        "SGC2026rtkruq": {
+            "id": "SGC2026rtkruq",
+            "magnitud": 1.6,
+            "profundidad": 150.0,
+            "latitud": 6.832166666666667,
+            "longitud": -73.168,
+            "distancia_bogota": 256.19,
+            "lugar": "Los Santos - Santander, Colombia",
+            "fecha_local": "2026-09-09 03:45",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_3",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 12:10:15"
         }
     }
 }
