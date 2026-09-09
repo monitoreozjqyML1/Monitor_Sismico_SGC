@@ -1,4 +1,3 @@
-```css
 /* ============================================================
    MONITOR SÍSMICO ML1 - BOGOTÁ
    INTERFAZ VISUAL
@@ -34,8 +33,13 @@
 
     --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
     --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.09);
+
     --radius: 14px;
 }
+
+/* ============================================================
+   DOCUMENTO
+   ============================================================ */
 
 html {
     scroll-behavior: smooth;
@@ -43,6 +47,7 @@ html {
 
 body {
     min-height: 100vh;
+
     font-family:
         Inter,
         "Segoe UI",
@@ -60,21 +65,25 @@ body {
         var(--bg);
 
     color: var(--text);
+
     line-height: 1.5;
 }
 
 /* ============================================================
-   ENCABEZADO
+   ENCABEZADO PRINCIPAL
    ============================================================ */
 
 header {
     position: relative;
 
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
     min-height: 86px;
+
     padding: 18px 34px;
 
     background:
@@ -97,6 +106,7 @@ header::after {
     content: "";
 
     position: absolute;
+
     width: 280px;
     height: 280px;
 
@@ -106,27 +116,35 @@ header::after {
     border-radius: 50%;
 
     background: rgba(255, 255, 255, 0.05);
+
+    pointer-events: none;
 }
 
 header > div {
     position: relative;
+
     z-index: 1;
 }
 
 header h1 {
     font-size: 24px;
+
     font-weight: 800;
+
     letter-spacing: 0.8px;
+
     line-height: 1.2;
 }
 
 header h1::before {
     content: "●";
+
     display: inline-block;
 
     margin-right: 10px;
 
     color: #39e27d;
+
     font-size: 14px;
 
     vertical-align: middle;
@@ -135,20 +153,32 @@ header h1::before {
         0 0 8px rgba(57, 226, 125, 0.9);
 }
 
+/* ============================================================
+   ESTADO DEL MONITOR
+   ============================================================ */
+
 .estado-monitor {
     display: flex;
+
     align-items: center;
+
     gap: 9px;
 
     padding: 9px 15px;
 
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+
     border-radius: 999px;
 
-    background: rgba(255, 255, 255, 0.08);
+    background:
+        rgba(255, 255, 255, 0.08);
 
     font-size: 12px;
+
     font-weight: 700;
+
     letter-spacing: 0.6px;
 
     backdrop-filter: blur(8px);
@@ -166,6 +196,8 @@ header h1::before {
 
     display: inline-block;
 
+    flex: 0 0 11px;
+
     border-radius: 50%;
 
     background: #39e27d;
@@ -174,7 +206,8 @@ header h1::before {
         0 0 0 4px rgba(57, 226, 125, 0.14),
         0 0 12px rgba(57, 226, 125, 0.85);
 
-    animation: pulso-verde 2s infinite;
+    animation:
+        pulso-verde 2s infinite;
 }
 
 @keyframes pulso-verde {
@@ -198,6 +231,7 @@ header h1::before {
 
 main {
     width: 100%;
+
     max-width: 1700px;
 
     margin: 0 auto;
@@ -212,20 +246,41 @@ main {
 .tarjetas {
     display: grid;
 
+    /*
+       ESCRITORIO:
+       Las cinco tarjetas permanecen en una sola fila.
+    */
     grid-template-columns:
         repeat(5, minmax(0, 1fr));
 
     gap: 16px;
 
+    width: 100%;
+
     margin-bottom: 22px;
+
+    align-items: stretch;
 }
 
 .tarjeta {
     position: relative;
 
+    /*
+       Todas las tarjetas tienen la misma altura.
+    */
     min-height: 116px;
 
-    padding: 19px 20px;
+    height: 116px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-width: 0;
+
+    padding: 19px 20px 19px 22px;
 
     background: var(--surface);
 
@@ -273,22 +328,39 @@ main {
     color: var(--text-soft);
 
     font-size: 11px;
+
     font-weight: 800;
 
     letter-spacing: 0.8px;
+
+    line-height: 1.25;
+
     text-transform: uppercase;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
 }
 
 .tarjeta-valor {
     color: var(--text);
 
     font-size: 23px;
+
     font-weight: 800;
 
     line-height: 1.2;
 
     word-break: break-word;
+
+    overflow-wrap: anywhere;
 }
+
+/* ============================================================
+   COLORES DE LAS TARJETAS
+   ============================================================ */
 
 /* Última consulta */
 
@@ -376,6 +448,7 @@ main {
     margin-bottom: 7px;
 
     font-size: 19px;
+
     font-weight: 800;
 
     letter-spacing: 0.2px;
@@ -383,6 +456,7 @@ main {
 
 .banner-detalle {
     font-size: 14px;
+
     font-weight: 500;
 
     line-height: 1.7;
@@ -398,13 +472,16 @@ main {
     height: 34px;
 
     border: none;
+
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.12);
+    background:
+        rgba(255, 255, 255, 0.12);
 
     color: #ffffff;
 
     font-size: 22px;
+
     font-weight: 700;
 
     cursor: pointer;
@@ -415,19 +492,25 @@ main {
 }
 
 .banner-cerrar:hover {
-    background: rgba(255, 255, 255, 0.22);
+    background:
+        rgba(255, 255, 255, 0.22);
+
     transform: rotate(90deg);
 }
 
 @keyframes entrada-alerta {
     from {
         opacity: 0;
-        transform: translateY(-8px);
+
+        transform:
+            translateY(-8px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
     }
 }
 
@@ -453,6 +536,7 @@ main {
 
 .panel h2 {
     display: flex;
+
     align-items: center;
 
     min-height: 58px;
@@ -473,6 +557,7 @@ main {
     color: var(--text);
 
     font-size: 14px;
+
     font-weight: 800;
 
     letter-spacing: 0.7px;
@@ -486,6 +571,8 @@ main {
 
     margin-right: 11px;
 
+    flex: 0 0 4px;
+
     border-radius: 4px;
 
     background: var(--blue);
@@ -497,6 +584,7 @@ main {
 
 #mapa {
     width: 100%;
+
     height: 540px;
 
     background: #dbe5ec;
@@ -591,6 +679,7 @@ main {
     color: var(--red);
 
     font-size: 15px;
+
     font-weight: 900;
 
     letter-spacing: 0.4px;
@@ -634,6 +723,7 @@ main {
     color: var(--green);
 
     font-size: 20px;
+
     font-weight: 900;
 }
 
@@ -684,6 +774,7 @@ main {
     width: 100%;
 
     border-collapse: separate;
+
     border-spacing: 0;
 
     font-size: 13px;
@@ -691,13 +782,14 @@ main {
 
 #tablaEventos thead th {
     position: sticky;
+
     top: 0;
+
     z-index: 2;
 
     padding: 13px 14px;
 
-    background:
-        #f1f5f9;
+    background: #f1f5f9;
 
     border-bottom:
         1px solid
@@ -706,6 +798,7 @@ main {
     color: #475569;
 
     font-size: 11px;
+
     font-weight: 800;
 
     letter-spacing: 0.6px;
@@ -749,6 +842,7 @@ main {
 #tablaEventos tbody td:nth-child(3),
 #tablaEventos tbody td:nth-child(4) {
     color: #475569;
+
     white-space: nowrap;
 }
 
@@ -781,6 +875,7 @@ main {
 
 .fila-alerta-candidato td:nth-child(2) {
     color: var(--red) !important;
+
     font-weight: 900;
 }
 
@@ -810,6 +905,7 @@ main {
 
 .popup-sismo {
     min-width: 310px;
+
     max-width: 390px;
 
     font-family:
@@ -833,6 +929,7 @@ main {
         var(--border);
 
     font-size: 16px;
+
     font-weight: 900;
 }
 
@@ -927,6 +1024,7 @@ footer {
 
 ::-webkit-scrollbar {
     width: 9px;
+
     height: 9px;
 }
 
@@ -949,8 +1047,10 @@ footer {
    ============================================================ */
 
 @media (min-width: 1500px) {
+
     main {
         padding-left: 38px;
+
         padding-right: 38px;
     }
 
@@ -960,6 +1060,8 @@ footer {
 
     .tarjeta {
         min-height: 124px;
+
+        height: 124px;
     }
 
     .tarjeta-valor {
@@ -972,9 +1074,19 @@ footer {
    ============================================================ */
 
 @media (max-width: 1200px) {
+
+    /*
+       En pantallas medianas se pasa a tres columnas
+       para evitar comprimir demasiado las tarjetas.
+    */
+
     .tarjetas {
         grid-template-columns:
             repeat(3, minmax(0, 1fr));
+    }
+
+    .tarjeta {
+        height: 116px;
     }
 
     #mapa {
@@ -987,8 +1099,10 @@ footer {
    ============================================================ */
 
 @media (max-width: 850px) {
+
     header {
-        padding: 17px 22px;
+        padding:
+            17px 22px;
     }
 
     header h1 {
@@ -1003,6 +1117,21 @@ footer {
     .tarjetas {
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .tarjeta {
+        min-height: 110px;
+
+        height: 110px;
+
+        padding:
+            16px 17px 16px 19px;
+    }
+
+    .tarjeta-titulo {
+        white-space: normal;
     }
 
     .panel h2 {
@@ -1018,6 +1147,7 @@ footer {
 
     footer {
         padding-left: 18px;
+
         padding-right: 18px;
     }
 }
@@ -1027,6 +1157,7 @@ footer {
    ============================================================ */
 
 @media (max-width: 600px) {
+
     header {
         flex-direction: column;
 
@@ -1064,6 +1195,10 @@ footer {
             15px 12px 5px;
     }
 
+    /*
+       En celular las tarjetas pasan a una columna.
+    */
+
     .tarjetas {
         grid-template-columns: 1fr;
 
@@ -1075,8 +1210,14 @@ footer {
     .tarjeta {
         min-height: 92px;
 
+        height: 92px;
+
         padding:
             15px 16px;
+    }
+
+    .tarjeta-titulo {
+        white-space: nowrap;
     }
 
     .tarjeta-valor {
@@ -1130,6 +1271,7 @@ footer {
 
     .popup-sismo {
         min-width: 250px;
+
         max-width: 300px;
     }
 
@@ -1159,15 +1301,16 @@ footer {
    ============================================================ */
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
         scroll-behavior: auto !important;
 
         animation-duration: 0.01ms !important;
+
         animation-iteration-count: 1 !important;
 
         transition-duration: 0.01ms !important;
     }
 }
-```
