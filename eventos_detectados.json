@@ -9241,11 +9241,26 @@
       "categoria": "SISMO CANDIDATO ACELEROGRÁFICO (M >= 4.0)",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 258.0,
+            "distanceHipocentral": 293.0,
+            "pgaE": 0.054209,
+            "pgaN": 0.032665,
+            "pgaZ": 0.027411
+          }
+        ],
+        "pga_maximo_cm_s2": 0.054209,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "alertas": [
         "SISMO M >= 4.0"

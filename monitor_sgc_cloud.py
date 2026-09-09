@@ -930,6 +930,96 @@ def realizar_consulta():
         eventos_colombia += 1
 
         if str(event_id) in ids_registrados:
+
+            evento_existente = eventos_registrados.get(
+                str(event_id),
+                {}
+            )
+
+            if resultado.get(
+                "candidato_acelerografico"
+            ):
+
+                acelerografia_existente = evento_existente.get(
+                    "acelerografia_bogota"
+                ) or {}
+
+                estado_existente = acelerografia_existente.get(
+                    "estado"
+                )
+
+                if estado_existente != "OK":
+
+                    print()
+                    print(
+                        f"?? Evento ya registrado: {event_id}"
+                    )
+
+                    print(
+                        "    ?? Reconsultando PGA de BOG.11..."
+                    )
+
+                    acelerografia_actualizada = (
+                        obtener_pga_bogota(
+                            event_id
+                        )
+                    )
+
+                    if acelerografia_actualizada.get(
+                        "estado"
+                    ) == "OK":
+
+                        evento_existente[
+                            "acelerografia_bogota"
+                        ] = acelerografia_actualizada
+
+                        print(
+                            "    ? PGA de BOG.11 actualizada."
+                        )
+
+                        estaciones = (
+                            acelerografia_actualizada.get(
+                                "estaciones",
+                                []
+                            )
+                        )
+
+                        if estaciones:
+
+                            estacion = estaciones[0]
+
+                            print(
+                                f"       PGA EW: "
+                                f"{estacion.get('pgaE')} "
+                                f"cm/s?"
+                            )
+
+                            print(
+                                f"       PGA NS: "
+                                f"{estacion.get('pgaN')} "
+                                f"cm/s?"
+                            )
+
+                            print(
+                                f"       PGA Z: "
+                                f"{estacion.get('pgaZ')} "
+                                f"cm/s?"
+                            )
+
+                            print(
+                                f"       Horizontal m?x.: "
+                                f"{acelerografia_actualizada.get('pga_maximo_cm_s2')} "
+                                f"cm/s? "
+                                f"({acelerografia_actualizada.get('componente_critica')})"
+                            )
+
+                    else:
+
+                        print(
+                            "    ?? PGA de BOG.11 "
+                            "todav?a no disponible."
+                        )
+
             continue
 
         print()
@@ -1131,6 +1221,124 @@ def realizar_consulta():
         )
 
         nuevos += 1
+
+    # --------------------------------------------------------
+    # RECONCILIACI?N HIST?RICA DE PGA
+    # --------------------------------------------------------
+    # Algunos eventos M >= 4.0 pueden haber sido registrados
+    # cuando el producto de acelerograf?a todav?a no estaba
+    # disponible en el SGC. Se reconsulta ?nicamente la PGA
+    # pendiente, sin volver a enviar alertas Telegram.
+    # --------------------------------------------------------
+
+    pga_historica_actualizada = 0
+
+    for evento_id_historico, evento_historico in (
+        eventos_registrados.items()
+    ):
+
+        if not isinstance(
+            evento_historico,
+            dict
+        ):
+            continue
+
+        if not evento_historico.get(
+            "candidato_acelerografico"
+        ):
+            continue
+
+        acelerografia_historica = (
+            evento_historico.get(
+                "acelerografia_bogota"
+            ) or {}
+        )
+
+        if acelerografia_historica.get(
+            "estado"
+        ) == "OK":
+            continue
+
+        print()
+        print(
+            f"?? Reconciliaci?n PGA hist?rica: "
+            f"{evento_id_historico}"
+        )
+
+        acelerografia_actualizada = (
+            obtener_pga_bogota(
+                evento_id_historico
+            )
+        )
+
+        if acelerografia_actualizada.get(
+            "estado"
+        ) == "OK":
+
+            evento_historico[
+                "acelerografia_bogota"
+            ] = acelerografia_actualizada
+
+            pga_historica_actualizada += 1
+
+            estaciones = (
+                acelerografia_actualizada.get(
+                    "estaciones",
+                    []
+                )
+            )
+
+            print(
+                "    ? PGA hist?rica actualizada."
+            )
+
+            if estaciones:
+
+                estacion = estaciones[0]
+
+                print(
+                    f"       Estaci?n: "
+                    f"{estacion.get('stationCode')}."
+                    f"{estacion.get('locationCode')}"
+                )
+
+                print(
+                    f"       PGA EW: "
+                    f"{estacion.get('pgaE')} "
+                    f"cm/s?"
+                )
+
+                print(
+                    f"       PGA NS: "
+                    f"{estacion.get('pgaN')} "
+                    f"cm/s?"
+                )
+
+                print(
+                    f"       PGA Z: "
+                    f"{estacion.get('pgaZ')} "
+                    f"cm/s?"
+                )
+
+                print(
+                    f"       Horizontal m?x.: "
+                    f"{acelerografia_actualizada.get('pga_maximo_cm_s2')} "
+                    f"cm/s? "
+                    f"({acelerografia_actualizada.get('componente_critica')})"
+                )
+
+        else:
+
+            print(
+                "    ?? PGA hist?rica todav?a no disponible."
+            )
+
+    if pga_historica_actualizada:
+        print()
+        print(
+            f"?? PGA hist?ricas actualizadas: "
+            f"{pga_historica_actualizada}"
+        )
 
     # --------------------------------------------------------
     # RESUMEN FINAL
