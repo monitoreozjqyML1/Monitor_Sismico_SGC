@@ -147,42 +147,51 @@
         <div class="tarjeta-titulo">
             ÚLTIMA CONSULTA
         </div>
+
         <div id="ultimaConsulta" class="tarjeta-valor">
             --
         </div>
     </div>
 
+
     <div class="tarjeta">
         <div class="tarjeta-titulo">
             PRÓXIMA CONSULTA
         </div>
+
         <div id="proximaConsulta" class="tarjeta-valor">
             --
         </div>
     </div>
 
+
     <div class="tarjeta">
         <div class="tarjeta-titulo">
             EVENTOS RECIBIDOS
         </div>
+
         <div id="eventosRecibidos" class="tarjeta-valor">
             0
         </div>
     </div>
 
+
     <div class="tarjeta">
         <div class="tarjeta-titulo">
             EVENTOS COLOMBIA
         </div>
+
         <div id="eventosColombia" class="tarjeta-valor">
             0
         </div>
     </div>
 
+
     <div class="tarjeta">
         <div class="tarjeta-titulo">
             CANDIDATOS M = 4.0
         </div>
+
         <div id="candidatosAcelerograficos" class="tarjeta-valor">
             0
         </div>
@@ -190,10 +199,12 @@
 
 </section>
 
+
 <section
     id="bannerAlerta"
     class="banner-alerta"
 >
+
     <button
         class="banner-cerrar"
         onclick="cerrarBannerAlerta()"
@@ -210,7 +221,9 @@
         id="bannerDetalle"
         class="banner-detalle"
     ></div>
+
 </section>
+
 
 <section class="panel">
 
@@ -221,6 +234,7 @@
     <div id="mapa"></div>
 
 </section>
+
 
 <section class="panel">
 
@@ -238,6 +252,7 @@
 
 </section>
 
+
 <section class="panel">
 
     <h2>
@@ -249,6 +264,7 @@
         <table id="tablaEventos">
 
             <thead>
+
                 <tr>
                     <th>Fecha local</th>
                     <th>Magnitud</th>
@@ -257,6 +273,7 @@
                     <th>Lugar</th>
                     <th>Clasificación</th>
                 </tr>
+
             </thead>
 
             <tbody>
@@ -270,11 +287,14 @@
 
 </main>
 
+
 <footer>
     Monitor Sísmico ML1 — Bogotá, Colombia
 </footer>
 
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 
 <script>
 
@@ -293,13 +313,150 @@ const alertasProcesadas = new Set();
 
 
 // ============================================================
+// FORMATO DE FECHA
+// ============================================================
+//
+// Convierte:
+// 2026-09-09 17:52:15
+//
+// En:
+// 09/09/2026 17:52:15
+//
+// Se utiliza para ÚLTIMA CONSULTA y PRÓXIMA CONSULTA.
+// ============================================================
+
+function formatearFechaHora(fecha) {
+
+    if (!fecha) {
+        return "--";
+    }
+
+    const partes = String(fecha).trim().split(" ");
+
+    if (
+        partes.length < 2
+    ) {
+        return fecha;
+    }
+
+    const fechaPartes =
+        partes[0].split("-");
+
+    const horaPartes =
+        partes[1].split(":");
+
+    if (
+        fechaPartes.length !== 3 ||
+        horaPartes.length < 2
+    ) {
+        return fecha;
+    }
+
+    const anio =
+        fechaPartes[0];
+
+    const mes =
+        fechaPartes[1].padStart(2, "0");
+
+    const dia =
+        fechaPartes[2].padStart(2, "0");
+
+    const hora =
+        horaPartes[0].padStart(2, "0");
+
+    const minuto =
+        horaPartes[1].padStart(2, "0");
+
+    const segundo =
+        (
+            horaPartes[2] ?? "00"
+        ).padStart(2, "0");
+
+    return (
+        `${dia}/${mes}/${anio} ` +
+        `${hora}:${minuto}:${segundo}`
+    );
+}
+
+
+// ============================================================
+// CONVERTIR FECHA DEL MONITOR A DATE
+// ============================================================
+
+function convertirFechaConsulta(fechaConsulta) {
+
+    const partes =
+        fechaConsulta.split(" ");
+
+    const fechaBase =
+        partes[0].split("-");
+
+    const horaBase =
+        partes[1].split(":");
+
+    return new Date(
+        Number(fechaBase[0]),
+        Number(fechaBase[1]) - 1,
+        Number(fechaBase[2]),
+        Number(horaBase[0]),
+        Number(horaBase[1]),
+        Number(horaBase[2])
+    );
+}
+
+
+// ============================================================
+// FORMATEAR OBJETO DATE
+// ============================================================
+
+function formatearDateHora(fecha) {
+
+    const dia =
+        String(fecha.getDate()).padStart(2, "0");
+
+    const mes =
+        String(
+            fecha.getMonth() + 1
+        ).padStart(2, "0");
+
+    const anio =
+        fecha.getFullYear();
+
+    const hora =
+        String(
+            fecha.getHours()
+        ).padStart(2, "0");
+
+    const minuto =
+        String(
+            fecha.getMinutes()
+        ).padStart(2, "0");
+
+    const segundo =
+        String(
+            fecha.getSeconds()
+        ).padStart(2, "0");
+
+    return (
+        `${dia}/${mes}/${anio} ` +
+        `${hora}:${minuto}:${segundo}`
+    );
+}
+
+
+// ============================================================
 // MAPA
 // ============================================================
 
-const mapa = L.map("mapa").setView(
-    [LAT_BOGOTA, LON_BOGOTA],
-    6
-);
+const mapa =
+    L.map("mapa").setView(
+        [
+            LAT_BOGOTA,
+            LON_BOGOTA
+        ],
+        6
+    );
+
 
 L.tileLayer(
     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -315,7 +472,10 @@ L.tileLayer(
 // ============================================================
 
 L.marker(
-    [LAT_BOGOTA, LON_BOGOTA]
+    [
+        LAT_BOGOTA,
+        LON_BOGOTA
+    ]
 )
 .addTo(mapa)
 .bindPopup(
@@ -342,8 +502,11 @@ function obtenerCoordenadas(evento) {
         return null;
     }
 
-    const lat = Number(evento.lat);
-    const lon = Number(evento.lon);
+    const lat =
+        Number(evento.lat);
+
+    const lon =
+        Number(evento.lon);
 
     if (
         !Number.isFinite(lat) ||
@@ -428,6 +591,7 @@ function construirPopup(evento) {
 
                 </div>
 
+
                 <div class="popup-fila">
 
                     <span class="popup-etiqueta">
@@ -442,6 +606,7 @@ function construirPopup(evento) {
 
             </div>
 
+
             <div class="popup-seccion">
 
                 <div class="popup-fila">
@@ -451,15 +616,19 @@ function construirPopup(evento) {
                     </span>
 
                     <span class="popup-valor">
+
                         ${evento.magnitud ?? "--"}
+
                         ${
                             evento.tipo_magnitud
                                 ? `(${evento.tipo_magnitud})`
                                 : ""
                         }
+
                     </span>
 
                 </div>
+
 
                 <div class="popup-fila">
 
@@ -472,6 +641,7 @@ function construirPopup(evento) {
                     </span>
 
                 </div>
+
 
                 <div class="popup-fila">
 
@@ -487,6 +657,7 @@ function construirPopup(evento) {
 
             </div>
 
+
             <div class="popup-seccion">
 
                 <div class="popup-fila">
@@ -501,6 +672,7 @@ function construirPopup(evento) {
 
                 </div>
 
+
                 <div class="popup-fila">
 
                     <span class="popup-etiqueta">
@@ -514,6 +686,7 @@ function construirPopup(evento) {
                 </div>
 
             </div>
+
 
             <div class="popup-seccion">
 
@@ -530,6 +703,7 @@ function construirPopup(evento) {
                 </div>
 
             </div>
+
 
             <div class="popup-seccion">
 
@@ -548,6 +722,7 @@ function construirPopup(evento) {
             </div>
 
         </div>
+
     `;
 }
 
@@ -575,6 +750,7 @@ function dibujarSismos(eventos) {
         const candidato =
             magnitud >= MAGNITUD_CANDIDATO;
 
+
         // ====================================================
         // COLOR SEGÚN MAGNITUD
         //
@@ -599,12 +775,14 @@ function dibujarSismos(eventos) {
 
         let opacidad = 0.65;
 
+
         if (
             magnitud >= 3.0 &&
             magnitud < MAGNITUD_CANDIDATO
         ) {
 
-            color = "#f57c00";
+            color =
+                "#f57c00";
 
             radio =
                 Math.max(
@@ -620,9 +798,11 @@ function dibujarSismos(eventos) {
             opacidad = 0.80;
         }
 
+
         if (candidato) {
 
-            color = "#d32f2f";
+            color =
+                "#d32f2f";
 
             radio =
                 Math.max(
@@ -637,6 +817,7 @@ function dibujarSismos(eventos) {
 
             opacidad = 0.90;
         }
+
 
         const marcador =
             L.circleMarker(
@@ -653,6 +834,7 @@ function dibujarSismos(eventos) {
                 }
             );
 
+
         marcador
             .bindPopup(
                 construirPopup(evento)
@@ -660,6 +842,7 @@ function dibujarSismos(eventos) {
             .addTo(capaSismos);
 
     });
+
 
     console.log(
         "Sismos reales dibujados:",
@@ -683,6 +866,7 @@ function mostrarAlertas(eventos) {
                 esCandidato(evento)
         );
 
+
     if (candidatos.length === 0) {
 
         contenedor.innerHTML = `
@@ -696,7 +880,9 @@ function mostrarAlertas(eventos) {
         return;
     }
 
+
     contenedor.innerHTML = "";
+
 
     candidatos.forEach(evento => {
 
@@ -705,6 +891,7 @@ function mostrarAlertas(eventos) {
 
         div.className =
             "alerta-item alerta-candidato";
+
 
         const pga =
             evento.acelerografia_bogota || {};
@@ -717,7 +904,9 @@ function mostrarAlertas(eventos) {
                 ? estaciones[0]
                 : null;
 
+
         let bloquePGA = "";
+
 
         if (
             pga.estado === "OK" &&
@@ -793,6 +982,7 @@ function mostrarAlertas(eventos) {
             `;
         }
 
+
         div.innerHTML = `
 
             <strong>
@@ -823,6 +1013,7 @@ function mostrarAlertas(eventos) {
 
         `;
 
+
         contenedor.appendChild(div);
 
     });
@@ -841,6 +1032,7 @@ function mostrarTabla(eventos) {
         );
 
     tbody.innerHTML = "";
+
 
     // ========================================================
     // FILTRO VISUAL DEL HISTORIAL
@@ -863,10 +1055,12 @@ function mostrarTabla(eventos) {
             )
             .slice(0, 100);
 
+
     eventosHistorial.forEach(evento => {
 
         const fila =
             document.createElement("tr");
+
 
         if (esCandidato(evento)) {
 
@@ -875,10 +1069,12 @@ function mostrarTabla(eventos) {
             );
         }
 
+
         const clasificacion =
             esCandidato(evento)
                 ? "CANDIDATO M = 4.0"
                 : "";
+
 
         fila.innerHTML = `
 
@@ -908,6 +1104,7 @@ function mostrarTabla(eventos) {
 
         `;
 
+
         tbody.appendChild(fila);
 
     });
@@ -925,10 +1122,12 @@ function actualizarContadores(datos) {
     ).textContent =
         datos.eventos_recibidos ?? 0;
 
+
     document.getElementById(
         "eventosColombia"
     ).textContent =
         datos.eventos_colombia ?? 0;
+
 
     document.getElementById(
         "candidatosAcelerograficos"
@@ -943,19 +1142,21 @@ function actualizarContadores(datos) {
 
 function actualizarProximaConsulta(fechaConsulta) {
 
-    const partes = fechaConsulta.split(" ");
+    if (!fechaConsulta) {
 
-    const fechaBase = partes[0].split("-");
-    const horaBase = partes[1].split(":");
+        document.getElementById(
+            "proximaConsulta"
+        ).textContent = "--";
 
-    const ahora = new Date(
-        Number(fechaBase[0]),
-        Number(fechaBase[1]) - 1,
-        Number(fechaBase[2]),
-        Number(horaBase[0]),
-        Number(horaBase[1]),
-        Number(horaBase[2])
-    );
+        return;
+    }
+
+
+    const ahora =
+        convertirFechaConsulta(
+            fechaConsulta
+        );
+
 
     const proxima =
         new Date(
@@ -963,19 +1164,11 @@ function actualizarProximaConsulta(fechaConsulta) {
             INTERVALO_CONSULTA
         );
 
+
     document.getElementById(
         "proximaConsulta"
     ).textContent =
-
-        proxima.toLocaleString(
-            "es-CO",
-            {
-                day: "2-digit",
-                month: "2-digit",
-                hour: "2-digit",
-                minute: "2-digit"
-            }
-        );
+        formatearDateHora(proxima);
 }
 
 
@@ -1000,15 +1193,19 @@ function mostrarBannerAlerta(evento) {
             "bannerDetalle"
         );
 
+
     if (!esCandidato(evento)) {
         return;
     }
 
+
     banner.className =
         "banner-alerta banner-alerta-candidato";
 
+
     titulo.textContent =
         "ALERTA: CANDIDATO ACELEROGRÁFICO";
+
 
     detalle.innerHTML = `
 
@@ -1036,6 +1233,7 @@ function mostrarBannerAlerta(evento) {
         ${evento.fecha_local ?? "--"}
 
     `;
+
 
     banner.style.display =
         "block";
@@ -1073,14 +1271,17 @@ function verificarNuevasAlertas(eventos) {
                 alertasProcesadas.add(
                     evento.id
                 );
+
             }
 
         });
+
 
         primeraConsulta = false;
 
         return;
     }
+
 
     for (const evento of eventos) {
 
@@ -1091,6 +1292,7 @@ function verificarNuevasAlertas(eventos) {
             continue;
         }
 
+
         if (
             alertasProcesadas.has(
                 evento.id
@@ -1099,9 +1301,11 @@ function verificarNuevasAlertas(eventos) {
             continue;
         }
 
+
         alertasProcesadas.add(
             evento.id
         );
+
 
         mostrarBannerAlerta(
             evento
@@ -1119,30 +1323,39 @@ function actualizarMonitor(datos) {
     eventosSGC =
         datos.eventos || [];
 
+
     document.getElementById(
         "ultimaConsulta"
     ).textContent =
-        datos.fecha_consulta || "--";
+        formatearFechaHora(
+            datos.fecha_consulta
+        );
+
 
     actualizarContadores(
         datos
     );
 
+
     actualizarProximaConsulta(
         datos.fecha_consulta
     );
+
 
     dibujarSismos(
         eventosSGC
     );
 
+
     mostrarAlertas(
         eventosSGC
     );
 
+
     mostrarTabla(
         eventosSGC
     );
+
 
     verificarNuevasAlertas(
         eventosSGC
@@ -1160,12 +1373,14 @@ async function cargarEventos() {
         "Consultando API del SGC..."
     );
 
+
     try {
 
         const respuesta =
             await fetch(
                 "/api/eventos"
             );
+
 
         if (!respuesta.ok) {
 
@@ -1175,17 +1390,21 @@ async function cargarEventos() {
             );
         }
 
+
         const datos =
             await respuesta.json();
+
 
         console.log(
             "Datos del monitor:",
             datos
         );
 
+
         actualizarMonitor(
             datos
         );
+
 
     } catch (error) {
 
@@ -1202,6 +1421,7 @@ async function cargarEventos() {
 // ============================================================
 
 cargarEventos();
+
 
 setInterval(
     cargarEventos,
