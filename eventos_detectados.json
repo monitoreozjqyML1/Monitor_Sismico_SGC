@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-09T17:25:25.435041-05:00",
+  "actualizado": "2026-09-09T17:30:18.366794-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 697,
+    "total_eventos": 698,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -15692,6 +15692,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-09T17:20:15.470355-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ruluab": {
+      "id": "SGC2026ruluab",
+      "magnitud": 2.9,
+      "profundidad": 17.0,
+      "latitud": 7.579166666666667,
+      "longitud": -75.17383333333333,
+      "distancia_km": 341.38884486201687,
+      "lugar": "Cáceres - Antioquia, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 7.579166666666667,
+      "lon": -75.17383333333333,
+      "distancia_bogota": 341.4,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-09 17:22",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-09T17:30:17.367893-05:00",
       "alerta_enviada": false
     }
   }
