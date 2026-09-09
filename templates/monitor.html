@@ -575,6 +575,17 @@ function dibujarSismos(eventos) {
         const candidato =
             magnitud >= MAGNITUD_CANDIDATO;
 
+        // ====================================================
+        // COLOR SEGÚN MAGNITUD
+        //
+        // M < 3.0       = AZUL
+        // 3.0 <= M < 4  = NARANJA
+        // M >= 4.0      = ROJO
+        // ====================================================
+
+        let color =
+            "#1976d2";
+
         let radio =
             Math.max(
                 4,
@@ -584,12 +595,30 @@ function dibujarSismos(eventos) {
                 )
             );
 
-        let color =
-            "#1976d2";
-
         let peso = 1.5;
 
         let opacidad = 0.65;
+
+        if (
+            magnitud >= 3.0 &&
+            magnitud < MAGNITUD_CANDIDATO
+        ) {
+
+            color = "#f57c00";
+
+            radio =
+                Math.max(
+                    7,
+                    Math.min(
+                        12,
+                        magnitud * 1.8
+                    )
+                );
+
+            peso = 2;
+
+            opacidad = 0.80;
+        }
 
         if (candidato) {
 
@@ -677,6 +706,93 @@ function mostrarAlertas(eventos) {
         div.className =
             "alerta-item alerta-candidato";
 
+        const pga =
+            evento.acelerografia_bogota || {};
+
+        const estaciones =
+            pga.estaciones || [];
+
+        const estacion =
+            estaciones.length > 0
+                ? estaciones[0]
+                : null;
+
+        let bloquePGA = "";
+
+        if (
+            pga.estado === "OK" &&
+            estacion
+        ) {
+
+            bloquePGA = `
+
+                <div class="popup-seccion">
+
+                    <strong>
+                        ACELERÓGRAFO EN BOGOTÁ
+                    </strong>
+
+                    <br><br>
+
+                    <b>Estación:</b>
+                    ${pga.estacion_critica ?? "BOG.11"}
+                    —
+                    ${estacion.descripcion ?? "Bogota, SGC"}
+
+                    <br>
+
+                    <b>PGA horizontal máxima:</b>
+                    ${pga.pga_maximo_cm_s2 ?? "--"} cm/s²
+
+                    <br>
+
+                    <b>Componente crítica:</b>
+                    ${pga.componente_critica ?? "--"}
+
+                    <br><br>
+
+                    <b>PGA EW:</b>
+                    ${estacion.pgaE ?? "--"} cm/s²
+
+                    &nbsp;&nbsp;
+
+                    <b>PGA NS:</b>
+                    ${estacion.pgaN ?? "--"} cm/s²
+
+                    &nbsp;&nbsp;
+
+                    <b>PGA Z:</b>
+                    ${estacion.pgaZ ?? "--"} cm/s²
+
+                </div>
+
+            `;
+
+        } else {
+
+            bloquePGA = `
+
+                <div class="popup-seccion">
+
+                    <strong>
+                        ACELERÓGRAFO EN BOGOTÁ
+                    </strong>
+
+                    <br><br>
+
+                    <b>Estación:</b>
+                    BOG.11 — Bogota, SGC
+
+                    <br>
+
+                    <b>Estado:</b>
+                    PGA no disponible para este evento
+
+                </div>
+
+            `;
+        }
+
         div.innerHTML = `
 
             <strong>
@@ -703,6 +819,8 @@ function mostrarAlertas(eventos) {
             <b>Lugar:</b>
             ${evento.lugar ?? "--"}
 
+            ${bloquePGA}
+
         `;
 
         contenedor.appendChild(div);
@@ -712,7 +830,7 @@ function mostrarAlertas(eventos) {
 
 
 // ============================================================
-// TABLA
+// TABLA — HISTORIAL RELEVANTE
 // ============================================================
 
 function mostrarTabla(eventos) {
@@ -724,56 +842,75 @@ function mostrarTabla(eventos) {
 
     tbody.innerHTML = "";
 
-    eventos
-        .slice(0, 100)
-        .forEach(evento => {
+    // ========================================================
+    // FILTRO VISUAL DEL HISTORIAL
+    // ========================================================
+    // Solamente se muestran eventos con M >= 3.0.
+    //
+    // IMPORTANTE:
+    // Este filtro NO elimina eventos del JSON,
+    // NO modifica el almacenamiento,
+    // NO modifica los criterios de candidatos
+    // y NO modifica el mapa.
+    // ========================================================
 
-            const fila =
-                document.createElement("tr");
+    const eventosHistorial =
+        eventos
+            .filter(evento =>
+                evento.magnitud !== null &&
+                evento.magnitud !== undefined &&
+                Number(evento.magnitud) >= 3.0
+            )
+            .slice(0, 100);
 
-            if (esCandidato(evento)) {
+    eventosHistorial.forEach(evento => {
 
-                fila.classList.add(
-                    "fila-alerta-candidato"
-                );
-            }
+        const fila =
+            document.createElement("tr");
 
-            const clasificacion =
-                esCandidato(evento)
-                    ? "CANDIDATO M = 4.0"
-                    : "";
+        if (esCandidato(evento)) {
 
-            fila.innerHTML = `
+            fila.classList.add(
+                "fila-alerta-candidato"
+            );
+        }
 
-                <td>
-                    ${evento.fecha_local ?? "--"}
-                </td>
+        const clasificacion =
+            esCandidato(evento)
+                ? "CANDIDATO M = 4.0"
+                : "";
 
-                <td>
-                    ${evento.magnitud ?? "--"}
-                </td>
+        fila.innerHTML = `
 
-                <td>
-                    ${evento.profundidad ?? "--"}
-                </td>
+            <td>
+                ${evento.fecha_local ?? "--"}
+            </td>
 
-                <td>
-                    ${evento.distancia ?? "--"}
-                </td>
+            <td>
+                ${evento.magnitud ?? "--"}
+            </td>
 
-                <td>
-                    ${evento.lugar ?? "--"}
-                </td>
+            <td>
+                ${evento.profundidad ?? "--"}
+            </td>
 
-                <td>
-                    ${clasificacion}
-                </td>
+            <td>
+                ${evento.distancia ?? "--"}
+            </td>
 
-            `;
+            <td>
+                ${evento.lugar ?? "--"}
+            </td>
 
-            tbody.appendChild(fila);
+            <td>
+                ${clasificacion}
+            </td>
 
-        });
+        `;
+
+        tbody.appendChild(fila);
+
+    });
 }
 
 
@@ -991,7 +1128,9 @@ function actualizarMonitor(datos) {
         datos
     );
 
-    actualizarProximaConsulta(datos.fecha_consulta);
+    actualizarProximaConsulta(
+        datos.fecha_consulta
+    );
 
     dibujarSismos(
         eventosSGC
