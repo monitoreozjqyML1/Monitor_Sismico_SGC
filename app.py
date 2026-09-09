@@ -484,6 +484,36 @@ def api_eventos():
 
             if (
                 alerta_id
+                and alerta_id in ids_eventos
+            ):
+
+                pga_almacenada = (
+                    alerta_normalizada.get(
+                        "acelerografia_bogota"
+                    )
+                    or {}
+                )
+
+                if (
+                    pga_almacenada.get("estado")
+                    == "OK"
+                ):
+
+                    for evento_existente in eventos:
+
+                        if (
+                            evento_existente.get("id")
+                            == alerta_id
+                        ):
+
+                            evento_existente[
+                                "acelerografia_bogota"
+                            ] = pga_almacenada
+
+                            break
+
+            elif (
+                alerta_id
                 and alerta_id not in ids_eventos
             ):
 
@@ -592,3 +622,4 @@ if __name__ == "__main__":
         port=puerto,
         debug=False
     )
+
