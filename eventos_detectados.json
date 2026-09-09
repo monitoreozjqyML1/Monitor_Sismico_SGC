@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-09 10:05:22",
+    "actualizado": "2026-09-09 10:15:20",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 671,
+        "total_eventos": 672,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -15001,6 +15001,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-09 10:05:22"
+        },
+        "SGC2026rtjfrq": {
+            "id": "SGC2026rtjfrq",
+            "magnitud": 1.7,
+            "profundidad": 106.0,
+            "latitud": 10.602333333333334,
+            "longitud": -73.33366666666667,
+            "distancia_bogota": 660.12,
+            "lugar": "Valledupar - Cesar, Colombia",
+            "fecha_local": "2026-09-09 03:01",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_4",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 10:15:20"
         }
     }
 }
