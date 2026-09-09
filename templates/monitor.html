@@ -1,130 +1,513 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Monitor Sísmico ML1 - Bogotá</title>
+```
+<title>Monitor Sísmico ML1 - Bogotá</title>
 
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    >
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+>
 
-    <link
-        rel="stylesheet"
-        href="/static/monitor.css"
-    >
+<link
+    rel="stylesheet"
+    href="/static/monitor.css"
+>
 
-    <style>
-        .sin-alertas {
-            padding: 15px;
-            text-align: center;
-            color: #666;
+<style>
+
+    /* =====================================================
+       MENSAJE SIN CANDIDATOS
+       ===================================================== */
+
+    .sin-alertas {
+        padding: 18px;
+        text-align: center;
+        color: #666;
+        background: #f8fafc;
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+    }
+
+
+    /* =====================================================
+       LISTA DE CANDIDATOS ACELEROGRÁFICOS
+       ===================================================== */
+
+    .lista-candidatos {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    /* =====================================================
+       ITEM ACORDEÓN
+       ===================================================== */
+
+    .alerta-item {
+        margin-bottom: 0;
+        padding: 0;
+        border-radius: 8px;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+
+    .alerta-candidato {
+        border-left: 5px solid #d32f2f;
+    }
+
+
+    /* =====================================================
+       CABECERA DEL CANDIDATO
+       ===================================================== */
+
+    .candidato-cabecera {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        padding: 14px 16px;
+
+        border: none;
+        background: #ffffff;
+
+        cursor: pointer;
+        text-align: left;
+
+        transition:
+            background 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+
+    .candidato-cabecera:hover {
+        background: #f8fafc;
+    }
+
+
+    .candidato-cabecera.activo {
+        background: #fff5f5;
+    }
+
+
+    /* =====================================================
+       INFORMACIÓN RESUMIDA
+       ===================================================== */
+
+    .candidato-resumen {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+        flex: 1;
+    }
+
+
+    .candidato-indicador {
+        width: 10px;
+        height: 10px;
+        min-width: 10px;
+
+        border-radius: 50%;
+        background: #d32f2f;
+
+        box-shadow:
+            0 0 0 3px rgba(211,47,47,0.12);
+    }
+
+
+    .candidato-titulo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    .candidato-nombre {
+        font-weight: bold;
+        color: #b71c1c;
+        font-size: 14px;
+    }
+
+
+    .candidato-magnitud {
+        font-size: 15px;
+        font-weight: bold;
+        color: #111827;
+    }
+
+
+    .candidato-resumen-datos {
+        margin-top: 4px;
+        color: #6b7280;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       FLECHA DESPLEGABLE
+       ===================================================== */
+
+    .candidato-flecha {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: #f3f4f6;
+        color: #374151;
+
+        font-size: 15px;
+        font-weight: bold;
+
+        transition:
+            transform 0.2s ease,
+            background 0.2s ease;
+    }
+
+
+    .candidato-cabecera.activo
+    .candidato-flecha {
+
+        transform: rotate(180deg);
+        background: #fee2e2;
+        color: #b91c1c;
+    }
+
+
+    /* =====================================================
+       CONTENIDO DESPLEGABLE
+       ===================================================== */
+
+    .candidato-detalle {
+        display: none;
+
+        padding: 0 16px 16px 16px;
+
+        border-top: 1px solid #f0f0f0;
+        background: #fafafa;
+    }
+
+
+    .candidato-detalle.abierto {
+        display: block;
+    }
+
+
+    /* =====================================================
+       FILAS DE INFORMACIÓN
+       ===================================================== */
+
+    .candidato-datos {
+        display: grid;
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 8px;
+
+        margin-top: 14px;
+    }
+
+
+    .dato-candidato {
+        padding: 10px;
+
+        border-radius: 6px;
+
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+    }
+
+
+    .dato-candidato-etiqueta {
+        display: block;
+
+        margin-bottom: 3px;
+
+        font-size: 11px;
+        color: #6b7280;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+
+    .dato-candidato-valor {
+        display: block;
+
+        font-size: 14px;
+        font-weight: bold;
+        color: #111827;
+    }
+
+
+    /* =====================================================
+       BLOQUE PGA
+       ===================================================== */
+
+    .bloque-pga {
+        margin-top: 12px;
+
+        padding: 14px;
+
+        border-radius: 7px;
+
+        background: #ffffff;
+        border: 1px solid #dbeafe;
+    }
+
+
+    .bloque-pga-titulo {
+        margin-bottom: 10px;
+
+        font-size: 13px;
+        font-weight: bold;
+
+        color: #1d4ed8;
+    }
+
+
+    .pga-estacion {
+        margin-bottom: 10px;
+
+        font-size: 13px;
+        line-height: 1.6;
+
+        color: #374151;
+    }
+
+
+    .pga-componentes {
+        display: grid;
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 8px;
+    }
+
+
+    .pga-componente {
+        padding: 9px;
+
+        border-radius: 6px;
+
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+
+        text-align: center;
+    }
+
+
+    .pga-componente-label {
+        display: block;
+
+        font-size: 11px;
+        color: #6b7280;
+
+        margin-bottom: 3px;
+    }
+
+
+    .pga-componente-valor {
+        display: block;
+
+        font-size: 13px;
+        font-weight: bold;
+
+        color: #111827;
+    }
+
+
+    .pga-no-disponible {
+        margin-top: 10px;
+
+        padding: 10px;
+
+        border-radius: 6px;
+
+        background: #fef3c7;
+        border: 1px solid #fde68a;
+
+        color: #92400e;
+
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       POPUP MAPA
+       ===================================================== */
+
+    .popup-sismo {
+        min-width: 310px;
+        max-width: 380px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .popup-titulo {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .popup-candidato {
+        color: #d32f2f;
+    }
+
+
+    .popup-evento {
+        color: #1976d2;
+    }
+
+
+    .popup-seccion {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+
+    .popup-fila {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        line-height: 1.7;
+        font-size: 13px;
+    }
+
+
+    .popup-etiqueta {
+        font-weight: bold;
+        color: #374151;
+    }
+
+
+    .popup-valor {
+        text-align: right;
+        color: #111827;
+    }
+
+
+    .popup-id {
+        font-size: 11px;
+        color: #6b7280;
+        word-break: break-all;
+    }
+
+
+    /* =====================================================
+       BANNER DE ALERTA
+       ===================================================== */
+
+    .banner-alerta {
+        display: none;
+        margin-bottom: 15px;
+        padding: 18px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+    }
+
+
+    .banner-alerta-candidato {
+        background: #d32f2f;
+    }
+
+
+    .banner-titulo {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+
+    .banner-detalle {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.6;
+    }
+
+
+    .banner-cerrar {
+        float: right;
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+
+    .fila-alerta-candidato {
+        background: #ffebee;
+    }
+
+
+    /* =====================================================
+       RESPONSIVE — CANDIDATOS
+       ===================================================== */
+
+    @media (max-width: 800px) {
+
+        .candidato-datos {
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
         }
 
-        .alerta-item {
-            margin-bottom: 10px;
+        .pga-componentes {
+            grid-template-columns:
+                1fr;
+        }
+    }
+
+
+    @media (max-width: 520px) {
+
+        .candidato-cabecera {
             padding: 12px;
-            border-radius: 6px;
-            background: #f5f5f5;
         }
 
-        .alerta-candidato {
-            border-left: 5px solid #d32f2f;
+        .candidato-datos {
+            grid-template-columns: 1fr;
         }
 
-        .popup-sismo {
-            min-width: 310px;
-            max-width: 380px;
-            font-family: Arial, Helvetica, sans-serif;
+        .candidato-resumen {
+            gap: 8px;
         }
 
-        .popup-titulo {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .popup-candidato {
-            color: #d32f2f;
-        }
-
-        .popup-evento {
-            color: #1976d2;
-        }
-
-        .popup-seccion {
-            margin-top: 8px;
-            padding-top: 8px;
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .popup-fila {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            line-height: 1.7;
-            font-size: 13px;
-        }
-
-        .popup-etiqueta {
-            font-weight: bold;
-            color: #374151;
-        }
-
-        .popup-valor {
-            text-align: right;
-            color: #111827;
-        }
-
-        .popup-id {
+        .candidato-resumen-datos {
             font-size: 11px;
-            color: #6b7280;
-            word-break: break-all;
         }
 
-        .banner-alerta {
-            display: none;
-            margin-bottom: 15px;
-            padding: 18px;
-            border-radius: 8px;
-            color: white;
-            font-weight: bold;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+        .candidato-detalle {
+            padding: 0 12px 12px 12px;
         }
+    }
 
-        .banner-alerta-candidato {
-            background: #d32f2f;
-        }
+</style>
+```
 
-        .banner-titulo {
-            font-size: 20px;
-            margin-bottom: 8px;
-        }
-
-        .banner-detalle {
-            font-size: 14px;
-            font-weight: normal;
-            line-height: 1.6;
-        }
-
-        .banner-cerrar {
-            float: right;
-            border: none;
-            background: transparent;
-            color: white;
-            font-size: 22px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .fila-alerta-candidato {
-            background: #ffebee;
-        }
-    </style>
 </head>
 
 <body>
@@ -134,167 +517,173 @@
         <h1>MONITOR SISMICO ACTIVO - ML1</h1>
     </div>
 
-    <div class="estado-monitor">
-        <span class="indicador-verde"></span>
-    </div>
+```
+<div class="estado-monitor">
+    <span class="indicador-verde"></span>
+</div>
+```
+
 </header>
 
 <main>
 
 <section class="tarjetas">
 
-    <div class="tarjeta">
-        <div class="tarjeta-titulo">
-            ÚLTIMA CONSULTA
-        </div>
-
-        <div id="ultimaConsulta" class="tarjeta-valor">
-            --
-        </div>
+```
+<div class="tarjeta">
+    <div class="tarjeta-titulo">
+        ÚLTIMA CONSULTA
     </div>
 
+    <div id="ultimaConsulta" class="tarjeta-valor">
+        --
+    </div>
+</div>
 
-    <div class="tarjeta">
-        <div class="tarjeta-titulo">
-            PRÓXIMA CONSULTA
-        </div>
 
-        <div id="proximaConsulta" class="tarjeta-valor">
-            --
-        </div>
+<div class="tarjeta">
+    <div class="tarjeta-titulo">
+        PRÓXIMA CONSULTA
     </div>
 
+    <div id="proximaConsulta" class="tarjeta-valor">
+        --
+    </div>
+</div>
 
-    <div class="tarjeta">
-        <div class="tarjeta-titulo">
-            EVENTOS RECIBIDOS
-        </div>
 
-        <div id="eventosRecibidos" class="tarjeta-valor">
-            0
-        </div>
+<div class="tarjeta">
+    <div class="tarjeta-titulo">
+        EVENTOS RECIBIDOS
     </div>
 
+    <div id="eventosRecibidos" class="tarjeta-valor">
+        0
+    </div>
+</div>
 
-    <div class="tarjeta">
-        <div class="tarjeta-titulo">
-            EVENTOS COLOMBIA
-        </div>
 
-        <div id="eventosColombia" class="tarjeta-valor">
-            0
-        </div>
+<div class="tarjeta">
+    <div class="tarjeta-titulo">
+        EVENTOS COLOMBIA
     </div>
 
-
-    <div class="tarjeta">
-        <div class="tarjeta-titulo">
-            CANDIDATOS M = 4.0
-        </div>
-
-        <div id="candidatosAcelerograficos" class="tarjeta-valor">
-            0
-        </div>
+    <div id="eventosColombia" class="tarjeta-valor">
+        0
     </div>
+</div>
+
+
+<div class="tarjeta">
+    <div class="tarjeta-titulo">
+        CANDIDATOS M = 4.0
+    </div>
+
+    <div id="candidatosAcelerograficos" class="tarjeta-valor">
+        0
+    </div>
+</div>
+```
 
 </section>
-
 
 <section
     id="bannerAlerta"
     class="banner-alerta"
 >
 
-    <button
-        class="banner-cerrar"
-        onclick="cerrarBannerAlerta()"
-    >
-        ×
-    </button>
+```
+<button
+    class="banner-cerrar"
+    onclick="cerrarBannerAlerta()"
+>
+    ×
+</button>
 
-    <div
-        id="bannerTitulo"
-        class="banner-titulo"
-    ></div>
+<div
+    id="bannerTitulo"
+    class="banner-titulo"
+></div>
 
-    <div
-        id="bannerDetalle"
-        class="banner-detalle"
-    ></div>
-
-</section>
-
-
-<section class="panel">
-
-    <h2>
-        MAPA SÍSMICO
-    </h2>
-
-    <div id="mapa"></div>
+<div
+    id="bannerDetalle"
+    class="banner-detalle"
+></div>
+```
 
 </section>
 
+<section class="panel">
+
+```
+<h2>
+    MAPA SÍSMICO
+</h2>
+
+<div id="mapa"></div>
+```
+
+</section>
 
 <section class="panel">
 
-    <h2>
-        CANDIDATOS ACELEROGRÁFICOS
-    </h2>
+```
+<h2>
+    CANDIDATOS ACELEROGRÁFICOS
+</h2>
 
-    <div id="alertas">
+<div id="alertas">
 
-        <div class="sin-alertas">
-            No hay candidatos M = 4.0.
-        </div>
-
+    <div class="sin-alertas">
+        No hay candidatos M = 4.0.
     </div>
 
-</section>
+</div>
+```
 
+</section>
 
 <section class="panel">
 
-    <h2>
-        HISTORIAL DE EVENTOS
-    </h2>
+```
+<h2>
+    HISTORIAL DE EVENTOS
+</h2>
 
-    <div style="overflow-x:auto;">
+<div style="overflow-x:auto;">
 
-        <table id="tablaEventos">
+    <table id="tablaEventos">
 
-            <thead>
+        <thead>
 
-                <tr>
-                    <th>Fecha local</th>
-                    <th>Magnitud</th>
-                    <th>Profundidad km</th>
-                    <th>Distancia km</th>
-                    <th>Lugar</th>
-                    <th>Clasificación</th>
-                </tr>
+            <tr>
+                <th>Fecha local</th>
+                <th>Magnitud</th>
+                <th>Profundidad km</th>
+                <th>Distancia km</th>
+                <th>Lugar</th>
+                <th>Clasificación</th>
+            </tr>
 
-            </thead>
+        </thead>
 
-            <tbody>
-            </tbody>
+        <tbody>
+        </tbody>
 
-        </table>
+    </table>
 
-    </div>
+</div>
+```
 
 </section>
 
 </main>
 
-
 <footer>
     Monitor Sísmico ML1 — Bogotá, Colombia
 </footer>
 
-
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
 
 <script>
 
@@ -315,15 +704,6 @@ const alertasProcesadas = new Set();
 // ============================================================
 // FORMATO DE FECHA
 // ============================================================
-//
-// Convierte:
-// 2026-09-09 17:52:15
-//
-// En:
-// 09/09/2026 17:52:15
-//
-// Se utiliza para ÚLTIMA CONSULTA y PRÓXIMA CONSULTA.
-// ============================================================
 
 function formatearFechaHora(fecha) {
 
@@ -331,11 +711,10 @@ function formatearFechaHora(fecha) {
         return "--";
     }
 
-    const partes = String(fecha).trim().split(" ");
+    const partes =
+        String(fecha).trim().split(" ");
 
-    if (
-        partes.length < 2
-    ) {
+    if (partes.length < 2) {
         return fecha;
     }
 
@@ -412,7 +791,9 @@ function convertirFechaConsulta(fechaConsulta) {
 function formatearDateHora(fecha) {
 
     const dia =
-        String(fecha.getDate()).padStart(2, "0");
+        String(
+            fecha.getDate()
+        ).padStart(2, "0");
 
     const mes =
         String(
@@ -751,14 +1132,6 @@ function dibujarSismos(eventos) {
             magnitud >= MAGNITUD_CANDIDATO;
 
 
-        // ====================================================
-        // COLOR SEGÚN MAGNITUD
-        //
-        // M < 3.0       = AZUL
-        // 3.0 <= M < 4  = NARANJA
-        // M >= 4.0      = ROJO
-        // ====================================================
-
         let color =
             "#1976d2";
 
@@ -852,7 +1225,7 @@ function dibujarSismos(eventos) {
 
 
 // ============================================================
-// MOSTRAR CANDIDATOS
+// MOSTRAR CANDIDATOS — LISTA DESPLEGABLE
 // ============================================================
 
 function mostrarAlertas(eventos) {
@@ -872,7 +1245,7 @@ function mostrarAlertas(eventos) {
         contenedor.innerHTML = `
 
             <div class="sin-alertas">
-                No hay candidatos M = 4.0.
+                ✓ No hay candidatos M = 4.0.
             </div>
 
         `;
@@ -884,139 +1257,505 @@ function mostrarAlertas(eventos) {
     contenedor.innerHTML = "";
 
 
-    candidatos.forEach(evento => {
+    const lista =
+        document.createElement("div");
 
-        const div =
-            document.createElement("div");
-
-        div.className =
-            "alerta-item alerta-candidato";
+    lista.className =
+        "lista-candidatos";
 
 
-        const pga =
-            evento.acelerografia_bogota || {};
+    candidatos.forEach(
+        (evento, indice) => {
 
-        const estaciones =
-            pga.estaciones || [];
+            const div =
+                document.createElement("div");
 
-        const estacion =
-            estaciones.length > 0
-                ? estaciones[0]
-                : null;
+            div.className =
+                "alerta-item alerta-candidato";
 
 
-        let bloquePGA = "";
+            const pga =
+                evento.acelerografia_bogota || {};
+
+            const estaciones =
+                pga.estaciones || [];
+
+            const estacion =
+                estaciones.length > 0
+                    ? estaciones[0]
+                    : null;
 
 
-        if (
-            pga.estado === "OK" &&
-            estacion
-        ) {
+            const idUnico =
+                "candidato-" +
+                indice +
+                "-" +
+                String(
+                    evento.id ?? "sin-id"
+                )
+                .replace(
+                    /[^a-zA-Z0-9_-]/g,
+                    ""
+                );
 
-            bloquePGA = `
+
+            // =================================================
+            // CABECERA
+            // =================================================
+
+            const cabecera =
+                document.createElement("button");
+
+            cabecera.type =
+                "button";
+
+            cabecera.className =
+                "candidato-cabecera";
+
+
+            cabecera.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            cabecera.setAttribute(
+                "aria-controls",
+                idUnico
+            );
+
+
+            cabecera.innerHTML = `
+
+                <div class="candidato-resumen">
+
+                    <span
+                        class="candidato-indicador"
+                    ></span>
+
+                    <div>
+
+                        <div class="candidato-titulo">
+
+                            <span
+                                class="candidato-nombre"
+                            >
+                                CANDIDATO ACELEROGRÁFICO
+                            </span>
+
+                            <span
+                                class="candidato-magnitud"
+                            >
+                                M ${evento.magnitud ?? "--"}
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="candidato-resumen-datos"
+                        >
+
+                            Profundidad:
+                            ${evento.profundidad ?? "--"} km
+
+                            &nbsp;•&nbsp;
+
+                            Distancia:
+                            ${evento.distancia ?? "--"} km
+
+                            &nbsp;•&nbsp;
+
+                            ${evento.fecha_local ?? "--"}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <span
+                    class="candidato-flecha"
+                    aria-hidden="true"
+                >
+                    ▼
+                </span>
+
+            `;
+
+
+            // =================================================
+            // DETALLE
+            // =================================================
+
+            const detalle =
+                document.createElement("div");
+
+            detalle.id =
+                idUnico;
+
+            detalle.className =
+                "candidato-detalle";
+
+
+            detalle.innerHTML = `
+
+                <div class="candidato-datos">
+
+                    <div class="dato-candidato">
+
+                        <span
+                            class="dato-candidato-etiqueta"
+                        >
+                            Magnitud
+                        </span>
+
+                        <span
+                            class="dato-candidato-valor"
+                        >
+                            ${evento.magnitud ?? "--"}
+                        </span>
+
+                    </div>
+
+
+                    <div class="dato-candidato">
+
+                        <span
+                            class="dato-candidato-etiqueta"
+                        >
+                            Profundidad
+                        </span>
+
+                        <span
+                            class="dato-candidato-valor"
+                        >
+                            ${evento.profundidad ?? "--"} km
+                        </span>
+
+                    </div>
+
+
+                    <div class="dato-candidato">
+
+                        <span
+                            class="dato-candidato-etiqueta"
+                        >
+                            Distancia Bogotá
+                        </span>
+
+                        <span
+                            class="dato-candidato-valor"
+                        >
+                            ${evento.distancia ?? "--"} km
+                        </span>
+
+                    </div>
+
+
+                    <div class="dato-candidato">
+
+                        <span
+                            class="dato-candidato-etiqueta"
+                        >
+                            Lugar
+                        </span>
+
+                        <span
+                            class="dato-candidato-valor"
+                        >
+                            ${evento.lugar ?? "--"}
+                        </span>
+
+                    </div>
+
+
+                    <div class="dato-candidato">
+
+                        <span
+                            class="dato-candidato-etiqueta"
+                        >
+                            Fecha local
+                        </span>
+
+                        <span
+                            class="dato-candidato-valor"
+                        >
+                            ${evento.fecha_local ?? "--"}
+                        </span>
+
+                    </div>
+
+
+                    <div class="dato-candidato">
+
+                        <span
+                            class="dato-candidato-etiqueta"
+                        >
+                            ID SGC
+                        </span>
+
+                        <span
+                            class="dato-candidato-valor"
+                            style="
+                                font-size:11px;
+                                word-break:break-all;
+                            "
+                        >
+                            ${evento.id ?? "--"}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                ${
+                    pga.estado === "OK" && estacion
+                    ? `
+
+                        <div class="bloque-pga">
+
+                            <div
+                                class="bloque-pga-titulo"
+                            >
+                                ACELERÓGRAFO EN BOGOTÁ
+                            </div>
+
+
+                            <div class="pga-estacion">
+
+                                <b>Estación:</b>
+                                ${pga.estacion_critica ?? "BOG.11"}
+
+                                —
+                                ${estacion.descripcion ?? "Bogota, SGC"}
+
+                                <br>
+
+                                <b>PGA horizontal máxima:</b>
+                                ${pga.pga_maximo_cm_s2 ?? "--"}
+                                cm/s²
+
+                                <br>
+
+                                <b>Componente crítica:</b>
+                                ${pga.componente_critica ?? "--"}
+
+                            </div>
+
+
+                            <div class="pga-componentes">
+
+                                <div class="pga-componente">
+
+                                    <span
+                                        class="pga-componente-label"
+                                    >
+                                        PGA EW
+                                    </span>
+
+                                    <span
+                                        class="pga-componente-valor"
+                                    >
+                                        ${estacion.pgaE ?? "--"}
+                                        cm/s²
+                                    </span>
+
+                                </div>
+
+
+                                <div class="pga-componente">
+
+                                    <span
+                                        class="pga-componente-label"
+                                    >
+                                        PGA NS
+                                    </span>
+
+                                    <span
+                                        class="pga-componente-valor"
+                                    >
+                                        ${estacion.pgaN ?? "--"}
+                                        cm/s²
+                                    </span>
+
+                                </div>
+
+
+                                <div class="pga-componente">
+
+                                    <span
+                                        class="pga-componente-label"
+                                    >
+                                        PGA Z
+                                    </span>
+
+                                    <span
+                                        class="pga-componente-valor"
+                                    >
+                                        ${estacion.pgaZ ?? "--"}
+                                        cm/s²
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    `
+                    : `
+
+                        <div class="bloque-pga">
+
+                            <div
+                                class="bloque-pga-titulo"
+                            >
+                                ACELERÓGRAFO EN BOGOTÁ
+                            </div>
+
+                            <div
+                                class="pga-no-disponible"
+                            >
+                                PGA no disponible para este evento.
+                            </div>
+
+                        </div>
+
+                    `
+                }
+
 
                 <div class="popup-seccion">
 
-                    <strong>
-                        ACELERÓGRAFO EN BOGOTÁ
-                    </strong>
+                    <div class="popup-fila">
 
-                    <br><br>
+                        <span class="popup-etiqueta">
+                            Agencia:
+                        </span>
 
-                    <b>Estación:</b>
-                    ${pga.estacion_critica ?? "BOG.11"}
-                    —
-                    ${estacion.descripcion ?? "Bogota, SGC"}
+                        <span class="popup-valor">
+                            ${evento.agencia ?? "--"}
+                        </span>
 
-                    <br>
-
-                    <b>PGA horizontal máxima:</b>
-                    ${pga.pga_maximo_cm_s2 ?? "--"} cm/s²
-
-                    <br>
-
-                    <b>Componente crítica:</b>
-                    ${pga.componente_critica ?? "--"}
-
-                    <br><br>
-
-                    <b>PGA EW:</b>
-                    ${estacion.pgaE ?? "--"} cm/s²
-
-                    &nbsp;&nbsp;
-
-                    <b>PGA NS:</b>
-                    ${estacion.pgaN ?? "--"} cm/s²
-
-                    &nbsp;&nbsp;
-
-                    <b>PGA Z:</b>
-                    ${estacion.pgaZ ?? "--"} cm/s²
+                    </div>
 
                 </div>
 
             `;
 
-        } else {
 
-            bloquePGA = `
+            // =================================================
+            // EVENTO CLICK
+            // =================================================
 
-                <div class="popup-seccion">
+            cabecera.addEventListener(
+                "click",
+                () => {
 
-                    <strong>
-                        ACELERÓGRAFO EN BOGOTÁ
-                    </strong>
+                    const abierto =
+                        detalle.classList.contains(
+                            "abierto"
+                        );
 
-                    <br><br>
 
-                    <b>Estación:</b>
-                    BOG.11 — Bogota, SGC
+                    // Cerrar todos los demás
+                    lista
+                        .querySelectorAll(
+                            ".candidato-detalle.abierto"
+                        )
+                        .forEach(
+                            otroDetalle => {
 
-                    <br>
+                                if (
+                                    otroDetalle !==
+                                    detalle
+                                ) {
 
-                    <b>Estado:</b>
-                    PGA no disponible para este evento
+                                    otroDetalle.classList.remove(
+                                        "abierto"
+                                    );
 
-                </div>
 
-            `;
+                                    const otraCabecera =
+                                        otroDetalle
+                                        .previousElementSibling;
+
+
+                                    if (
+                                        otraCabecera
+                                    ) {
+
+                                        otraCabecera.classList.remove(
+                                            "activo"
+                                        );
+
+                                        otraCabecera.setAttribute(
+                                            "aria-expanded",
+                                            "false"
+                                        );
+                                    }
+                                }
+                            }
+                        );
+
+
+                    // Alternar candidato actual
+                    if (abierto) {
+
+                        detalle.classList.remove(
+                            "abierto"
+                        );
+
+                        cabecera.classList.remove(
+                            "activo"
+                        );
+
+                        cabecera.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                    } else {
+
+                        detalle.classList.add(
+                            "abierto"
+                        );
+
+                        cabecera.classList.add(
+                            "activo"
+                        );
+
+                        cabecera.setAttribute(
+                            "aria-expanded",
+                            "true"
+                        );
+                    }
+
+                }
+            );
+
+
+            div.appendChild(
+                cabecera
+            );
+
+            div.appendChild(
+                detalle
+            );
+
+            lista.appendChild(
+                div
+            );
+
         }
+    );
 
 
-        div.innerHTML = `
-
-            <strong>
-                CANDIDATO ACELEROGRÁFICO
-            </strong>
-
-            <br><br>
-
-            <b>Magnitud:</b>
-            ${evento.magnitud ?? "--"}
-
-            &nbsp;&nbsp;
-
-            <b>Profundidad:</b>
-            ${evento.profundidad ?? "--"} km
-
-            &nbsp;&nbsp;
-
-            <b>Distancia:</b>
-            ${evento.distancia ?? "--"} km
-
-            <br>
-
-            <b>Lugar:</b>
-            ${evento.lugar ?? "--"}
-
-            ${bloquePGA}
-
-        `;
-
-
-        contenedor.appendChild(div);
-
-    });
+    contenedor.appendChild(
+        lista
+    );
 }
 
 
@@ -1033,18 +1772,6 @@ function mostrarTabla(eventos) {
 
     tbody.innerHTML = "";
 
-
-    // ========================================================
-    // FILTRO VISUAL DEL HISTORIAL
-    // ========================================================
-    // Solamente se muestran eventos con M >= 3.0.
-    //
-    // IMPORTANTE:
-    // Este filtro NO elimina eventos del JSON,
-    // NO modifica el almacenamiento,
-    // NO modifica los criterios de candidatos
-    // y NO modifica el mapa.
-    // ========================================================
 
     const eventosHistorial =
         eventos
