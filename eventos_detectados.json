@@ -1,12 +1,12 @@
 {
-    "actualizado": "2026-09-09 06:50:19",
+    "actualizado": "2026-09-09 06:55:18",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 661,
+        "total_eventos": 663,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
-        "porcentaje_alertas": 0.61
+        "porcentaje_alertas": 0.6
     },
     "eventos": {
         "SGC2026rijgnt": {
@@ -14771,6 +14771,52 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-09 06:50:19"
+        },
+        "SGC2026rtqwjz": {
+            "id": "SGC2026rtqwjz",
+            "magnitud": 2.7,
+            "profundidad": 0.0,
+            "latitud": 4.391412734985352,
+            "longitud": -76.70510864257812,
+            "distancia_bogota": 294.01,
+            "lugar": "Istmina - Chocó, Colombia",
+            "fecha_local": "2026-09-09 06:52",
+            "agencia": "SGC",
+            "tipo_magnitud": "M",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 06:55:18"
+        },
+        "SGC2026rrtzvr": {
+            "id": "SGC2026rrtzvr",
+            "magnitud": 1.5,
+            "profundidad": 13.0,
+            "latitud": 7.520833333333333,
+            "longitud": -74.10483333333333,
+            "distancia_bogota": 312.46,
+            "lugar": "San Pablo - Bolívar, Colombia",
+            "fecha_local": "2026-09-08 06:17",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_vmm",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 06:55:18"
         }
     }
 }
