@@ -1,10 +1,10 @@
-Ôªø<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Monitor S√≠smico ML1 - Bogot√°</title>
+    <title>Monitor SÌsmico ML1 - Bogot·</title>
 
     <link
         rel="stylesheet"
@@ -145,7 +145,7 @@
 
     <div class="tarjeta">
         <div class="tarjeta-titulo">
-            √öLTIMA CONSULTA
+            ⁄LTIMA CONSULTA
         </div>
         <div id="ultimaConsulta" class="tarjeta-valor">
             --
@@ -154,7 +154,7 @@
 
     <div class="tarjeta">
         <div class="tarjeta-titulo">
-            PR√ìXIMA CONSULTA
+            PR”XIMA CONSULTA
         </div>
         <div id="proximaConsulta" class="tarjeta-valor">
             --
@@ -181,7 +181,7 @@
 
     <div class="tarjeta">
         <div class="tarjeta-titulo">
-            CANDIDATOS M ‚â• 4.0
+            CANDIDATOS M = 4.0
         </div>
         <div id="candidatosAcelerograficos" class="tarjeta-valor">
             0
@@ -198,7 +198,7 @@
         class="banner-cerrar"
         onclick="cerrarBannerAlerta()"
     >
-        √ó
+        ◊
     </button>
 
     <div
@@ -215,7 +215,7 @@
 <section class="panel">
 
     <h2>
-        MAPA S√çSMICO
+        MAPA SÕSMICO
     </h2>
 
     <div id="mapa"></div>
@@ -225,13 +225,13 @@
 <section class="panel">
 
     <h2>
-        CANDIDATOS ACELEROGR√ÅFICOS
+        CANDIDATOS ACELEROGR¡FICOS
     </h2>
 
     <div id="alertas">
 
         <div class="sin-alertas">
-            No hay candidatos M ‚â• 4.0.
+            No hay candidatos M = 4.0.
         </div>
 
     </div>
@@ -255,7 +255,7 @@
                     <th>Profundidad km</th>
                     <th>Distancia km</th>
                     <th>Lugar</th>
-                    <th>Clasificaci√≥n</th>
+                    <th>ClasificaciÛn</th>
                 </tr>
             </thead>
 
@@ -271,7 +271,7 @@
 </main>
 
 <footer>
-    Monitor S√≠smico ML1 ‚Äî Bogot√°, Colombia
+    Monitor SÌsmico ML1 ó Bogot·, Colombia
 </footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -311,7 +311,7 @@ L.tileLayer(
 
 
 // ============================================================
-// BOGOT√Å
+// BOGOT¡
 // ============================================================
 
 L.marker(
@@ -319,8 +319,8 @@ L.marker(
 )
 .addTo(mapa)
 .bindPopup(
-    "<b>Bogot√°</b><br>" +
-    "Referencia geogr√°fica"
+    "<b>Bogot·</b><br>" +
+    "Referencia geogr·fica"
 );
 
 
@@ -396,8 +396,8 @@ function construirPopup(evento) {
 
     const titulo =
         candidato
-            ? "CANDIDATO ACELEROGR√ÅFICO"
-            : "Evento s√≠smico";
+            ? "CANDIDATO ACELEROGR¡FICO"
+            : "Evento sÌsmico";
 
     const claseTitulo =
         candidato
@@ -476,7 +476,7 @@ function construirPopup(evento) {
                 <div class="popup-fila">
 
                     <span class="popup-etiqueta">
-                        Distancia a Bogot√°:
+                        Distancia a Bogot·:
                     </span>
 
                     <span class="popup-valor">
@@ -659,7 +659,7 @@ function mostrarAlertas(eventos) {
         contenedor.innerHTML = `
 
             <div class="sin-alertas">
-                No hay candidatos M ‚â• 4.0.
+                No hay candidatos M = 4.0.
             </div>
 
         `;
@@ -680,7 +680,7 @@ function mostrarAlertas(eventos) {
         div.innerHTML = `
 
             <strong>
-                CANDIDATO ACELEROGR√ÅFICO
+                CANDIDATO ACELEROGR¡FICO
             </strong>
 
             <br><br>
@@ -740,7 +740,7 @@ function mostrarTabla(eventos) {
 
             const clasificacion =
                 esCandidato(evento)
-                    ? "CANDIDATO M ‚â• 4.0"
+                    ? "CANDIDATO M = 4.0"
                     : "";
 
             fila.innerHTML = `
@@ -801,12 +801,24 @@ function actualizarContadores(datos) {
 
 
 // ============================================================
-// PR√ìXIMA CONSULTA
+// PR”XIMA CONSULTA
 // ============================================================
 
-function actualizarProximaConsulta() {
+function actualizarProximaConsulta(fechaConsulta) {
 
-    const ahora = new Date();
+    const partes = fechaConsulta.split(" ");
+
+    const fechaBase = partes[0].split("-");
+    const horaBase = partes[1].split(":");
+
+    const ahora = new Date(
+        Number(fechaBase[0]),
+        Number(fechaBase[1]) - 1,
+        Number(fechaBase[2]),
+        Number(horaBase[0]),
+        Number(horaBase[1]),
+        Number(horaBase[2])
+    );
 
     const proxima =
         new Date(
@@ -859,7 +871,7 @@ function mostrarBannerAlerta(evento) {
         "banner-alerta banner-alerta-candidato";
 
     titulo.textContent =
-        "ALERTA: CANDIDATO ACELEROGR√ÅFICO";
+        "ALERTA: CANDIDATO ACELEROGR¡FICO";
 
     detalle.innerHTML = `
 
@@ -979,7 +991,7 @@ function actualizarMonitor(datos) {
         datos
     );
 
-    actualizarProximaConsulta();
+    actualizarProximaConsulta(datos.fecha_consulta);
 
     dibujarSismos(
         eventosSGC
@@ -1047,7 +1059,7 @@ async function cargarEventos() {
 
 
 // ============================================================
-// INICIALIZACI√ìN
+// INICIALIZACI”N
 // ============================================================
 
 cargarEventos();

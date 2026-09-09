@@ -1,14 +1,15 @@
-﻿from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify
 import requests
 import math
 import json
 import os
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 app = Flask(__name__)
 
 # ============================================================
-# CONFIGURACIÓN SGC
+# CONFIGURACI�N SGC
 # ============================================================
 
 URL_SGC = (
@@ -529,7 +530,7 @@ def api_eventos():
             "ok": True,
 
             "fecha_consulta":
-                datetime.now().strftime(
+                datetime.now(ZoneInfo("America/Bogota")).strftime(
                     "%Y-%m-%d %H:%M:%S"
                 ),
 
