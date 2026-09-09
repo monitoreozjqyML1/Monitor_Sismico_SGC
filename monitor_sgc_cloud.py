@@ -7,270 +7,147 @@ from zoneinfo import ZoneInfo
 
 
 # ============================================================
-# CONFIGURACIÓN
+# CONFIGURACIÓN GENERAL
 # ============================================================
 
-URL_SGC = (
-    "https://archive.sgc.gov.co/"
-    "feed/v1.0.1/summary/five_days_all.json"
-)
+URL_SGC = "https://archive.sgc.gov.co/feed/v1.0.1/summary/five_days_all.json"
+URL_DETALLE_SGC = "https://archive.sgc.gov.co/events/"
 
 ARCHIVO_EVENTOS = "eventos_detectados.json"
-
 DIAS_RETENCION = 30
+
+ZONA_HORARIA = ZoneInfo("America/Bogota")
+
+LAT_BOGOTA = 4.7110
+LON_BOGOTA = -74.0721
+
+# Magnitud mínima para considerar un evento candidato
+# a acelerografía automática.
+MAGNITUD_CANDIDATO_ACELEROGRAFICO = 4.0
 
 
 # ============================================================
 # TELEGRAM
 # ============================================================
 
-TELEGRAM_BOT_TOKEN = os.getenv(
-    "TELEGRAM_BOT_TOKEN"
-)
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-TELEGRAM_CHAT_ID = os.getenv(
-    "TELEGRAM_CHAT_ID"
-)
+URL_MONITOR = "https://monitor-sismico-sgc.onrender.com"
 
 
 # ============================================================
-# BOGOTÁ
-# ============================================================
-
-LAT_BOGOTA = 4.7110
-LON_BOGOTA = -74.0721
-ZONA_HORARIA = ZoneInfo("America/Bogota")
-
-
-# ============================================================
-# CRITERIO PRINCIPAL DE MAGNITUD
-# ============================================================
-# Solo los eventos ubicados en Colombia son de interés.
-#
-# La magnitud >= 4.0 determina si el evento es candidato
-# acelerográfico.
-#
-# La distancia y la profundidad NO son filtros de alerta.
-# La distancia a Bogotá se conserva únicamente como dato
-# informativo.
-
-MAGNITUD_CANDIDATO_ACELEROGRAFICO = 4.0
-
-
-# ============================================================
-# CARGAR EVENTOS REGISTRADOS
+# CARGA Y GUARDADO DE EVENTOS
 # ============================================================
 
 def cargar_eventos_registrados():
-
     if not os.path.exists(ARCHIVO_EVENTOS):
         return {}
 
     try:
-
         with open(
             ARCHIVO_EVENTOS,
             "r",
             encoding="utf-8"
         ) as archivo:
-
             datos = json.load(archivo)
 
-        # ----------------------------------------------------
-        # FORMATO NUEVO
-        # ----------------------------------------------------
-
         if isinstance(datos, dict):
+            eventos = datos.get("eventos", {})
 
-            if "eventos" in datos:
+            if isinstance(eventos, dict):
+                return eventos
 
-                eventos = datos.get(
-                    "eventos",
-                    {}
-                )
-
-                if isinstance(eventos, dict):
-                    return eventos
-
-                if isinstance(eventos, list):
-
-                    resultado = {}
-
-                    for evento in eventos:
-
-                        if isinstance(evento, dict):
-
-                            evento_id = evento.get(
-                                "id"
-                            )
-
-                            if evento_id:
-                                resultado[
-                                    evento_id
-                                ] = evento
-
-                    return resultado
-
-            # ------------------------------------------------
-            # COMPATIBILIDAD CON FORMATO ANTERIOR
-            # ------------------------------------------------
-
-            resultado = {}
-
-            for evento_id, evento in datos.items():
-
-                if isinstance(evento, dict):
-
-                    if evento.get("id"):
-
-                        resultado[
-                            evento_id
-                        ] = evento
-
-            return resultado
-
-        # ----------------------------------------------------
-        # COMPATIBILIDAD SI EL JSON ES UNA LISTA
-        # ----------------------------------------------------
+            if isinstance(eventos, list):
+                return {
+                    evento.get("id"): evento
+                    for evento in eventos
+                    if isinstance(evento, dict)
+                    and evento.get("id")
+                }
 
         if isinstance(datos, list):
-
-            resultado = {}
-
-            for evento in datos:
-
-                if isinstance(evento, dict):
-
-                    evento_id = evento.get(
-                        "id"
-                    )
-
-                    if evento_id:
-
-                        resultado[
-                            evento_id
-                        ] = evento
-
-            return resultado
-
-    except Exception as error:
-
-        print(
-            f"⚠️ Error leyendo {ARCHIVO_EVENTOS}: {error}"
-        )
+            return {
+                evento.get("id"): evento
+                for evento in datos
+                if isinstance(evento, dict)
+                and evento.get("id")
+            }
 
         return {}
 
-    return {}
+    except Exception as error:
+        print(
+            f"?? No fue posible cargar eventos registrados: "
+            f"{error}"
+        )
+        return {}
 
 
-# ============================================================
-# GUARDAR EVENTOS Y RESUMEN
-# ============================================================
-
-def guardar_eventos_registrados(
-    eventos,
-    resumen
-):
-
+def guardar_eventos_registrados(eventos, resumen):
     datos = {
-
         "actualizado": datetime.now(
             ZONA_HORARIA
-        ).strftime(
-            "%Y-%m-%d %H:%M:%S"
-        ),
-
+        ).isoformat(),
         "periodo_retencion_dias": DIAS_RETENCION,
-
         "resumen": resumen,
-
         "eventos": eventos
-
     }
 
-    with open(
-        ARCHIVO_EVENTOS,
-        "w",
-        encoding="utf-8"
-    ) as archivo:
-
-        json.dump(
-            datos,
-            archivo,
-            ensure_ascii=False,
-            indent=4
-        )
-
-
-# ============================================================
-# ELIMINAR EVENTOS ANTIGUOS
-# ============================================================
-
-def limpiar_eventos_antiguos(
-    eventos
-):
-
-    limite = (
-        datetime.now(ZONA_HORARIA)
-        -
-        timedelta(
-            days=DIAS_RETENCION
-        )
-    )
-
-    eventos_limpios = {}
-
-    eliminados = 0
-
-    for evento_id, evento in eventos.items():
-
-        if not isinstance(evento, dict):
-            continue
-
-        fecha_texto = evento.get(
-            "fecha_deteccion"
-        )
-
-        if not fecha_texto:
-
-            eventos_limpios[
-                evento_id
-            ] = evento
-
-            continue
-
-        try:
-
-            fecha_evento = datetime.strptime(
-                fecha_texto,
-                "%Y-%m-%d %H:%M:%S"
-            ).replace(
-                tzinfo=ZONA_HORARIA
+    try:
+        with open(
+            ARCHIVO_EVENTOS,
+            "w",
+            encoding="utf-8"
+        ) as archivo:
+            json.dump(
+                datos,
+                archivo,
+                ensure_ascii=False,
+                indent=2
             )
 
-            if fecha_evento >= limite:
+    except Exception as error:
+        print(
+            f"?? No fue posible guardar eventos: "
+            f"{error}"
+        )
 
-                eventos_limpios[
-                    evento_id
-                ] = evento
 
-            else:
-
-                eliminados += 1
-
-        except ValueError:
-
-            eventos_limpios[
-                evento_id
-            ] = evento
-
-    print(
-        f"    Eventos eliminados por antigüedad: "
-        f"{eliminados}"
+def limpiar_eventos_antiguos(eventos):
+    fecha_limite = (
+        datetime.now(ZONA_HORARIA)
+        - timedelta(days=DIAS_RETENCION)
     )
 
-    return eventos_limpios
+    eventos_validos = {}
+
+    for event_id, evento in eventos.items():
+        try:
+            fecha_texto = evento.get("fecha_deteccion")
+
+            if not fecha_texto:
+                eventos_validos[event_id] = evento
+                continue
+
+            fecha_evento = datetime.fromisoformat(
+                fecha_texto
+            )
+
+            if fecha_evento.tzinfo is None:
+                fecha_evento = fecha_evento.replace(
+                    tzinfo=ZONA_HORARIA
+                )
+
+            if fecha_evento >= fecha_limite:
+                eventos_validos[event_id] = evento
+
+        except Exception:
+            eventos_validos[event_id] = evento
+
+    return eventos_validos
+
+
 
 
 # ============================================================
@@ -278,211 +155,417 @@ def limpiar_eventos_antiguos(
 # ============================================================
 
 def obtener_eventos():
-
-    respuesta = requests.get(
-        URL_SGC,
-        timeout=30
-    )
-
-    respuesta.raise_for_status()
-
-    datos = respuesta.json()
-
-    return datos.get(
-        "features",
-        []
-    )
-
-
-# ============================================================
-# CALCULAR DISTANCIA A BOGOTÁ
-# ============================================================
-
-def calcular_distancia_km(
-    lat,
-    lon
-):
-
-    radio_tierra = 6371.0
-
-    lat1 = math.radians(
-        LAT_BOGOTA
-    )
-
-    lat2 = math.radians(
-        lat
-    )
-
-    diferencia_lat = math.radians(
-        lat - LAT_BOGOTA
-    )
-
-    diferencia_lon = math.radians(
-        lon - LON_BOGOTA
-    )
-
-    a = (
-        math.sin(
-            diferencia_lat / 2
-        ) ** 2
-
-        +
-
-        math.cos(lat1)
-        *
-        math.cos(lat2)
-        *
-        math.sin(
-            diferencia_lon / 2
-        ) ** 2
-    )
-
-    a = max(
-        0.0,
-        min(
-            1.0,
-            a
-        )
-    )
-
-    distancia = (
-        2
-        *
-        radio_tierra
-        *
-        math.asin(
-            math.sqrt(a)
-        )
-    )
-
-    return distancia
-
-
-# ============================================================
-# VERIFICAR SI EL EVENTO ES DE COLOMBIA
-# ============================================================
-
-def es_evento_colombia(
-    lugar
-):
-
-    if not isinstance(lugar, str):
-        return False
-
-    return lugar.strip().lower().endswith(
-        ", colombia"
-    )
-
-
-# ============================================================
-# ENVIAR EVENTO POR TELEGRAM
-# ============================================================
-
-def enviar_alerta_telegram(
-    resultado
-):
-
-    if not TELEGRAM_BOT_TOKEN:
-
-        print(
-            "⚠️ TELEGRAM_BOT_TOKEN no está configurado."
-        )
-
-        return False
-
-    if not TELEGRAM_CHAT_ID:
-
-        print(
-            "⚠️ TELEGRAM_CHAT_ID no está configurado."
-        )
-
-        return False
-
-    url = (
-        "https://api.telegram.org/bot"
-        f"{TELEGRAM_BOT_TOKEN}"
-        "/sendMessage"
-    )
-
-    alertas = resultado.get(
-        "alertas",
-        []
-    )
-
-    # Los eventos normales se registran sin enviar Telegram.
-    # Solo los eventos M >= 4.0 generan el mensaje actual.
-
-    if not alertas:
-        return False
-
-    tipo_alerta = ", ".join(
-        alertas
-    )
-
-    lugar = resultado.get(
-        "lugar"
-    ) or "No informado"
-
-    fecha_local = resultado.get(
-        "fecha_local"
-    ) or "No informada"
-
-    mensaje = (
-        "🚨 <b>MONITOR SÍSMICO ML1</b>\n"
-        "\n"
-        f"<b>Alerta:</b> {tipo_alerta}\n"
-        f"<b>Magnitud:</b> {resultado['magnitud']}\n"
-        f"<b>Profundidad:</b> {resultado['profundidad']} km\n"
-        f"<b>Distancia a Bogotá:</b> {resultado['distancia_bogota']} km\n"
-        f"<b>Ubicación:</b> {lugar}\n"
-        f"<b>Hora local:</b> {fecha_local}\n"
-        "\n"
-        "Fuente: Servicio Geológico Colombiano\n"
-        "🌐 <a href=\"https://monitor-sismico-sgc.onrender.com\">Abrir Monitor Sísmico ML1</a>\n"
-        "\n"
-        "<i>Desarrollado por: ML1 - TQMD - ZJQY</i>"
-    )
-
-    datos = {
-        "chat_id": TELEGRAM_CHAT_ID,
-        "text": mensaje,
-        "parse_mode": "HTML"
-    }
-
     try:
-
-        respuesta = requests.post(
-            url,
-            data=datos,
+        respuesta = requests.get(
+            URL_SGC,
             timeout=30
         )
 
         respuesta.raise_for_status()
 
-        resultado_telegram = respuesta.json()
+        datos = respuesta.json()
 
-        if resultado_telegram.get("ok"):
-
-            print(
-                "    📲 Evento enviado correctamente por Telegram."
+        if isinstance(datos, dict):
+            eventos = datos.get(
+                "features",
+                []
             )
 
-            return True
+            if isinstance(eventos, list):
+                return eventos
 
-        print(
-            "⚠️ Telegram respondió con error:"
-        )
-
-        print(
-            resultado_telegram
-        )
-
-        return False
+        return []
 
     except Exception as error:
+        print(
+            f"❌ Error consultando SGC: {error}"
+        )
+        return []
+
+
+# ============================================================
+# DISTANCIA A BOGOTÁ
+# ============================================================
+
+def calcular_distancia_km(lat, lon):
+    try:
+        lat = float(lat)
+        lon = float(lon)
+
+    except (TypeError, ValueError):
+        return None
+
+    radio_tierra_km = 6371.0
+
+    lat1 = math.radians(LAT_BOGOTA)
+    lon1 = math.radians(LON_BOGOTA)
+
+    lat2 = math.radians(lat)
+    lon2 = math.radians(lon)
+
+    diferencia_lat = lat2 - lat1
+    diferencia_lon = lon2 - lon1
+
+    a = (
+        math.sin(diferencia_lat / 2) ** 2
+        + math.cos(lat1)
+        * math.cos(lat2)
+        * math.sin(diferencia_lon / 2) ** 2
+    )
+
+    c = 2 * math.atan2(
+        math.sqrt(a),
+        math.sqrt(1 - a)
+    )
+
+    return radio_tierra_km * c
+
+
+# ============================================================
+# EVENTOS EN COLOMBIA
+# ============================================================
+
+def es_evento_colombia(lugar):
+    if not lugar:
+        return False
+
+    return (
+        str(lugar)
+        .strip()
+        .lower()
+        .endswith(", colombia")
+    )
+
+
+# ============================================================
+# OBTENER PGA DE BOG.11
+# ============================================================
+
+def obtener_pga_bogota(evento_id):
+    resultado_base = {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": None,
+        "estacion_critica": None,
+        "componente_critica": None
+    }
+
+    if not evento_id:
+        return resultado_base
+
+    url = (
+        f"{URL_DETALLE_SGC}"
+        f"{evento_id}/detail.json"
+    )
+
+    try:
+        respuesta = requests.get(
+            url,
+            timeout=20
+        )
+
+        respuesta.raise_for_status()
+
+        datos = respuesta.json()
+
+        propiedades = datos.get(
+            "properties",
+            {}
+        )
+
+        productos = propiedades.get(
+            "products",
+            {}
+        )
+
+        registros = productos.get(
+            "sm",
+            []
+        )
+
+        if not isinstance(registros, list):
+            return resultado_base
+
+        for registro in registros:
+
+            if not isinstance(registro, dict):
+                continue
+
+            # Solo BOG.11
+            if registro.get("stationCode") != "BOG":
+                continue
+
+            if str(
+                registro.get("locationCode")
+            ) != "11":
+                continue
+
+            def convertir_pga(nombre):
+                valor = registro.get(nombre)
+
+                if valor is None:
+                    return None
+
+                try:
+                    valor = float(valor)
+
+                    if not math.isfinite(valor):
+                        return None
+
+                    return valor
+
+                except (TypeError, ValueError):
+                    return None
+
+            pga_e = convertir_pga("pgaE")
+            pga_n = convertir_pga("pgaN")
+            pga_z = convertir_pga("pgaZ")
+
+            componentes_horizontales = []
+
+            if pga_e is not None:
+                componentes_horizontales.append(
+                    ("EW", pga_e)
+                )
+
+            if pga_n is not None:
+                componentes_horizontales.append(
+                    ("NS", pga_n)
+                )
+
+            if not componentes_horizontales:
+                return resultado_base
+
+            componente_critica, pga_maximo = max(
+                componentes_horizontales,
+                key=lambda item: item[1]
+            )
+
+            estacion = {
+                "descripcion": registro.get(
+                    "description"
+                ),
+                "stationCode": registro.get(
+                    "stationCode"
+                ),
+                "locationCode": str(
+                    registro.get("locationCode")
+                ),
+                "networkCode": registro.get(
+                    "networkCode"
+                ),
+                "latitude": registro.get(
+                    "latitude"
+                ),
+                "longitude": registro.get(
+                    "longitude"
+                ),
+                "elevation": registro.get(
+                    "elevation"
+                ),
+                "distanceEpicentral": registro.get(
+                    "distanceEpicentral"
+                ),
+                "distanceHipocentral": registro.get(
+                    "distanceHipocentral"
+                ),
+                "pgaE": pga_e,
+                "pgaN": pga_n,
+                "pgaZ": pga_z
+            }
+
+            return {
+                "estado": "OK",
+                "estaciones": [estacion],
+                "pga_maximo_cm_s2": pga_maximo,
+                "estacion_critica": "BOG.11",
+                "componente_critica": componente_critica
+            }
+
+        return resultado_base
+
+    except Exception as error:
+        print(
+            f"    ⚠️ No fue posible obtener PGA de BOG.11: "
+            f"{error}"
+        )
+
+        return resultado_base
+
+
+# ============================================================
+# TELEGRAM
+# ============================================================
+
+def enviar_alerta_telegram(resultado):
+
+    if not TELEGRAM_BOT_TOKEN:
+        print(
+            "⚠️ TELEGRAM_BOT_TOKEN no está configurado."
+        )
+        return False
+
+    if not TELEGRAM_CHAT_ID:
+        print(
+            "⚠️ TELEGRAM_CHAT_ID no está configurado."
+        )
+        return False
+
+    magnitud = resultado.get(
+        "magnitud"
+    )
+
+    profundidad = resultado.get(
+        "profundidad"
+    )
+
+    distancia = resultado.get(
+        "distancia_km"
+    )
+
+    lugar = resultado.get(
+        "lugar"
+    )
+
+    hora_local = resultado.get("hora_local") or resultado.get("fecha_local")
+
+    mensaje = (
+        "🚨 MONITOR SÍSMICO ML1\n\n"
+        "Alerta\n"
+        f"Magnitud: {magnitud}\n"
+        f"Profundidad: {profundidad} km\n"
+    )
+
+    if distancia is not None:
+        mensaje += (
+            f"Distancia a Bogotá: "
+            f"{distancia:.1f} km\n"
+        )
+
+    mensaje += (
+        f"Ubicación: {lugar}\n"
+        f"Hora local: {hora_local}\n"
+    )
+
+    # --------------------------------------------------------
+    # PGA BOG.11
+    # --------------------------------------------------------
+
+    acelerografia = resultado.get(
+        "acelerografia_bogota"
+    )
+
+    if acelerografia:
+
+        estado = acelerografia.get(
+            "estado"
+        )
+
+        if estado == "OK":
+
+            estaciones = acelerografia.get(
+                "estaciones",
+                []
+            )
+
+            if estaciones:
+
+                estacion = estaciones[0]
+
+                pga_e = estacion.get(
+                    "pgaE"
+                )
+
+                pga_n = estacion.get(
+                    "pgaN"
+                )
+
+                pga_z = estacion.get(
+                    "pgaZ"
+                )
+
+                mensaje += (
+                    "\n📊 PGA Bogotá BOG.11\n"
+                )
+
+                if pga_e is not None:
+                    mensaje += (
+                        f"EW: {pga_e:.3f} cm/s²\n"
+                    )
+
+                if pga_n is not None:
+                    mensaje += (
+                        f"NS: {pga_n:.3f} cm/s²\n"
+                    )
+
+                if pga_z is not None:
+                    mensaje += (
+                        f"Z: {pga_z:.3f} cm/s²\n"
+                    )
+
+                pga_horizontal = acelerografia.get(
+                    "pga_maximo_cm_s2"
+                )
+
+                componente = acelerografia.get(
+                    "componente_critica"
+                )
+
+                if pga_horizontal is not None:
+
+                    mensaje += (
+                        f"Horizontal máx.: "
+                        f"{pga_horizontal:.3f} cm/s²"
+                    )
+
+                    if componente:
+                        mensaje += (
+                            f" ({componente})"
+                        )
+
+                    mensaje += "\n"
+
+        else:
+            mensaje += (
+                "\n📊 PGA Bogotá BOG.11\n"
+                "No disponible en el detalle SGC.\n"
+            )
+
+    mensaje += (
+        "\nFuente: SGC\n"
+        f"{URL_MONITOR}\n\n"
+        "Desarrollado por: ML1 - TQMD - ZJQY"
+    )
+
+    url_telegram = (
+        "https://api.telegram.org/bot"
+        f"{TELEGRAM_BOT_TOKEN}/sendMessage"
+    )
+
+    datos = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": mensaje
+    }
+
+    try:
+        respuesta = requests.post(
+            url_telegram,
+            data=datos,
+            timeout=20
+        )
+
+        respuesta.raise_for_status()
 
         print(
-            f"⚠️ Error enviando evento por Telegram: {error}"
+            "    📱 Alerta enviada a Telegram."
+        )
+
+        return True
+
+    except Exception as error:
+        print(
+            f"    ❌ Error enviando alerta a Telegram: "
+            f"{error}"
         )
 
         return False
@@ -492,362 +575,290 @@ def enviar_alerta_telegram(
 # ANALIZAR EVENTO
 # ============================================================
 
-def analizar_evento(
-    evento
-):
+def analizar_evento(evento):
+
+    propiedades = evento.get(
+        "properties",
+        {}
+    )
+
+    geometria = evento.get(
+        "geometry",
+        {}
+    )
+
+    coordenadas = geometria.get(
+        "coordinates",
+        []
+    )
 
     try:
-
-        propiedades = evento.get(
-            "properties",
-            {}
-        )
-
-        lugar = propiedades.get(
-            "place"
-        )
-
-        # ----------------------------------------------------
-        # FILTRO TERRITORIAL: SOLO COLOMBIA
-        # ----------------------------------------------------
-        # No se utiliza distancia ni profundidad para filtrar.
-        # Solo se procesan eventos que el SGC identifica
-        # como ubicados en Colombia.
-
-        if not es_evento_colombia(
-            lugar
-        ):
-            return None
-
-        geometria = evento.get(
-            "geometry",
-            {}
-        )
-
-        coordenadas = geometria.get(
-            "coordinates",
-            []
-        )
-
-        if len(coordenadas) < 3:
-            return None
-
-        # ----------------------------------------------------
-        # COORDENADAS DEL FEED SGC
-        #
-        # El feed actual del SGC publica:
-        # [latitud, longitud, profundidad]
-        # ----------------------------------------------------
-
-        lat = float(
+        latitud = float(
             coordenadas[0]
         )
 
-        lon = float(
+        longitud = float(
             coordenadas[1]
         )
 
-        profundidad = float(
-            coordenadas[2]
-        )
-
-        # ----------------------------------------------------
-        # VALIDAR COORDENADAS
-        # ----------------------------------------------------
-
-        if not (
-            -90 <= lat <= 90
-        ):
-            return None
-
-        if not (
-            -180 <= lon <= 180
-        ):
-            return None
-
-        # ----------------------------------------------------
-        # MAGNITUD
-        # ----------------------------------------------------
-
-        valor_magnitud = propiedades.get(
-            "mag"
-        )
-
-        if valor_magnitud is None:
-            return None
-
-        magnitud = float(
-            valor_magnitud
-        )
-
-        # ----------------------------------------------------
-        # ID DEL EVENTO
-        # ----------------------------------------------------
-
-        evento_id = evento.get(
-            "id"
-        )
-
-        if not evento_id:
-            return None
-
-        # ----------------------------------------------------
-        # DISTANCIA A BOGOTÁ - INFORMATIVA
-        # ----------------------------------------------------
-
-        distancia = calcular_distancia_km(
-            lat,
-            lon
-        )
-
-        # ====================================================
-        # CRITERIO ÚNICO ACTUAL: MAGNITUD
-        # ====================================================
-
-        candidato_acelerografico = (
-            magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO
-        )
-
-        alertas = []
-
-        if candidato_acelerografico:
-
-            alertas.append(
-                f"SISMO M >= {MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f}"
+        if len(coordenadas) >= 3:
+            profundidad = float(
+                coordenadas[2]
             )
-
-        if candidato_acelerografico:
-
-            categoria = (
-                "SISMO CANDIDATO ACELEROGRÁFICO "
-                f"(M >= {MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f})"
-            )
-
         else:
+            profundidad = None
 
-            categoria = (
-                "SISMO SIN CRITERIO DE MAGNITUD"
-            )
+    except (
+        IndexError,
+        TypeError,
+        ValueError
+    ):
+        longitud = None
+        latitud = None
+        profundidad = None
 
-        # ====================================================
-        # REGISTRO
-        # ====================================================
+    magnitud = propiedades.get(
+        "mag"
+    )
 
-        registro = {
-
-            "id": evento_id,
-
-            "magnitud": magnitud,
-
-            "profundidad": profundidad,
-
-            "latitud": lat,
-
-            "longitud": lon,
-
-            "distancia_bogota": round(
-                distancia,
-                2
-            ),
-
-            "lugar": lugar,
-
-            "fecha_local": propiedades.get(
-                "localTime"
-            ),
-
-            "agencia": propiedades.get(
-                "agency"
-            ),
-
-            "tipo_magnitud": propiedades.get(
-                "magType"
-            ),
-
-            "categoria": categoria,
-
-            "candidato_acelerografico":
-                candidato_acelerografico,
-
-            "acelerografia_bogota": {
-
-                "estado": "PENDIENTE",
-
-                "estaciones": [],
-
-                "pga_maximo_cm_s2": None,
-
-                "estacion_critica": None,
-
-                "componente_critica": None
-
-            },
-
-            "alertas": alertas,
-
-            "fecha_deteccion": datetime.now(
-                ZONA_HORARIA
-            ).strftime(
-                "%Y-%m-%d %H:%M:%S"
-            )
-
-        }
-
-        return registro
+    try:
+        magnitud = float(
+            magnitud
+        )
 
     except (
         TypeError,
-        ValueError,
-        KeyError,
-        IndexError
+        ValueError
     ):
+        magnitud = None
 
-        return None
-
-
-# ============================================================
-# GENERAR RESUMEN
-# ============================================================
-
-def generar_resumen(
-    eventos
-):
-
-    total_eventos = len(
-        eventos
+    lugar = propiedades.get(
+        "place",
+        "Ubicación no disponible"
     )
 
-    eventos_mayor_igual_4 = 0
+    event_id = (
+        evento.get("id")
+        or propiedades.get("id")
+    )
 
-    total_candidatos_acelerograficos = 0
+    distancia = None
 
-    for evento in eventos.values():
+    if (
+        latitud is not None
+        and longitud is not None
+    ):
+        distancia = calcular_distancia_km(
+            latitud,
+            longitud
+        )
 
-        if not isinstance(
-            evento,
-            dict
-        ):
+    # --------------------------------------------------------
+    # FECHA / HORA
+    # --------------------------------------------------------
+
+    hora_local = "No disponible"
+
+    tiempo = propiedades.get(
+        "time"
+    )
+
+    if tiempo:
+
+        try:
+
+            if isinstance(
+                tiempo,
+                (int, float)
+            ):
+
+                fecha_utc = datetime.fromtimestamp(
+                    tiempo / 1000,
+                    tz=ZoneInfo("UTC")
+                )
+
+            else:
+
+                texto = str(tiempo)
+
+                if texto.endswith("Z"):
+                    texto = (
+                        texto[:-1]
+                        + "+00:00"
+                    )
+
+                fecha_utc = datetime.fromisoformat(
+                    texto
+                )
+
+                if fecha_utc.tzinfo is None:
+                    fecha_utc = fecha_utc.replace(
+                        tzinfo=ZoneInfo("UTC")
+                    )
+
+            fecha_local = fecha_utc.astimezone(
+                ZONA_HORARIA
+            )
+
+            hora_local = fecha_local.strftime(
+                "%Y-%m-%d %H:%M:%S"
+            )
+
+        except Exception:
+            hora_local = str(
+                tiempo
+            )
+
+    # --------------------------------------------------------
+    # CANDIDATO A ACELEROGRAFÍA
+    # --------------------------------------------------------
+
+    candidato_acelerografico = (
+        magnitud is not None
+        and magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO
+    )
+
+    resultado = {
+        "id": event_id,
+        "magnitud": magnitud,
+        "profundidad": profundidad,
+        "latitud": latitud,
+        "longitud": longitud,
+        "distancia_km": distancia,
+        "lugar": lugar,
+        "hora_local": hora_local,
+        "candidato_acelerografico": (
+            candidato_acelerografico
+        ),
+        "acelerografia_bogota": {
+            "estado": "PENDIENTE",
+            "estaciones": [],
+            "pga_maximo_cm_s2": None,
+            "estacion_critica": None,
+            "componente_critica": None
+        }
+    }
+
+    return resultado
+
+
+# ============================================================
+# RESUMEN
+# ============================================================
+
+def generar_resumen(eventos):
+
+    if isinstance(eventos, dict):
+        eventos = eventos.values()
+
+    eventos = list(eventos)
+
+    total = len(eventos)
+
+    eventos_m4 = 0
+    candidatos = 0
+    alertas = 0
+    alertas_telegram = 0
+
+    for evento in eventos:
+
+        if not isinstance(evento, dict):
             continue
 
         magnitud = evento.get(
-            "magnitud",
-            0
+            "magnitud"
         )
+
+        try:
+            magnitud = float(
+                magnitud
+            )
+
+        except (
+            TypeError,
+            ValueError
+        ):
+            magnitud = None
 
         if (
-            magnitud
-            >=
-            MAGNITUD_CANDIDATO_ACELEROGRAFICO
+            magnitud is not None
+            and magnitud >= 4.0
         ):
+            eventos_m4 += 1
 
-            eventos_mayor_igual_4 += 1
+        if evento.get(
+            "candidato_acelerografico"
+        ):
+            candidatos += 1
 
-            total_candidatos_acelerograficos += 1
+        if evento.get("alertas"):
+            alertas += 1
 
-    total_alertas = (
-        total_candidatos_acelerograficos
-    )
+        if evento.get("alerta_enviada"):
+            alertas_telegram += 1
 
-    porcentaje_alertas = 0.0
+    porcentaje = 0
 
-    if total_eventos > 0:
+    if total > 0:
+        porcentaje = (
+            eventos_m4 / total
+        ) * 100
 
-        porcentaje_alertas = round(
-            (
-                total_alertas
-                /
-                total_eventos
-            )
-            *
-            100,
-            2
-        )
+    porcentaje_alertas = 0
+
+    if total > 0:
+        porcentaje_alertas = (
+            alertas / total
+        ) * 100
 
     return {
-
-        "total_eventos": total_eventos,
-
-        "eventos_mayor_igual_4":
-            eventos_mayor_igual_4,
-
-        "total_candidatos_acelerograficos":
-            total_candidatos_acelerograficos,
-
-        "total_alertas":
-            total_alertas,
-
-        "porcentaje_alertas":
-            porcentaje_alertas
-
+        "total_eventos": total,
+        "eventos_m4_o_mayores": eventos_m4,
+        "candidatos_acelerograficos": candidatos,
+        "alertas_telegram": alertas_telegram,
+        "porcentaje_m4_o_mayores": round(
+            porcentaje,
+            2
+        ),
+        "eventos_mayor_igual_4": eventos_m4,
+        "total_candidatos_acelerograficos": candidatos,
+        "total_alertas": alertas,
+        "porcentaje_alertas": round(
+            porcentaje_alertas,
+            2
+        )
     }
 
 
 # ============================================================
-# REALIZAR CONSULTA
+# CONSULTA PRINCIPAL
 # ============================================================
 
 def realizar_consulta():
 
+    print("=" * 70)
     print(
-        "=" * 70
+        "MONITOR SÍSMICO SGC - CONSULTA"
+    )
+    print("=" * 70)
+
+    fecha_consulta = datetime.now(
+        ZONA_HORARIA
     )
 
     print(
-        "       MONITOR SÍSMICO SGC - GITHUB ACTIONS"
+        f"🕐 Consulta: "
+        f"{fecha_consulta.strftime('%Y-%m-%d %H:%M:%S')}"
     )
 
-    print(
-        "=" * 70
-    )
-
-    print()
-
-    print(
-        f"[{datetime.now(ZONA_HORARIA).strftime('%Y-%m-%d %H:%M:%S')}] "
-        "Consultando SGC..."
-    )
-
-    # ========================================================
-    # CONSULTAR SGC
-    # ========================================================
-
-    try:
-
-        eventos = obtener_eventos()
-
-        print(
-            f"    Eventos recibidos: "
-            f"{len(eventos)}"
-        )
-
-    except Exception as error:
-
-        print(
-            f"❌ Error consultando SGC: {error}"
-        )
-
-        return 1
-
-    # ========================================================
-    # CARGAR REGISTROS EXISTENTES
-    # ========================================================
-
-    eventos_registrados_original = (
+    eventos_registrados = (
         cargar_eventos_registrados()
     )
 
     print(
-        f"    Eventos registrados antes de limpiar: "
-        f"{len(eventos_registrados_original)}"
+        f"📂 Eventos registrados previamente: "
+        f"{len(eventos_registrados)}"
     )
-
-    eventos_registrados = dict(
-        eventos_registrados_original
-    )
-
-    # ========================================================
-    # LIMPIAR EVENTOS DE MÁS DE 30 DÍAS
-    # ========================================================
 
     eventos_registrados = (
         limpiar_eventos_antiguos(
@@ -855,21 +866,44 @@ def realizar_consulta():
         )
     )
 
-    # ========================================================
-    # CONTADORES
-    # ========================================================
+    ids_registrados = set()
 
-    eventos_nuevos = 0
+    for event_id in eventos_registrados:
+        if event_id:
+            ids_registrados.add(
+                str(event_id)
+            )
 
-    nuevos_eventos_mayor_igual_4 = 0
+    print(
+        "🌐 Consultando feed del SGC..."
+    )
 
-    nuevos_candidatos_acelerograficos = 0
+    eventos = obtener_eventos()
 
-    nuevas_alertas = 0
+    if not eventos:
 
-    # ========================================================
-    # ANALIZAR EVENTOS
-    # ========================================================
+        print(
+            "⚠️ No se recibieron eventos del SGC."
+        )
+
+        resumen = generar_resumen(
+            eventos_registrados
+        )
+
+        guardar_eventos_registrados(
+            eventos_registrados,
+            resumen
+        )
+
+        return
+
+    print(
+        f"📡 Eventos recibidos del SGC: "
+        f"{len(eventos)}"
+    )
+
+    nuevos = 0
+    eventos_colombia = 0
 
     for evento in eventos:
 
@@ -877,223 +911,292 @@ def realizar_consulta():
             evento
         )
 
-        if resultado is None:
-            continue
-
-        evento_id = resultado[
+        event_id = resultado.get(
             "id"
-        ]
+        )
 
-        # ----------------------------------------------------
-        # EVITAR DUPLICADOS
-        # ----------------------------------------------------
+        lugar = resultado.get(
+            "lugar"
+        )
 
-        if evento_id in eventos_registrados:
-
+        if not event_id:
             continue
 
-        # ----------------------------------------------------
-        # REGISTRAR NUEVO EVENTO
-        # ----------------------------------------------------
-
-        eventos_registrados[
-            evento_id
-        ] = resultado
-
-        eventos_nuevos += 1
-
-        if (
-            resultado["magnitud"]
-            >=
-            MAGNITUD_CANDIDATO_ACELEROGRAFICO
+        if not es_evento_colombia(
+            lugar
         ):
+            continue
 
-            nuevos_eventos_mayor_igual_4 += 1
+        eventos_colombia += 1
 
-            nuevos_candidatos_acelerograficos += 1
-
-        # ----------------------------------------------------
-        # CONTAR ALERTAS ESPECIALES
-        # ----------------------------------------------------
-
-        if resultado["alertas"]:
-
-            nuevas_alertas += 1
-
-        # ----------------------------------------------------
-        # MOSTRAR NUEVO SISMO
-        # ----------------------------------------------------
+        if str(event_id) in ids_registrados:
+            continue
 
         print()
 
         print(
-            "📍 NUEVO EVENTO SGC REGISTRADO"
+            f"🌎 Nuevo evento: {event_id}"
         )
 
         print(
-            f"    ID:          "
-            f"{resultado['id']}"
-        )
-
-        print(
-            f"    Magnitud:    "
-            f"{resultado['magnitud']}"
+            f"    Magnitud: "
+            f"{resultado.get('magnitud')}"
         )
 
         print(
             f"    Profundidad: "
-            f"{resultado['profundidad']} km"
+            f"{resultado.get('profundidad')} km"
         )
 
         print(
-            f"    Distancia:   "
-            f"{resultado['distancia_bogota']} km"
+            f"    Ubicación: "
+            f"{resultado.get('lugar')}"
         )
 
-        print(
-            f"    Candidato acelerográfico: "
-            f"{'SÍ' if resultado.get('candidato_acelerografico') else 'NO'}"
+        distancia = resultado.get(
+            "distancia_km"
         )
 
-        print(
-            f"    Lugar:       "
-            f"{resultado['lugar']}"
-        )
+        if distancia is not None:
 
-        print(
-            f"    Categoría:   "
-            f"{resultado['categoria']}"
-        )
-
-        print(
-            f"    Alerta:      "
-            f"{', '.join(resultado['alertas']) if resultado['alertas'] else 'Ninguna'}"
-        )
-
-        # ----------------------------------------------------
-        # ENVIAR TELEGRAM
-        # ----------------------------------------------------
-
-        if resultado["alertas"]:
-
-            enviar_alerta_telegram(
-                resultado
+            print(
+                f"    Distancia Bogotá: "
+                f"{distancia:.1f} km"
             )
 
-    # ========================================================
-    # GENERAR RESUMEN
-    # ========================================================
+        # ----------------------------------------------------
+        # PGA DE BOG.11
+        # ----------------------------------------------------
+
+        if resultado.get(
+            "candidato_acelerografico"
+        ):
+
+            print(
+                "    📊 Consultando PGA de BOG.11..."
+            )
+
+            resultado[
+                "acelerografia_bogota"
+            ] = obtener_pga_bogota(
+                event_id
+            )
+
+            acelerografia = resultado[
+                "acelerografia_bogota"
+            ]
+
+            if acelerografia.get(
+                "estado"
+            ) == "OK":
+
+                estaciones = acelerografia.get(
+                    "estaciones",
+                    []
+                )
+
+                if estaciones:
+
+                    estacion = estaciones[0]
+
+                    print(
+                        "    ✅ BOG.11 encontrada."
+                    )
+
+                    print(
+                        f"       PGA EW: "
+                        f"{estacion.get('pgaE')} "
+                        f"cm/s²"
+                    )
+
+                    print(
+                        f"       PGA NS: "
+                        f"{estacion.get('pgaN')} "
+                        f"cm/s²"
+                    )
+
+                    print(
+                        f"       PGA Z: "
+                        f"{estacion.get('pgaZ')} "
+                        f"cm/s²"
+                    )
+
+                    print(
+                        f"       Horizontal máx.: "
+                        f"{acelerografia.get('pga_maximo_cm_s2')} "
+                        f"cm/s² "
+                        f"({acelerografia.get('componente_critica')})"
+                    )
+
+            else:
+
+                print(
+                    "    ⚠️ PGA de BOG.11 "
+                    "no disponible."
+                )
+
+        # ----------------------------------------------------
+        # ADAPTAR AL ESQUEMA DEL DASHBOARD
+        # ----------------------------------------------------
+
+        resultado["lat"] = resultado.get(
+            "latitud"
+        )
+
+        resultado["lon"] = resultado.get(
+            "longitud"
+        )
+
+        resultado["distancia_bogota"] = (
+            round(resultado["distancia_km"], 1)
+            if resultado.get("distancia_km") is not None
+            else None
+        )
+
+        propiedades = evento.get(
+            "properties",
+            {}
+        )
+
+        resultado["tipo_magnitud"] = propiedades.get(
+            "magType"
+        )
+
+        resultado["fecha_local"] = propiedades.get(
+            "localTime",
+            resultado.get("hora_local")
+        )
+
+        resultado["agencia"] = propiedades.get(
+            "agency",
+            "SGC"
+        )
+
+        if resultado.get(
+            "candidato_acelerografico"
+        ):
+
+            resultado["alertas"] = [
+                "SISMO M >= 4.0"
+            ]
+
+            resultado["categoria"] = (
+                "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)"
+            )
+
+        else:
+
+            resultado["alertas"] = []
+
+            resultado["categoria"] = (
+                "SISMO SIN CRITERIO DE MAGNITUD"
+            )
+
+        resultado["fecha_deteccion"] = (
+            fecha_consulta.isoformat()
+        )
+
+        # ----------------------------------------------------
+        # TELEGRAM
+        # ----------------------------------------------------
+
+        if resultado.get(
+            "candidato_acelerografico"
+        ):
+
+            alerta_enviada = (
+                enviar_alerta_telegram(
+                    resultado
+                )
+            )
+
+            resultado[
+                "alerta_enviada"
+            ] = alerta_enviada
+
+        else:
+
+            resultado[
+                "alerta_enviada"
+            ] = False
+
+        # ----------------------------------------------------
+        # REGISTRO
+        # ----------------------------------------------------
+
+        eventos_registrados[str(event_id)] = resultado
+
+        ids_registrados.add(
+            str(event_id)
+        )
+
+        nuevos += 1
+
+    # --------------------------------------------------------
+    # RESUMEN FINAL
+    # --------------------------------------------------------
 
     resumen = generar_resumen(
-        eventos_registrados
+        eventos_registrados.values()
     )
 
-    # ========================================================
-    # DETECTAR CAMBIOS
-    # ========================================================
-
-    hubo_cambios = (
-        eventos_registrados
-        !=
-        eventos_registrados_original
+    guardar_eventos_registrados(
+        eventos_registrados,
+        resumen
     )
-
-    # ========================================================
-    # GUARDAR
-    # ========================================================
-
-    if hubo_cambios:
-
-        guardar_eventos_registrados(
-            eventos_registrados,
-            resumen
-        )
-
-        print()
-
-        print(
-            "💾 Se actualizó eventos_detectados.json"
-        )
-
-    else:
-
-        print()
-
-        print(
-            "ℹ️ No hubo cambios en los eventos registrados."
-        )
-
-        print(
-            "ℹ️ No se modificó eventos_detectados.json."
-        )
-
-    # ========================================================
-    # RESUMEN
-    # ========================================================
 
     print()
 
+    print("=" * 70)
+    print("RESUMEN")
+    print("=" * 70)
+
     print(
-        "---------------- RESUMEN ----------------"
+        f"📡 Eventos recibidos: "
+        f"{len(eventos)}"
     )
 
     print(
-        f"    Total de eventos registrados: "
+        f"🇨🇴 Eventos Colombia: "
+        f"{eventos_colombia}"
+    )
+
+    print(
+        f"🆕 Eventos nuevos: "
+        f"{nuevos}"
+    )
+
+    print(
+        f"📊 Total registrados: "
         f"{resumen['total_eventos']}"
     )
 
     print(
-        f"    Eventos M >= 4: "
-        f"{resumen['eventos_mayor_igual_4']}"
+        f"📈 M4.0 o mayores: "
+        f"{resumen['eventos_m4_o_mayores']}"
     )
 
     print(
-        f"    Candidatos acelerográficos (M >= "
-        f"{MAGNITUD_CANDIDATO_ACELEROGRAFICO:.1f}): "
-        f"{resumen['total_candidatos_acelerograficos']}"
+        f"📡 Candidatos acelerográficos: "
+        f"{resumen['candidatos_acelerograficos']}"
     )
 
     print(
-        f"    Total de alertas especiales: "
-        f"{resumen['total_alertas']}"
+        f"📱 Alertas Telegram: "
+        f"{resumen['alertas_telegram']}"
     )
 
     print(
-        f"    Porcentaje de alertas: "
-        f"{resumen['porcentaje_alertas']}%"
+        f"📊 Porcentaje M4+: "
+        f"{resumen['porcentaje_m4_o_mayores']}%"
     )
 
     print(
-        f"    Nuevos eventos: "
-        f"{eventos_nuevos}"
+        f"🕐 Última consulta: "
+        f"{fecha_consulta.strftime('%Y-%m-%d %H:%M:%S')}"
     )
 
-    print(
-        f"    Nuevos eventos M >= 4: "
-        f"{nuevos_eventos_mayor_igual_4}"
-    )
-
-    print(
-        f"    Nuevos candidatos acelerográficos: "
-        f"{nuevos_candidatos_acelerograficos}"
-    )
-
-    print(
-        f"    Nuevas alertas especiales: "
-        f"{nuevas_alertas}"
-    )
-
-    print(
-        "------------------------------------------"
-    )
-
-    print()
-
-    print(
-        "Consulta finalizada correctamente."
-    )
-
-    return 0
+    print("=" * 70)
 
 
 # ============================================================
@@ -1101,8 +1204,6 @@ def realizar_consulta():
 # ============================================================
 
 if __name__ == "__main__":
+    realizar_consulta()
 
-    raise SystemExit(
-        realizar_consulta()
-    )
 
