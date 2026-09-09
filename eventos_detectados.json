@@ -1,8 +1,8 @@
 {
-    "actualizado": "2026-09-09 12:10:15",
+    "actualizado": "2026-09-09 12:15:14",
     "periodo_retencion_dias": 30,
     "resumen": {
-        "total_eventos": 684,
+        "total_eventos": 685,
         "eventos_mayor_igual_4": 4,
         "total_candidatos_acelerograficos": 4,
         "total_alertas": 4,
@@ -15300,6 +15300,29 @@
             },
             "alertas": [],
             "fecha_deteccion": "2026-09-09 12:10:15"
+        },
+        "SGC2026rtlykd": {
+            "id": "SGC2026rtlykd",
+            "magnitud": 1.2,
+            "profundidad": 88.0,
+            "latitud": 4.781015974997647,
+            "longitud": -76.10466784681927,
+            "distancia_bogota": 225.37,
+            "lugar": "Ansermanuevo - Valle del Cauca, Colombia",
+            "fecha_local": "2026-09-09 04:23",
+            "agencia": "SGC",
+            "tipo_magnitud": "MLr_1",
+            "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+            "candidato_acelerografico": false,
+            "acelerografia_bogota": {
+                "estado": "PENDIENTE",
+                "estaciones": [],
+                "pga_maximo_cm_s2": null,
+                "estacion_critica": null,
+                "componente_critica": null
+            },
+            "alertas": [],
+            "fecha_deteccion": "2026-09-09 12:15:14"
         }
     }
 }
