@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-09T18:45:16.668348-05:00",
+  "actualizado": "2026-09-09T18:50:18.016366-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 704,
+    "total_eventos": 705,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -15888,6 +15888,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-09T18:40:20.464977-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rudrxq": {
+      "id": "SGC2026rudrxq",
+      "magnitud": 1.7,
+      "profundidad": 25.0,
+      "latitud": 4.775728349182345,
+      "longitud": -74.76237676327047,
+      "distancia_km": 76.83025894959097,
+      "lugar": "Beltrán - Cundinamarca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.775728349182345,
+      "lon": -74.76237676327047,
+      "distancia_bogota": 76.8,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-09 13:18",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-09T18:50:17.404588-05:00",
       "alerta_enviada": false
     }
   }
