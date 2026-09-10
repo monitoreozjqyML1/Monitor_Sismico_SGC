@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T11:25:16.988277-05:00",
+  "actualizado": "2026-09-10T11:30:18.195286-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 763,
+    "total_eventos": 764,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17540,6 +17540,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T11:20:14.370248-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rveddg": {
+      "id": "SGC2026rveddg",
+      "magnitud": 1.8,
+      "profundidad": 24.0,
+      "latitud": 5.816833333333333,
+      "longitud": -76.63133333333333,
+      "distancia_km": 308.89780561575225,
+      "lugar": "Quibdó - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.816833333333333,
+      "lon": -76.63133333333333,
+      "distancia_bogota": 308.9,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-10 02:36",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T11:30:17.565595-05:00",
       "alerta_enviada": false
     }
   }
