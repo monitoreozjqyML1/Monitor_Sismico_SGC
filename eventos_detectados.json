@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T15:50:18.593019-05:00",
+  "actualizado": "2026-09-10T15:55:17.649274-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 777,
+    "total_eventos": 778,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17932,6 +17932,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T14:30:19.796782-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvrnqk": {
+      "id": "SGC2026rvrnqk",
+      "magnitud": 2.4,
+      "profundidad": 136.0,
+      "latitud": 7.450833333333334,
+      "longitud": -73.226,
+      "distancia_km": 318.69324897979686,
+      "lugar": "El Playón - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 7.450833333333334,
+      "lon": -73.226,
+      "distancia_bogota": 318.7,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-10 09:20",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T15:55:17.023991-05:00",
       "alerta_enviada": false
     }
   }
