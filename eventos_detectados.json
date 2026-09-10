@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T10:25:21.475144-05:00",
+  "actualizado": "2026-09-10T10:25:57.011357-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 756,
+    "total_eventos": 757,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17344,6 +17344,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T09:25:18.991217-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvlcjh": {
+      "id": "SGC2026rvlcjh",
+      "magnitud": 1.9,
+      "profundidad": 148.0,
+      "latitud": 6.945,
+      "longitud": -73.023,
+      "distancia_km": 274.17782742084495,
+      "lugar": "Piedecuesta - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.945,
+      "lon": -73.023,
+      "distancia_bogota": 274.2,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-10 06:06",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T10:25:56.235165-05:00",
       "alerta_enviada": false
     }
   }
