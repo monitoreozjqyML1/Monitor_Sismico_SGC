@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-09-09T18:55:19.471129-05:00",
+  "actualizado": "2026-09-09T19:00:16.601104-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 706,
+    "total_eventos": 708,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
-    "porcentaje_m4_o_mayores": 0.57,
+    "porcentaje_m4_o_mayores": 0.56,
     "eventos_mayor_igual_4": 4,
     "total_candidatos_acelerograficos": 4,
     "total_alertas": 4,
-    "porcentaje_alertas": 0.57
+    "porcentaje_alertas": 0.56
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -15944,6 +15944,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-09T18:55:18.819911-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ruevay": {
+      "id": "SGC2026ruevay",
+      "magnitud": 1.8,
+      "profundidad": 40.0,
+      "latitud": 4.637192552821452,
+      "longitud": -76.65404339867605,
+      "distancia_km": 286.2616993763257,
+      "lugar": "Sipí - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.637192552821452,
+      "lon": -76.65404339867605,
+      "distancia_bogota": 286.3,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-09 13:52",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-09T19:00:16.003776-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rueuwl": {
+      "id": "SGC2026rueuwl",
+      "magnitud": 1.6,
+      "profundidad": 157.0,
+      "latitud": 6.789333333333333,
+      "longitud": -73.1255,
+      "distancia_km": 253.72006536150022,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.789333333333333,
+      "lon": -73.1255,
+      "distancia_bogota": 253.7,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-09 13:52",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-09T19:00:16.003776-05:00",
       "alerta_enviada": false
     }
   }
