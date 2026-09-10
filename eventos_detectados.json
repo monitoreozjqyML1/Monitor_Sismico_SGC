@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T12:05:19.821056-05:00",
+  "actualizado": "2026-09-10T12:10:21.134796-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 766,
+    "total_eventos": 767,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17624,6 +17624,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T11:45:20.427855-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvdfjb": {
+      "id": "SGC2026rvdfjb",
+      "magnitud": 0.9,
+      "profundidad": 25.0,
+      "latitud": 4.673148408365501,
+      "longitud": -75.03180889994734,
+      "distancia_km": 106.44036613787306,
+      "lugar": "Alvarado - Tolima, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.673148408365501,
+      "lon": -75.03180889994734,
+      "distancia_bogota": 106.4,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-10 02:08",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T12:10:20.471318-05:00",
       "alerta_enviada": false
     }
   }
