@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T12:35:19.626990-05:00",
+  "actualizado": "2026-09-10T12:40:20.269384-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 772,
+    "total_eventos": 773,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17792,6 +17792,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T12:35:18.922454-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvgqia": {
+      "id": "SGC2026rvgqia",
+      "magnitud": 0.9,
+      "profundidad": 80.0,
+      "latitud": 8.663833333333333,
+      "longitud": -73.95183333333334,
+      "distancia_km": 439.73556531411117,
+      "lugar": "Regidor - Bolívar, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 8.663833333333333,
+      "lon": -73.95183333333334,
+      "distancia_bogota": 439.7,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-10 03:52",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T12:40:19.469292-05:00",
       "alerta_enviada": false
     }
   }
