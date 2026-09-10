@@ -1314,3 +1314,136 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+/* =====================================================
+   ENCABEZADO PRINCIPAL - ML1
+   ===================================================== */
+
+.encabezado-monitor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 18px 24px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+
+    box-sizing: border-box;
+}
+
+.encabezado-identidad {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    min-width: 0;
+}
+
+.encabezado-titulo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    color: #111827;
+
+    line-height: 1.2;
+}
+
+.encabezado-subtitulo {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b7280;
+
+    letter-spacing: 0.2px;
+}
+
+.estado-monitor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 13px;
+
+    border: 1px solid #d1fae5;
+    border-radius: 999px;
+
+    background: #f0fdf4;
+
+    white-space: nowrap;
+}
+
+.estado-texto {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    color: #166534;
+}
+
+@media (max-width: 600px) {
+
+    .encabezado-monitor {
+        padding: 15px 16px;
+    }
+
+    .encabezado-titulo {
+        font-size: 18px;
+    }
+
+    .encabezado-subtitulo {
+        font-size: 12px;
+    }
+
+    .estado-texto {
+        display: none;
+    }
+
+    .estado-monitor {
+        padding: 8px;
+    }
+}
+/* =====================================================
+   ALINEACIÓN UNIFORME DE TARJETAS DEL RESUMEN
+   ===================================================== */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+
+    width: 100%;
+    align-items: stretch;
+}
+
+.tarjetas .tarjeta {
+    width: 100%;
+    min-width: 0;
+    min-height: 116px;
+    height: 116px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.tarjetas .tarjeta-titulo {
+    width: 100%;
+    margin-bottom: 9px;
+
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tarjetas .tarjeta-valor {
+    width: 100%;
+
+    text-align: center;
+    line-height: 1.2;
+
+    overflow: hidden;
+}
