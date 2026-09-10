@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T11:30:18.195286-05:00",
+  "actualizado": "2026-09-10T11:35:19.919731-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 764,
+    "total_eventos": 765,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17568,6 +17568,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T11:30:17.565595-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvcihu": {
+      "id": "SGC2026rvcihu",
+      "magnitud": 1.5,
+      "profundidad": 14.0,
+      "latitud": 9.9645,
+      "longitud": -74.0025,
+      "distancia_km": 584.2129370653106,
+      "lugar": "Bosconia - Cesar, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 9.9645,
+      "lon": -74.0025,
+      "distancia_bogota": 584.2,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-10 01:42",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T11:35:19.458508-05:00",
       "alerta_enviada": false
     }
   }
