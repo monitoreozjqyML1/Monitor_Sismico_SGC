@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T12:20:31.595269-05:00",
+  "actualizado": "2026-09-10T12:25:21.283720-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 769,
+    "total_eventos": 770,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17708,6 +17708,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T12:20:30.909739-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvepml": {
+      "id": "SGC2026rvepml",
+      "magnitud": 1.4,
+      "profundidad": 9.0,
+      "latitud": 4.475666666666666,
+      "longitud": -75.69316666666667,
+      "distancia_km": 181.570824546492,
+      "lugar": "Calarcá - Quindío, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.475666666666666,
+      "lon": -75.69316666666667,
+      "distancia_bogota": 181.6,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-10 02:50",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T12:25:20.660630-05:00",
       "alerta_enviada": false
     }
   }
