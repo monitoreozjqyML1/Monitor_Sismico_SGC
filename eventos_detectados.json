@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T10:40:24.180427-05:00",
+  "actualizado": "2026-09-10T10:45:19.064859-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 757,
+    "total_eventos": 758,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17372,6 +17372,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T10:25:56.235165-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvufhp": {
+      "id": "SGC2026rvufhp",
+      "magnitud": 2.7,
+      "profundidad": 12.0,
+      "latitud": 6.737310886383057,
+      "longitud": -75.9524154663086,
+      "distancia_km": 306.6636606259674,
+      "lugar": "Buriticá - Antioquia, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.737310886383057,
+      "lon": -75.9524154663086,
+      "distancia_bogota": 306.7,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-10 10:41",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T10:45:18.471352-05:00",
       "alerta_enviada": false
     }
   }
