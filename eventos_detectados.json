@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T12:25:21.283720-05:00",
+  "actualizado": "2026-09-10T12:30:18.813958-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 770,
+    "total_eventos": 771,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17736,6 +17736,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T12:25:20.660630-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvxsev": {
+      "id": "SGC2026rvxsev",
+      "magnitud": 1.8,
+      "profundidad": 0.0,
+      "latitud": 7.033761024475098,
+      "longitud": -75.77408599853516,
+      "distancia_km": 319.600696295604,
+      "lugar": "Sabanalarga - Antioquia, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 7.033761024475098,
+      "lon": -75.77408599853516,
+      "distancia_bogota": 319.6,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-10 12:27",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T12:30:18.329464-05:00",
       "alerta_enviada": false
     }
   }
