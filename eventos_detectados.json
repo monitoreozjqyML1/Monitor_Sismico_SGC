@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-09-10T10:55:19.569431-05:00",
+  "actualizado": "2026-09-10T11:00:15.623762-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 759,
+    "total_eventos": 762,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
-    "porcentaje_m4_o_mayores": 0.53,
+    "porcentaje_m4_o_mayores": 0.52,
     "eventos_mayor_igual_4": 4,
     "total_candidatos_acelerograficos": 4,
     "total_alertas": 4,
-    "porcentaje_alertas": 0.53
+    "porcentaje_alertas": 0.52
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -17428,6 +17428,90 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T10:55:18.809346-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvurny": {
+      "id": "SGC2026rvurny",
+      "magnitud": 3.9,
+      "profundidad": 0.0,
+      "latitud": 9.068511962890625,
+      "longitud": -72.87641906738281,
+      "distancia_km": 502.1812133293148,
+      "lugar": "Tibú - Norte de Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 9.068511962890625,
+      "lon": -72.87641906738281,
+      "distancia_bogota": 502.2,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-10 10:55",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T11:00:15.175130-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvjgov": {
+      "id": "SGC2026rvjgov",
+      "magnitud": 1.9,
+      "profundidad": 138.0,
+      "latitud": 5.284397952614326,
+      "longitud": -73.75973480069352,
+      "distancia_km": 72.54273093191655,
+      "lugar": "Cucunubá - Cundinamarca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.284397952614326,
+      "lon": -73.75973480069352,
+      "distancia_bogota": 72.5,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-10 05:11",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T11:00:15.175130-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvgwql": {
+      "id": "SGC2026rvgwql",
+      "magnitud": 1.1,
+      "profundidad": 0.0,
+      "latitud": 2.453666666666667,
+      "longitud": -76.32533333333333,
+      "distancia_km": 354.2937776589365,
+      "lugar": "Totoró - Cauca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 2.453666666666667,
+      "lon": -76.32533333333333,
+      "distancia_bogota": 354.3,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-10 03:59",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T11:00:15.175130-05:00",
       "alerta_enviada": false
     }
   }
