@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-10T08:30:29.273121-05:00",
+  "actualizado": "2026-09-10T08:35:18.542700-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 753,
+    "total_eventos": 754,
     "eventos_m4_o_mayores": 4,
     "candidatos_acelerograficos": 4,
     "alertas_telegram": 0,
@@ -17260,6 +17260,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-10T06:50:18.284930-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026rvcocu": {
+      "id": "SGC2026rvcocu",
+      "magnitud": 2.3,
+      "profundidad": 37.0,
+      "latitud": 4.62873235151697,
+      "longitud": -76.6795815766502,
+      "distancia_km": 289.1207879474908,
+      "lugar": "Sipí - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.62873235151697,
+      "lon": -76.6795815766502,
+      "distancia_bogota": 289.1,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-10 01:48",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-10T08:35:17.789826-05:00",
       "alerta_enviada": false
     }
   }
