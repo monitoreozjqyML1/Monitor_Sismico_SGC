@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T12:25:14.087149-05:00",
+  "actualizado": "2026-09-14T12:30:17.053602-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1168,
+    "total_eventos": 1170,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28903,6 +28903,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T12:20:14.764495-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sdgnfc": {
+      "id": "SGC2026sdgnfc",
+      "magnitud": 3.1,
+      "profundidad": 43.0,
+      "latitud": 4.623444725701669,
+      "longitud": -76.67209276735558,
+      "distancia_km": 288.3115902352132,
+      "lugar": "Sipí - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.623444725701669,
+      "lon": -76.67209276735558,
+      "distancia_bogota": 288.3,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-14 12:24",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T12:30:16.390738-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scxard": {
+      "id": "SGC2026scxard",
+      "magnitud": 1.5,
+      "profundidad": 40.0,
+      "latitud": 4.538842712656848,
+      "longitud": -76.65247432008474,
+      "distancia_km": 286.6299737599964,
+      "lugar": "Sipí - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.538842712656848,
+      "lon": -76.65247432008474,
+      "distancia_bogota": 286.6,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-14 07:38",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T12:30:16.390738-05:00",
       "alerta_enviada": false
     }
   }
