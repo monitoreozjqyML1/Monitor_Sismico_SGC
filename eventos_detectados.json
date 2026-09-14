@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-09-14T16:10:20.489368-05:00",
+  "actualizado": "2026-09-14T16:20:23.894289-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1181,
-    "eventos_m4_o_mayores": 10,
-    "candidatos_acelerograficos": 10,
-    "alertas_telegram": 6,
-    "porcentaje_m4_o_mayores": 0.85,
-    "eventos_mayor_igual_4": 10,
-    "total_candidatos_acelerograficos": 10,
-    "total_alertas": 10,
-    "porcentaje_alertas": 0.85
+    "total_eventos": 1182,
+    "eventos_m4_o_mayores": 11,
+    "candidatos_acelerograficos": 11,
+    "alertas_telegram": 7,
+    "porcentaje_m4_o_mayores": 0.93,
+    "eventos_mayor_igual_4": 11,
+    "total_candidatos_acelerograficos": 11,
+    "total_alertas": 11,
+    "porcentaje_alertas": 0.93
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -29301,6 +29301,36 @@
       ],
       "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
       "fecha_deteccion": "2026-09-14T15:20:17.597200-05:00",
+      "alerta_enviada": true
+    },
+    "SGC2026sdocnf": {
+      "id": "SGC2026sdocnf",
+      "magnitud": 4.5,
+      "profundidad": 5.0,
+      "latitud": 4.512537479400635,
+      "longitud": -76.67122650146484,
+      "distancia_km": 288.91770135869126,
+      "lugar": "Istmina - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.512537479400635,
+      "lon": -76.67122650146484,
+      "distancia_bogota": 288.9,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-14 16:13",
+      "agencia": "SGC",
+      "alertas": [
+        "SISMO M >= 4.0"
+      ],
+      "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
+      "fecha_deteccion": "2026-09-14T16:20:21.667516-05:00",
       "alerta_enviada": true
     }
   }
