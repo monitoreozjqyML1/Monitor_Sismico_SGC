@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T11:00:17.966173-05:00",
+  "actualizado": "2026-09-14T11:05:19.075951-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1152,
+    "total_eventos": 1154,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28440,6 +28440,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T11:00:16.247407-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sclmpu": {
+      "id": "SGC2026sclmpu",
+      "magnitud": 1.7,
+      "profundidad": 19.0,
+      "latitud": 2.4518168033574383,
+      "longitud": -76.31948443566921,
+      "distancia_km": 353.9821124813767,
+      "lugar": "Totoró - Cauca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 2.4518168033574383,
+      "lon": -76.31948443566921,
+      "distancia_bogota": 354.0,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-14 01:49",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:05:17.011274-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sclmcc": {
+      "id": "SGC2026sclmcc",
+      "magnitud": 1.5,
+      "profundidad": 150.0,
+      "latitud": 5.295666666666667,
+      "longitud": -73.73433333333334,
+      "distancia_km": 75.00941879771321,
+      "lugar": "Lenguazaque - Cundinamarca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.295666666666667,
+      "lon": -73.73433333333334,
+      "distancia_bogota": 75.0,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-14 01:49",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:05:17.011274-05:00",
       "alerta_enviada": false
     }
   }
