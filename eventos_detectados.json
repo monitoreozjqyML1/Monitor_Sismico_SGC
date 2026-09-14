@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T11:05:19.075951-05:00",
+  "actualizado": "2026-09-14T11:10:21.374396-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1154,
+    "total_eventos": 1155,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28496,6 +28496,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T11:05:17.011274-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sclkkc": {
+      "id": "SGC2026sclkkc",
+      "magnitud": 1.8,
+      "profundidad": 11.0,
+      "latitud": 10.4235,
+      "longitud": -74.1085,
+      "distancia_km": 635.213678945509,
+      "lugar": "Fundación - Magdalena, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 10.4235,
+      "lon": -74.1085,
+      "distancia_bogota": 635.2,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-14 01:47",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:10:19.558239-05:00",
       "alerta_enviada": false
     }
   }
