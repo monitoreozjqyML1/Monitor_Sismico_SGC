@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T10:20:22.901678-05:00",
+  "actualizado": "2026-09-14T10:25:23.981120-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1145,
+    "total_eventos": 1146,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28244,6 +28244,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T10:20:20.694406-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scoubx": {
+      "id": "SGC2026scoubx",
+      "magnitud": 1.4,
+      "profundidad": 11.0,
+      "latitud": 7.055752600740252,
+      "longitud": -76.62812270560393,
+      "distancia_km": 384.57258980707513,
+      "lugar": "Carmen del Darién  (Curbaradó) - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 7.055752600740252,
+      "lon": -76.62812270560393,
+      "distancia_bogota": 384.6,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-14 03:29",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T10:25:21.941195-05:00",
       "alerta_enviada": false
     }
   }
