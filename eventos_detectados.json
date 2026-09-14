@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T10:40:15.217744-05:00",
+  "actualizado": "2026-09-14T10:45:21.549199-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1148,
+    "total_eventos": 1149,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28328,6 +28328,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T10:35:19.771919-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scnpve": {
+      "id": "SGC2026scnpve",
+      "magnitud": 1.8,
+      "profundidad": 0.0,
+      "latitud": 2.33390274767622,
+      "longitud": -76.5961933606697,
+      "distancia_km": 385.1369849628501,
+      "lugar": "Sotará (Paispamba) - Cauca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 2.33390274767622,
+      "lon": -76.5961933606697,
+      "distancia_bogota": 385.1,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-14 02:54",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T10:45:19.719751-05:00",
       "alerta_enviada": false
     }
   }
