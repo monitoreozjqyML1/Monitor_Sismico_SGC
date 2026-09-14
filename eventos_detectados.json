@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T12:30:17.053602-05:00",
+  "actualizado": "2026-09-14T12:35:16.955429-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1170,
+    "total_eventos": 1171,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28959,6 +28959,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T12:30:16.390738-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scxbos": {
+      "id": "SGC2026scxbos",
+      "magnitud": 1.5,
+      "profundidad": 142.0,
+      "latitud": 6.862833333333334,
+      "longitud": -73.23833333333333,
+      "distancia_km": 256.4339835452274,
+      "lugar": "Zapatoca - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.862833333333334,
+      "lon": -73.23833333333333,
+      "distancia_bogota": 256.4,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-14 07:39",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T12:35:16.284766-05:00",
       "alerta_enviada": false
     }
   }
