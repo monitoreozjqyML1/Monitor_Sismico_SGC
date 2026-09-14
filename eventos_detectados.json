@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T11:20:25.929856-05:00",
+  "actualizado": "2026-09-14T11:25:17.235382-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1157,
+    "total_eventos": 1158,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28595,6 +28595,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T11:20:23.897910-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scjkls": {
+      "id": "SGC2026scjkls",
+      "magnitud": 1.3,
+      "profundidad": 106.0,
+      "latitud": 6.476166666666667,
+      "longitud": -73.76383333333334,
+      "distancia_km": 199.21995375297303,
+      "lugar": "Landázuri - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.476166666666667,
+      "lon": -73.76383333333334,
+      "distancia_bogota": 199.2,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-14 00:47",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:25:15.807304-05:00",
       "alerta_enviada": false
     }
   }
