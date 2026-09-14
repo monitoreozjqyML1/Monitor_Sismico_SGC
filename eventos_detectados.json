@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T11:30:16.125617-05:00",
+  "actualizado": "2026-09-14T11:35:26.910163-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1159,
+    "total_eventos": 1161,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28651,6 +28651,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T11:30:15.439304-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scilmu": {
+      "id": "SGC2026scilmu",
+      "magnitud": 1.2,
+      "profundidad": 123.0,
+      "latitud": 8.140166666666667,
+      "longitud": -73.3095,
+      "distancia_km": 390.50292060918326,
+      "lugar": "Ocaña - Norte de Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 8.140166666666667,
+      "lon": -73.3095,
+      "distancia_bogota": 390.5,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-14 00:18",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:35:25.578563-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026schzne": {
+      "id": "SGC2026schzne",
+      "magnitud": 1.5,
+      "profundidad": 155.0,
+      "latitud": 6.805833333333333,
+      "longitud": -73.108,
+      "distancia_km": 256.1915794802952,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.805833333333333,
+      "lon": -73.108,
+      "distancia_bogota": 256.2,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-14 00:04",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:35:25.578563-05:00",
       "alerta_enviada": false
     }
   }
