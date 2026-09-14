@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T11:25:17.235382-05:00",
+  "actualizado": "2026-09-14T11:30:16.125617-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1158,
+    "total_eventos": 1159,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28623,6 +28623,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T11:25:15.807304-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scjkzf": {
+      "id": "SGC2026scjkzf",
+      "magnitud": 1.6,
+      "profundidad": 13.0,
+      "latitud": 4.186158070776253,
+      "longitud": -75.95353502257082,
+      "distancia_km": 216.5857282170206,
+      "lugar": "Sevilla - Valle del Cauca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.186158070776253,
+      "lon": -75.95353502257082,
+      "distancia_bogota": 216.6,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-14 00:47",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:30:15.439304-05:00",
       "alerta_enviada": false
     }
   }
