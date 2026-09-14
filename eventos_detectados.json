@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T10:15:20.745797-05:00",
+  "actualizado": "2026-09-14T10:20:22.901678-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1143,
+    "total_eventos": 1145,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28189,6 +28189,62 @@
       "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
       "fecha_deteccion": "2026-09-14T10:05:13.957940-05:00",
       "alerta_enviada": true
+    },
+    "SGC2026scqpya": {
+      "id": "SGC2026scqpya",
+      "magnitud": 1.1,
+      "profundidad": 19.0,
+      "latitud": 3.0466747075788305,
+      "longitud": -74.90663168701448,
+      "distancia_km": 206.9297060514443,
+      "lugar": "Baraya - Huila, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 3.0466747075788305,
+      "lon": -74.90663168701448,
+      "distancia_bogota": 206.9,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-14 04:24",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T10:20:20.694406-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scpjeg": {
+      "id": "SGC2026scpjeg",
+      "magnitud": 1.4,
+      "profundidad": 184.0,
+      "latitud": 6.8765,
+      "longitud": -73.2775,
+      "distancia_km": 256.3342971812502,
+      "lugar": "Betulia - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.8765,
+      "lon": -73.2775,
+      "distancia_bogota": 256.3,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-14 03:46",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T10:20:20.694406-05:00",
+      "alerta_enviada": false
     }
   }
 }
