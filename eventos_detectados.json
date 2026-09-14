@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T12:50:19.012641-05:00",
+  "actualizado": "2026-09-14T12:55:17.674355-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1171,
+    "total_eventos": 1172,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -28987,6 +28987,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T12:35:16.284766-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scxqim": {
+      "id": "SGC2026scxqim",
+      "magnitud": 1.3,
+      "profundidad": 139.0,
+      "latitud": 6.707333333333334,
+      "longitud": -73.34383333333334,
+      "distancia_km": 236.15288696777637,
+      "lugar": "Galán - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.707333333333334,
+      "lon": -73.34383333333334,
+      "distancia_bogota": 236.2,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-14 07:56",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T12:55:16.818741-05:00",
       "alerta_enviada": false
     }
   }
