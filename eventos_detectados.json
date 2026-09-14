@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-14T18:05:17.654949-05:00",
+  "actualizado": "2026-09-14T18:10:15.552483-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1184,
@@ -29344,11 +29344,26 @@
       "hora_local": "No disponible",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 298.0,
+            "distanceHipocentral": 302.0,
+            "pgaE": 0.09264,
+            "pgaN": 0.058134,
+            "pgaZ": 0.030385
+          }
+        ],
+        "pga_maximo_cm_s2": 0.09264,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "lat": 4.446760177612305,
       "lon": -76.76048278808594,
