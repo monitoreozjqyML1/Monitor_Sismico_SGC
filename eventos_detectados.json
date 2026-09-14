@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-09-14T10:55:18.732887-05:00",
+  "actualizado": "2026-09-14T11:00:17.966173-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1151,
+    "total_eventos": 1152,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
-    "porcentaje_m4_o_mayores": 0.7,
+    "porcentaje_m4_o_mayores": 0.69,
     "eventos_mayor_igual_4": 8,
     "total_candidatos_acelerograficos": 8,
     "total_alertas": 8,
-    "porcentaje_alertas": 0.7
+    "porcentaje_alertas": 0.69
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -28412,6 +28412,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T10:55:17.668869-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scnbdd": {
+      "id": "SGC2026scnbdd",
+      "magnitud": 1.7,
+      "profundidad": 36.0,
+      "latitud": 2.692403777953645,
+      "longitud": -75.0645187750589,
+      "distancia_km": 250.01351822065305,
+      "lugar": "San Vicente del Caguán - Caquetá, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 2.692403777953645,
+      "lon": -75.0645187750589,
+      "distancia_bogota": 250.0,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-14 02:36",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T11:00:16.247407-05:00",
       "alerta_enviada": false
     }
   }
