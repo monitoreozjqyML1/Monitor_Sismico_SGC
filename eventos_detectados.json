@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-14T13:15:19.685979-05:00",
+  "actualizado": "2026-09-14T13:20:16.907435-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1173,
+    "total_eventos": 1174,
     "eventos_m4_o_mayores": 8,
     "candidatos_acelerograficos": 8,
     "alertas_telegram": 4,
@@ -29043,6 +29043,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T13:05:31.536878-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026scuhcu": {
+      "id": "SGC2026scuhcu",
+      "magnitud": 1.4,
+      "profundidad": 30.0,
+      "latitud": 3.596587792370163,
+      "longitud": -74.55852732037627,
+      "distancia_km": 135.1499723726133,
+      "lugar": "Colombia - Huila, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 3.596587792370163,
+      "lon": -74.55852732037627,
+      "distancia_bogota": 135.1,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-14 06:15",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-14T13:20:15.559861-05:00",
       "alerta_enviada": false
     }
   }
