@@ -1221,10 +1221,22 @@ def realizar_consulta():
 
             for campo in campos_sincronizables:
 
-                if campo in resultado:
-                    evento_existente[campo] = resultado.get(
-                        campo
-                    )
+                if campo not in resultado:
+                    continue
+
+                valor_actual = resultado.get(
+                    campo
+                )
+
+                if campo in (
+                    "alertas",
+                    "categoria"
+                ):
+
+                    if valor_actual is None:
+                        continue
+
+                evento_existente[campo] = valor_actual
 
             if resultado.get(
                 "candidato_acelerografico"
