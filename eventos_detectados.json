@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T17:35:17.395711-05:00",
+  "actualizado": "2026-09-15T17:48:59.622582-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1320,
@@ -33271,11 +33271,11 @@
     "SGC2026sfawlh": {
       "id": "SGC2026sfawlh",
       "magnitud": 1.7,
-      "profundidad": 44.0,
-      "latitud": 4.4463333333333335,
-      "longitud": -76.66133333333333,
-      "distancia_km": 288.4953712403014,
-      "lugar": "Sipí - Chocó, Colombia",
+      "profundidad": 47.0,
+      "latitud": 4.477506253199354,
+      "longitud": -76.69479358495904,
+      "distancia_km": 291.8499787993482,
+      "lugar": "Istmina - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
