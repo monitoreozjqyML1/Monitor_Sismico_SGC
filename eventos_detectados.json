@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T11:55:18.483321-05:00",
+  "actualizado": "2026-09-15T12:00:19.856375-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1280,
+    "total_eventos": 1281,
     "eventos_m4_o_mayores": 12,
     "candidatos_acelerograficos": 12,
     "alertas_telegram": 8,
@@ -32092,6 +32092,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-15T11:55:16.596952-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sehein": {
+      "id": "SGC2026sehein",
+      "magnitud": 1.6,
+      "profundidad": 87.0,
+      "latitud": 5.284666666666666,
+      "longitud": -76.2465,
+      "distancia_km": 249.1654984135527,
+      "lugar": "Tadó - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.284666666666666,
+      "lon": -76.2465,
+      "distancia_bogota": 249.2,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-15 01:48",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T12:00:17.426139-05:00",
       "alerta_enviada": false
     }
   }
