@@ -1,7 +1,16 @@
-name: Monitor Sísmico SGC
+﻿name: Monitor Sísmico SGC
 
 on:
   workflow_dispatch:
+    inputs:
+      modo:
+        description: "Modo de ejecución"
+        required: true
+        default: "NORMAL"
+        type: choice
+        options:
+          - NORMAL
+          - PRUEBA_TELEGRAM
 
 permissions:
   contents: write
@@ -25,7 +34,55 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Ejecutar prueba Telegram
+        if: ${{ github.event.inputs.modo == 'PRUEBA_TELEGRAM' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import monitor_sgc_cloud as m
+
+          resultado = {
+              "magnitud": 4.9,
+              "profundidad": 147,
+              "distancia_km": 180.5,
+              "lugar": "Los Santos — Santander",
+              "hora_local": "2026-08-26 11:45:14",
+              "candidato_acelerografico": True,
+
+              "acelerografia_bogota": {
+                  "estado": "OK",
+                  "estaciones": [
+                      {
+                          "pgaE": 0.241789,
+                          "pgaN": 0.305373,
+                          "pgaZ": 0.129058
+                      }
+                  ],
+                  "pga_maximo_cm_s2": 0.241789,
+                  "componente_critica": "EW"
+              },
+
+              "alerta_pga": {
+                  "estado": "VERDE",
+                  "porcentaje_ns": 5.4531,
+                  "porcentaje_ew": 6.5348,
+                  "porcentaje_maximo": 6.5348,
+                  "componente_critica": "EW"
+              }
+          }
+
+          resultado_envio = m.enviar_alerta_telegram(resultado)
+
+          if not resultado_envio:
+              raise SystemExit("ERROR: Telegram no confirmó el envío.")
+
+          print("PRUEBA TELEGRAM VERDE: ENVÍO CONFIRMADO")
+          PY
+
       - name: Ejecutar monitor sísmico
+        if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -39,6 +96,7 @@ jobs:
           python monitor_sgc_cloud.py
 
       - name: Guardar cambios
+        if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
