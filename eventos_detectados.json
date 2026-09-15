@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T16:05:21.522464-05:00",
+  "actualizado": "2026-09-15T16:15:18.150629-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1313,
@@ -33075,11 +33075,11 @@
     "SGC2026sexfnj": {
       "id": "SGC2026sexfnj",
       "magnitud": 1.7,
-      "profundidad": 22.0,
-      "latitud": 4.518666666666666,
-      "longitud": -76.82733333333333,
-      "distancia_km": 306.12238315577065,
-      "lugar": "Istmina - Chocó, Colombia",
+      "profundidad": 38.0,
+      "latitud": 4.531440036515427,
+      "longitud": -76.68760721918748,
+      "distancia_km": 290.57216965223665,
+      "lugar": "Medio San Juan (Andagoya) - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
