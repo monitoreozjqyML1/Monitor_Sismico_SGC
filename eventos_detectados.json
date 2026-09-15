@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T14:50:19.035336-05:00",
+  "actualizado": "2026-09-15T14:55:19.579808-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1311,
@@ -31422,11 +31422,11 @@
     },
     "SGC2026sewajx": {
       "id": "SGC2026sewajx",
-      "magnitud": 2.7,
-      "profundidad": 41.0,
-      "latitud": 4.513462108743402,
-      "longitud": -76.77810369538064,
-      "distancia_km": 300.72243525439393,
+      "magnitud": 2.8,
+      "profundidad": 42.0,
+      "latitud": 4.5028868571128,
+      "longitud": -76.78018016537543,
+      "distancia_km": 301.04228567869063,
       "lugar": "Istmina - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
