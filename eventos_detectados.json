@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T10:15:19.016201-05:00",
+  "actualizado": "2026-09-15T10:20:24.730002-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1260,
+    "total_eventos": 1261,
     "eventos_m4_o_mayores": 12,
     "candidatos_acelerograficos": 12,
     "alertas_telegram": 8,
@@ -31532,6 +31532,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-15T10:15:16.075146-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sdrsrd": {
+      "id": "SGC2026sdrsrd",
+      "magnitud": 1.5,
+      "profundidad": 44.0,
+      "latitud": 4.247833333333333,
+      "longitud": -76.3595,
+      "distancia_km": 258.7468889827935,
+      "lugar": "Trujillo - Valle del Cauca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.247833333333333,
+      "lon": -76.3595,
+      "distancia_bogota": 258.7,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-14 18:02",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T10:20:23.459488-05:00",
       "alerta_enviada": false
     }
   }
