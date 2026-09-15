@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T14:05:14.317674-05:00",
+  "actualizado": "2026-09-15T14:30:16.047352-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1310,
@@ -9,8 +9,8 @@
     "porcentaje_m4_o_mayores": 0.92,
     "eventos_mayor_igual_4": 12,
     "total_candidatos_acelerograficos": 12,
-    "total_alertas": 12,
-    "porcentaje_alertas": 0.92
+    "total_alertas": 7,
+    "porcentaje_alertas": 0.53
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -29283,7 +29283,18 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-14T15:10:14.356548-05:00",
-      "alerta_enviada": false
+      "alerta_enviada": false,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.6180714285714285,
+        "porcentaje_ew": 1.3427297297297298,
+        "porcentaje_maximo": 1.3427297297297298,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00034611999999999995,
+        "pga_ew_m_s2": 0.00049681,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026sdlyib": {
       "id": "SGC2026sdlyib",
