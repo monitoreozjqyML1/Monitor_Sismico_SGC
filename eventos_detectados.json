@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T11:35:29.950868-05:00",
+  "actualizado": "2026-09-15T11:40:20.887641-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1274,
+    "total_eventos": 1275,
     "eventos_m4_o_mayores": 12,
     "candidatos_acelerograficos": 12,
     "alertas_telegram": 8,
@@ -31924,6 +31924,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-15T11:35:25.381841-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026segvng": {
+      "id": "SGC2026segvng",
+      "magnitud": 1.1,
+      "profundidad": 108.0,
+      "latitud": 9.380166666666666,
+      "longitud": -73.728,
+      "distancia_km": 520.5736680127712,
+      "lugar": "Chiriguaná - Cesar, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 9.380166666666666,
+      "lon": -73.728,
+      "distancia_bogota": 520.6,
+      "tipo_magnitud": "MLr_4",
+      "fecha_local": "2026-09-15 01:38",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T11:40:18.827957-05:00",
       "alerta_enviada": false
     }
   }
