@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T13:35:50.493489-05:00",
+  "actualizado": "2026-09-15T13:40:19.922054-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1308,
+    "total_eventos": 1310,
     "eventos_m4_o_mayores": 12,
     "candidatos_acelerograficos": 12,
     "alertas_telegram": 8,
@@ -32876,6 +32876,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-15T13:35:49.568575-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sepbid": {
+      "id": "SGC2026sepbid",
+      "magnitud": 1.3,
+      "profundidad": 147.0,
+      "latitud": 6.781166666666667,
+      "longitud": -73.08,
+      "distancia_km": 255.01912683187683,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.781166666666667,
+      "lon": -73.08,
+      "distancia_bogota": 255.0,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-15 05:46",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T13:40:18.050355-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sellak": {
+      "id": "SGC2026sellak",
+      "magnitud": 2.0,
+      "profundidad": 45.0,
+      "latitud": 4.309359752272774,
+      "longitud": -76.74403666269097,
+      "distancia_km": 299.53313286777205,
+      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.309359752272774,
+      "lon": -76.74403666269097,
+      "distancia_bogota": 299.5,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-15 03:57",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T13:40:18.050355-05:00",
       "alerta_enviada": false
     }
   }
