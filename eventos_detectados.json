@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T15:35:20.720763-05:00",
+  "actualizado": "2026-09-15T15:40:16.451531-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1311,
@@ -33019,10 +33019,10 @@
     "SGC2026sfgubi": {
       "id": "SGC2026sfgubi",
       "magnitud": 2.4,
-      "profundidad": 113.0,
-      "latitud": 6.57,
-      "longitud": -73.52583333333334,
-      "distancia_km": 215.3676343452086,
+      "profundidad": 116.0,
+      "latitud": 6.5765,
+      "longitud": -73.52183333333333,
+      "distancia_km": 216.18558579132772,
       "lugar": "El Carmen - Santander, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
