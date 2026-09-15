@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T17:15:19.815235-05:00",
+  "actualizado": "2026-09-15T17:20:20.132390-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1317,
+    "total_eventos": 1318,
     "eventos_m4_o_mayores": 13,
     "candidatos_acelerograficos": 13,
     "alertas_telegram": 8,
@@ -33210,6 +33210,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-15T17:10:16.762856-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sfaava": {
+      "id": "SGC2026sfaava",
+      "magnitud": 1.5,
+      "profundidad": 151.0,
+      "latitud": 6.778333333333333,
+      "longitud": -72.97416666666666,
+      "distancia_km": 259.99441063920654,
+      "lugar": "Cepitá - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.778333333333333,
+      "lon": -72.97416666666666,
+      "distancia_bogota": 260.0,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-15 11:17",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T17:20:16.983169-05:00",
       "alerta_enviada": false
     }
   }
