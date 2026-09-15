@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-09-15T12:50:50.869466-05:00",
+  "actualizado": "2026-09-15T12:55:17.155236-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1296,
+    "total_eventos": 1298,
     "eventos_m4_o_mayores": 12,
     "candidatos_acelerograficos": 12,
     "alertas_telegram": 8,
-    "porcentaje_m4_o_mayores": 0.93,
+    "porcentaje_m4_o_mayores": 0.92,
     "eventos_mayor_igual_4": 12,
     "total_candidatos_acelerograficos": 12,
     "total_alertas": 12,
-    "porcentaje_alertas": 0.93
+    "porcentaje_alertas": 0.92
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -32540,6 +32540,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-15T12:50:48.765153-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sejlwh": {
+      "id": "SGC2026sejlwh",
+      "magnitud": 2.1,
+      "profundidad": 110.0,
+      "latitud": 4.458470800264269,
+      "longitud": -76.29827182360478,
+      "distancia_km": 248.33925846030428,
+      "lugar": "Bolívar - Valle del Cauca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.458470800264269,
+      "lon": -76.29827182360478,
+      "distancia_bogota": 248.3,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-15 02:57",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T12:55:16.218159-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sdoozp": {
+      "id": "SGC2026sdoozp",
+      "magnitud": 1.8,
+      "profundidad": 37.0,
+      "latitud": 4.543072813309089,
+      "longitud": -76.70791654324918,
+      "distancia_km": 292.73010411312987,
+      "lugar": "Istmina - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.543072813309089,
+      "lon": -76.70791654324918,
+      "distancia_bogota": 292.7,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-14 16:27",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-15T12:55:16.218159-05:00",
       "alerta_enviada": false
     }
   }
