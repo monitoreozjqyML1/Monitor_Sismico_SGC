@@ -25,6 +25,102 @@ LON_BOGOTA = -74.0721
 # a acelerografía automática.
 MAGNITUD_CANDIDATO_ACELEROGRAFICO = 4.0
 
+# Valores críticos estructurales para Bogotá.
+# NS = 0.056 m/s²
+# EW = 0.037 m/s²
+PGA_CRITICO_NS_M_S2 = 0.056
+PGA_CRITICO_EW_M_S2 = 0.037
+
+
+
+# ============================================================
+# CLASIFICACIÓN ESTRUCTURAL DE PGA - BOG.11
+
+# ============================================================
+
+def clasificar_pga_bogota(acelerografia):
+
+    resultado = {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": None,
+        "porcentaje_ew": None,
+        "porcentaje_maximo": None,
+        "componente_critica": None,
+        "pga_ns_m_s2": None,
+        "pga_ew_m_s2": None,
+        "pga_ns_critico_m_s2": PGA_CRITICO_NS_M_S2,
+        "pga_ew_critico_m_s2": PGA_CRITICO_EW_M_S2
+    }
+
+    if not isinstance(acelerografia, dict):
+        return resultado
+
+    if acelerografia.get("estado") != "OK":
+        return resultado
+
+    estaciones = acelerografia.get("estaciones", [])
+
+    if not isinstance(estaciones, list) or not estaciones:
+        return resultado
+
+    estacion = estaciones[0]
+
+    if not isinstance(estacion, dict):
+        return resultado
+
+    def convertir(valor):
+        try:
+            valor = float(valor)
+            if not math.isfinite(valor):
+                return None
+            return valor / 100.0
+        except (TypeError, ValueError):
+            return None
+
+    pga_ns = convertir(estacion.get("pgaN"))
+    pga_ew = convertir(estacion.get("pgaE"))
+
+    porcentajes = []
+
+    if pga_ns is not None:
+        resultado["pga_ns_m_s2"] = pga_ns
+        resultado["porcentaje_ns"] = (
+            pga_ns / PGA_CRITICO_NS_M_S2 * 100.0
+        )
+        porcentajes.append(("NS", resultado["porcentaje_ns"]))
+
+    if pga_ew is not None:
+        resultado["pga_ew_m_s2"] = pga_ew
+        resultado["porcentaje_ew"] = (
+            pga_ew / PGA_CRITICO_EW_M_S2 * 100.0
+        )
+        porcentajes.append(("EW", resultado["porcentaje_ew"]))
+
+    if not porcentajes:
+        return resultado
+
+    componente, porcentaje = max(
+        porcentajes,
+        key=lambda item: item[1]
+    )
+
+    if porcentaje < 25.0:
+        estado = "VERDE"
+    elif porcentaje < 50.0:
+        estado = "AMARILLA"
+    elif porcentaje < 75.0:
+        estado = "NARANJA"
+    elif porcentaje < 100.0:
+        estado = "ROJA"
+    else:
+        estado = "CRITICA"
+
+    resultado["estado"] = estado
+    resultado["porcentaje_maximo"] = porcentaje
+    resultado["componente_critica"] = componente
+
+    return resultado
+
 
 # ============================================================
 # TELEGRAM
@@ -393,6 +489,96 @@ def obtener_pga_bogota(evento_id):
         return resultado_base
 
 
+
+# ============================================================
+# CLASIFICACIÓN ESTRUCTURAL DE PGA - BOG.11
+
+# ============================================================
+
+def clasificar_pga_bogota(acelerografia):
+
+    resultado = {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": None,
+        "porcentaje_ew": None,
+        "porcentaje_maximo": None,
+        "componente_critica": None,
+        "pga_ns_m_s2": None,
+        "pga_ew_m_s2": None,
+        "pga_ns_critico_m_s2": PGA_CRITICO_NS_M_S2,
+        "pga_ew_critico_m_s2": PGA_CRITICO_EW_M_S2
+    }
+
+    if not isinstance(acelerografia, dict):
+        return resultado
+
+    if acelerografia.get("estado") != "OK":
+        return resultado
+
+    estaciones = acelerografia.get("estaciones", [])
+
+    if not isinstance(estaciones, list) or not estaciones:
+        return resultado
+
+    estacion = estaciones[0]
+
+    if not isinstance(estacion, dict):
+        return resultado
+
+    def convertir(valor):
+        try:
+            valor = float(valor)
+            if not math.isfinite(valor):
+                return None
+            return valor / 100.0
+        except (TypeError, ValueError):
+            return None
+
+    pga_ns = convertir(estacion.get("pgaN"))
+    pga_ew = convertir(estacion.get("pgaE"))
+
+    porcentajes = []
+
+    if pga_ns is not None:
+        resultado["pga_ns_m_s2"] = pga_ns
+        resultado["porcentaje_ns"] = (
+            pga_ns / PGA_CRITICO_NS_M_S2 * 100.0
+        )
+        porcentajes.append(("NS", resultado["porcentaje_ns"]))
+
+    if pga_ew is not None:
+        resultado["pga_ew_m_s2"] = pga_ew
+        resultado["porcentaje_ew"] = (
+            pga_ew / PGA_CRITICO_EW_M_S2 * 100.0
+        )
+        porcentajes.append(("EW", resultado["porcentaje_ew"]))
+
+    if not porcentajes:
+        return resultado
+
+    componente, porcentaje = max(
+        porcentajes,
+        key=lambda item: item[1]
+    )
+
+    if porcentaje < 25.0:
+        estado = "VERDE"
+    elif porcentaje < 50.0:
+        estado = "AMARILLA"
+    elif porcentaje < 75.0:
+        estado = "NARANJA"
+    elif porcentaje < 100.0:
+        estado = "ROJA"
+    else:
+        estado = "CRITICA"
+
+    resultado["estado"] = estado
+    resultado["porcentaje_maximo"] = porcentaje
+    resultado["componente_critica"] = componente
+
+    return resultado
+
+
 # ============================================================
 # TELEGRAM
 # ============================================================
@@ -448,88 +634,155 @@ def enviar_alerta_telegram(resultado):
     )
 
     # --------------------------------------------------------
-    # PGA BOG.11
+    # EVALUACIÓN PGA BOG.11
     # --------------------------------------------------------
 
     acelerografia = resultado.get(
         "acelerografia_bogota"
     )
 
-    if acelerografia:
+    alerta_pga = resultado.get(
+        "alerta_pga"
+    ) or {}
 
-        estado = acelerografia.get(
-            "estado"
+    estado_pga = alerta_pga.get(
+        "estado",
+        "SIN_DATOS"
+    )
+
+    mensaje += (
+        "\n📊 EVALUACIÓN PGA BOG.11\n"
+    )
+
+    if estado_pga == "VERDE":
+        mensaje += (
+            "Nivel PGA: 🟢 VERDE\n"
         )
 
-        if estado == "OK":
+    elif estado_pga == "AMARILLA":
+        mensaje += (
+            "Nivel PGA: 🟡 AMARILLA\n"
+        )
 
-            estaciones = acelerografia.get(
-                "estaciones",
-                []
+    elif estado_pga == "NARANJA":
+        mensaje += (
+            "Nivel PGA: 🟠 NARANJA\n"
+        )
+
+    elif estado_pga == "ROJA":
+        mensaje += (
+            "Nivel PGA: 🔴 ROJA\n"
+        )
+
+    elif estado_pga == "CRITICA":
+        mensaje += (
+            "Nivel PGA: 🔴 CRÍTICA\n"
+        )
+
+    else:
+        mensaje += (
+            "Nivel PGA: ⚪ SIN DATOS PGA\n"
+        )
+
+    if (
+        estado_pga != "SIN_DATOS"
+        and acelerografia
+        and acelerografia.get("estado") == "OK"
+    ):
+
+        estaciones = acelerografia.get(
+            "estaciones",
+            []
+        )
+
+        if estaciones:
+
+            estacion = estaciones[0]
+
+            pga_e = estacion.get(
+                "pgaE"
             )
 
-            if estaciones:
+            pga_n = estacion.get(
+                "pgaN"
+            )
 
-                estacion = estaciones[0]
+            pga_z = estacion.get(
+                "pgaZ"
+            )
 
-                pga_e = estacion.get(
-                    "pgaE"
-                )
-
-                pga_n = estacion.get(
-                    "pgaN"
-                )
-
-                pga_z = estacion.get(
-                    "pgaZ"
-                )
-
+            if pga_e is not None:
                 mensaje += (
-                    "\n📊 PGA Bogotá BOG.11\n"
+                    f"EW: {pga_e:.3f} cm/s²"
                 )
 
-                if pga_e is not None:
-                    mensaje += (
-                        f"EW: {pga_e:.3f} cm/s²\n"
-                    )
-
-                if pga_n is not None:
-                    mensaje += (
-                        f"NS: {pga_n:.3f} cm/s²\n"
-                    )
-
-                if pga_z is not None:
-                    mensaje += (
-                        f"Z: {pga_z:.3f} cm/s²\n"
-                    )
-
-                pga_horizontal = acelerografia.get(
-                    "pga_maximo_cm_s2"
+                porcentaje_ew = alerta_pga.get(
+                    "porcentaje_ew"
                 )
 
-                componente = acelerografia.get(
-                    "componente_critica"
-                )
-
-                if pga_horizontal is not None:
-
+                if porcentaje_ew is not None:
                     mensaje += (
-                        f"Horizontal máx.: "
-                        f"{pga_horizontal:.3f} cm/s²"
+                        f" — {porcentaje_ew:.2f}% crítico"
                     )
 
-                    if componente:
-                        mensaje += (
-                            f" ({componente})"
-                        )
+                mensaje += "\n"
 
-                    mensaje += "\n"
+            if pga_n is not None:
+                mensaje += (
+                    f"NS: {pga_n:.3f} cm/s²"
+                )
 
-        else:
-            mensaje += (
-                "\n📊 PGA Bogotá BOG.11\n"
-                "No disponible en el detalle SGC.\n"
+                porcentaje_ns = alerta_pga.get(
+                    "porcentaje_ns"
+                )
+
+                if porcentaje_ns is not None:
+                    mensaje += (
+                        f" — {porcentaje_ns:.2f}% crítico"
+                    )
+
+                mensaje += "\n"
+
+            if pga_z is not None:
+                mensaje += (
+                    f"Z: {pga_z:.3f} cm/s²\n"
+                )
+
+            pga_horizontal = acelerografia.get(
+                "pga_maximo_cm_s2"
             )
+
+            componente_pga = alerta_pga.get(
+                "componente_critica"
+            )
+
+            porcentaje_maximo = alerta_pga.get(
+                "porcentaje_maximo"
+            )
+
+            if pga_horizontal is not None:
+                mensaje += (
+                    f"PGA horizontal máx.: "
+                    f"{pga_horizontal:.3f} cm/s²\n"
+                )
+
+            if componente_pga:
+                mensaje += (
+                    f"Componente crítica: "
+                    f"{componente_pga}\n"
+                )
+
+            if porcentaje_maximo is not None:
+                mensaje += (
+                    f"Porcentaje máximo: "
+                    f"{porcentaje_maximo:.2f}%\n"
+                )
+
+    elif estado_pga == "SIN_DATOS":
+        mensaje += (
+            "El SGC no reportó datos PGA válidos "
+            "para BOG.11 en esta consulta.\n"
+        )
 
     mensaje += (
         "\nFuente: SGC\n"
@@ -1076,6 +1329,10 @@ def realizar_consulta():
                 "acelerografia_bogota"
             ]
 
+            resultado["alerta_pga"] = clasificar_pga_bogota(
+                acelerografia
+            )
+
             if acelerografia.get(
                 "estado"
             ) == "OK":
@@ -1166,13 +1423,69 @@ def realizar_consulta():
             "candidato_acelerografico"
         ):
 
-            resultado["alertas"] = [
-                "SISMO M >= 4.0"
-            ]
+            alerta_pga = resultado.get(
+                "alerta_pga"
+            ) or {}
 
-            resultado["categoria"] = (
-                "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)"
+            estado_pga = alerta_pga.get(
+                "estado"
             )
+
+            if estado_pga == "AMARILLA":
+
+                resultado["alertas"] = [
+                    "ALERTA PGA AMARILLA"
+                ]
+
+                resultado["categoria"] = (
+                    "ALERTA ESTRUCTURAL PGA - AMARILLA"
+                )
+
+            elif estado_pga == "NARANJA":
+
+                resultado["alertas"] = [
+                    "ALERTA PGA NARANJA"
+                ]
+
+                resultado["categoria"] = (
+                    "ALERTA ESTRUCTURAL PGA - NARANJA"
+                )
+
+            elif estado_pga == "ROJA":
+
+                resultado["alertas"] = [
+                    "ALERTA PGA ROJA"
+                ]
+
+                resultado["categoria"] = (
+                    "ALERTA ESTRUCTURAL PGA - ROJA"
+                )
+
+            elif estado_pga == "CRITICA":
+
+                resultado["alertas"] = [
+                    "ALERTA PGA CRÍTICA"
+                ]
+
+                resultado["categoria"] = (
+                    "ALERTA ESTRUCTURAL PGA - CRÍTICA"
+                )
+
+            elif estado_pga == "VERDE":
+
+                resultado["alertas"] = []
+
+                resultado["categoria"] = (
+                    "PGA BOG.11 - NIVEL VERDE"
+                )
+
+            else:
+
+                resultado["alertas"] = []
+
+                resultado["categoria"] = (
+                    "CANDIDATO M >= 4.0 - PGA SIN DATOS"
+                )
 
         else:
 
@@ -1278,6 +1591,10 @@ def realizar_consulta():
             evento_historico[
                 "acelerografia_bogota"
             ] = acelerografia_actualizada
+
+            evento_historico["alerta_pga"] = clasificar_pga_bogota(
+                acelerografia_actualizada
+            )
 
             pga_historica_actualizada += 1
 
@@ -1413,5 +1730,4 @@ def realizar_consulta():
 
 if __name__ == "__main__":
     realizar_consulta()
-
 
