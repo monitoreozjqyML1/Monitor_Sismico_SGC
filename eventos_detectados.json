@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T15:15:16.337481-05:00",
+  "actualizado": "2026-09-15T15:20:25.364679-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1311,
@@ -32683,11 +32683,11 @@
     "SGC2026sfdgcs": {
       "id": "SGC2026sfdgcs",
       "magnitud": 2.4,
-      "profundidad": 5.0,
-      "latitud": 4.409512519836426,
-      "longitud": -76.68327331542969,
-      "distancia_km": 291.364582837869,
-      "lugar": "Istmina - Chocó, Colombia",
+      "profundidad": 35.0,
+      "latitud": 4.3533333333333335,
+      "longitud": -76.76016666666666,
+      "distancia_km": 300.60657073341997,
+      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
