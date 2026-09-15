@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T16:45:15.351824-05:00",
+  "actualizado": "2026-09-15T16:55:39.138168-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1315,
@@ -33102,7 +33102,7 @@
     },
     "SGC2026sexsuu": {
       "id": "SGC2026sexsuu",
-      "magnitud": 1.7,
+      "magnitud": 1.6,
       "profundidad": 164.0,
       "latitud": 6.74,
       "longitud": -73.09,
