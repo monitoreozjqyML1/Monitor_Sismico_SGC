@@ -1189,6 +1189,43 @@ def realizar_consulta():
                 {}
             )
 
+            # ------------------------------------------------
+            # SINCRONIZAR DATOS ACTUALES DEL SGC
+            # ------------------------------------------------
+            # Un evento puede ser actualizado posteriormente
+            # por el SGC. El ID permanece igual, pero pueden
+            # cambiar magnitud, profundidad, ubicaci?n, PGA,
+            # clasificaci?n y categor?a.
+            # ------------------------------------------------
+
+            campos_sincronizables = [
+                "magnitud",
+                "profundidad",
+                "latitud",
+                "longitud",
+                "distancia_km",
+                "lugar",
+                "hora_local",
+                "candidato_acelerografico",
+                "acelerografia_bogota",
+                "alerta_pga",
+                "lat",
+                "lon",
+                "distancia_bogota",
+                "tipo_magnitud",
+                "fecha_local",
+                "agencia",
+                "alertas",
+                "categoria"
+            ]
+
+            for campo in campos_sincronizables:
+
+                if campo in resultado:
+                    evento_existente[campo] = resultado.get(
+                        campo
+                    )
+
             if resultado.get(
                 "candidato_acelerografico"
             ):
