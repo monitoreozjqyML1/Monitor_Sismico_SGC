@@ -1201,7 +1201,14 @@ def realizar_consulta():
                     "estado"
                 )
 
-                if estado_existente != "OK":
+                if estado_existente == "OK":
+
+                    if not evento_existente.get("alerta_pga"):
+                        evento_existente["alerta_pga"] = clasificar_pga_bogota(
+                            acelerografia_existente
+                        )
+
+                else:
 
                     print()
                     print(
@@ -1225,6 +1232,10 @@ def realizar_consulta():
                         evento_existente[
                             "acelerografia_bogota"
                         ] = acelerografia_actualizada
+
+                        evento_existente["alerta_pga"] = clasificar_pga_bogota(
+                            acelerografia_actualizada
+                        )
 
                         print(
                             "    ? PGA de BOG.11 actualizada."

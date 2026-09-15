@@ -9238,7 +9238,7 @@
       "fecha_local": "2026-09-03 11:58",
       "agencia": "SGC",
       "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO CANDIDATO ACELEROGRÁFICO (M >= 4.0)",
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "OK",
@@ -9262,10 +9262,19 @@
         "estacion_critica": "BOG.11",
         "componente_critica": "EW"
       },
-      "alertas": [
-        "SISMO M >= 4.0"
-      ],
-      "fecha_deteccion": "2026-09-07 15:15:24"
+      "alertas": [],
+      "fecha_deteccion": "2026-09-07 15:15:24",
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.5833035714285715,
+        "porcentaje_ew": 1.465108108108108,
+        "porcentaje_maximo": 1.465108108108108,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00032665,
+        "pga_ew_m_s2": 0.00054209,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026rjapuh": {
       "id": "SGC2026rjapuh",
@@ -11626,7 +11635,7 @@
       "fecha_local": "2026-09-07 21:01",
       "agencia": "SGC",
       "tipo_magnitud": "MLr",
-      "categoria": "SISMO CANDIDATO ACELEROGRÁFICO (M >= 4.0)",
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "OK",
@@ -11650,10 +11659,19 @@
         "estacion_critica": "BOG.11",
         "componente_critica": "EW"
       },
-      "alertas": [
-        "SISMO M >= 4.0"
-      ],
-      "fecha_deteccion": "2026-09-08 07:15:16"
+      "alertas": [],
+      "fecha_deteccion": "2026-09-08 07:15:16",
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 1.3501607142857142,
+        "porcentaje_ew": 3.671270270270271,
+        "porcentaje_maximo": 3.671270270270271,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00075609,
+        "pga_ew_m_s2": 0.0013583700000000002,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026rrbiqs": {
       "id": "SGC2026rrbiqs",
@@ -28198,12 +28216,21 @@
       "tipo_magnitud": "MLv",
       "fecha_local": "2026-09-14 09:57",
       "agencia": "SGC",
-      "alertas": [
-        "SISMO M >= 4.0"
-      ],
-      "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
+      "alertas": [],
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-09-14T10:05:13.957940-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.8841428571428571,
+        "porcentaje_ew": 2.297189189189189,
+        "porcentaje_maximo": 2.297189189189189,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00049512,
+        "pga_ew_m_s2": 0.00084996,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026scqpya": {
       "id": "SGC2026scqpya",
@@ -29296,12 +29323,21 @@
       "tipo_magnitud": "MLv",
       "fecha_local": "2026-09-14 15:08",
       "agencia": "SGC",
-      "alertas": [
-        "SISMO M >= 4.0"
-      ],
-      "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
+      "alertas": [],
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-09-14T15:20:17.597200-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.6894464285714285,
+        "porcentaje_ew": 1.342918918918919,
+        "porcentaje_maximo": 1.342918918918919,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00038608999999999996,
+        "pga_ew_m_s2": 0.00049688,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026sdocnf": {
       "id": "SGC2026sdocnf",
@@ -29371,12 +29407,21 @@
       "tipo_magnitud": "M",
       "fecha_local": "2026-09-14 17:39",
       "agencia": "SGC",
-      "alertas": [
-        "SISMO M >= 4.0"
-      ],
-      "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
+      "alertas": [],
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-09-14T17:45:14.578649-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 1.0381071428571427,
+        "porcentaje_ew": 2.503783783783784,
+        "porcentaje_maximo": 2.503783783783784,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00058134,
+        "pga_ew_m_s2": 0.0009264,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026sdrjzy": {
       "id": "SGC2026sdrjzy",

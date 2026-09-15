@@ -216,6 +216,10 @@ def normalizar_alerta_almacenada(alerta):
 
         "acelerografia_bogota": alerta.get(
             "acelerografia_bogota"
+        ),
+
+        "alerta_pga": alerta.get(
+            "alerta_pga"
         )
     }
 
@@ -509,6 +513,12 @@ def api_eventos():
                             evento_existente[
                                 "acelerografia_bogota"
                             ] = pga_almacenada
+
+                            evento_existente[
+                                "alerta_pga"
+                            ] = alerta_normalizada.get(
+                                "alerta_pga"
+                            )
 
                             break
 
