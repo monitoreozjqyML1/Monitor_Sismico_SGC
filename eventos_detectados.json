@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T15:20:25.364679-05:00",
+  "actualizado": "2026-09-15T15:25:15.815267-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1311,
@@ -32683,10 +32683,10 @@
     "SGC2026sfdgcs": {
       "id": "SGC2026sfdgcs",
       "magnitud": 2.4,
-      "profundidad": 35.0,
-      "latitud": 4.3533333333333335,
-      "longitud": -76.76016666666666,
-      "distancia_km": 300.60657073341997,
+      "profundidad": 46.0,
+      "latitud": 4.3823289885239305,
+      "longitud": -76.75825121058301,
+      "distancia_km": 299.9804155386972,
       "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
