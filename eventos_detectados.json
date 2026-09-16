@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T07:10:17.916914-05:00",
+  "actualizado": "2026-09-16T07:15:20.081169-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1394,
@@ -33561,12 +33561,12 @@
     },
     "SGC2026sgaall": {
       "id": "SGC2026sgaall",
-      "magnitud": 2.5,
-      "profundidad": 146.0,
-      "latitud": 7.012106418609619,
-      "longitud": -72.96342468261719,
-      "distancia_km": 283.7380593797874,
-      "lugar": "Piedecuesta - Santander, Colombia",
+      "magnitud": 2.1,
+      "profundidad": 138.0,
+      "latitud": 6.790313784812128,
+      "longitud": -73.12416481286324,
+      "distancia_km": 253.88030988369397,
+      "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
