@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T16:30:20.587030-05:00",
+  "actualizado": "2026-09-16T16:35:15.405307-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1435,
+    "total_eventos": 1436,
     "eventos_m4_o_mayores": 17,
     "candidatos_acelerograficos": 17,
     "alertas_telegram": 11,
@@ -35984,11 +35984,11 @@
     },
     "SGC2026sgxdjp": {
       "id": "SGC2026sgxdjp",
-      "magnitud": 3.1,
-      "profundidad": 44.0,
-      "latitud": 4.456355749938148,
-      "longitud": -76.71173756074455,
-      "distancia_km": 293.9421063612454,
+      "magnitud": 3.4,
+      "profundidad": 46.0,
+      "latitud": 4.404537016948196,
+      "longitud": -76.712543057332,
+      "distancia_km": 294.65207474134775,
       "lugar": "Istmina - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
@@ -36563,6 +36563,34 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-16T16:25:14.619593-05:00",
       "alerta_enviada": true
+    },
+    "SGC2026shgcjz": {
+      "id": "SGC2026shgcjz",
+      "magnitud": 2.0,
+      "profundidad": 0.0,
+      "latitud": 4.696598529815674,
+      "longitud": -76.68199920654297,
+      "distancia_km": 289.2343817879097,
+      "lugar": "Sipí - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.696598529815674,
+      "lon": -76.68199920654297,
+      "distancia_bogota": 289.2,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-16 16:29",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T16:35:13.912880-05:00",
+      "alerta_enviada": false
     }
   }
 }
