@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T10:40:18.510549-05:00",
+  "actualizado": "2026-09-16T10:45:17.795277-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1403,
+    "total_eventos": 1404,
     "eventos_m4_o_mayores": 14,
     "candidatos_acelerograficos": 14,
     "alertas_telegram": 9,
@@ -35592,12 +35592,12 @@
     },
     "SGC2026sgpbwl": {
       "id": "SGC2026sgpbwl",
-      "magnitud": 1.2,
-      "profundidad": 5.0,
-      "latitud": 7.285333333333333,
-      "longitud": -76.24916666666667,
-      "distancia_km": 374.02237846976647,
-      "lugar": "Ituango - Antioquia, Colombia",
+      "magnitud": 2.0,
+      "profundidad": 149.0,
+      "latitud": 6.9214469050316,
+      "longitud": -73.055703901707,
+      "distancia_km": 270.2836607328549,
+      "lugar": "Piedecuesta - Santander, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
@@ -35644,6 +35644,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T10:40:15.067302-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sgpcjo": {
+      "id": "SGC2026sgpcjo",
+      "magnitud": 1.2,
+      "profundidad": 5.0,
+      "latitud": 7.285333333333333,
+      "longitud": -76.24916666666667,
+      "distancia_km": 374.02237846976647,
+      "lugar": "Ituango - Antioquia, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 7.285333333333333,
+      "lon": -76.24916666666667,
+      "distancia_bogota": 374.0,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-16 07:56",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T10:45:14.245852-05:00",
       "alerta_enviada": false
     }
   }
