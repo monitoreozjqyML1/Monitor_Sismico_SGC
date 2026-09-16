@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T11:30:17.955658-05:00",
+  "actualizado": "2026-09-16T11:35:17.805384-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1411,
+    "total_eventos": 1412,
     "eventos_m4_o_mayores": 14,
     "candidatos_acelerograficos": 14,
     "alertas_telegram": 9,
@@ -35816,11 +35816,11 @@
     },
     "SGC2026sgbdbc": {
       "id": "SGC2026sgbdbc",
-      "magnitud": 1.5,
-      "profundidad": 26.0,
-      "latitud": 4.512333333333333,
-      "longitud": -76.8025,
-      "distancia_km": 303.42858164543844,
+      "magnitud": 1.6,
+      "profundidad": 46.0,
+      "latitud": 4.510289533254221,
+      "longitud": -76.75570672162961,
+      "distancia_km": 298.2736076533196,
       "lugar": "Istmina - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
@@ -35868,6 +35868,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T11:30:15.481926-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sgbloe": {
+      "id": "SGC2026sgbloe",
+      "magnitud": 1.3,
+      "profundidad": 90.0,
+      "latitud": 10.046,
+      "longitud": -73.05566666666667,
+      "distancia_km": 603.7132007539967,
+      "lugar": "Agustín Codazzi - Cesar, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 10.046,
+      "lon": -73.05566666666667,
+      "distancia_bogota": 603.7,
+      "tipo_magnitud": "MLr_4",
+      "fecha_local": "2026-09-16 01:04",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T11:35:14.909489-05:00",
       "alerta_enviada": false
     }
   }
