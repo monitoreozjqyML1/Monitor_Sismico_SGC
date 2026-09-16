@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T11:40:18.808230-05:00",
+  "actualizado": "2026-09-16T11:45:16.183383-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1412,
+    "total_eventos": 1413,
     "eventos_m4_o_mayores": 14,
     "candidatos_acelerograficos": 14,
     "alertas_telegram": 9,
@@ -19776,11 +19776,11 @@
     },
     "SGC2026sbgolb": {
       "id": "SGC2026sbgolb",
-      "magnitud": 2.8,
-      "profundidad": 142.0,
-      "latitud": 6.789256259649068,
-      "longitud": -73.1530528891784,
-      "distancia_km": 252.46938172273573,
+      "magnitud": 2.7,
+      "profundidad": 143.0,
+      "latitud": 6.787141209322948,
+      "longitud": -73.15091234833825,
+      "distancia_km": 252.3497520110167,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
@@ -35896,6 +35896,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T11:35:14.909489-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sgcnwv": {
+      "id": "SGC2026sgcnwv",
+      "magnitud": 1.3,
+      "profundidad": 24.0,
+      "latitud": 4.484333333333334,
+      "longitud": -76.71916666666667,
+      "distancia_km": 294.4734802333954,
+      "lugar": "Istmina - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.484333333333334,
+      "lon": -76.71916666666667,
+      "distancia_bogota": 294.5,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-16 01:37",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T11:45:14.741116-05:00",
       "alerta_enviada": false
     }
   }
