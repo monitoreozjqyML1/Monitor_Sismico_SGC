@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T10:20:24.376090-05:00",
+  "actualizado": "2026-09-16T10:25:16.359396-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1399,
+    "total_eventos": 1401,
     "eventos_m4_o_mayores": 14,
     "candidatos_acelerograficos": 14,
     "alertas_telegram": 9,
@@ -35532,6 +35532,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T10:05:16.289428-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sgorfe": {
+      "id": "SGC2026sgorfe",
+      "magnitud": 1.5,
+      "profundidad": 134.0,
+      "latitud": 6.849535193943503,
+      "longitud": -73.18410427723123,
+      "distancia_km": 257.28538901858116,
+      "lugar": "Zapatoca - Santander, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 6.849535193943503,
+      "lon": -73.18410427723123,
+      "distancia_bogota": 257.3,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-16 07:43",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T10:25:13.846187-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sgomrb": {
+      "id": "SGC2026sgomrb",
+      "magnitud": 1.6,
+      "profundidad": 148.0,
+      "latitud": 5.391833333333333,
+      "longitud": -73.76116666666667,
+      "distancia_km": 83.17074844178133,
+      "lugar": "Fúquene - Cundinamarca, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.391833333333333,
+      "lon": -73.76116666666667,
+      "distancia_bogota": 83.2,
+      "tipo_magnitud": "MLr_3",
+      "fecha_local": "2026-09-16 07:38",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T10:25:13.846187-05:00",
       "alerta_enviada": false
     }
   }
