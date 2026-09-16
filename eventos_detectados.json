@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T09:25:17.817040-05:00",
+  "actualizado": "2026-09-16T09:30:20.304417-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1397,
@@ -33438,11 +33438,11 @@
     },
     "SGC2026sgggou": {
       "id": "SGC2026sgggou",
-      "magnitud": 0.8,
-      "profundidad": 16.0,
-      "latitud": 4.429666666666667,
-      "longitud": -75.20266666666667,
-      "distancia_km": 129.15906777480816,
+      "magnitud": 0.9,
+      "profundidad": 20.0,
+      "latitud": 4.4145835059972685,
+      "longitud": -75.19678075419479,
+      "distancia_km": 128.94592114435045,
       "lugar": "Ibagué - Tolima, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
