@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-16T07:00:16.996482-05:00",
+  "actualizado": "2026-09-16T07:05:16.798089-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1393,
+    "total_eventos": 1394,
     "eventos_m4_o_mayores": 14,
     "candidatos_acelerograficos": 14,
     "alertas_telegram": 9,
-    "porcentaje_m4_o_mayores": 1.01,
+    "porcentaje_m4_o_mayores": 1.0,
     "eventos_mayor_igual_4": 14,
     "total_candidatos_acelerograficos": 14,
     "total_alertas": 7,
@@ -35213,7 +35213,7 @@
     },
     "SGC2026sfxvos": {
       "id": "SGC2026sfxvos",
-      "magnitud": 1.6,
+      "magnitud": 1.4,
       "profundidad": 146.0,
       "latitud": 6.843833333333333,
       "longitud": -73.02983333333333,
@@ -35349,6 +35349,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T07:00:14.808038-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sfzeln": {
+      "id": "SGC2026sfzeln",
+      "magnitud": 1.6,
+      "profundidad": 100.0,
+      "latitud": 5.775089628274285,
+      "longitud": -74.08926461852252,
+      "distancia_km": 118.33663195305888,
+      "lugar": "Pauna - Boyacá, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 5.775089628274285,
+      "lon": -74.08926461852252,
+      "distancia_bogota": 118.3,
+      "tipo_magnitud": "MLr_2",
+      "fecha_local": "2026-09-15 23:56",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T07:05:13.055979-05:00",
       "alerta_enviada": false
     }
   }
