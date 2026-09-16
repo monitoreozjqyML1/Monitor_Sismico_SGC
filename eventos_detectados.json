@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-16T15:15:20.969957-05:00",
+  "actualizado": "2026-09-16T15:20:20.117623-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1430,
-    "eventos_m4_o_mayores": 14,
-    "candidatos_acelerograficos": 14,
-    "alertas_telegram": 9,
-    "porcentaje_m4_o_mayores": 0.98,
-    "eventos_mayor_igual_4": 14,
-    "total_candidatos_acelerograficos": 14,
+    "total_eventos": 1432,
+    "eventos_m4_o_mayores": 15,
+    "candidatos_acelerograficos": 15,
+    "alertas_telegram": 10,
+    "porcentaje_m4_o_mayores": 1.05,
+    "eventos_mayor_igual_4": 15,
+    "total_candidatos_acelerograficos": 15,
     "total_alertas": 7,
     "porcentaje_alertas": 0.49
   },
@@ -36401,6 +36401,73 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T14:35:16.394343-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026shdpqj": {
+      "id": "SGC2026shdpqj",
+      "magnitud": 3.9,
+      "profundidad": 0.0,
+      "latitud": 4.7344069480896,
+      "longitud": -76.71711730957031,
+      "distancia_km": 293.1253236568556,
+      "lugar": "Nóvita - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.7344069480896,
+      "lon": -76.71711730957031,
+      "distancia_bogota": 293.1,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-16 15:14",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T15:20:16.044986-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026shdofi": {
+      "id": "SGC2026shdofi",
+      "magnitud": 4.7,
+      "profundidad": 40.0,
+      "latitud": 4.576913618527017,
+      "longitud": -76.72301290241967,
+      "distancia_km": 294.17819386063684,
+      "lugar": "Medio San Juan (Andagoya) - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 4.576913618527017,
+      "lon": -76.72301290241967,
+      "distancia_bogota": 294.2,
+      "tipo_magnitud": "MLv",
+      "fecha_local": "2026-09-16 15:12",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-09-16T15:20:16.044986-05:00",
+      "alerta_enviada": true
     }
   }
 }
