@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+﻿from flask import Flask, render_template, jsonify
 import requests
 import math
 import json
@@ -405,15 +405,34 @@ def api_eventos():
 
     try:
 
-        eventos_sgc = obtener_eventos()
+        # ====================================================
+        # OBTENER EVENTOS DEL SGC
+        # ====================================================
+
+        try:
+
+            eventos_sgc = obtener_eventos()
+
+            sgc_disponible = True
+
+        except Exception as error:
+
+            print(
+                "SGC NO DISPONIBLE - USANDO EVENTOS ALMACENADOS:",
+                error
+            )
+
+            eventos_sgc = []
+
+            sgc_disponible = False
 
         eventos = []
 
         eventos_invalidos = 0
 
-        # ----------------------------------------------------
+        # ====================================================
         # PROCESAR EVENTOS DEL SGC
-        # ----------------------------------------------------
+        # ====================================================
 
         for evento in eventos_sgc:
 
@@ -612,7 +631,6 @@ def api_eventos():
             "eventos": []
 
         }), 500
-
 
 # ============================================================
 # INICIAR FLASK
