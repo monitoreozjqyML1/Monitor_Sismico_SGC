@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-16T15:20:20.117623-05:00",
+  "actualizado": "2026-09-16T15:25:16.205566-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1432,
-    "eventos_m4_o_mayores": 15,
-    "candidatos_acelerograficos": 15,
+    "total_eventos": 1433,
+    "eventos_m4_o_mayores": 16,
+    "candidatos_acelerograficos": 16,
     "alertas_telegram": 10,
-    "porcentaje_m4_o_mayores": 1.05,
-    "eventos_mayor_igual_4": 15,
-    "total_candidatos_acelerograficos": 15,
+    "porcentaje_m4_o_mayores": 1.12,
+    "eventos_mayor_igual_4": 16,
+    "total_candidatos_acelerograficos": 16,
     "total_alertas": 7,
     "porcentaje_alertas": 0.49
   },
@@ -36404,14 +36404,14 @@
     },
     "SGC2026shdpqj": {
       "id": "SGC2026shdpqj",
-      "magnitud": 3.9,
-      "profundidad": 0.0,
-      "latitud": 4.7344069480896,
-      "longitud": -76.71711730957031,
-      "distancia_km": 293.1253236568556,
-      "lugar": "Nóvita - Chocó, Colombia",
+      "magnitud": 4.4,
+      "profundidad": 37.0,
+      "latitud": 4.602294222440464,
+      "longitud": -76.7231452952469,
+      "distancia_km": 294.0580606665599,
+      "lugar": "Sipí - Chocó, Colombia",
       "hora_local": "No disponible",
-      "candidato_acelerografico": false,
+      "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
         "estaciones": [],
@@ -36441,7 +36441,7 @@
       "hora_local": "No disponible",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
+        "estado": "PENDIENTE",
         "estaciones": [],
         "pga_maximo_cm_s2": null,
         "estacion_critica": null,
@@ -36468,6 +36468,34 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-16T15:20:16.044986-05:00",
       "alerta_enviada": true
+    },
+    "SGC2026shdtgp": {
+      "id": "SGC2026shdtgp",
+      "magnitud": 3.1,
+      "profundidad": 0.0,
+      "latitud": 4.627750396728516,
+      "longitud": -76.7628402709961,
+      "distancia_km": 298.34708100962314,
+      "lugar": "Sipí - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.627750396728516,
+      "lon": -76.7628402709961,
+      "distancia_bogota": 298.3,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-16 15:18",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T15:25:14.518770-05:00",
+      "alerta_enviada": false
     }
   }
 }
