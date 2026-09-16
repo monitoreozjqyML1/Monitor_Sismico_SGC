@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T16:25:18.977522-05:00",
+  "actualizado": "2026-09-16T16:30:20.587030-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1435,
@@ -36536,7 +36536,7 @@
       "hora_local": "No disponible",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
+        "estado": "PENDIENTE",
         "estaciones": [],
         "pga_maximo_cm_s2": null,
         "estacion_critica": null,
