@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T10:55:16.431621-05:00",
+  "actualizado": "2026-09-16T11:00:19.093356-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1406,
@@ -30610,12 +30610,12 @@
     },
     "SGC2026sdupdz": {
       "id": "SGC2026sdupdz",
-      "magnitud": 2.2,
-      "profundidad": 6.0,
-      "latitud": 5.081,
-      "longitud": -77.131,
-      "distancia_km": 341.3804331181781,
-      "lugar": "Medio Baudó(Boca de Pepé) - Chocó, Colombia",
+      "magnitud": 2.0,
+      "profundidad": 32.0,
+      "latitud": 5.2685,
+      "longitud": -77.109,
+      "distancia_km": 342.07049015886446,
+      "lugar": "Bajo Baudó (Pizarro) - Chocó, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
