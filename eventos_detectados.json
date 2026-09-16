@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T09:50:22.347474-05:00",
+  "actualizado": "2026-09-16T09:55:15.308565-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1397,
@@ -33410,12 +33410,12 @@
     },
     "SGC2026sggozb": {
       "id": "SGC2026sggozb",
-      "magnitud": 2.5,
-      "profundidad": 164.0,
-      "latitud": 7.062392234802246,
-      "longitud": -73.40809631347656,
-      "distancia_km": 271.58083981825956,
-      "lugar": "Betulia - Santander, Colombia",
+      "magnitud": 2.8,
+      "profundidad": 151.0,
+      "latitud": 6.813666666666666,
+      "longitud": -73.14383333333333,
+      "distancia_km": 255.36371902195503,
+      "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
