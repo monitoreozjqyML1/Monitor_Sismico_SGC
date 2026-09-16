@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T13:05:19.052923-05:00",
+  "actualizado": "2026-09-16T13:10:16.856827-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1422,
+    "total_eventos": 1423,
     "eventos_m4_o_mayores": 14,
     "candidatos_acelerograficos": 14,
     "alertas_telegram": 9,
@@ -36176,6 +36176,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T13:05:17.537372-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sgeswt": {
+      "id": "SGC2026sgeswt",
+      "magnitud": 1.5,
+      "profundidad": 37.0,
+      "latitud": 4.528267461026246,
+      "longitud": -76.71423511441854,
+      "distancia_km": 293.5413768562289,
+      "lugar": "Istmina - Chocó, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.528267461026246,
+      "lon": -76.71423511441854,
+      "distancia_bogota": 293.5,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-16 02:43",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T13:10:14.387716-05:00",
       "alerta_enviada": false
     }
   }
