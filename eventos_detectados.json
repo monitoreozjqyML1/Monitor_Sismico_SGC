@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T13:20:14.256608-05:00",
+  "actualizado": "2026-09-16T13:25:20.618168-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1424,
+    "total_eventos": 1425,
     "eventos_m4_o_mayores": 14,
     "candidatos_acelerograficos": 14,
     "alertas_telegram": 9,
@@ -19580,9 +19580,9 @@
       "id": "SGC2026sblqei",
       "magnitud": 4.0,
       "profundidad": 144.0,
-      "latitud": 6.812521813236394,
-      "longitud": -73.17232013323118,
-      "distancia_km": 253.99572684415622,
+      "latitud": 6.805647899676502,
+      "longitud": -73.1675027756866,
+      "distancia_km": 253.50285925602165,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "No disponible",
       "candidato_acelerografico": true,
@@ -36232,6 +36232,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-16T13:20:12.936919-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sgfrhh": {
+      "id": "SGC2026sgfrhh",
+      "magnitud": 0.7,
+      "profundidad": 67.0,
+      "latitud": 8.459166666666667,
+      "longitud": -74.18116666666667,
+      "distancia_km": 416.9511455069465,
+      "lugar": "Norosi - Bolívar, Colombia",
+      "hora_local": "No disponible",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 8.459166666666667,
+      "lon": -74.18116666666667,
+      "distancia_bogota": 417.0,
+      "tipo_magnitud": "MLr_vmm",
+      "fecha_local": "2026-09-16 03:12",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-16T13:25:18.077829-05:00",
       "alerta_enviada": false
     }
   }
