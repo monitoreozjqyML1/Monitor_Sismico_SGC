@@ -252,8 +252,21 @@ def limpiar_eventos_antiguos(eventos):
 
 def obtener_eventos():
     try:
+        headers_sgc = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/140.0.0.0 Safari/537.36"
+            ),
+            "Accept": (
+                "application/json,text/plain,*/*"
+            ),
+            "Referer": "https://www.sgc.gov.co/"
+        }
+
         respuesta = requests.get(
             URL_SGC,
+            headers=headers_sgc,
             timeout=30
         )
 
@@ -355,8 +368,21 @@ def obtener_pga_bogota(evento_id):
     )
 
     try:
+        headers_sgc = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/140.0.0.0 Safari/537.36"
+            ),
+            "Accept": (
+                "application/json,text/plain,*/*"
+            ),
+            "Referer": "https://www.sgc.gov.co/"
+        }
+
         respuesta = requests.get(
             url,
+            headers=headers_sgc,
             timeout=20
         )
 
@@ -819,6 +845,194 @@ def enviar_alerta_telegram(resultado):
         print(
             f"    ❌ Error enviando alerta a Telegram: "
             f"{error}"
+        )
+
+        return False
+
+
+# ============================================================
+# REPORTE PGA ACTUALIZADO
+# ============================================================
+
+def enviar_reporte_pga_actualizado_telegram(
+    resultado,
+    event_id
+):
+
+    if not TELEGRAM_BOT_TOKEN:
+        print(
+            "?? TELEGRAM_BOT_TOKEN no est? configurado."
+        )
+        return False
+
+    if not TELEGRAM_CHAT_ID:
+        print(
+            "?? TELEGRAM_CHAT_ID no est? configurado."
+        )
+        return False
+
+    magnitud = resultado.get(
+        "magnitud"
+    )
+
+    profundidad = resultado.get(
+        "profundidad"
+    )
+
+    lugar = resultado.get(
+        "lugar"
+    )
+
+    acelerografia = resultado.get(
+        "acelerografia_bogota"
+    ) or {}
+
+    alerta_pga = resultado.get(
+        "alerta_pga"
+    ) or {}
+
+    estado_pga = alerta_pga.get(
+        "estado",
+        "SIN_DATOS"
+    )
+
+    mensaje = (
+        "?? REPORTE PGA ACTUALIZADO\n\n"
+        "Evento s?smico previamente detectado\n"
+        f"C?digo SGC: {event_id}\n\n"
+        f"Magnitud: {magnitud}\n"
+        f"Profundidad: {profundidad} km\n"
+        f"Ubicaci?n: {lugar}\n\n"
+        "?? BOG.11\n\n"
+    )
+
+    pga_horizontal = acelerografia.get(
+        "pga_maximo_cm_s2"
+    )
+
+    componente_pga = alerta_pga.get(
+        "componente_critica"
+    )
+
+    estaciones = acelerografia.get(
+        "estaciones",
+        []
+    )
+
+    if pga_horizontal is not None:
+        mensaje += (
+            f"PGA m?xima: "
+            f"{pga_horizontal:.3f} cm/s?\n"
+        )
+
+    if componente_pga:
+        mensaje += (
+            f"Componente cr?tica: "
+            f"{componente_pga}\n"
+        )
+
+    if estaciones:
+
+        estacion = estaciones[0]
+
+        pga_e = estacion.get(
+            "pgaE"
+        )
+
+        pga_n = estacion.get(
+            "pgaN"
+        )
+
+        pga_z = estacion.get(
+            "pgaZ"
+        )
+
+        if pga_e is not None:
+            mensaje += (
+                f"PGA EW: "
+                f"{pga_e:.3f} cm/s?\n"
+            )
+
+        if pga_n is not None:
+            mensaje += (
+                f"PGA NS: "
+                f"{pga_n:.3f} cm/s?\n"
+            )
+
+        if pga_z is not None:
+            mensaje += (
+                f"PGA Z: "
+                f"{pga_z:.3f} cm/s?\n"
+            )
+
+    if estado_pga == "VERDE":
+        mensaje += (
+            "\n?? CLASIFICACI?N PGA: ?? VERDE\n"
+        )
+
+    elif estado_pga == "AMARILLA":
+        mensaje += (
+            "\n?? CLASIFICACI?N PGA: ?? AMARILLA\n"
+        )
+
+    elif estado_pga == "NARANJA":
+        mensaje += (
+            "\n?? CLASIFICACI?N PGA: ?? NARANJA\n"
+        )
+
+    elif estado_pga == "ROJA":
+        mensaje += (
+            "\n?? CLASIFICACI?N PGA: ?? ROJA\n"
+        )
+
+    elif estado_pga == "CRITICA":
+        mensaje += (
+            "\n?? CLASIFICACI?N PGA: ?? CR?TICA\n"
+        )
+
+    else:
+        mensaje += (
+            "\n?? CLASIFICACI?N PGA: ? SIN DATOS PGA\n"
+        )
+
+    mensaje += (
+        "\nFuente: SGC\n"
+        f"{URL_MONITOR}\n\n"
+        "Desarrollado por: ML1 - TQMD - ZJQY"
+    )
+
+    url_telegram = (
+        "https://api.telegram.org/bot"
+        f"{TELEGRAM_BOT_TOKEN}/sendMessage"
+    )
+
+    datos = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": mensaje
+    }
+
+    try:
+
+        respuesta = requests.post(
+            url_telegram,
+            data=datos,
+            timeout=20
+        )
+
+        respuesta.raise_for_status()
+
+        print(
+            "    ?? Reporte PGA actualizado "
+            "enviado a Telegram."
+        )
+
+        return True
+
+    except Exception as error:
+
+        print(
+            f"    ? Error enviando reporte PGA "
+            f"actualizado a Telegram: {error}"
         )
 
         return False
@@ -1289,6 +1503,38 @@ def realizar_consulta():
                         print(
                             "    ? PGA de BOG.11 actualizada."
                         )
+
+                        # ------------------------------------------------
+                        # REPORTE PGA ACTUALIZADO A TELEGRAM
+                        # ------------------------------------------------
+                        # El evento ya exist?a y la PGA inicialmente
+                        # no estaba disponible. Si ahora existe PGA
+                        # v?lida, se env?a un segundo reporte una sola vez.
+                        # Esto NO crea un evento nuevo.
+                        # ------------------------------------------------
+
+                        if not evento_existente.get(
+                            "reporte_pga_actualizado_enviado",
+                            False
+                        ):
+
+                            reporte_enviado = (
+                                enviar_reporte_pga_actualizado_telegram(
+                                    evento_existente,
+                                    event_id
+                                )
+                            )
+
+                            if reporte_enviado:
+
+                                evento_existente[
+                                    "reporte_pga_actualizado_enviado"
+                                ] = True
+
+                                print(
+                                    "    ?? Reporte PGA actualizado "
+                                    "registrado como enviado."
+                                )
 
                         estaciones = (
                             acelerografia_actualizada.get(

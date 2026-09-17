@@ -73,12 +73,19 @@ jobs:
               }
           }
 
-          resultado_envio = m.enviar_alerta_telegram(resultado)
-
+          resultado_envio = (
+              m.enviar_reporte_pga_actualizado_telegram(
+                  resultado,
+                  "PRUEBA_PGA_20260917"
+              )
+          )
           if not resultado_envio:
               raise SystemExit("ERROR: Telegram no confirmó el envío.")
 
-          print("PRUEBA TELEGRAM VERDE: ENVÍO CONFIRMADO")
+          print(
+              "PRUEBA REPORTE PGA ACTUALIZADO: "
+              "ENVÍO CONFIRMADO"
+          )
           PY
 
       - name: Ejecutar monitor sísmico
