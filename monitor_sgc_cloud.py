@@ -1403,6 +1403,15 @@ def realizar_consulta():
                 {}
             )
 
+            candidato_anterior = evento_existente.get(
+                "candidato_acelerografico",
+                False
+            )
+
+            magnitud_anterior = evento_existente.get(
+                "magnitud"
+            )
+
             # ------------------------------------------------
             # SINCRONIZAR DATOS ACTUALES DEL SGC
             # ------------------------------------------------
@@ -1421,8 +1430,6 @@ def realizar_consulta():
                 "lugar",
                 "hora_local",
                 "candidato_acelerografico",
-                "acelerografia_bogota",
-                "alerta_pga",
                 "lat",
                 "lon",
                 "distancia_bogota",
@@ -1451,6 +1458,35 @@ def realizar_consulta():
                         continue
 
                 evento_existente[campo] = valor_actual
+
+            candidato_actual = resultado.get(
+                "candidato_acelerografico",
+                False
+            )
+
+            evento_actualizado = (
+                not candidato_anterior
+                and candidato_actual
+            )
+
+            if evento_actualizado:
+
+                print()
+                print(
+                    f"🔄 Evento actualizado por el SGC: {event_id}"
+                )
+
+                alerta_actualizada = (
+                    enviar_evento_actualizado_telegram(
+                        resultado,
+                        event_id,
+                        magnitud_anterior
+                    )
+                )
+
+                evento_existente[
+                    "alerta_actualizacion_enviada"
+                ] = alerta_actualizada
 
             if resultado.get(
                 "candidato_acelerografico"
@@ -2028,6 +2064,112 @@ def realizar_consulta():
     )
 
     print("=" * 70)
+# EVENTO ACTUALIZADO
+# ============================================================
+
+def enviar_evento_actualizado_telegram(
+    resultado,
+    event_id,
+    magnitud_anterior
+):
+
+    if not TELEGRAM_BOT_TOKEN:
+        print(
+            "⚠️ TELEGRAM_BOT_TOKEN no está configurado."
+        )
+        return False
+
+    if not TELEGRAM_CHAT_ID:
+        print(
+            "⚠️ TELEGRAM_CHAT_ID no está configurado."
+        )
+        return False
+
+    magnitud = resultado.get(
+        "magnitud"
+    )
+
+    profundidad = resultado.get(
+        "profundidad"
+    )
+
+    distancia = resultado.get(
+        "distancia_km"
+    )
+
+    lugar = resultado.get(
+        "lugar"
+    )
+
+    hora_local = (
+        resultado.get("hora_local")
+        or resultado.get("fecha_local")
+    )
+
+    mensaje = (
+        "🔄 EVENTO SÍSMICO ACTUALIZADO\n\n"
+        "El SGC actualizó un evento previamente detectado.\n"
+        f"Código SGC: {event_id}\n\n"
+        f"Magnitud anterior: {magnitud_anterior}\n"
+        f"Magnitud actual: {magnitud}\n"
+        f"Profundidad: {profundidad} km\n"
+    )
+
+    if distancia is not None:
+        mensaje += (
+            f"Distancia a Bogotá: "
+            f"{distancia:.1f} km\n"
+        )
+
+    mensaje += (
+        f"Ubicación: {lugar}\n"
+        f"Hora local: {hora_local}\n\n"
+        "⚠️ El evento ahora cumple el criterio "
+        "M >= 4.0 y continuará en evaluación.\n\n"
+        "Fuente: SGC\n"
+        f"{URL_MONITOR}\n\n"
+        "Desarrollado por: ML1 - TQMD - ZJQY"
+    )
+
+    url_telegram = (
+        "https://api.telegram.org/bot"
+        f"{TELEGRAM_BOT_TOKEN}/sendMessage"
+    )
+
+    datos = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": mensaje
+    }
+
+    try:
+
+        respuesta = requests.post(
+            url_telegram,
+            data=datos,
+            timeout=20
+        )
+
+        respuesta.raise_for_status()
+
+        print(
+            "    📱 Evento actualizado enviado a Telegram."
+        )
+
+        return True
+
+    except Exception as error:
+
+        print(
+            f"    ❌ Error enviando evento actualizado "
+            f"a Telegram: {error}"
+        )
+
+        return False
+
+
+
+
+
 
 
 # ============================================================
@@ -2036,4 +2178,3 @@ def realizar_consulta():
 
 if __name__ == "__main__":
     realizar_consulta()
-
