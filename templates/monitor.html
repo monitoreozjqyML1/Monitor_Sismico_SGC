@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="es">
 <head>
@@ -1313,6 +1313,9 @@ function mostrarAlertas(eventos) {
             const pga =
                 evento.acelerografia_bogota || {};
 
+            const alertaPga =
+                evento.alerta_pga || {};
+
             const estaciones =
                 pga.estaciones || [];
 
@@ -1577,6 +1580,16 @@ function mostrarAlertas(eventos) {
 
                                 <b>Componente crítica:</b>
                                 ${pga.componente_critica ?? "--"}
+
+                                <br>
+
+                                <b>NIVEL PGA ESTRUCTURAL:</b>
+                                ${alertaPga.estado ?? "SIN DATOS"}
+
+                                &nbsp;&nbsp;
+
+                                <b>Porcentaje máximo:</b>
+                                ${alertaPga.porcentaje_maximo != null ? Number(alertaPga.porcentaje_maximo).toFixed(2) : "--"} %
 
                             </div>
 
@@ -2195,3 +2208,4 @@ setInterval(
 
 </body>
 </html>
+
