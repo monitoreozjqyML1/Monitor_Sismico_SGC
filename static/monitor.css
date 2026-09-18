@@ -1447,3 +1447,12 @@ footer {
 
     overflow: hidden;
 }
+/* QR canal oficial de Telegram */
+.telegram-qr img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
