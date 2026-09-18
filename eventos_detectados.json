@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T10:10:25.129845-05:00",
+  "actualizado": "2026-09-18T10:15:26.251100-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1452,
@@ -36955,12 +36955,12 @@
     "SGC2026skdqob": {
       "id": "SGC2026skdqob",
       "magnitud": 2.3,
-      "profundidad": 18.54,
-      "latitud": 4.853,
-      "longitud": -74.573,
-      "distancia_km": 57.705880376763204,
+      "profundidad": 32.6,
+      "latitud": 4.839,
+      "longitud": -74.56,
+      "distancia_km": 55.90581689280354,
       "lugar": "Viani - Cundinamarca, Colombia",
-      "hora_local": "2026-09-18 06:29:00",
+      "hora_local": "2026-09-18 06:28:58",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
