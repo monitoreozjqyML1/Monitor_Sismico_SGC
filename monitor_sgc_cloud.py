@@ -1,8 +1,10 @@
-﻿import requests
+import requests
+import re
 import json
 import os
 import math
 from datetime import datetime, timedelta
+from urllib.parse import parse_qs, urlparse
 from zoneinfo import ZoneInfo
 
 
@@ -252,42 +254,166 @@ def limpiar_eventos_antiguos(eventos):
 
 def obtener_eventos():
     try:
-        headers_sgc = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/140.0.0.0 Safari/537.36"
+        url_catalogo = (
+            "https://bdrsnc.sgc.gov.co/paginas1/catalogo/"
+            "Consulta_Experta_Seiscomp/consulta_sismo.php"
+        )
+
+        datos = {
+            "inicial": (
+                datetime.now(ZONA_HORARIA)
+                .strftime("%d/%m/%Y")
             ),
-            "Accept": (
-                "application/json,text/plain,*/*"
+            "final": (
+                datetime.now(ZONA_HORARIA)
+                .strftime("%d/%m/%Y")
             ),
-            "Referer": "https://www.sgc.gov.co/"
+            "ubi": "cuadrante",
+            "longitudStart": "-90",
+            "longitudEnd": "-66",
+            "latitudStart": "-07",
+            "latitudEnd": "15",
+            "magnitudStart": "0",
+            "magnitudEnd": "9",
+            "depthStart": "0",
+            "depthEnd": "700",
+            "rmsStart": "0",
+            "rmsEnd": "10",
+            "gapStart": "0",
+            "gapEnd": "360",
+            "eprofmin": "0",
+            "eprofmax": "999",
+            "elongmin": "0",
+            "elongmax": "999",
+            "elatmin": "0",
+            "elatmax": "999",
+            "Submit": "Consultar"
         }
 
-        respuesta = requests.get(
-            URL_SGC,
-            headers=headers_sgc,
+        respuesta = requests.post(
+            url_catalogo,
+            data=datos,
             timeout=30
         )
 
         respuesta.raise_for_status()
 
-        datos = respuesta.json()
+        filas = re.findall(
+            r"<tr[^>]*>(.*?)</tr>",
+            respuesta.text,
+            flags=re.IGNORECASE | re.DOTALL
+        )
 
-        if isinstance(datos, dict):
-            eventos = datos.get(
-                "features",
-                []
+        eventos = []
+
+        for fila in filas:
+
+            if "SGC2026" not in fila:
+                continue
+
+            celdas = re.findall(
+                r"<td[^>]*>(.*?)</td>",
+                fila,
+                flags=re.IGNORECASE | re.DOTALL
             )
 
-            if isinstance(eventos, list):
-                return eventos
+            if len(celdas) < 17:
+                continue
 
-        return []
+            textos = []
+
+            for celda in celdas:
+                texto = re.sub(
+                    r"<[^>]+>",
+                    " ",
+                    celda
+                )
+                texto = re.sub(
+                    r"\s+",
+                    " ",
+                    texto
+                ).strip()
+
+                textos.append(texto)
+
+            event_id = None
+
+            enlaces = re.findall(
+                r"<a[^>]+href\s*=\s*[\"']?([^\"'\s>]+)",
+                fila,
+                flags=re.IGNORECASE
+            )
+
+            for href in enlaces:
+
+                parametros = parse_qs(
+                    urlparse(href).query
+                )
+
+                if "id_sismo" in parametros:
+                    event_id = parametros["id_sismo"][0]
+                    break
+
+                if "destino" in parametros:
+
+                    partes = (
+                        parametros["destino"][0]
+                        .split("/")
+                    )
+
+                    for parte in partes:
+                        if parte.startswith("SGC"):
+                            event_id = parte
+                            break
+
+                if event_id:
+                    break
+
+            if not event_id:
+                continue
+
+            try:
+
+                evento = {
+                    "id": event_id,
+
+                    "properties": {
+                        "mag": float(textos[4]),
+                        "place": textos[12],
+                        "id": event_id,
+                        "time": (
+                            textos[0].replace(" ", "T")
+                            + "+00:00"
+                        ),
+                        "magType": textos[5],
+                        "localTime": textos[0],
+                        "agency": "SGC"
+                    },
+
+                    "geometry": {
+                        "coordinates": [
+                            float(textos[1]),
+                            float(textos[2]),
+                            float(textos[3])
+                        ]
+                    }
+                }
+
+                eventos.append(evento)
+
+            except (ValueError, IndexError):
+                continue
+
+        print(
+            f"✅ SGC: {len(eventos)} eventos recibidos "
+            "desde catálogo SeisComP."
+        )
+
+        return eventos
 
     except Exception as error:
         print(
-            f"❌ Error consultando SGC: {error}"
+            f"❌ Error consultando catálogo SGC: {error}"
         )
         return []
 
