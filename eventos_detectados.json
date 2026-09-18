@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T15:55:19.227249-05:00",
+  "actualizado": "2026-09-18T16:00:22.927511-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1471,
@@ -37402,13 +37402,13 @@
     },
     "SGC2026skrzdk": {
       "id": "SGC2026skrzdk",
-      "magnitud": 4.4,
-      "profundidad": 45.94,
-      "latitud": 4.431,
-      "longitud": -76.722,
-      "distancia_km": 295.36332346881943,
+      "magnitud": 4.5,
+      "profundidad": 47.86,
+      "latitud": 4.423,
+      "longitud": -76.748,
+      "distancia_km": 298.32509557356803,
       "lugar": "Istmina - Choco, Colombia",
-      "hora_local": "2026-09-18 13:41:21",
+      "hora_local": "2026-09-18 13:41:22",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "NO DISPONIBLE",
@@ -37432,7 +37432,7 @@
       "lon": -76.722,
       "distancia_bogota": 295.4,
       "tipo_magnitud": "MLv",
-      "fecha_local": "2026-09-18 13:41:21",
+      "fecha_local": "2026-09-18 13:41:22",
       "agencia": "SGC",
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
