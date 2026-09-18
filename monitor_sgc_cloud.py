@@ -1024,11 +1024,11 @@ def enviar_reporte_pga_actualizado_telegram(
 
     mensaje = (
         "?? REPORTE PGA ACTUALIZADO\n\n"
-        "Evento s?smico previamente detectado\n"
-        f"C?digo SGC: {event_id}\n\n"
+        "Evento s\u00edsmico previamente detectado\n"
+        f"C\u00f3digo SGC: {event_id}\n\n"
         f"Magnitud: {magnitud}\n"
         f"Profundidad: {profundidad} km\n"
-        f"Ubicaci?n: {lugar}\n\n"
+        f"Ubicaci\u00f3n: {lugar}\n\n"
         "?? BOG.11\n\n"
     )
 
@@ -1047,13 +1047,13 @@ def enviar_reporte_pga_actualizado_telegram(
 
     if pga_horizontal is not None:
         mensaje += (
-            f"PGA m?xima: "
-            f"{pga_horizontal:.3f} cm/s?\n"
+            f"PGA m\u00e1xima: "
+            f"{pga_horizontal:.3f} cm/s\u00b2\n"
         )
 
     if componente_pga:
         mensaje += (
-            f"Componente cr?tica: "
+            f"Componente cr\u00edtica: "
             f"{componente_pga}\n"
         )
 
@@ -1076,49 +1076,49 @@ def enviar_reporte_pga_actualizado_telegram(
         if pga_e is not None:
             mensaje += (
                 f"PGA EW: "
-                f"{pga_e:.3f} cm/s?\n"
+                f"{pga_e:.3f} cm/s\u00b2\n"
             )
 
         if pga_n is not None:
             mensaje += (
                 f"PGA NS: "
-                f"{pga_n:.3f} cm/s?\n"
+                f"{pga_n:.3f} cm/s\u00b2\n"
             )
 
         if pga_z is not None:
             mensaje += (
                 f"PGA Z: "
-                f"{pga_z:.3f} cm/s?\n"
+                f"{pga_z:.3f} cm/s\u00b2\n"
             )
 
     if estado_pga == "VERDE":
         mensaje += (
-            "\n?? CLASIFICACI?N PGA: ?? VERDE\n"
+            "\n?? CLASIFICACI\u00d3N PGA: ?? VERDE\n"
         )
 
     elif estado_pga == "AMARILLA":
         mensaje += (
-            "\n?? CLASIFICACI?N PGA: ?? AMARILLA\n"
+            "\n?? CLASIFICACI\u00d3N PGA: ?? AMARILLA\n"
         )
 
     elif estado_pga == "NARANJA":
         mensaje += (
-            "\n?? CLASIFICACI?N PGA: ?? NARANJA\n"
+            "\n?? CLASIFICACI\u00d3N PGA: ?? NARANJA\n"
         )
 
     elif estado_pga == "ROJA":
         mensaje += (
-            "\n?? CLASIFICACI?N PGA: ?? ROJA\n"
+            "\n?? CLASIFICACI\u00d3N PGA: ?? ROJA\n"
         )
 
     elif estado_pga == "CRITICA":
         mensaje += (
-            "\n?? CLASIFICACI?N PGA: ?? CR?TICA\n"
+            "\n?? CLASIFICACI\u00d3N PGA: ?? CR\u00cdTICA\n"
         )
 
     else:
         mensaje += (
-            "\n?? CLASIFICACI?N PGA: ? SIN DATOS PGA\n"
+            "\n?? CLASIFICACI\u00d3N PGA: ? SIN DATOS PGA\n"
         )
 
     mensaje += (
