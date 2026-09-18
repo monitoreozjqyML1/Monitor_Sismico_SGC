@@ -982,7 +982,9 @@ def enviar_alerta_telegram(resultado):
 
 def enviar_reporte_pga_actualizado_telegram(
     resultado,
-    event_id
+    event_id,
+    magnitud_anterior=None,
+    incluir_actualizacion=False
 ):
 
     if not TELEGRAM_BOT_TOKEN:
@@ -1022,16 +1024,29 @@ def enviar_reporte_pga_actualizado_telegram(
         "SIN_DATOS"
     )
 
-    mensaje = (
-        "📊 MONITOR SÍSMICO ML1\n\n"
-        "PGA ACTUALIZADA\n\n"
-        "Evento s\u00edsmico previamente detectado\n"
-        f"C\u00f3digo SGC: {event_id}\n\n"
-        f"Magnitud: {magnitud}\n"
-        f"Profundidad: {profundidad} km\n"
-        f"Ubicaci\u00f3n: {lugar}\n\n"
-        "📡 BOG.11\n\n"
-    )
+    if incluir_actualizacion:
+        mensaje = (
+            "\U0001f504 MONITOR S\u00cdSMICO ML1\n\n"
+            "EVENTO S\u00cdSMICO ACTUALIZADO + PGA\n\n"
+            "El SGC actualiz\u00f3 un evento previamente detectado.\n"
+            f"C\u00f3digo SGC: {event_id}\n\n"
+            f"Magnitud anterior: {magnitud_anterior}\n"
+            f"Magnitud actual: {magnitud}\n"
+            f"Profundidad: {profundidad} km\n"
+            f"Ubicaci\u00f3n: {lugar}\n\n"
+            "\U0001f4ca EVALUACI\u00d3N PGA - BOG.11\n\n"
+        )
+    else:
+        mensaje = (
+            "\U0001f4ca MONITOR S\u00cdSMICO ML1\n\n"
+            "PGA ACTUALIZADA\n\n"
+            "Evento s\u00edsmico previamente detectado\n"
+            f"C\u00f3digo SGC: {event_id}\n\n"
+            f"Magnitud: {magnitud}\n"
+            f"Profundidad: {profundidad} km\n"
+            f"Ubicaci\u00f3n: {lugar}\n\n"
+            "\U0001f4e1 BOG.11\n\n"
+        )
 
     pga_horizontal = acelerografia.get(
         "pga_maximo_cm_s2"
@@ -1604,24 +1619,29 @@ def realizar_consulta():
                 and candidato_actual
             )
 
+            actualizacion_enviada = evento_existente.get(
+                "alerta_actualizacion_enviada",
+                False
+            )
+
+            actualizacion_pga_pendiente = evento_existente.get(
+                "actualizacion_pga_pendiente",
+                False
+            )
+
+            magnitud_anterior_pendiente = evento_existente.get(
+                "magnitud_anterior_actualizacion"
+            )
+
             if evento_actualizado:
+
+                evento_existente["magnitud_anterior_actualizacion"] = magnitud_anterior
+                evento_existente["actualizacion_pga_pendiente"] = True
 
                 print()
                 print(
-                    f"🔄 Evento actualizado por el SGC: {event_id}"
+                    f"\U0001f504 Evento actualizado por el SGC: {event_id}"
                 )
-
-                alerta_actualizada = (
-                    enviar_evento_actualizado_telegram(
-                        resultado,
-                        event_id,
-                        magnitud_anterior
-                    )
-                )
-
-                evento_existente[
-                    "alerta_actualizacion_enviada"
-                ] = alerta_actualizada
 
             if resultado.get(
                 "candidato_acelerografico"
@@ -1642,15 +1662,43 @@ def realizar_consulta():
                             acelerografia_existente
                         )
 
+                    if evento_actualizado and not actualizacion_enviada:
+
+                        reporte_enviado = (
+                            enviar_reporte_pga_actualizado_telegram(
+                                evento_existente,
+                                event_id,
+                                magnitud_anterior,
+                                incluir_actualizacion=True
+                            )
+                        )
+
+                        if reporte_enviado:
+                            evento_existente[
+                                "alerta_actualizacion_enviada"
+                            ] = True
+
+                            evento_existente[
+                                "reporte_pga_actualizado_enviado"
+                            ] = True
+
+                            evento_existente[
+                                "ciclo_cerrado"
+                            ] = True
+
+                            evento_existente[
+                                "actualizacion_pga_pendiente"
+                            ] = False
+
                 else:
 
                     print()
                     print(
-                        f"?? Evento ya registrado: {event_id}"
+                        f"Evento ya registrado: {event_id}"
                     )
 
                     print(
-                        "    ?? Reconsultando PGA de BOG.11..."
+                        "Reconsultando PGA de BOG.11..."
                     )
 
                     acelerografia_actualizada = (
@@ -1672,19 +1720,41 @@ def realizar_consulta():
                         )
 
                         print(
-                            "    ? PGA de BOG.11 actualizada."
+                            "PGA de BOG.11 actualizada."
                         )
 
-                        # ------------------------------------------------
-                        # REPORTE PGA ACTUALIZADO A TELEGRAM
-                        # ------------------------------------------------
-                        # El evento ya exist?a y la PGA inicialmente
-                        # no estaba disponible. Si ahora existe PGA
-                        # v?lida, se env?a un segundo reporte una sola vez.
-                        # Esto NO crea un evento nuevo.
-                        # ------------------------------------------------
+                        if (evento_actualizado or actualizacion_pga_pendiente) and not evento_existente.get(
+                            "reporte_pga_actualizado_enviado",
+                            False
+                        ):
 
-                        if not evento_existente.get(
+                            reporte_enviado = (
+                                enviar_reporte_pga_actualizado_telegram(
+                                    evento_existente,
+                                    event_id,
+                                    (
+                                        magnitud_anterior
+                                        if evento_actualizado
+                                        else magnitud_anterior_pendiente
+                                    ),
+                                    incluir_actualizacion=True
+                                )
+                            )
+
+                            if reporte_enviado:
+                                evento_existente[
+                                    "alerta_actualizacion_enviada"
+                                ] = True
+
+                                evento_existente[
+                                    "reporte_pga_actualizado_enviado"
+                                ] = True
+
+                                evento_existente[
+                                    "ciclo_cerrado"
+                                ] = True
+
+                        elif not evento_existente.get(
                             "reporte_pga_actualizado_enviado",
                             False
                         ):
@@ -1697,15 +1767,9 @@ def realizar_consulta():
                             )
 
                             if reporte_enviado:
-
                                 evento_existente[
                                     "reporte_pga_actualizado_enviado"
                                 ] = True
-
-                                print(
-                                    "    ?? Reporte PGA actualizado "
-                                    "registrado como enviado."
-                                )
 
                         estaciones = (
                             acelerografia_actualizada.get(
@@ -1745,9 +1809,27 @@ def realizar_consulta():
 
                     else:
 
+                        if evento_actualizado and not actualizacion_enviada:
+
+                            alerta_actualizada = (
+                                enviar_evento_actualizado_telegram(
+                                    resultado,
+                                    event_id,
+                                    magnitud_anterior
+                                )
+                            )
+
+                            if alerta_actualizada:
+                                evento_existente[
+                                    "alerta_actualizacion_enviada"
+                                ] = True
+
+                                evento_existente[
+                                    "ciclo_cerrado"
+                                ] = False
+
                         print(
-                            "    ?? PGA de BOG.11 "
-                            "todav?a no disponible."
+                            "PGA de BOG.11 todav?a no disponible."
                         )
 
             continue
