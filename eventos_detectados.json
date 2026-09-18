@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-18T10:55:16.412926-05:00",
+  "actualizado": "2026-09-18T11:00:17.968668-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1454,
+    "total_eventos": 1456,
     "eventos_m4_o_mayores": 18,
     "candidatos_acelerograficos": 18,
     "alertas_telegram": 11,
@@ -37146,6 +37146,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T10:50:18.343104-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sjsmqm": {
+      "id": "SGC2026sjsmqm",
+      "magnitud": 2.0,
+      "profundidad": 38.09,
+      "latitud": 4.518,
+      "longitud": -76.712,
+      "distancia_km": 293.3776485604786,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-09-18 00:52:31",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.518,
+      "lon": -76.712,
+      "distancia_bogota": 293.4,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-18 05:52:31",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T11:00:17.160179-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sjsmvn": {
+      "id": "SGC2026sjsmvn",
+      "magnitud": 2.1,
+      "profundidad": 22.16,
+      "latitud": 4.475,
+      "longitud": -76.697,
+      "distancia_km": 292.1189712609338,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-09-18 00:52:46",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.475,
+      "lon": -76.697,
+      "distancia_bogota": 292.1,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-18 05:52:46",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T11:00:17.160179-05:00",
       "alerta_enviada": false
     }
   }
