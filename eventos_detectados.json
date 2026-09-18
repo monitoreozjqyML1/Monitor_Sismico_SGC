@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T07:50:16.304797-05:00",
+  "actualizado": "2026-09-18T07:55:19.533483-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1449,
@@ -36789,10 +36789,10 @@
     "SGC2026sjshie": {
       "id": "SGC2026sjshie",
       "magnitud": 3.3,
-      "profundidad": 44.44,
-      "latitud": 3.785,
-      "longitud": -77.023,
-      "distancia_km": 343.0378030316742,
+      "profundidad": 40.17,
+      "latitud": 3.773,
+      "longitud": -77.002,
+      "distancia_km": 341.2250610352313,
       "lugar": "Buenaventura - Valle del Cauca, Colombia",
       "hora_local": "2026-09-18 00:46:26",
       "candidato_acelerografico": false,
@@ -36982,11 +36982,11 @@
     },
     "SGC2026skgbyy": {
       "id": "SGC2026skgbyy",
-      "magnitud": 2.3,
-      "profundidad": 0.05,
-      "latitud": 3.613,
-      "longitud": -74.428,
-      "distancia_km": 128.31324568698668,
+      "magnitud": 2.5,
+      "profundidad": 15.66,
+      "latitud": 3.601,
+      "longitud": -74.405,
+      "distancia_km": 128.82962050511162,
       "lugar": "Uribe - Meta, Colombia",
       "hora_local": "2026-09-18 07:42:41",
       "candidato_acelerografico": false,
