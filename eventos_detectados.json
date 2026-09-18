@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-18T14:25:22.861179-05:00",
+  "actualizado": "2026-09-18T14:30:20.233456-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1465,
-    "eventos_m4_o_mayores": 19,
-    "candidatos_acelerograficos": 19,
-    "alertas_telegram": 12,
-    "porcentaje_m4_o_mayores": 1.3,
-    "eventos_mayor_igual_4": 19,
-    "total_candidatos_acelerograficos": 19,
+    "total_eventos": 1467,
+    "eventos_m4_o_mayores": 20,
+    "candidatos_acelerograficos": 20,
+    "alertas_telegram": 13,
+    "porcentaje_m4_o_mayores": 1.36,
+    "eventos_mayor_igual_4": 20,
+    "total_candidatos_acelerograficos": 20,
     "total_alertas": 7,
     "porcentaje_alertas": 0.48
   },
@@ -37466,6 +37466,73 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T14:15:20.533409-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026sktdwi": {
+      "id": "SGC2026sktdwi",
+      "magnitud": 2.6,
+      "profundidad": 45.94,
+      "latitud": 4.408,
+      "longitud": -76.714,
+      "distancia_km": 294.7675290758702,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-09-18 14:17:01",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.408,
+      "lon": -76.714,
+      "distancia_bogota": 294.8,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-18 14:17:01",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T14:30:18.026836-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sktfum": {
+      "id": "SGC2026sktfum",
+      "magnitud": 4.0,
+      "profundidad": 34.16,
+      "latitud": 4.518,
+      "longitud": -76.738,
+      "distancia_km": 296.2516937821772,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-09-18 14:19:15",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 4.518,
+      "lon": -76.738,
+      "distancia_bogota": 296.3,
+      "tipo_magnitud": "MLv",
+      "fecha_local": "2026-09-18 14:19:15",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-09-18T14:30:18.026836-05:00",
+      "alerta_enviada": true
     }
   }
 }
