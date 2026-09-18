@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-18T17:45:17.146313-05:00",
+  "actualizado": "2026-09-18T17:50:20.158080-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1476,
+    "total_eventos": 1477,
     "eventos_m4_o_mayores": 20,
     "candidatos_acelerograficos": 20,
     "alertas_telegram": 13,
-    "porcentaje_m4_o_mayores": 1.36,
+    "porcentaje_m4_o_mayores": 1.35,
     "eventos_mayor_igual_4": 20,
     "total_candidatos_acelerograficos": 20,
     "total_alertas": 7,
@@ -37784,6 +37784,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T17:35:52.834775-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026skzybe": {
+      "id": "SGC2026skzybe",
+      "magnitud": 2.3,
+      "profundidad": 4.85,
+      "latitud": 7.05,
+      "longitud": -75.956,
+      "distancia_km": 333.25547256948266,
+      "lugar": "Peque - Antioquia, Colombia",
+      "hora_local": "2026-09-18 17:41:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-18 17:41:29",
+      "lat": 7.05,
+      "lon": -75.956,
+      "distancia_bogota": 333.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T17:50:19.165506-05:00",
       "alerta_enviada": false
     }
   }
