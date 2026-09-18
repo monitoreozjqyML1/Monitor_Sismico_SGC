@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T15:35:16.136699-05:00",
+  "actualizado": "2026-09-18T15:40:18.474632-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1470,
@@ -37066,11 +37066,11 @@
     },
     "SGC2026skiybk": {
       "id": "SGC2026skiybk",
-      "magnitud": 3.2,
-      "profundidad": 45.71,
-      "latitud": 4.403,
-      "longitud": -76.726,
-      "distancia_km": 296.1537481223988,
+      "magnitud": 3.3,
+      "profundidad": 48.37,
+      "latitud": 4.396,
+      "longitud": -76.713,
+      "distancia_km": 294.81536403602746,
       "lugar": "Istmina - Choco, Colombia",
       "hora_local": "2026-09-18 09:08:33",
       "candidato_acelerografico": false,
