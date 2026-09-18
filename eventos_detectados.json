@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T08:45:16.244528-05:00",
+  "actualizado": "2026-09-18T08:50:20.382486-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1450,
@@ -36871,10 +36871,10 @@
     "SGC2026sjvsmf": {
       "id": "SGC2026sjvsmf",
       "magnitud": 2.6,
-      "profundidad": 38.09,
-      "latitud": 7.811,
-      "longitud": -75.088,
-      "distancia_km": 362.528202399225,
+      "profundidad": 40.86,
+      "latitud": 7.785,
+      "longitud": -75.081,
+      "distancia_km": 359.5406534097687,
       "lugar": "Caucasia - Antioquia, Colombia",
       "hora_local": "2026-09-18 02:30:01",
       "candidato_acelerografico": false,
