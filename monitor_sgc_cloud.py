@@ -1528,6 +1528,10 @@ def realizar_consulta():
             evento
         )
 
+        # La fecha/hora oficial mostrada por el monitor debe ser
+        # siempre la hora local de Colombia, igual a hora_local.
+        resultado['fecha_local'] = resultado.get('hora_local')
+
         event_id = resultado.get(
             "id"
         )
