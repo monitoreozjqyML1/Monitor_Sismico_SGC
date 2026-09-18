@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-18T07:45:19.415618-05:00",
+  "actualizado": "2026-09-18T07:50:16.304797-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1448,
+    "total_eventos": 1449,
     "eventos_m4_o_mayores": 18,
     "candidatos_acelerograficos": 18,
     "alertas_telegram": 11,
@@ -36978,6 +36978,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T07:28:05.929513-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026skgbyy": {
+      "id": "SGC2026skgbyy",
+      "magnitud": 2.3,
+      "profundidad": 0.05,
+      "latitud": 3.613,
+      "longitud": -74.428,
+      "distancia_km": 128.31324568698668,
+      "lugar": "Uribe - Meta, Colombia",
+      "hora_local": "2026-09-18 07:42:41",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 3.613,
+      "lon": -74.428,
+      "distancia_bogota": 128.3,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-18 12:42:41",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T07:50:15.599162-05:00",
       "alerta_enviada": false
     }
   }
