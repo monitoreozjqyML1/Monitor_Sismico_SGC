@@ -43,73 +43,71 @@ jobs:
           python - <<'PY'
           import monitor_sgc_cloud as m
 
-          resultado = {
-              "magnitud": 4.9,
-              "profundidad": 147,
-              "distancia_km": 180.5,
-              "lugar": "Los Santos — Santander",
-              "hora_local": "2026-08-26 11:45:14",
+          base = {
+              "magnitud": 4.6,
+              "profundidad": 41.55,
+              "distancia_km": 57.7,
+              "lugar": "Istmina - Chocó, Colombia",
+              "hora_local": "2026-09-18 07:00:00",
               "candidato_acelerografico": True,
 
               "acelerografia_bogota": {
                   "estado": "OK",
                   "estaciones": [
                       {
-                          "pgaE": 0.241789,
-                          "pgaN": 0.305373,
-                          "pgaZ": 0.129058
+                          "pgaE": 0.089693,
+                          "pgaN": 0.049963,
+                          "pgaZ": 0.035380
                       }
                   ],
-                  "pga_maximo_cm_s2": 0.305373,
-                  "componente_critica": "NS"
+                  "pga_maximo_cm_s2": 0.089693,
+                  "componente_critica": "EW"
               },
 
               "alerta_pga": {
                   "estado": "VERDE",
-                  "porcentaje_ns": 5.4531,
-                  "porcentaje_ew": 6.5348,
-                  "porcentaje_maximo": 6.5348,
-                  "componente_critica": "NS"
+                  "porcentaje_ns": 0.89,
+                  "porcentaje_ew": 1.60,
+                  "porcentaje_maximo": 1.60,
+                  "componente_critica": "EW"
               }
           }
 
-          resultados = []
+          print("=== PRUEBA 1: ALERTA INICIAL + PGA ===")
+          if not m.enviar_alerta_telegram(base):
+              raise SystemExit("ERROR: fallo en alerta inicial")
 
-          resultados.append(
-              (
-                  "ALERTA SÍSMICA",
-                  m.enviar_alerta_telegram(resultado)
-              )
-          )
+          print("=== PRUEBA 2: ACTUALIZACION SGC + PGA ===")
+          if not m.enviar_reporte_pga_actualizado_telegram(
+              base,
+              "PRUEBA_UNIFICADA_20260918",
+              3.7,
+              incluir_actualizacion=True
+          ):
+              raise SystemExit("ERROR: fallo en actualizacion + PGA")
 
-          resultados.append(
-              (
-                  "PGA ACTUALIZADA",
-                  m.enviar_reporte_pga_actualizado_telegram(
-                      resultado,
-                      "PRUEBA_PGA_20260917"
-                  )
-              )
-          )
+          print("=== PRUEBA 3: ACTUALIZACION SGC + PGA PENDIENTE ===")
+          pendiente = dict(base)
+          pendiente["acelerografia_bogota"] = {"estado": "PENDIENTE"}
+          pendiente["alerta_pga"] = None
 
-          resultados.append(
-              (
-                  "EVENTO SÍSMICO ACTUALIZADO",
-                  m.enviar_evento_actualizado_telegram(
-                      resultado,
-                      "PRUEBA_EVENTO_20260917",
-                      4.7
-                  )
-              )
-          )
+          if not m.enviar_evento_actualizado_telegram(
+              pendiente,
+              "PRUEBA_PGA_PENDIENTE_20260918",
+              3.7
+          ):
+              raise SystemExit("ERROR: fallo en actualizacion con PGA pendiente")
 
-          for nombre, enviado in resultados:
-              if not enviado:
-                  raise SystemExit(
-                      f"ERROR: Telegram no confirmó: {nombre}"
-                  )
+          print("=== PRUEBA 4: PGA POSTERIOR + CIERRE ===")
+          if not m.enviar_reporte_pga_actualizado_telegram(
+              base,
+              "PRUEBA_PGA_PENDIENTE_20260918",
+              3.7,
+              incluir_actualizacion=True
+          ):
+              raise SystemExit("ERROR: fallo en PGA posterior")
 
-          print("PRUEBA TELEGRAM 3 MENSAJES: ENVÍO CONFIRMADO")
+          print("PRUEBA TELEGRAM ACTUALIZADA: 4 ESCENARIOS ENVIADOS")
           PY
 
       - name: Diagnóstico acceso SGC
