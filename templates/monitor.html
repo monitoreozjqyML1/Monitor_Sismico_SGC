@@ -1113,7 +1113,7 @@ function construirPopup(evento) {
                     </span>
 
                     <span class="popup-valor">
-                        ${evento.fecha_local ?? "--"}
+                        ${evento.hora_local ?? "--"}
                     </span>
 
                 </div>
@@ -1403,7 +1403,7 @@ function mostrarAlertas(eventos) {
 
                             &nbsp;•&nbsp;
 
-                            ${evento.fecha_local ?? "--"}
+                            ${evento.hora_local ?? "--"}
 
                         </div>
 
@@ -1519,7 +1519,7 @@ function mostrarAlertas(eventos) {
                         <span
                             class="dato-candidato-valor"
                         >
-                            ${evento.fecha_local ?? "--"}
+                            ${evento.hora_local ?? "--"}
                         </span>
 
                     </div>
@@ -1822,13 +1822,9 @@ function mostrarTabla(eventos) {
 
 
     const eventosHistorial =
-        eventos
-            .filter(evento =>
-                evento.magnitud !== null &&
-                evento.magnitud !== undefined &&
-                Number(evento.magnitud) >= 3.0
-            )
-            .slice(0, 100);
+        [...eventos].sort(
+            (a, b) => String(b.hora_local ?? "").localeCompare(String(a.hora_local ?? ""))
+        );
 
 
     eventosHistorial.forEach(evento => {
@@ -1854,7 +1850,7 @@ function mostrarTabla(eventos) {
         fila.innerHTML = `
 
             <td>
-                ${evento.fecha_local ?? "--"}
+                ${evento.hora_local ?? "--"}
             </td>
 
             <td>
@@ -2005,7 +2001,7 @@ function mostrarBannerAlerta(evento) {
         <br>
 
         <b>Fecha:</b>
-        ${evento.fecha_local ?? "--"}
+        ${evento.hora_local ?? "--"}
 
     `;
 
@@ -2207,4 +2203,5 @@ setInterval(
 
 </body>
 </html>
+
 

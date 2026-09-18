@@ -1,40 +1,22 @@
-﻿from flask import Flask, render_template, jsonify
-import requests
-import math
+﻿from flask import Flask, jsonify, render_template
 import json
+import math
 import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 app = Flask(__name__)
 
-# ============================================================
-# CONFIGURACIÓN SGC
-# ============================================================
-
-URL_SGC = (
-    "https://archive.sgc.gov.co/"
-    "feed/v1.0.1/summary/five_days_all.json"
-)
+ARCHIVO_EVENTOS = "eventos_detectados.json"
 
 LAT_BOGOTA = 4.7110
 LON_BOGOTA = -74.0721
-
-ARCHIVO_EVENTOS = "eventos_detectados.json"
-
-# ============================================================
-# CRITERIO ACTUAL
-# ============================================================
-# Unicamente eventos de Colombia.
-# M >= 4.0 = candidato acelerografico.
-# Distancia y profundidad son informativas.
-# ============================================================
 
 MAGNITUD_CANDIDATO_ACELEROGRAFICO = 4.0
 
 
 # ============================================================
-# CALCULAR DISTANCIA ENTRE DOS PUNTOS
+# DISTANCIA ENTRE DOS PUNTOS
 # ============================================================
 
 def distancia_km(lat1, lon1, lat2, lon2):
@@ -63,40 +45,10 @@ def distancia_km(lat1, lon1, lat2, lon2):
 
 
 # ============================================================
-# VALIDAR EVENTO DE COLOMBIA
+# LEER FUENTE CANÃ“NICA
 # ============================================================
 
-def es_evento_colombia(lugar):
-
-    if not isinstance(lugar, str):
-        return False
-
-    return lugar.strip().lower().endswith(", colombia")
-
-
-# ============================================================
-# OBTENER EVENTOS DEL SGC
-# ============================================================
-
-def obtener_eventos():
-
-    respuesta = requests.get(
-        URL_SGC,
-        timeout=30
-    )
-
-    respuesta.raise_for_status()
-
-    datos = respuesta.json()
-
-    return datos.get("features", [])
-
-
-# ============================================================
-# LEER EVENTOS ALMACENADOS
-# ============================================================
-
-def obtener_alertas_almacenadas():
+def obtener_eventos_almacenados():
 
     if not os.path.exists(ARCHIVO_EVENTOS):
         return []
@@ -111,40 +63,25 @@ def obtener_alertas_almacenadas():
 
             datos = json.load(archivo)
 
-        if isinstance(datos, list):
-            return datos
-
         if isinstance(datos, dict):
 
-            eventos = datos.get("eventos")
-
-            if isinstance(eventos, list):
-                return eventos
+            eventos = datos.get("eventos", [])
 
             if isinstance(eventos, dict):
                 return list(eventos.values())
 
-            eventos = []
+            if isinstance(eventos, list):
+                return eventos
 
-            for clave, valor in datos.items():
-
-                if isinstance(valor, dict):
-
-                    evento = valor.copy()
-
-                    if not evento.get("id"):
-                        evento["id"] = clave
-
-                    eventos.append(evento)
-
-            return eventos
+        if isinstance(datos, list):
+            return datos
 
         return []
 
     except Exception as error:
 
         print(
-            "Error leyendo eventos almacenados:",
+            "ERROR LEYENDO EVENTOS CANÃ“NICOS:",
             error
         )
 
@@ -152,244 +89,121 @@ def obtener_alertas_almacenadas():
 
 
 # ============================================================
-# NORMALIZAR EVENTO ALMACENADO
+# NORMALIZACIÃ“N MÃNIMA PARA LA WEB
 # ============================================================
 
-def normalizar_alerta_almacenada(alerta):
+def preparar_evento_web(evento):
 
-    return {
+    resultado = dict(evento)
 
-        "id": alerta.get("id"),
+    # --------------------------------------------------------
+    # Coordenadas: conservar ambos nombres si existen.
+    # No recalcular si ya vienen del monitor.
+    # --------------------------------------------------------
 
-        "lat": alerta.get(
-            "latitud",
-            alerta.get("lat")
-        ),
+    if resultado.get("latitud") is None and resultado.get("lat") is not None:
+        resultado["latitud"] = resultado.get("lat")
 
-        "lon": alerta.get(
-            "longitud",
-            alerta.get("lon")
-        ),
+    if resultado.get("longitud") is None and resultado.get("lon") is not None:
+        resultado["longitud"] = resultado.get("lon")
 
-        "magnitud": alerta.get(
-            "magnitud"
-        ),
+    if resultado.get("lat") is None and resultado.get("latitud") is not None:
+        resultado["lat"] = resultado.get("latitud")
 
-        "tipo_magnitud": alerta.get(
-            "tipo_magnitud",
-            alerta.get("magType")
-        ),
+    if resultado.get("lon") is None and resultado.get("longitud") is not None:
+        resultado["lon"] = resultado.get("longitud")
 
-        "profundidad": alerta.get(
-            "profundidad"
-        ),
+    # --------------------------------------------------------
+    # Distancia: usar siempre la calculada y almacenada
+    # por el monitor.
+    # --------------------------------------------------------
 
-        "distancia": alerta.get(
-            "distancia_bogota",
-            alerta.get("distancia")
-        ),
+    if resultado.get("distancia_bogota") is None:
 
-        "lugar": alerta.get(
-            "lugar"
-        ),
+        if resultado.get("distancia_km") is not None:
+            resultado["distancia_bogota"] = resultado.get(
+                "distancia_km"
+            )
 
-        "fecha_local": alerta.get(
-            "fecha_local"
-        ),
+        elif resultado.get("distancia") is not None:
+            resultado["distancia_bogota"] = resultado.get(
+                "distancia"
+            )
 
-        "agencia": alerta.get(
-            "agencia"
-        ),
-
-        "alertas": alerta.get(
-            "alertas",
-            []
-        ),
-
-        "categoria": alerta.get(
-            "categoria"
-        ),
-
-        "fecha_deteccion": alerta.get(
-            "fecha_deteccion"
-        ),
-
-        "acelerografia_bogota": alerta.get(
-            "acelerografia_bogota"
-        ),
-
-        "alerta_pga": alerta.get(
-            "alerta_pga"
+    if resultado.get("distancia") is None:
+        resultado["distancia"] = resultado.get(
+            "distancia_bogota"
         )
-    }
-
-
-# ============================================================
-# ANALIZAR EVENTO DEL SGC
-# ============================================================
-
-def analizar_evento(evento):
-
-    propiedades = evento.get(
-        "properties",
-        {}
-    )
 
     # --------------------------------------------------------
-    # FILTRO: SOLO COLOMBIA
-    # --------------------------------------------------------
+    # Hora: hora_local es la representación prioritaria.
+    # fecha_local se mantiene como respaldo histórico.
 
-    lugar = propiedades.get("place")
+        resultado["hora_local"] = resultado.get("fecha_local")
 
-    if not es_evento_colombia(lugar):
-        return None
-
-    geometria = evento.get(
-        "geometry",
-        {}
-    )
-
-    coordenadas = geometria.get(
-        "coordinates",
-        []
-    )
 
     # --------------------------------------------------------
-    # VALIDAR COORDENADAS
+    # Magnitud / tipo
     # --------------------------------------------------------
 
-    if len(coordenadas) < 3:
-        return None
+    if resultado.get("magnitud") is None and resultado.get("mag") is not None:
+        resultado["magnitud"] = resultado.get("mag")
+
+    if not resultado.get("tipo_magnitud") and resultado.get("magType"):
+        resultado["tipo_magnitud"] = resultado.get("magType")
 
     # --------------------------------------------------------
-    # FEED SGC:
-    # [LATITUD, LONGITUD, PROFUNDIDAD]
+    # Lugar / agencia
     # --------------------------------------------------------
+
+    if not resultado.get("lugar") and resultado.get("place"):
+        resultado["lugar"] = resultado.get("place")
+
+    if not resultado.get("agencia"):
+        resultado["agencia"] = "SGC"
+
+    # --------------------------------------------------------
+    # Estructuras que la interfaz espera.
+    # No se generan datos PGA nuevos.
+    # --------------------------------------------------------
+
+    if "alertas" not in resultado:
+        resultado["alertas"] = []
+
+    if "acelerografia_bogota" not in resultado:
+        resultado["acelerografia_bogota"] = None
+
+    if "alerta_pga" not in resultado:
+        resultado["alerta_pga"] = None
+
+    # --------------------------------------------------------
+    # Candidato visual para la interfaz.
+    # Esto NO modifica la lÃ³gica del monitor.
+    # --------------------------------------------------------
+
+    magnitud = resultado.get("magnitud")
 
     try:
-
-        lat = float(coordenadas[0])
-        lon = float(coordenadas[1])
-        profundidad = float(coordenadas[2])
-
+        es_candidato = (
+            magnitud is not None
+            and float(magnitud)
+            >= MAGNITUD_CANDIDATO_ACELEROGRAFICO
+        )
     except (TypeError, ValueError):
+        es_candidato = False
 
-        return None
+    if "candidato_acelerografico" not in resultado:
+        resultado["candidato_acelerografico"] = es_candidato
 
-    if not (-90 <= lat <= 90):
-        return None
-
-    if not (-180 <= lon <= 180):
-        return None
-
-    # --------------------------------------------------------
-    # MAGNITUD
-    # --------------------------------------------------------
-
-    magnitud_raw = propiedades.get("mag")
-
-    if magnitud_raw is None:
-        return None
-
-    try:
-
-        magnitud = float(magnitud_raw)
-
-    except (TypeError, ValueError):
-
-        return None
-
-    # --------------------------------------------------------
-    # DISTANCIA A BOGOTA
-    # --------------------------------------------------------
-    # SOLO INFORMACION.
-    # NO ES CRITERIO DE ALERTA.
-    # --------------------------------------------------------
-
-    distancia = distancia_km(
-        LAT_BOGOTA,
-        LON_BOGOTA,
-        lat,
-        lon
-    )
-
-    # ========================================================
-    # CANDIDATO ACELEROGRAFICO
-    # ========================================================
-
-    alertas = []
-
-    if magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
-
-        alertas.append(
-            "SISMO M >= 4.0"
-        )
-
-        categoria = (
-            "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)"
-        )
-
-    else:
-
-        categoria = (
-            "SISMO SIN CRITERIO DE MAGNITUD"
-        )
-
-    # ========================================================
-    # DEVOLVER EVENTO
-    # ========================================================
-
-    return {
-
-        "id": evento.get("id"),
-
-        "lat": lat,
-
-        "lon": lon,
-
-        "magnitud": magnitud,
-
-        "tipo_magnitud": propiedades.get(
-            "magType"
-        ),
-
-        "profundidad": profundidad,
-
-        "distancia": round(
-            distancia,
-            1
-        ),
-
-        "lugar": lugar,
-
-        "fecha_local": propiedades.get(
-            "localTime"
-        ),
-
-        "agencia": propiedades.get(
-            "agency"
-        ),
-
-        "alertas": alertas,
-
-        "categoria": categoria,
-
-        "acelerografia_bogota": {
-            "estado": "PENDIENTE",
-            "estaciones": [],
-            "pga_maximo_cm_s2": None,
-            "estacion_critica": None,
-            "componente_critica": None
-        }
-    }
+    return resultado
 
 
 # ============================================================
-# PAGINA PRINCIPAL
+# PÃGINA PRINCIPAL
 # ============================================================
 
 @app.route("/")
-def inicio():
+def monitor():
 
     return render_template(
         "monitor.html"
@@ -398,6 +212,13 @@ def inicio():
 
 # ============================================================
 # API DE EVENTOS
+#
+# FUENTE ÃšNICA:
+# eventos_detectados.json
+#
+# No consulta directamente al SGC.
+# El monitor_sgc_cloud.py es quien consulta SGC,
+# normaliza los eventos y actualiza este archivo.
 # ============================================================
 
 @app.route("/api/eventos")
@@ -405,205 +226,40 @@ def api_eventos():
 
     try:
 
-        # ====================================================
-        # OBTENER EVENTOS DEL SGC
-        # ====================================================
-
-        try:
-
-            eventos_sgc = obtener_eventos()
-
-            sgc_disponible = True
-
-        except Exception as error:
-
-            print(
-                "SGC NO DISPONIBLE - USANDO EVENTOS ALMACENADOS:",
-                error
-            )
-
-            eventos_sgc = []
-
-            sgc_disponible = False
-
-        eventos = []
-
-        eventos_invalidos = 0
-
-        # ====================================================
-        # PROCESAR EVENTOS DEL SGC
-        # ====================================================
-
-        for evento in eventos_sgc:
-
-            try:
-
-                resultado = analizar_evento(
-                    evento
-                )
-
-                if resultado is None:
-
-                    eventos_invalidos += 1
-
-                else:
-
-                    eventos.append(
-                        resultado
-                    )
-
-            except Exception as error:
-
-                eventos_invalidos += 1
-
-                print(
-                    "ERROR PROCESANDO EVENTO:",
-                    evento.get("id"),
-                    error
-                )
-
-        # ====================================================
-        # AGREGAR EVENTOS ALMACENADOS
-        # ====================================================
-
-        ids_eventos = {
-
-            evento.get("id")
-
-            for evento in eventos
-
-            if evento.get("id")
-        }
-
-        alertas_almacenadas = (
-            obtener_alertas_almacenadas()
-        )
-
-        print(
-            "Eventos almacenados encontrados:",
-            len(alertas_almacenadas)
-        )
-
-        for alerta in alertas_almacenadas:
-
-            alerta_normalizada = (
-                normalizar_alerta_almacenada(
-                    alerta
-                )
-            )
-
-            # ------------------------------------------------
-            # SOLO COLOMBIA
-            # ------------------------------------------------
-
-            if not es_evento_colombia(
-                alerta_normalizada.get("lugar")
-            ):
-                continue
-
-            alerta_id = (
-                alerta_normalizada.get("id")
-            )
-
-            if (
-                alerta_id
-                and alerta_id in ids_eventos
-            ):
-
-                pga_almacenada = (
-                    alerta_normalizada.get(
-                        "acelerografia_bogota"
-                    )
-                    or {}
-                )
-
-                if (
-                    pga_almacenada.get("estado")
-                    == "OK"
-                ):
-
-                    for evento_existente in eventos:
-
-                        if (
-                            evento_existente.get("id")
-                            == alerta_id
-                        ):
-
-                            evento_existente[
-                                "acelerografia_bogota"
-                            ] = pga_almacenada
-
-                            evento_existente[
-                                "alerta_pga"
-                            ] = alerta_normalizada.get(
-                                "alerta_pga"
-                            )
-
-                            break
-
-            elif (
-                alerta_id
-                and alerta_id not in ids_eventos
-            ):
-
-                eventos.append(
-                    alerta_normalizada
-                )
-
-                ids_eventos.add(
-                    alerta_id
-                )
-
-        # ====================================================
-        # CONTADORES
-        # ====================================================
-
-        candidatos_acelerograficos = sum(
-
-            1
-
-            for evento in eventos
-
-            if evento.get("magnitud") is not None
-            and evento.get("magnitud")
-            >= MAGNITUD_CANDIDATO_ACELEROGRAFICO
-        )
+        eventos = [
+            preparar_evento_web(evento)
+            for evento in obtener_eventos_almacenados()
+            if isinstance(evento, dict)
+        ]
 
         eventos_colombia = sum(
-
             1
-
             for evento in eventos
-
-            if es_evento_colombia(
-                evento.get("lugar")
-            )
+            if "colombia"
+            in str(evento.get("lugar", "")).lower()
         )
 
-        # ====================================================
-        # RESPUESTA
-        # ====================================================
+        candidatos_acelerograficos = sum(1 for evento in eventos if evento.get("candidato_acelerografico") is True)
+
+        fecha_consulta = datetime.now(
+            ZoneInfo("America/Bogota")
+        ).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
 
         return jsonify({
 
             "ok": True,
 
-            "fecha_consulta":
-                datetime.now(ZoneInfo("America/Bogota")).strftime(
-                    "%Y-%m-%d %H:%M:%S"
-                ),
+            "fecha_consulta": fecha_consulta,
 
-            "eventos_recibidos":
-                len(eventos_sgc),
+            "eventos_recibidos": len(eventos),
 
-            "eventos_validos":
-                len(eventos),
+            "eventos_validos": len(eventos),
 
-            "eventos_invalidos":
-                eventos_invalidos,
+            "eventos_invalidos": 0,
 
-            "eventos_colombia":
-                eventos_colombia,
+            "eventos_colombia": eventos_colombia,
 
             "candidatos_acelerograficos":
                 candidatos_acelerograficos,
@@ -611,8 +267,7 @@ def api_eventos():
             "eventos_magnitud_4_o_mas":
                 candidatos_acelerograficos,
 
-            "eventos":
-                eventos
+            "eventos": eventos
         })
 
     except Exception as error:
@@ -632,6 +287,7 @@ def api_eventos():
 
         }), 500
 
+
 # ============================================================
 # INICIAR FLASK
 # ============================================================
@@ -650,4 +306,6 @@ if __name__ == "__main__":
         port=puerto,
         debug=False
     )
+
+
 
