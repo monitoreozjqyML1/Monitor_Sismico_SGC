@@ -769,7 +769,7 @@ def enviar_alerta_telegram(resultado):
 
     mensaje = (
         "🚨 MONITOR SÍSMICO ML1\n\n"
-        "Alerta\n"
+        "ALERTA SÍSMICA\n"
         f"Magnitud: {magnitud}\n"
         f"Profundidad: {profundidad} km\n"
     )
@@ -1023,13 +1023,14 @@ def enviar_reporte_pga_actualizado_telegram(
     )
 
     mensaje = (
-        "?? REPORTE PGA ACTUALIZADO\n\n"
+        "📊 MONITOR SÍSMICO ML1\n\n"
+        "PGA ACTUALIZADA\n\n"
         "Evento s\u00edsmico previamente detectado\n"
         f"C\u00f3digo SGC: {event_id}\n\n"
         f"Magnitud: {magnitud}\n"
         f"Profundidad: {profundidad} km\n"
         f"Ubicaci\u00f3n: {lugar}\n\n"
-        "?? BOG.11\n\n"
+        "📡 BOG.11\n\n"
     )
 
     pga_horizontal = acelerografia.get(
@@ -1093,32 +1094,40 @@ def enviar_reporte_pga_actualizado_telegram(
 
     if estado_pga == "VERDE":
         mensaje += (
-            "\n?? CLASIFICACI\u00d3N PGA: ?? VERDE\n"
+            "\n📊 CLASIFICACIÓN PGA: 🟢 VERDE\n"
         )
 
     elif estado_pga == "AMARILLA":
         mensaje += (
-            "\n?? CLASIFICACI\u00d3N PGA: ?? AMARILLA\n"
+            "\n📊 CLASIFICACIÓN PGA: 🟡 AMARILLA\n"
         )
 
     elif estado_pga == "NARANJA":
         mensaje += (
-            "\n?? CLASIFICACI\u00d3N PGA: ?? NARANJA\n"
+            "\n📊 CLASIFICACIÓN PGA: 🟠 NARANJA\n"
         )
 
     elif estado_pga == "ROJA":
         mensaje += (
-            "\n?? CLASIFICACI\u00d3N PGA: ?? ROJA\n"
+            "\n📊 CLASIFICACIÓN PGA: 🔴 ROJA\n"
         )
 
     elif estado_pga == "CRITICA":
         mensaje += (
-            "\n?? CLASIFICACI\u00d3N PGA: ?? CR\u00cdTICA\n"
+            "\n📊 CLASIFICACIÓN PGA: 🔴 CRÍTICA\n"
         )
 
     else:
         mensaje += (
-            "\n?? CLASIFICACI\u00d3N PGA: ? SIN DATOS PGA\n"
+            "\n📊 CLASIFICACIÓN PGA: ⚪ SIN DATOS PGA\n"
+        )
+
+    if (
+        estado_pga != "SIN_DATOS"
+        and acelerografia.get("estado") == "OK"
+    ):
+        mensaje += (
+            "\n✅ PGA OBTENIDA — CICLO CERRADO\n"
         )
 
     mensaje += (
@@ -2233,7 +2242,8 @@ def enviar_evento_actualizado_telegram(
     )
 
     mensaje = (
-        "🔄 EVENTO SÍSMICO ACTUALIZADO\n\n"
+        "🔄 MONITOR SÍSMICO ML1\n\n"
+        "EVENTO SÍSMICO ACTUALIZADO\n\n"
         "El SGC actualizó un evento previamente detectado.\n"
         f"Código SGC: {event_id}\n\n"
         f"Magnitud anterior: {magnitud_anterior}\n"
@@ -2250,8 +2260,6 @@ def enviar_evento_actualizado_telegram(
     mensaje += (
         f"Ubicación: {lugar}\n"
         f"Hora local: {hora_local}\n\n"
-        "⚠️ El evento ahora cumple el criterio "
-        "M >= 4.0 y continuará en evaluación.\n\n"
         "Fuente: SGC\n"
         f"{URL_MONITOR}\n\n"
         "Desarrollado por: ML1 - TQMD - ZJQY"
