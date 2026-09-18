@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-18T10:40:21.799393-05:00",
+  "actualizado": "2026-09-18T10:45:16.915681-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1452,
+    "total_eventos": 1453,
     "eventos_m4_o_mayores": 18,
     "candidatos_acelerograficos": 18,
     "alertas_telegram": 11,
@@ -37090,6 +37090,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T09:15:17.339167-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sjsjfx": {
+      "id": "SGC2026sjsjfx",
+      "magnitud": 2.1,
+      "profundidad": 10.85,
+      "latitud": 7.022,
+      "longitud": -77.61,
+      "distancia_km": 468.1414758983265,
+      "lugar": "Jurado - Choco, Colombia",
+      "hora_local": "2026-09-18 00:48:36",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 7.022,
+      "lon": -77.61,
+      "distancia_bogota": 468.1,
+      "tipo_magnitud": "MLr_1",
+      "fecha_local": "2026-09-18 05:48:36",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T10:45:16.180124-05:00",
       "alerta_enviada": false
     }
   }
