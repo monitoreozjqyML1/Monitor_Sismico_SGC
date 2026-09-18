@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-18T11:15:18.326362-05:00",
+  "actualizado": "2026-09-18T11:20:20.165806-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1457,
+    "total_eventos": 1458,
     "eventos_m4_o_mayores": 18,
     "candidatos_acelerograficos": 18,
     "alertas_telegram": 11,
-    "porcentaje_m4_o_mayores": 1.24,
+    "porcentaje_m4_o_mayores": 1.23,
     "eventos_mayor_igual_4": 18,
     "total_candidatos_acelerograficos": 18,
     "total_alertas": 7,
@@ -37230,6 +37230,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T11:15:17.557155-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026skdcos": {
+      "id": "SGC2026skdcos",
+      "magnitud": 2.8,
+      "profundidad": 22.3,
+      "latitud": 4.669,
+      "longitud": -76.851,
+      "distancia_km": 308.0001499176864,
+      "lugar": "Medio San Juan (Andagoya) - Choco, Colombia",
+      "hora_local": "2026-09-18 06:12:46",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.669,
+      "lon": -76.851,
+      "distancia_bogota": 308.0,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-18 11:12:46",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T11:20:19.017009-05:00",
       "alerta_enviada": false
     }
   }
