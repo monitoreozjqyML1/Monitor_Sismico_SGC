@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T18:10:18.541686-05:00",
+  "actualizado": "2026-09-18T18:15:17.555138-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1478,
@@ -37788,13 +37788,13 @@
     },
     "SGC2026skzybe": {
       "id": "SGC2026skzybe",
-      "magnitud": 2.3,
-      "profundidad": 4.85,
-      "latitud": 7.05,
-      "longitud": -75.956,
-      "distancia_km": 333.25547256948266,
-      "lugar": "Peque - Antioquia, Colombia",
-      "hora_local": "2026-09-18 17:41:29",
+      "magnitud": 2.2,
+      "profundidad": 39.01,
+      "latitud": 7.094,
+      "longitud": -76.055,
+      "distancia_km": 343.9577017262432,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-09-18 17:41:26",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -37803,7 +37803,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-18 17:41:29",
+      "fecha_local": "2026-09-18 17:41:26",
       "lat": 7.05,
       "lon": -75.956,
       "distancia_bogota": 333.3,
