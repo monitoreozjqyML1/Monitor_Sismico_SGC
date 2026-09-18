@@ -1968,10 +1968,7 @@ def realizar_consulta():
             "magType"
         )
 
-        resultado["fecha_local"] = propiedades.get(
-            "localTime",
-            resultado.get("hora_local")
-        )
+        resultado["fecha_local"] = resultado.get("hora_local")
 
         resultado["agencia"] = propiedades.get(
             "agency",
