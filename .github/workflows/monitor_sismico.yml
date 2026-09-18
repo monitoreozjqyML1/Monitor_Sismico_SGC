@@ -73,20 +73,43 @@ jobs:
               }
           }
 
-          resultado_envio = (
-              m.enviar_reporte_pga_actualizado_telegram(
-                  resultado,
-                  "PRUEBA_PGA_20260917"
+          resultados = []
+
+          resultados.append(
+              (
+                  "ALERTA SÍSMICA",
+                  m.enviar_alerta_telegram(resultado)
               )
           )
 
-          if not resultado_envio:
-              raise SystemExit("ERROR: Telegram no confirmó el envío.")
-
-          print(
-              "PRUEBA REPORTE PGA ACTUALIZADO: "
-              "ENVÍO CONFIRMADO"
+          resultados.append(
+              (
+                  "PGA ACTUALIZADA",
+                  m.enviar_reporte_pga_actualizado_telegram(
+                      resultado,
+                      "PRUEBA_PGA_20260917"
+                  )
+              )
           )
+
+          resultados.append(
+              (
+                  "EVENTO SÍSMICO ACTUALIZADO",
+                  m.enviar_evento_actualizado_telegram(
+                      resultado,
+                      "PRUEBA_EVENTO_20260917",
+                      4.7
+                  )
+              )
+          )
+
+          for nombre, enviado in resultados:
+              if not enviado:
+                  raise SystemExit(
+                      f"ERROR: Telegram no confirmó: {nombre}"
+                  )
+
+          print("PRUEBA TELEGRAM 3 MENSAJES: ENVÍO CONFIRMADO")
           PY
 
       - name: Diagnóstico acceso SGC
