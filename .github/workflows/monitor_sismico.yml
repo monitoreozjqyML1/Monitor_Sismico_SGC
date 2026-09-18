@@ -119,6 +119,47 @@ jobs:
           print("CONTENT:", respuesta.text[:500])
           PY
 
+      - name: Diagnóstico DNS y red SGC
+        if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
+        run: |
+          python - <<'PY'
+          import socket
+          import requests
+
+          host = "archive.sgc.gov.co"
+          url = "https://archive.sgc.gov.co/feed/v1.0.1/summary/five_days_all.json"
+
+          print("=== DNS ===")
+          print(socket.gethostbyname_ex(host))
+
+          print("=== IP PUBLICA DEL RUNNER ===")
+          try:
+              ip_publica = requests.get(
+                  "https://api.ipify.org",
+                  timeout=15
+              ).text
+              print(ip_publica)
+          except Exception as e:
+              print("ERROR IP PUBLICA:", e)
+
+          print("=== PRUEBA USER-AGENT NORMAL ===")
+          try:
+              r = requests.get(
+                  url,
+                  headers={
+                      "User-Agent": "Mozilla/5.0",
+                      "Accept": "application/json"
+                  },
+                  timeout=30
+              )
+              print("STATUS:", r.status_code)
+              print("SERVER:", r.headers.get("Server"))
+              print("CONTENT-TYPE:", r.headers.get("Content-Type"))
+              print("CONTENT:", r.text[:200])
+          except Exception as e:
+              print("ERROR:", repr(e))
+          PY
+
       - name: Ejecutar monitor sísmico
         if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
         env:
