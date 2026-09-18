@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-18T15:45:15.602744-05:00",
+  "actualizado": "2026-09-18T15:50:27.243365-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1470,
+    "total_eventos": 1471,
     "eventos_m4_o_mayores": 20,
     "candidatos_acelerograficos": 20,
     "alertas_telegram": 13,
@@ -37616,6 +37616,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T15:30:16.152690-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026skvxej": {
+      "id": "SGC2026skvxej",
+      "magnitud": 2.1,
+      "profundidad": 2.45,
+      "latitud": 4.764,
+      "longitud": -76.19,
+      "distancia_km": 234.76904198014273,
+      "lugar": "El Cairo - Valle del Cauca, Colombia",
+      "hora_local": "2026-09-18 15:39:54",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-18 15:39:54",
+      "lat": 4.764,
+      "lon": -76.19,
+      "distancia_bogota": 234.8,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T15:50:25.440236-05:00",
       "alerta_enviada": false
     }
   }
