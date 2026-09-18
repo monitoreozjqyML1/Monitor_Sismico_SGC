@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-18T13:45:18.390140-05:00",
+  "actualizado": "2026-09-18T13:50:16.524133-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1463,
-    "eventos_m4_o_mayores": 18,
-    "candidatos_acelerograficos": 18,
-    "alertas_telegram": 11,
-    "porcentaje_m4_o_mayores": 1.23,
-    "eventos_mayor_igual_4": 18,
-    "total_candidatos_acelerograficos": 18,
+    "total_eventos": 1464,
+    "eventos_m4_o_mayores": 19,
+    "candidatos_acelerograficos": 19,
+    "alertas_telegram": 12,
+    "porcentaje_m4_o_mayores": 1.3,
+    "eventos_mayor_igual_4": 19,
+    "total_candidatos_acelerograficos": 19,
     "total_alertas": 7,
     "porcentaje_alertas": 0.48
   },
@@ -37399,6 +37399,45 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T13:10:17.419269-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026skrzdk": {
+      "id": "SGC2026skrzdk",
+      "magnitud": 4.4,
+      "profundidad": 45.94,
+      "latitud": 4.431,
+      "longitud": -76.722,
+      "distancia_km": 295.36332346881943,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-09-18 13:41:21",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 4.431,
+      "lon": -76.722,
+      "distancia_bogota": 295.4,
+      "tipo_magnitud": "MLv",
+      "fecha_local": "2026-09-18 18:41:21",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-09-18T13:50:14.972965-05:00",
+      "alerta_enviada": true
     }
   }
 }
