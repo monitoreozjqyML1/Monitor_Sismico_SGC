@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T17:15:14.603690-05:00",
+  "actualizado": "2026-09-18T17:20:25.559838-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1474,
@@ -37648,13 +37648,13 @@
     },
     "SGC2026skxjby": {
       "id": "SGC2026skxjby",
-      "magnitud": 3.1,
-      "profundidad": 43.49,
-      "latitud": 6.072,
-      "longitud": -76.349,
-      "distancia_km": 293.9959099384906,
-      "lugar": "Quibdo - Choco, Colombia",
-      "hora_local": "2026-09-18 16:23:45",
+      "magnitud": 2.5,
+      "profundidad": 42.94,
+      "latitud": 4.435,
+      "longitud": -76.695,
+      "distancia_km": 292.33963479401035,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-09-18 16:23:54",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -37663,7 +37663,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-18 16:23:45",
+      "fecha_local": "2026-09-18 16:23:54",
       "lat": 6.072,
       "lon": -76.349,
       "distancia_bogota": 294.0,
