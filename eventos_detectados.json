@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T11:00:17.968668-05:00",
+  "actualizado": "2026-09-18T11:05:18.143984-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1456,
@@ -37179,12 +37179,12 @@
     "SGC2026sjsmvn": {
       "id": "SGC2026sjsmvn",
       "magnitud": 2.1,
-      "profundidad": 22.16,
-      "latitud": 4.475,
-      "longitud": -76.697,
-      "distancia_km": 292.1189712609338,
+      "profundidad": 39.93,
+      "latitud": 4.503,
+      "longitud": -76.68,
+      "distancia_km": 289.9718587543374,
       "lugar": "Istmina - Choco, Colombia",
-      "hora_local": "2026-09-18 00:52:46",
+      "hora_local": "2026-09-18 00:52:45",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
