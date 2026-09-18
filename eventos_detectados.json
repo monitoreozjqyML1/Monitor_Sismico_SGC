@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-18T09:05:23.389675-05:00",
+  "actualizado": "2026-09-18T09:15:18.335447-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1451,
+    "total_eventos": 1452,
     "eventos_m4_o_mayores": 18,
     "candidatos_acelerograficos": 18,
     "alertas_telegram": 11,
@@ -37062,6 +37062,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-18T09:00:16.885590-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026skiybk": {
+      "id": "SGC2026skiybk",
+      "magnitud": 3.3,
+      "profundidad": 5.51,
+      "latitud": 4.327,
+      "longitud": -76.764,
+      "distancia_km": 301.43388176309315,
+      "lugar": "El Litoral del San Juan (Docordo) - Choco, Colombia",
+      "hora_local": "2026-09-18 09:08:33",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "lat": 4.327,
+      "lon": -76.764,
+      "distancia_bogota": 301.4,
+      "tipo_magnitud": "M",
+      "fecha_local": "2026-09-18 14:08:33",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-18T09:15:17.339167-05:00",
       "alerta_enviada": false
     }
   }
