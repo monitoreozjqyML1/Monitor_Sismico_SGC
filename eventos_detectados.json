@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T09:15:18.335447-05:00",
+  "actualizado": "2026-09-18T09:20:17.326027-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1452,
@@ -37066,12 +37066,12 @@
     },
     "SGC2026skiybk": {
       "id": "SGC2026skiybk",
-      "magnitud": 3.3,
-      "profundidad": 5.51,
-      "latitud": 4.327,
-      "longitud": -76.764,
-      "distancia_km": 301.43388176309315,
-      "lugar": "El Litoral del San Juan (Docordo) - Choco, Colombia",
+      "magnitud": 3.2,
+      "profundidad": 45.71,
+      "latitud": 4.403,
+      "longitud": -76.726,
+      "distancia_km": 296.1537481223988,
+      "lugar": "Istmina - Choco, Colombia",
       "hora_local": "2026-09-18 09:08:33",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
