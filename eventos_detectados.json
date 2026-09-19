@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T19:05:17.121684-05:00",
+  "actualizado": "2026-09-18T19:10:17.466461-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1481,
@@ -37872,13 +37872,13 @@
     },
     "SGC2026slcayp": {
       "id": "SGC2026slcayp",
-      "magnitud": 2.4,
-      "profundidad": 148.7,
-      "latitud": 6.77,
-      "longitud": -72.95,
-      "distancia_km": 260.4396428095114,
-      "lugar": "Cepita - Santander, Colombia",
-      "hora_local": "2026-09-18 18:45:11",
+      "magnitud": 2.3,
+      "profundidad": 148.55,
+      "latitud": 6.819,
+      "longitud": -73.111,
+      "distancia_km": 257.3856449563276,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-09-18 18:45:12",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -37887,7 +37887,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-18 18:45:11",
+      "fecha_local": "2026-09-18 18:45:12",
       "lat": 6.77,
       "lon": -72.95,
       "distancia_bogota": 260.4,
