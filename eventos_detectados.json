@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T19:15:21.035899-05:00",
+  "actualizado": "2026-09-18T19:20:17.401392-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1481,
@@ -37872,11 +37872,11 @@
     },
     "SGC2026slcayp": {
       "id": "SGC2026slcayp",
-      "magnitud": 2.3,
-      "profundidad": 148.55,
-      "latitud": 6.819,
-      "longitud": -73.111,
-      "distancia_km": 257.3856449563276,
+      "magnitud": 2.2,
+      "profundidad": 138.12,
+      "latitud": 6.76,
+      "longitud": -73.121,
+      "distancia_km": 250.9622760772194,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-09-18 18:45:12",
       "candidato_acelerografico": false,
