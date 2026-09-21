@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-21T16:40:28.178352-05:00",
+  "actualizado": "2026-09-21T16:45:22.103184-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1587,
-    "eventos_m4_o_mayores": 24,
-    "candidatos_acelerograficos": 24,
-    "alertas_telegram": 18,
-    "porcentaje_m4_o_mayores": 1.51,
-    "eventos_mayor_igual_4": 24,
-    "total_candidatos_acelerograficos": 24,
+    "total_eventos": 1588,
+    "eventos_m4_o_mayores": 25,
+    "candidatos_acelerograficos": 25,
+    "alertas_telegram": 19,
+    "porcentaje_m4_o_mayores": 1.57,
+    "eventos_mayor_igual_4": 25,
+    "total_candidatos_acelerograficos": 25,
     "total_alertas": 7,
     "porcentaje_alertas": 0.44
   },
@@ -40221,13 +40221,13 @@
     },
     "SGC2026sqehbu": {
       "id": "SGC2026sqehbu",
-      "magnitud": 2.3,
-      "profundidad": 0.63,
-      "latitud": 3.875,
-      "longitud": -75.653,
-      "distancia_km": 198.4164474801675,
+      "magnitud": 2.4,
+      "profundidad": 17.47,
+      "latitud": 3.85,
+      "longitud": -75.622,
+      "distancia_km": 196.72647819136023,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-21 13:15:00",
+      "hora_local": "2026-09-21 13:14:59",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -40236,7 +40236,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-21 13:15:00",
+      "fecha_local": "2026-09-21 13:14:59",
       "lat": 3.875,
       "lon": -75.653,
       "distancia_bogota": 198.4,
@@ -41011,6 +41011,45 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-21T16:35:14.162709-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026sqktoz": {
+      "id": "SGC2026sqktoz",
+      "magnitud": 4.1,
+      "profundidad": 18.97,
+      "latitud": 3.849,
+      "longitud": -75.63,
+      "distancia_km": 197.5559070814768,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-21 16:30:31",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-21 16:30:31",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 3.849,
+      "lon": -75.63,
+      "distancia_bogota": 197.6,
+      "tipo_magnitud": "MLv",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-09-21T16:45:16.153675-05:00",
+      "alerta_enviada": true
     }
   }
 }
