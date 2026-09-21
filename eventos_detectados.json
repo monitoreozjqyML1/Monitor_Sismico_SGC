@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-21T15:10:18.021017-05:00",
+  "actualizado": "2026-09-21T15:15:22.655891-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1575,
-    "eventos_m4_o_mayores": 24,
-    "candidatos_acelerograficos": 24,
-    "alertas_telegram": 17,
-    "porcentaje_m4_o_mayores": 1.52,
-    "eventos_mayor_igual_4": 24,
-    "total_candidatos_acelerograficos": 24,
+    "total_eventos": 1576,
+    "eventos_m4_o_mayores": 25,
+    "candidatos_acelerograficos": 25,
+    "alertas_telegram": 18,
+    "porcentaje_m4_o_mayores": 1.59,
+    "eventos_mayor_igual_4": 25,
+    "total_candidatos_acelerograficos": 25,
     "total_alertas": 7,
     "porcentaje_alertas": 0.44
   },
@@ -40601,6 +40601,45 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-21T14:55:19.234097-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026sqhvtw": {
+      "id": "SGC2026sqhvtw",
+      "magnitud": 4.0,
+      "profundidad": 18.97,
+      "latitud": 3.87,
+      "longitud": -75.613,
+      "distancia_km": 194.77594909114413,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-21 15:02:35",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-21 15:02:35",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 3.87,
+      "lon": -75.613,
+      "distancia_bogota": 194.8,
+      "tipo_magnitud": "MLr",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-09-21T15:15:19.854881-05:00",
+      "alerta_enviada": true
     }
   }
 }
