@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-21T17:35:21.789091-05:00",
+  "actualizado": "2026-09-21T17:45:21.081988-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1593,
+    "total_eventos": 1594,
     "eventos_m4_o_mayores": 25,
     "candidatos_acelerograficos": 25,
     "alertas_telegram": 19,
@@ -41154,10 +41154,10 @@
     "SGC2026sqlmag": {
       "id": "SGC2026sqlmag",
       "magnitud": 2.4,
-      "profundidad": 16.54,
-      "latitud": 8.184,
-      "longitud": -73.284,
-      "distancia_km": 395.87273571866604,
+      "profundidad": 17.12,
+      "latitud": 8.189,
+      "longitud": -73.283,
+      "distancia_km": 396.4392910727206,
       "lugar": "Ocana - Norte de Santander, Colombia",
       "hora_local": "2026-09-21 16:51:58",
       "candidato_acelerografico": false,
@@ -41205,6 +41205,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-21T17:20:16.095262-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sqmulh": {
+      "id": "SGC2026sqmulh",
+      "magnitud": 3.3,
+      "profundidad": 18.97,
+      "latitud": 3.849,
+      "longitud": -75.628,
+      "distancia_km": 197.36201971395778,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-21 17:31:54",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-21 17:31:54",
+      "lat": 3.849,
+      "lon": -75.628,
+      "distancia_bogota": 197.4,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-21T17:45:15.726762-05:00",
       "alerta_enviada": false
     }
   }
