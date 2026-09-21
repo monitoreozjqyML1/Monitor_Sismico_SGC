@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-21T13:55:20.167666-05:00",
+  "actualizado": "2026-09-21T14:00:20.495828-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1571,
-    "eventos_m4_o_mayores": 23,
-    "candidatos_acelerograficos": 23,
-    "alertas_telegram": 16,
-    "porcentaje_m4_o_mayores": 1.46,
-    "eventos_mayor_igual_4": 23,
-    "total_candidatos_acelerograficos": 23,
+    "total_eventos": 1572,
+    "eventos_m4_o_mayores": 24,
+    "candidatos_acelerograficos": 24,
+    "alertas_telegram": 17,
+    "porcentaje_m4_o_mayores": 1.53,
+    "eventos_mayor_igual_4": 24,
+    "total_candidatos_acelerograficos": 24,
     "total_alertas": 7,
     "porcentaje_alertas": 0.45
   },
@@ -40477,6 +40477,45 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-21T13:55:18.415735-05:00",
+      "alerta_enviada": true
+    },
+    "SGC2026sqfkcd": {
+      "id": "SGC2026sqfkcd",
+      "magnitud": 4.1,
+      "profundidad": 19.08,
+      "latitud": 3.846,
+      "longitud": -75.628,
+      "distancia_km": 197.52452752058952,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-21 13:48:40",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-21 13:48:40",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 3.846,
+      "lon": -75.628,
+      "distancia_bogota": 197.5,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-09-21T14:00:18.534262-05:00",
       "alerta_enviada": true
     }
   }
