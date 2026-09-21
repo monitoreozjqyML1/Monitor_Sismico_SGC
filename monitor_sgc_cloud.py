@@ -495,15 +495,13 @@ def obtener_pga_bogota(evento_id):
 
     try:
         headers_sgc = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/140.0.0.0 Safari/537.36"
-            ),
-            "Accept": (
-                "application/json,text/plain,*/*"
-            ),
-            "Referer": "https://www.sgc.gov.co/"
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Cache-Control": "no-cache",
+            "Origin": "https://www.sgc.gov.co",
+            "Pragma": "no-cache",
+            "Referer": "https://www.sgc.gov.co/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
         }
 
         respuesta = requests.get(
