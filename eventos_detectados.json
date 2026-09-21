@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-21T16:25:19.599595-05:00",
+  "actualizado": "2026-09-21T16:30:24.648353-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1586,
@@ -37411,20 +37411,35 @@
       "hora_local": "2026-09-18 13:41:22",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 297.0,
+            "distanceHipocentral": 301.0,
+            "pgaE": 0.07212,
+            "pgaN": 0.042732,
+            "pgaZ": 0.031436
+          }
+        ],
+        "pga_maximo_cm_s2": 0.07212,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 0.7630714285714285,
+        "porcentaje_ew": 1.9491891891891895,
+        "porcentaje_maximo": 1.9491891891891895,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00042731999999999997,
+        "pga_ew_m_s2": 0.0007212000000000001,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -39656,21 +39671,36 @@
       "hora_local": "2026-09-21 11:23:18",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 193.0,
+            "distanceHipocentral": 193.0,
+            "pgaE": 0.118101,
+            "pgaN": 0.111116,
+            "pgaZ": 0.051491
+          }
+        ],
+        "pga_maximo_cm_s2": 0.118101,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "fecha_local": "2026-09-21 11:23:18",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 1.984214285714286,
+        "porcentaje_ew": 3.1919189189189185,
+        "porcentaje_maximo": 3.1919189189189185,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.0011111600000000001,
+        "pga_ew_m_s2": 0.00118101,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -39682,7 +39712,8 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-21T11:35:17.750691-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
     },
     "SGC2026spkfgc": {
       "id": "SGC2026spkfgc",
@@ -40490,21 +40521,36 @@
       "hora_local": "2026-09-21 13:48:40",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 193.0,
+            "distanceHipocentral": 194.0,
+            "pgaE": 0.069965,
+            "pgaN": 0.080392,
+            "pgaZ": 0.042138
+          }
+        ],
+        "pga_maximo_cm_s2": 0.080392,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "NS"
       },
       "fecha_local": "2026-09-21 13:48:40",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 1.4355714285714285,
+        "porcentaje_ew": 1.890945945945946,
+        "porcentaje_maximo": 1.890945945945946,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.0008039200000000001,
+        "pga_ew_m_s2": 0.00069965,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -40516,7 +40562,8 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-21T14:00:18.534262-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
     },
     "SGC2026spwhiq": {
       "id": "SGC2026spwhiq",
@@ -40613,21 +40660,36 @@
       "hora_local": "2026-09-21 15:02:35",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 191.0,
+            "distanceHipocentral": 192.0,
+            "pgaE": 0.051598,
+            "pgaN": 0.038535,
+            "pgaZ": 0.030981
+          }
+        ],
+        "pga_maximo_cm_s2": 0.051598,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "fecha_local": "2026-09-21 15:02:35",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 0.688125,
+        "porcentaje_ew": 1.3945405405405404,
+        "porcentaje_maximo": 1.3945405405405404,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00038535,
+        "pga_ew_m_s2": 0.00051598,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -40639,7 +40701,8 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-21T15:15:19.854881-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
     },
     "SGC2026sqhycx": {
       "id": "SGC2026sqhycx",
@@ -40867,7 +40930,7 @@
     },
     "SGC2026sqkdko": {
       "id": "SGC2026sqkdko",
-      "magnitud": 3.6,
+      "magnitud": 3.4,
       "profundidad": 18.97,
       "latitud": 3.845,
       "longitud": -75.636,
