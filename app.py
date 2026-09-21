@@ -2,6 +2,7 @@
 import json
 import math
 import os
+import requests
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -287,6 +288,42 @@ def api_eventos():
 
         }), 500
 
+
+
+# ============================================================
+# PRUEBA TEMPORAL ACCESO SGC
+# ============================================================
+
+@app.route("/prueba-sgc/<event_id>")
+def prueba_sgc(event_id):
+
+    url = f"https://archive.sgc.gov.co/events/{event_id}/detail.json"
+
+    headers = {
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Cache-Control": "no-cache",
+        "Origin": "https://www.sgc.gov.co",
+        "Pragma": "no-cache",
+        "Referer": "https://www.sgc.gov.co/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+    }
+
+    try:
+        r = requests.get(url, headers=headers, timeout=30)
+
+        return jsonify({
+            "status": r.status_code,
+            "bytes": len(r.content),
+            "ok": r.ok,
+            "event_id": event_id
+        })
+
+    except Exception as error:
+        return jsonify({
+            "ok": False,
+            "error": str(error)
+        }), 500
 
 # ============================================================
 # INICIAR FLASK
