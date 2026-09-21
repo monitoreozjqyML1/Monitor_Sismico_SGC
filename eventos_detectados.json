@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-21T17:15:23.421011-05:00",
+  "actualizado": "2026-09-21T17:20:21.247581-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1592,
+    "total_eventos": 1593,
     "eventos_m4_o_mayores": 25,
     "candidatos_acelerograficos": 25,
     "alertas_telegram": 19,
@@ -41177,6 +41177,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-21T17:15:18.941546-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sqlrtp": {
+      "id": "SGC2026sqlrtp",
+      "magnitud": 3.4,
+      "profundidad": 12.85,
+      "latitud": 5.668,
+      "longitud": -73.447,
+      "distancia_km": 126.94706193745303,
+      "lugar": "Chiquiza - Boyaca, Colombia",
+      "hora_local": "2026-09-21 16:58:37",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-21 16:58:37",
+      "lat": 5.668,
+      "lon": -73.447,
+      "distancia_bogota": 126.9,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-21T17:20:16.095262-05:00",
       "alerta_enviada": false
     }
   }
