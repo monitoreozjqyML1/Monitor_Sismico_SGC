@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-21T16:55:30.770251-05:00",
+  "actualizado": "2026-09-21T17:00:21.922684-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1588,
+    "total_eventos": 1589,
     "eventos_m4_o_mayores": 25,
     "candidatos_acelerograficos": 25,
     "alertas_telegram": 19,
@@ -41023,21 +41023,36 @@
       "hora_local": "2026-09-21 16:30:31",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 193.0,
+            "distanceHipocentral": 194.0,
+            "pgaE": 0.053396,
+            "pgaN": 0.041893,
+            "pgaZ": 0.025582
+          }
+        ],
+        "pga_maximo_cm_s2": 0.053396,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "fecha_local": "2026-09-21 16:30:31",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 0.7480892857142857,
+        "porcentaje_ew": 1.4431351351351351,
+        "porcentaje_maximo": 1.4431351351351351,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00041893,
+        "pga_ew_m_s2": 0.00053396,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -41049,7 +41064,36 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-21T16:45:16.153675-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
+    },
+    "SGC2026sqlfxw": {
+      "id": "SGC2026sqlfxw",
+      "magnitud": 3.4,
+      "profundidad": 18.97,
+      "latitud": 3.846,
+      "longitud": -75.622,
+      "distancia_km": 196.9436962237729,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-21 16:44:53",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-21 16:44:53",
+      "lat": 3.846,
+      "lon": -75.622,
+      "distancia_bogota": 196.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-21T17:00:16.233553-05:00",
+      "alerta_enviada": false
     }
   }
 }
