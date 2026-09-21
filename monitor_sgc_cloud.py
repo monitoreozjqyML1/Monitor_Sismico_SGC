@@ -489,155 +489,133 @@ def obtener_pga_bogota(evento_id):
         return resultado_base
 
     url = (
-        f"{URL_DETALLE_SGC}"
-        f"{evento_id}/detail.json"
+        f"https://monitor-sismico-sgc.onrender.com"
+        f"/api/pga/{evento_id}"
     )
 
     try:
-        headers_sgc = {
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "en-US,en;q=0.5",
-            "Cache-Control": "no-cache",
-            "Origin": "https://www.sgc.gov.co",
-            "Pragma": "no-cache",
-            "Referer": "https://www.sgc.gov.co/",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
-        }
 
         respuesta = requests.get(
             url,
-            headers=headers_sgc,
-            timeout=20
+            timeout=30
         )
 
         respuesta.raise_for_status()
 
         datos = respuesta.json()
 
-        propiedades = datos.get(
-            "properties",
-            {}
-        )
-
-        productos = propiedades.get(
-            "products",
-            {}
-        )
-
-        registros = productos.get(
-            "sm",
-            []
-        )
-
-        if not isinstance(registros, list):
+        if not datos.get("ok"):
             return resultado_base
 
-        for registro in registros:
+        registro = datos.get(
+            "estacion",
+            {}
+        )
 
-            if not isinstance(registro, dict):
-                continue
+        if not isinstance(registro, dict):
+            return resultado_base
 
-            # Solo BOG.11
-            if registro.get("stationCode") != "BOG":
-                continue
+        if registro.get("stationCode") != "BOG":
+            return resultado_base
 
-            if str(
-                registro.get("locationCode")
-            ) != "11":
-                continue
+        if str(
+            registro.get("locationCode")
+        ) != "11":
+            return resultado_base
 
-            def convertir_pga(nombre):
-                valor = registro.get(nombre)
+        def convertir_pga(nombre):
 
-                if valor is None:
+            valor = registro.get(nombre)
+
+            if valor is None:
+                return None
+
+            try:
+
+                valor = float(valor)
+
+                if not math.isfinite(valor):
                     return None
 
-                try:
-                    valor = float(valor)
+                return valor
 
-                    if not math.isfinite(valor):
-                        return None
+            except (TypeError, ValueError):
 
-                    return valor
+                return None
 
-                except (TypeError, ValueError):
-                    return None
+        pga_e = convertir_pga("pgaE")
+        pga_n = convertir_pga("pgaN")
+        pga_z = convertir_pga("pgaZ")
 
-            pga_e = convertir_pga("pgaE")
-            pga_n = convertir_pga("pgaN")
-            pga_z = convertir_pga("pgaZ")
+        componentes_horizontales = []
 
-            componentes_horizontales = []
-
-            if pga_e is not None:
-                componentes_horizontales.append(
-                    ("EW", pga_e)
-                )
-
-            if pga_n is not None:
-                componentes_horizontales.append(
-                    ("NS", pga_n)
-                )
-
-            if not componentes_horizontales:
-                return resultado_base
-
-            componente_critica, pga_maximo = max(
-                componentes_horizontales,
-                key=lambda item: item[1]
+        if pga_e is not None:
+            componentes_horizontales.append(
+                ("EW", pga_e)
             )
 
-            estacion = {
-                "descripcion": registro.get(
-                    "description"
-                ),
-                "stationCode": registro.get(
-                    "stationCode"
-                ),
-                "locationCode": str(
-                    registro.get("locationCode")
-                ),
-                "networkCode": registro.get(
-                    "networkCode"
-                ),
-                "latitude": registro.get(
-                    "latitude"
-                ),
-                "longitude": registro.get(
-                    "longitude"
-                ),
-                "elevation": registro.get(
-                    "elevation"
-                ),
-                "distanceEpicentral": registro.get(
-                    "distanceEpicentral"
-                ),
-                "distanceHipocentral": registro.get(
-                    "distanceHipocentral"
-                ),
-                "pgaE": pga_e,
-                "pgaN": pga_n,
-                "pgaZ": pga_z
-            }
+        if pga_n is not None:
+            componentes_horizontales.append(
+                ("NS", pga_n)
+            )
 
-            return {
-                "estado": "OK",
-                "estaciones": [estacion],
-                "pga_maximo_cm_s2": pga_maximo,
-                "estacion_critica": "BOG.11",
-                "componente_critica": componente_critica
-            }
+        if not componentes_horizontales:
+            return resultado_base
 
-        return resultado_base
+        componente_critica, pga_maximo = max(
+            componentes_horizontales,
+            key=lambda item: item[1]
+        )
+
+        estacion = {
+            "descripcion": registro.get(
+                "descripcion"
+            ),
+            "stationCode": registro.get(
+                "stationCode"
+            ),
+            "locationCode": str(
+                registro.get("locationCode")
+            ),
+            "networkCode": registro.get(
+                "networkCode"
+            ),
+            "latitude": registro.get(
+                "latitude"
+            ),
+            "longitude": registro.get(
+                "longitude"
+            ),
+            "elevation": registro.get(
+                "elevation"
+            ),
+            "distanceEpicentral": registro.get(
+                "distanceEpicentral"
+            ),
+            "distanceHipocentral": registro.get(
+                "distanceHipocentral"
+            ),
+            "pgaE": pga_e,
+            "pgaN": pga_n,
+            "pgaZ": pga_z
+        }
+
+        return {
+            "estado": "OK",
+            "estaciones": [estacion],
+            "pga_maximo_cm_s2": pga_maximo,
+            "estacion_critica": "BOG.11",
+            "componente_critica": componente_critica
+        }
 
     except Exception as error:
+
         print(
             f"    ⚠️ No fue posible obtener PGA de BOG.11: "
             f"{error}"
         )
 
         return resultado_base
-
 
 
 # ============================================================

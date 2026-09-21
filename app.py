@@ -291,11 +291,12 @@ def api_eventos():
 
 
 # ============================================================
-# PRUEBA TEMPORAL ACCESO SGC
+# API PGA BOG.11
+# Intermediario Render -> SGC
 # ============================================================
 
-@app.route("/prueba-sgc/<event_id>")
-def prueba_sgc(event_id):
+@app.route("/api/pga/<event_id>")
+def api_pga(event_id):
 
     url = f"https://archive.sgc.gov.co/events/{event_id}/detail.json"
 
@@ -310,20 +311,93 @@ def prueba_sgc(event_id):
     }
 
     try:
-        r = requests.get(url, headers=headers, timeout=30)
+
+        respuesta = requests.get(
+            url,
+            headers=headers,
+            timeout=30
+        )
+
+        respuesta.raise_for_status()
+
+        datos = respuesta.json()
+
+        propiedades = datos.get(
+            "properties",
+            {}
+        )
+
+        productos = propiedades.get(
+            "products",
+            {}
+        )
+
+        registros = productos.get(
+            "sm",
+            []
+        )
+
+        if not isinstance(registros, list):
+            return jsonify({
+                "ok": False,
+                "estado": "NO DISPONIBLE",
+                "event_id": event_id
+            })
+
+        for registro in registros:
+
+            if not isinstance(registro, dict):
+                continue
+
+            if registro.get("stationCode") != "BOG":
+                continue
+
+            if str(
+                registro.get("locationCode")
+            ) != "11":
+                continue
+
+            return jsonify({
+                "ok": True,
+                "estado": "OK",
+                "event_id": event_id,
+                "estacion": {
+                    "descripcion": registro.get("description"),
+                    "stationCode": registro.get("stationCode"),
+                    "locationCode": str(
+                        registro.get("locationCode")
+                    ),
+                    "networkCode": registro.get("networkCode"),
+                    "latitude": registro.get("latitude"),
+                    "longitude": registro.get("longitude"),
+                    "elevation": registro.get("elevation"),
+                    "distanceEpicentral": registro.get(
+                        "distanceEpicentral"
+                    ),
+                    "distanceHipocentral": registro.get(
+                        "distanceHipocentral"
+                    ),
+                    "pgaE": registro.get("pgaE"),
+                    "pgaN": registro.get("pgaN"),
+                    "pgaZ": registro.get("pgaZ")
+                }
+            })
 
         return jsonify({
-            "status": r.status_code,
-            "bytes": len(r.content),
-            "ok": r.ok,
+            "ok": False,
+            "estado": "NO DISPONIBLE",
             "event_id": event_id
         })
 
     except Exception as error:
+
         return jsonify({
             "ok": False,
+            "estado": "NO DISPONIBLE",
+            "event_id": event_id,
             "error": str(error)
-        }), 500
+        }), 502
+
 
 # ============================================================
 # INICIAR FLASK
