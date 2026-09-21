@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-21T17:20:21.247581-05:00",
+  "actualizado": "2026-09-21T17:25:32.410233-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1593,
@@ -40958,11 +40958,11 @@
     },
     "SGC2026sqkejg": {
       "id": "SGC2026sqkejg",
-      "magnitud": 3.1,
-      "profundidad": 40.05,
-      "latitud": 4.506,
-      "longitud": -76.739,
-      "distancia_km": 296.4643197758785,
+      "magnitud": 3.2,
+      "profundidad": 42.48,
+      "latitud": 4.503,
+      "longitud": -76.738,
+      "distancia_km": 296.38027507866946,
       "lugar": "Istmina - Choco, Colombia",
       "hora_local": "2026-09-21 16:12:54",
       "candidato_acelerografico": false,
@@ -41153,13 +41153,13 @@
     },
     "SGC2026sqlmag": {
       "id": "SGC2026sqlmag",
-      "magnitud": 2.7,
-      "profundidad": 8.75,
-      "latitud": 8.396,
-      "longitud": -73.312,
-      "distancia_km": 418.26510514829306,
-      "lugar": "Teorama - Norte de Santander, Colombia",
-      "hora_local": "2026-09-21 16:51:57",
+      "magnitud": 2.4,
+      "profundidad": 16.54,
+      "latitud": 8.184,
+      "longitud": -73.284,
+      "distancia_km": 395.87273571866604,
+      "lugar": "Ocana - Norte de Santander, Colombia",
+      "hora_local": "2026-09-21 16:51:58",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -41168,7 +41168,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-21 16:51:57",
+      "fecha_local": "2026-09-21 16:51:58",
       "lat": 8.396,
       "lon": -73.312,
       "distancia_bogota": 418.3,
