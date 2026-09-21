@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-21T16:30:24.648353-05:00",
+  "actualizado": "2026-09-21T16:35:18.794844-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1586,
-    "eventos_m4_o_mayores": 25,
-    "candidatos_acelerograficos": 25,
+    "total_eventos": 1587,
+    "eventos_m4_o_mayores": 24,
+    "candidatos_acelerograficos": 24,
     "alertas_telegram": 18,
-    "porcentaje_m4_o_mayores": 1.58,
-    "eventos_mayor_igual_4": 25,
-    "total_candidatos_acelerograficos": 25,
+    "porcentaje_m4_o_mayores": 1.51,
+    "eventos_mayor_igual_4": 24,
+    "total_candidatos_acelerograficos": 24,
     "total_alertas": 7,
     "porcentaje_alertas": 0.44
   },
@@ -40473,14 +40473,14 @@
     },
     "SGC2026sqfiwd": {
       "id": "SGC2026sqfiwd",
-      "magnitud": 4.0,
-      "profundidad": 140.77,
-      "latitud": 5.178,
-      "longitud": -73.757,
-      "distancia_km": 62.57013271396739,
-      "lugar": "Suesca - Cundinamarca, Colombia",
-      "hora_local": "2026-09-21 13:47:15",
-      "candidato_acelerografico": true,
+      "magnitud": 2.4,
+      "profundidad": 138.35,
+      "latitud": 5.277,
+      "longitud": -73.71,
+      "distancia_km": 74.63140814405907,
+      "lugar": "Lenguazaque - Cundinamarca, Colombia",
+      "hora_local": "2026-09-21 13:47:14",
+      "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "NO DISPONIBLE",
         "estaciones": [],
@@ -40488,7 +40488,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-21 13:47:15",
+      "fecha_local": "2026-09-21 13:47:14",
       "alerta_pga": {
         "estado": "SIN_DATOS",
         "porcentaje_ns": null,
@@ -40982,6 +40982,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-21T16:25:16.638326-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sqklii": {
+      "id": "SGC2026sqklii",
+      "magnitud": 2.7,
+      "profundidad": 7.18,
+      "latitud": 4.542,
+      "longitud": -76.777,
+      "distancia_km": 300.3792511066345,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-09-21 16:20:59",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-21 16:20:59",
+      "lat": 4.542,
+      "lon": -76.777,
+      "distancia_bogota": 300.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-21T16:35:14.162709-05:00",
       "alerta_enviada": false
     }
   }
