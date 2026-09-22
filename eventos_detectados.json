@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-22T14:15:56.587159-05:00",
+  "actualizado": "2026-09-22T14:21:02.424045-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1729,
+    "total_eventos": 1730,
     "eventos_m4_o_mayores": 27,
     "candidatos_acelerograficos": 27,
     "alertas_telegram": 21,
@@ -45065,6 +45065,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-22T14:15:52.648701-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ssbxul": {
+      "id": "SGC2026ssbxul",
+      "magnitud": 3.5,
+      "profundidad": 146.67,
+      "latitud": 2.878,
+      "longitud": -75.431,
+      "distancia_km": 253.5208151386092,
+      "lugar": "Palermo - Huila, Colombia",
+      "hora_local": "2026-09-22 14:12:51",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-22 14:12:51",
+      "lat": 2.878,
+      "lon": -75.431,
+      "distancia_bogota": 253.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-22T14:20:57.480060-05:00",
       "alerta_enviada": false
     }
   }
