@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-22T12:40:26.844245-05:00",
+  "actualizado": "2026-09-22T12:45:20.561054-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1705,
@@ -44369,13 +44369,13 @@
     },
     "SGC2026srynnp": {
       "id": "SGC2026srynnp",
-      "magnitud": 3.9,
-      "profundidad": 7.44,
-      "latitud": 5.351,
-      "longitud": -76.824,
-      "distancia_km": 313.0136941996029,
-      "lugar": "El Canton del San Pablo (Managru) - Choco, Colombia",
-      "hora_local": "2026-09-22 12:30:25",
+      "magnitud": 3.0,
+      "profundidad": 18.97,
+      "latitud": 3.845,
+      "longitud": -75.633,
+      "distancia_km": 198.06309227270833,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-22 12:30:50",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -44384,7 +44384,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-22 12:30:25",
+      "fecha_local": "2026-09-22 12:30:50",
       "lat": 5.351,
       "lon": -76.824,
       "distancia_bogota": 313.0,
