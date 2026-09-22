@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-22T15:30:24.378734-05:00",
+  "actualizado": "2026-09-22T15:35:40.419541-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1736,
+    "total_eventos": 1737,
     "eventos_m4_o_mayores": 27,
     "candidatos_acelerograficos": 27,
     "alertas_telegram": 21,
-    "porcentaje_m4_o_mayores": 1.56,
+    "porcentaje_m4_o_mayores": 1.55,
     "eventos_mayor_igual_4": 27,
     "total_candidatos_acelerograficos": 27,
     "total_alertas": 7,
@@ -45261,6 +45261,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-22T15:30:19.373127-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ssekri": {
+      "id": "SGC2026ssekri",
+      "magnitud": 3.6,
+      "profundidad": 10.0,
+      "latitud": 3.252,
+      "longitud": -75.565,
+      "distancia_km": 231.8237984109486,
+      "lugar": "Ataco - Tolima, Colombia",
+      "hora_local": "2026-09-22 15:28:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-22 15:28:09",
+      "lat": 3.252,
+      "lon": -75.565,
+      "distancia_bogota": 231.8,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-22T15:35:35.997829-05:00",
       "alerta_enviada": false
     }
   }
