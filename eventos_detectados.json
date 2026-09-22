@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-22T09:35:24.269635-05:00",
+  "actualizado": "2026-09-22T09:40:26.738005-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1692,
@@ -43669,13 +43669,13 @@
     },
     "SGC2026srnlyx": {
       "id": "SGC2026srnlyx",
-      "magnitud": 2.8,
-      "profundidad": 10.52,
-      "latitud": 4.07,
-      "longitud": -75.612,
-      "distancia_km": 185.00678153748356,
-      "lugar": "Roncesvalles - Tolima, Colombia",
-      "hora_local": "2026-09-22 06:56:42",
+      "magnitud": 2.7,
+      "profundidad": 3.47,
+      "latitud": 3.84,
+      "longitud": -75.676,
+      "distancia_km": 202.50874064892534,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-22 06:56:45",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -43684,7 +43684,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-22 06:56:42",
+      "fecha_local": "2026-09-22 06:56:45",
       "lat": 4.07,
       "lon": -75.612,
       "distancia_bogota": 185.0,
