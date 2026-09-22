@@ -214,5 +214,12 @@ jobs:
             echo "No hay cambios que guardar."
           else
             git commit -m "Actualizar monitor sísmico"
-            git push
+            if git push; then
+              echo "Push exitoso al primer intento."
+            else
+              echo "Push rechazado. Sincronizando con origin/main y reintentando..."
+              git fetch origin main
+              git rebase origin/main
+              git push
+            fi
           fi
