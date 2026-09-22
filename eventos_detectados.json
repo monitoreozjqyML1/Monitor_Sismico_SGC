@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-22T14:21:02.424045-05:00",
+  "actualizado": "2026-09-22T14:25:24.131453-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1730,
@@ -45069,7 +45069,7 @@
     },
     "SGC2026ssbxul": {
       "id": "SGC2026ssbxul",
-      "magnitud": 3.5,
+      "magnitud": 3.4,
       "profundidad": 146.67,
       "latitud": 2.878,
       "longitud": -75.431,
