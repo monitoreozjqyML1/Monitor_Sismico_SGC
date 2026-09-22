@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-22T15:35:40.419541-05:00",
+  "actualizado": "2026-09-22T15:40:25.035227-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1737,
@@ -45266,12 +45266,12 @@
     "SGC2026ssekri": {
       "id": "SGC2026ssekri",
       "magnitud": 3.6,
-      "profundidad": 10.0,
-      "latitud": 3.252,
-      "longitud": -75.565,
-      "distancia_km": 231.8237984109486,
-      "lugar": "Ataco - Tolima, Colombia",
-      "hora_local": "2026-09-22 15:28:09",
+      "profundidad": 17.35,
+      "latitud": 3.857,
+      "longitud": -75.625,
+      "distancia_km": 196.63941640787212,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-22 15:27:59",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -45280,7 +45280,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-22 15:28:09",
+      "fecha_local": "2026-09-22 15:27:59",
       "lat": 3.252,
       "lon": -75.565,
       "distancia_bogota": 231.8,
