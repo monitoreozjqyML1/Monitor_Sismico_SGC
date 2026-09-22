@@ -246,6 +246,75 @@ body {
     background: #f8fbfd;
 }
 
+/* ================================================================
+   AJUSTE VISUAL PGA + EVENTO SELECCIONADO
+   SOLO PRESENTACIÓN — no modifica lógica sísmica ni PGA.
+================================================================ */
+.candidate.pga-selected {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.16);
+    background: #eff6ff;
+}
+
+.pga-badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    vertical-align: middle;
+}
+
+.pga-badge.verde,
+.selected-pga .pga-estado.verde {
+    background: #16a34a;
+    color: #fff;
+}
+
+.pga-badge.amarillo,
+.selected-pga .pga-estado.amarillo {
+    background: #facc15;
+    color: #1f2937;
+}
+
+.pga-badge.naranja,
+.selected-pga .pga-estado.naranja {
+    background: #f97316;
+    color: #fff;
+}
+
+.pga-badge.rojo,
+.selected-pga .pga-estado.rojo {
+    background: #dc2626;
+    color: #fff;
+}
+
+.pga-badge.sin-datos,
+.selected-pga .pga-estado.sin-datos {
+    background: #64748b;
+    color: #fff;
+}
+
+.selected-pga .pga-estado {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+tbody tr.evento-selected {
+    background: #eff6ff;
+    box-shadow: inset 4px 0 0 #2563eb;
+}
+
+tbody tr.evento-selected:hover {
+    background: #e8f1ff;
+}
+
 .candidate-main {
     min-width: 0;
 }
@@ -1851,6 +1920,9 @@ function mostrarAlertas(eventos) {
 
         const tarjeta = document.createElement("div");
         tarjeta.className = "candidate";
+        tarjeta.dataset.eventoClave = obtenerClaveEvento(evento);
+
+        const clasePGA = claseEstadoPGA(evaluacion.estado);
 
         tarjeta.innerHTML = `
             <div class="candidate-head">
@@ -1872,8 +1944,9 @@ function mostrarAlertas(eventos) {
                         Distancia:
                         ${formatearNumero(distancia, 2)} km
                         &nbsp;•&nbsp;
-                        PGA:
-                        ${escaparHTML(evaluacion.estado)}
+                        <span class="pga-badge ${clasePGA}">
+                            PGA: ${escaparHTML(evaluacion.estado)}
+                        </span>
                     </div>
 
                 </div>
@@ -1886,6 +1959,57 @@ function mostrarAlertas(eventos) {
         });
 
         contenedor.appendChild(tarjeta);
+    });
+
+    actualizarSeleccionVisual();
+}
+
+function obtenerClaveEvento(evento) {
+    return String(
+        evento?.id ??
+        evento?.codigo ??
+        evento?.event_id ??
+        [
+            obtenerFecha(evento),
+            obtenerLugar(evento),
+            obtenerMagnitud(evento),
+            obtenerProfundidad(evento)
+        ].join("|")
+    );
+}
+
+function claseEstadoPGA(estado) {
+    const normalizado = String(estado ?? "SIN_DATOS")
+        .trim()
+        .toUpperCase();
+
+    if (normalizado === "VERDE") return "verde";
+    if (normalizado === "AMARILLO") return "amarillo";
+    if (normalizado === "NARANJA") return "naranja";
+    if (normalizado === "ROJO") return "rojo";
+    return "sin-datos";
+}
+
+function actualizarSeleccionVisual() {
+    const clave = eventoSeleccionado
+        ? obtenerClaveEvento(eventoSeleccionado)
+        : "";
+
+    document.querySelectorAll(".candidate[data-evento-clave]")
+        .forEach(tarjeta => {
+            tarjeta.classList.toggle(
+                "pga-selected",
+                tarjeta.dataset.eventoClave === clave
+            );
+        });
+
+    document.querySelectorAll(
+        "#tablaEventos tbody tr[data-evento-clave]"
+    ).forEach(fila => {
+        fila.classList.toggle(
+            "evento-selected",
+            fila.dataset.eventoClave === clave
+        );
     });
 }
 
@@ -1990,10 +2114,8 @@ function seleccionarEvento(evento) {
                 EVALUACIÓN PGA BOG.11
             </span>
 
-            <span class="value">
-                ${escaparHTML(
-                    obtenerEvaluacionPGA(evento).estado
-                )}
+            <span class="value pga-estado ${claseEstadoPGA(clasificacion)}">
+                ${escaparHTML(clasificacion)}
             </span>
 
             <div class="candidate-meta">
@@ -2059,6 +2181,8 @@ function seleccionarEvento(evento) {
             criterios independientes de alerta.
         </div>
     `;
+
+    actualizarSeleccionVisual();
 }
 
 
@@ -2162,6 +2286,8 @@ function mostrarTabla() {
         const fila =
             document.createElement("tr");
 
+        fila.dataset.eventoClave = obtenerClaveEvento(evento);
+
         fila.innerHTML = `
 
             <td>
@@ -2200,6 +2326,8 @@ function mostrarTabla() {
 
         tbody.appendChild(fila);
     });
+
+    actualizarSeleccionVisual();
 
     if (!pagina.length) {
 
