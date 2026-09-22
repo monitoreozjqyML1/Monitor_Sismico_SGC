@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-22T06:55:21.744192-05:00",
+  "actualizado": "2026-09-22T07:05:22.730018-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1678,
+    "total_eventos": 1680,
     "eventos_m4_o_mayores": 27,
     "candidatos_acelerograficos": 27,
     "alertas_telegram": 21,
@@ -42274,10 +42274,10 @@
     "SGC2026sqxmnx": {
       "id": "SGC2026sqxmnx",
       "magnitud": 2.9,
-      "profundidad": 16.2,
-      "latitud": 3.86,
-      "longitud": -75.617,
-      "distancia_km": 195.70131283887883,
+      "profundidad": 15.97,
+      "latitud": 3.857,
+      "longitud": -75.623,
+      "distancia_km": 196.44525232930857,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-21 22:54:36",
       "candidato_acelerografico": false,
@@ -43637,6 +43637,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-22T06:45:20.965776-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026srngwq": {
+      "id": "SGC2026srngwq",
+      "magnitud": 3.2,
+      "profundidad": 18.97,
+      "latitud": 3.864,
+      "longitud": -75.617,
+      "distancia_km": 195.48625786966332,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-22 06:50:47",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-22 06:50:47",
+      "lat": 3.864,
+      "lon": -75.617,
+      "distancia_bogota": 195.5,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-22T07:05:17.782836-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026srnlyx": {
+      "id": "SGC2026srnlyx",
+      "magnitud": 2.8,
+      "profundidad": 10.52,
+      "latitud": 4.07,
+      "longitud": -75.612,
+      "distancia_km": 185.00678153748356,
+      "lugar": "Roncesvalles - Tolima, Colombia",
+      "hora_local": "2026-09-22 06:56:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-22 06:56:42",
+      "lat": 4.07,
+      "lon": -75.612,
+      "distancia_bogota": 185.0,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-22T07:05:17.782836-05:00",
       "alerta_enviada": false
     }
   }
