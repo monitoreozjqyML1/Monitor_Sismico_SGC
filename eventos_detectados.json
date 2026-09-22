@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-22T17:55:22.260370-05:00",
+  "actualizado": "2026-09-22T18:00:22.123516-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1751,
+    "total_eventos": 1752,
     "eventos_m4_o_mayores": 28,
     "candidatos_acelerograficos": 28,
     "alertas_telegram": 22,
@@ -45692,6 +45692,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-22T17:55:17.326475-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ssiwiv": {
+      "id": "SGC2026ssiwiv",
+      "magnitud": 2.8,
+      "profundidad": 23.62,
+      "latitud": 3.849,
+      "longitud": -74.97,
+      "distancia_km": 138.20247798518355,
+      "lugar": "Purificacion - Tolima, Colombia",
+      "hora_local": "2026-09-22 17:42:22",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-22 17:42:22",
+      "lat": 3.849,
+      "lon": -74.97,
+      "distancia_bogota": 138.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-22T18:00:16.691208-05:00",
       "alerta_enviada": false
     }
   }
