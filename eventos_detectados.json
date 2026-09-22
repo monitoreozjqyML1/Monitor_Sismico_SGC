@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-22T12:35:21.183562-05:00",
+  "actualizado": "2026-09-22T12:40:26.844245-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1704,
+    "total_eventos": 1705,
     "eventos_m4_o_mayores": 27,
     "candidatos_acelerograficos": 27,
     "alertas_telegram": 21,
@@ -44365,6 +44365,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-22T12:30:26.659780-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026srynnp": {
+      "id": "SGC2026srynnp",
+      "magnitud": 3.9,
+      "profundidad": 7.44,
+      "latitud": 5.351,
+      "longitud": -76.824,
+      "distancia_km": 313.0136941996029,
+      "lugar": "El Canton del San Pablo (Managru) - Choco, Colombia",
+      "hora_local": "2026-09-22 12:30:25",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-22 12:30:25",
+      "lat": 5.351,
+      "lon": -76.824,
+      "distancia_bogota": 313.0,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-22T12:40:21.796160-05:00",
       "alerta_enviada": false
     }
   }
