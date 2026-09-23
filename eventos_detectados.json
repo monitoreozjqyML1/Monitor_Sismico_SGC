@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-23T15:45:24.305152-05:00",
+  "actualizado": "2026-09-23T15:50:20.370284-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1920,
@@ -49092,13 +49092,13 @@
     },
     "SGC2026stpjul": {
       "id": "SGC2026stpjul",
-      "magnitud": 2.3,
-      "profundidad": 10.07,
-      "latitud": 3.816,
-      "longitud": -75.03,
-      "distancia_km": 145.55526546522998,
-      "lugar": "Purificacion - Tolima, Colombia",
-      "hora_local": "2026-09-23 10:03:29",
+      "magnitud": 2.4,
+      "profundidad": 17.99,
+      "latitud": 3.875,
+      "longitud": -75.625,
+      "distancia_km": 195.67897801735668,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-23 10:03:28",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -49107,7 +49107,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-23 10:03:29",
+      "fecha_local": "2026-09-23 10:03:28",
       "lat": 3.816,
       "lon": -75.03,
       "distancia_bogota": 145.6,
