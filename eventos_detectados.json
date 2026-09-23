@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-23T15:25:32.010014-05:00",
+  "actualizado": "2026-09-23T15:35:23.126121-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1919,
+    "total_eventos": 1920,
     "eventos_m4_o_mayores": 33,
     "candidatos_acelerograficos": 33,
     "alertas_telegram": 27,
@@ -50436,13 +50436,13 @@
     },
     "SGC2026stpecf": {
       "id": "SGC2026stpecf",
-      "magnitud": 2.7,
-      "profundidad": 35.55,
-      "latitud": 3.866,
-      "longitud": -75.631,
-      "distancia_km": 196.741496166684,
+      "magnitud": 2.6,
+      "profundidad": 19.2,
+      "latitud": 3.876,
+      "longitud": -75.615,
+      "distancia_km": 194.65082132989133,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-23 09:57:05",
+      "hora_local": "2026-09-23 09:57:06",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -50451,7 +50451,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-23 09:57:05",
+      "fecha_local": "2026-09-23 09:57:06",
       "lat": 3.866,
       "lon": -75.631,
       "distancia_bogota": 196.7,
@@ -50501,21 +50501,36 @@
       "hora_local": "2026-09-23 15:09:40",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 197.0,
+            "distanceHipocentral": 197.0,
+            "pgaE": 0.173478,
+            "pgaN": 0.209842,
+            "pgaZ": 0.089073
+          }
+        ],
+        "pga_maximo_cm_s2": 0.209842,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "NS"
       },
       "fecha_local": "2026-09-23 15:09:40",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 3.7471785714285715,
+        "porcentaje_ew": 4.688594594594594,
+        "porcentaje_maximo": 4.688594594594594,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00209842,
+        "pga_ew_m_s2": 0.00173478,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -50527,7 +50542,36 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-23T15:25:21.805115-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
+    },
+    "SGC2026suacbm": {
+      "id": "SGC2026suacbm",
+      "magnitud": 2.9,
+      "profundidad": 10.0,
+      "latitud": 3.974,
+      "longitud": -75.663,
+      "distancia_km": 194.49848636184814,
+      "lugar": "Roncesvalles - Tolima, Colombia",
+      "hora_local": "2026-09-23 15:26:24",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-23 15:26:24",
+      "lat": 3.974,
+      "lon": -75.663,
+      "distancia_bogota": 194.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-23T15:35:17.523217-05:00",
+      "alerta_enviada": false
     }
   }
 }
