@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-23T13:00:21.410012-05:00",
+  "actualizado": "2026-09-23T13:05:23.039854-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1891,
+    "total_eventos": 1893,
     "eventos_m4_o_mayores": 32,
     "candidatos_acelerograficos": 32,
     "alertas_telegram": 26,
@@ -47753,10 +47753,10 @@
     "SGC2026sszuhh": {
       "id": "SGC2026sszuhh",
       "magnitud": 3.2,
-      "profundidad": 18.51,
-      "latitud": 3.854,
-      "longitud": -75.633,
-      "distancia_km": 197.57761743386826,
+      "profundidad": 18.97,
+      "latitud": 3.852,
+      "longitud": -75.645,
+      "distancia_km": 198.85117941345325,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-23 02:13:03",
       "candidato_acelerografico": false,
@@ -49732,6 +49732,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-23T12:55:18.599366-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026stutnt": {
+      "id": "SGC2026stutnt",
+      "magnitud": 2.7,
+      "profundidad": 18.97,
+      "latitud": 3.858,
+      "longitud": -75.637,
+      "distancia_km": 197.75216626959292,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-23 12:45:38",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-23 12:45:38",
+      "lat": 3.858,
+      "lon": -75.637,
+      "distancia_bogota": 197.8,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-23T13:05:18.316976-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026stvbvx": {
+      "id": "SGC2026stvbvx",
+      "magnitud": 3.1,
+      "profundidad": 7.01,
+      "latitud": 6.94,
+      "longitud": -76.282,
+      "distancia_km": 348.11564710861614,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-09-23 12:55:18",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-23 12:55:18",
+      "lat": 6.94,
+      "lon": -76.282,
+      "distancia_bogota": 348.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-23T13:05:18.316976-05:00",
       "alerta_enviada": false
     }
   }
