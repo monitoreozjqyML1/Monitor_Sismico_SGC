@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T18:00:24.799866-05:00",
+  "actualizado": "2026-09-24T18:05:22.154223-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2131,
@@ -56540,12 +56540,12 @@
     "SGC2026swarec": {
       "id": "SGC2026swarec",
       "magnitud": 2.3,
-      "profundidad": 81.75,
-      "latitud": 10.675,
-      "longitud": -74.886,
-      "distancia_km": 669.1979946238565,
+      "profundidad": 77.72,
+      "latitud": 10.653,
+      "longitud": -74.893,
+      "distancia_km": 666.8782900037254,
       "lugar": "Sabanalarga - Atlantico, Colombia",
-      "hora_local": "2026-09-24 17:52:51",
+      "hora_local": "2026-09-24 17:52:50",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -56554,7 +56554,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-24 17:52:51",
+      "fecha_local": "2026-09-24 17:52:50",
       "lat": 10.675,
       "lon": -74.886,
       "distancia_bogota": 669.2,
