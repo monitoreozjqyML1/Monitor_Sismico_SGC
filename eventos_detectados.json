@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T17:30:23.005212-05:00",
+  "actualizado": "2026-09-24T17:35:25.128437-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2127,
@@ -54859,11 +54859,11 @@
       "id": "SGC2026svkcvh",
       "magnitud": 3.4,
       "profundidad": 15.97,
-      "latitud": 3.84,
-      "longitud": -75.623,
-      "distancia_km": 197.36756305476376,
+      "latitud": 3.852,
+      "longitud": -75.622,
+      "distancia_km": 196.61815640223094,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-24 09:33:27",
+      "hora_local": "2026-09-24 09:33:28",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -54872,7 +54872,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-24 09:33:27",
+      "fecha_local": "2026-09-24 09:33:28",
       "lat": 3.84,
       "lon": -75.623,
       "distancia_bogota": 197.4,
