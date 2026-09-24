@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T12:30:29.899112-05:00",
+  "actualizado": "2026-09-24T12:35:20.558694-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2093,
@@ -53934,10 +53934,10 @@
     "SGC2026svbkdh": {
       "id": "SGC2026svbkdh",
       "magnitud": 2.9,
-      "profundidad": 18.91,
-      "latitud": 3.885,
-      "longitud": -75.61,
-      "distancia_km": 193.68631187435525,
+      "profundidad": 17.24,
+      "latitud": 3.866,
+      "longitud": -75.622,
+      "distancia_km": 195.865295036675,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-24 05:10:25",
       "candidato_acelerografico": false,
@@ -55425,11 +55425,26 @@
       "hora_local": "2026-09-24 12:14:32",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 194.0,
+            "distanceHipocentral": 195.0,
+            "pgaE": 0.060055,
+            "pgaN": 0.054744,
+            "pgaZ": 0.026243
+          }
+        ],
+        "pga_maximo_cm_s2": 0.060055,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "fecha_local": "2026-09-24 12:14:32",
       "lat": 3.858,
@@ -55444,7 +55459,19 @@
       "magnitud_anterior_actualizacion": 3.9,
       "actualizacion_pga_pendiente": true,
       "alerta_actualizacion_enviada": true,
-      "ciclo_cerrado": false
+      "ciclo_cerrado": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.9775714285714286,
+        "porcentaje_ew": 1.623108108108108,
+        "porcentaje_maximo": 1.623108108108108,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.0005474400000000001,
+        "pga_ew_m_s2": 0.0006005499999999999,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "reporte_pga_actualizado_enviado": true
     },
     "SGC2026svpkan": {
       "id": "SGC2026svpkan",
