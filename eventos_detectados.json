@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T08:20:21.000396-05:00",
+  "actualizado": "2026-09-24T08:25:30.044965-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2062,
@@ -54549,13 +54549,13 @@
     },
     "SGC2026svhhmf": {
       "id": "SGC2026svhhmf",
-      "magnitud": 3.9,
-      "profundidad": 0.55,
-      "latitud": 3.107,
-      "longitud": -74.659,
-      "distancia_km": 189.86819697632237,
-      "lugar": "Uribe - Meta, Colombia",
-      "hora_local": "2026-09-24 08:08:26",
+      "magnitud": 3.2,
+      "profundidad": 15.85,
+      "latitud": 3.863,
+      "longitud": -75.642,
+      "distancia_km": 197.97293262078983,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-24 08:08:21",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -54564,7 +54564,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-24 08:08:26",
+      "fecha_local": "2026-09-24 08:08:21",
       "lat": 3.107,
       "lon": -74.659,
       "distancia_bogota": 189.9,
