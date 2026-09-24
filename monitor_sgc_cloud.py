@@ -743,9 +743,12 @@ def enviar_alerta_telegram(resultado):
 
     hora_local = resultado.get("hora_local") or resultado.get("fecha_local")
 
+    event_id = resultado.get("id")
+
     mensaje = (
         "🚨 MONITOR SÍSMICO ML1\n\n"
         "ALERTA SÍSMICA\n"
+        f"ID SGC: {event_id}\n"
         f"Magnitud: {magnitud}\n"
         f"Profundidad: {profundidad} km\n"
     )
