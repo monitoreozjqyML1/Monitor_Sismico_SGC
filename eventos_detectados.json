@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T15:25:24.858309-05:00",
+  "actualizado": "2026-09-24T15:30:22.915354-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2111,
@@ -55980,12 +55980,12 @@
     "SGC2026svuyho": {
       "id": "SGC2026svuyho",
       "magnitud": 2.7,
-      "profundidad": 157.5,
-      "latitud": 6.698,
-      "longitud": -72.963,
-      "distancia_km": 252.7329418355567,
+      "profundidad": 166.31,
+      "latitud": 6.662,
+      "longitud": -73.046,
+      "distancia_km": 244.85216580668626,
       "lugar": "Aratoca - Santander, Colombia",
-      "hora_local": "2026-09-24 15:00:09",
+      "hora_local": "2026-09-24 15:00:08",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -55994,7 +55994,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-24 15:00:09",
+      "fecha_local": "2026-09-24 15:00:08",
       "lat": 6.698,
       "lon": -72.963,
       "distancia_bogota": 252.7,
