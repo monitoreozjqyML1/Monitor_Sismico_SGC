@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-24T07:20:19.786834-05:00",
+  "actualizado": "2026-09-24T07:25:24.902425-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2054,
+    "total_eventos": 2055,
     "eventos_m4_o_mayores": 34,
     "candidatos_acelerograficos": 34,
     "alertas_telegram": 28,
-    "porcentaje_m4_o_mayores": 1.66,
+    "porcentaje_m4_o_mayores": 1.65,
     "eventos_mayor_igual_4": 34,
     "total_candidatos_acelerograficos": 34,
     "total_alertas": 7,
@@ -53402,10 +53402,10 @@
     "SGC2026suwjsn": {
       "id": "SGC2026suwjsn",
       "magnitud": 3.6,
-      "profundidad": 42.19,
-      "latitud": 4.476,
-      "longitud": -76.764,
-      "distancia_km": 299.5058779111356,
+      "profundidad": 41.03,
+      "latitud": 4.477,
+      "longitud": -76.758,
+      "distancia_km": 298.8334859826124,
       "lugar": "Istmina - Choco, Colombia",
       "hora_local": "2026-09-24 02:39:04",
       "candidato_acelerografico": false,
@@ -54349,6 +54349,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-24T07:20:15.441067-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026svfowg": {
+      "id": "SGC2026svfowg",
+      "magnitud": 3.4,
+      "profundidad": 103.53,
+      "latitud": 6.354,
+      "longitud": -73.583,
+      "distancia_km": 190.5437109983494,
+      "lugar": "Santa Helena del Opon - Santander, Colombia",
+      "hora_local": "2026-09-24 07:16:35",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-24 07:16:35",
+      "lat": 6.354,
+      "lon": -73.583,
+      "distancia_bogota": 190.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-24T07:25:20.158244-05:00",
       "alerta_enviada": false
     }
   }
