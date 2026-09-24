@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-09-24T12:10:30.341699-05:00",
+  "actualizado": "2026-09-24T12:15:25.677832-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2089,
+    "total_eventos": 2090,
     "eventos_m4_o_mayores": 35,
     "candidatos_acelerograficos": 35,
     "alertas_telegram": 29,
-    "porcentaje_m4_o_mayores": 1.68,
+    "porcentaje_m4_o_mayores": 1.67,
     "eventos_mayor_igual_4": 35,
     "total_candidatos_acelerograficos": 35,
     "total_alertas": 7,
-    "porcentaje_alertas": 0.34
+    "porcentaje_alertas": 0.33
   },
   "eventos": {
     "SGC2026rijgnt": {
@@ -52954,12 +52954,12 @@
     "SGC2026susqjd": {
       "id": "SGC2026susqjd",
       "magnitud": 2.9,
-      "profundidad": 18.97,
-      "latitud": 3.872,
-      "longitud": -75.625,
-      "distancia_km": 195.8379579834154,
+      "profundidad": 16.02,
+      "latitud": 3.859,
+      "longitud": -75.641,
+      "distancia_km": 198.0881645213739,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-24 00:46:05",
+      "hora_local": "2026-09-24 00:46:04",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -52968,7 +52968,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-24 00:46:05",
+      "fecha_local": "2026-09-24 00:46:04",
       "lat": 3.872,
       "lon": -75.625,
       "distancia_bogota": 195.8,
@@ -55357,6 +55357,34 @@
       "fecha_deteccion": "2026-09-24T11:55:17.769379-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
+    },
+    "SGC2026svjnmy": {
+      "id": "SGC2026svjnmy",
+      "magnitud": 2.3,
+      "profundidad": 19.14,
+      "latitud": 3.873,
+      "longitud": -75.623,
+      "distancia_km": 195.5899074695261,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-24 09:15:41",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-24 09:15:41",
+      "lat": 3.873,
+      "lon": -75.623,
+      "distancia_bogota": 195.6,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-24T12:15:20.015852-05:00",
+      "alerta_enviada": false
     }
   }
 }
