@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T12:05:19.188253-05:00",
+  "actualizado": "2026-09-24T12:10:30.341699-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2089,
@@ -55277,13 +55277,13 @@
     },
     "SGC2026svoiio": {
       "id": "SGC2026svoiio",
-      "magnitud": 3.4,
-      "profundidad": 3.12,
-      "latitud": 3.855,
-      "longitud": -75.662,
-      "distancia_km": 200.3475490075241,
+      "magnitud": 3.2,
+      "profundidad": 18.97,
+      "latitud": 3.881,
+      "longitud": -75.624,
+      "distancia_km": 195.2646170034519,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-24 11:40:34",
+      "hora_local": "2026-09-24 11:40:33",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -55292,7 +55292,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-24 11:40:34",
+      "fecha_local": "2026-09-24 11:40:33",
       "lat": 3.855,
       "lon": -75.662,
       "distancia_bogota": 200.3,
@@ -55314,21 +55314,36 @@
       "hora_local": "2026-09-24 11:46:32",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 190.0,
+            "distanceHipocentral": 191.0,
+            "pgaE": 0.111301,
+            "pgaN": 0.119128,
+            "pgaZ": 0.058492
+          }
+        ],
+        "pga_maximo_cm_s2": 0.119128,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "NS"
       },
       "fecha_local": "2026-09-24 11:46:32",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 2.1272857142857147,
+        "porcentaje_ew": 3.0081351351351353,
+        "porcentaje_maximo": 3.0081351351351353,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00119128,
+        "pga_ew_m_s2": 0.00111301,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -55340,7 +55355,8 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-24T11:55:17.769379-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
     }
   }
 }
