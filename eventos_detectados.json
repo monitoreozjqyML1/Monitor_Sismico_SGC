@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25T08:30:18.748185-05:00",
+  "actualizado": "2026-09-25T08:40:22.527558-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2243,
@@ -58580,12 +58580,12 @@
     "SGC2026swoopg": {
       "id": "SGC2026swoopg",
       "magnitud": 3.4,
-      "profundidad": 19.08,
-      "latitud": 3.868,
-      "longitud": -75.632,
-      "distancia_km": 196.73267173126564,
+      "profundidad": 1.84,
+      "latitud": 3.844,
+      "longitud": -75.659,
+      "distancia_km": 200.6408076612652,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-25 00:52:18",
+      "hora_local": "2026-09-25 00:52:20",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -58594,7 +58594,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-25 00:52:18",
+      "fecha_local": "2026-09-25 00:52:20",
       "lat": 3.868,
       "lon": -75.632,
       "distancia_bogota": 196.7,
@@ -59558,10 +59558,10 @@
     "SGC2026sxbaps": {
       "id": "SGC2026sxbaps",
       "magnitud": 3.6,
-      "profundidad": 15.97,
-      "latitud": 3.855,
-      "longitud": -75.646,
-      "distancia_km": 198.78820936612382,
+      "profundidad": 13.19,
+      "latitud": 3.857,
+      "longitud": -75.64,
+      "distancia_km": 198.09749429110133,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-25 07:08:18",
       "candidato_acelerografico": false,
@@ -59754,12 +59754,12 @@
     "SGC2026sxddmj": {
       "id": "SGC2026sxddmj",
       "magnitud": 2.6,
-      "profundidad": 8.29,
-      "latitud": 3.761,
-      "longitud": -75.572,
-      "distancia_km": 197.03392171507176,
+      "profundidad": 17.12,
+      "latitud": 3.848,
+      "longitud": -75.634,
+      "distancia_km": 197.99782065677726,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-25 08:12:01",
+      "hora_local": "2026-09-25 08:11:59",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -59768,7 +59768,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-25 08:12:01",
+      "fecha_local": "2026-09-25 08:11:59",
       "lat": 3.761,
       "lon": -75.572,
       "distancia_bogota": 197.0,
