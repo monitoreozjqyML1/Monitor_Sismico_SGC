@@ -782,7 +782,7 @@ def enviar_alerta_telegram(resultado):
     )
 
     mensaje += (
-        "\n📊 EVALUACIÓN PGA BOG.11\n"
+        "\n📊 EVALUACIÓN PGA\n"
     )
 
     if estado_pga == "VERDE":
@@ -912,13 +912,13 @@ def enviar_alerta_telegram(resultado):
     elif estado_pga == "SIN_DATOS":
         mensaje += (
             "El SGC no reportó datos PGA válidos "
-            "para BOG.11 en esta consulta.\n"
+            "para esta consulta.\n"
         )
 
     mensaje += (
         "\nFuente: SGC\n"
         f"{URL_MONITOR}\n\n"
-        "Desarrollado por: ML1 - TQMD - ZJQY"
+        "Desarrollado por: ML1 - TQMD - Sbg.MCG"
     )
 
     url_telegram = (
@@ -1013,7 +1013,7 @@ def enviar_reporte_pga_actualizado_telegram(
             f"Magnitud actual: {magnitud}\n"
             f"Profundidad: {profundidad} km\n"
             f"Ubicaci\u00f3n: {lugar}\n\n"
-            "\U0001f4ca EVALUACI\u00d3N PGA - BOG.11\n\n"
+            "\U0001f4ca EVALUACI\u00d3N PGA\n\n"
         )
     else:
         mensaje = (
@@ -1024,7 +1024,6 @@ def enviar_reporte_pga_actualizado_telegram(
             f"Magnitud: {magnitud}\n"
             f"Profundidad: {profundidad} km\n"
             f"Ubicaci\u00f3n: {lugar}\n\n"
-            "\U0001f4e1 BOG.11\n\n"
         )
 
     pga_horizontal = acelerografia.get(
@@ -1127,7 +1126,7 @@ def enviar_reporte_pga_actualizado_telegram(
     mensaje += (
         "\nFuente: SGC\n"
         f"{URL_MONITOR}\n\n"
-        "Desarrollado por: ML1 - TQMD - ZJQY"
+        "Desarrollado por: ML1 - TQMD - Sbg.MCG"
     )
 
     url_telegram = (
@@ -2324,7 +2323,7 @@ def enviar_evento_actualizado_telegram(
         f"Hora local: {hora_local}\n\n"
         "Fuente: SGC\n"
         f"{URL_MONITOR}\n\n"
-        "Desarrollado por: ML1 - TQMD - ZJQY"
+        "Desarrollado por: ML1 - TQMD - Sbg.MCG"
     )
 
     url_telegram = (
