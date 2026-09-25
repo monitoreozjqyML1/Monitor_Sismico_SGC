@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-25T10:10:20.470262-05:00",
+  "actualizado": "2026-09-25T10:15:24.744584-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2253,
+    "total_eventos": 2254,
     "eventos_m4_o_mayores": 39,
     "candidatos_acelerograficos": 39,
     "alertas_telegram": 32,
@@ -59417,11 +59417,11 @@
     },
     "SGC2026swxoiz": {
       "id": "SGC2026swxoiz",
-      "magnitud": 2.9,
-      "profundidad": 146.58,
-      "latitud": 6.821,
-      "longitud": -73.135,
-      "distancia_km": 256.5036166087972,
+      "magnitud": 3.0,
+      "profundidad": 140.89,
+      "latitud": 6.81,
+      "longitud": -73.153,
+      "distancia_km": 254.5839135855509,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-09-25 05:23:58",
       "candidato_acelerografico": false,
@@ -60057,6 +60057,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-25T10:10:16.173884-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sxgdub": {
+      "id": "SGC2026sxgdub",
+      "magnitud": 2.3,
+      "profundidad": 4.08,
+      "latitud": 3.84,
+      "longitud": -75.661,
+      "distancia_km": 201.0495998110135,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-25 09:42:53",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-25 09:42:53",
+      "lat": 3.84,
+      "lon": -75.661,
+      "distancia_bogota": 201.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-25T10:15:19.221679-05:00",
       "alerta_enviada": false
     }
   }
