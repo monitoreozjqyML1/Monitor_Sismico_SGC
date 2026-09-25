@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-25T09:40:23.436435-05:00",
+  "actualizado": "2026-09-25T09:45:22.505465-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2250,
+    "total_eventos": 2251,
     "eventos_m4_o_mayores": 39,
     "candidatos_acelerograficos": 39,
     "alertas_telegram": 32,
@@ -58969,11 +58969,11 @@
     },
     "SGC2026swsuiw": {
       "id": "SGC2026swsuiw",
-      "magnitud": 2.9,
+      "magnitud": 3.2,
       "profundidad": 36.93,
-      "latitud": 4.509,
-      "longitud": -76.744,
-      "distancia_km": 296.99082426474115,
+      "latitud": 4.503,
+      "longitud": -76.75,
+      "distancia_km": 297.7062621300873,
       "lugar": "Istmina - Choco, Colombia",
       "hora_local": "2026-09-25 02:59:39",
       "candidato_acelerografico": false,
@@ -59973,6 +59973,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-25T09:40:18.984505-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sxfdkb": {
+      "id": "SGC2026sxfdkb",
+      "magnitud": 2.2,
+      "profundidad": 24.05,
+      "latitud": 3.886,
+      "longitud": -75.603,
+      "distancia_km": 192.9503272375803,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-25 09:12:15",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-25 09:12:15",
+      "lat": 3.886,
+      "lon": -75.603,
+      "distancia_bogota": 193.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-25T09:45:17.965028-05:00",
       "alerta_enviada": false
     }
   }
