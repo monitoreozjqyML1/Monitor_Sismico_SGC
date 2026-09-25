@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25T13:00:19.833778-05:00",
+  "actualizado": "2026-09-25T13:05:21.398375-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2268,
@@ -58439,11 +58439,11 @@
     },
     "SGC2026swofxj": {
       "id": "SGC2026swofxj",
-      "magnitud": 2.3,
-      "profundidad": 17.93,
-      "latitud": 3.874,
-      "longitud": -75.633,
-      "distancia_km": 196.5127329342445,
+      "magnitud": 2.4,
+      "profundidad": 17.12,
+      "latitud": 3.863,
+      "longitud": -75.635,
+      "distancia_km": 197.29079545073478,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-25 00:42:16",
       "candidato_acelerografico": false,
@@ -60425,13 +60425,13 @@
     },
     "SGC2026sxltyq": {
       "id": "SGC2026sxltyq",
-      "magnitud": 2.6,
-      "profundidad": 172.01,
-      "latitud": 6.927,
-      "longitud": -72.869,
-      "distancia_km": 280.0488400394776,
-      "lugar": "Guaca - Santander, Colombia",
-      "hora_local": "2026-09-25 12:32:29",
+      "magnitud": 2.4,
+      "profundidad": 140.66,
+      "latitud": 6.779,
+      "longitud": -73.142,
+      "distancia_km": 251.9232817016129,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-09-25 12:32:31",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -60440,7 +60440,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-25 12:32:29",
+      "fecha_local": "2026-09-25 12:32:31",
       "lat": 6.942,
       "lon": -72.846,
       "distancia_bogota": 282.7,
