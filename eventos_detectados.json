@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-25T12:40:18.791790-05:00",
+  "actualizado": "2026-09-25T12:45:24.444213-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2265,
+    "total_eventos": 2267,
     "eventos_m4_o_mayores": 39,
     "candidatos_acelerograficos": 39,
     "alertas_telegram": 32,
@@ -58720,12 +58720,12 @@
     "SGC2026swqlve": {
       "id": "SGC2026swqlve",
       "magnitud": 2.4,
-      "profundidad": 18.97,
-      "latitud": 3.882,
-      "longitud": -75.619,
-      "distancia_km": 194.72346237619243,
+      "profundidad": 16.08,
+      "latitud": 3.868,
+      "longitud": -75.631,
+      "distancia_km": 196.63519210154118,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-25 01:49:25",
+      "hora_local": "2026-09-25 01:49:24",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -58734,7 +58734,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-25 01:49:25",
+      "fecha_local": "2026-09-25 01:49:24",
       "lat": 3.882,
       "lon": -75.619,
       "distancia_bogota": 194.7,
@@ -60393,6 +60393,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-25T12:40:14.014393-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sxlndj": {
+      "id": "SGC2026sxlndj",
+      "magnitud": 2.1,
+      "profundidad": 4.8,
+      "latitud": 3.819,
+      "longitud": -75.673,
+      "distancia_km": 203.34742196861382,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-25 12:24:34",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-25 12:24:34",
+      "lat": 3.819,
+      "lon": -75.673,
+      "distancia_bogota": 203.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-25T12:45:19.279383-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sxltyq": {
+      "id": "SGC2026sxltyq",
+      "magnitud": 2.7,
+      "profundidad": 171.82,
+      "latitud": 6.942,
+      "longitud": -72.846,
+      "distancia_km": 282.72816501692853,
+      "lugar": "Guaca - Santander, Colombia",
+      "hora_local": "2026-09-25 12:32:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-25 12:32:29",
+      "lat": 6.942,
+      "lon": -72.846,
+      "distancia_bogota": 282.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-25T12:45:19.279383-05:00",
       "alerta_enviada": false
     }
   }
