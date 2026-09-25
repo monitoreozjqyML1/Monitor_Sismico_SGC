@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25T13:50:22.019694-05:00",
+  "actualizado": "2026-09-25T13:55:21.114506-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2273,
@@ -59165,11 +59165,11 @@
     },
     "SGC2026swvcxn": {
       "id": "SGC2026swvcxn",
-      "magnitud": 2.0,
-      "profundidad": 124.48,
+      "magnitud": 2.1,
+      "profundidad": 124.65,
       "latitud": 9.063,
-      "longitud": -73.279,
-      "distancia_km": 491.7727592103641,
+      "longitud": -73.272,
+      "distancia_km": 491.910853164513,
       "lugar": "El Carmen - Norte de Santander, Colombia",
       "hora_local": "2026-09-25 04:09:55",
       "candidato_acelerografico": false,
