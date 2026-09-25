@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-25T13:25:22.392871-05:00",
+  "actualizado": "2026-09-25T13:30:22.562878-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2270,
+    "total_eventos": 2271,
     "eventos_m4_o_mayores": 39,
     "candidatos_acelerograficos": 39,
     "alertas_telegram": 32,
@@ -58411,13 +58411,13 @@
     },
     "SGC2026swodls": {
       "id": "SGC2026swodls",
-      "magnitud": 2.2,
-      "profundidad": 18.97,
-      "latitud": 3.897,
-      "longitud": -75.612,
-      "distancia_km": 193.25189310999775,
+      "magnitud": 2.3,
+      "profundidad": 17.93,
+      "latitud": 3.871,
+      "longitud": -75.631,
+      "distancia_km": 196.47610002333744,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-25 00:39:22",
+      "hora_local": "2026-09-25 00:39:21",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -58426,7 +58426,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-25 00:39:22",
+      "fecha_local": "2026-09-25 00:39:21",
       "lat": 3.897,
       "lon": -75.612,
       "distancia_bogota": 193.3,
@@ -59054,10 +59054,10 @@
     "SGC2026swthld": {
       "id": "SGC2026swthld",
       "magnitud": 2.1,
-      "profundidad": 18.97,
+      "profundidad": 16.08,
       "latitud": 3.855,
-      "longitud": -75.638,
-      "distancia_km": 198.0098955488662,
+      "longitud": -75.637,
+      "distancia_km": 197.9126706659486,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-25 03:14:51",
       "candidato_acelerografico": false,
@@ -60533,6 +60533,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-25T13:20:16.044434-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026sxnjqu": {
+      "id": "SGC2026sxnjqu",
+      "magnitud": 2.5,
+      "profundidad": 11.5,
+      "latitud": 4.23,
+      "longitud": -76.257,
+      "distancia_km": 248.04479766880297,
+      "lugar": "Trujillo - Valle del Cauca, Colombia",
+      "hora_local": "2026-09-25 13:20:53",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-25 13:20:53",
+      "lat": 4.23,
+      "lon": -76.257,
+      "distancia_bogota": 248.0,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-25T13:30:17.484076-05:00",
       "alerta_enviada": false
     }
   }
