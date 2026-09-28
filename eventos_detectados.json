@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T10:25:19.453919-05:00",
+  "actualizado": "2026-09-28T10:30:27.130005-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2501,
@@ -66368,13 +66368,13 @@
     },
     "SGC2026tcbpge": {
       "id": "SGC2026tcbpge",
-      "magnitud": 2.5,
-      "profundidad": 136.97,
-      "latitud": 6.783,
-      "longitud": -73.185,
-      "distancia_km": 250.4269694457563,
+      "magnitud": 2.6,
+      "profundidad": 142.28,
+      "latitud": 6.779,
+      "longitud": -73.142,
+      "distancia_km": 251.9232817016129,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-09-28 00:47:42",
+      "hora_local": "2026-09-28 00:47:41",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -66383,7 +66383,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-28 00:47:42",
+      "fecha_local": "2026-09-28 00:47:41",
       "lat": 6.783,
       "lon": -73.185,
       "distancia_bogota": 250.4,
