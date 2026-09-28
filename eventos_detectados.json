@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-28T12:55:24.912657-05:00",
+  "actualizado": "2026-09-28T13:00:25.747860-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2509,
+    "total_eventos": 2510,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 37,
@@ -67341,6 +67341,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-28T12:35:16.632919-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tczsgb": {
+      "id": "SGC2026tczsgb",
+      "magnitud": 3.0,
+      "profundidad": 81.67,
+      "latitud": 4.268,
+      "longitud": -74.447,
+      "distancia_km": 64.44867165600007,
+      "lugar": "Arbelaez - Cundinamarca, Colombia",
+      "hora_local": "2026-09-28 12:55:17",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-28 12:55:17",
+      "lat": 4.268,
+      "lon": -74.447,
+      "distancia_bogota": 64.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-28T13:00:19.753392-05:00",
       "alerta_enviada": false
     }
   }
