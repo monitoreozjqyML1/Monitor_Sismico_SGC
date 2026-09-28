@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T16:10:23.612600-05:00",
+  "actualizado": "2026-09-28T16:15:19.142162-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2514,
@@ -67177,11 +67177,11 @@
     },
     "SGC2026tcwfcv": {
       "id": "SGC2026tcwfcv",
-      "magnitud": 2.2,
-      "profundidad": 104.8,
-      "latitud": 6.368,
-      "longitud": -73.64,
-      "distancia_km": 190.35474723618313,
+      "magnitud": 2.3,
+      "profundidad": 106.08,
+      "latitud": 6.386,
+      "longitud": -73.648,
+      "distancia_km": 192.0742713856919,
       "lugar": "Santa Helena del Opon - Santander, Colombia",
       "hora_local": "2026-09-28 11:09:31",
       "candidato_acelerografico": false,
@@ -67458,10 +67458,10 @@
     "SGC2026tdfygy": {
       "id": "SGC2026tdfygy",
       "magnitud": 2.9,
-      "profundidad": 11.92,
-      "latitud": 4.425,
-      "longitud": -76.742,
-      "distancia_km": 297.6396479990228,
+      "profundidad": 41.55,
+      "latitud": 4.478,
+      "longitud": -76.684,
+      "distancia_km": 290.65341087053696,
       "lugar": "Istmina - Choco, Colombia",
       "hora_local": "2026-09-28 16:03:23",
       "candidato_acelerografico": false,
