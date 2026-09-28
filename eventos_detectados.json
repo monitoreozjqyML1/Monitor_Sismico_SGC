@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T09:25:24.122201-05:00",
+  "actualizado": "2026-09-28T09:30:21.252302-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2495,
@@ -66814,13 +66814,13 @@
     },
     "SGC2026tclrtv": {
       "id": "SGC2026tclrtv",
-      "magnitud": 2.7,
-      "profundidad": 83.14,
-      "latitud": 4.911,
-      "longitud": -76.349,
-      "distancia_km": 253.26575167915252,
+      "magnitud": 2.8,
+      "profundidad": 86.37,
+      "latitud": 4.905,
+      "longitud": -76.366,
+      "distancia_km": 255.086016476625,
       "lugar": "San Jose del Palmar - Choco, Colombia",
-      "hora_local": "2026-09-28 05:52:19",
+      "hora_local": "2026-09-28 05:52:18",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -66829,7 +66829,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-28 05:52:19",
+      "fecha_local": "2026-09-28 05:52:18",
       "lat": 4.911,
       "lon": -76.349,
       "distancia_bogota": 253.3,
