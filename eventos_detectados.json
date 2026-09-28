@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-28T09:45:24.110881-05:00",
+  "actualizado": "2026-09-28T09:50:27.125502-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2496,
-    "eventos_m4_o_mayores": 43,
-    "candidatos_acelerograficos": 43,
-    "alertas_telegram": 36,
-    "porcentaje_m4_o_mayores": 1.72,
-    "eventos_mayor_igual_4": 43,
-    "total_candidatos_acelerograficos": 43,
+    "total_eventos": 2497,
+    "eventos_m4_o_mayores": 44,
+    "candidatos_acelerograficos": 44,
+    "alertas_telegram": 37,
+    "porcentaje_m4_o_mayores": 1.76,
+    "eventos_mayor_igual_4": 44,
+    "total_candidatos_acelerograficos": 44,
     "total_alertas": 7,
     "porcentaje_alertas": 0.28
   },
@@ -66951,6 +66951,45 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-28T09:45:18.878005-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026tcthzl": {
+      "id": "SGC2026tcthzl",
+      "magnitud": 4.1,
+      "profundidad": 137.2,
+      "latitud": 6.86,
+      "longitud": -73.159,
+      "distancia_km": 259.4294762751507,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-09-28 09:42:32",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-28 09:42:32",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 6.86,
+      "lon": -73.159,
+      "distancia_bogota": 259.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-09-28T09:50:20.229798-05:00",
+      "alerta_enviada": true
     }
   }
 }
