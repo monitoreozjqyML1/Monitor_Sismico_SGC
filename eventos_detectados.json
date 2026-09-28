@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-28T11:15:24.973161-05:00",
+  "actualizado": "2026-09-28T11:20:23.911890-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2503,
+    "total_eventos": 2504,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 37,
@@ -67173,6 +67173,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-28T10:50:19.012888-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tcwfcv": {
+      "id": "SGC2026tcwfcv",
+      "magnitud": 2.5,
+      "profundidad": 86.52,
+      "latitud": 6.347,
+      "longitud": -73.619,
+      "distancia_km": 188.69997074704122,
+      "lugar": "Santa Helena del Opon - Santander, Colombia",
+      "hora_local": "2026-09-28 11:09:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-28 11:09:32",
+      "lat": 6.347,
+      "lon": -73.619,
+      "distancia_bogota": 188.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-28T11:20:19.256246-05:00",
       "alerta_enviada": false
     }
   }
