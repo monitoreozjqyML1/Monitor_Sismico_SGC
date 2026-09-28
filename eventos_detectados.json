@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T10:00:26.797561-05:00",
+  "actualizado": "2026-09-28T10:05:22.383461-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2497,
@@ -66758,13 +66758,13 @@
     },
     "SGC2026tcjmvn": {
       "id": "SGC2026tcjmvn",
-      "magnitud": 2.3,
-      "profundidad": 23.94,
-      "latitud": 7.775,
-      "longitud": -75.186,
-      "distancia_km": 362.2616236683567,
+      "magnitud": 2.5,
+      "profundidad": 40.4,
+      "latitud": 7.773,
+      "longitud": -75.201,
+      "distancia_km": 362.61963592077205,
       "lugar": "Caceres - Antioquia, Colombia",
-      "hora_local": "2026-09-28 04:46:18",
+      "hora_local": "2026-09-28 04:46:15",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -66773,7 +66773,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-28 04:46:18",
+      "fecha_local": "2026-09-28 04:46:15",
       "lat": 7.775,
       "lon": -75.186,
       "distancia_bogota": 362.3,
@@ -66963,21 +66963,36 @@
       "hora_local": "2026-09-28 09:42:32",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 263.0,
+            "distanceHipocentral": 300.0,
+            "pgaE": 0.176523,
+            "pgaN": 0.114207,
+            "pgaZ": 0.223061
+          }
+        ],
+        "pga_maximo_cm_s2": 0.176523,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "fecha_local": "2026-09-28 09:42:32",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 2.0394107142857143,
+        "porcentaje_ew": 4.7708918918918926,
+        "porcentaje_maximo": 4.7708918918918926,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00114207,
+        "pga_ew_m_s2": 0.0017652300000000002,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -66989,7 +67004,8 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-28T09:50:20.229798-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
     }
   }
 }
