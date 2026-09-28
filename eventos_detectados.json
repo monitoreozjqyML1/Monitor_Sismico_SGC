@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T09:20:24.632828-05:00",
+  "actualizado": "2026-09-28T09:25:24.122201-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2495,
@@ -66677,8 +66677,8 @@
       "magnitud": 2.8,
       "profundidad": 15.97,
       "latitud": 3.847,
-      "longitud": -75.638,
-      "distancia_km": 198.43980473559543,
+      "longitud": -75.64,
+      "distancia_km": 198.633878536756,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-28 03:45:12",
       "candidato_acelerografico": false,
