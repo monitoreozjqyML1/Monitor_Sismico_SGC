@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T12:10:27.452987-05:00",
+  "actualizado": "2026-09-28T12:15:25.222264-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2506,
@@ -66285,10 +66285,10 @@
     "SGC2026tcaije": {
       "id": "SGC2026tcaije",
       "magnitud": 2.2,
-      "profundidad": 22.84,
-      "latitud": 3.894,
-      "longitud": -75.616,
-      "distancia_km": 193.80030725153048,
+      "profundidad": 18.51,
+      "latitud": 3.871,
+      "longitud": -75.638,
+      "distancia_km": 197.1593029004807,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-28 00:09:30",
       "candidato_acelerografico": false,
