@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T11:20:23.911890-05:00",
+  "actualizado": "2026-09-28T11:25:26.264668-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2504,
@@ -67177,13 +67177,13 @@
     },
     "SGC2026tcwfcv": {
       "id": "SGC2026tcwfcv",
-      "magnitud": 2.5,
-      "profundidad": 86.52,
-      "latitud": 6.347,
-      "longitud": -73.619,
-      "distancia_km": 188.69997074704122,
+      "magnitud": 2.2,
+      "profundidad": 104.8,
+      "latitud": 6.368,
+      "longitud": -73.64,
+      "distancia_km": 190.35474723618313,
       "lugar": "Santa Helena del Opon - Santander, Colombia",
-      "hora_local": "2026-09-28 11:09:32",
+      "hora_local": "2026-09-28 11:09:31",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -67192,7 +67192,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-28 11:09:32",
+      "fecha_local": "2026-09-28 11:09:31",
       "lat": 6.347,
       "lon": -73.619,
       "distancia_bogota": 188.7,
