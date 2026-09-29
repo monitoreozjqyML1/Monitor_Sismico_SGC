@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-29T06:55:22.040677-05:00",
+  "actualizado": "2026-09-29T07:00:21.487125-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2540,
@@ -67682,12 +67682,12 @@
     "SGC2026tdnyqa": {
       "id": "SGC2026tdnyqa",
       "magnitud": 2.8,
-      "profundidad": 2.72,
-      "latitud": 3.85,
-      "longitud": -75.669,
-      "distancia_km": 201.29520682783306,
+      "profundidad": 16.08,
+      "latitud": 3.852,
+      "longitud": -75.653,
+      "distancia_km": 199.62966519853586,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-28 20:05:07",
+      "hora_local": "2026-09-28 20:05:05",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -67696,7 +67696,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-28 20:05:07",
+      "fecha_local": "2026-09-28 20:05:05",
       "lat": 3.85,
       "lon": -75.669,
       "distancia_bogota": 201.3,
@@ -68185,13 +68185,13 @@
     },
     "SGC2026teiybn": {
       "id": "SGC2026teiybn",
-      "magnitud": 3.1,
-      "profundidad": 160.05,
-      "latitud": 6.821,
-      "longitud": -73.073,
-      "distancia_km": 259.3515347530197,
+      "magnitud": 2.9,
+      "profundidad": 145.28,
+      "latitud": 6.8,
+      "longitud": -73.164,
+      "distancia_km": 253.07974964228518,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-09-29 06:48:12",
+      "hora_local": "2026-09-29 06:48:14",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -68200,7 +68200,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-29 06:48:12",
+      "fecha_local": "2026-09-29 06:48:14",
       "lat": 6.821,
       "lon": -73.073,
       "distancia_bogota": 259.4,
