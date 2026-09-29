@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-29T16:40:18.578270-05:00",
+  "actualizado": "2026-09-29T16:45:22.354219-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2556,
+    "total_eventos": 2557,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 37,
@@ -68410,12 +68410,12 @@
     "SGC2026teqkdu": {
       "id": "SGC2026teqkdu",
       "magnitud": 2.8,
-      "profundidad": 18.97,
-      "latitud": 3.848,
-      "longitud": -75.65,
-      "distancia_km": 199.55152051201014,
+      "profundidad": 18.74,
+      "latitud": 3.85,
+      "longitud": -75.645,
+      "distancia_km": 198.95829105168193,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-29 10:23:17",
+      "hora_local": "2026-09-29 10:23:18",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -68424,7 +68424,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-29 10:23:17",
+      "fecha_local": "2026-09-29 10:23:18",
       "lat": 3.848,
       "lon": -75.65,
       "distancia_bogota": 199.6,
@@ -68657,6 +68657,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-29T16:25:16.785607-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tfcuqf": {
+      "id": "SGC2026tfcuqf",
+      "magnitud": 2.1,
+      "profundidad": 7.54,
+      "latitud": 3.571,
+      "longitud": -75.734,
+      "distancia_km": 223.6930389501407,
+      "lugar": "Rioblanco - Tolima, Colombia",
+      "hora_local": "2026-09-29 16:37:34",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-29 16:37:34",
+      "lat": 3.571,
+      "lon": -75.734,
+      "distancia_bogota": 223.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-29T16:45:16.638423-05:00",
       "alerta_enviada": false
     }
   }
