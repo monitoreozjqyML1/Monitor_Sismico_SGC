@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-29T12:05:22.438770-05:00",
+  "actualizado": "2026-09-29T12:10:24.194565-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2550,
@@ -68017,13 +68017,13 @@
     },
     "SGC2026tdznwy": {
       "id": "SGC2026tdznwy",
-      "magnitud": 2.1,
-      "profundidad": 16.61,
-      "latitud": 6.192,
-      "longitud": -76.911,
-      "distancia_km": 354.77110596989473,
+      "magnitud": 2.2,
+      "profundidad": 33.7,
+      "latitud": 6.174,
+      "longitud": -76.902,
+      "distancia_km": 352.9664549733988,
       "lugar": "Quibdo - Choco, Colombia",
-      "hora_local": "2026-09-29 01:54:41",
+      "hora_local": "2026-09-29 01:54:40",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -68032,7 +68032,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-29 01:54:41",
+      "fecha_local": "2026-09-29 01:54:40",
       "lat": 6.192,
       "lon": -76.911,
       "distancia_bogota": 354.8,
