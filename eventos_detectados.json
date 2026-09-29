@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-29T17:10:24.173514-05:00",
+  "actualizado": "2026-09-29T17:15:23.257762-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2559,
@@ -68726,11 +68726,26 @@
       "hora_local": "2026-09-29 16:50:27",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 190.0,
+            "distanceHipocentral": 191.0,
+            "pgaE": 0.084535,
+            "pgaN": 0.121012,
+            "pgaZ": 0.049057
+          }
+        ],
+        "pga_maximo_cm_s2": 0.121012,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "NS"
       },
       "fecha_local": "2026-09-29 16:50:27",
       "lat": 3.873,
@@ -68745,7 +68760,19 @@
       "magnitud_anterior_actualizacion": 3.7,
       "actualizacion_pga_pendiente": true,
       "alerta_actualizacion_enviada": true,
-      "ciclo_cerrado": false
+      "ciclo_cerrado": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 2.1609285714285713,
+        "porcentaje_ew": 2.28472972972973,
+        "porcentaje_maximo": 2.28472972972973,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.0012101199999999999,
+        "pga_ew_m_s2": 0.00084535,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "reporte_pga_actualizado_enviado": true
     }
   }
 }
