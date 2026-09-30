@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-30T13:50:20.715540-05:00",
+  "actualizado": "2026-09-30T13:55:21.332967-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2615,
+    "total_eventos": 2616,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -70340,6 +70340,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-30T13:25:17.911331-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tgsqcg": {
+      "id": "SGC2026tgsqcg",
+      "magnitud": 2.1,
+      "profundidad": 2.51,
+      "latitud": 5.319,
+      "longitud": -75.792,
+      "distancia_km": 202.1512056109565,
+      "lugar": "Guatica - Risaralda, Colombia",
+      "hora_local": "2026-09-30 13:40:26",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-30 13:40:26",
+      "lat": 5.319,
+      "lon": -75.792,
+      "distancia_bogota": 202.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-30T13:55:16.809375-05:00",
       "alerta_enviada": false
     }
   }
