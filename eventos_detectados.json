@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-30T15:20:20.454208-05:00",
+  "actualizado": "2026-09-30T15:30:25.626205-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2619,
+    "total_eventos": 2620,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -70316,11 +70316,11 @@
     },
     "SGC2026tgryek": {
       "id": "SGC2026tgryek",
-      "magnitud": 2.4,
-      "profundidad": 178.27,
-      "latitud": 6.64,
-      "longitud": -73.029,
-      "distancia_km": 243.57406038984115,
+      "magnitud": 2.5,
+      "profundidad": 169.77,
+      "latitud": 6.637,
+      "longitud": -73.097,
+      "distancia_km": 239.8026372621744,
       "lugar": "Curiti - Santander, Colombia",
       "hora_local": "2026-09-30 13:18:41",
       "candidato_acelerografico": false,
@@ -70452,6 +70452,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-30T15:05:28.126731-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tgwdkk": {
+      "id": "SGC2026tgwdkk",
+      "magnitud": 2.8,
+      "profundidad": 0.4,
+      "latitud": 3.792,
+      "longitud": -75.624,
+      "distancia_km": 200.14052717241947,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-30 15:26:04",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-30 15:26:04",
+      "lat": 3.792,
+      "lon": -75.624,
+      "distancia_bogota": 200.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-30T15:30:21.038587-05:00",
       "alerta_enviada": false
     }
   }
