@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-30T13:10:23.446153-05:00",
+  "actualizado": "2026-09-30T13:15:19.737627-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2613,
+    "total_eventos": 2614,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -70284,6 +70284,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-30T13:05:14.656210-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tgrpil": {
+      "id": "SGC2026tgrpil",
+      "magnitud": 2.6,
+      "profundidad": 154.39,
+      "latitud": 6.574,
+      "longitud": -72.714,
+      "distancia_km": 255.92250725202103,
+      "lugar": "Capitanejo - Santander, Colombia",
+      "hora_local": "2026-09-30 13:08:26",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-30 13:08:26",
+      "lat": 6.574,
+      "lon": -72.714,
+      "distancia_bogota": 255.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-30T13:15:14.609435-05:00",
       "alerta_enviada": false
     }
   }
