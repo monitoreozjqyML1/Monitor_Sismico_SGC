@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-30T13:20:20.341529-05:00",
+  "actualizado": "2026-09-30T13:25:22.898474-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2614,
+    "total_eventos": 2615,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -69589,12 +69589,12 @@
     "SGC2026tgdnoy": {
       "id": "SGC2026tgdnoy",
       "magnitud": 3.3,
-      "profundidad": 148.45,
-      "latitud": 5.273,
-      "longitud": -73.752,
-      "distancia_km": 71.85045217573811,
-      "lugar": "Cucunuba - Cundinamarca, Colombia",
-      "hora_local": "2026-09-30 06:03:59",
+      "profundidad": 141.7,
+      "latitud": 5.284,
+      "longitud": -73.726,
+      "distancia_km": 74.35974785519994,
+      "lugar": "Lenguazaque - Cundinamarca, Colombia",
+      "hora_local": "2026-09-30 06:03:58",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -69603,7 +69603,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-30 06:03:59",
+      "fecha_local": "2026-09-30 06:03:58",
       "lat": 5.273,
       "lon": -73.752,
       "distancia_bogota": 71.9,
@@ -70312,6 +70312,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-30T13:15:14.609435-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tgryek": {
+      "id": "SGC2026tgryek",
+      "magnitud": 2.5,
+      "profundidad": 170.05,
+      "latitud": 6.765,
+      "longitud": -72.911,
+      "distancia_km": 262.0391771199756,
+      "lugar": "Cepita - Santander, Colombia",
+      "hora_local": "2026-09-30 13:18:41",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-30 13:18:41",
+      "lat": 6.765,
+      "lon": -72.911,
+      "distancia_bogota": 262.0,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-30T13:25:17.911331-05:00",
       "alerta_enviada": false
     }
   }
