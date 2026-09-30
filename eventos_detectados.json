@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-30T13:25:22.898474-05:00",
+  "actualizado": "2026-09-30T13:30:27.347055-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2615,
@@ -70316,12 +70316,12 @@
     },
     "SGC2026tgryek": {
       "id": "SGC2026tgryek",
-      "magnitud": 2.5,
-      "profundidad": 170.05,
-      "latitud": 6.765,
-      "longitud": -72.911,
-      "distancia_km": 262.0391771199756,
-      "lugar": "Cepita - Santander, Colombia",
+      "magnitud": 2.4,
+      "profundidad": 178.27,
+      "latitud": 6.64,
+      "longitud": -73.029,
+      "distancia_km": 243.57406038984115,
+      "lugar": "Curiti - Santander, Colombia",
       "hora_local": "2026-09-30 13:18:41",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
