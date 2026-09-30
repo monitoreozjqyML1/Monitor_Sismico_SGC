@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-30T11:55:22.811864-05:00",
+  "actualizado": "2026-09-30T12:00:24.106783-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2608,
+    "total_eventos": 2609,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
-    "porcentaje_m4_o_mayores": 1.73,
+    "porcentaje_m4_o_mayores": 1.72,
     "eventos_mayor_igual_4": 45,
     "total_candidatos_acelerograficos": 45,
     "total_alertas": 7,
@@ -69420,11 +69420,11 @@
     },
     "SGC2026tfzbdl": {
       "id": "SGC2026tfzbdl",
-      "magnitud": 2.8,
-      "profundidad": 151.27,
-      "latitud": 6.846,
-      "longitud": -73.067,
-      "distancia_km": 262.14874920046356,
+      "magnitud": 2.5,
+      "profundidad": 142.05,
+      "latitud": 6.764,
+      "longitud": -73.14,
+      "distancia_km": 250.49335362651078,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-09-30 03:48:53",
       "candidato_acelerografico": false,
@@ -70144,6 +70144,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-30T11:50:15.621100-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tgoxoh": {
+      "id": "SGC2026tgoxoh",
+      "magnitud": 3.4,
+      "profundidad": 38.78,
+      "latitud": 4.503,
+      "longitud": -76.669,
+      "distancia_km": 288.75656988875426,
+      "lugar": "Medio San Juan (Andagoya) - Choco, Colombia",
+      "hora_local": "2026-09-30 11:47:28",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-30 11:47:28",
+      "lat": 4.503,
+      "lon": -76.669,
+      "distancia_bogota": 288.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-30T12:00:18.822442-05:00",
       "alerta_enviada": false
     }
   }
