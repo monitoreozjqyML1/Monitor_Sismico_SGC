@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-30T14:40:24.007678-05:00",
+  "actualizado": "2026-09-30T14:45:24.646490-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2618,
@@ -70288,12 +70288,12 @@
     },
     "SGC2026tgrpil": {
       "id": "SGC2026tgrpil",
-      "magnitud": 2.6,
-      "profundidad": 154.39,
-      "latitud": 6.574,
-      "longitud": -72.714,
-      "distancia_km": 255.92250725202103,
-      "lugar": "Capitanejo - Santander, Colombia",
+      "magnitud": 2.1,
+      "profundidad": 139.28,
+      "latitud": 6.764,
+      "longitud": -73.125,
+      "distancia_km": 251.18105822009636,
+      "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-09-30 13:08:26",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
