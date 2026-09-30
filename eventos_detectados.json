@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-30T17:05:34.985002-05:00",
+  "actualizado": "2026-09-30T17:10:22.169799-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2622,
@@ -70064,11 +70064,11 @@
     },
     "SGC2026tgnldj": {
       "id": "SGC2026tgnldj",
-      "magnitud": 2.5,
-      "profundidad": 17.12,
+      "magnitud": 2.4,
+      "profundidad": 18.97,
       "latitud": 3.853,
-      "longitud": -75.631,
-      "distancia_km": 197.4371818599523,
+      "longitud": -75.635,
+      "distancia_km": 197.82561170357815,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-09-30 11:02:49",
       "candidato_acelerografico": false,
@@ -70512,13 +70512,13 @@
     },
     "SGC2026tgzenj": {
       "id": "SGC2026tgzenj",
-      "magnitud": 3.1,
-      "profundidad": 16.28,
-      "latitud": 4.508,
-      "longitud": -76.931,
-      "distancia_km": 317.6695656078327,
-      "lugar": "Istmina - Choco, Colombia",
-      "hora_local": "2026-09-30 16:57:05",
+      "magnitud": 3.0,
+      "profundidad": 65.34,
+      "latitud": 4.36,
+      "longitud": -76.652,
+      "distancia_km": 288.6239228000797,
+      "lugar": "El Litoral del San Juan (Docordo) - Choco, Colombia",
+      "hora_local": "2026-09-30 16:57:07",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -70527,7 +70527,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-30 16:57:05",
+      "fecha_local": "2026-09-30 16:57:07",
       "lat": 4.508,
       "lon": -76.931,
       "distancia_bogota": 317.7,
