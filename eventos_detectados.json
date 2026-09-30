@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-30T12:40:19.730877-05:00",
+  "actualizado": "2026-09-30T12:45:20.593765-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2612,
@@ -69728,11 +69728,11 @@
     },
     "SGC2026tggkrv": {
       "id": "SGC2026tggkrv",
-      "magnitud": 3.1,
-      "profundidad": 25.99,
-      "latitud": 7.159,
-      "longitud": -74.431,
-      "distancia_km": 275.083663869116,
+      "magnitud": 3.2,
+      "profundidad": 15.0,
+      "latitud": 7.153,
+      "longitud": -74.428,
+      "distancia_km": 274.3757366283211,
       "lugar": "Remedios - Antioquia, Colombia",
       "hora_local": "2026-09-30 07:31:09",
       "candidato_acelerografico": false,
