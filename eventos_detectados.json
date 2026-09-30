@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-30T14:35:22.610261-05:00",
+  "actualizado": "2026-09-30T14:40:24.007678-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2618,
@@ -70345,12 +70345,12 @@
     "SGC2026tgsqcg": {
       "id": "SGC2026tgsqcg",
       "magnitud": 2.4,
-      "profundidad": 85.94,
-      "latitud": 5.446,
-      "longitud": -76.122,
-      "distancia_km": 241.30390263011782,
-      "lugar": "Bagado - Choco, Colombia",
-      "hora_local": "2026-09-30 13:40:22",
+      "profundidad": 81.98,
+      "latitud": 5.414,
+      "longitud": -76.115,
+      "distancia_km": 239.39457938609996,
+      "lugar": "Pueblo Rico - Risaralda, Colombia",
+      "hora_local": "2026-09-30 13:40:21",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -70359,7 +70359,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-09-30 13:40:22",
+      "fecha_local": "2026-09-30 13:40:21",
       "lat": 5.319,
       "lon": -75.792,
       "distancia_bogota": 202.2,
