@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T08:15:30.995825-05:00",
+  "actualizado": "2026-10-01T08:20:21.263255-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2663,
+    "total_eventos": 2664,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -71353,12 +71353,12 @@
     "SGC2026thseev": {
       "id": "SGC2026thseev",
       "magnitud": 2.3,
-      "profundidad": 3.48,
-      "latitud": 1.723,
-      "longitud": -77.35,
-      "distancia_km": 492.73877825009356,
+      "profundidad": 16.08,
+      "latitud": 1.717,
+      "longitud": -77.376,
+      "distancia_km": 495.32279105106875,
       "lugar": "El Rosario - Narino, Colombia",
-      "hora_local": "2026-10-01 02:30:09",
+      "hora_local": "2026-10-01 02:30:07",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -71367,7 +71367,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-01 02:30:09",
+      "fecha_local": "2026-10-01 02:30:07",
       "lat": 1.723,
       "lon": -77.35,
       "distancia_bogota": 492.7,
@@ -71684,6 +71684,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T08:15:25.967822-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tidavh": {
+      "id": "SGC2026tidavh",
+      "magnitud": 2.5,
+      "profundidad": 20.36,
+      "latitud": 3.869,
+      "longitud": -75.636,
+      "distancia_km": 197.06978334951955,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-01 07:58:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 07:58:07",
+      "lat": 3.869,
+      "lon": -75.636,
+      "distancia_bogota": 197.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T08:20:16.497726-05:00",
       "alerta_enviada": false
     }
   }
