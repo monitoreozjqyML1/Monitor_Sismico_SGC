@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T11:25:25.417108-05:00",
+  "actualizado": "2026-10-01T11:30:33.635129-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2677,
+    "total_eventos": 2678,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -72076,6 +72076,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T11:05:16.260418-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026thphyo": {
+      "id": "SGC2026thphyo",
+      "magnitud": 3.1,
+      "profundidad": 0.5,
+      "latitud": 9.865,
+      "longitud": -72.973,
+      "distancia_km": 585.770979268571,
+      "lugar": "Becerrill - Cesar, Colombia",
+      "hora_local": "2026-10-01 01:03:58",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 01:03:58",
+      "lat": 9.865,
+      "lon": -72.973,
+      "distancia_bogota": 585.8,
+      "tipo_magnitud": "MLr_4",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T11:30:18.008145-05:00",
       "alerta_enviada": false
     }
   }
