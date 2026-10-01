@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T03:45:20.442223-05:00",
+  "actualizado": "2026-10-01T03:50:20.611004-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2653,
+    "total_eventos": 2654,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -71404,6 +71404,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T03:10:25.730708-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026thupvp": {
+      "id": "SGC2026thupvp",
+      "magnitud": 2.5,
+      "profundidad": 119.2,
+      "latitud": 7.898,
+      "longitud": -73.241,
+      "distancia_km": 366.0861292967778,
+      "lugar": "Abrego - Norte de Santander, Colombia",
+      "hora_local": "2026-10-01 03:43:56",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 03:43:56",
+      "lat": 7.898,
+      "lon": -73.241,
+      "distancia_bogota": 366.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T03:50:16.055549-05:00",
       "alerta_enviada": false
     }
   }
