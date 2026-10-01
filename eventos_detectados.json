@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-30T20:35:18.334792-05:00",
+  "actualizado": "2026-09-30T20:40:21.754244-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2635,
+    "total_eventos": 2637,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -70900,6 +70900,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-09-30T20:20:16.271914-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tgtpmg": {
+      "id": "SGC2026tgtpmg",
+      "magnitud": 2.0,
+      "profundidad": 42.31,
+      "latitud": 5.271,
+      "longitud": -76.474,
+      "distancia_km": 273.2547142136154,
+      "lugar": "Tado - Choco, Colombia",
+      "hora_local": "2026-09-30 14:08:57",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-30 14:08:57",
+      "lat": 5.271,
+      "lon": -76.474,
+      "distancia_bogota": 273.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-30T20:40:17.263488-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tgzeoy": {
+      "id": "SGC2026tgzeoy",
+      "magnitud": 2.8,
+      "profundidad": 19.2,
+      "latitud": 3.838,
+      "longitud": -75.626,
+      "distancia_km": 197.76673176774216,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-09-30 16:57:19",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-09-30 16:57:19",
+      "lat": 3.838,
+      "lon": -75.626,
+      "distancia_bogota": 197.8,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-09-30T20:40:17.263488-05:00",
       "alerta_enviada": false
     }
   }
