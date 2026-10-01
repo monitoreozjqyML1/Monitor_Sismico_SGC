@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T08:30:23.303877-05:00",
+  "actualizado": "2026-10-01T08:35:22.865871-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2664,
+    "total_eventos": 2665,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -71712,6 +71712,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T08:20:16.497726-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tidsch": {
+      "id": "SGC2026tidsch",
+      "magnitud": 2.6,
+      "profundidad": 131.7,
+      "latitud": 6.762,
+      "longitud": -72.963,
+      "distancia_km": 258.97391097498974,
+      "lugar": "Cepita - Santander, Colombia",
+      "hora_local": "2026-10-01 08:18:22",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 08:18:22",
+      "lat": 6.762,
+      "lon": -72.963,
+      "distancia_bogota": 259.0,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T08:35:18.412533-05:00",
       "alerta_enviada": false
     }
   }
