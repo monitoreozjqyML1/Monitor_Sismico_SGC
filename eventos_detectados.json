@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-01T10:00:33.597127-05:00",
+  "actualizado": "2026-10-01T10:05:26.981494-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2673,
@@ -71520,13 +71520,13 @@
     },
     "SGC2026tibiml": {
       "id": "SGC2026tibiml",
-      "magnitud": 2.4,
-      "profundidad": 97.24,
-      "latitud": 6.711,
-      "longitud": -73.676,
-      "distancia_km": 226.666577817936,
+      "magnitud": 2.6,
+      "profundidad": 95.0,
+      "latitud": 6.742,
+      "longitud": -73.719,
+      "distancia_km": 229.19068145795015,
       "lugar": "El Carmen - Santander, Colombia",
-      "hora_local": "2026-10-01 07:06:42",
+      "hora_local": "2026-10-01 07:06:43",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -71535,7 +71535,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-01 07:06:42",
+      "fecha_local": "2026-10-01 07:06:43",
       "lat": 6.738,
       "lon": -73.668,
       "distancia_bogota": 229.8,
