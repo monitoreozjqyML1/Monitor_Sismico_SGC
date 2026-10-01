@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T18:40:20.299004-05:00",
+  "actualizado": "2026-10-01T18:45:23.113047-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2691,
+    "total_eventos": 2692,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -72220,11 +72220,11 @@
     },
     "SGC2026tiofwl": {
       "id": "SGC2026tiofwl",
-      "magnitud": 3.4,
-      "profundidad": 37.16,
-      "latitud": 4.579,
-      "longitud": -76.685,
-      "distancia_km": 289.9584678294039,
+      "magnitud": 3.3,
+      "profundidad": 45.94,
+      "latitud": 4.587,
+      "longitud": -76.655,
+      "distancia_km": 286.5921051198591,
       "lugar": "Sipi - Choco, Colombia",
       "hora_local": "2026-10-01 13:35:56",
       "candidato_acelerografico": false,
@@ -72468,6 +72468,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T18:35:17.765730-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tiyiof": {
+      "id": "SGC2026tiyiof",
+      "magnitud": 2.7,
+      "profundidad": 0.87,
+      "latitud": 2.314,
+      "longitud": -76.149,
+      "distancia_km": 352.3720720379849,
+      "lugar": "Area En Litigio Limites (Purace - Cauca, Colombia",
+      "hora_local": "2026-10-01 18:40:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 18:40:42",
+      "lat": 2.314,
+      "lon": -76.149,
+      "distancia_bogota": 352.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T18:45:17.656820-05:00",
       "alerta_enviada": false
     }
   }
