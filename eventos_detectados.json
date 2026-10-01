@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T07:25:23.147490-05:00",
+  "actualizado": "2026-10-01T07:30:24.140271-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2658,
+    "total_eventos": 2659,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -71296,12 +71296,12 @@
     },
     "SGC2026thowik": {
       "id": "SGC2026thowik",
-      "magnitud": 2.2,
-      "profundidad": 46.63,
-      "latitud": 4.408,
-      "longitud": -76.714,
-      "distancia_km": 294.7675290758702,
-      "lugar": "Istmina - Choco, Colombia",
+      "magnitud": 2.5,
+      "profundidad": 45.02,
+      "latitud": 4.38,
+      "longitud": -76.728,
+      "distancia_km": 296.6849714846279,
+      "lugar": "El Litoral del San Juan (Docordo) - Choco, Colombia",
       "hora_local": "2026-10-01 00:50:32",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
@@ -71544,6 +71544,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T07:10:18.444006-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tibqvy": {
+      "id": "SGC2026tibqvy",
+      "magnitud": 2.7,
+      "profundidad": 16.08,
+      "latitud": 3.855,
+      "longitud": -75.65,
+      "distancia_km": 199.17770726468646,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-01 07:16:21",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 07:16:21",
+      "lat": 3.855,
+      "lon": -75.65,
+      "distancia_bogota": 199.2,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T07:30:19.493674-05:00",
       "alerta_enviada": false
     }
   }
