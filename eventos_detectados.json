@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-01T09:20:23.281947-05:00",
+  "actualizado": "2026-10-01T09:25:22.107533-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2668,
@@ -71436,13 +71436,13 @@
     },
     "SGC2026thuzso": {
       "id": "SGC2026thuzso",
-      "magnitud": 3.2,
-      "profundidad": 50.33,
-      "latitud": 3.807,
-      "longitud": -76.142,
-      "distancia_km": 250.57078673331847,
+      "magnitud": 3.1,
+      "profundidad": 52.58,
+      "latitud": 3.811,
+      "longitud": -76.158,
+      "distancia_km": 252.01947370432333,
       "lugar": "Ginebra - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-01 03:55:29",
+      "hora_local": "2026-10-01 03:55:28",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -71451,7 +71451,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-01 03:55:29",
+      "fecha_local": "2026-10-01 03:55:28",
       "lat": 3.807,
       "lon": -76.142,
       "distancia_bogota": 250.6,
