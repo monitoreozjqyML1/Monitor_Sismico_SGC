@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-01T09:25:22.107533-05:00",
+  "actualizado": "2026-10-01T09:30:24.380843-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2668,
@@ -71716,13 +71716,13 @@
     },
     "SGC2026tidsch": {
       "id": "SGC2026tidsch",
-      "magnitud": 2.6,
-      "profundidad": 131.7,
-      "latitud": 6.762,
-      "longitud": -72.963,
-      "distancia_km": 258.97391097498974,
-      "lugar": "Cepita - Santander, Colombia",
-      "hora_local": "2026-10-01 08:18:22",
+      "magnitud": 2.5,
+      "profundidad": 141.36,
+      "latitud": 6.76,
+      "longitud": -73.07,
+      "distancia_km": 253.3797099193597,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-01 08:18:20",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -71731,7 +71731,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-01 08:18:22",
+      "fecha_local": "2026-10-01 08:18:20",
       "lat": 6.762,
       "lon": -72.963,
       "distancia_bogota": 259.0,
