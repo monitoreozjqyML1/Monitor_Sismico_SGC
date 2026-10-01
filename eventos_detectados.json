@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T08:55:25.775408-05:00",
+  "actualizado": "2026-10-01T09:00:25.958428-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2666,
+    "total_eventos": 2667,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -71380,13 +71380,13 @@
     },
     "SGC2026thteuj": {
       "id": "SGC2026thteuj",
-      "magnitud": 2.4,
-      "profundidad": 145.46,
-      "latitud": 6.855,
-      "longitud": -73.127,
-      "distancia_km": 260.3190513587817,
+      "magnitud": 2.5,
+      "profundidad": 144.94,
+      "latitud": 6.786,
+      "longitud": -73.158,
+      "distancia_km": 251.91793072108698,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-01 03:01:02",
+      "hora_local": "2026-10-01 03:01:01",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -71395,7 +71395,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-01 03:01:02",
+      "fecha_local": "2026-10-01 03:01:01",
       "lat": 6.855,
       "lon": -73.127,
       "distancia_bogota": 260.3,
@@ -71661,12 +71661,12 @@
     "SGC2026tidmha": {
       "id": "SGC2026tidmha",
       "magnitud": 2.3,
-      "profundidad": 2.5,
-      "latitud": 5.038,
-      "longitud": -74.577,
-      "distancia_km": 66.71803264805455,
+      "profundidad": 29.6,
+      "latitud": 5.035,
+      "longitud": -74.581,
+      "distancia_km": 66.90994181966244,
       "lugar": "Guaduas - Cundinamarca, Colombia",
-      "hora_local": "2026-10-01 08:11:26",
+      "hora_local": "2026-10-01 08:11:25",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -71675,7 +71675,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-01 08:11:26",
+      "fecha_local": "2026-10-01 08:11:25",
       "lat": 5.038,
       "lon": -74.577,
       "distancia_bogota": 66.7,
@@ -71768,6 +71768,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T08:50:19.667259-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tievil": {
+      "id": "SGC2026tievil",
+      "magnitud": 2.8,
+      "profundidad": 1.33,
+      "latitud": 3.784,
+      "longitud": -75.626,
+      "distancia_km": 200.78720544369938,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-01 08:52:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 08:52:09",
+      "lat": 3.784,
+      "lon": -75.626,
+      "distancia_bogota": 200.8,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T09:00:21.220182-05:00",
       "alerta_enviada": false
     }
   }
