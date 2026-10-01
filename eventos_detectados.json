@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-01T03:55:22.412850-05:00",
+  "actualizado": "2026-10-01T04:07:20.640111-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2654,
+    "total_eventos": 2655,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
-    "porcentaje_m4_o_mayores": 1.7,
+    "porcentaje_m4_o_mayores": 1.69,
     "eventos_mayor_igual_4": 45,
     "total_candidatos_acelerograficos": 45,
     "total_alertas": 7,
@@ -71432,6 +71432,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-01T03:50:16.055549-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026thuzso": {
+      "id": "SGC2026thuzso",
+      "magnitud": 3.2,
+      "profundidad": 50.33,
+      "latitud": 3.807,
+      "longitud": -76.142,
+      "distancia_km": 250.57078673331847,
+      "lugar": "Ginebra - Valle del Cauca, Colombia",
+      "hora_local": "2026-10-01 03:55:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-01 03:55:29",
+      "lat": 3.807,
+      "lon": -76.142,
+      "distancia_bogota": 250.6,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-01T04:07:15.442556-05:00",
       "alerta_enviada": false
     }
   }
