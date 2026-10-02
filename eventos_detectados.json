@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-02T09:30:21.805668-05:00",
+  "actualizado": "2026-10-02T09:35:23.401873-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2722,
+    "total_eventos": 2723,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -36493,20 +36493,35 @@
       "hora_local": "No disponible",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 293.0,
+            "distanceHipocentral": 296.0,
+            "pgaE": 0.040669,
+            "pgaN": 0.036802,
+            "pgaZ": 0.023811
+          }
+        ],
+        "pga_maximo_cm_s2": 0.040669,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 0.6571785714285714,
+        "porcentaje_ew": 1.0991621621621621,
+        "porcentaje_maximo": 1.0991621621621621,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00036802,
+        "pga_ew_m_s2": 0.00040668999999999997,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -73362,6 +73377,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-02T09:30:17.998327-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tkbueg": {
+      "id": "SGC2026tkbueg",
+      "magnitud": 3.1,
+      "profundidad": 153.93,
+      "latitud": 6.828,
+      "longitud": -72.996,
+      "distancia_km": 263.7885672312231,
+      "lugar": "Piedecuesta - Santander, Colombia",
+      "hora_local": "2026-10-02 09:29:33",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-02 09:29:33",
+      "lat": 6.828,
+      "lon": -72.996,
+      "distancia_bogota": 263.8,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-02T09:35:18.152308-05:00",
       "alerta_enviada": false
     }
   }
