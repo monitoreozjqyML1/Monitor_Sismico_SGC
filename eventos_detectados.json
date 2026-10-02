@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-02T16:40:25.182599-05:00",
+  "actualizado": "2026-10-02T16:45:24.645079-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2741,
@@ -73885,13 +73885,13 @@
     },
     "SGC2026tkpwqn": {
       "id": "SGC2026tkpwqn",
-      "magnitud": 3.3,
-      "profundidad": 30.32,
-      "latitud": 3.857,
-      "longitud": -75.345,
-      "distancia_km": 170.11436940282965,
-      "lugar": "Ortega - Tolima, Colombia",
-      "hora_local": "2026-10-02 16:34:29",
+      "magnitud": 3.1,
+      "profundidad": 15.97,
+      "latitud": 3.861,
+      "longitud": -75.634,
+      "distancia_km": 197.30003462068902,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-02 16:34:46",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -73900,7 +73900,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-02 16:34:29",
+      "fecha_local": "2026-10-02 16:34:46",
       "lat": 3.857,
       "lon": -75.345,
       "distancia_bogota": 170.1,
