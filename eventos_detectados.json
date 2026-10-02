@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-02T16:10:17.597427-05:00",
+  "actualizado": "2026-10-02T16:15:20.822705-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2740,
@@ -73717,13 +73717,13 @@
     },
     "SGC2026tkkalt": {
       "id": "SGC2026tkkalt",
-      "magnitud": 2.4,
-      "profundidad": 8.7,
-      "latitud": 10.354,
-      "longitud": -74.498,
-      "distancia_km": 629.2254650630388,
+      "magnitud": 2.1,
+      "profundidad": 22.43,
+      "latitud": 10.316,
+      "longitud": -74.502,
+      "distancia_km": 625.0453325768553,
       "lugar": "Pivijay - Magdalena, Colombia",
-      "hora_local": "2026-10-02 13:37:52",
+      "hora_local": "2026-10-02 13:37:54",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -73732,7 +73732,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-02 13:37:52",
+      "fecha_local": "2026-10-02 13:37:54",
       "lat": 10.354,
       "lon": -74.498,
       "distancia_bogota": 629.2,
