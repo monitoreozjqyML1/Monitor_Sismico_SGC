@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-02T09:00:31.677145-05:00",
+  "actualizado": "2026-10-02T09:05:22.958072-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2719,
@@ -25639,11 +25639,26 @@
       "hora_local": "No disponible",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 302.0,
+            "distanceHipocentral": 305.0,
+            "pgaE": 0.062264,
+            "pgaN": 0.057899,
+            "pgaZ": 0.038414
+          }
+        ],
+        "pga_maximo_cm_s2": 0.062264,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "lat": 4.397134340806774,
       "lon": -76.78603064738881,
@@ -25656,7 +25671,18 @@
       ],
       "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
       "fecha_deteccion": "2026-09-14T07:15:24.837516-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 1.0339107142857142,
+        "porcentaje_ew": 1.682810810810811,
+        "porcentaje_maximo": 1.682810810810811,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00057899,
+        "pga_ew_m_s2": 0.00062264,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026rxrjam": {
       "id": "SGC2026rxrjam",
