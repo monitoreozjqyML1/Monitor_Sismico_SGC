@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-02T16:35:25.435236-05:00",
+  "actualizado": "2026-10-02T16:40:25.182599-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2740,
+    "total_eventos": 2741,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -73881,6 +73881,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-02T15:25:23.392590-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tkpwqn": {
+      "id": "SGC2026tkpwqn",
+      "magnitud": 3.3,
+      "profundidad": 30.32,
+      "latitud": 3.857,
+      "longitud": -75.345,
+      "distancia_km": 170.11436940282965,
+      "lugar": "Ortega - Tolima, Colombia",
+      "hora_local": "2026-10-02 16:34:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-02 16:34:29",
+      "lat": 3.857,
+      "lon": -75.345,
+      "distancia_bogota": 170.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-02T16:40:20.941359-05:00",
       "alerta_enviada": false
     }
   }
