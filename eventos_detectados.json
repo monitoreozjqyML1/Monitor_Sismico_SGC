@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-02T14:25:22.523585-05:00",
+  "actualizado": "2026-10-02T14:30:24.751856-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2735,
+    "total_eventos": 2736,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
-    "porcentaje_m4_o_mayores": 1.65,
+    "porcentaje_m4_o_mayores": 1.64,
     "eventos_mayor_igual_4": 45,
     "total_candidatos_acelerograficos": 45,
     "total_alertas": 7,
@@ -73325,13 +73325,13 @@
     },
     "SGC2026tkbina": {
       "id": "SGC2026tkbina",
-      "magnitud": 2.1,
-      "profundidad": 7.9,
-      "latitud": 3.813,
-      "longitud": -75.558,
-      "distancia_km": 192.66144151210625,
+      "magnitud": 2.0,
+      "profundidad": 18.97,
+      "latitud": 3.849,
+      "longitud": -75.629,
+      "distancia_km": 197.45895606174574,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-02 09:15:39",
+      "hora_local": "2026-10-02 09:15:36",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -73340,7 +73340,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-02 09:15:39",
+      "fecha_local": "2026-10-02 09:15:36",
       "lat": 3.813,
       "lon": -75.558,
       "distancia_bogota": 192.7,
@@ -73741,6 +73741,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-02T13:45:17.803237-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tklplx": {
+      "id": "SGC2026tklplx",
+      "magnitud": 3.0,
+      "profundidad": 16.46,
+      "latitud": 4.51,
+      "longitud": -76.82,
+      "distancia_km": 305.38244846075463,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-10-02 14:25:31",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-02 14:25:31",
+      "lat": 4.51,
+      "lon": -76.82,
+      "distancia_bogota": 305.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-02T14:30:20.506081-05:00",
       "alerta_enviada": false
     }
   }
