@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-02T13:40:20.329228-05:00",
+  "actualizado": "2026-10-02T13:45:21.485924-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2734,
+    "total_eventos": 2735,
     "eventos_m4_o_mayores": 45,
     "candidatos_acelerograficos": 45,
     "alertas_telegram": 37,
@@ -73713,6 +73713,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-02T13:25:26.582820-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tkkalt": {
+      "id": "SGC2026tkkalt",
+      "magnitud": 2.4,
+      "profundidad": 8.7,
+      "latitud": 10.354,
+      "longitud": -74.498,
+      "distancia_km": 629.2254650630388,
+      "lugar": "Pivijay - Magdalena, Colombia",
+      "hora_local": "2026-10-02 13:37:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-02 13:37:52",
+      "lat": 10.354,
+      "lon": -74.498,
+      "distancia_bogota": 629.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-02T13:45:17.803237-05:00",
       "alerta_enviada": false
     }
   }
