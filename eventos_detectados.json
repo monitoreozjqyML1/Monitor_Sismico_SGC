@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-01T18:50:18.891145-05:00",
+  "actualizado": "2026-10-01T19:48:00.818411-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2692,
@@ -72193,10 +72193,10 @@
     "SGC2026tiocih": {
       "id": "SGC2026tiocih",
       "magnitud": 2.1,
-      "profundidad": 76.95,
-      "latitud": 4.765,
-      "longitud": -76.379,
-      "distancia_km": 255.70939827435802,
+      "profundidad": 83.14,
+      "latitud": 4.975,
+      "longitud": -76.284,
+      "distancia_km": 246.8254946181176,
       "lugar": "San Jose del Palmar - Choco, Colombia",
       "hora_local": "2026-10-01 13:31:47",
       "candidato_acelerografico": false,
@@ -72444,13 +72444,13 @@
     },
     "SGC2026tixwmy": {
       "id": "SGC2026tixwmy",
-      "magnitud": 2.4,
-      "profundidad": 27.63,
-      "latitud": 4.678,
-      "longitud": -76.834,
-      "distancia_km": 306.10078428335703,
-      "lugar": "Medio San Juan (Andagoya) - Choco, Colombia",
-      "hora_local": "2026-10-01 18:26:44",
+      "magnitud": 2.3,
+      "profundidad": 38.09,
+      "latitud": 4.613,
+      "longitud": -76.666,
+      "distancia_km": 287.68052052587393,
+      "lugar": "Sipi - Choco, Colombia",
+      "hora_local": "2026-10-01 18:26:43",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -72459,7 +72459,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-01 18:26:44",
+      "fecha_local": "2026-10-01 18:26:43",
       "lat": 4.678,
       "lon": -76.834,
       "distancia_bogota": 306.1,
