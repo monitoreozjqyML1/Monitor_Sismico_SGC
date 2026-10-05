@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T13:35:22.403074-05:00",
+  "actualizado": "2026-10-05T13:40:34.345836-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2830,
@@ -76778,13 +76778,13 @@
     },
     "SGC2026tpmuno": {
       "id": "SGC2026tpmuno",
-      "magnitud": 2.9,
-      "profundidad": 134.99,
-      "latitud": 5.528,
-      "longitud": -73.742,
-      "distancia_km": 97.92640426005818,
+      "magnitud": 3.0,
+      "profundidad": 131.88,
+      "latitud": 5.484,
+      "longitud": -73.723,
+      "distancia_km": 94.24947994048503,
       "lugar": "San Miguel de Sema - Boyaca, Colombia",
-      "hora_local": "2026-10-05 08:23:53",
+      "hora_local": "2026-10-05 08:23:52",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76793,7 +76793,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-05 08:23:53",
+      "fecha_local": "2026-10-05 08:23:52",
       "lat": 5.528,
       "lon": -73.742,
       "distancia_bogota": 97.9,
