@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-05T08:10:18.814457-05:00",
+  "actualizado": "2026-10-05T08:15:23.049150-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2815,
-    "eventos_m4_o_mayores": 46,
-    "candidatos_acelerograficos": 46,
-    "alertas_telegram": 38,
-    "porcentaje_m4_o_mayores": 1.63,
-    "eventos_mayor_igual_4": 46,
-    "total_candidatos_acelerograficos": 46,
+    "total_eventos": 2816,
+    "eventos_m4_o_mayores": 47,
+    "candidatos_acelerograficos": 47,
+    "alertas_telegram": 39,
+    "porcentaje_m4_o_mayores": 1.67,
+    "eventos_mayor_igual_4": 47,
+    "total_candidatos_acelerograficos": 47,
     "total_alertas": 7,
     "porcentaje_alertas": 0.25
   },
@@ -76736,6 +76736,45 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-05T07:45:17.864709-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026tpmhth": {
+      "id": "SGC2026tpmhth",
+      "magnitud": 4.1,
+      "profundidad": 159.89,
+      "latitud": 6.806,
+      "longitud": -72.931,
+      "distancia_km": 264.9585678300391,
+      "lugar": "Guaca - Santander, Colombia",
+      "hora_local": "2026-10-05 08:09:03",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-05 08:09:03",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 6.806,
+      "lon": -72.931,
+      "distancia_bogota": 265.0,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-10-05T08:15:17.057479-05:00",
+      "alerta_enviada": true
     }
   }
 }
