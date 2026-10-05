@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T09:30:23.439249-05:00",
+  "actualizado": "2026-10-05T09:35:19.287231-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2817,
@@ -76599,11 +76599,11 @@
     },
     "SGC2026tpepmv": {
       "id": "SGC2026tpepmv",
-      "magnitud": 3.1,
-      "profundidad": 35.72,
-      "latitud": 2.896,
-      "longitud": -74.874,
-      "distancia_km": 220.55828960236857,
+      "magnitud": 3.0,
+      "profundidad": 39.3,
+      "latitud": 2.882,
+      "longitud": -74.852,
+      "distancia_km": 221.0169793161862,
       "lugar": "San Vicente del Caguan - Caqueta, Colombia",
       "hora_local": "2026-10-05 04:16:40",
       "candidato_acelerografico": false,
