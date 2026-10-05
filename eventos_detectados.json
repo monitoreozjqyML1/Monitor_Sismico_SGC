@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T10:20:21.090235-05:00",
+  "actualizado": "2026-10-05T10:25:19.324466-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2819,
@@ -76684,10 +76684,10 @@
     "SGC2026tphrwt": {
       "id": "SGC2026tphrwt",
       "magnitud": 2.7,
-      "profundidad": 18.97,
-      "latitud": 3.841,
-      "longitud": -75.649,
-      "distancia_km": 199.8306325662608,
+      "profundidad": 16.31,
+      "latitud": 3.84,
+      "longitud": -75.654,
+      "distancia_km": 200.3697559968621,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-10-05 05:50:46",
       "candidato_acelerografico": false,
@@ -76807,10 +76807,10 @@
     "SGC2026toydyg": {
       "id": "SGC2026toydyg",
       "magnitud": 2.7,
-      "profundidad": 153.51,
-      "latitud": 6.804,
-      "longitud": -73.139,
-      "distancia_km": 254.59664430752508,
+      "profundidad": 154.34,
+      "latitud": 6.807,
+      "longitud": -73.136,
+      "distancia_km": 255.03607957174808,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-10-05 01:02:13",
       "candidato_acelerografico": false,
