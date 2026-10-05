@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T13:50:22.646966-05:00",
+  "actualizado": "2026-10-05T13:55:21.131155-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2830,
@@ -76627,13 +76627,13 @@
     },
     "SGC2026tpeyon": {
       "id": "SGC2026tpeyon",
-      "magnitud": 2.0,
-      "profundidad": 119.24,
-      "latitud": 6.937,
-      "longitud": -73.103,
-      "distancia_km": 269.73514289502646,
-      "lugar": "Giron - Santander, Colombia",
-      "hora_local": "2026-10-05 04:27:12",
+      "magnitud": 2.1,
+      "profundidad": 133.96,
+      "latitud": 6.764,
+      "longitud": -73.136,
+      "distancia_km": 250.6758518310994,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-05 04:27:10",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76642,7 +76642,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-05 04:27:12",
+      "fecha_local": "2026-10-05 04:27:10",
       "lat": 6.937,
       "lon": -73.103,
       "distancia_bogota": 269.7,
