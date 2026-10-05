@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T12:50:23.743473-05:00",
+  "actualizado": "2026-10-05T12:55:25.743332-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2828,
@@ -76571,11 +76571,11 @@
     },
     "SGC2026tpdtzu": {
       "id": "SGC2026tpdtzu",
-      "magnitud": 2.2,
-      "profundidad": 113.24,
-      "latitud": 6.756,
-      "longitud": -73.378,
-      "distancia_km": 240.00953730459725,
+      "magnitud": 2.1,
+      "profundidad": 115.27,
+      "latitud": 6.73,
+      "longitud": -73.432,
+      "distancia_km": 235.4071699238396,
       "lugar": "San Vicente de Chucuri - Santander, Colombia",
       "hora_local": "2026-10-05 03:51:43",
       "candidato_acelerografico": false,
