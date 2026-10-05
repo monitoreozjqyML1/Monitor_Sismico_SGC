@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-05T08:25:21.122005-05:00",
+  "actualizado": "2026-10-05T08:30:18.729637-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2816,
+    "total_eventos": 2817,
     "eventos_m4_o_mayores": 46,
     "candidatos_acelerograficos": 46,
     "alertas_telegram": 39,
@@ -76775,6 +76775,34 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-05T08:15:17.057479-05:00",
       "alerta_enviada": true
+    },
+    "SGC2026tpmuno": {
+      "id": "SGC2026tpmuno",
+      "magnitud": 2.9,
+      "profundidad": 134.99,
+      "latitud": 5.528,
+      "longitud": -73.742,
+      "distancia_km": 97.92640426005818,
+      "lugar": "San Miguel de Sema - Boyaca, Colombia",
+      "hora_local": "2026-10-05 08:23:53",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-05 08:23:53",
+      "lat": 5.528,
+      "lon": -73.742,
+      "distancia_bogota": 97.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-05T08:30:14.411393-05:00",
+      "alerta_enviada": false
     }
   }
 }
