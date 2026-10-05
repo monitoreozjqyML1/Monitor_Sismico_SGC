@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-05T16:23:17.437741-05:00",
+  "actualizado": "2026-10-05T16:25:28.791537-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2839,
+    "total_eventos": 2840,
     "eventos_m4_o_mayores": 46,
     "candidatos_acelerograficos": 46,
     "alertas_telegram": 39,
@@ -77418,6 +77418,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-05T16:22:50.864588-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tqcnls": {
+      "id": "SGC2026tqcnls",
+      "magnitud": 2.4,
+      "profundidad": 35.69,
+      "latitud": 4.118,
+      "longitud": -75.018,
+      "distancia_km": 123.87467772727427,
+      "lugar": "Guamo - Tolima, Colombia",
+      "hora_local": "2026-10-05 16:18:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-05 16:18:29",
+      "lat": 4.118,
+      "lon": -75.018,
+      "distancia_bogota": 123.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-05T16:25:24.405810-05:00",
       "alerta_enviada": false
     }
   }
