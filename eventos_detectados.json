@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-05T08:15:23.049150-05:00",
+  "actualizado": "2026-10-05T08:20:22.938409-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2816,
-    "eventos_m4_o_mayores": 47,
-    "candidatos_acelerograficos": 47,
+    "eventos_m4_o_mayores": 46,
+    "candidatos_acelerograficos": 46,
     "alertas_telegram": 39,
-    "porcentaje_m4_o_mayores": 1.67,
-    "eventos_mayor_igual_4": 47,
-    "total_candidatos_acelerograficos": 47,
+    "porcentaje_m4_o_mayores": 1.63,
+    "eventos_mayor_igual_4": 46,
+    "total_candidatos_acelerograficos": 46,
     "total_alertas": 7,
     "porcentaje_alertas": 0.25
   },
@@ -76739,14 +76739,14 @@
     },
     "SGC2026tpmhth": {
       "id": "SGC2026tpmhth",
-      "magnitud": 4.1,
-      "profundidad": 159.89,
-      "latitud": 6.806,
-      "longitud": -72.931,
-      "distancia_km": 264.9585678300391,
-      "lugar": "Guaca - Santander, Colombia",
-      "hora_local": "2026-10-05 08:09:03",
-      "candidato_acelerografico": true,
+      "magnitud": 3.9,
+      "profundidad": 154.64,
+      "latitud": 6.821,
+      "longitud": -73.153,
+      "distancia_km": 255.7053214290157,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-05 08:09:04",
+      "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "NO DISPONIBLE",
         "estaciones": [],
@@ -76754,7 +76754,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-05 08:09:03",
+      "fecha_local": "2026-10-05 08:09:04",
       "alerta_pga": {
         "estado": "SIN_DATOS",
         "porcentaje_ns": null,
