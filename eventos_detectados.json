@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T10:40:24.862433-05:00",
+  "actualizado": "2026-10-05T10:45:22.150310-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2820,
@@ -76403,13 +76403,13 @@
     },
     "SGC2026toztqs": {
       "id": "SGC2026toztqs",
-      "magnitud": 2.5,
-      "profundidad": 137.19,
-      "latitud": 6.866,
-      "longitud": -75.739,
-      "distancia_km": 302.35985702935045,
-      "lugar": "San Andres - Antioquia, Colombia",
-      "hora_local": "2026-10-05 01:50:37",
+      "magnitud": 2.3,
+      "profundidad": 19.6,
+      "latitud": 6.973,
+      "longitud": -76.268,
+      "distancia_km": 349.654888018039,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-10-05 01:50:41",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76418,7 +76418,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-05 01:50:37",
+      "fecha_local": "2026-10-05 01:50:41",
       "lat": 6.866,
       "lon": -75.739,
       "distancia_bogota": 302.4,
@@ -76862,13 +76862,13 @@
     },
     "SGC2026tozmvh": {
       "id": "SGC2026tozmvh",
-      "magnitud": 2.5,
-      "profundidad": 0.49,
-      "latitud": 3.842,
-      "longitud": -75.666,
-      "distancia_km": 201.42865511692696,
+      "magnitud": 2.2,
+      "profundidad": 17.81,
+      "latitud": 3.858,
+      "longitud": -75.64,
+      "distancia_km": 198.04411925705455,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-05 01:42:42",
+      "hora_local": "2026-10-05 01:42:41",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76877,7 +76877,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-05 01:42:42",
+      "fecha_local": "2026-10-05 01:42:41",
       "lat": 3.842,
       "lon": -75.666,
       "distancia_bogota": 201.4,
