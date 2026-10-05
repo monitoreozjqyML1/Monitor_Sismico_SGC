@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T10:25:19.324466-05:00",
+  "actualizado": "2026-10-05T10:30:21.338002-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2819,
@@ -76806,11 +76806,11 @@
     },
     "SGC2026toydyg": {
       "id": "SGC2026toydyg",
-      "magnitud": 2.7,
-      "profundidad": 154.34,
-      "latitud": 6.807,
-      "longitud": -73.136,
-      "distancia_km": 255.03607957174808,
+      "magnitud": 2.6,
+      "profundidad": 147.59,
+      "latitud": 6.793,
+      "longitud": -73.157,
+      "distancia_km": 252.67506081116335,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-10-05 01:02:13",
       "candidato_acelerografico": false,
