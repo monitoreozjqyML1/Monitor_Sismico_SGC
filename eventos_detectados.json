@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-06T08:45:19.294171-05:00",
+  "actualizado": "2026-10-06T08:50:27.077698-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2862,
@@ -78038,13 +78038,13 @@
     },
     "SGC2026treymo": {
       "id": "SGC2026treymo",
-      "magnitud": 2.9,
-      "profundidad": 19.72,
-      "latitud": 4.483,
-      "longitud": -76.679,
-      "distancia_km": 290.0513088212094,
+      "magnitud": 3.1,
+      "profundidad": 42.94,
+      "latitud": 4.497,
+      "longitud": -76.688,
+      "distancia_km": 290.9107480797399,
       "lugar": "Istmina - Choco, Colombia",
-      "hora_local": "2026-10-06 06:36:05",
+      "hora_local": "2026-10-06 06:36:03",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -78053,7 +78053,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-06 06:36:05",
+      "fecha_local": "2026-10-06 06:36:03",
       "lat": 4.483,
       "lon": -76.679,
       "distancia_bogota": 290.1,
