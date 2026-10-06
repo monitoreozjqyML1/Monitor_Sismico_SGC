@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-06T17:50:21.414059-05:00",
+  "actualizado": "2026-10-06T17:55:21.383368-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2881,
@@ -78486,13 +78486,13 @@
     },
     "SGC2026tryoby": {
       "id": "SGC2026tryoby",
-      "magnitud": 2.4,
-      "profundidad": 156.27,
-      "latitud": 3.353,
-      "longitud": -76.558,
-      "distancia_km": 314.3693837581952,
-      "lugar": "Cali - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-06 16:27:25",
+      "magnitud": 2.0,
+      "profundidad": 18.97,
+      "latitud": 3.877,
+      "longitud": -75.623,
+      "distancia_km": 195.37801691642588,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-06 16:27:35",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -78501,7 +78501,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-06 16:27:25",
+      "fecha_local": "2026-10-06 16:27:35",
       "lat": 3.353,
       "lon": -76.558,
       "distancia_bogota": 314.4,
