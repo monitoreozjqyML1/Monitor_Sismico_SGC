@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-06T08:40:22.757609-05:00",
+  "actualizado": "2026-10-06T08:45:19.294171-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2862,
@@ -78011,11 +78011,11 @@
     "SGC2026treuqh": {
       "id": "SGC2026treuqh",
       "magnitud": 2.4,
-      "profundidad": 65.79,
-      "latitud": 4.697,
-      "longitud": -76.836,
-      "distancia_km": 306.30021686975937,
-      "lugar": "Medio San Juan (Andagoya) - Choco, Colombia",
+      "profundidad": 45.94,
+      "latitud": 4.6,
+      "longitud": -76.678,
+      "distancia_km": 289.07026339640237,
+      "lugar": "Sipi - Choco, Colombia",
       "hora_local": "2026-10-06 06:31:35",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
