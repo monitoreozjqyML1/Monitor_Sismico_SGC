@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-07T16:40:18.952590-05:00",
+  "actualizado": "2026-10-07T16:45:22.042724-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2473,
+    "total_eventos": 2472,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 39,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.2
   },
   "eventos": {
-    "SGC2026rqfezg": {
-      "id": "SGC2026rqfezg",
-      "magnitud": 1.7,
-      "profundidad": 12.0,
-      "latitud": 3.646820237615525,
-      "longitud": -73.98000815088449,
-      "distancia_bogota": 118.77,
-      "lugar": "El Castillo - Meta, Colombia",
-      "fecha_local": "2026-09-07 09:46",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-07 16:45:14"
-    },
     "SGC2026rqfpgp": {
       "id": "SGC2026rqfpgp",
       "magnitud": 1.5,
