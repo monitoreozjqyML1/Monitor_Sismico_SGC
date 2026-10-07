@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-07T15:45:21.414050-05:00",
+  "actualizado": "2026-10-07T15:55:17.726859-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2471,
@@ -69156,11 +69156,11 @@
     "SGC2026ttlfua": {
       "id": "SGC2026ttlfua",
       "magnitud": 2.3,
-      "profundidad": 156.33,
-      "latitud": 6.816,
-      "longitud": -72.978,
-      "distancia_km": 263.5078164215022,
-      "lugar": "Piedecuesta - Santander, Colombia",
+      "profundidad": 143.67,
+      "latitud": 6.77,
+      "longitud": -73.123,
+      "distancia_km": 251.87947467806038,
+      "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-10-07 11:54:29",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
