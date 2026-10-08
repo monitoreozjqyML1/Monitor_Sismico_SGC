@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T13:45:19.928252-05:00",
+  "actualizado": "2026-10-08T13:50:20.488799-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2433,
+    "total_eventos": 2432,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rrpsmz": {
-      "id": "SGC2026rrpsmz",
-      "magnitud": 2.0,
-      "profundidad": 151.0,
-      "latitud": 6.810666666666666,
-      "longitud": -73.146,
-      "distancia_bogota": 254.96,
-      "lugar": "Los Santos - Santander, Colombia",
-      "fecha_local": "2026-09-08 04:08",
-      "agencia": "SGC",
-      "tipo_magnitud": "M",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 13:45:17"
-    },
     "SGC2026rrqabp": {
       "id": "SGC2026rrqabp",
       "magnitud": 1.0,
@@ -68208,13 +68185,13 @@
     },
     "SGC2026tukdvp": {
       "id": "SGC2026tukdvp",
-      "magnitud": 2.4,
-      "profundidad": -0.1,
-      "latitud": 3.815,
-      "longitud": -75.666,
-      "distancia_km": 202.8886026492867,
+      "magnitud": 2.2,
+      "profundidad": 17.81,
+      "latitud": 3.833,
+      "longitud": -75.645,
+      "distancia_km": 199.8764104615299,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-08 00:26:51",
+      "hora_local": "2026-10-08 00:26:50",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -68223,7 +68200,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-08 00:26:51",
+      "fecha_local": "2026-10-08 00:26:50",
       "lat": 3.815,
       "lon": -75.666,
       "distancia_bogota": 202.9,
