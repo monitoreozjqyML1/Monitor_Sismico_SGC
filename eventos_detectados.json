@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T11:00:23.349850-05:00",
+  "actualizado": "2026-10-08T11:05:19.047043-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2448,
+    "total_eventos": 2447,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -104,29 +104,6 @@
       },
       "alertas": [],
       "fecha_deteccion": "2026-09-08 11:40:01"
-    },
-    "SGC2026rrmadc": {
-      "id": "SGC2026rrmadc",
-      "magnitud": 1.6,
-      "profundidad": 146.0,
-      "latitud": 6.8795,
-      "longitud": -72.89583333333333,
-      "distancia_bogota": 273.99,
-      "lugar": "Guaca - Santander, Colombia",
-      "fecha_local": "2026-09-08 02:16",
-      "agencia": "SGC",
-      "tipo_magnitud": "M",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 11:00:26"
     },
     "SGC2026rrzgvi": {
       "id": "SGC2026rrzgvi",
