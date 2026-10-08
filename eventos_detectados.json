@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-08T10:00:25.706104-05:00",
+  "actualizado": "2026-10-08T10:05:26.460334-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2452,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.2
   },
   "eventos": {
-    "SGC2026rryfyn": {
-      "id": "SGC2026rryfyn",
-      "magnitud": 2.0,
-      "profundidad": 135.0,
-      "latitud": 6.807234187421092,
-      "longitud": -73.14128884662388,
-      "distancia_bogota": 254.82,
-      "lugar": "Los Santos - Santander, Colombia",
-      "fecha_local": "2026-09-08 08:25",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 10:05:18"
-    },
     "SGC2026rrkims": {
       "id": "SGC2026rrkims",
       "magnitud": 2.2,
@@ -69041,6 +69018,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-08T09:40:26.664698-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tuycqn": {
+      "id": "SGC2026tuycqn",
+      "magnitud": 2.1,
+      "profundidad": 16.6,
+      "latitud": 3.845,
+      "longitud": -75.64,
+      "distancia_km": 198.74172803938797,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-08 07:27:33",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-08 07:27:33",
+      "lat": 3.845,
+      "lon": -75.64,
+      "distancia_bogota": 198.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-08T10:05:22.469079-05:00",
       "alerta_enviada": false
     }
   }
