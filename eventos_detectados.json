@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T09:40:29.913836-05:00",
+  "actualizado": "2026-10-08T09:45:22.165498-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2454,
+    "total_eventos": 2453,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.2
   },
   "eventos": {
-    "SGC2026rrjrdm": {
-      "id": "SGC2026rrjrdm",
-      "magnitud": 1.4,
-      "profundidad": 147.0,
-      "latitud": 6.8195,
-      "longitud": -73.10116666666667,
-      "distancia_bogota": 257.89,
-      "lugar": "Los Santos - Santander, Colombia",
-      "fecha_local": "2026-09-08 01:05",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 09:45:18"
-    },
     "SGC2026rrkdik": {
       "id": "SGC2026rrkdik",
       "magnitud": 2.2,
@@ -68812,12 +68789,12 @@
     "SGC2026tuyvzy": {
       "id": "SGC2026tuyvzy",
       "magnitud": 2.5,
-      "profundidad": 131.79,
-      "latitud": 6.875,
-      "longitud": -73.007,
-      "distancia_km": 267.922984388278,
-      "lugar": "Piedecuesta - Santander, Colombia",
-      "hora_local": "2026-10-08 07:50:03",
+      "profundidad": 146.41,
+      "latitud": 6.854,
+      "longitud": -73.15,
+      "distancia_km": 259.2054860468862,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-08 07:50:02",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -68826,7 +68803,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-08 07:50:03",
+      "fecha_local": "2026-10-08 07:50:02",
       "lat": 6.875,
       "lon": -73.007,
       "distancia_bogota": 267.9,
