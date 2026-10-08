@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-08T10:50:26.129098-05:00",
+  "actualizado": "2026-10-08T10:55:22.349052-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2447,
@@ -68851,11 +68851,11 @@
     },
     "SGC2026tvbsxl": {
       "id": "SGC2026tvbsxl",
-      "magnitud": 2.9,
-      "profundidad": 9.63,
-      "latitud": 4.652,
-      "longitud": -76.837,
-      "distancia_km": 306.4871706941087,
+      "magnitud": 2.8,
+      "profundidad": 7.76,
+      "latitud": 4.645,
+      "longitud": -76.833,
+      "distancia_km": 306.0631785543319,
       "lugar": "Medio San Juan (Andagoya) - Choco, Colombia",
       "hora_local": "2026-10-08 09:16:58",
       "candidato_acelerografico": false,
