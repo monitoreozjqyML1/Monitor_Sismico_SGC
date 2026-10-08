@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T15:35:23.336763-05:00",
+  "actualizado": "2026-10-08T15:40:21.981636-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2424,
+    "total_eventos": 2423,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rshatn": {
-      "id": "SGC2026rshatn",
-      "magnitud": 1.3,
-      "profundidad": 105.0,
-      "latitud": 8.615,
-      "longitud": -73.51066666666667,
-      "distancia_bogota": 438.51,
-      "lugar": "El Carmen - Norte de Santander, Colombia",
-      "fecha_local": "2026-09-08 12:50",
-      "agencia": "SGC",
-      "tipo_magnitud": "M",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 15:40:15"
-    },
     "SGC2026rshiya": {
       "id": "SGC2026rshiya",
       "magnitud": 2.1,
