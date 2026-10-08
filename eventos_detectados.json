@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T13:55:20.253116-05:00",
+  "actualizado": "2026-10-08T14:00:26.854160-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2431,
+    "total_eventos": 2429,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,52 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rrqeun": {
-      "id": "SGC2026rrqeun",
-      "magnitud": 1.9,
-      "profundidad": 74.0,
-      "latitud": 5.295166666666667,
-      "longitud": -77.15766666666667,
-      "distancia_bogota": 347.91,
-      "lugar": "Bajo Baudó (Pizarro) - Chocó, Colombia",
-      "fecha_local": "2026-09-08 04:22",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_1",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 13:55:17"
-    },
-    "SGC2026rrqkkb": {
-      "id": "SGC2026rrqkkb",
-      "magnitud": 1.6,
-      "profundidad": 153.0,
-      "latitud": 6.805166666666667,
-      "longitud": -73.05566666666667,
-      "distancia_bogota": 258.59,
-      "lugar": "Los Santos - Santander, Colombia",
-      "fecha_local": "2026-09-08 04:29",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 14:00:16"
-    },
     "SGC2026rsjgst": {
       "id": "SGC2026rsjgst",
       "magnitud": 3.5,
