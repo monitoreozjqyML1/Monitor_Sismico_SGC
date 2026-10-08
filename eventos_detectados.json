@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T12:45:21.591199-05:00",
+  "actualizado": "2026-10-08T12:50:25.536827-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2437,
+    "total_eventos": 2435,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,52 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rsgujx": {
-      "id": "SGC2026rsgujx",
-      "magnitud": 2.4,
-      "profundidad": 113.0,
-      "latitud": 6.808569431304932,
-      "longitud": -73.16613006591797,
-      "distancia_bogota": 253.86,
-      "lugar": "Los Santos - Santander, Colombia",
-      "fecha_local": "2026-09-08 12:43",
-      "agencia": "SGC",
-      "tipo_magnitud": "M",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 12:50:17"
-    },
-    "SGC2026rrpgjb": {
-      "id": "SGC2026rrpgjb",
-      "magnitud": 1.2,
-      "profundidad": 87.0,
-      "latitud": 4.750833333333333,
-      "longitud": -76.5895,
-      "distancia_bogota": 279.0,
-      "lugar": "Nóvita - Chocó, Colombia",
-      "fecha_local": "2026-09-08 03:54",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_1",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 12:50:17"
-    },
     "SGC2026rrphas": {
       "id": "SGC2026rrphas",
       "magnitud": 1.3,
