@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T10:55:22.349052-05:00",
+  "actualizado": "2026-10-08T11:00:23.349850-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2447,
+    "total_eventos": 2448,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -68931,6 +68931,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-08T10:05:22.469079-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tunmfq": {
+      "id": "SGC2026tunmfq",
+      "magnitud": 2.0,
+      "profundidad": 135.35,
+      "latitud": 6.766,
+      "longitud": -73.162,
+      "distancia_km": 249.70467542370574,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-08 02:06:47",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-08 02:06:47",
+      "lat": 6.766,
+      "lon": -73.162,
+      "distancia_bogota": 249.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-08T11:00:20.002289-05:00",
       "alerta_enviada": false
     }
   }
