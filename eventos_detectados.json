@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T12:05:47.775837-05:00",
+  "actualizado": "2026-10-08T12:10:41.227574-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2441,
+    "total_eventos": 2440,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.2
   },
   "eventos": {
-    "SGC2026rrmgae": {
-      "id": "SGC2026rrmgae",
-      "magnitud": 1.1,
-      "profundidad": 28.0,
-      "latitud": 4.541833333333333,
-      "longitud": -76.74083333333333,
-      "distancia_bogota": 296.38,
-      "lugar": "Istmina - Chocó, Colombia",
-      "fecha_local": "2026-09-08 02:23",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_1",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 12:10:15"
-    },
     "SGC2026rrosbr": {
       "id": "SGC2026rrosbr",
       "magnitud": 1.0,
@@ -68779,11 +68756,11 @@
     },
     "SGC2026tvgtql": {
       "id": "SGC2026tvgtql",
-      "magnitud": 2.1,
-      "profundidad": 16.67,
-      "latitud": 7.479,
-      "longitud": -75.185,
-      "distancia_km": 331.4683413820923,
+      "magnitud": 2.0,
+      "profundidad": 18.95,
+      "latitud": 7.506,
+      "longitud": -75.169,
+      "distancia_km": 333.6097228905418,
       "lugar": "Caceres - Antioquia, Colombia",
       "hora_local": "2026-10-08 11:48:40",
       "candidato_acelerografico": false,
