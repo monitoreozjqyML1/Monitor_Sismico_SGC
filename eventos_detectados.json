@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T13:15:25.069772-05:00",
+  "actualizado": "2026-10-08T13:20:21.738443-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2432,
+    "total_eventos": 2433,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -68596,6 +68596,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-08T12:00:15.072956-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026tvjizh": {
+      "id": "SGC2026tvjizh",
+      "magnitud": 2.7,
+      "profundidad": 7.26,
+      "latitud": 2.221,
+      "longitud": -75.688,
+      "distancia_km": 329.88134667611865,
+      "lugar": "Agrado - Huila, Colombia",
+      "hora_local": "2026-10-08 13:06:50",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-08 13:06:50",
+      "lat": 2.221,
+      "lon": -75.688,
+      "distancia_bogota": 329.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-08T13:20:18.442178-05:00",
       "alerta_enviada": false
     }
   }
