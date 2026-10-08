@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T12:40:19.263873-05:00",
+  "actualizado": "2026-10-08T12:45:21.591199-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2439,
+    "total_eventos": 2437,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,52 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rrpclh": {
-      "id": "SGC2026rrpclh",
-      "magnitud": 1.9,
-      "profundidad": 177.0,
-      "latitud": 6.855333333333333,
-      "longitud": -72.902,
-      "distancia_bogota": 271.31,
-      "lugar": "Guaca - Santander, Colombia",
-      "fecha_local": "2026-09-08 03:49",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 12:45:18"
-    },
-    "SGC2026rrozyt": {
-      "id": "SGC2026rrozyt",
-      "magnitud": 1.4,
-      "profundidad": 148.0,
-      "latitud": 7.934833333333334,
-      "longitud": -73.0925,
-      "distancia_bogota": 374.46,
-      "lugar": "Ábrego - Norte de Santander, Colombia",
-      "fecha_local": "2026-09-08 03:46",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 12:45:18"
-    },
     "SGC2026rsgujx": {
       "id": "SGC2026rsgujx",
       "magnitud": 2.4,
