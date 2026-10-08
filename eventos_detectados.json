@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-08T15:30:22.018787-05:00",
+  "actualizado": "2026-10-08T15:35:23.336763-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2425,
+    "total_eventos": 2424,
     "eventos_m4_o_mayores": 42,
     "candidatos_acelerograficos": 42,
     "alertas_telegram": 39,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rsgoxm": {
-      "id": "SGC2026rsgoxm",
-      "magnitud": 2.3,
-      "profundidad": 40.0,
-      "latitud": 4.566338366896415,
-      "longitud": -76.71656304182855,
-      "distancia_bogota": 293.53,
-      "lugar": "Medio San Juan (Andagoya) - Chocó, Colombia",
-      "fecha_local": "2026-09-08 12:37",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_1",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-08 15:35:15"
-    },
     "SGC2026rshatn": {
       "id": "SGC2026rshatn",
       "magnitud": 1.3,
