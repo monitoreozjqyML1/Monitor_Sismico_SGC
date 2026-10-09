@@ -203,13 +203,17 @@ jobs:
         run: |
           python monitor_sgc_cloud.py
 
+      - name: Actualizar hist?rico permanente PGA
+        if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
+        run: python actualizar_historial_pga.py
+
       - name: Guardar cambios
         if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add eventos_detectados.json
+          git add -- eventos_detectados.json historial_candidatos_pga.json
 
           if git diff --cached --quiet; then
             echo "No hay cambios que guardar."
