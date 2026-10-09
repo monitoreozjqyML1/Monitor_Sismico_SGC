@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-09T11:21:01.477263-05:00",
+  "actualizado": "2026-10-09T11:25:23.015593-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2375,
+    "total_eventos": 2374,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -13,29 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rtihvd": {
-      "id": "SGC2026rtihvd",
-      "magnitud": 1.4,
-      "profundidad": 1.0,
-      "latitud": 3.1005,
-      "longitud": -75.9815,
-      "distancia_bogota": 277.37,
-      "lugar": "Planadas - Tolima, Colombia",
-      "fecha_local": "2026-09-09 02:33",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_2",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-09 11:25:19"
-    },
     "SGC2026rtlkdq": {
       "id": "SGC2026rtlkdq",
       "magnitud": 1.5,
