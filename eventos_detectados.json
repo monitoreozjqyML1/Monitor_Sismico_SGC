@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-09T16:10:19.155962-05:00",
+  "actualizado": "2026-10-09T16:15:17.201488-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2365,
+    "total_eventos": 2364,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -13,34 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rujeej": {
-      "id": "SGC2026rujeej",
-      "magnitud": 2.5,
-      "profundidad": 115.0,
-      "latitud": 6.870194911956787,
-      "longitud": -73.2902603149414,
-      "distancia_km": 255.19416508557046,
-      "lugar": "Betulia - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.870194911956787,
-      "lon": -73.2902603149414,
-      "distancia_bogota": 255.2,
-      "tipo_magnitud": "M",
-      "fecha_local": "2026-09-09 16:04",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-09T16:10:16.280387-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026rtvdgu": {
       "id": "SGC2026rtvdgu",
       "magnitud": 2.2,
