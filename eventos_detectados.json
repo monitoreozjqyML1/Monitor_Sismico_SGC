@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-09T16:30:21.663294-05:00",
+  "actualizado": "2026-10-09T16:35:20.719752-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2364,
@@ -13,34 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rtvdgu": {
-      "id": "SGC2026rtvdgu",
-      "magnitud": 2.2,
-      "profundidad": 42.0,
-      "latitud": 4.638250077984512,
-      "longitud": -76.62953255094945,
-      "distancia_km": 283.542821072773,
-      "lugar": "Sipí - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 4.638250077984512,
-      "lon": -76.62953255094945,
-      "distancia_bogota": 283.5,
-      "tipo_magnitud": "MLr_1",
-      "fecha_local": "2026-09-09 09:00",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-09T16:30:30.409124-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026rtxksi": {
       "id": "SGC2026rtxksi",
       "magnitud": 1.2,
@@ -67210,13 +67182,13 @@
     },
     "SGC2026txbsrd": {
       "id": "SGC2026txbsrd",
-      "magnitud": 2.5,
-      "profundidad": 23.61,
-      "latitud": 4.423,
-      "longitud": -76.707,
-      "distancia_km": 293.8072560515031,
+      "magnitud": 2.7,
+      "profundidad": 42.94,
+      "latitud": 4.41,
+      "longitud": -76.697,
+      "distancia_km": 292.8697352781284,
       "lugar": "Istmina - Choco, Colombia",
-      "hora_local": "2026-10-09 11:25:42",
+      "hora_local": "2026-10-09 11:25:40",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -67225,7 +67197,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-09 11:25:42",
+      "fecha_local": "2026-10-09 11:25:40",
       "lat": 4.405,
       "lon": -76.799,
       "distancia_bogota": 304.2,
@@ -67234,6 +67206,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-09T11:30:17.818799-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026twxgxy": {
+      "id": "SGC2026twxgxy",
+      "magnitud": 2.0,
+      "profundidad": 142.16,
+      "latitud": 5.894,
+      "longitud": -73.414,
+      "distancia_km": 150.37526518487513,
+      "lugar": "Chitaraque - Boyaca, Colombia",
+      "hora_local": "2026-10-09 09:11:19",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-09 09:11:19",
+      "lat": 5.894,
+      "lon": -73.414,
+      "distancia_bogota": 150.4,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-09T16:35:17.514835-05:00",
       "alerta_enviada": false
     }
   }
