@@ -51,47 +51,111 @@ def distancia_km(lat1, lon1, lat2, lon2):
 
 def obtener_eventos_almacenados():
 
-    if not os.path.exists(ARCHIVO_EVENTOS):
-        return []
+    url_remota = (
+        "https://raw.githubusercontent.com/"
+        "monitoreozjqyML1/Monitor_Sismico_SGC/"
+        "main/eventos_detectados.json"
+    )
 
-    try:
+    antiguedad_maxima_minutos = 30
 
-        with open(
-            ARCHIVO_EVENTOS,
-            "r",
-            encoding="utf-8"
-        ) as archivo:
-
-            datos = json.load(archivo)
-
+    def extraer_eventos(datos, exigir_catalogo_canonico=False):
         if isinstance(datos, dict):
+            eventos = datos.get("eventos")
 
-            eventos = datos.get("eventos", [])
+            if exigir_catalogo_canonico:
+                resumen = datos.get("resumen")
+                actualizado = datos.get("actualizado")
+
+                if not isinstance(resumen, dict):
+                    raise ValueError("Falta el resumen del catálogo.")
+
+                total_declarado = resumen.get("total_eventos")
+                if not isinstance(total_declarado, int) or isinstance(total_declarado, bool):
+                    raise ValueError("El total declarado de eventos no es válido.")
+
+                if not isinstance(actualizado, str) or not actualizado.strip():
+                    raise ValueError("Falta la fecha de actualización del catálogo.")
+
+                try:
+                    fecha_actualizacion = datetime.fromisoformat(
+                        actualizado.replace("Z", "+00:00")
+                    )
+                    if fecha_actualizacion.tzinfo is None:
+                        raise ValueError("La fecha no contiene zona horaria.")
+                except (TypeError, ValueError) as error:
+                    raise ValueError(
+                        "La fecha de actualización no es válida."
+                    ) from error
+
+                ahora = datetime.now(fecha_actualizacion.tzinfo)
+                antiguedad = (ahora - fecha_actualizacion).total_seconds()
+
+                if antiguedad < -300:
+                    raise ValueError("La fecha del catálogo está demasiado adelantada.")
+
+                if antiguedad > antiguedad_maxima_minutos * 60:
+                    raise ValueError(
+                        "El catálogo remoto supera los 30 minutos de antigüedad."
+                    )
 
             if isinstance(eventos, dict):
-                return list(eventos.values())
+                registros = list(eventos.values())
+            elif isinstance(eventos, list):
+                registros = eventos
+            else:
+                raise ValueError("El JSON no contiene un catálogo de eventos válido.")
 
-            if isinstance(eventos, list):
-                return eventos
+            if exigir_catalogo_canonico and total_declarado != len(registros):
+                raise ValueError(
+                    "El total declarado no coincide con el número de eventos."
+                )
 
-        if isinstance(datos, list):
-            return datos
+        elif isinstance(datos, list) and not exigir_catalogo_canonico:
+            registros = datos
+        else:
+            raise ValueError("La raíz del JSON tiene un formato inválido.")
 
-        return []
+        if not registros or not all(isinstance(e, dict) for e in registros):
+            raise ValueError("El catálogo está vacío o contiene registros inválidos.")
+
+        return registros
+
+    try:
+        respuesta = requests.get(
+            url_remota,
+            timeout=15,
+            headers={"Cache-Control": "no-cache"}
+        )
+        respuesta.raise_for_status()
+
+        eventos_remotos = extraer_eventos(
+            respuesta.json(),
+            exigir_catalogo_canonico=True
+        )
+
+        print("EVENTOS CARGADOS DESDE GITHUB:", len(eventos_remotos))
+        return eventos_remotos
 
     except Exception as error:
-
         print(
-            "ERROR LEYENDO EVENTOS CANÃ“NICOS:",
+            "ERROR LEYENDO EVENTOS REMOTOS; "
+            "SE USARÁ EL RESPALDO LOCAL:",
             error
         )
 
+    try:
+        with open(ARCHIVO_EVENTOS, "r", encoding="utf-8") as archivo:
+            datos_locales = json.load(archivo)
+
+        eventos_locales = extraer_eventos(datos_locales)
+        print("EVENTOS CARGADOS DESDE ARCHIVO LOCAL:", len(eventos_locales))
+        return eventos_locales
+
+    except Exception as error:
+        print("ERROR LEYENDO EVENTOS LOCALES:", error)
         return []
 
-
-# ============================================================
-# NORMALIZACIÃ“N MÃNIMA PARA LA WEB
-# ============================================================
 
 def preparar_evento_web(evento):
 
