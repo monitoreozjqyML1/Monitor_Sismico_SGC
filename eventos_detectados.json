@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-09T09:45:22.627968-05:00",
+  "actualizado": "2026-10-09T09:50:24.955752-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2388,
+    "total_eventos": 2389,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -67806,6 +67806,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-09T09:35:15.553457-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026twujnz": {
+      "id": "SGC2026twujnz",
+      "magnitud": 2.7,
+      "profundidad": 119.35,
+      "latitud": 10.09,
+      "longitud": -73.167,
+      "distancia_km": 606.3808534768916,
+      "lugar": "La Paz - Cesar, Colombia",
+      "hora_local": "2026-10-09 07:43:50",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-09 07:43:50",
+      "lat": 10.09,
+      "lon": -73.167,
+      "distancia_bogota": 606.4,
+      "tipo_magnitud": "MLr_4",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-09T09:50:20.292887-05:00",
       "alerta_enviada": false
     }
   }
