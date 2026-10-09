@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-09T12:05:19.941945-05:00",
+  "actualizado": "2026-10-09T12:10:19.671044-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2375,
+    "total_eventos": 2373,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -13,52 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rtlkdq": {
-      "id": "SGC2026rtlkdq",
-      "magnitud": 1.5,
-      "profundidad": 55.0,
-      "latitud": 1.809,
-      "longitud": -75.98866666666666,
-      "distancia_bogota": 386.51,
-      "lugar": "Acevedo - Huila, Colombia",
-      "fecha_local": "2026-09-09 04:06",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_2",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-09 12:10:15"
-    },
-    "SGC2026rtkruq": {
-      "id": "SGC2026rtkruq",
-      "magnitud": 1.6,
-      "profundidad": 150.0,
-      "latitud": 6.832166666666667,
-      "longitud": -73.168,
-      "distancia_bogota": 256.19,
-      "lugar": "Los Santos - Santander, Colombia",
-      "fecha_local": "2026-09-09 03:45",
-      "agencia": "SGC",
-      "tipo_magnitud": "MLr_3",
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "alertas": [],
-      "fecha_deteccion": "2026-09-09 12:10:15"
-    },
     "SGC2026rtlykd": {
       "id": "SGC2026rtlykd",
       "magnitud": 1.2,
