@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-09T14:30:22.859130-05:00",
+  "actualizado": "2026-10-09T14:35:21.072168-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2368,
+    "total_eventos": 2367,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -13,34 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026rugcqh": {
-      "id": "SGC2026rugcqh",
-      "magnitud": 2.1,
-      "profundidad": 5.0,
-      "latitud": 6.923666477203369,
-      "longitud": -76.21757507324219,
-      "distancia_km": 341.8421825395326,
-      "lugar": "Uramita - Antioquia, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.923666477203369,
-      "lon": -76.21757507324219,
-      "distancia_bogota": 341.8,
-      "tipo_magnitud": "M",
-      "fecha_local": "2026-09-09 14:31",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-09T14:35:17.722412-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026ruhfox": {
       "id": "SGC2026ruhfox",
       "magnitud": 2.4,
