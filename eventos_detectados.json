@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-09T15:10:19.088081-05:00",
+  "actualizado": "2026-10-09T15:15:20.808096-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2367,
+    "total_eventos": 2365,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -13,62 +13,6 @@
     "porcentaje_alertas": 0.21
   },
   "eventos": {
-    "SGC2026ruhfox": {
-      "id": "SGC2026ruhfox",
-      "magnitud": 2.4,
-      "profundidad": 5.0,
-      "latitud": 6.969116687774658,
-      "longitud": -76.28742218017578,
-      "distancia_km": 350.8420656187351,
-      "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.969116687774658,
-      "lon": -76.28742218017578,
-      "distancia_bogota": 350.8,
-      "tipo_magnitud": "M",
-      "fecha_local": "2026-09-09 15:05",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-09T15:10:17.652986-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026rtzcgr": {
-      "id": "SGC2026rtzcgr",
-      "magnitud": 2.3,
-      "profundidad": 40.0,
-      "latitud": 4.466931001568751,
-      "longitud": -76.69047755409828,
-      "distancia_km": 291.48275913329326,
-      "lugar": "Istmina - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 4.466931001568751,
-      "lon": -76.69047755409828,
-      "distancia_bogota": 291.5,
-      "tipo_magnitud": "MLr_1",
-      "fecha_local": "2026-09-09 11:00",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-09T15:10:17.652986-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026rujeej": {
       "id": "SGC2026rujeej",
       "magnitud": 2.5,
