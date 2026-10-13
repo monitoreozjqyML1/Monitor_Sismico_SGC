@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-13T16:25:24.456868-05:00",
+  "actualizado": "2026-10-13T16:30:26.569227-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2309,
-    "eventos_m4_o_mayores": 43,
-    "candidatos_acelerograficos": 43,
-    "alertas_telegram": 40,
-    "porcentaje_m4_o_mayores": 1.86,
-    "eventos_mayor_igual_4": 43,
-    "total_candidatos_acelerograficos": 43,
+    "total_eventos": 2310,
+    "eventos_m4_o_mayores": 44,
+    "candidatos_acelerograficos": 44,
+    "alertas_telegram": 41,
+    "porcentaje_m4_o_mayores": 1.9,
+    "eventos_mayor_igual_4": 44,
+    "total_candidatos_acelerograficos": 44,
     "total_alertas": 5,
     "porcentaje_alertas": 0.22
   },
@@ -65695,6 +65695,45 @@
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-13T16:15:20.968558-05:00",
       "alerta_enviada": false
+    },
+    "SGC2026ueunoy": {
+      "id": "SGC2026ueunoy",
+      "magnitud": 4.9,
+      "profundidad": 167.81,
+      "latitud": 6.859,
+      "longitud": -73.065,
+      "distancia_km": 263.55140770973816,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-13 16:24:20",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-13 16:24:20",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 6.859,
+      "lon": -73.065,
+      "distancia_bogota": 263.6,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-10-13T16:30:17.551092-05:00",
+      "alerta_enviada": true
     }
   }
 }
