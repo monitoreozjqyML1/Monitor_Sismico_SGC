@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-13T15:25:28.586040-05:00",
+  "actualizado": "2026-10-13T15:30:20.659037-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2305,
+    "total_eventos": 2306,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
-    "porcentaje_m4_o_mayores": 1.87,
+    "porcentaje_m4_o_mayores": 1.86,
     "eventos_mayor_igual_4": 43,
     "total_candidatos_acelerograficos": 43,
     "total_alertas": 5,
@@ -65582,6 +65582,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-13T15:25:24.594446-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uesnvb": {
+      "id": "SGC2026uesnvb",
+      "magnitud": 2.1,
+      "profundidad": 91.35,
+      "latitud": 6.569,
+      "longitud": -73.104,
+      "distancia_km": 232.72026442384214,
+      "lugar": "Curiti - Santander, Colombia",
+      "hora_local": "2026-10-13 15:24:22",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-13 15:24:22",
+      "lat": 6.569,
+      "lon": -73.104,
+      "distancia_bogota": 232.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-13T15:30:17.320008-05:00",
       "alerta_enviada": false
     }
   }
