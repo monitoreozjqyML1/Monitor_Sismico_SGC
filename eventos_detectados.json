@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-13T13:40:17.982126-05:00",
+  "actualizado": "2026-10-13T13:45:18.088526-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2303,
@@ -65502,11 +65502,11 @@
     },
     "SGC2026ueozbw": {
       "id": "SGC2026ueozbw",
-      "magnitud": 3.8,
-      "profundidad": 10.0,
-      "latitud": 1.821,
+      "magnitud": 3.7,
+      "profundidad": 0.0,
+      "latitud": 1.76,
       "longitud": -76.406,
-      "distancia_km": 412.77654151979374,
+      "distancia_km": 418.0829325736579,
       "lugar": "San Agustin - Huila, Colombia",
       "hora_local": "2026-10-13 13:36:39",
       "candidato_acelerografico": false,
