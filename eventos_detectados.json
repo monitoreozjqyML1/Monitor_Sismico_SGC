@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-13T17:00:22.005061-05:00",
+  "actualizado": "2026-10-13T17:05:23.521207-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2310,
+    "total_eventos": 2311,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 41,
@@ -65750,6 +65750,34 @@
       "fecha_deteccion": "2026-10-13T16:30:17.551092-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
+    },
+    "SGC2026uelmct": {
+      "id": "SGC2026uelmct",
+      "magnitud": 2.2,
+      "profundidad": 142.63,
+      "latitud": 7.141,
+      "longitud": -73.069,
+      "distancia_km": 292.0900410777763,
+      "lugar": "Bucaramanga - Santander, Colombia",
+      "hora_local": "2026-10-13 11:50:58",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-13 11:50:58",
+      "lat": 7.141,
+      "lon": -73.069,
+      "distancia_bogota": 292.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-13T17:05:19.761460-05:00",
+      "alerta_enviada": false
     }
   }
 }
