@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-13T13:35:23.579809-05:00",
+  "actualizado": "2026-10-13T13:40:17.982126-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2302,
+    "total_eventos": 2303,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -65498,6 +65498,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-13T12:35:21.932961-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ueozbw": {
+      "id": "SGC2026ueozbw",
+      "magnitud": 3.8,
+      "profundidad": 10.0,
+      "latitud": 1.821,
+      "longitud": -76.406,
+      "distancia_km": 412.77654151979374,
+      "lugar": "San Agustin - Huila, Colombia",
+      "hora_local": "2026-10-13 13:36:39",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-13 13:36:39",
+      "lat": 1.821,
+      "lon": -76.406,
+      "distancia_bogota": 412.8,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-13T13:40:14.732742-05:00",
       "alerta_enviada": false
     }
   }
