@@ -1,7 +1,7 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-13T16:30:26.724641-05:00",
+  "actualizado": "2026-10-13T16:35:21.380324-05:00",
   "magnitud_minima": 4.0,
   "total_candidatos": 44,
   "eventos": {
@@ -2220,13 +2220,13 @@
     },
     "SGC2026ueunoy": {
       "id": "SGC2026ueunoy",
-      "magnitud": 4.9,
-      "profundidad": 167.81,
-      "latitud": 6.859,
-      "longitud": -73.065,
-      "distancia_km": 263.55140770973816,
+      "magnitud": 5.0,
+      "profundidad": 148.64,
+      "latitud": 6.804,
+      "longitud": -73.136,
+      "distancia_km": 254.73138744339042,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-13 16:24:20",
+      "hora_local": "2026-10-13 16:24:22",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "NO DISPONIBLE",
@@ -2235,7 +2235,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-13 16:24:20",
+      "fecha_local": "2026-10-13 16:24:22",
       "alerta_pga": {
         "estado": "SIN_DATOS",
         "porcentaje_ns": null,
