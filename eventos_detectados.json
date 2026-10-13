@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-13T16:12:31.434009-05:00",
+  "actualizado": "2026-10-13T16:15:24.539957-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2308,
+    "total_eventos": 2309,
     "eventos_m4_o_mayores": 43,
     "candidatos_acelerograficos": 43,
     "alertas_telegram": 40,
@@ -65666,6 +65666,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-13T16:10:18.976649-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ueiflz": {
+      "id": "SGC2026ueiflz",
+      "magnitud": 2.1,
+      "profundidad": 122.25,
+      "latitud": 7.746,
+      "longitud": -73.522,
+      "distancia_km": 342.90973177174254,
+      "lugar": "San Alberto - Cesar, Colombia",
+      "hora_local": "2026-10-13 10:12:51",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-13 10:12:51",
+      "lat": 7.746,
+      "lon": -73.522,
+      "distancia_bogota": 342.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-13T16:15:20.968558-05:00",
       "alerta_enviada": false
     }
   }
