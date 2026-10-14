@@ -143,73 +143,109 @@ def cargar_eventos_registrados():
         return {}
 
     try:
-        with open(
-            ARCHIVO_EVENTOS,
-            "r",
-            encoding="utf-8"
-        ) as archivo:
+        with open(ARCHIVO_EVENTOS, "r", encoding="utf-8") as archivo:
             datos = json.load(archivo)
 
         if isinstance(datos, dict):
-            eventos = datos.get("eventos", {})
+            if "eventos" not in datos:
+                raise ValueError("El JSON no contiene la clave 'eventos'")
+            eventos = datos["eventos"]
+        elif isinstance(datos, list):
+            eventos = datos
+        else:
+            raise ValueError("Formato del catalogo no reconocido")
 
-            if isinstance(eventos, dict):
-                return eventos
-
-            if isinstance(eventos, list):
-                return {
-                    evento.get("id"): evento
-                    for evento in eventos
-                    if isinstance(evento, dict)
-                    and evento.get("id")
-                }
-
-        if isinstance(datos, list):
+        if isinstance(eventos, dict):
+            return eventos
+        if isinstance(eventos, list):
             return {
                 evento.get("id"): evento
-                for evento in datos
-                if isinstance(evento, dict)
-                and evento.get("id")
+                for evento in eventos
+                if isinstance(evento, dict) and evento.get("id")
             }
 
-        return {}
+        raise ValueError("El contenido de 'eventos' no es un objeto ni una lista")
 
     except Exception as error:
-        print(
-            f"?? No fue posible cargar eventos registrados: "
-            f"{error}"
-        )
-        return {}
+        raise RuntimeError(
+            f"No se puede leer el catalogo; se cancela la operacion para proteger los datos: {error}"
+        ) from error
 
 
 def guardar_eventos_registrados(eventos, resumen):
+    # Nunca reemplazar un catalogo existente que no pueda leerse.
+    eventos_finales = dict(eventos)
+
+    if os.path.exists(ARCHIVO_EVENTOS):
+        try:
+            with open(ARCHIVO_EVENTOS, "r", encoding="utf-8") as archivo:
+                datos_existentes = json.load(archivo)
+
+            if not isinstance(datos_existentes, dict) or "eventos" not in datos_existentes:
+                raise ValueError("Formato del catalogo existente no reconocido")
+
+            anteriores = datos_existentes["eventos"]
+
+            if isinstance(anteriores, list):
+                anteriores = {
+                    evento.get("id"): evento
+                    for evento in anteriores
+                    if isinstance(evento, dict) and evento.get("id")
+                }
+
+            if not isinstance(anteriores, dict):
+                raise ValueError("La clave 'eventos' no contiene un objeto valido")
+
+            for event_id, evento_anterior in anteriores.items():
+                if not isinstance(evento_anterior, dict):
+                    continue
+
+                try:
+                    magnitud_anterior = float(evento_anterior.get("magnitud") or 0)
+                except (TypeError, ValueError):
+                    continue
+
+                # Recuperar unicamente eventos protegidos que falten.
+                # Si el ID ya esta actualizado, prevalece la versi?n entrante.
+                if (
+                    magnitud_anterior >= MAGNITUD_CANDIDATO_ACELEROGRAFICO
+                    and event_id not in eventos_finales
+                ):
+                    eventos_finales[event_id] = evento_anterior
+
+        except Exception as error:
+            raise RuntimeError(
+                f"No se guarda el catalogo para evitar perdida de datos: {error}"
+            ) from error
+
+    # El resumen siempre refleja el cat?logo que realmente se escribir?.
+    resumen_final = generar_resumen(eventos_finales)
+
     datos = {
-        "actualizado": datetime.now(
-            ZONA_HORARIA
-        ).isoformat(),
+        "actualizado": datetime.now(ZONA_HORARIA).isoformat(),
         "periodo_retencion_dias": DIAS_RETENCION,
-        "resumen": resumen,
-        "eventos": eventos
+        "resumen": resumen_final,
+        "eventos": eventos_finales
     }
 
+    temporal = ARCHIVO_EVENTOS + ".tmp"
+
     try:
-        with open(
-            ARCHIVO_EVENTOS,
-            "w",
-            encoding="utf-8"
-        ) as archivo:
-            json.dump(
-                datos,
-                archivo,
-                ensure_ascii=False,
-                indent=2
-            )
+        with open(temporal, "w", encoding="utf-8") as archivo:
+            json.dump(datos, archivo, ensure_ascii=False, indent=2)
+            archivo.flush()
+            os.fsync(archivo.fileno())
+
+        os.replace(temporal, ARCHIVO_EVENTOS)
 
     except Exception as error:
-        print(
-            f"?? No fue posible guardar eventos: "
-            f"{error}"
-        )
+        try:
+            if os.path.exists(temporal):
+                os.remove(temporal)
+        except OSError:
+            pass
+
+        raise RuntimeError(f"No fue posible guardar el catalogo: {error}") from error
 
 
 def limpiar_eventos_antiguos(eventos):
