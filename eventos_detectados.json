@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-14T11:10:21.701291-05:00",
+  "actualizado": "2026-10-14T11:15:24.060979-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1959,
+    "total_eventos": 1957,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
-    "porcentaje_m4_o_mayores": 2.09,
+    "porcentaje_m4_o_mayores": 2.1,
     "eventos_mayor_igual_4": 41,
     "total_candidatos_acelerograficos": 41,
     "total_alertas": 2,
@@ -66,62 +66,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026sclkkc": {
-      "id": "SGC2026sclkkc",
-      "magnitud": 1.5,
-      "profundidad": 11.0,
-      "latitud": 10.4235,
-      "longitud": -74.1085,
-      "distancia_km": 635.213678945509,
-      "lugar": "Fundación - Magdalena, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 10.4235,
-      "lon": -74.1085,
-      "distancia_bogota": 635.2,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-14 01:47",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T11:10:19.558239-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026scldtl": {
-      "id": "SGC2026scldtl",
-      "magnitud": 1.9,
-      "profundidad": 102.0,
-      "latitud": 5.746536448871658,
-      "longitud": -73.87031038848912,
-      "distancia_km": 117.2943350354328,
-      "lugar": "Albania - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 5.746536448871658,
-      "lon": -73.87031038848912,
-      "distancia_bogota": 117.3,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-14 01:39",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T11:15:17.223771-05:00",
-      "alerta_enviada": false
     },
     "SGC2026scktkv": {
       "id": "SGC2026scktkv",
