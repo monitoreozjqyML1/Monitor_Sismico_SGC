@@ -222,6 +222,13 @@ def limpiar_eventos_antiguos(eventos):
 
     for event_id, evento in eventos.items():
         try:
+            magnitud = float(evento.get("magnitud") or 0)
+
+            # Conservar indefinidamente eventos M >= 4.0.
+            if magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
+                eventos_validos[event_id] = evento
+                continue
+
             fecha_texto = evento.get("fecha_deteccion")
 
             if not fecha_texto:
@@ -244,7 +251,6 @@ def limpiar_eventos_antiguos(eventos):
             eventos_validos[event_id] = evento
 
     return eventos_validos
-
 
 
 
