@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T14:00:28.624554-05:00",
+  "actualizado": "2026-10-14T14:05:22.651073-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1940,
+    "total_eventos": 1941,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -55357,6 +55357,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-14T13:10:16.644057-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ugllpd": {
+      "id": "SGC2026ugllpd",
+      "magnitud": 2.2,
+      "profundidad": 112.52,
+      "latitud": 6.63,
+      "longitud": -73.233,
+      "distancia_km": 232.70600060572318,
+      "lugar": "Barichara - Santander, Colombia",
+      "hora_local": "2026-10-14 13:59:16",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 13:59:16",
+      "lat": 6.63,
+      "lon": -73.233,
+      "distancia_bogota": 232.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T14:05:19.894467-05:00",
       "alerta_enviada": false
     }
   }
