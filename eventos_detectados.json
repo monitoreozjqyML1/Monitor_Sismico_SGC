@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T14:15:19.668184-05:00",
+  "actualizado": "2026-10-14T14:18:30.458840-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1941,
+    "total_eventos": 1942,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -55385,6 +55385,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-14T14:05:19.894467-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ugltqo": {
+      "id": "SGC2026ugltqo",
+      "magnitud": 2.3,
+      "profundidad": 51.58,
+      "latitud": 5.133,
+      "longitud": -75.61,
+      "distancia_km": 176.71940180763366,
+      "lugar": "Manizales - Caldas, Colombia",
+      "hora_local": "2026-10-14 14:08:46",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 14:08:46",
+      "lat": 5.133,
+      "lon": -75.61,
+      "distancia_bogota": 176.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T14:18:27.711241-05:00",
       "alerta_enviada": false
     }
   }
