@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T09:20:19.661816-05:00",
+  "actualizado": "2026-10-14T09:25:20.997225-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1970,
+    "total_eventos": 1971,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -56197,6 +56197,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-14T09:10:17.370784-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ugcblt": {
+      "id": "SGC2026ugcblt",
+      "magnitud": 2.0,
+      "profundidad": 4.78,
+      "latitud": 4.336,
+      "longitud": -75.237,
+      "distancia_km": 135.69294684222726,
+      "lugar": "Ibague - Tolima, Colombia",
+      "hora_local": "2026-10-14 09:16:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 09:16:07",
+      "lat": 4.336,
+      "lon": -75.237,
+      "distancia_bogota": 135.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T09:25:17.714208-05:00",
       "alerta_enviada": false
     }
   }
