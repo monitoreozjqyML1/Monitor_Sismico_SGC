@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T10:25:21.240012-05:00",
+  "actualizado": "2026-10-14T10:30:27.552312-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1965,
+    "total_eventos": 1963,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -66,62 +66,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026scoubx": {
-      "id": "SGC2026scoubx",
-      "magnitud": 1.4,
-      "profundidad": 11.0,
-      "latitud": 7.055752600740252,
-      "longitud": -76.62812270560393,
-      "distancia_km": 384.57258980707513,
-      "lugar": "Carmen del Darién  (Curbaradó) - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 7.055752600740252,
-      "lon": -76.62812270560393,
-      "distancia_bogota": 384.6,
-      "tipo_magnitud": "MLr_1",
-      "fecha_local": "2026-09-14 03:29",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T10:25:21.941195-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026scoxxt": {
-      "id": "SGC2026scoxxt",
-      "magnitud": 1.8,
-      "profundidad": 16.0,
-      "latitud": 3.897982463842335,
-      "longitud": -75.65910563878334,
-      "distancia_km": 197.8317505401352,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 3.897982463842335,
-      "lon": -75.65910563878334,
-      "distancia_bogota": 197.8,
-      "tipo_magnitud": "MLr_2",
-      "fecha_local": "2026-09-14 03:33",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T10:30:18.179391-05:00",
-      "alerta_enviada": false
     },
     "SGC2026scoufi": {
       "id": "SGC2026scoufi",
@@ -56005,7 +55949,7 @@
     },
     "SGC2026ufnmkl": {
       "id": "SGC2026ufnmkl",
-      "magnitud": 2.4,
+      "magnitud": 2.3,
       "profundidad": 1.25,
       "latitud": 3.843,
       "longitud": -75.645,
