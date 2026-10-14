@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T16:20:22.891020-05:00",
+  "actualizado": "2026-10-14T16:25:22.303179-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1950,
@@ -55362,12 +55362,12 @@
     "SGC2026ugltqo": {
       "id": "SGC2026ugltqo",
       "magnitud": 2.3,
-      "profundidad": 51.58,
-      "latitud": 5.133,
-      "longitud": -75.61,
-      "distancia_km": 176.71940180763366,
-      "lugar": "Manizales - Caldas, Colombia",
-      "hora_local": "2026-10-14 14:08:46",
+      "profundidad": 88.91,
+      "latitud": 4.945,
+      "longitud": -76.281,
+      "distancia_km": 246.1259183499429,
+      "lugar": "San Jose del Palmar - Choco, Colombia",
+      "hora_local": "2026-10-14 14:08:43",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -55376,7 +55376,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-14 14:08:46",
+      "fecha_local": "2026-10-14 14:08:43",
       "lat": 5.133,
       "lon": -75.61,
       "distancia_bogota": 176.7,
