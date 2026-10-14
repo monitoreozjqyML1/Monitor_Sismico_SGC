@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T09:25:20.997225-05:00",
+  "actualizado": "2026-10-14T09:30:19.493587-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1971,
+    "total_eventos": 1969,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -13,62 +13,6 @@
     "porcentaje_alertas": 0.1
   },
   "eventos": {
-    "SGC2026sdaphy": {
-      "id": "SGC2026sdaphy",
-      "magnitud": 2.4,
-      "profundidad": 39.0,
-      "latitud": 4.576913618527017,
-      "longitud": -76.67185282498903,
-      "distancia_km": 288.515569910213,
-      "lugar": "Sipí - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 4.622315883636475,
-      "lon": -76.70830535888672,
-      "distancia_bogota": 292.3,
-      "tipo_magnitud": "M",
-      "fecha_local": "2026-09-14 09:25",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T09:30:16.814928-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026scsttu": {
-      "id": "SGC2026scsttu",
-      "magnitud": 1.2,
-      "profundidad": 42.0,
-      "latitud": 8.326897846738678,
-      "longitud": -74.50008859529828,
-      "distancia_km": 404.83915226422704,
-      "lugar": "Montecristo - Bolívar, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 8.326897846738678,
-      "lon": -74.50008859529828,
-      "distancia_bogota": 404.8,
-      "tipo_magnitud": "MLr_2",
-      "fecha_local": "2026-09-14 05:29",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T09:30:16.814928-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026scrjta": {
       "id": "SGC2026scrjta",
       "magnitud": 1.3,
