@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T17:50:20.643523-05:00",
+  "actualizado": "2026-10-14T17:55:20.303556-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1955,
+    "total_eventos": 1956,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 41,
@@ -55809,6 +55809,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-14T17:40:23.408588-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ugtcse": {
+      "id": "SGC2026ugtcse",
+      "magnitud": 2.4,
+      "profundidad": 8.59,
+      "latitud": 4.092,
+      "longitud": -74.445,
+      "distancia_km": 80.29128672637407,
+      "lugar": "Venecia - Cundinamarca, Colombia",
+      "hora_local": "2026-10-14 17:50:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 17:50:29",
+      "lat": 4.092,
+      "lon": -74.445,
+      "distancia_bogota": 80.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T17:55:17.122712-05:00",
       "alerta_enviada": false
     }
   }
