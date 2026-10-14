@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T11:45:20.327141-05:00",
+  "actualizado": "2026-10-14T11:50:19.705858-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1952,
@@ -55390,12 +55390,12 @@
     "SGC2026ufysew": {
       "id": "SGC2026ufysew",
       "magnitud": 2.0,
-      "profundidad": 11.27,
-      "latitud": 3.844,
-      "longitud": -75.47,
-      "distancia_km": 182.53939836930576,
-      "lugar": "San Antonio - Tolima, Colombia",
-      "hora_local": "2026-10-14 07:34:54",
+      "profundidad": 19.08,
+      "latitud": 3.852,
+      "longitud": -75.579,
+      "distancia_km": 192.46452843482584,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-14 07:34:52",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -55404,7 +55404,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-14 07:34:54",
+      "fecha_local": "2026-10-14 07:34:52",
       "lat": 3.844,
       "lon": -75.47,
       "distancia_bogota": 182.5,
