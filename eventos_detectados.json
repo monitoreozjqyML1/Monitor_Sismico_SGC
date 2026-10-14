@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T08:25:18.595649-05:00",
+  "actualizado": "2026-10-14T08:30:25.202620-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1972,
+    "total_eventos": 1971,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -13,62 +13,6 @@
     "porcentaje_alertas": 0.1
   },
   "eventos": {
-    "SGC2026scoizq": {
-      "id": "SGC2026scoizq",
-      "magnitud": 1.4,
-      "profundidad": 155.0,
-      "latitud": 6.74,
-      "longitud": -73.13733333333333,
-      "distancia_km": 248.18747346848932,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.74,
-      "lon": -73.13733333333333,
-      "distancia_bogota": 248.2,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-14 03:16",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T08:25:16.402550-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026scofhi": {
-      "id": "SGC2026scofhi",
-      "magnitud": 1.6,
-      "profundidad": 150.0,
-      "latitud": 6.813,
-      "longitud": -73.16216666666666,
-      "distancia_km": 254.48683651993355,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.813,
-      "lon": -73.16216666666666,
-      "distancia_bogota": 254.5,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-14 03:12",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T08:25:16.402550-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026scpbok": {
       "id": "SGC2026scpbok",
       "magnitud": 1.8,
@@ -56253,6 +56197,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-14T07:40:18.887210-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ufmhoa": {
+      "id": "SGC2026ufmhoa",
+      "magnitud": 2.1,
+      "profundidad": 15.85,
+      "latitud": 3.833,
+      "longitud": -75.649,
+      "distancia_km": 200.26355705345537,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-14 01:20:25",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 01:20:25",
+      "lat": 3.833,
+      "lon": -75.649,
+      "distancia_bogota": 200.3,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T08:30:22.814210-05:00",
       "alerta_enviada": false
     }
   }
