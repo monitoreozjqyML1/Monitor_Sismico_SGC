@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-10-14T14:25:22.975916-05:00",
+  "actualizado": "2026-10-14T14:30:22.881928-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1942,
-    "eventos_m4_o_mayores": 41,
-    "candidatos_acelerograficos": 41,
-    "alertas_telegram": 38,
-    "porcentaje_m4_o_mayores": 2.11,
-    "eventos_mayor_igual_4": 41,
-    "total_candidatos_acelerograficos": 41,
-    "total_alertas": 2,
-    "porcentaje_alertas": 0.1
+    "total_eventos": 1945,
+    "eventos_m4_o_mayores": 44,
+    "candidatos_acelerograficos": 44,
+    "alertas_telegram": 41,
+    "porcentaje_m4_o_mayores": 2.26,
+    "eventos_mayor_igual_4": 44,
+    "total_candidatos_acelerograficos": 44,
+    "total_alertas": 5,
+    "porcentaje_alertas": 0.26
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -55531,5 +55531,5 @@
       "fecha_deteccion": "2026-09-14T07:15:24.837516-05:00",
       "alerta_enviada": true
     }
-}
+  }
 }
