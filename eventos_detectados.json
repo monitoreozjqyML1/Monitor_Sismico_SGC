@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-13T18:00:22.803441-05:00",
+  "actualizado": "2026-10-13T19:19:04.669176-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2311,
+    "total_eventos": 2312,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 41,
@@ -65503,12 +65503,12 @@
     "SGC2026ueozbw": {
       "id": "SGC2026ueozbw",
       "magnitud": 3.7,
-      "profundidad": 0.0,
-      "latitud": 1.76,
-      "longitud": -76.406,
-      "distancia_km": 418.0829325736579,
+      "profundidad": 15.97,
+      "latitud": 1.758,
+      "longitud": -76.408,
+      "distancia_km": 418.39518733695735,
       "lugar": "San Agustin - Huila, Colombia",
-      "hora_local": "2026-10-13 13:36:39",
+      "hora_local": "2026-10-13 13:36:38",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -65517,7 +65517,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-13 13:36:39",
+      "fecha_local": "2026-10-13 13:36:38",
       "lat": 1.821,
       "lon": -76.406,
       "distancia_bogota": 412.8,
@@ -65777,6 +65777,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-13T17:05:19.761460-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uenwfc": {
+      "id": "SGC2026uenwfc",
+      "magnitud": 2.2,
+      "profundidad": 21.97,
+      "latitud": 3.858,
+      "longitud": -75.638,
+      "distancia_km": 197.8494696570006,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-13 13:03:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-13 13:03:07",
+      "lat": 3.858,
+      "lon": -75.638,
+      "distancia_bogota": 197.8,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-13T19:18:39.282366-05:00",
       "alerta_enviada": false
     }
   }
