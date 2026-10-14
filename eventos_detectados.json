@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T12:15:21.885646-05:00",
+  "actualizado": "2026-10-14T12:20:18.006491-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1949,
+    "total_eventos": 1948,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -66,34 +66,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026scodqe": {
-      "id": "SGC2026scodqe",
-      "magnitud": 1.2,
-      "profundidad": 37.0,
-      "latitud": 2.326500071534799,
-      "longitud": -75.50840568583851,
-      "distancia_km": 309.36863577901613,
-      "lugar": "Gigante - Huila, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 2.326500071534799,
-      "lon": -75.50840568583851,
-      "distancia_bogota": 309.4,
-      "tipo_magnitud": "MLr_2",
-      "fecha_local": "2026-09-14 03:10",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T12:20:14.764495-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sdgnfc": {
       "id": "SGC2026sdgnfc",
