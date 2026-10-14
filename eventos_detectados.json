@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-14T11:15:24.060979-05:00",
+  "actualizado": "2026-10-14T11:20:22.041179-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1957,
+    "total_eventos": 1959,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
-    "porcentaje_m4_o_mayores": 2.1,
+    "porcentaje_m4_o_mayores": 2.09,
     "eventos_mayor_igual_4": 41,
     "total_candidatos_acelerograficos": 41,
     "total_alertas": 2,
@@ -55833,6 +55833,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-14T11:00:18.990557-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ufzqme": {
+      "id": "SGC2026ufzqme",
+      "magnitud": 2.4,
+      "profundidad": 46.29,
+      "latitud": 4.267,
+      "longitud": -76.735,
+      "distancia_km": 299.29184424683586,
+      "lugar": "El Litoral del San Juan (Docordo) - Choco, Colombia",
+      "hora_local": "2026-10-14 08:03:02",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 08:03:02",
+      "lat": 4.267,
+      "lon": -76.735,
+      "distancia_bogota": 299.3,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T11:20:19.567625-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ugfxtb": {
+      "id": "SGC2026ugfxtb",
+      "magnitud": 3.1,
+      "profundidad": 150.51,
+      "latitud": 6.781,
+      "longitud": -73.08,
+      "distancia_km": 255.00240602063175,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-14 11:12:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 11:12:29",
+      "lat": 6.781,
+      "lon": -73.08,
+      "distancia_bogota": 255.0,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T11:20:19.567625-05:00",
       "alerta_enviada": false
     }
   }
