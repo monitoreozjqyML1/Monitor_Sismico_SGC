@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T16:40:27.001447-05:00",
+  "actualizado": "2026-10-14T16:45:20.415472-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1950,
+    "total_eventos": 1951,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 41,
@@ -55669,6 +55669,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-14T16:20:19.590462-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ugifzz": {
+      "id": "SGC2026ugifzz",
+      "magnitud": 2.0,
+      "profundidad": 18.97,
+      "latitud": 7.003,
+      "longitud": -76.354,
+      "distancia_km": 358.6858173848687,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-10-14 12:22:24",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-14 12:22:24",
+      "lat": 7.003,
+      "lon": -76.354,
+      "distancia_bogota": 358.7,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-14T16:45:16.952928-05:00",
       "alerta_enviada": false
     }
   }
