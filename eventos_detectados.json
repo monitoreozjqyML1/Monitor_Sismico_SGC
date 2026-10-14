@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T08:00:23.621569-05:00",
+  "actualizado": "2026-10-14T08:05:23.383899-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1977,
+    "total_eventos": 1976,
     "eventos_m4_o_mayores": 41,
     "candidatos_acelerograficos": 41,
     "alertas_telegram": 38,
@@ -13,34 +13,6 @@
     "porcentaje_alertas": 0.1
   },
   "eventos": {
-    "SGC2026scmihw": {
-      "id": "SGC2026scmihw",
-      "magnitud": 1.6,
-      "profundidad": 140.0,
-      "latitud": 6.819924489377815,
-      "longitud": -73.20549301756881,
-      "distancia_km": 253.34159522370524,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.819924489377815,
-      "lon": -73.20549301756881,
-      "distancia_bogota": 253.3,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-14 02:15",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T08:05:17.241883-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026scnznr": {
       "id": "SGC2026scnznr",
       "magnitud": 1.3,
@@ -56285,13 +56257,13 @@
     },
     "SGC2026ufjqnm": {
       "id": "SGC2026ufjqnm",
-      "magnitud": 2.5,
-      "profundidad": 130.44,
-      "latitud": 6.797,
-      "longitud": -73.161,
-      "distancia_km": 252.90580621543336,
+      "magnitud": 2.4,
+      "profundidad": 133.96,
+      "latitud": 6.846,
+      "longitud": -73.168,
+      "distancia_km": 257.6086523004525,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-14 00:00:19",
+      "hora_local": "2026-10-14 00:00:17",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -56300,7 +56272,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-14 00:00:19",
+      "fecha_local": "2026-10-14 00:00:17",
       "lat": 6.797,
       "lon": -73.161,
       "distancia_bogota": 252.9,
