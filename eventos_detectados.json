@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-14T14:40:20.771630-05:00",
+  "actualizado": "2026-10-14T14:45:21.102733-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1945,
+    "total_eventos": 1944,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 41,
@@ -66,34 +66,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026sdksdj": {
-      "id": "SGC2026sdksdj",
-      "magnitud": 2.8,
-      "profundidad": 42.0,
-      "latitud": 4.604409272766584,
-      "longitud": -76.6719943126023,
-      "distancia_km": 288.38380897573546,
-      "lugar": "Sipí - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 4.610754423744946,
-      "lon": -76.66563177205677,
-      "distancia_bogota": 287.6,
-      "tipo_magnitud": "MLr_1",
-      "fecha_local": "2026-09-14 14:30",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-14T14:40:22.671868-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sdltds": {
       "id": "SGC2026sdltds",
@@ -55137,12 +55109,12 @@
     },
     "SGC2026ugcblt": {
       "id": "SGC2026ugcblt",
-      "magnitud": 2.0,
-      "profundidad": 4.78,
-      "latitud": 4.336,
-      "longitud": -75.237,
-      "distancia_km": 135.69294684222726,
-      "lugar": "Ibague - Tolima, Colombia",
+      "magnitud": 2.1,
+      "profundidad": 1.12,
+      "latitud": 3.817,
+      "longitud": -75.68,
+      "distancia_km": 204.13377839608333,
+      "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-10-14 09:16:07",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
