@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T14:55:25.105084-05:00",
+  "actualizado": "2026-10-14T15:00:22.503551-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1944,
@@ -55334,12 +55334,12 @@
     "SGC2026ugllpd": {
       "id": "SGC2026ugllpd",
       "magnitud": 2.2,
-      "profundidad": 112.52,
-      "latitud": 6.63,
-      "longitud": -73.233,
-      "distancia_km": 232.70600060572318,
-      "lugar": "Barichara - Santander, Colombia",
-      "hora_local": "2026-10-14 13:59:16",
+      "profundidad": 124.84,
+      "latitud": 6.526,
+      "longitud": -73.302,
+      "distancia_km": 219.07217453063106,
+      "lugar": "Hato - Santander, Colombia",
+      "hora_local": "2026-10-14 13:59:14",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -55348,7 +55348,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-14 13:59:16",
+      "fecha_local": "2026-10-14 13:59:14",
       "lat": 6.63,
       "lon": -73.233,
       "distancia_bogota": 232.7,
