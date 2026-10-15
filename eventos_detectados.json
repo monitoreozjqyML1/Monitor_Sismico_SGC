@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T14:35:18.714356-05:00",
+  "actualizado": "2026-10-15T14:40:20.627753-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1867,
@@ -53245,13 +53245,13 @@
     },
     "SGC2026uidicb": {
       "id": "SGC2026uidicb",
-      "magnitud": 2.7,
-      "profundidad": 2.0,
-      "latitud": 6.865,
-      "longitud": -76.301,
-      "distancia_km": 343.74490040660294,
+      "magnitud": 2.9,
+      "profundidad": 18.97,
+      "latitud": 6.869,
+      "longitud": -76.283,
+      "distancia_km": 342.63015773662147,
       "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-10-15 12:02:55",
+      "hora_local": "2026-10-15 12:02:53",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -53260,7 +53260,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-15 12:02:55",
+      "fecha_local": "2026-10-15 12:02:53",
       "lat": 6.865,
       "lon": -76.301,
       "distancia_bogota": 343.7,
