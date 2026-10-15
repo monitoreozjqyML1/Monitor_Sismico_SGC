@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T08:50:18.600659-05:00",
+  "actualizado": "2026-10-15T08:55:23.340904-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1907,
@@ -54245,13 +54245,13 @@
     },
     "SGC2026uhircw": {
       "id": "SGC2026uhircw",
-      "magnitud": 2.8,
-      "profundidad": 2.56,
-      "latitud": 7.226,
-      "longitud": -77.0,
-      "distancia_km": 427.82901615400675,
+      "magnitud": 3.0,
+      "profundidad": 26.54,
+      "latitud": 7.21,
+      "longitud": -77.011,
+      "distancia_km": 427.5958662780566,
       "lugar": "Carmen del Darien (Curbarado) - Choco, Colombia",
-      "hora_local": "2026-10-15 01:39:47",
+      "hora_local": "2026-10-15 01:39:45",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -54260,7 +54260,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-15 01:39:47",
+      "fecha_local": "2026-10-15 01:39:45",
       "lat": 7.226,
       "lon": -77.0,
       "distancia_bogota": 427.8,
