@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-15T11:10:19.710721-05:00",
+  "actualizado": "2026-10-15T11:15:22.829947-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1902,
+    "total_eventos": 1901,
     "eventos_m4_o_mayores": 48,
     "candidatos_acelerograficos": 48,
     "alertas_telegram": 41,
@@ -314,34 +314,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026sedxzx": {
-      "id": "SGC2026sedxzx",
-      "magnitud": 1.8,
-      "profundidad": 25.0,
-      "latitud": 1.9325719482948536,
-      "longitud": -76.02705989116154,
-      "distancia_km": 377.53819372976574,
-      "lugar": "Pitalito - Huila, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 1.9325719482948536,
-      "lon": -76.02705989116154,
-      "distancia_bogota": 377.5,
-      "tipo_magnitud": "MLr_2",
-      "fecha_local": "2026-09-15 00:10",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-15T11:11:05.310269-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sdsvbk": {
       "id": "SGC2026sdsvbk",
