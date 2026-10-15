@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T09:45:20.061793-05:00",
+  "actualizado": "2026-10-15T09:50:19.889532-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1911,
@@ -9,8 +9,8 @@
     "porcentaje_m4_o_mayores": 2.51,
     "eventos_mayor_igual_4": 48,
     "total_candidatos_acelerograficos": 48,
-    "total_alertas": 5,
-    "porcentaje_alertas": 0.26
+    "total_alertas": 7,
+    "porcentaje_alertas": 0.37
   },
   "eventos": {
     "SGC2026sdbqkz": {

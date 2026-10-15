@@ -1,9 +1,9 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-13T16:45:20.498668-05:00",
+  "actualizado": "2026-10-15T09:50:20.033003-05:00",
   "magnitud_minima": 4.0,
-  "total_candidatos": 44,
+  "total_candidatos": 48,
   "eventos": {
     "SGC2026sblqei": {
       "id": "SGC2026sblqei",
@@ -2272,6 +2272,154 @@
       "fecha_deteccion": "2026-10-13T16:30:17.551092-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
+    },
+    "SGC2026ridlaf": {
+      "id": "SGC2026ridlaf",
+      "magnitud": 4.3,
+      "profundidad": 54.0,
+      "latitud": 4.419871131812569,
+      "longitud": -76.74298947009466,
+      "distancia_bogota": 297.81,
+      "lugar": "Istmina - Chocó, Colombia",
+      "fecha_local": "2026-09-03 00:17",
+      "agencia": "SGC",
+      "tipo_magnitud": "MLr_1",
+      "categoria": "SISMO CANDIDATO ACELEROGRÁFICO (M >= 4.0)",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "alertas": [
+        "SISMO M >= 4.0"
+      ],
+      "fecha_deteccion": "2026-09-07 15:15:29"
+    },
+    "SGC2026rjarnv": {
+      "id": "SGC2026rjarnv",
+      "magnitud": 4.1,
+      "profundidad": 140.0,
+      "latitud": 6.770220806713983,
+      "longitud": -73.17016518975828,
+      "distancia_bogota": 249.77,
+      "lugar": "Los Santos - Santander, Colombia",
+      "fecha_local": "2026-09-03 11:58",
+      "agencia": "SGC",
+      "tipo_magnitud": "MLr_3",
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 258.0,
+            "distanceHipocentral": 293.0,
+            "pgaE": 0.054209,
+            "pgaN": 0.032665,
+            "pgaZ": 0.027411
+          }
+        ],
+        "pga_maximo_cm_s2": 0.054209,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
+      },
+      "alertas": [],
+      "fecha_deteccion": "2026-09-07 15:15:24",
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.5833035714285715,
+        "porcentaje_ew": 1.465108108108108,
+        "porcentaje_maximo": 1.465108108108108,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00032665,
+        "pga_ew_m_s2": 0.00054209,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
+    },
+    "SGC2026royjeu": {
+      "id": "SGC2026royjeu",
+      "magnitud": 4.0,
+      "profundidad": 46.0,
+      "latitud": 4.568453417222536,
+      "longitud": -76.73789044894468,
+      "distancia_bogota": 295.88,
+      "lugar": "Medio San Juan (Andagoya) - Chocó, Colombia",
+      "fecha_local": "2026-09-06 17:15",
+      "agencia": "SGC",
+      "tipo_magnitud": "Mw",
+      "categoria": "SISMO CANDIDATO ACELEROGRÁFICO (M >= 4.0)",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "alertas": [
+        "SISMO M >= 4.0"
+      ],
+      "fecha_deteccion": "2026-09-07 15:15:18"
+    },
+    "SGC2026rrbots": {
+      "id": "SGC2026rrbots",
+      "magnitud": 4.0,
+      "profundidad": 40.0,
+      "latitud": 4.577971143690078,
+      "longitud": -76.7219525674924,
+      "distancia_bogota": 294.05,
+      "lugar": "Medio San Juan (Andagoya) - Chocó, Colombia",
+      "fecha_local": "2026-09-07 21:01",
+      "agencia": "SGC",
+      "tipo_magnitud": "MLr",
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 295.0,
+            "distanceHipocentral": 298.0,
+            "pgaE": 0.135837,
+            "pgaN": 0.075609,
+            "pgaZ": 0.037906
+          }
+        ],
+        "pga_maximo_cm_s2": 0.135837,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
+      },
+      "alertas": [],
+      "fecha_deteccion": "2026-09-08 07:15:16",
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 1.3501607142857142,
+        "porcentaje_ew": 3.671270270270271,
+        "porcentaje_maximo": 3.671270270270271,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00075609,
+        "pga_ew_m_s2": 0.0013583700000000002,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     }
   },
   "alcance_registro": "Acumulaci?n desde la inicializaci?n del hist?rico; no incluye eventos anteriores que ya no est?n en el cat?logo operativo."
