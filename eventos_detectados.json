@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T08:00:29.971996-05:00",
+  "actualizado": "2026-10-15T08:05:20.873251-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1905,
@@ -54218,12 +54218,12 @@
     "SGC2026uhfunw": {
       "id": "SGC2026uhfunw",
       "magnitud": 2.6,
-      "profundidad": 136.42,
-      "latitud": 6.806,
-      "longitud": -73.009,
-      "distancia_km": 260.95769727919765,
-      "lugar": "Aratoca - Santander, Colombia",
-      "hora_local": "2026-10-15 00:13:15",
+      "profundidad": 138.81,
+      "latitud": 6.753,
+      "longitud": -73.144,
+      "distancia_km": 249.196939647818,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-15 00:13:14",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -54232,7 +54232,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-15 00:13:15",
+      "fecha_local": "2026-10-15 00:13:14",
       "lat": 6.806,
       "lon": -73.009,
       "distancia_bogota": 261.0,
