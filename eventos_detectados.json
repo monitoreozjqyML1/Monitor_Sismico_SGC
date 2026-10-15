@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T17:35:18.266667-05:00",
+  "actualizado": "2026-10-15T17:40:22.798748-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1863,
@@ -314,34 +314,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026sfawlh": {
-      "id": "SGC2026sfawlh",
-      "magnitud": 1.7,
-      "profundidad": 47.0,
-      "latitud": 4.477506253199354,
-      "longitud": -76.69479358495904,
-      "distancia_km": 291.8499787993482,
-      "lugar": "Istmina - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 4.4463333333333335,
-      "lon": -76.66133333333333,
-      "distancia_bogota": 288.5,
-      "tipo_magnitud": "MLr_1",
-      "fecha_local": "2026-09-15 11:42",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-15T17:35:16.176395-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sdjunt": {
       "id": "SGC2026sdjunt",
@@ -53246,12 +53218,12 @@
     "SGC2026uhzcnk": {
       "id": "SGC2026uhzcnk",
       "magnitud": 2.0,
-      "profundidad": 6.2,
-      "latitud": 6.517,
-      "longitud": -76.949,
-      "distancia_km": 376.3955422680281,
+      "profundidad": 24.34,
+      "latitud": 6.52,
+      "longitud": -76.931,
+      "distancia_km": 374.89056368987957,
       "lugar": "Bojaya (Bellavista) - Choco, Colombia",
-      "hora_local": "2026-10-15 09:55:47",
+      "hora_local": "2026-10-15 09:55:46",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -53260,7 +53232,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-15 09:55:47",
+      "fecha_local": "2026-10-15 09:55:46",
       "lat": 6.517,
       "lon": -76.949,
       "distancia_bogota": 376.4,
@@ -53269,6 +53241,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-15T17:35:14.422912-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uimqrz": {
+      "id": "SGC2026uimqrz",
+      "magnitud": 2.0,
+      "profundidad": 21.39,
+      "latitud": 3.859,
+      "longitud": -75.574,
+      "distancia_km": 191.59669567533032,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-15 16:44:27",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-15 16:44:27",
+      "lat": 3.859,
+      "lon": -75.574,
+      "distancia_bogota": 191.6,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-15T17:40:18.511089-05:00",
       "alerta_enviada": false
     }
   }
