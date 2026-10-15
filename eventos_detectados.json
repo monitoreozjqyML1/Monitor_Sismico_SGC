@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-15T17:15:19.830745-05:00",
+  "actualizado": "2026-10-15T17:25:21.818002-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1864,
+    "total_eventos": 1863,
     "eventos_m4_o_mayores": 48,
     "candidatos_acelerograficos": 48,
     "alertas_telegram": 41,
@@ -314,34 +314,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026sfaava": {
-      "id": "SGC2026sfaava",
-      "magnitud": 1.5,
-      "profundidad": 151.0,
-      "latitud": 6.778333333333333,
-      "longitud": -72.97416666666666,
-      "distancia_km": 259.99441063920654,
-      "lugar": "Cepitá - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.778333333333333,
-      "lon": -72.97416666666666,
-      "distancia_bogota": 260.0,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-15 11:17",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-15T17:20:16.983169-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sfakje": {
       "id": "SGC2026sfakje",
