@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-15T09:30:19.076763-05:00",
+  "actualizado": "2026-10-15T09:35:23.576955-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1906,
+    "total_eventos": 1907,
     "eventos_m4_o_mayores": 44,
     "candidatos_acelerograficos": 44,
     "alertas_telegram": 41,
@@ -54437,6 +54437,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-15T09:20:16.131134-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uhyekx": {
+      "id": "SGC2026uhyekx",
+      "magnitud": 3.3,
+      "profundidad": 207.42,
+      "latitud": 5.809,
+      "longitud": -77.192,
+      "distancia_km": 366.391091043657,
+      "lugar": "Nuqui - Choco, Colombia",
+      "hora_local": "2026-10-15 09:27:49",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-15 09:27:49",
+      "lat": 5.809,
+      "lon": -77.192,
+      "distancia_bogota": 366.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-15T09:35:19.650572-05:00",
       "alerta_enviada": false
     }
   }
