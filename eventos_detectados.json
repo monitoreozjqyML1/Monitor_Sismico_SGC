@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-15T15:00:18.533916-05:00",
+  "actualizado": "2026-10-15T15:05:22.528031-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1866,
+    "total_eventos": 1867,
     "eventos_m4_o_mayores": 48,
     "candidatos_acelerograficos": 48,
     "alertas_telegram": 41,
@@ -10,7 +10,7 @@
     "eventos_mayor_igual_4": 48,
     "total_candidatos_acelerograficos": 48,
     "total_alertas": 7,
-    "porcentaje_alertas": 0.38
+    "porcentaje_alertas": 0.37
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -53353,6 +53353,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-15T13:40:17.070055-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uifcwj": {
+      "id": "SGC2026uifcwj",
+      "magnitud": 2.0,
+      "profundidad": 4.04,
+      "latitud": 5.31,
+      "longitud": -74.376,
+      "distancia_km": 74.62918314104148,
+      "lugar": "La Palma - Cundinamarca, Colombia",
+      "hora_local": "2026-10-15 12:57:33",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-15 12:57:33",
+      "lat": 5.31,
+      "lon": -74.376,
+      "distancia_bogota": 74.6,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-15T15:05:18.116827-05:00",
       "alerta_enviada": false
     }
   }
