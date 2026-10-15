@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-15T09:52:35.246990-05:00",
+  "actualizado": "2026-10-15T09:55:22.784256-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1910,
+    "total_eventos": 1909,
     "eventos_m4_o_mayores": 48,
     "candidatos_acelerograficos": 48,
     "alertas_telegram": 41,
@@ -314,34 +314,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026sdrdpp": {
-      "id": "SGC2026sdrdpp",
-      "magnitud": 1.6,
-      "profundidad": 44.0,
-      "latitud": 4.6695,
-      "longitud": -76.82216666666666,
-      "distancia_km": 304.80418643869933,
-      "lugar": "Medio San Juan (Andagoya) - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 4.6695,
-      "lon": -76.82216666666666,
-      "distancia_bogota": 304.8,
-      "tipo_magnitud": "MLr_1",
-      "fecha_local": "2026-09-14 17:45",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-15T09:55:17.942037-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sdrmnx": {
       "id": "SGC2026sdrmnx",
@@ -54385,13 +54357,13 @@
     },
     "SGC2026uhyekx": {
       "id": "SGC2026uhyekx",
-      "magnitud": 3.3,
-      "profundidad": 207.42,
-      "latitud": 5.809,
-      "longitud": -77.192,
-      "distancia_km": 366.391091043657,
-      "lugar": "Nuqui - Choco, Colombia",
-      "hora_local": "2026-10-15 09:27:49",
+      "magnitud": 2.2,
+      "profundidad": 42.63,
+      "latitud": 4.417,
+      "longitud": -76.734,
+      "distancia_km": 296.85627180652466,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-10-15 09:28:10",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -54400,7 +54372,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-15 09:27:49",
+      "fecha_local": "2026-10-15 09:28:10",
       "lat": 5.809,
       "lon": -77.192,
       "distancia_bogota": 366.4,
