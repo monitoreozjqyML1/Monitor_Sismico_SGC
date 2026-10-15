@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T09:35:23.576955-05:00",
+  "actualizado": "2026-10-15T09:40:18.415305-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1907,
@@ -314,34 +314,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026sdqwhn": {
-      "id": "SGC2026sdqwhn",
-      "magnitud": 1.3,
-      "profundidad": 151.0,
-      "latitud": 6.818666666666667,
-      "longitud": -73.18316666666666,
-      "distancia_km": 254.15758903312488,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.818666666666667,
-      "lon": -73.18316666666666,
-      "distancia_bogota": 254.2,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-14 17:36",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-15T09:40:14.964027-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sdraia": {
       "id": "SGC2026sdraia",
@@ -54465,6 +54437,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-15T09:35:19.650572-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uhqvmr": {
+      "id": "SGC2026uhqvmr",
+      "magnitud": 2.4,
+      "profundidad": 40.63,
+      "latitud": 4.503,
+      "longitud": -76.752,
+      "distancia_km": 297.9272634696827,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-10-15 05:46:15",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-15 05:46:15",
+      "lat": 4.503,
+      "lon": -76.752,
+      "distancia_bogota": 297.9,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-15T09:40:15.324719-05:00",
       "alerta_enviada": false
     }
   }
