@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T09:55:22.784256-05:00",
+  "actualizado": "2026-10-15T10:00:21.467551-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1909,
@@ -54162,12 +54162,12 @@
     "SGC2026uhmhwz": {
       "id": "SGC2026uhmhwz",
       "magnitud": 2.7,
-      "profundidad": 113.0,
-      "latitud": 6.683,
-      "longitud": -73.163,
-      "distancia_km": 241.24480392712044,
-      "lugar": "Villanueva - Santander, Colombia",
-      "hora_local": "2026-10-15 03:29:40",
+      "profundidad": 153.67,
+      "latitud": 6.809,
+      "longitud": -73.123,
+      "distancia_km": 255.82612528190637,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-15 03:29:36",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -54176,7 +54176,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-15 03:29:40",
+      "fecha_local": "2026-10-15 03:29:36",
       "lat": 6.683,
       "lon": -73.163,
       "distancia_bogota": 241.2,
