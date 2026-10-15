@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T14:45:24.326657-05:00",
+  "actualizado": "2026-10-15T14:50:23.343897-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1866,
@@ -53245,11 +53245,11 @@
     },
     "SGC2026uidwzo": {
       "id": "SGC2026uidwzo",
-      "magnitud": 2.4,
-      "profundidad": 15.97,
-      "latitud": 5.299,
-      "longitud": -74.379,
-      "distancia_km": 73.6924509341685,
+      "magnitud": 2.5,
+      "profundidad": 16.02,
+      "latitud": 5.314,
+      "longitud": -74.409,
+      "distancia_km": 76.73602624275287,
       "lugar": "La Palma - Cundinamarca, Colombia",
       "hora_local": "2026-10-15 12:20:12",
       "candidato_acelerografico": false,
