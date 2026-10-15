@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-15T13:25:20.427421-05:00",
+  "actualizado": "2026-10-15T13:30:22.524102-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1871,
+    "total_eventos": 1869,
     "eventos_m4_o_mayores": 48,
     "candidatos_acelerograficos": 48,
     "alertas_telegram": 41,
@@ -314,62 +314,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026seodds": {
-      "id": "SGC2026seodds",
-      "magnitud": 1.7,
-      "profundidad": 137.0,
-      "latitud": 6.777623482855405,
-      "longitud": -73.1327208455729,
-      "distancia_km": 252.20489794247322,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.7835,
-      "lon": -73.18683333333334,
-      "distancia_bogota": 250.4,
-      "tipo_magnitud": "M",
-      "fecha_local": "2026-09-15 05:18",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-15T13:30:16.748584-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026sekxjr": {
-      "id": "SGC2026sekxjr",
-      "magnitud": 1.5,
-      "profundidad": 133.0,
-      "latitud": 6.88126094883531,
-      "longitud": -73.19053742044186,
-      "distancia_km": 260.28079788100234,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.88126094883531,
-      "lon": -73.19053742044186,
-      "distancia_bogota": 260.3,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-15 03:41",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-15T13:30:16.748584-05:00",
-      "alerta_enviada": false
     },
     "SGC2026seolqn": {
       "id": "SGC2026seolqn",
