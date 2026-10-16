@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-16T13:30:22.603339-05:00",
+  "actualizado": "2026-10-16T13:35:21.027699-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1796,
+    "total_eventos": 1795,
     "eventos_m4_o_mayores": 49,
     "candidatos_acelerograficos": 49,
     "alertas_telegram": 42,
@@ -368,34 +368,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-16T06:35:30.518415-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026sgfwkm": {
-      "id": "SGC2026sgfwkm",
-      "magnitud": 1.7,
-      "profundidad": 143.0,
-      "latitud": 6.773393382203164,
-      "longitud": -73.1455585250179,
-      "distancia_km": 251.19367124191604,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 6.773393382203164,
-      "lon": -73.1455585250179,
-      "distancia_bogota": 251.2,
-      "tipo_magnitud": "MLr_3",
-      "fecha_local": "2026-09-16 03:18",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-16T13:30:19.567744-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sglrli": {
       "id": "SGC2026sglrli",
@@ -51396,13 +51368,13 @@
     },
     "SGC2026ujgzwn": {
       "id": "SGC2026ujgzwn",
-      "magnitud": 2.2,
-      "profundidad": 150.71,
-      "latitud": 6.817,
-      "longitud": -73.164,
-      "distancia_km": 254.8152263678692,
+      "magnitud": 2.0,
+      "profundidad": 142.05,
+      "latitud": 6.764,
+      "longitud": -73.147,
+      "distancia_km": 250.17554497308276,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-16 02:58:34",
+      "hora_local": "2026-10-16 02:58:33",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -51411,7 +51383,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-16 02:58:34",
+      "fecha_local": "2026-10-16 02:58:33",
       "lat": 6.817,
       "lon": -73.164,
       "distancia_bogota": 254.8,
