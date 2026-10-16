@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T08:45:19.190923-05:00",
+  "actualizado": "2026-10-16T08:50:26.729278-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1820,
@@ -52068,13 +52068,13 @@
     },
     "SGC2026ujseji": {
       "id": "SGC2026ujseji",
-      "magnitud": 2.4,
-      "profundidad": 13.93,
-      "latitud": 4.859,
-      "longitud": -73.958,
-      "distancia_km": 20.752742836576946,
-      "lugar": "Sopo - Cundinamarca, Colombia",
-      "hora_local": "2026-10-16 08:35:40",
+      "magnitud": 3.0,
+      "profundidad": 13.31,
+      "latitud": 3.811,
+      "longitud": -74.074,
+      "distancia_km": 100.0756557517145,
+      "lugar": "Cubarral - Meta, Colombia",
+      "hora_local": "2026-10-16 08:35:22",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -52083,7 +52083,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-16 08:35:40",
+      "fecha_local": "2026-10-16 08:35:22",
       "lat": 4.859,
       "lon": -73.958,
       "distancia_bogota": 20.8,
