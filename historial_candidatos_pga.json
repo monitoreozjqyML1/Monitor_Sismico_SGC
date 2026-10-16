@@ -1,9 +1,9 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-15T09:50:20.033003-05:00",
+  "actualizado": "2026-10-16T08:15:23.545904-05:00",
   "magnitud_minima": 4.0,
-  "total_candidatos": 48,
+  "total_candidatos": 49,
   "eventos": {
     "SGC2026sblqei": {
       "id": "SGC2026sblqei",
@@ -2420,6 +2420,45 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
+    },
+    "SGC2026ujrbwk": {
+      "id": "SGC2026ujrbwk",
+      "magnitud": 4.1,
+      "profundidad": 0.0,
+      "latitud": 6.866,
+      "longitud": -77.492,
+      "distancia_km": 447.8178725704179,
+      "lugar": "Riosucio - Choco, Colombia",
+      "hora_local": "2026-10-16 08:02:36",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-16 08:02:36",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 6.866,
+      "lon": -77.492,
+      "distancia_bogota": 447.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-10-16T08:15:17.401266-05:00",
+      "alerta_enviada": true
     }
   },
   "alcance_registro": "Acumulaci?n desde la inicializaci?n del hist?rico; no incluye eventos anteriores que ya no est?n en el cat?logo operativo."
