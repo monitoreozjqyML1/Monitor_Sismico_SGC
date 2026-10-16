@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-16T14:40:19.111869-05:00",
+  "actualizado": "2026-10-16T14:45:19.409033-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1791,
+    "total_eventos": 1792,
     "eventos_m4_o_mayores": 49,
     "candidatos_acelerograficos": 49,
     "alertas_telegram": 42,
-    "porcentaje_m4_o_mayores": 2.74,
+    "porcentaje_m4_o_mayores": 2.73,
     "eventos_mayor_igual_4": 49,
     "total_candidatos_acelerograficos": 49,
     "total_alertas": 7,
@@ -51280,6 +51280,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-16T13:30:17.583436-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ukeckm": {
+      "id": "SGC2026ukeckm",
+      "magnitud": 3.5,
+      "profundidad": 121.0,
+      "latitud": 5.418,
+      "longitud": -76.007,
+      "distancia_km": 228.27375543143717,
+      "lugar": "Mistrato - Risaralda, Colombia",
+      "hora_local": "2026-10-16 14:35:28",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-16 14:35:28",
+      "lat": 5.418,
+      "lon": -76.007,
+      "distancia_bogota": 228.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-16T14:45:15.527532-05:00",
       "alerta_enviada": false
     }
   }
