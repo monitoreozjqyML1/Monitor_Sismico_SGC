@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T08:02:54.920278-05:00",
+  "actualizado": "2026-10-16T08:05:21.019989-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1817,
@@ -51818,12 +51818,12 @@
     "SGC2026ujeyog": {
       "id": "SGC2026ujeyog",
       "magnitud": 2.4,
-      "profundidad": 135.24,
-      "latitud": 6.809,
-      "longitud": -73.123,
-      "distancia_km": 255.82612528190637,
+      "profundidad": 153.31,
+      "latitud": 6.82,
+      "longitud": -73.124,
+      "distancia_km": 256.8963691391454,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-16 01:56:43",
+      "hora_local": "2026-10-16 01:56:41",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -51832,7 +51832,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-16 01:56:43",
+      "fecha_local": "2026-10-16 01:56:41",
       "lat": 6.809,
       "lon": -73.123,
       "distancia_bogota": 255.8,
