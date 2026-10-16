@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-16T12:05:22.396360-05:00",
+  "actualizado": "2026-10-16T12:10:21.208620-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1800,
+    "total_eventos": 1799,
     "eventos_m4_o_mayores": 49,
     "candidatos_acelerograficos": 49,
     "alertas_telegram": 42,
@@ -368,34 +368,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-16T06:35:30.518415-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026sgdqep": {
-      "id": "SGC2026sgdqep",
-      "magnitud": 1.6,
-      "profundidad": 86.0,
-      "latitud": 10.032166666666667,
-      "longitud": -73.07866666666666,
-      "distancia_km": 601.7355848467936,
-      "lugar": "Agustín Codazzi - Cesar, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 10.032166666666667,
-      "lon": -73.07866666666666,
-      "distancia_bogota": 601.7,
-      "tipo_magnitud": "MLr_4",
-      "fecha_local": "2026-09-16 02:10",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-16T12:10:15.026833-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sgxpdb": {
       "id": "SGC2026sgxpdb",
