@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-16T08:35:22.130468-05:00",
+  "actualizado": "2026-10-16T08:40:20.093043-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1819,
+    "total_eventos": 1820,
     "eventos_m4_o_mayores": 49,
     "candidatos_acelerograficos": 49,
     "alertas_telegram": 42,
@@ -51845,13 +51845,13 @@
     },
     "SGC2026ujfmdl": {
       "id": "SGC2026ujfmdl",
-      "magnitud": 2.1,
-      "profundidad": -0.95,
-      "latitud": 7.191,
-      "longitud": -75.755,
-      "distancia_km": 332.68762843042464,
+      "magnitud": 2.2,
+      "profundidad": 32.31,
+      "latitud": 7.233,
+      "longitud": -75.779,
+      "distancia_km": 338.0393521343911,
       "lugar": "Ituango - Antioquia, Colombia",
-      "hora_local": "2026-10-16 02:12:43",
+      "hora_local": "2026-10-16 02:12:41",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -51860,7 +51860,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-16 02:12:43",
+      "fecha_local": "2026-10-16 02:12:41",
       "lat": 5.821,
       "lon": -76.841,
       "distancia_bogota": 330.5,
@@ -52064,6 +52064,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-16T08:25:21.979509-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ujseji": {
+      "id": "SGC2026ujseji",
+      "magnitud": 2.4,
+      "profundidad": 13.93,
+      "latitud": 4.859,
+      "longitud": -73.958,
+      "distancia_km": 20.752742836576946,
+      "lugar": "Sopo - Cundinamarca, Colombia",
+      "hora_local": "2026-10-16 08:35:40",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-16 08:35:40",
+      "lat": 4.859,
+      "lon": -73.958,
+      "distancia_bogota": 20.8,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-16T08:40:15.915126-05:00",
       "alerta_enviada": false
     }
   }
