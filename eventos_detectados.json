@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-16T16:20:20.908190-05:00",
+  "actualizado": "2026-10-16T16:25:19.006172-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1793,
+    "total_eventos": 1792,
     "eventos_m4_o_mayores": 49,
     "candidatos_acelerograficos": 49,
     "alertas_telegram": 42,
@@ -476,34 +476,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-16T15:20:16.044986-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026shfhsz": {
-      "id": "SGC2026shfhsz",
-      "magnitud": 3.3,
-      "profundidad": 46.0,
-      "latitud": 4.509232008091161,
-      "longitud": -76.76316139850717,
-      "distancia_km": 299.1065529693564,
-      "lugar": "Istmina - Chocó, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 4.509232008091161,
-      "lon": -76.76316139850717,
-      "distancia_bogota": 299.1,
-      "tipo_magnitud": "MLr_1",
-      "fecha_local": "2026-09-16 16:05",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-16T16:25:14.619593-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sheyod": {
       "id": "SGC2026sheyod",
@@ -51284,13 +51256,13 @@
     },
     "SGC2026ukeseh": {
       "id": "SGC2026ukeseh",
-      "magnitud": 2.3,
-      "profundidad": 22.84,
-      "latitud": 6.725,
-      "longitud": -73.543,
-      "distancia_km": 231.47072849564776,
+      "magnitud": 2.4,
+      "profundidad": 107.57,
+      "latitud": 6.722,
+      "longitud": -73.561,
+      "distancia_km": 230.65176095437837,
       "lugar": "El Carmen - Santander, Colombia",
-      "hora_local": "2026-10-16 14:53:50",
+      "hora_local": "2026-10-16 14:53:48",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -51299,7 +51271,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-16 14:53:50",
+      "fecha_local": "2026-10-16 14:53:48",
       "lat": 6.725,
       "lon": -73.543,
       "distancia_bogota": 231.5,
