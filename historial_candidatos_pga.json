@@ -1,7 +1,7 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-16T08:15:23.545904-05:00",
+  "actualizado": "2026-10-16T08:25:27.115946-05:00",
   "magnitud_minima": 4.0,
   "total_candidatos": 49,
   "eventos": {
@@ -2432,21 +2432,36 @@
       "hora_local": "2026-10-16 08:02:36",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 452.0,
+            "distanceHipocentral": 452.0,
+            "pgaE": 0.08005,
+            "pgaN": 0.047539,
+            "pgaZ": 0.032068
+          }
+        ],
+        "pga_maximo_cm_s2": 0.08005,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "fecha_local": "2026-10-16 08:02:36",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 0.8489107142857142,
+        "porcentaje_ew": 2.1635135135135135,
+        "porcentaje_maximo": 2.1635135135135135,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00047538999999999996,
+        "pga_ew_m_s2": 0.0008005,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -2458,7 +2473,8 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-16T08:15:17.401266-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
     }
   },
   "alcance_registro": "Acumulaci?n desde la inicializaci?n del hist?rico; no incluye eventos anteriores que ya no est?n en el cat?logo operativo."
