@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-16T11:30:19.645069-05:00",
+  "actualizado": "2026-10-16T11:35:21.729074-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1807,
+    "total_eventos": 1806,
     "eventos_m4_o_mayores": 49,
     "candidatos_acelerograficos": 49,
     "alertas_telegram": 42,
@@ -368,34 +368,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-09-16T06:35:30.518415-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026sgbloe": {
-      "id": "SGC2026sgbloe",
-      "magnitud": 1.3,
-      "profundidad": 90.0,
-      "latitud": 10.046,
-      "longitud": -73.05566666666667,
-      "distancia_km": 603.7132007539967,
-      "lugar": "Agustín Codazzi - Cesar, Colombia",
-      "hora_local": "No disponible",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "lat": 10.046,
-      "lon": -73.05566666666667,
-      "distancia_bogota": 603.7,
-      "tipo_magnitud": "MLr_4",
-      "fecha_local": "2026-09-16 01:04",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-16T11:35:14.909489-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sgcnwv": {
       "id": "SGC2026sgcnwv",
@@ -51593,12 +51565,12 @@
     "SGC2026ujseji": {
       "id": "SGC2026ujseji",
       "magnitud": 3.0,
-      "profundidad": 13.31,
-      "latitud": 3.811,
-      "longitud": -74.074,
-      "distancia_km": 100.0756557517145,
+      "profundidad": 12.96,
+      "latitud": 3.817,
+      "longitud": -74.06,
+      "distancia_km": 99.41731865844474,
       "lugar": "Cubarral - Meta, Colombia",
-      "hora_local": "2026-10-16 08:35:22",
+      "hora_local": "2026-10-16 08:35:23",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -51607,7 +51579,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-16 08:35:22",
+      "fecha_local": "2026-10-16 08:35:23",
       "lat": 4.859,
       "lon": -73.958,
       "distancia_bogota": 20.8,
