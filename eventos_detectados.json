@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T12:50:23.021573-05:00",
+  "actualizado": "2026-10-16T12:55:22.304107-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1798,
@@ -51452,11 +51452,11 @@
     },
     "SGC2026ujfjxv": {
       "id": "SGC2026ujfjxv",
-      "magnitud": 2.5,
-      "profundidad": 151.88,
-      "latitud": 6.832,
-      "longitud": -73.106,
-      "distancia_km": 258.9300509244714,
+      "magnitud": 2.4,
+      "profundidad": 139.97,
+      "latitud": 6.768,
+      "longitud": -73.13,
+      "distancia_km": 251.35532448904235,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-10-16 02:09:53",
       "candidato_acelerografico": false,
