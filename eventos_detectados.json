@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T08:15:23.404001-05:00",
+  "actualizado": "2026-10-16T08:20:23.116651-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1818,
@@ -51845,13 +51845,13 @@
     },
     "SGC2026ujfmdl": {
       "id": "SGC2026ujfmdl",
-      "magnitud": 2.6,
-      "profundidad": 137.11,
-      "latitud": 5.821,
-      "longitud": -76.841,
-      "distancia_km": 330.49536820548406,
-      "lugar": "Medio Atrato (Bete) - Choco, Colombia",
-      "hora_local": "2026-10-16 02:12:27",
+      "magnitud": 2.1,
+      "profundidad": -0.95,
+      "latitud": 7.191,
+      "longitud": -75.755,
+      "distancia_km": 332.68762843042464,
+      "lugar": "Ituango - Antioquia, Colombia",
+      "hora_local": "2026-10-16 02:12:43",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -51860,7 +51860,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-16 02:12:27",
+      "fecha_local": "2026-10-16 02:12:43",
       "lat": 5.821,
       "lon": -76.841,
       "distancia_bogota": 330.5,
