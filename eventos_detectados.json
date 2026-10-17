@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-17T04:16:05.163133-05:00",
+  "actualizado": "2026-10-17T08:01:25.990231-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1805,
+    "total_eventos": 1806,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
-    "porcentaje_m4_o_mayores": 2.83,
+    "porcentaje_m4_o_mayores": 2.82,
     "eventos_mayor_igual_4": 51,
     "total_candidatos_acelerograficos": 51,
     "total_alertas": 7,
@@ -51624,12 +51624,12 @@
     "SGC2026ukxbyz": {
       "id": "SGC2026ukxbyz",
       "magnitud": 2.1,
-      "profundidad": 131.65,
-      "latitud": 6.852,
-      "longitud": -73.167,
-      "distancia_km": 258.2662649017149,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "2026-10-17 00:08:14",
+      "profundidad": 138.12,
+      "latitud": 6.791,
+      "longitud": -73.149,
+      "distancia_km": 252.82757474817595,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-17 00:08:12",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -51638,7 +51638,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-17 00:08:14",
+      "fecha_local": "2026-10-17 00:08:12",
       "lat": 6.852,
       "lon": -73.167,
       "distancia_bogota": 258.3,
@@ -51715,6 +51715,34 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
+    },
+    "SGC2026uldfsw": {
+      "id": "SGC2026uldfsw",
+      "magnitud": 2.5,
+      "profundidad": 6.07,
+      "latitud": 2.166,
+      "longitud": -75.561,
+      "distancia_km": 327.704600983684,
+      "lugar": "Garzon - Huila, Colombia",
+      "hora_local": "2026-10-17 03:13:38",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-17 03:13:38",
+      "lat": 2.166,
+      "lon": -75.561,
+      "distancia_bogota": 327.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-17T08:00:59.316260-05:00",
+      "alerta_enviada": false
     }
   }
 }
