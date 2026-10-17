@@ -1,9 +1,9 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-16T19:49:05.026301-05:00",
+  "actualizado": "2026-10-17T04:16:05.303001-05:00",
   "magnitud_minima": 4.0,
-  "total_candidatos": 50,
+  "total_candidatos": 51,
   "eventos": {
     "SGC2026sblqei": {
       "id": "SGC2026sblqei",
@@ -2534,6 +2534,45 @@
       "alerta_actualizacion_enviada": true,
       "reporte_pga_actualizado_enviado": true,
       "ciclo_cerrado": true
+    },
+    "SGC2026ulbqbk": {
+      "id": "SGC2026ulbqbk",
+      "magnitud": 4.3,
+      "profundidad": 130.04,
+      "latitud": 3.648,
+      "longitud": -76.316,
+      "distancia_km": 275.48892608510477,
+      "lugar": "El Cerrito - Valle del Cauca, Colombia",
+      "hora_local": "2026-10-17 02:25:14",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-17 02:25:14",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 3.648,
+      "lon": -76.316,
+      "distancia_bogota": 275.5,
+      "tipo_magnitud": "MLv",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
+      "alerta_enviada": true
     }
   },
   "alcance_registro": "Acumulaci?n desde la inicializaci?n del hist?rico; no incluye eventos anteriores que ya no est?n en el cat?logo operativo."
