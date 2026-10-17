@@ -1,9 +1,9 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-16T08:25:27.115946-05:00",
+  "actualizado": "2026-10-16T19:49:05.026301-05:00",
   "magnitud_minima": 4.0,
-  "total_candidatos": 49,
+  "total_candidatos": 50,
   "eventos": {
     "SGC2026sblqei": {
       "id": "SGC2026sblqei",
@@ -2475,6 +2475,65 @@
       "fecha_deteccion": "2026-10-16T08:15:17.401266-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
+    },
+    "SGC2026ujtllt": {
+      "id": "SGC2026ujtllt",
+      "magnitud": 4.0,
+      "profundidad": 22.15,
+      "latitud": 6.878,
+      "longitud": -77.474,
+      "distancia_km": 446.85154019035417,
+      "lugar": "Riosucio - Choco, Colombia",
+      "hora_local": "2026-10-16 09:14:01",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 451.0,
+            "distanceHipocentral": 451.0,
+            "pgaE": 0.057711,
+            "pgaN": 0.032379,
+            "pgaZ": 0.031963
+          }
+        ],
+        "pga_maximo_cm_s2": 0.057711,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
+      },
+      "fecha_local": "2026-10-16 09:14:01",
+      "lat": 6.865,
+      "lon": -77.485,
+      "distancia_bogota": 447.1,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-16T09:25:15.534777-05:00",
+      "alerta_enviada": false,
+      "magnitud_anterior_actualizacion": 3.9,
+      "actualizacion_pga_pendiente": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.5781964285714285,
+        "porcentaje_ew": 1.559756756756757,
+        "porcentaje_maximo": 1.559756756756757,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00032378999999999996,
+        "pga_ew_m_s2": 0.00057711,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "alerta_actualizacion_enviada": true,
+      "reporte_pga_actualizado_enviado": true,
+      "ciclo_cerrado": true
     }
   },
   "alcance_registro": "Acumulaci?n desde la inicializaci?n del hist?rico; no incluye eventos anteriores que ya no est?n en el cat?logo operativo."

@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-16T17:47:09.990780-05:00",
+  "actualizado": "2026-10-16T19:49:04.881938-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1796,
-    "eventos_m4_o_mayores": 49,
-    "candidatos_acelerograficos": 49,
+    "total_eventos": 1798,
+    "eventos_m4_o_mayores": 50,
+    "candidatos_acelerograficos": 50,
     "alertas_telegram": 42,
-    "porcentaje_m4_o_mayores": 2.73,
-    "eventos_mayor_igual_4": 49,
-    "total_candidatos_acelerograficos": 49,
+    "porcentaje_m4_o_mayores": 2.78,
+    "eventos_mayor_igual_4": 50,
+    "total_candidatos_acelerograficos": 50,
     "total_alertas": 7,
     "porcentaje_alertas": 0.39
   },
@@ -51004,20 +51004,35 @@
     },
     "SGC2026ujtllt": {
       "id": "SGC2026ujtllt",
-      "magnitud": 3.9,
-      "profundidad": 24.92,
-      "latitud": 6.865,
-      "longitud": -77.485,
-      "distancia_km": 447.1046272792645,
+      "magnitud": 4.0,
+      "profundidad": 22.15,
+      "latitud": 6.878,
+      "longitud": -77.474,
+      "distancia_km": 446.85154019035417,
       "lugar": "Riosucio - Choco, Colombia",
       "hora_local": "2026-10-16 09:14:01",
-      "candidato_acelerografico": false,
+      "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 451.0,
+            "distanceHipocentral": 451.0,
+            "pgaE": 0.057711,
+            "pgaN": 0.032379,
+            "pgaZ": 0.031963
+          }
+        ],
+        "pga_maximo_cm_s2": 0.057711,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "fecha_local": "2026-10-16 09:14:01",
       "lat": 6.865,
@@ -51028,7 +51043,23 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-16T09:25:15.534777-05:00",
-      "alerta_enviada": false
+      "alerta_enviada": false,
+      "magnitud_anterior_actualizacion": 3.9,
+      "actualizacion_pga_pendiente": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.5781964285714285,
+        "porcentaje_ew": 1.559756756756757,
+        "porcentaje_maximo": 1.559756756756757,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00032378999999999996,
+        "pga_ew_m_s2": 0.00057711,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "alerta_actualizacion_enviada": true,
+      "reporte_pga_actualizado_enviado": true,
+      "ciclo_cerrado": true
     },
     "SGC2026ujhbwt": {
       "id": "SGC2026ujhbwt",
@@ -51396,7 +51427,7 @@
     },
     "SGC2026ujwgsl": {
       "id": "SGC2026ujwgsl",
-      "magnitud": 2.4,
+      "magnitud": 2.5,
       "profundidad": 68.05,
       "latitud": 7.172,
       "longitud": -77.502,
@@ -51420,6 +51451,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-16T17:45:16.280172-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ukemhz": {
+      "id": "SGC2026ukemhz",
+      "magnitud": 2.3,
+      "profundidad": 42.94,
+      "latitud": 4.439,
+      "longitud": -76.773,
+      "distancia_km": 300.8929443597945,
+      "lugar": "Istmina - Choco, Colombia",
+      "hora_local": "2026-10-16 14:46:56",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-16 14:46:56",
+      "lat": 4.439,
+      "lon": -76.773,
+      "distancia_bogota": 300.9,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-16T19:48:37.565295-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026ukmtzc": {
+      "id": "SGC2026ukmtzc",
+      "magnitud": 2.8,
+      "profundidad": 140.61,
+      "latitud": 6.887,
+      "longitud": -73.132,
+      "distancia_km": 263.36144403685734,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-10-16 18:57:14",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-16 18:57:14",
+      "lat": 6.887,
+      "lon": -73.132,
+      "distancia_bogota": 263.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-16T19:48:37.565295-05:00",
       "alerta_enviada": false
     }
   }
