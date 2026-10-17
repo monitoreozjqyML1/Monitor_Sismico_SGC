@@ -1,7 +1,7 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-17T04:16:05.303001-05:00",
+  "actualizado": "2026-10-17T11:19:16.887163-05:00",
   "magnitud_minima": 4.0,
   "total_candidatos": 51,
   "eventos": {
@@ -2537,13 +2537,13 @@
     },
     "SGC2026ulbqbk": {
       "id": "SGC2026ulbqbk",
-      "magnitud": 4.3,
-      "profundidad": 130.04,
-      "latitud": 3.648,
-      "longitud": -76.316,
-      "distancia_km": 275.48892608510477,
+      "magnitud": 4.1,
+      "profundidad": 144.28,
+      "latitud": 3.62,
+      "longitud": -76.308,
+      "distancia_km": 276.0456693319577,
       "lugar": "El Cerrito - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-17 02:25:14",
+      "hora_local": "2026-10-17 02:25:15",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "NO DISPONIBLE",
@@ -2552,7 +2552,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-17 02:25:14",
+      "fecha_local": "2026-10-17 02:25:15",
       "alerta_pga": {
         "estado": "SIN_DATOS",
         "porcentaje_ns": null,
