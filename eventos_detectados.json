@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T10:55:20.423694-05:00",
+  "actualizado": "2026-10-19T11:00:21.729722-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1840,
@@ -52671,12 +52671,12 @@
     "SGC2026uoqupe": {
       "id": "SGC2026uoqupe",
       "magnitud": 2.7,
-      "profundidad": 0.0,
-      "latitud": 5.984,
-      "longitud": -71.316,
-      "distancia_km": 336.3588606214197,
-      "lugar": "Paz de Ariporo - Casanare, Colombia",
-      "hora_local": "2026-10-19 01:16:32",
+      "profundidad": 25.38,
+      "latitud": 5.969,
+      "longitud": -71.373,
+      "distancia_km": 329.937987191304,
+      "lugar": "Hato Corozal - Casanare, Colombia",
+      "hora_local": "2026-10-19 01:16:31",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -52685,7 +52685,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-19 01:16:32",
+      "fecha_local": "2026-10-19 01:16:31",
       "lat": 5.984,
       "lon": -71.316,
       "distancia_bogota": 336.4,
