@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T10:20:22.246549-05:00",
+  "actualizado": "2026-10-19T10:25:24.346641-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1837,
@@ -52586,12 +52586,12 @@
     },
     "SGC2026updtwn": {
       "id": "SGC2026updtwn",
-      "magnitud": 2.2,
-      "profundidad": 145.72,
-      "latitud": 6.823,
-      "longitud": -73.196,
-      "distancia_km": 254.0568415979735,
-      "lugar": "Zapatoca - Santander, Colombia",
+      "magnitud": 2.4,
+      "profundidad": 136.73,
+      "latitud": 6.781,
+      "longitud": -73.192,
+      "distancia_km": 249.91973850377298,
+      "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-10-19 07:47:56",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
