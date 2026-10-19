@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T14:45:25.374668-05:00",
+  "actualizado": "2026-10-19T14:48:51.656986-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1843,
@@ -52642,13 +52642,13 @@
     },
     "SGC2026upiwwe": {
       "id": "SGC2026upiwwe",
-      "magnitud": 2.5,
-      "profundidad": 1.19,
-      "latitud": 3.9,
-      "longitud": -75.668,
-      "distancia_km": 198.60731050651077,
+      "magnitud": 2.3,
+      "profundidad": 18.97,
+      "latitud": 3.841,
+      "longitud": -75.632,
+      "distancia_km": 198.183314392516,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-19 10:22:18",
+      "hora_local": "2026-10-19 10:22:17",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -52657,7 +52657,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-19 10:22:18",
+      "fecha_local": "2026-10-19 10:22:17",
       "lat": 3.9,
       "lon": -75.668,
       "distancia_bogota": 198.6,
