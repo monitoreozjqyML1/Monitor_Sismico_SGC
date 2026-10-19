@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-19T10:52:24.540327-05:00",
+  "actualizado": "2026-10-19T10:55:20.423694-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1839,
+    "total_eventos": 1840,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
@@ -52666,6 +52666,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-19T10:30:17.420437-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uoqupe": {
+      "id": "SGC2026uoqupe",
+      "magnitud": 2.7,
+      "profundidad": 0.0,
+      "latitud": 5.984,
+      "longitud": -71.316,
+      "distancia_km": 336.3588606214197,
+      "lugar": "Paz de Ariporo - Casanare, Colombia",
+      "hora_local": "2026-10-19 01:16:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-19 01:16:32",
+      "lat": 5.984,
+      "lon": -71.316,
+      "distancia_bogota": 336.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-19T10:55:15.862302-05:00",
       "alerta_enviada": false
     }
   }
