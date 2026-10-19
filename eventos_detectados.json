@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T15:20:20.174242-05:00",
+  "actualizado": "2026-10-19T15:25:19.413142-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1844,
@@ -52754,13 +52754,13 @@
     },
     "SGC2026uppkmy": {
       "id": "SGC2026uppkmy",
-      "magnitud": 2.3,
-      "profundidad": 8.89,
-      "latitud": 7.178,
-      "longitud": -74.558,
-      "distancia_km": 279.53126727584424,
-      "lugar": "Remedios - Antioquia, Colombia",
-      "hora_local": "2026-10-19 13:39:08",
+      "magnitud": 2.0,
+      "profundidad": 43.45,
+      "latitud": 7.325,
+      "longitud": -74.608,
+      "distancia_km": 296.6420817048822,
+      "lugar": "Segovia - Antioquia, Colombia",
+      "hora_local": "2026-10-19 13:39:09",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -52769,7 +52769,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-19 13:39:08",
+      "fecha_local": "2026-10-19 13:39:09",
       "lat": 7.178,
       "lon": -74.558,
       "distancia_bogota": 279.5,
