@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-19T13:40:23.204615-05:00",
+  "actualizado": "2026-10-19T13:45:19.529604-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1842,
+    "total_eventos": 1843,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
@@ -52727,10 +52727,10 @@
     "SGC2026uoybng": {
       "id": "SGC2026uoybng",
       "magnitud": 2.1,
-      "profundidad": 142.43,
-      "latitud": 6.797,
-      "longitud": -73.169,
-      "distancia_km": 252.55439057747765,
+      "profundidad": 134.19,
+      "latitud": 6.76,
+      "longitud": -73.159,
+      "distancia_km": 249.22885944868594,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-10-19 04:55:46",
       "candidato_acelerografico": false,
@@ -52750,6 +52750,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-19T13:40:18.650822-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uppkmy": {
+      "id": "SGC2026uppkmy",
+      "magnitud": 2.3,
+      "profundidad": 8.89,
+      "latitud": 7.178,
+      "longitud": -74.558,
+      "distancia_km": 279.53126727584424,
+      "lugar": "Remedios - Antioquia, Colombia",
+      "hora_local": "2026-10-19 13:39:08",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-19 13:39:08",
+      "lat": 7.178,
+      "lon": -74.558,
+      "distancia_bogota": 279.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-19T13:45:15.719624-05:00",
       "alerta_enviada": false
     }
   }
