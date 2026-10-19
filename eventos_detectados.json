@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-19T10:25:24.346641-05:00",
+  "actualizado": "2026-10-19T10:30:22.333264-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1837,
+    "total_eventos": 1839,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
-    "porcentaje_m4_o_mayores": 2.78,
+    "porcentaje_m4_o_mayores": 2.77,
     "eventos_mayor_igual_4": 51,
     "total_candidatos_acelerograficos": 51,
     "total_alertas": 7,
@@ -52586,7 +52586,7 @@
     },
     "SGC2026updtwn": {
       "id": "SGC2026updtwn",
-      "magnitud": 2.4,
+      "magnitud": 2.0,
       "profundidad": 136.73,
       "latitud": 6.781,
       "longitud": -73.192,
@@ -52610,6 +52610,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-19T10:20:17.878412-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uoqhon": {
+      "id": "SGC2026uoqhon",
+      "magnitud": 2.5,
+      "profundidad": 4.62,
+      "latitud": 2.921,
+      "longitud": -74.786,
+      "distancia_km": 214.21851917161206,
+      "lugar": "Uribe - Meta, Colombia",
+      "hora_local": "2026-10-19 01:01:25",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-19 01:01:25",
+      "lat": 2.921,
+      "lon": -74.786,
+      "distancia_bogota": 214.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-19T10:30:17.420437-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026upiwwe": {
+      "id": "SGC2026upiwwe",
+      "magnitud": 2.5,
+      "profundidad": 1.19,
+      "latitud": 3.9,
+      "longitud": -75.668,
+      "distancia_km": 198.60731050651077,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-19 10:22:18",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-19 10:22:18",
+      "lat": 3.9,
+      "lon": -75.668,
+      "distancia_bogota": 198.6,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-19T10:30:17.420437-05:00",
       "alerta_enviada": false
     }
   }
