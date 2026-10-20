@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-20T18:05:19.816722-05:00",
+  "actualizado": "2026-10-20T18:10:23.528520-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1883,
+    "total_eventos": 1884,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
@@ -53898,6 +53898,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-20T17:35:16.137314-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026urtunx": {
+      "id": "SGC2026urtunx",
+      "magnitud": 2.9,
+      "profundidad": 146.43,
+      "latitud": 5.258,
+      "longitud": -73.663,
+      "distancia_km": 75.84986142975094,
+      "lugar": "Lenguazaque - Cundinamarca, Colombia",
+      "hora_local": "2026-10-20 18:00:25",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-20 18:00:25",
+      "lat": 5.258,
+      "lon": -73.663,
+      "distancia_bogota": 75.8,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-20T18:10:17.872892-05:00",
       "alerta_enviada": false
     }
   }
