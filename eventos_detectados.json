@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-20T17:30:22.433278-05:00",
+  "actualizado": "2026-10-20T17:35:20.320480-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1882,
+    "total_eventos": 1883,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
@@ -53870,6 +53870,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-20T16:40:14.999947-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026urkoqv": {
+      "id": "SGC2026urkoqv",
+      "magnitud": 2.1,
+      "profundidad": 134.49,
+      "latitud": 5.608,
+      "longitud": -73.736,
+      "distancia_km": 106.46043571345449,
+      "lugar": "Chiquinquira - Boyaca, Colombia",
+      "hora_local": "2026-10-20 13:21:56",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-20 13:21:56",
+      "lat": 5.608,
+      "lon": -73.736,
+      "distancia_bogota": 106.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-20T17:35:16.137314-05:00",
       "alerta_enviada": false
     }
   }
