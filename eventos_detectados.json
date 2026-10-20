@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T10:25:20.517849-05:00",
+  "actualizado": "2026-10-20T10:30:20.494171-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1876,
@@ -53510,11 +53510,11 @@
     },
     "SGC2026uqvxbc": {
       "id": "SGC2026uqvxbc",
-      "magnitud": 2.6,
-      "profundidad": 12.45,
-      "latitud": 2.211,
-      "longitud": -75.631,
-      "distancia_km": 327.4293869184803,
+      "magnitud": 2.4,
+      "profundidad": 25.9,
+      "latitud": 2.221,
+      "longitud": -75.531,
+      "distancia_km": 320.742381295883,
       "lugar": "Garzon - Huila, Colombia",
       "hora_local": "2026-10-20 05:59:11",
       "candidato_acelerografico": false,
