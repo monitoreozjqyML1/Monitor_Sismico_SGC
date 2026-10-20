@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-20T16:25:23.849398-05:00",
+  "actualizado": "2026-10-20T16:30:22.511474-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1880,
+    "total_eventos": 1881,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
@@ -53814,6 +53814,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-20T14:15:19.212063-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026urqnuu": {
+      "id": "SGC2026urqnuu",
+      "magnitud": 2.4,
+      "profundidad": 100.25,
+      "latitud": 5.119,
+      "longitud": -76.0,
+      "distancia_km": 218.34901543570217,
+      "lugar": "Santuario - Risaralda, Colombia",
+      "hora_local": "2026-10-20 16:22:16",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-20 16:22:16",
+      "lat": 5.119,
+      "lon": -76.0,
+      "distancia_bogota": 218.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-20T16:30:18.497176-05:00",
       "alerta_enviada": false
     }
   }
