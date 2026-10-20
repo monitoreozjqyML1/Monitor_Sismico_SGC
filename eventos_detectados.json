@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-20T16:35:19.329074-05:00",
+  "actualizado": "2026-10-20T16:40:19.215247-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1881,
+    "total_eventos": 1882,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
@@ -53842,6 +53842,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-20T16:30:18.497176-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026urqyef": {
+      "id": "SGC2026urqyef",
+      "magnitud": 3.6,
+      "profundidad": 137.33,
+      "latitud": 5.274,
+      "longitud": -73.748,
+      "distancia_km": 72.16657245752947,
+      "lugar": "Cucunuba - Cundinamarca, Colombia",
+      "hora_local": "2026-10-20 16:34:08",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-20 16:34:08",
+      "lat": 5.274,
+      "lon": -73.748,
+      "distancia_bogota": 72.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-20T16:40:14.999947-05:00",
       "alerta_enviada": false
     }
   }
