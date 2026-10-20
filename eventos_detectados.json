@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T08:40:22.306954-05:00",
+  "actualizado": "2026-10-20T08:45:22.927901-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1871,
@@ -53426,8 +53426,8 @@
     },
     "SGC2026uqlqzt": {
       "id": "SGC2026uqlqzt",
-      "magnitud": 2.7,
-      "profundidad": 19.08,
+      "magnitud": 2.6,
+      "profundidad": 16.08,
       "latitud": 3.822,
       "longitud": -75.592,
       "distancia_km": 195.38640444134163,
