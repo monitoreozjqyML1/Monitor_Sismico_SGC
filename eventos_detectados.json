@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-21T17:15:20.479905-05:00",
+  "actualizado": "2026-10-21T17:20:23.312926-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1804,
+    "total_eventos": 1802,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
@@ -921,62 +921,6 @@
       "fecha_deteccion": "2026-09-21T16:45:16.153675-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
-    },
-    "SGC2026sqlmag": {
-      "id": "SGC2026sqlmag",
-      "magnitud": 2.4,
-      "profundidad": 17.12,
-      "latitud": 8.189,
-      "longitud": -73.283,
-      "distancia_km": 396.4392910727206,
-      "lugar": "Ocana - Norte de Santander, Colombia",
-      "hora_local": "2026-09-21 16:51:58",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-21 16:51:58",
-      "lat": 8.396,
-      "lon": -73.312,
-      "distancia_bogota": 418.3,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-21T17:15:18.941546-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026sqlrtp": {
-      "id": "SGC2026sqlrtp",
-      "magnitud": 3.4,
-      "profundidad": 12.85,
-      "latitud": 5.668,
-      "longitud": -73.447,
-      "distancia_km": 126.94706193745303,
-      "lugar": "Chiquiza - Boyaca, Colombia",
-      "hora_local": "2026-09-21 16:58:37",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-21 16:58:37",
-      "lat": 5.668,
-      "lon": -73.447,
-      "distancia_bogota": 126.9,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-21T17:20:16.095262-05:00",
-      "alerta_enviada": false
     },
     "SGC2026sqmulh": {
       "id": "SGC2026sqmulh",
