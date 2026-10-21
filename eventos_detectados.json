@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-20T18:30:23.326957-05:00",
+  "actualizado": "2026-10-20T20:51:03.749763-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1885,
+    "total_eventos": 1887,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 43,
-    "porcentaje_m4_o_mayores": 2.71,
+    "porcentaje_m4_o_mayores": 2.7,
     "eventos_mayor_igual_4": 51,
     "total_candidatos_acelerograficos": 51,
     "total_alertas": 7,
@@ -53954,6 +53954,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-20T18:30:18.784015-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026urviyt": {
+      "id": "SGC2026urviyt",
+      "magnitud": 2.3,
+      "profundidad": 8.82,
+      "latitud": 2.013,
+      "longitud": -75.855,
+      "distancia_km": 359.39211658581473,
+      "lugar": "Timana - Huila, Colombia",
+      "hora_local": "2026-10-20 18:47:20",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-20 18:47:20",
+      "lat": 2.013,
+      "lon": -75.855,
+      "distancia_bogota": 359.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-20T20:50:36.845025-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026urvrjj": {
+      "id": "SGC2026urvrjj",
+      "magnitud": 2.9,
+      "profundidad": 1.0,
+      "latitud": 6.996,
+      "longitud": -76.283,
+      "distancia_km": 352.6438952067385,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-10-20 18:57:04",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-20 18:57:04",
+      "lat": 6.996,
+      "lon": -76.283,
+      "distancia_bogota": 352.6,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-20T20:50:36.845025-05:00",
       "alerta_enviada": false
     }
   }
