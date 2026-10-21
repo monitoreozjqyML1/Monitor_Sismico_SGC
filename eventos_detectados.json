@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-21T16:50:25.205776-05:00",
+  "actualizado": "2026-10-21T16:55:20.887672-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1806,
+    "total_eventos": 1807,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
@@ -51731,6 +51731,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-21T14:30:23.821411-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026utndhx": {
+      "id": "SGC2026utndhx",
+      "magnitud": 2.9,
+      "profundidad": 238.32,
+      "latitud": 4.634,
+      "longitud": -75.71,
+      "distancia_km": 181.72265228006708,
+      "lugar": "Filandia - Quindio, Colombia",
+      "hora_local": "2026-10-21 16:48:20",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-21 16:48:20",
+      "lat": 4.634,
+      "lon": -75.71,
+      "distancia_bogota": 181.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-21T16:55:16.101954-05:00",
       "alerta_enviada": false
     }
   }
