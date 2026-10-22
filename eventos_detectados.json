@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T16:05:26.824828-05:00",
+  "actualizado": "2026-10-22T16:10:29.012894-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1671,
@@ -47872,11 +47872,11 @@
     "SGC2026uuvlbq": {
       "id": "SGC2026uuvlbq",
       "magnitud": 2.5,
-      "profundidad": 151.27,
-      "latitud": 5.236,
-      "longitud": -73.701,
-      "distancia_km": 71.39927962590347,
-      "lugar": "Cucunuba - Cundinamarca, Colombia",
+      "profundidad": 139.39,
+      "latitud": 5.267,
+      "longitud": -73.726,
+      "distancia_km": 72.74683981208118,
+      "lugar": "Lenguazaque - Cundinamarca, Colombia",
       "hora_local": "2026-10-22 10:03:09",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
