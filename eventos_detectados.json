@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T16:20:19.226954-05:00",
+  "actualizado": "2026-10-22T16:25:22.011351-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 1671,
@@ -47927,7 +47927,7 @@
     },
     "SGC2026uuzshn": {
       "id": "SGC2026uuzshn",
-      "magnitud": 2.1,
+      "magnitud": 2.2,
       "profundidad": 139.05,
       "latitud": 6.813,
       "longitud": -73.11,
