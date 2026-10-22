@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-22T08:45:21.449928-05:00",
+  "actualizado": "2026-10-22T08:50:26.272275-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1719,
+    "total_eventos": 1720,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
@@ -49295,6 +49295,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-22T08:10:20.750049-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uucjyc": {
+      "id": "SGC2026uucjyc",
+      "magnitud": 2.0,
+      "profundidad": 66.96,
+      "latitud": 4.105,
+      "longitud": -76.531,
+      "distancia_km": 280.811702603192,
+      "lugar": "El Litoral del San Juan (Docordo) - Choco, Colombia",
+      "hora_local": "2026-10-22 00:28:35",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-22 00:28:35",
+      "lat": 4.105,
+      "lon": -76.531,
+      "distancia_bogota": 280.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-22T08:50:21.439149-05:00",
       "alerta_enviada": false
     }
   }
