@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-22T09:00:26.176002-05:00",
+  "actualizado": "2026-10-22T09:05:26.476443-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1718,
+    "total_eventos": 1719,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
@@ -49267,6 +49267,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-22T08:50:21.439149-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uusfcu": {
+      "id": "SGC2026uusfcu",
+      "magnitud": 2.7,
+      "profundidad": 17.06,
+      "latitud": 6.889,
+      "longitud": -77.432,
+      "distancia_km": 443.60930311700935,
+      "lugar": "Riosucio - Choco, Colombia",
+      "hora_local": "2026-10-22 08:25:45",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-22 08:25:45",
+      "lat": 6.889,
+      "lon": -77.432,
+      "distancia_bogota": 443.6,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-10-22T09:05:21.306521-05:00",
       "alerta_enviada": false
     }
   }
