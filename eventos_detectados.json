@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-24T07:30:44.423725-05:00",
+  "actualizado": "2026-10-24T07:35:47.765927-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 1388,
+    "total_eventos": 1387,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
-    "porcentaje_m4_o_mayores": 3.67,
+    "porcentaje_m4_o_mayores": 3.68,
     "eventos_mayor_igual_4": 51,
     "total_candidatos_acelerograficos": 51,
     "total_alertas": 7,
@@ -1409,34 +1409,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-09-24T00:30:43.210624-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026svfkfj": {
-      "id": "SGC2026svfkfj",
-      "magnitud": 3.0,
-      "profundidad": 16.2,
-      "latitud": 3.857,
-      "longitud": -75.636,
-      "distancia_km": 197.708356810338,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-24 07:11:11",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-24 07:11:11",
-      "lat": 3.878,
-      "lon": -75.648,
-      "distancia_bogota": 197.8,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-24T07:30:20.590775-05:00",
-      "alerta_enviada": false
     },
     "SGC2026svfxct": {
       "id": "SGC2026svfxct",
