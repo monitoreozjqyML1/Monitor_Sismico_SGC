@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-28T07:45:55.934394-05:00",
+  "actualizado": "2026-10-28T07:50:53.501752-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 959,
+    "total_eventos": 958,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
@@ -1886,34 +1886,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-09-28T06:45:41.273358-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026tcpeee": {
-      "id": "SGC2026tcpeee",
-      "magnitud": 3.5,
-      "profundidad": 51.49,
-      "latitud": 4.393,
-      "longitud": -76.728,
-      "distancia_km": 296.50650718500896,
-      "lugar": "El Litoral del San Juan (Docordo) - Choco, Colombia",
-      "hora_local": "2026-09-28 07:37:12",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-28 07:37:12",
-      "lat": 4.393,
-      "lon": -76.728,
-      "distancia_bogota": 296.5,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-28T07:50:16.758328-05:00",
-      "alerta_enviada": false
     },
     "SGC2026tcrtit": {
       "id": "SGC2026tcrtit",
