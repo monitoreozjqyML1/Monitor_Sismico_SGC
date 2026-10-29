@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-10-29T10:50:45.347339-05:00",
+  "actualizado": "2026-10-29T10:55:47.690842-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 905,
+    "total_eventos": 903,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
-    "porcentaje_m4_o_mayores": 5.64,
+    "porcentaje_m4_o_mayores": 5.65,
     "eventos_mayor_igual_4": 51,
     "total_candidatos_acelerograficos": 51,
     "total_alertas": 7,
-    "porcentaje_alertas": 0.77
+    "porcentaje_alertas": 0.78
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -1941,62 +1941,6 @@
       "fecha_deteccion": "2026-09-28T09:50:20.229798-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
-    },
-    "SGC2026teoioj": {
-      "id": "SGC2026teoioj",
-      "magnitud": 2.1,
-      "profundidad": 22.09,
-      "latitud": 3.879,
-      "longitud": -75.63,
-      "distancia_km": 195.95624442734075,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-29 09:21:06",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-29 09:21:06",
-      "lat": 3.885,
-      "lon": -75.637,
-      "distancia_bogota": 196.3,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-29T10:50:21.260639-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026teolsr": {
-      "id": "SGC2026teolsr",
-      "magnitud": 2.1,
-      "profundidad": 16.02,
-      "latitud": 3.859,
-      "longitud": -75.624,
-      "distancia_km": 196.43478423744236,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-09-29 09:24:45",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-29 09:24:45",
-      "lat": 3.843,
-      "lon": -75.64,
-      "distancia_bogota": 198.8,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-29T10:50:21.260639-05:00",
-      "alerta_enviada": false
     },
     "SGC2026teiglz": {
       "id": "SGC2026teiglz",
