@@ -12,6 +12,10 @@ from zoneinfo import ZoneInfo
 # CONFIGURACIÓN GENERAL
 # ============================================================
 
+class ErrorConsultaSGC(RuntimeError):
+    """Error al consultar o validar el catalogo SGC."""
+
+
 URL_SGC = "https://archive.sgc.gov.co/feed/v1.0.1/summary/five_days_all.json"
 URL_DETALLE_SGC = "https://archive.sgc.gov.co/events/"
 
@@ -340,9 +344,20 @@ def obtener_eventos():
 
         respuesta.raise_for_status()
 
+        contenido = respuesta.text
+        if not isinstance(contenido, str) or not contenido.strip():
+            raise ErrorConsultaSGC("El SGC devolvio una respuesta vacia.")
+
+        if not re.search(r'<table\b', contenido, re.IGNORECASE) or not re.search(
+            r'</table\s*>', contenido, re.IGNORECASE
+        ):
+            raise ErrorConsultaSGC(
+                "La respuesta del SGC no contiene una tabla HTML reconocible."
+            )
+
         filas = re.findall(
             r"<tr[^>]*>(.*?)</tr>",
-            respuesta.text,
+            contenido,
             flags=re.IGNORECASE | re.DOTALL
         )
 
@@ -451,13 +466,23 @@ def obtener_eventos():
             "desde catálogo SeisComP."
         )
 
+        if not eventos:
+            raise ErrorConsultaSGC(
+                "No se encontraron eventos reconocibles; respuesta sin validar."
+            )
+
         return eventos
 
+    except ErrorConsultaSGC:
+        raise
+    except requests.RequestException as error:
+        raise ErrorConsultaSGC(
+            f"Fallo de comunicacion con el SGC: {error}"
+        ) from error
     except Exception as error:
-        print(
-            f"❌ Error consultando catálogo SGC: {error}"
-        )
-        return []
+        raise ErrorConsultaSGC(
+            f"No se pudo validar o procesar la respuesta del SGC: {error}"
+        ) from error
 
 
 # ============================================================
@@ -1497,11 +1522,6 @@ def realizar_consulta():
         f"{len(eventos_registrados)}"
     )
 
-    eventos_registrados = (
-        limpiar_eventos_antiguos(
-            eventos_registrados
-        )
-    )
 
     ids_registrados = set()
 
@@ -1518,21 +1538,17 @@ def realizar_consulta():
     eventos = obtener_eventos()
 
     if not eventos:
-
-        print(
-            "⚠️ No se recibieron eventos del SGC."
+        raise ErrorConsultaSGC(
+            "El SGC no devolvio eventos validos. "
+            "Se conserva el catalogo sin aplicar retencion."
         )
 
-        resumen = generar_resumen(
+    # La retencion solo se aplica despues de validar la consulta SGC.
+    eventos_registrados = (
+        limpiar_eventos_antiguos(
             eventos_registrados
         )
-
-        guardar_eventos_registrados(
-            eventos_registrados,
-            resumen
-        )
-
-        return
+    )
 
     print(
         f"📡 Eventos recibidos del SGC: "

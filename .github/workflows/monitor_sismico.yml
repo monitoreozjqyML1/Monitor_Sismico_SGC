@@ -118,75 +118,78 @@ jobs:
           print("PRUEBA TELEGRAM ACTUALIZADA: 4 ESCENARIOS ENVIADOS")
           PY
 
-      - name: Diagnóstico acceso SGC
+      - name: Diagnostico consulta principal SGC
         if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
+        continue-on-error: true
         run: |
           python - <<'PY'
           import requests
+          import re
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
 
-          url = "https://archive.sgc.gov.co/feed/v1.0.1/summary/five_days_all.json"
-
-          headers = {
-              "User-Agent": (
-                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) "
-                  "Chrome/140.0.0.0 Safari/537.36"
-              ),
-              "Accept": "application/json,text/plain,*/*",
-              "Referer": "https://www.sgc.gov.co/"
-          }
-
-          respuesta = requests.get(
-              url,
-              headers=headers,
-              timeout=30
+          url = (
+              "https://bdrsnc.sgc.gov.co/paginas1/catalogo/"
+              "Consulta_Experta_Seiscomp/consulta_sismo.php"
           )
 
-          print("STATUS:", respuesta.status_code)
-          print("SERVER:", respuesta.headers.get("Server"))
-          print("CONTENT-TYPE:", respuesta.headers.get("Content-Type"))
-          print("CONTENT:", respuesta.text[:500])
-          PY
+          hoy = datetime.now(
+              ZoneInfo("America/Bogota")
+          ).strftime("%d/%m/%Y")
 
-      - name: Diagnóstico DNS y red SGC
-        if: ${{ github.event.inputs.modo != 'PRUEBA_TELEGRAM' }}
-        run: |
-          python - <<'PY'
-          import socket
-          import requests
+          datos = {
+              "inicial": hoy,
+              "final": hoy,
+              "ubi": "cuadrante",
+              "longitudStart": "-90",
+              "longitudEnd": "-66",
+              "latitudStart": "-07",
+              "latitudEnd": "15",
+              "magnitudStart": "0",
+              "magnitudEnd": "9",
+              "depthStart": "0",
+              "depthEnd": "700",
+              "rmsStart": "0",
+              "rmsEnd": "10",
+              "gapStart": "0",
+              "gapEnd": "360",
+              "eprofmin": "0",
+              "eprofmax": "999",
+              "elongmin": "0",
+              "elongmax": "999",
+              "elatmin": "0",
+              "elatmax": "999",
+              "Submit": "Consultar"
+          }
 
-          host = "archive.sgc.gov.co"
-          url = "https://archive.sgc.gov.co/feed/v1.0.1/summary/five_days_all.json"
+          print("=== DIAGNOSTICO ENDPOINT PRINCIPAL SGC ===")
+          print("URL:", url)
+          print("METODO: POST")
+          print("FECHA COLOMBIA:", hoy)
 
-          print("=== DNS ===")
-          print(socket.gethostbyname_ex(host))
-
-          print("=== IP PUBLICA DEL RUNNER ===")
           try:
-              ip_publica = requests.get(
-                  "https://api.ipify.org",
-                  timeout=15
-              ).text
-              print(ip_publica)
-          except Exception as e:
-              print("ERROR IP PUBLICA:", e)
+              r = requests.post(url, data=datos, timeout=30)
+              contenido = r.text or ""
 
-          print("=== PRUEBA USER-AGENT NORMAL ===")
-          try:
-              r = requests.get(
-                  url,
-                  headers={
-                      "User-Agent": "Mozilla/5.0",
-                      "Accept": "application/json"
-                  },
-                  timeout=30
-              )
-              print("STATUS:", r.status_code)
+              print("HTTP:", r.status_code)
               print("SERVER:", r.headers.get("Server"))
               print("CONTENT-TYPE:", r.headers.get("Content-Type"))
-              print("CONTENT:", r.text[:200])
+              print("BYTES:", len(r.content))
+              print(
+                  "TABLA HTML:",
+                  bool(
+                      re.search(r'<table\b', contenido, re.I)
+                      and re.search(r'</table\s*>', contenido, re.I)
+                  )
+              )
+              print("MARCADOR SGC2026:", "SGC2026" in contenido)
+              print("INICIO RESPUESTA:", contenido[:300])
+
           except Exception as e:
-              print("ERROR:", repr(e))
+              print("DIAGNOSTICO: ERROR DE CONEXION")
+              print(type(e).__name__, str(e))
+
+          print("Diagnostico terminado; no modifica archivos.")
           PY
 
       - name: Ejecutar monitor sísmico
