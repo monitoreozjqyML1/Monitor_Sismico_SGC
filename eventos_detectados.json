@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-10-30T13:55:45.997952-05:00",
+  "actualizado": "2026-10-30T14:00:48.832580-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 839,
+    "total_eventos": 838,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
-    "porcentaje_m4_o_mayores": 6.08,
+    "porcentaje_m4_o_mayores": 6.09,
     "eventos_mayor_igual_4": 51,
     "total_candidatos_acelerograficos": 51,
     "total_alertas": 7,
-    "porcentaje_alertas": 0.83
+    "porcentaje_alertas": 0.84
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -2000,34 +2000,6 @@
         "pga_ew_critico_m_s2": 0.037
       },
       "reporte_pga_actualizado_enviado": true
-    },
-    "SGC2026tgsqcg": {
-      "id": "SGC2026tgsqcg",
-      "magnitud": 2.4,
-      "profundidad": 81.98,
-      "latitud": 5.414,
-      "longitud": -76.115,
-      "distancia_km": 239.39457938609996,
-      "lugar": "Pueblo Rico - Risaralda, Colombia",
-      "hora_local": "2026-09-30 13:40:21",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-30 13:40:21",
-      "lat": 5.319,
-      "lon": -75.792,
-      "distancia_bogota": 202.2,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-30T13:55:16.809375-05:00",
-      "alerta_enviada": false
     },
     "SGC2026tgsxtm": {
       "id": "SGC2026tgsxtm",
