@@ -462,7 +462,90 @@ def api_pga(event_id):
             "error": str(error)
         }), 502
 
+# ============================================================
+# DIAGNOSTICO TEMPORAL DEL CATALOGO OFICIAL SGC
+# Solo lectura. No modifica archivos ni datos.
+# ============================================================
 
+@app.route("/diagnostico/catalogo-sgc")
+def diagnostico_catalogo_sgc():
+
+    base = "https://archive.sgc.gov.co/feed/v1.0.1/summary/"
+
+    listados = [
+        "five_days_all.json",
+        "five_days_2.json",
+        "thirty_days_important.json",
+        "sixty_days_4.json",
+        "international.json"
+    ]
+
+    headers = {
+        "Accept": "application/json, text/plain, */*",
+        "Cache-Control": "no-cache",
+        "Origin": "https://www.sgc.gov.co",
+        "Referer": "https://www.sgc.gov.co/",
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 Chrome/153.0.0.0 Safari/537.36"
+        )
+    }
+
+    resultados = []
+
+    for nombre in listados:
+        resultado = {"listado": nombre, "ok": False}
+
+        try:
+            respuesta = requests.get(
+                base + nombre,
+                headers=headers,
+                timeout=25
+            )
+
+            resultado["http"] = respuesta.status_code
+            respuesta.raise_for_status()
+
+            datos = respuesta.json()
+            features = datos.get("features", [])
+
+            if datos.get("type") != "FeatureCollection":
+                raise ValueError("Tipo de respuesta inesperado.")
+
+            if not isinstance(features, list):
+                raise ValueError("La lista features no es válida.")
+
+            agencias = {}
+            fechas = []
+
+            for evento in features:
+                propiedades = evento.get("properties", {})
+                agencia = propiedades.get("agency", "SIN AGENCIA")
+                agencias[agencia] = agencias.get(agencia, 0) + 1
+
+                fecha = propiedades.get("utcTime")
+                if isinstance(fecha, str):
+                    fechas.append(fecha)
+
+            resultado.update({
+                "ok": True,
+                "eventos": len(features),
+                "agencias": agencias,
+                "evento_mas_reciente": max(fechas) if fechas else None
+            })
+
+        except Exception as error:
+            resultado["error"] = (
+                type(error).__name__ + ": " + str(error)
+            )
+
+        resultados.append(resultado)
+
+    return jsonify({
+        "diagnostico": "CATALOGO OFICIAL SGC",
+        "solo_lectura": True,
+        "resultados": resultados
+    })
 # ============================================================
 # INICIAR FLASK
 # ============================================================
