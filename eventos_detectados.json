@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-30T11:55:43.777719-05:00",
+  "actualizado": "2026-10-30T12:00:50.399035-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 846,
+    "total_eventos": 845,
     "eventos_m4_o_mayores": 51,
     "candidatos_acelerograficos": 51,
     "alertas_telegram": 42,
-    "porcentaje_m4_o_mayores": 6.03,
+    "porcentaje_m4_o_mayores": 6.04,
     "eventos_mayor_igual_4": 51,
     "total_candidatos_acelerograficos": 51,
     "total_alertas": 7,
@@ -2000,34 +2000,6 @@
         "pga_ew_critico_m_s2": 0.037
       },
       "reporte_pga_actualizado_enviado": true
-    },
-    "SGC2026tgoxoh": {
-      "id": "SGC2026tgoxoh",
-      "magnitud": 3.3,
-      "profundidad": 49.18,
-      "latitud": 4.49,
-      "longitud": -76.652,
-      "distancia_km": 287.0012014453977,
-      "lugar": "Sipi - Choco, Colombia",
-      "hora_local": "2026-09-30 11:47:28",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-09-30 11:47:28",
-      "lat": 4.503,
-      "lon": -76.669,
-      "distancia_bogota": 288.8,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-09-30T12:00:18.822442-05:00",
-      "alerta_enviada": false
     },
     "SGC2026tgpgew": {
       "id": "SGC2026tgpgew",
