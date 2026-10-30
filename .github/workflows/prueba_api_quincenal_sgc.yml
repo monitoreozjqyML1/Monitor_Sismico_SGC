@@ -1,3 +1,4 @@
+
 name: Prueba independiente API quincenal SGC
 
 on:
@@ -12,82 +13,164 @@ jobs:
   consultar-api:
     name: Consultar API SGC sin modificar el monitor
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
-      - name: Consultar y validar eventos recientes
+      - name: Consultar y diagnosticar API quincenal SGC
         run: |
           python - <<'PY'
           import json
           import urllib.request
           import urllib.parse
+          import urllib.error
           from collections import Counter
-          from datetime import datetime, timezone, timedelta
 
           inicio = "2026-10-17T00:00:00"
           fin = "2026-10-30T23:59:59"
 
           base = "https://api.sgc.gov.co/biweekly/biweekly_earthquakes"
+
           parametros = urllib.parse.urlencode({
               "startdate": inicio,
               "enddate": fin
           })
+
           url = f"{base}?{parametros}"
 
+          print("=" * 65)
+          print("DIAGNOSTICO API QUINCENAL SGC")
+          print("=" * 65)
           print("CONSULTA:", inicio, "hasta", fin)
+          print("URL:", url)
 
           solicitud = urllib.request.Request(
               url,
-              headers={"User-Agent": "Monitor-Sismico-SGC-diagnostic/1.0"}
+              headers={
+                  "User-Agent": "Monitor-Sismico-SGC-diagnostic/1.0",
+                  "Accept": "application/json"
+              }
           )
 
-          with urllib.request.urlopen(solicitud, timeout=60) as respuesta:
-              print("HTTP:", respuesta.status)
-              datos = json.loads(respuesta.read().decode("utf-8"))
+          try:
+              with urllib.request.urlopen(
+                  solicitud,
+                  timeout=60
+              ) as respuesta:
+
+                  print("\nHTTP:", respuesta.status)
+                  print("CABECERAS:")
+                  print(dict(respuesta.headers))
+
+                  cuerpo = respuesta.read().decode("utf-8")
+
+          except urllib.error.HTTPError as error:
+
+              print("\n" + "=" * 65)
+              print("ERROR HTTP")
+              print("=" * 65)
+
+              print("CODIGO:", error.code)
+              print("MOTIVO:", error.reason)
+
+              print("\nCABECERAS DEL SERVIDOR:")
+              print(dict(error.headers))
+
+              cuerpo_error = error.read().decode(
+                  "utf-8",
+                  errors="replace"
+              )
+
+              print("\nCUERPO DE RESPUESTA:")
+              print("-" * 65)
+              print(cuerpo_error[:5000])
+              print("-" * 65)
+
+              raise
+
+          except Exception as error:
+
+              print("\nERROR DE CONEXION O PROCESAMIENTO:")
+              print(type(error).__name__)
+              print(str(error))
+              raise
+
+          print("\nVALIDANDO RESPUESTA JSON")
+
+          try:
+              datos = json.loads(cuerpo)
+          except json.JSONDecodeError:
+              print("RESPUESTA NO JSON:")
+              print(cuerpo[:3000])
+              raise
 
           if datos.get("error"):
-              raise RuntimeError(f"Error devuelto por SGC: {datos['error']}")
+              raise RuntimeError(
+                  f"Error devuelto por SGC: {datos['error']}"
+              )
 
           if datos.get("type") != "FeatureCollection":
-              raise RuntimeError("La respuesta no es una FeatureCollection")
+              print(json.dumps(datos, indent=2, ensure_ascii=False)[:5000])
+              raise RuntimeError(
+                  "La respuesta no es una FeatureCollection"
+              )
 
           eventos = datos.get("features", [])
+
           print("TOTAL EVENTOS:", len(eventos))
 
           if not eventos:
-              raise RuntimeError("La API no devolvió eventos")
+              raise RuntimeError("La API no devolvio eventos")
 
           ids = [e.get("id") for e in eventos]
           ids_validos = [i for i in ids if i]
+
           print("IDENTIFICADORES:", len(ids_validos))
           print("IDENTIFICADORES UNICOS:", len(set(ids_validos)))
-          print("DUPLICADOS:", len(ids_validos) - len(set(ids_validos)))
+          print(
+              "DUPLICADOS:",
+              len(ids_validos) - len(set(ids_validos))
+          )
 
           agencias = Counter(
               e.get("properties", {}).get("agency", "SIN AGENCIA")
               for e in eventos
           )
+
           print("AGENCIAS:", dict(agencias))
 
           estados = Counter(
               e.get("properties", {}).get("status", "SIN ESTADO")
               for e in eventos
           )
+
           print("ESTADOS:", dict(estados))
 
           coordenadas_validas = [
               e for e in eventos
-              if isinstance(e.get("geometry", {}).get("coordinates"), list)
+              if isinstance(
+                  e.get("geometry", {}).get("coordinates"), list
+              )
               and len(e["geometry"]["coordinates"]) >= 3
-              and all(v is not None for v in e["geometry"]["coordinates"][:3])
+              and all(
+                  v is not None
+                  for v in e["geometry"]["coordinates"][:3]
+              )
           ]
+
           print("COORDENADAS COMPLETAS:", len(coordenadas_validas))
-          print("COORDENADAS INCOMPLETAS:", len(eventos) - len(coordenadas_validas))
+          print(
+              "COORDENADAS INCOMPLETAS:",
+              len(eventos) - len(coordenadas_validas)
+          )
 
           m4 = [
               e for e in eventos
-              if isinstance(e.get("properties", {}).get("mag"), (int, float))
+              if isinstance(
+                  e.get("properties", {}).get("mag"), (int, float)
+              )
               and e["properties"]["mag"] >= 4.0
           ]
+
           print("EVENTOS M4 O MAYORES:", len(m4))
 
           for e in m4:
