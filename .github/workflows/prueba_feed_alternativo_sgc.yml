@@ -1,0 +1,134 @@
+name: Prueba independiente feed alternativo SGC
+
+on:
+  push:
+    branches:
+      - prueba-feed-alternativo-sgc
+
+permissions: {}
+
+jobs:
+  probar-feed-sgc:
+    name: Consultar feed SGC sin modificar el monitor
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    steps:
+      - name: Consultar y validar feed de cinco días
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import sys
+          import urllib.request
+          from datetime import datetime
+
+          URL = "https://archive.sgc.gov.co/feed/v1.0.1/summary/five_days_all.json"
+
+          print("CONSULTANDO:", URL, flush=True)
+
+          request = urllib.request.Request(
+              URL,
+              headers={"User-Agent": "Monitor-Sismico-SGC-feed-test/1.0"}
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=45) as response:
+                  status = response.status
+                  body = response.read()
+          except Exception as exc:
+              print("ERROR DE CONEXION:", repr(exc), flush=True)
+              sys.exit(1)
+
+          print("HTTP:", status, flush=True)
+          print("BYTES RECIBIDOS:", len(body), flush=True)
+
+          if status != 200:
+              print("FALLO: el servidor no devolvio HTTP 200.")
+              sys.exit(1)
+
+          try:
+              data = json.loads(body)
+          except Exception as exc:
+              print("ERROR: la respuesta no es JSON valido:", repr(exc))
+              sys.exit(1)
+
+          if data.get("type") != "FeatureCollection":
+              print("ERROR: el JSON no es una FeatureCollection.")
+              print("TIPO RECIBIDO:", data.get("type"))
+              sys.exit(1)
+
+          features = data.get("features")
+          if not isinstance(features, list) or not features:
+              print("ERROR: features no es una lista con eventos.")
+              sys.exit(1)
+
+          ids = []
+          dates = []
+          missing_id = 0
+          missing_core = 0
+          invalid_coordinates = 0
+          colombia = 0
+
+          for feature in features:
+              if not isinstance(feature, dict):
+                  missing_core += 1
+                  continue
+
+              event_id = feature.get("id")
+              if isinstance(event_id, str) and event_id.strip():
+                  ids.append(event_id)
+              else:
+                  missing_id += 1
+
+              properties = feature.get("properties") or {}
+              geometry = feature.get("geometry") or {}
+              coordinates = geometry.get("coordinates")
+
+              if not all(properties.get(key) is not None for key in ("utcTime", "mag", "place")):
+                  missing_core += 1
+
+              if isinstance(properties.get("place"), str) and "colombia" in properties["place"].lower():
+                  colombia += 1
+
+              if (
+                  not isinstance(coordinates, list)
+                  or len(coordinates) < 3
+                  or not all(isinstance(value, (int, float)) for value in coordinates[:3])
+              ):
+                  invalid_coordinates += 1
+
+              utc_time = properties.get("utcTime")
+              if isinstance(utc_time, str):
+                  try:
+                      dates.append(datetime.strptime(utc_time, "%Y-%m-%d %H:%M"))
+                  except ValueError:
+                      missing_core += 1
+
+          unique_ids = set(ids)
+          duplicate_count = len(ids) - len(unique_ids)
+
+          print("\n--- RESULTADO DE VALIDACION ---")
+          print("TOTAL EVENTOS:", len(features))
+          print("IDS VALIDOS:", len(ids))
+          print("IDS UNICOS:", len(unique_ids))
+          print("IDS DUPLICADOS:", duplicate_count)
+          print("EVENTOS CON LUGAR EN COLOMBIA:", colombia)
+          print("EVENTOS SIN ID:", missing_id)
+          print("EVENTOS CON CAMPOS CENTRALES AUSENTES O FECHA INVALIDA:", missing_core)
+          print("EVENTOS CON COORDENADAS INVALIDAS:", invalid_coordinates)
+
+          if dates:
+              print("EVENTO MAS ANTIGUO UTC:", min(dates).strftime("%Y-%m-%d %H:%M"))
+              print("EVENTO MAS RECIENTE UTC:", max(dates).strftime("%Y-%m-%d %H:%M"))
+          else:
+              print("ERROR: no se pudo interpretar ninguna fecha UTC.")
+              sys.exit(1)
+
+          print("\nPRUEBA DE ACCESO Y ESTRUCTURA COMPLETADA.")
+
+          if missing_id or missing_core or invalid_coordinates:
+              print("ADVERTENCIA: hay registros incompletos; revisar antes de integrar.")
+          if duplicate_count:
+              print("ADVERTENCIA: hay identificadores repetidos; revisar antes de integrar.")
+          PY
