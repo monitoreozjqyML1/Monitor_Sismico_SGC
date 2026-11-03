@@ -307,28 +307,32 @@ def obtener_eventos():
     Los registros OVSP se excluyen expresamente.
     """
     try:
-        url = "https://api.sgc.gov.co/biweekly/biweekly_earthquakes"
+        url = "https://monitor-sismico-sgc-1.onrender.com/api/sgc/eventos"
 
-        ahora = datetime.now(ZONA_HORARIA)
-        desde = ahora - timedelta(days=30)
-
-        parametros = {
-            "startdate": desde.strftime("%Y-%m-%dT%H:%M:%S"),
-            "enddate": ahora.strftime("%Y-%m-%dT%H:%M:%S")
-        }
+        token = os.environ.get("SGC_PROXY_TOKEN")
+        if not token:
+            raise ErrorConsultaSGC(
+                "No esta configurado el token de autenticacion del proxy SGC."
+            )
 
         respuesta = requests.get(
             url,
-            params=parametros,
-            timeout=40,
+            timeout=120,
             headers={
                 "Accept": "application/json",
-                "User-Agent": "Monitor-Sismico-SGC/1.0"
+                "Authorization": f"Bearer {token}"
             }
         )
         respuesta.raise_for_status()
 
-        datos = respuesta.json()
+        envoltura = respuesta.json()
+
+        if not isinstance(envoltura, dict) or envoltura.get("estado") != "exito":
+            raise ErrorConsultaSGC(
+                "El proxy Render no devolvio una respuesta exitosa."
+            )
+
+        datos = envoltura.get("datos")
 
         if not isinstance(datos, dict):
             raise ErrorConsultaSGC(
