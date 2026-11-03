@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-03T16:15:35.064684-05:00",
+  "actualizado": "2026-11-03T16:20:38.568205-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2883,
+    "total_eventos": 2884,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 46,
@@ -81967,13 +81967,13 @@
     },
     "SGC2026vreeyy": {
       "id": "SGC2026vreeyy",
-      "magnitud": 2.2,
-      "profundidad": 0.0,
-      "latitud": 3.9325,
-      "longitud": -71.313,
-      "distancia_km": 317.93463356916783,
+      "magnitud": 1.9,
+      "profundidad": -1.0,
+      "latitud": 3.8295,
+      "longitud": -71.36733333333333,
+      "distancia_km": 315.5289978041151,
       "lugar": "Puerto Gaitán - Meta, Colombia",
-      "hora_local": "2026-11-03 14:06:07",
+      "hora_local": "2026-11-03 14:06:09",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -81982,7 +81982,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-03 14:06:07",
+      "fecha_local": "2026-11-03 14:06:09",
       "lat": 3.9325,
       "lon": -71.313,
       "distancia_bogota": 317.9,
@@ -82019,6 +82019,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-03T15:55:37.456643-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vqxgsm": {
+      "id": "SGC2026vqxgsm",
+      "magnitud": 1.2,
+      "profundidad": 15.0,
+      "latitud": 6.311833333333333,
+      "longitud": -76.0275,
+      "distancia_km": 280.2184785062248,
+      "lugar": "Urrao - Antioquia, Colombia",
+      "hora_local": "2026-11-03 10:36:57",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-03 10:36:57",
+      "lat": 6.311833333333333,
+      "lon": -76.0275,
+      "distancia_bogota": 280.2,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-03T16:20:24.506129-05:00",
       "alerta_enviada": false
     }
   }
