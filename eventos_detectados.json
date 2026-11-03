@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-03T16:25:39.951921-05:00",
+  "actualizado": "2026-11-03T16:30:32.892382-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2884,
+    "total_eventos": 2886,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 46,
@@ -82047,6 +82047,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-03T16:20:24.506129-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vqxkig": {
+      "id": "SGC2026vqxkig",
+      "magnitud": 1.2,
+      "profundidad": 19.0,
+      "latitud": 4.007965080800602,
+      "longitud": -74.07893776989755,
+      "distancia_km": 78.17759226135901,
+      "lugar": "Guamal - Meta, Colombia",
+      "hora_local": "2026-11-03 10:41:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-03 10:41:07",
+      "lat": 4.007965080800602,
+      "lon": -74.07893776989755,
+      "distancia_bogota": 78.2,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-03T16:30:19.900212-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vriiuv": {
+      "id": "SGC2026vriiuv",
+      "magnitud": 2.4,
+      "profundidad": 20.0,
+      "latitud": 5.29655949198952,
+      "longitud": -74.39194244295531,
+      "distancia_km": 74.12624045536712,
+      "lugar": "La Palma - Cundinamarca, Colombia",
+      "hora_local": "2026-11-03 16:11:16",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-03 16:11:16",
+      "lat": 5.29655949198952,
+      "lon": -74.39194244295531,
+      "distancia_bogota": 74.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-03T16:30:19.900212-05:00",
       "alerta_enviada": false
     }
   }
