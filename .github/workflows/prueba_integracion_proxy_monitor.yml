@@ -1,0 +1,87 @@
+﻿name: Prueba integracion proxy y analizador
+
+on:
+  push:
+    branches:
+      - prueba-api-quincenal-aislada
+      - main
+    paths:
+      - monitor_sgc_cloud.py
+      - .github/workflows/prueba_integracion_proxy_monitor.yml
+
+permissions:
+  contents: read
+
+jobs:
+  prueba-integracion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Descargar rama aislada
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Probar proxy y analizador sin ejecutar monitor
+        env:
+          SGC_PROXY_TOKEN: ${{ secrets.SGC_PROXY_TOKEN }}
+        run: |
+          python - <<'PY'
+          import monitor_sgc_cloud as m
+
+          print("=== PRUEBA 1: RECEPCION DESDE PROXY RENDER ===")
+          eventos = m.obtener_eventos()
+
+          if not isinstance(eventos, list) or not eventos:
+              raise SystemExit("ERROR: no se recibieron eventos.")
+
+          print("Eventos recibidos:", len(eventos))
+
+          ids = [str(evento["id"]) for evento in eventos]
+
+          if len(ids) != len(set(ids)):
+              raise SystemExit("ERROR: existen identificadores duplicados.")
+
+          if any(
+              evento.get("properties", {}).get("agency") != "SGC"
+              for evento in eventos
+          ):
+              raise SystemExit("ERROR: se encontraron agencias distintas de SGC.")
+
+          print("Identificadores unicos:", len(set(ids)))
+          print("Agencia SGC: validada")
+
+          print("=== PRUEBA 2: COMPATIBILIDAD CON ANALIZAR_EVENTO ===")
+          analizados = [m.analizar_evento(evento) for evento in eventos]
+
+          if len(analizados) != len(eventos):
+              raise SystemExit("ERROR: cantidad de eventos analizados incorrecta.")
+
+          if any(not isinstance(resultado, dict) for resultado in analizados):
+              raise SystemExit("ERROR: resultado de analisis invalido.")
+
+          if any(resultado.get("id") is None for resultado in analizados):
+              raise SystemExit("ERROR: hay resultados sin identificador.")
+
+          print("Eventos analizados:", len(analizados))
+          print("Candidatos acelerograficos:", sum(
+              bool(resultado.get("candidato_acelerografico"))
+              for resultado in analizados
+          ))
+
+          print("=== RESULTADO ===")
+          print("INTEGRACION PROXY + ANALIZADOR: EXITOSA")
+          print("No se ejecuto realizar_consulta().")
+          print("No se calcularon PGA ni se enviaron mensajes Telegram.")
+          print("No se modificaron catalogos.")
+          PY
+
