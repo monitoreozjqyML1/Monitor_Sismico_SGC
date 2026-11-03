@@ -5,6 +5,7 @@ on:
     branches:
       - prueba-api-quincenal-aislada
       - main
+      - integrar-proxy-sgc-en-main
     paths:
       - monitor_sgc_cloud.py
       - .github/workflows/prueba_integracion_proxy_monitor.yml
@@ -84,4 +85,5 @@ jobs:
           print("No se calcularon PGA ni se enviaron mensajes Telegram.")
           print("No se modificaron catalogos.")
           PY
+
 
