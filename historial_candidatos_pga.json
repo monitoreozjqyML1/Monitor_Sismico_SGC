@@ -1,9 +1,9 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-10-17T11:19:16.887163-05:00",
+  "actualizado": "2026-11-03T15:21:01.654772-05:00",
   "magnitud_minima": 4.0,
-  "total_candidatos": 51,
+  "total_candidatos": 55,
   "eventos": {
     "SGC2026sblqei": {
       "id": "SGC2026sblqei",
@@ -46,11 +46,26 @@
       "hora_local": "No disponible",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 294.0,
+            "distanceHipocentral": 297.0,
+            "pgaE": 0.145051,
+            "pgaN": 0.078728,
+            "pgaZ": 0.042443
+          }
+        ],
+        "pga_maximo_cm_s2": 0.145051,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
       },
       "lat": 4.46270090091651,
       "lon": -76.72029495530282,
@@ -63,7 +78,18 @@
       ],
       "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
       "fecha_deteccion": "2026-09-14T07:15:24.837516-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 1.405857142857143,
+        "porcentaje_ew": 3.9202972972972976,
+        "porcentaje_maximo": 3.9202972972972976,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00078728,
+        "pga_ew_m_s2": 0.0014505100000000001,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      }
     },
     "SGC2026rxryoi": {
       "id": "SGC2026rxryoi",
@@ -2166,10 +2192,10 @@
     "SGC2026tvpwpp": {
       "id": "SGC2026tvpwpp",
       "magnitud": 4.0,
-      "profundidad": 20.01,
-      "latitud": 3.838,
-      "longitud": -75.581,
-      "distancia_km": 193.43489396879403,
+      "profundidad": 20.0,
+      "latitud": 3.8382322921294314,
+      "longitud": -75.5806535504663,
+      "distancia_km": 193.38868223358685,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-10-08 16:23:39",
       "candidato_acelerografico": true,
@@ -2221,12 +2247,12 @@
     "SGC2026ueunoy": {
       "id": "SGC2026ueunoy",
       "magnitud": 5.0,
-      "profundidad": 148.64,
-      "latitud": 6.804,
-      "longitud": -73.136,
-      "distancia_km": 254.73138744339042,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-13 16:24:22",
+      "profundidad": 144.0,
+      "latitud": 6.750656591197369,
+      "longitud": -73.19102044126018,
+      "distancia_km": 246.85964649341332,
+      "lugar": "Villanueva - Santander, Colombia",
+      "hora_local": "2026-10-13 16:24:21",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "OK",
@@ -2250,7 +2276,7 @@
         "estacion_critica": "BOG.11",
         "componente_critica": "NS"
       },
-      "fecha_local": "2026-10-13 16:24:22",
+      "fecha_local": "2026-10-13 16:24:21",
       "alerta_pga": {
         "estado": "VERDE",
         "porcentaje_ns": 2.436053571428572,
@@ -2424,11 +2450,11 @@
     "SGC2026ujrbwk": {
       "id": "SGC2026ujrbwk",
       "magnitud": 4.1,
-      "profundidad": 0.0,
-      "latitud": 6.866,
-      "longitud": -77.492,
-      "distancia_km": 447.8178725704179,
-      "lugar": "Riosucio - Choco, Colombia",
+      "profundidad": 34.0,
+      "latitud": 6.856937870084924,
+      "longitud": -77.48479922690143,
+      "distancia_km": 446.60867828284785,
+      "lugar": "Riosucio - Chocó, Colombia",
       "hora_local": "2026-10-16 08:02:36",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
@@ -2479,11 +2505,11 @@
     "SGC2026ujtllt": {
       "id": "SGC2026ujtllt",
       "magnitud": 4.0,
-      "profundidad": 22.15,
-      "latitud": 6.878,
-      "longitud": -77.474,
-      "distancia_km": 446.85154019035417,
-      "lugar": "Riosucio - Choco, Colombia",
+      "profundidad": 22.0,
+      "latitud": 6.878088373346129,
+      "longitud": -77.47429724524325,
+      "distancia_km": 446.88450373136027,
+      "lugar": "Riosucio - Chocó, Colombia",
       "hora_local": "2026-10-16 09:14:01",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
@@ -2537,13 +2563,13 @@
     },
     "SGC2026ulbqbk": {
       "id": "SGC2026ulbqbk",
-      "magnitud": 4.1,
-      "profundidad": 144.28,
-      "latitud": 3.62,
-      "longitud": -76.308,
-      "distancia_km": 276.0456693319577,
+      "magnitud": 4.3,
+      "profundidad": 141.0,
+      "latitud": 3.6822473305780434,
+      "longitud": -76.32490331474995,
+      "distancia_km": 274.7692807597056,
       "lugar": "El Cerrito - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-17 02:25:15",
+      "hora_local": "2026-10-17 02:25:13",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
         "estado": "NO DISPONIBLE",
@@ -2552,7 +2578,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-17 02:25:15",
+      "fecha_local": "2026-10-17 02:25:13",
       "alerta_pga": {
         "estado": "SIN_DATOS",
         "porcentaje_ns": null,
@@ -2572,6 +2598,224 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
+      "alerta_enviada": true
+    },
+    "SGC2026vbjfby": {
+      "id": "SGC2026vbjfby",
+      "magnitud": 4.2,
+      "profundidad": 49.0,
+      "latitud": 4.2511958683044595,
+      "longitud": -76.7299024329859,
+      "distancia_km": 299.0330555928282,
+      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
+      "hora_local": "2026-10-25 23:25:31",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 297.0,
+            "distanceHipocentral": 301.0,
+            "pgaE": 0.057733,
+            "pgaN": 0.042217,
+            "pgaZ": 0.020437
+          }
+        ],
+        "pga_maximo_cm_s2": 0.057733,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
+      },
+      "fecha_local": "2026-10-25 23:25:31",
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.753875,
+        "porcentaje_ew": 1.5603513513513516,
+        "porcentaje_maximo": 1.5603513513513516,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00042217,
+        "pga_ew_m_s2": 0.00057733,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 4.2511958683044595,
+      "lon": -76.7299024329859,
+      "distancia_bogota": 299.0,
+      "tipo_magnitud": "MLv",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
+      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
+      "alerta_enviada": true
+    },
+    "SGC2026vfvtfc": {
+      "id": "SGC2026vfvtfc",
+      "magnitud": 4.1,
+      "profundidad": 104.0,
+      "latitud": 5.1615,
+      "longitud": -76.137,
+      "distancia_km": 234.17468711596317,
+      "lugar": "San José del Palmar - Chocó, Colombia",
+      "hora_local": "2026-10-28 10:01:52",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 235.0,
+            "distanceHipocentral": 257.0,
+            "pgaE": 0.059476,
+            "pgaN": 0.040058,
+            "pgaZ": 0.028051
+          }
+        ],
+        "pga_maximo_cm_s2": 0.059476,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "EW"
+      },
+      "fecha_local": "2026-10-28 10:01:52",
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 0.7153214285714287,
+        "porcentaje_ew": 1.6074594594594598,
+        "porcentaje_maximo": 1.6074594594594598,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00040058000000000004,
+        "pga_ew_m_s2": 0.0005947600000000001,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 5.1615,
+      "lon": -76.137,
+      "distancia_bogota": 234.2,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
+      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
+      "alerta_enviada": true
+    },
+    "SGC2026viydwf": {
+      "id": "SGC2026viydwf",
+      "magnitud": 4.0,
+      "profundidad": 16.0,
+      "latitud": 3.876567579290365,
+      "longitud": -75.62842302090932,
+      "distancia_km": 195.9302927682801,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-10-30 02:27:59",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 192.0,
+            "distanceHipocentral": 192.0,
+            "pgaE": 0.08294,
+            "pgaN": 0.090739,
+            "pgaZ": 0.056722
+          }
+        ],
+        "pga_maximo_cm_s2": 0.090739,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "NS"
+      },
+      "fecha_local": "2026-10-30 02:27:59",
+      "alerta_pga": {
+        "estado": "VERDE",
+        "porcentaje_ns": 1.6203392857142858,
+        "porcentaje_ew": 2.2416216216216216,
+        "porcentaje_maximo": 2.2416216216216216,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.00090739,
+        "pga_ew_m_s2": 0.0008294,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 3.876567579290365,
+      "lon": -75.62842302090932,
+      "distancia_bogota": 195.9,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "PGA BOG.11 - NIVEL VERDE",
+      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
+      "alerta_enviada": true
+    },
+    "SGC2026vqkoca": {
+      "id": "SGC2026vqkoca",
+      "magnitud": 5.6,
+      "profundidad": 19.0,
+      "latitud": 3.8562102199014556,
+      "longitud": -75.62649642385293,
+      "distancia_km": 196.82719898068956,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-03 04:13:15",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 193.0,
+            "distanceHipocentral": 194.0,
+            "pgaE": 1.236218,
+            "pgaN": 1.784236,
+            "pgaZ": 0.704113
+          }
+        ],
+        "pga_maximo_cm_s2": 1.784236,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "NS"
+      },
+      "fecha_local": "2026-11-03 04:13:15",
+      "alerta_pga": {
+        "estado": "AMARILLA",
+        "porcentaje_ns": 31.861357142857138,
+        "porcentaje_ew": 33.411297297297295,
+        "porcentaje_maximo": 33.411297297297295,
+        "componente_critica": "EW",
+        "pga_ns_m_s2": 0.017842359999999998,
+        "pga_ew_m_s2": 0.01236218,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 3.8562102199014556,
+      "lon": -75.62649642385293,
+      "distancia_bogota": 196.8,
+      "tipo_magnitud": "MLr",
+      "agencia": "SGC",
+      "alertas": [
+        "ALERTA PGA AMARILLA"
+      ],
+      "categoria": "ALERTA ESTRUCTURAL PGA - AMARILLA",
+      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
     }
   },
