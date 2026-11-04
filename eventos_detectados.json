@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-04T07:50:29.159379-05:00",
+  "actualizado": "2026-11-04T07:55:27.370504-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2872,
+    "total_eventos": 2873,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 46,
-    "porcentaje_m4_o_mayores": 1.92,
+    "porcentaje_m4_o_mayores": 1.91,
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
@@ -81711,6 +81711,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-04T07:40:16.759796-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vrzjkw": {
+      "id": "SGC2026vrzjkw",
+      "magnitud": 0.7,
+      "profundidad": 25.0,
+      "latitud": 1.9698333333333333,
+      "longitud": -76.01033333333334,
+      "distancia_km": 373.07953682867634,
+      "lugar": "Elías - Huila, Colombia",
+      "hora_local": "2026-11-04 00:44:55",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-04 00:44:55",
+      "lat": 1.9698333333333333,
+      "lon": -76.01033333333334,
+      "distancia_bogota": 373.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-04T07:55:14.354771-05:00",
       "alerta_enviada": false
     }
   }
