@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-04T11:45:32.700453-05:00",
+  "actualizado": "2026-11-04T11:50:40.397895-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2886,
+    "total_eventos": 2887,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -30386,11 +30386,11 @@
     },
     "SGC2026uagrpv": {
       "id": "SGC2026uagrpv",
-      "magnitud": 1.9,
-      "profundidad": 16.0,
-      "latitud": 3.8562102199014556,
-      "longitud": -75.6360800465305,
-      "distancia_km": 197.75841128507918,
+      "magnitud": 2.1,
+      "profundidad": 14.0,
+      "latitud": 3.8466924934339133,
+      "longitud": -75.6339208966983,
+      "distancia_km": 198.0607803770273,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-10-11 05:08:44",
       "candidato_acelerografico": false,
@@ -82092,6 +82092,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-04T11:45:19.253501-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vsjrmb": {
+      "id": "SGC2026vsjrmb",
+      "magnitud": 1.9,
+      "profundidad": 0.0,
+      "latitud": 6.890833333333333,
+      "longitud": -76.19066666666667,
+      "distancia_km": 337.1533877228623,
+      "lugar": "Uramita - Antioquia, Colombia",
+      "hora_local": "2026-11-04 05:55:58",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-04 05:55:58",
+      "lat": 6.890833333333333,
+      "lon": -76.19066666666667,
+      "distancia_bogota": 337.2,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-04T11:50:26.070762-05:00",
       "alerta_enviada": false
     }
   }
