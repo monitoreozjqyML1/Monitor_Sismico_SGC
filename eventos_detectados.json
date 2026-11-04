@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-04T09:10:31.655864-05:00",
+  "actualizado": "2026-11-04T09:15:36.580263-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2878,
+    "total_eventos": 2880,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -81868,6 +81868,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-04T09:10:18.720535-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vscsff": {
+      "id": "SGC2026vscsff",
+      "magnitud": 1.8,
+      "profundidad": 140.0,
+      "latitud": 5.2558447732117,
+      "longitud": -73.72449145527308,
+      "distancia_km": 71.78533030396228,
+      "lugar": "Lenguazaque - Cundinamarca, Colombia",
+      "hora_local": "2026-11-04 02:25:37",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-04 02:25:37",
+      "lat": 5.2558447732117,
+      "lon": -73.72449145527308,
+      "distancia_bogota": 71.8,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-04T09:15:20.738033-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vsctpk": {
+      "id": "SGC2026vsctpk",
+      "magnitud": 1.2,
+      "profundidad": 2.0,
+      "latitud": 2.2065,
+      "longitud": -76.46716666666667,
+      "distancia_km": 384.9828337376249,
+      "lugar": "Puracé (Coconuco) - Cauca, Colombia",
+      "hora_local": "2026-11-04 02:27:14",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-04 02:27:14",
+      "lat": 2.2065,
+      "lon": -76.46716666666667,
+      "distancia_bogota": 385.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-04T09:15:20.738033-05:00",
       "alerta_enviada": false
     }
   }
