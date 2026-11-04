@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-04T08:40:32.802440-05:00",
+  "actualizado": "2026-11-04T08:45:36.268502-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2874,
+    "total_eventos": 2875,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -81756,6 +81756,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-04T08:35:18.307910-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vsbqnd": {
+      "id": "SGC2026vsbqnd",
+      "magnitud": 1.5,
+      "profundidad": 150.0,
+      "latitud": 6.950333333333333,
+      "longitud": -73.105,
+      "distancia_km": 271.0083409024381,
+      "lugar": "Girón - Santander, Colombia",
+      "hora_local": "2026-11-04 01:53:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-04 01:53:29",
+      "lat": 6.950333333333333,
+      "lon": -73.105,
+      "distancia_bogota": 271.0,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-04T08:45:23.116277-05:00",
       "alerta_enviada": false
     }
   }
