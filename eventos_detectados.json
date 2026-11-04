@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-04T07:45:31.875777-05:00",
+  "actualizado": "2026-11-04T07:50:29.159379-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2873,
+    "total_eventos": 2872,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 46,
-    "porcentaje_m4_o_mayores": 1.91,
+    "porcentaje_m4_o_mayores": 1.92,
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
@@ -2054,34 +2054,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-10-04T01:20:42.972994-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026tpliwu": {
-      "id": "SGC2026tpliwu",
-      "magnitud": 2.1,
-      "profundidad": 31.0,
-      "latitud": 3.9064426651468174,
-      "longitud": -75.59097816208002,
-      "distancia_km": 190.69985854851413,
-      "lugar": "San Antonio - Tolima, Colombia",
-      "hora_local": "2026-10-05 07:40:12",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-05 07:40:12",
-      "lat": 3.971,
-      "lon": -75.495,
-      "distancia_bogota": 177.9,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-05T07:45:17.864709-05:00",
-      "alerta_enviada": false
     },
     "SGC2026tpmhth": {
       "id": "SGC2026tpmhth",
