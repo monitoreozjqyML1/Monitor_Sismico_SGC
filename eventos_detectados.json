@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-05T10:35:38.664187-05:00",
+  "actualizado": "2026-11-05T10:40:29.282969-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2900,
+    "total_eventos": 2901,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -82484,6 +82484,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-05T10:35:25.537373-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vuopfy": {
+      "id": "SGC2026vuopfy",
+      "magnitud": 3.1,
+      "profundidad": 0.0,
+      "latitud": 2.6243333333333334,
+      "longitud": -75.66466666666666,
+      "distancia_km": 291.6569908175797,
+      "lugar": "Tesalia - Huila, Colombia",
+      "hora_local": "2026-11-05 10:33:11",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 10:33:11",
+      "lat": 2.6243333333333334,
+      "lon": -75.66466666666666,
+      "distancia_bogota": 291.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T10:40:16.108232-05:00",
       "alerta_enviada": false
     }
   }
