@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-05T11:20:35.777374-05:00",
+  "actualizado": "2026-11-05T11:25:36.981769-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2906,
+    "total_eventos": 2908,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -82652,6 +82652,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-05T11:20:22.122703-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vuamfw": {
+      "id": "SGC2026vuamfw",
+      "magnitud": 1.5,
+      "profundidad": 2.0,
+      "latitud": 6.909333333333334,
+      "longitud": -75.936,
+      "distancia_km": 319.7845360000837,
+      "lugar": "Buriticá - Antioquia, Colombia",
+      "hora_local": "2026-11-05 03:27:18",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 03:27:18",
+      "lat": 6.909333333333334,
+      "lon": -75.936,
+      "distancia_bogota": 319.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T11:25:23.622874-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vuaoee": {
+      "id": "SGC2026vuaoee",
+      "magnitud": 1.1,
+      "profundidad": 104.0,
+      "latitud": 5.6795,
+      "longitud": -73.9995,
+      "distancia_km": 107.99195322395906,
+      "lugar": "Pauna - Boyacá, Colombia",
+      "hora_local": "2026-11-05 03:29:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 03:29:32",
+      "lat": 5.6795,
+      "lon": -73.9995,
+      "distancia_bogota": 108.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T11:25:23.622874-05:00",
       "alerta_enviada": false
     }
   }
