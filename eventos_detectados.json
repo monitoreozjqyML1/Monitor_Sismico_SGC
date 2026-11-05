@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-05T08:30:31.798596-05:00",
+  "actualizado": "2026-11-05T08:35:43.391338-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2891,
+    "total_eventos": 2892,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -82232,6 +82232,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-05T08:20:17.025786-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vublwj": {
+      "id": "SGC2026vublwj",
+      "magnitud": 2.1,
+      "profundidad": 48.0,
+      "latitud": 10.916833333333333,
+      "longitud": -73.70683333333334,
+      "distancia_km": 691.2281772412543,
+      "lugar": "Santa Marta - Magdalena, Colombia",
+      "hora_local": "2026-11-05 03:57:02",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 03:57:02",
+      "lat": 10.916833333333333,
+      "lon": -73.70683333333334,
+      "distancia_bogota": 691.2,
+      "tipo_magnitud": "MLr_4",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T08:35:29.540796-05:00",
       "alerta_enviada": false
     }
   }
