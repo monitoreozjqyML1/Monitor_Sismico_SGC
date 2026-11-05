@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-05T16:50:31.623790-05:00",
+  "actualizado": "2026-11-05T16:55:29.139411-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2918,
+    "total_eventos": 2919,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -82964,7 +82964,7 @@
     },
     "SGC2026vuohcy": {
       "id": "SGC2026vuohcy",
-      "magnitud": 2.1,
+      "magnitud": 1.9,
       "profundidad": 141.0,
       "latitud": 6.805166666666667,
       "longitud": -73.25266666666667,
@@ -82988,6 +82988,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-05T16:50:18.784800-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vuonoc": {
+      "id": "SGC2026vuonoc",
+      "magnitud": 2.0,
+      "profundidad": 29.0,
+      "latitud": 5.29814577973411,
+      "longitud": -76.69505397624226,
+      "distancia_km": 297.79076036336215,
+      "lugar": "El Cantón del San Pablo (Managrú) - Chocó, Colombia",
+      "hora_local": "2026-11-05 10:31:12",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 10:31:12",
+      "lat": 5.29814577973411,
+      "lon": -76.69505397624226,
+      "distancia_bogota": 297.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T16:55:15.549759-05:00",
       "alerta_enviada": false
     }
   }
