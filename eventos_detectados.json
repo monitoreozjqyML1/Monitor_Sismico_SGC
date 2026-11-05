@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-05T13:25:31.466553-05:00",
+  "actualizado": "2026-11-05T13:30:34.890795-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2915,
@@ -76776,7 +76776,7 @@
     },
     "SGC2026vovjhw": {
       "id": "SGC2026vovjhw",
-      "magnitud": 2.1,
+      "magnitud": 2.4,
       "profundidad": 24.0,
       "latitud": 0.4292999290047046,
       "longitud": -77.44009644401002,
@@ -78876,7 +78876,7 @@
     },
     "SGC2026vqrinx": {
       "id": "SGC2026vqrinx",
-      "magnitud": 2.4,
+      "magnitud": 2.3,
       "profundidad": 2.0,
       "latitud": 3.8355,
       "longitud": -75.64133333333334,
