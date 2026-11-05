@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-05T10:20:42.574604-05:00",
+  "actualizado": "2026-11-05T10:25:32.770822-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2897,
+    "total_eventos": 2898,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -82400,6 +82400,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-05T10:20:29.281001-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vtwdkf": {
+      "id": "SGC2026vtwdkf",
+      "magnitud": 1.1,
+      "profundidad": 3.0,
+      "latitud": 5.805833333333333,
+      "longitud": -72.5555,
+      "distancia_km": 207.41189980084332,
+      "lugar": "Socotá - Boyacá, Colombia",
+      "hora_local": "2026-11-05 01:16:21",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 01:16:21",
+      "lat": 5.805833333333333,
+      "lon": -72.5555,
+      "distancia_bogota": 207.4,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T10:25:19.962364-05:00",
       "alerta_enviada": false
     }
   }
