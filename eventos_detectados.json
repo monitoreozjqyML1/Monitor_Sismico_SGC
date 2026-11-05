@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-05T16:45:31.825283-05:00",
+  "actualizado": "2026-11-05T16:50:31.623790-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2916,
+    "total_eventos": 2918,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
-    "porcentaje_m4_o_mayores": 1.89,
+    "porcentaje_m4_o_mayores": 1.88,
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
@@ -82932,6 +82932,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-05T16:40:20.730281-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vuoepf": {
+      "id": "SGC2026vuoepf",
+      "magnitud": 1.4,
+      "profundidad": 3.0,
+      "latitud": 3.7885,
+      "longitud": -75.63166666666666,
+      "distancia_km": 201.07056066461783,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-05 10:20:50",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 10:20:50",
+      "lat": 3.7885,
+      "lon": -75.63166666666666,
+      "distancia_bogota": 201.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T16:50:18.784800-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vuohcy": {
+      "id": "SGC2026vuohcy",
+      "magnitud": 2.1,
+      "profundidad": 141.0,
+      "latitud": 6.805166666666667,
+      "longitud": -73.25266666666667,
+      "distancia_km": 249.88371901697886,
+      "lugar": "Zapatoca - Santander, Colombia",
+      "hora_local": "2026-11-05 10:23:46",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-05 10:23:46",
+      "lat": 6.805166666666667,
+      "lon": -73.25266666666667,
+      "distancia_bogota": 249.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-05T16:50:18.784800-05:00",
       "alerta_enviada": false
     }
   }
