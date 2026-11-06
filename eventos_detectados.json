@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-06T09:20:37.689563-05:00",
+  "actualizado": "2026-11-06T09:25:31.275791-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2955,
+    "total_eventos": 2954,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -2054,34 +2054,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-10-04T01:20:42.972994-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026ttfxyg": {
-      "id": "SGC2026ttfxyg",
-      "magnitud": 2.1,
-      "profundidad": 90.0,
-      "latitud": 4.733427342659935,
-      "longitud": -76.20573010078729,
-      "distancia_km": 236.45656861744826,
-      "lugar": "El Cairo - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-07 09:14:33",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-07 09:14:33",
-      "lat": 4.626,
-      "lon": -76.398,
-      "distancia_bogota": 257.9,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-07T09:25:17.371132-05:00",
-      "alerta_enviada": false
     },
     "SGC2026tsorcg": {
       "id": "SGC2026tsorcg",
