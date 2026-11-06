@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-06T10:15:30.669398-05:00",
+  "actualizado": "2026-11-06T10:20:30.771234-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2956,
+    "total_eventos": 2957,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -84052,6 +84052,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-06T09:45:19.096290-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vvsmcf": {
+      "id": "SGC2026vvsmcf",
+      "magnitud": 1.3,
+      "profundidad": 7.0,
+      "latitud": 3.617,
+      "longitud": -73.92466666666667,
+      "distancia_km": 122.74113433043576,
+      "lugar": "El Castillo - Meta, Colombia",
+      "hora_local": "2026-11-06 01:34:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-06 01:34:42",
+      "lat": 3.617,
+      "lon": -73.92466666666667,
+      "distancia_bogota": 122.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-06T10:20:18.294548-05:00",
       "alerta_enviada": false
     }
   }
