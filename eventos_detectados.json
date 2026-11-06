@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-06T15:35:32.867455-05:00",
+  "actualizado": "2026-11-06T15:40:33.077141-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2963,
+    "total_eventos": 2964,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -84248,6 +84248,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-06T15:30:20.177813-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vwppks": {
+      "id": "SGC2026vwppks",
+      "magnitud": 2.0,
+      "profundidad": 118.0,
+      "latitud": 6.041833333333333,
+      "longitud": -73.678,
+      "distancia_km": 154.2791635068197,
+      "lugar": "Chipatá - Santander, Colombia",
+      "hora_local": "2026-11-06 13:12:31",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-06 13:12:31",
+      "lat": 6.041833333333333,
+      "lon": -73.678,
+      "distancia_bogota": 154.3,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-06T15:40:20.508349-05:00",
       "alerta_enviada": false
     }
   }
