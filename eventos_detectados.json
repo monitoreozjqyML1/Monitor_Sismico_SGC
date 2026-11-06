@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T14:00:32.850446-05:00",
+  "actualizado": "2026-11-06T14:05:31.162334-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2960,
@@ -84140,11 +84140,11 @@
     },
     "SGC2026txgxgu": {
       "id": "SGC2026txgxgu",
-      "magnitud": 2.6,
-      "profundidad": 67.0,
-      "latitud": 7.789333333333333,
-      "longitud": -74.0035,
-      "distancia_km": 342.3790044219417,
+      "magnitud": 1.2,
+      "profundidad": 69.0,
+      "latitud": 7.792666666666666,
+      "longitud": -74.007,
+      "distancia_km": 342.74122449417393,
       "lugar": "Simití - Bolívar, Colombia",
       "hora_local": "2026-10-09 14:01:50",
       "candidato_acelerografico": false,
