@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-06T10:40:31.979485-05:00",
+  "actualizado": "2026-11-06T10:45:34.496606-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2957,
+    "total_eventos": 2958,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -84080,6 +84080,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-06T10:35:23.293009-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vvttpp": {
+      "id": "SGC2026vvttpp",
+      "magnitud": 1.7,
+      "profundidad": 119.0,
+      "latitud": 6.2765,
+      "longitud": -73.55183333333333,
+      "distancia_km": 183.35263089282657,
+      "lugar": "Contratación - Santander, Colombia",
+      "hora_local": "2026-11-06 02:13:36",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-06 02:13:36",
+      "lat": 6.2765,
+      "lon": -73.55183333333333,
+      "distancia_bogota": 183.4,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-06T10:45:20.791909-05:00",
       "alerta_enviada": false
     }
   }
