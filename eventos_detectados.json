@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-06T12:10:34.476625-05:00",
+  "actualizado": "2026-11-06T12:15:30.975659-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2963,
+    "total_eventos": 2965,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
-    "porcentaje_m4_o_mayores": 1.86,
+    "porcentaje_m4_o_mayores": 1.85,
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
@@ -83776,7 +83776,7 @@
     },
     "SGC2026vvtbpb": {
       "id": "SGC2026vvtbpb",
-      "magnitud": 2.6,
+      "magnitud": 2.7,
       "profundidad": 145.0,
       "latitud": 6.751185353778899,
       "longitud": -73.11880547371267,
@@ -83916,7 +83916,7 @@
     },
     "SGC2026vvqfva": {
       "id": "SGC2026vvqfva",
-      "magnitud": 1.8,
+      "magnitud": 1.7,
       "profundidad": 8.0,
       "latitud": 3.0021666666666667,
       "longitud": -72.82183333333333,
@@ -84248,6 +84248,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-06T11:55:19.887860-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vvrnlv": {
+      "id": "SGC2026vvrnlv",
+      "magnitud": 2.0,
+      "profundidad": 0.0,
+      "latitud": 6.816166666666667,
+      "longitud": -77.4365,
+      "distancia_km": 439.68319820921226,
+      "lugar": "Riosucio - Chocó, Colombia",
+      "hora_local": "2026-11-06 01:06:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-06 01:06:09",
+      "lat": 6.816166666666667,
+      "lon": -77.4365,
+      "distancia_bogota": 439.7,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-06T12:15:17.870034-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vwgtsu": {
+      "id": "SGC2026vwgtsu",
+      "magnitud": 1.4,
+      "profundidad": 36.0,
+      "latitud": 5.517333333333333,
+      "longitud": -76.45566666666667,
+      "distancia_km": 278.7938047868591,
+      "lugar": "Lloró - Chocó, Colombia",
+      "hora_local": "2026-11-06 08:45:59",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-06 08:45:59",
+      "lat": 5.517333333333333,
+      "lon": -76.45566666666667,
+      "distancia_bogota": 278.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-06T12:15:17.870034-05:00",
       "alerta_enviada": false
     }
   }
