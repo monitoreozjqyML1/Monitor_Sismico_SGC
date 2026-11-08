@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-08T10:15:31.560534-05:00",
+  "actualizado": "2026-11-08T10:20:33.246785-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 3012,
+    "total_eventos": 3013,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -85620,6 +85620,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-08T10:15:19.400632-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vzkepk": {
+      "id": "SGC2026vzkepk",
+      "magnitud": 1.1,
+      "profundidad": 7.0,
+      "latitud": 4.170333333333334,
+      "longitud": -73.855,
+      "distancia_km": 64.75803379933686,
+      "lugar": "Acacías - Meta, Colombia",
+      "hora_local": "2026-11-08 01:42:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-08 01:42:32",
+      "lat": 4.170333333333334,
+      "lon": -73.855,
+      "distancia_bogota": 64.8,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-08T10:20:19.520783-05:00",
       "alerta_enviada": false
     }
   }
