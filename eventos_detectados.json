@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-08T10:30:32.550072-05:00",
+  "actualizado": "2026-11-08T10:39:10.834556-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 3015,
+    "total_eventos": 3019,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -10,7 +10,7 @@
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
-    "porcentaje_alertas": 0.27
+    "porcentaje_alertas": 0.26
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -85704,6 +85704,118 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-08T10:30:18.101479-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vzltzw": {
+      "id": "SGC2026vzltzw",
+      "magnitud": 1.7,
+      "profundidad": 1.0,
+      "latitud": 2.2515,
+      "longitud": -75.672,
+      "distancia_km": 326.06830618759705,
+      "lugar": "Agrado - Huila, Colombia",
+      "hora_local": "2026-11-08 02:30:35",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-08 02:30:35",
+      "lat": 2.2515,
+      "lon": -75.672,
+      "distancia_bogota": 326.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-08T10:38:57.762129-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vzvhjp": {
+      "id": "SGC2026vzvhjp",
+      "magnitud": 1.8,
+      "profundidad": 132.0,
+      "latitud": 6.71417197307179,
+      "longitud": -73.11130800360769,
+      "distancia_km": 246.80707618728425,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-08 07:17:39",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-08 07:17:39",
+      "lat": 6.71417197307179,
+      "lon": -73.11130800360769,
+      "distancia_bogota": 246.8,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-08T10:38:57.762129-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vzvnsv": {
+      "id": "SGC2026vzvnsv",
+      "magnitud": 1.7,
+      "profundidad": 133.0,
+      "latitud": 6.819924489377815,
+      "longitud": -73.26113339181518,
+      "distancia_km": 251.07697777035514,
+      "lugar": "Zapatoca - Santander, Colombia",
+      "hora_local": "2026-11-08 07:25:01",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-08 07:25:01",
+      "lat": 6.819924489377815,
+      "lon": -73.26113339181518,
+      "distancia_bogota": 251.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-08T10:38:57.762129-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026vzvscp": {
+      "id": "SGC2026vzvscp",
+      "magnitud": 1.6,
+      "profundidad": 147.0,
+      "latitud": 6.8135,
+      "longitud": -73.2535,
+      "distancia_km": 250.71387436476783,
+      "lugar": "Zapatoca - Santander, Colombia",
+      "hora_local": "2026-11-08 07:30:06",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-08 07:30:06",
+      "lat": 6.8135,
+      "lon": -73.2535,
+      "distancia_bogota": 250.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-08T10:38:57.762129-05:00",
       "alerta_enviada": false
     }
   }
