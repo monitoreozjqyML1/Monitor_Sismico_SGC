@@ -73,6 +73,41 @@ def consultar_sgc(dias):
             "El total de metadata no coincide con los eventos recibidos"
         )
 
+    # --------------------------------------------------------
+    # FILTRADO DE AGENCIA
+    # El monitor recibira exclusivamente eventos del SGC.
+    # Se conservan intactos los atributos originales.
+    # --------------------------------------------------------
+
+    total_original = len(features)
+
+    features_sgc = [
+        feature
+        for feature in features
+        if (
+            isinstance(feature, dict)
+            and isinstance(feature.get("properties"), dict)
+            and str(
+                feature["properties"].get("agency", "")
+            ).strip().upper() == "SGC"
+        )
+    ]
+
+    if not features_sgc:
+        raise ValueError(
+            "La consulta no contiene eventos de agencia SGC"
+        )
+
+    datos["features"] = features_sgc
+    datos["metadata"]["count"] = len(features_sgc)
+
+    print(
+        "FILTRO DE AGENCIAS:",
+        f"Originales={total_original},",
+        f"SGC={len(features_sgc)},",
+        f"Excluidos={total_original - len(features_sgc)}"
+    )
+
     return datos, parametros, duracion
 
 
