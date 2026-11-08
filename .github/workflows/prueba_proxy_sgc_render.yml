@@ -1,5 +1,5 @@
 ﻿
-name: Prueba autenticacion proxy SGC Render
+name: Diagnostico agencias proxy SGC Render
 
 on:
   workflow_dispatch:
@@ -8,11 +8,11 @@ permissions:
   contents: read
 
 jobs:
-  probar-proxy:
+  diagnostico-proxy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Consultar proxy SGC en Render
+      - name: Consultar proxy y diagnosticar agencias
         env:
           SGC_PROXY_TOKEN: ${{ secrets.SGC_PROXY_TOKEN }}
         run: |
@@ -20,13 +20,13 @@ jobs:
           import os
           import sys
           import requests
+          from collections import Counter
 
           url = "https://monitor-sismico-sgc-1.onrender.com/api/sgc/eventos"
-
           token = os.environ.get("SGC_PROXY_TOKEN")
 
           if not token:
-              print("ERROR: No se encontro el secreto SGC_PROXY_TOKEN")
+              print("ERROR: No se encontro SGC_PROXY_TOKEN")
               sys.exit(1)
 
           headers = {
@@ -34,7 +34,7 @@ jobs:
               "Accept": "application/json"
           }
 
-          print("Consultando proxy de Render...")
+          print("Consultando proxy Render...")
 
           try:
               respuesta = requests.get(
@@ -44,42 +44,70 @@ jobs:
               )
 
               print("HTTP:", respuesta.status_code)
-
-              if respuesta.status_code != 200:
-                  print("ERROR: El proxy no autorizo o no completo la consulta.")
-                  print("Respuesta:", respuesta.text[:1000])
-                  sys.exit(1)
+              respuesta.raise_for_status()
 
               resultado = respuesta.json()
 
               if resultado.get("estado") != "exito":
-                  print("ERROR: Estado inesperado del proxy.")
-                  sys.exit(1)
+                  raise ValueError("Estado inesperado del proxy")
 
               datos = resultado.get("datos", {})
               eventos = datos.get("features", [])
               metadata = datos.get("metadata", {})
 
               if datos.get("type") != "FeatureCollection":
-                  print("ERROR: Respuesta no es FeatureCollection.")
-                  sys.exit(1)
+                  raise ValueError("Respuesta no es FeatureCollection")
 
               if not isinstance(eventos, list) or not eventos:
-                  print("ERROR: No se recibieron eventos.")
-                  sys.exit(1)
+                  raise ValueError("Lista de eventos vacia o invalida")
 
               total = metadata.get("count")
 
               if total is not None and total != len(eventos):
-                  print("ERROR: El conteo de metadata no coincide.")
-                  sys.exit(1)
+                  raise ValueError("Conteo metadata no coincide")
 
-              print("ESTADO: EXITO")
-              print("Eventos recibidos:", len(eventos))
+              agencias = Counter()
+              sin_agencia = 0
+              evento_usgs = None
+
+              for evento in eventos:
+                  propiedades = evento.get("properties") or {}
+                  agencia = propiedades.get("agency")
+
+                  if agencia is None or str(agencia).strip() == "":
+                      sin_agencia += 1
+                      agencias["SIN_AGENCIA"] += 1
+                  else:
+                      agencia = str(agencia).strip().upper()
+                      agencias[agencia] += 1
+
+                  if evento.get("id") == "USGS2026mwohbp":
+                      evento_usgs = {
+                          "id": evento.get("id"),
+                          "agency": agencia if agencia else "SIN_AGENCIA",
+                          "mag": propiedades.get("mag"),
+                          "time": propiedades.get("utcTime")
+                      }
+
+              print("\n========== DIAGNOSTICO DE AGENCIAS ==========")
+              print("Total recibido:", len(eventos))
               print("Total metadata:", total)
-              print("Tiempo de consulta:", resultado.get("tiempo_segundos"), "segundos")
+              print("\nDistribucion por agencia:")
+
+              for agencia, cantidad in sorted(agencias.items()):
+                  print(f"{agencia}: {cantidad}")
+
+              print("\nEventos sin agencia:", sin_agencia)
+              print("\nEvento USGS2026mwohbp:")
+
+              if evento_usgs:
+                  print(evento_usgs)
+              else:
+                  print("NO APARECE EN LA RESPUESTA ACTUAL")
+
+              print("\nTiempo:", resultado.get("tiempo_segundos"))
               print("Periodo:", resultado.get("periodo_consultado"))
-              print("Autenticacion y respuesta JSON verificadas.")
+              print("ESTADO: DIAGNOSTICO COMPLETADO")
 
           except Exception as error:
               print("ERROR:", str(error))
