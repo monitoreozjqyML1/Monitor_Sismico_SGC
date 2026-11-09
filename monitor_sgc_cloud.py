@@ -260,20 +260,17 @@ def limpiar_eventos_antiguos(eventos):
         try:
             magnitud = float(evento.get("magnitud") or 0)
 
-            # Conservar indefinidamente eventos M >= 4.0.
             if magnitud >= MAGNITUD_CANDIDATO_ACELEROGRAFICO:
                 eventos_validos[event_id] = evento
                 continue
 
-            fecha_texto = evento.get("fecha_deteccion")
+            fecha_texto = evento.get("fecha_local")
 
             if not fecha_texto:
                 eventos_validos[event_id] = evento
                 continue
 
-            fecha_evento = datetime.fromisoformat(
-                fecha_texto
-            )
+            fecha_evento = datetime.fromisoformat(fecha_texto)
 
             if fecha_evento.tzinfo is None:
                 fecha_evento = fecha_evento.replace(
@@ -283,14 +280,11 @@ def limpiar_eventos_antiguos(eventos):
             if fecha_evento >= fecha_limite:
                 eventos_validos[event_id] = evento
 
-        except Exception:
+        except (TypeError, ValueError):
             eventos_validos[event_id] = evento
 
     return eventos_validos
 
-
-
-# ============================================================
 # OBTENER EVENTOS DEL SGC
 # ============================================================
 
