@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-09T18:00:33.191705-05:00",
+  "actualizado": "2026-11-09T18:10:30.570041-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2699,
+    "total_eventos": 2700,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -76856,6 +76856,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T17:45:20.309150-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wcgean": {
+      "id": "SGC2026wcgean",
+      "magnitud": 1.2,
+      "profundidad": 26.0,
+      "latitud": 3.8741666666666665,
+      "longitud": -74.97333333333333,
+      "distancia_km": 136.54566797639305,
+      "lugar": "Purificación - Tolima, Colombia",
+      "hora_local": "2026-11-09 14:54:36",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 14:54:36",
+      "lat": 3.8741666666666665,
+      "lon": -74.97333333333333,
+      "distancia_bogota": 136.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T18:10:17.806179-05:00",
       "alerta_enviada": false
     }
   }
