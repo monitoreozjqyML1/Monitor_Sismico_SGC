@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-09T08:40:30.443213-05:00",
+  "actualizado": "2026-11-09T08:45:33.270513-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 3081,
+    "total_eventos": 3082,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
-    "porcentaje_m4_o_mayores": 1.79,
+    "porcentaje_m4_o_mayores": 1.78,
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
@@ -87552,6 +87552,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T05:56:58.386193-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wbcwdi": {
+      "id": "SGC2026wbcwdi",
+      "magnitud": 2.6,
+      "profundidad": 48.0,
+      "latitud": 5.992,
+      "longitud": -76.49383333333333,
+      "distancia_km": 303.5943775930981,
+      "lugar": "Quibdó - Chocó, Colombia",
+      "hora_local": "2026-11-09 00:10:27",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 00:10:27",
+      "lat": 5.992,
+      "lon": -76.49383333333333,
+      "distancia_bogota": 303.6,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T08:45:19.510193-05:00",
       "alerta_enviada": false
     }
   }
