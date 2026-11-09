@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-09T10:10:31.874547-05:00",
+  "actualizado": "2026-11-09T10:15:31.878429-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 3087,
+    "total_eventos": 3088,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -87720,6 +87720,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T10:00:18.796039-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wbjjtt": {
+      "id": "SGC2026wbjjtt",
+      "magnitud": 1.6,
+      "profundidad": 0.0,
+      "latitud": 10.926166666666667,
+      "longitud": -73.8985,
+      "distancia_km": 691.3592765036451,
+      "lugar": "Ciénaga - Magdalena, Colombia",
+      "hora_local": "2026-11-09 03:27:17",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 03:27:17",
+      "lat": 10.926166666666667,
+      "lon": -73.8985,
+      "distancia_bogota": 691.4,
+      "tipo_magnitud": "MLr_4",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T10:15:19.259592-05:00",
       "alerta_enviada": false
     }
   }
