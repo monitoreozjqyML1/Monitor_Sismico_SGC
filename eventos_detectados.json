@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-09T09:35:31.692089-05:00",
+  "actualizado": "2026-11-09T09:40:30.770696-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 3085,
+    "total_eventos": 3086,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -87664,6 +87664,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T09:35:18.465199-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wbhtgp": {
+      "id": "SGC2026wbhtgp",
+      "magnitud": 2.0,
+      "profundidad": 40.0,
+      "latitud": 4.364351060751907,
+      "longitud": -76.74004708677145,
+      "distancia_km": 298.23310773421707,
+      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
+      "hora_local": "2026-11-09 02:37:58",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 02:37:58",
+      "lat": 4.364351060751907,
+      "lon": -76.74004708677145,
+      "distancia_bogota": 298.2,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T09:40:16.834545-05:00",
       "alerta_enviada": false
     }
   }
