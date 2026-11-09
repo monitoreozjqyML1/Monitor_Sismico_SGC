@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-09T16:45:33.373255-05:00",
+  "actualizado": "2026-11-09T16:50:30.979287-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2696,
@@ -76748,13 +76748,13 @@
     },
     "SGC2026wcdvvo": {
       "id": "SGC2026wcdvvo",
-      "magnitud": 1.8,
+      "magnitud": 1.9,
       "profundidad": 147.0,
-      "latitud": 6.794166666666666,
-      "longitud": -72.90516666666667,
-      "distancia_km": 265.182589138109,
+      "latitud": 6.794333333333333,
+      "longitud": -72.90333333333334,
+      "distancia_km": 265.29755723860995,
       "lugar": "Cepitá - Santander, Colombia",
-      "hora_local": "2026-11-09 13:44:46",
+      "hora_local": "2026-11-09 13:44:45",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76763,7 +76763,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-09 13:44:46",
+      "fecha_local": "2026-11-09 13:44:45",
       "lat": 6.794166666666666,
       "lon": -72.90516666666667,
       "distancia_bogota": 265.2,
