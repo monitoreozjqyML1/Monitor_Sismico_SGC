@@ -2,7 +2,7 @@
   "actualizado": "2026-11-09T09:49:08.723501-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2711,
+    "total_eventos": 2713,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -10,7 +10,7 @@
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
-    "porcentaje_alertas": 0.3
+    "porcentaje_alertas": 0.29
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -77192,6 +77192,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T11:20:20.112500-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wbomki": {
+      "id": "SGC2026wbomki",
+      "magnitud": 1.5,
+      "profundidad": 4.0,
+      "latitud": 3.018666666666667,
+      "longitud": -75.9975,
+      "distancia_km": 284.66860030442007,
+      "lugar": "Planadas - Tolima, Colombia",
+      "hora_local": "2026-11-09 06:01:14",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 06:01:14",
+      "lat": 3.018666666666667,
+      "lon": -75.9975,
+      "distancia_bogota": 284.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T11:30:23.980250-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wbrszd": {
+      "id": "SGC2026wbrszd",
+      "magnitud": 2.7,
+      "profundidad": 139.0,
+      "latitud": 6.753300404105019,
+      "longitud": -73.1402031757344,
+      "distancia_km": 249.40071445587233,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-11-09 07:39:22",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 07:39:22",
+      "lat": 6.753300404105019,
+      "lon": -73.1402031757344,
+      "distancia_bogota": 249.4,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T11:30:23.980250-05:00",
       "alerta_enviada": false
     }
   }
