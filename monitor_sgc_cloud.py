@@ -265,7 +265,7 @@ def limpiar_eventos_antiguos(eventos):
                 eventos_validos[event_id] = evento
                 continue
 
-            fecha_texto = evento.get("fecha_deteccion")
+            fecha_texto = evento.get("fecha_local")
 
             if not fecha_texto:
                 eventos_validos[event_id] = evento
@@ -283,7 +283,7 @@ def limpiar_eventos_antiguos(eventos):
             if fecha_evento >= fecha_limite:
                 eventos_validos[event_id] = evento
 
-        except Exception:
+        except (TypeError, ValueError):
             eventos_validos[event_id] = evento
 
     return eventos_validos
