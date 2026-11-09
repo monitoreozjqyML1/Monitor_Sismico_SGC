@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-09T17:35:31.449216-05:00",
+  "actualizado": "2026-11-09T17:40:32.446980-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2698,
+    "total_eventos": 2699,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -76828,6 +76828,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T17:35:18.380799-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wcessv": {
+      "id": "SGC2026wcessv",
+      "magnitud": 1.7,
+      "profundidad": 113.0,
+      "latitud": 6.083833333333334,
+      "longitud": -73.729,
+      "distancia_km": 157.30611039220835,
+      "lugar": "Vélez - Santander, Colombia",
+      "hora_local": "2026-11-09 14:11:19",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 14:11:19",
+      "lat": 6.083833333333334,
+      "lon": -73.729,
+      "distancia_bogota": 157.3,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T17:40:19.714319-05:00",
       "alerta_enviada": false
     }
   }
