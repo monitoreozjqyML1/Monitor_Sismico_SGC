@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-09T11:45:30.182017-05:00",
+  "actualizado": "2026-11-09T11:50:33.081376-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 3096,
@@ -87949,12 +87949,12 @@
     "SGC2026wbpeiz": {
       "id": "SGC2026wbpeiz",
       "magnitud": 2.0,
-      "profundidad": 145.0,
-      "latitud": 6.774166666666667,
-      "longitud": -73.12583333333333,
-      "distancia_km": 252.17022631267014,
+      "profundidad": 137.0,
+      "latitud": 6.748012778289718,
+      "longitud": -73.1541096610476,
+      "distancia_km": 248.23225273934008,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-11-09 06:22:04",
+      "hora_local": "2026-11-09 06:22:03",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -87963,7 +87963,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-09 06:22:04",
+      "fecha_local": "2026-11-09 06:22:03",
       "lat": 6.774166666666667,
       "lon": -73.12583333333333,
       "distancia_bogota": 252.2,
