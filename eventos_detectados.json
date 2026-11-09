@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-09T14:30:32.101102-05:00",
+  "actualizado": "2026-11-09T14:35:32.903917-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2699,
+    "total_eventos": 2698,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -12266,62 +12266,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026tzdqkq": {
-      "id": "SGC2026tzdqkq",
-      "magnitud": 1.0,
-      "profundidad": 8.0,
-      "latitud": 7.581871369362728,
-      "longitud": -72.5686495813531,
-      "distancia_km": 359.89844752455116,
-      "lugar": "Chinácota - Norte de Santander, Colombia",
-      "hora_local": "2026-10-10 14:32:19",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-10 14:32:19",
-      "lat": 7.581871369362728,
-      "lon": -72.5686495813531,
-      "distancia_bogota": 359.9,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026tzdrzd": {
-      "id": "SGC2026tzdrzd",
-      "magnitud": 1.4,
-      "profundidad": 59.0,
-      "latitud": 10.0205,
-      "longitud": -74.30816666666666,
-      "distancia_km": 590.9627023590995,
-      "lugar": "Sabanas de San Angel - Magdalena, Colombia",
-      "hora_local": "2026-10-10 14:34:07",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-10 14:34:07",
-      "lat": 10.0205,
-      "lon": -74.30816666666666,
-      "distancia_bogota": 591.0,
-      "tipo_magnitud": "MLr_4",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026tzdwwk": {
@@ -76856,6 +76800,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T14:25:18.458853-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wcfehi": {
+      "id": "SGC2026wcfehi",
+      "magnitud": 2.6,
+      "profundidad": 104.0,
+      "latitud": 5.91997057561354,
+      "longitud": -73.75735752054929,
+      "distancia_km": 138.8743515162845,
+      "lugar": "Guavatá - Santander, Colombia",
+      "hora_local": "2026-11-09 14:24:43",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 14:24:43",
+      "lat": 5.91997057561354,
+      "lon": -73.75735752054929,
+      "distancia_bogota": 138.9,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T14:35:20.225594-05:00",
       "alerta_enviada": false
     }
   }
