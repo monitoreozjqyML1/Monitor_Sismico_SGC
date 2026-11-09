@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-09T17:30:30.070690-05:00",
+  "actualizado": "2026-11-09T17:35:31.449216-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2697,
+    "total_eventos": 2698,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -76800,6 +76800,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-09T17:25:21.810834-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wcepma": {
+      "id": "SGC2026wcepma",
+      "magnitud": 2.2,
+      "profundidad": 8.0,
+      "latitud": 7.603166666666667,
+      "longitud": -74.07983333333334,
+      "distancia_km": 321.5953965156526,
+      "lugar": "San Pablo - Bolívar, Colombia",
+      "hora_local": "2026-11-09 14:07:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-09 14:07:32",
+      "lat": 7.603166666666667,
+      "lon": -74.07983333333334,
+      "distancia_bogota": 321.6,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-09T17:35:18.380799-05:00",
       "alerta_enviada": false
     }
   }
