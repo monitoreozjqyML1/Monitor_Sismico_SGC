@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-10T17:40:36.218770-05:00",
+  "actualizado": "2026-11-10T17:50:31.428599-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2691,
+    "total_eventos": 2692,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -76632,6 +76632,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-10T17:35:18.183489-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wdyixv": {
+      "id": "SGC2026wdyixv",
+      "magnitud": 1.7,
+      "profundidad": 0.0,
+      "latitud": 7.678333333333334,
+      "longitud": -75.15466666666667,
+      "distancia_km": 350.97993296301786,
+      "lugar": "Cáceres - Antioquia, Colombia",
+      "hora_local": "2026-11-10 13:07:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-10 13:07:52",
+      "lat": 7.678333333333334,
+      "lon": -75.15466666666667,
+      "distancia_bogota": 351.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-10T17:50:18.666226-05:00",
       "alerta_enviada": false
     }
   }
