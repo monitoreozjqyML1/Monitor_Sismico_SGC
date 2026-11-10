@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-10T18:00:31.616430-05:00",
+  "actualizado": "2026-11-10T18:05:32.429017-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2690,
+    "total_eventos": 2691,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -76604,6 +76604,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-10T17:50:18.666226-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wdzzug": {
+      "id": "SGC2026wdzzug",
+      "magnitud": 1.1,
+      "profundidad": 0.0,
+      "latitud": 6.000833333333333,
+      "longitud": -74.7475,
+      "distancia_km": 161.7433725137316,
+      "lugar": "Puerto Nare - Antioquia, Colombia",
+      "hora_local": "2026-11-10 13:57:36",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-10 13:57:36",
+      "lat": 6.000833333333333,
+      "lon": -74.7475,
+      "distancia_bogota": 161.7,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-10T18:05:19.829876-05:00",
       "alerta_enviada": false
     }
   }
