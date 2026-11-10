@@ -1,6 +1,7 @@
 ﻿name: Monitor Sísmico SGC
 
 on:
+  # Programacion automatica asociada a monitoreozjqyML1
   schedule:
     - cron: "3-59/10 * * * *"
 
