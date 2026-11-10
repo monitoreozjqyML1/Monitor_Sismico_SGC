@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-10T16:48:30.537989-05:00",
+  "actualizado": "2026-11-10T16:50:28.307893-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2688,
+    "total_eventos": 2690,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
-    "porcentaje_m4_o_mayores": 2.05,
+    "porcentaje_m4_o_mayores": 2.04,
     "eventos_mayor_igual_4": 55,
     "total_candidatos_acelerograficos": 55,
     "total_alertas": 8,
@@ -76524,6 +76524,62 @@
     },
     "SGC2026wdwlfl": {
       "id": "SGC2026wdwlfl",
+      "magnitud": 2.3,
+      "profundidad": 36.0,
+      "latitud": 5.913625424635178,
+      "longitud": -76.45542067399481,
+      "distancia_km": 295.8206387525006,
+      "lugar": "Quibdó - Chocó, Colombia",
+      "hora_local": "2026-11-10 12:10:03",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-10 12:10:03",
+      "lat": 2.299004417295232,
+      "lon": -75.62957235467259,
+      "distancia_bogota": 319.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-10T16:45:20.105194-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wdwley": {
+      "id": "SGC2026wdwley",
+      "magnitud": 1.2,
+      "profundidad": 20.0,
+      "latitud": 2.299004417295232,
+      "longitud": -75.62957235467259,
+      "distancia_km": 319.07354730617584,
+      "lugar": "Garzón - Huila, Colombia",
+      "hora_local": "2026-11-10 12:10:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-10 12:10:09",
+      "lat": 2.299004417295232,
+      "lon": -75.62957235467259,
+      "distancia_bogota": 319.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-10T16:50:15.437817-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wdwlfm": {
+      "id": "SGC2026wdwlfm",
       "magnitud": 1.2,
       "profundidad": 20.0,
       "latitud": 2.299004417295232,
@@ -76547,7 +76603,7 @@
       "agencia": "SGC",
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-10T16:45:20.105194-05:00",
+      "fecha_deteccion": "2026-11-10T16:50:15.437817-05:00",
       "alerta_enviada": false
     }
   }
