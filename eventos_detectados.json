@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-10T16:05:33.023095-05:00",
+  "actualizado": "2026-11-10T16:10:39.354712-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2682,
+    "total_eventos": 2683,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -76380,6 +76380,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-10T16:00:20.032322-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wdtxrv": {
+      "id": "SGC2026wdtxrv",
+      "magnitud": 2.1,
+      "profundidad": 50.0,
+      "latitud": 3.95826139813677,
+      "longitud": -76.87443594355213,
+      "distancia_km": 321.7881627848971,
+      "lugar": "Buenaventura - Valle del Cauca, Colombia",
+      "hora_local": "2026-11-10 10:54:10",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-10 10:54:10",
+      "lat": 3.95826139813677,
+      "lon": -76.87443594355213,
+      "distancia_bogota": 321.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-10T16:10:26.137877-05:00",
       "alerta_enviada": false
     }
   }
