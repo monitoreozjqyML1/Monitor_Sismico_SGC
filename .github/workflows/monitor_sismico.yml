@@ -3,7 +3,7 @@
 on:
   # Programacion automatica asociada a monitoreozjqyML1
   schedule:
-    - cron: "3-59/10 * * * *"
+    - cron: "2,12,22,32,42,52 * * * *"
 
   workflow_dispatch:
     inputs:
