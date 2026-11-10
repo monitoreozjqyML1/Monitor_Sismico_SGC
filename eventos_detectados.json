@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-10T12:05:32.111646-05:00",
+  "actualizado": "2026-11-10T12:10:30.609310-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2681,
+    "total_eventos": 2680,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -12266,34 +12266,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uaupyd": {
-      "id": "SGC2026uaupyd",
-      "magnitud": 1.2,
-      "profundidad": 22.0,
-      "latitud": 8.094242310865422,
-      "longitud": -72.53538787770512,
-      "distancia_km": 412.7375568462309,
-      "lugar": "Cúcuta - Norte de Santander, Colombia",
-      "hora_local": "2026-10-11 12:09:10",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-11 12:09:10",
-      "lat": 8.094242310865422,
-      "lon": -72.53538787770512,
-      "distancia_bogota": 412.7,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uauuhu": {
