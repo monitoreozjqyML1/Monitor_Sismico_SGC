@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-10T16:40:32.348811-05:00",
+  "actualizado": "2026-11-10T16:45:32.842475-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2687,
+    "total_eventos": 2688,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -76520,6 +76520,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-10T16:35:21.500435-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wdwlfl": {
+      "id": "SGC2026wdwlfl",
+      "magnitud": 1.2,
+      "profundidad": 20.0,
+      "latitud": 2.299004417295232,
+      "longitud": -75.62957235467259,
+      "distancia_km": 319.07354730617584,
+      "lugar": "Garzón - Huila, Colombia",
+      "hora_local": "2026-11-10 12:10:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-10 12:10:09",
+      "lat": 2.299004417295232,
+      "lon": -75.62957235467259,
+      "distancia_bogota": 319.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-10T16:45:20.105194-05:00",
       "alerta_enviada": false
     }
   }
