@@ -1,0 +1,21 @@
+﻿name: Prueba de programación GitHub
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  comprobar-programacion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Registrar ejecucion
+        run: |
+          echo "PRUEBA DE PROGRAMACION GITHUB"
+          echo "Evento: ${{ github.event_name }}"
+          echo "Fecha UTC: $(date -u '+%Y-%m-%d %H:%M:%S')"
+          echo "Rama: ${{ github.ref }}"
+          echo "Workflow: ${{ github.workflow }}"
