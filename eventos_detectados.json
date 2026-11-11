@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-11T17:50:30.501454-05:00",
+  "actualizado": "2026-11-11T17:55:32.189823-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2652,
+    "total_eventos": 2653,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -75540,6 +75540,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-11T17:45:15.509661-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wgcwmm": {
+      "id": "SGC2026wgcwmm",
+      "magnitud": 1.9,
+      "profundidad": 17.0,
+      "latitud": 3.844048680526263,
+      "longitud": -75.66000110547168,
+      "distancia_km": 200.7355632307101,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-11 17:33:14",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-11 17:33:14",
+      "lat": 3.844048680526263,
+      "lon": -75.66000110547168,
+      "distancia_bogota": 200.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-11T17:55:19.436046-05:00",
       "alerta_enviada": false
     }
   }
