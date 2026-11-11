@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-11T18:05:32.297806-05:00",
+  "actualizado": "2026-11-11T18:10:32.684624-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2654,
@@ -75572,7 +75572,7 @@
     },
     "SGC2026wgdgoc": {
       "id": "SGC2026wgdgoc",
-      "magnitud": 2.1,
+      "magnitud": 1.8,
       "profundidad": 4.0,
       "latitud": 3.807,
       "longitud": -75.61366666666666,
