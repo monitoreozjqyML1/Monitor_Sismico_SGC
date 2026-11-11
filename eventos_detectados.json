@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-11T08:20:30.880242-05:00",
+  "actualizado": "2026-11-11T08:25:33.887455-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2639,
+    "total_eventos": 2641,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -74957,10 +74957,10 @@
     "SGC2026weurwn": {
       "id": "SGC2026weurwn",
       "magnitud": 2.7,
-      "profundidad": 15.0,
-      "latitud": 3.8234269398465877,
-      "longitud": -75.59871060176333,
-      "distancia_km": 195.9485187982657,
+      "profundidad": 14.0,
+      "latitud": 3.8244844650096477,
+      "longitud": -75.59551938559717,
+      "distancia_km": 195.58351175311546,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-11-11 00:22:03",
       "candidato_acelerografico": false,
@@ -75176,6 +75176,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-11T03:20:46.988685-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wehbgs": {
+      "id": "SGC2026wehbgs",
+      "magnitud": 1.7,
+      "profundidad": 153.0,
+      "latitud": 6.711,
+      "longitud": -72.87483333333333,
+      "distancia_km": 258.85032454407,
+      "lugar": "San Andrés - Santander, Colombia",
+      "hora_local": "2026-11-10 17:30:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-10 17:30:32",
+      "lat": 6.711,
+      "lon": -72.87483333333333,
+      "distancia_bogota": 258.9,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-11T08:25:21.479862-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026weyavu": {
+      "id": "SGC2026weyavu",
+      "magnitud": 2.3,
+      "profundidad": 137.0,
+      "latitud": 6.689848894321404,
+      "longitud": -73.11665104876889,
+      "distancia_km": 244.1134255811878,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-11 02:02:58",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-11 02:02:58",
+      "lat": 6.689848894321404,
+      "lon": -73.11665104876889,
+      "distancia_bogota": 244.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-11T08:25:21.479862-05:00",
       "alerta_enviada": false
     }
   }
