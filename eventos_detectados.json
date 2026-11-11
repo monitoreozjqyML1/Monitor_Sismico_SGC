@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-11T13:15:35.410503-05:00",
+  "actualizado": "2026-11-11T13:20:34.702328-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2653,
+    "total_eventos": 2652,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -12266,34 +12266,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ucsruc": {
-      "id": "SGC2026ucsruc",
-      "magnitud": 1.6,
-      "profundidad": 135.0,
-      "latitud": 6.79877398611661,
-      "longitud": -73.14128635783621,
-      "distancia_km": 253.96309687020712,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-12 13:19:55",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-12 13:19:55",
-      "lat": 6.79877398611661,
-      "lon": -73.14128635783621,
-      "distancia_bogota": 254.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ucvckq": {
@@ -75544,13 +75516,13 @@
     },
     "SGC2026wfuetg": {
       "id": "SGC2026wfuetg",
-      "magnitud": 2.4,
-      "profundidad": 10.0,
-      "latitud": 5.006166666666667,
-      "longitud": -76.26816666666667,
-      "distancia_km": 245.51732288024363,
+      "magnitud": 2.5,
+      "profundidad": 23.0,
+      "latitud": 4.997808633424999,
+      "longitud": -76.27097900761791,
+      "distancia_km": 245.7052787807814,
       "lugar": "San José del Palmar - Chocó, Colombia",
-      "hora_local": "2026-11-11 13:11:17",
+      "hora_local": "2026-11-11 13:11:15",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75559,7 +75531,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-11 13:11:17",
+      "fecha_local": "2026-11-11 13:11:15",
       "lat": 5.006166666666667,
       "lon": -76.26816666666667,
       "distancia_bogota": 245.5,
