@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-11T01:39:32.506682-05:00",
+  "actualizado": "2026-11-11T01:40:34.399054-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2659,
@@ -75685,12 +75685,12 @@
     "SGC2026wescxu": {
       "id": "SGC2026wescxu",
       "magnitud": 2.1,
-      "profundidad": 150.0,
-      "latitud": 5.226666666666667,
-      "longitud": -73.738,
-      "distancia_km": 68.24658391738834,
+      "profundidad": 138.0,
+      "latitud": 5.233636744787434,
+      "longitud": -73.72126502661952,
+      "distancia_km": 69.9122398253739,
       "lugar": "Cucunubá - Cundinamarca, Colombia",
-      "hora_local": "2026-11-10 23:04:21",
+      "hora_local": "2026-11-10 23:04:20",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75699,7 +75699,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-10 23:04:21",
+      "fecha_local": "2026-11-10 23:04:20",
       "lat": 5.226666666666667,
       "lon": -73.738,
       "distancia_bogota": 68.2,
