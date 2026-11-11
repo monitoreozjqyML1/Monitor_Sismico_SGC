@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-11T12:40:34.990109-05:00",
+  "actualizado": "2026-11-11T12:45:29.677900-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2657,
+    "total_eventos": 2655,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -12266,62 +12266,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ucrmgx": {
-      "id": "SGC2026ucrmgx",
-      "magnitud": 1.6,
-      "profundidad": 41.0,
-      "latitud": 4.608639373418825,
-      "longitud": -76.65709380295803,
-      "distancia_km": 286.71391014398546,
-      "lugar": "Sipí - Chocó, Colombia",
-      "hora_local": "2026-10-12 12:43:19",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-12 12:43:19",
-      "lat": 4.608639373418825,
-      "lon": -76.65709380295803,
-      "distancia_bogota": 286.7,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ucrnpo": {
-      "id": "SGC2026ucrnpo",
-      "magnitud": 1.2,
-      "profundidad": 36.0,
-      "latitud": 6.6465,
-      "longitud": -74.36883333333333,
-      "distancia_km": 217.70763383175827,
-      "lugar": "Yondó (Casabe) - Antioquia, Colombia",
-      "hora_local": "2026-10-12 12:44:53",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-12 12:44:53",
-      "lat": 6.6465,
-      "lon": -74.36883333333333,
-      "distancia_bogota": 217.7,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ucsfdy": {
