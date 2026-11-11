@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-11T12:05:32.892047-05:00",
+  "actualizado": "2026-11-11T12:10:34.797255-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2653,
+    "total_eventos": 2654,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -75568,6 +75568,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-11T12:00:25.444244-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wfddtd": {
+      "id": "SGC2026wfddtd",
+      "magnitud": 1.2,
+      "profundidad": 24.0,
+      "latitud": 1.9225,
+      "longitud": -75.90583333333333,
+      "distancia_km": 370.9044324459762,
+      "lugar": "Timaná - Huila, Colombia",
+      "hora_local": "2026-11-11 04:37:11",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-11 04:37:11",
+      "lat": 1.9225,
+      "lon": -75.90583333333333,
+      "distancia_bogota": 370.9,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-11T12:10:22.259704-05:00",
       "alerta_enviada": false
     }
   }
