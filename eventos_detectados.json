@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-12T16:25:32.013093-05:00",
+  "actualizado": "2026-11-12T16:35:32.531120-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2655,
@@ -75600,13 +75600,13 @@
     },
     "SGC2026whlvuq": {
       "id": "SGC2026whlvuq",
-      "magnitud": 1.9,
-      "profundidad": 3.0,
-      "latitud": 2.4501666666666666,
-      "longitud": -76.34016666666666,
-      "distancia_km": 355.7326236792901,
+      "magnitud": 1.8,
+      "profundidad": 13.0,
+      "latitud": 2.476668644689354,
+      "longitud": -76.31476096705923,
+      "distancia_km": 351.65310721204776,
       "lugar": "Totoró - Cauca, Colombia",
-      "hora_local": "2026-11-12 11:08:28",
+      "hora_local": "2026-11-12 11:08:27",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75615,7 +75615,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-12 11:08:28",
+      "fecha_local": "2026-11-12 11:08:27",
       "lat": 2.4501666666666666,
       "lon": -76.34016666666666,
       "distancia_bogota": 355.7,
