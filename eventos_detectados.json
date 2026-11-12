@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-12T08:00:35.873894-05:00",
+  "actualizado": "2026-11-12T08:05:25.750774-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2643,
@@ -75236,13 +75236,13 @@
     },
     "SGC2026wgvrnc": {
       "id": "SGC2026wgvrnc",
-      "magnitud": 2.6,
-      "profundidad": 131.0,
-      "latitud": 6.239666666666666,
-      "longitud": -73.443,
-      "distancia_km": 183.68921995441997,
+      "magnitud": 2.5,
+      "profundidad": 133.0,
+      "latitud": 6.237833333333334,
+      "longitud": -73.43733333333333,
+      "distancia_km": 183.7395551491809,
       "lugar": "Guadalupe - Santander, Colombia",
-      "hora_local": "2026-11-12 03:00:45",
+      "hora_local": "2026-11-12 03:00:44",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75251,7 +75251,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-12 03:00:45",
+      "fecha_local": "2026-11-12 03:00:44",
       "lat": 6.239666666666666,
       "lon": -73.443,
       "distancia_bogota": 183.7,
