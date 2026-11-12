@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-12T08:10:33.357305-05:00",
+  "actualizado": "2026-11-12T08:15:33.364085-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2642,
+    "total_eventos": 2643,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -75260,6 +75260,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-12T08:00:23.676749-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wgxrue": {
+      "id": "SGC2026wgxrue",
+      "magnitud": 2.3,
+      "profundidad": 134.0,
+      "latitud": 6.704654246604248,
+      "longitud": -73.11237558044478,
+      "distancia_km": 245.80172422598295,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-12 04:01:25",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-12 04:01:25",
+      "lat": 6.704654246604248,
+      "lon": -73.11237558044478,
+      "distancia_bogota": 245.8,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-12T08:15:20.421779-05:00",
       "alerta_enviada": false
     }
   }
