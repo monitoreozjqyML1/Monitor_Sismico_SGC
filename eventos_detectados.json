@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-12T10:50:30.861064-05:00",
+  "actualizado": "2026-11-12T10:55:35.382065-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2649,
@@ -11510,34 +11510,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uejltr": {
-      "id": "SGC2026uejltr",
-      "magnitud": 1.1,
-      "profundidad": 6.0,
-      "latitud": 4.966611641114722,
-      "longitud": -75.25503939941592,
-      "distancia_km": 134.114327761632,
-      "lugar": "Casabianca - Tolima, Colombia",
-      "hora_local": "2026-10-13 10:50:20",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-13 10:50:20",
-      "lat": 4.966611641114722,
-      "lon": -75.25503939941592,
-      "distancia_bogota": 134.1,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uekuof": {
@@ -75432,13 +75404,13 @@
     },
     "SGC2026wgwmpi": {
       "id": "SGC2026wgwmpi",
-      "magnitud": 1.4,
-      "profundidad": 66.0,
-      "latitud": 5.79,
-      "longitud": -76.00816666666667,
-      "distancia_km": 245.6650607468454,
-      "lugar": "Ciudad Bolívar - Antioquia, Colombia",
-      "hora_local": "2026-11-12 03:25:13",
+      "magnitud": 1.3,
+      "profundidad": 61.0,
+      "latitud": 5.742306348219417,
+      "longitud": -76.0122993922532,
+      "distancia_km": 243.5301335066114,
+      "lugar": "Betania - Antioquia, Colombia",
+      "hora_local": "2026-11-12 03:25:12",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75447,7 +75419,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-12 03:25:13",
+      "fecha_local": "2026-11-12 03:25:12",
       "lat": 5.79,
       "lon": -76.00816666666667,
       "distancia_bogota": 245.7,
@@ -75456,6 +75428,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-12T10:50:18.933621-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026whlbfk": {
+      "id": "SGC2026whlbfk",
+      "magnitud": 2.4,
+      "profundidad": 4.0,
+      "latitud": 6.983666666666666,
+      "longitud": -76.3475,
+      "distancia_km": 356.65712421860485,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-11-12 10:44:31",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-12 10:44:31",
+      "lat": 6.983666666666666,
+      "lon": -76.3475,
+      "distancia_bogota": 356.7,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-12T10:55:21.261486-05:00",
       "alerta_enviada": false
     }
   }
