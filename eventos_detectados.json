@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-12T10:45:32.348871-05:00",
+  "actualizado": "2026-11-12T10:50:30.861064-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2648,
+    "total_eventos": 2649,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -75428,6 +75428,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-12T10:40:16.952756-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wgwmpi": {
+      "id": "SGC2026wgwmpi",
+      "magnitud": 1.4,
+      "profundidad": 66.0,
+      "latitud": 5.79,
+      "longitud": -76.00816666666667,
+      "distancia_km": 245.6650607468454,
+      "lugar": "Ciudad Bolívar - Antioquia, Colombia",
+      "hora_local": "2026-11-12 03:25:13",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-12 03:25:13",
+      "lat": 5.79,
+      "lon": -76.00816666666667,
+      "distancia_bogota": 245.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-12T10:50:18.933621-05:00",
       "alerta_enviada": false
     }
   }
