@@ -1,9 +1,9 @@
 {
   "version_esquema": 1,
   "creado": "2026-10-09T15:50:15.196934-05:00",
-  "actualizado": "2026-11-13T15:00:31.860830-05:00",
+  "actualizado": "2026-11-13T15:10:31.182680-05:00",
   "magnitud_minima": 4.0,
-  "total_candidatos": 56,
+  "total_candidatos": 57,
   "eventos": {
     "SGC2026sblqei": {
       "id": "SGC2026sblqei",
@@ -2872,6 +2872,45 @@
       "fecha_deteccion": "2026-11-13T14:50:18.648801-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
+    },
+    "SGC2026wjphpy": {
+      "id": "SGC2026wjphpy",
+      "magnitud": 4.2,
+      "profundidad": 10.0,
+      "latitud": 3.825541990172708,
+      "longitud": -75.59232816244024,
+      "distancia_km": 195.21853461766318,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-13 15:01:39",
+      "candidato_acelerografico": true,
+      "acelerografia_bogota": {
+        "estado": "NO DISPONIBLE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-13 15:01:39",
+      "alerta_pga": {
+        "estado": "SIN_DATOS",
+        "porcentaje_ns": null,
+        "porcentaje_ew": null,
+        "porcentaje_maximo": null,
+        "componente_critica": null,
+        "pga_ns_m_s2": null,
+        "pga_ew_m_s2": null,
+        "pga_ns_critico_m_s2": 0.056,
+        "pga_ew_critico_m_s2": 0.037
+      },
+      "lat": 3.825541990172708,
+      "lon": -75.59232816244024,
+      "distancia_bogota": 195.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
+      "fecha_deteccion": "2026-11-13T15:10:17.960362-05:00",
+      "alerta_enviada": true
     }
   },
   "alcance_registro": "Acumulaci?n desde la inicializaci?n del hist?rico; no incluye eventos anteriores que ya no est?n en el cat?logo operativo."
