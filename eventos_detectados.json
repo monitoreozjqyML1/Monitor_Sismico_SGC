@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-13T17:25:27.023104-05:00",
+  "actualizado": "2026-11-13T17:30:30.530807-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2627,
+    "total_eventos": 2626,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2306,34 +2306,6 @@
       "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
       "fecha_deteccion": "2026-09-14T07:15:24.837516-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026ugshzu": {
-      "id": "SGC2026ugshzu",
-      "magnitud": 2.1,
-      "profundidad": 37.0,
-      "latitud": 3.8726018599288894,
-      "longitud": -77.0028884800562,
-      "distancia_km": 338.0794313066727,
-      "lugar": "Buenaventura - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-14 17:26:27",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-14 17:26:27",
-      "lat": 3.873,
-      "lon": -77.003,
-      "distancia_bogota": 338.1,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-14T17:40:23.408588-05:00",
-      "alerta_enviada": false
     },
     "SGC2026ugtcse": {
       "id": "SGC2026ugtcse",
@@ -74870,11 +74842,11 @@
     },
     "SGC2026wjtsbr": {
       "id": "SGC2026wjtsbr",
-      "magnitud": 1.4,
-      "profundidad": 0.0,
-      "latitud": 3.8121666666666667,
-      "longitud": -75.665,
-      "distancia_km": 202.94725657935197,
+      "magnitud": 1.3,
+      "profundidad": 11.0,
+      "latitud": 3.8133804507975153,
+      "longitud": -75.65032267950582,
+      "distancia_km": 201.46536331082444,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-11-13 17:14:28",
       "candidato_acelerografico": false,
