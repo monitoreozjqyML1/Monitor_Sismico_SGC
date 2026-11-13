@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-13T10:35:27.799647-05:00",
+  "actualizado": "2026-11-13T10:40:42.327029-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2631,
+    "total_eventos": 2630,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -10754,34 +10754,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ugewea": {
-      "id": "SGC2026ugewea",
-      "magnitud": 1.9,
-      "profundidad": 23.0,
-      "latitud": 7.21438137519929,
-      "longitud": -76.2631276161144,
-      "distancia_km": 369.04203181544193,
-      "lugar": "Mutatá - Antioquia, Colombia",
-      "hora_local": "2026-10-14 10:40:27",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-14 10:40:27",
-      "lat": 7.21438137519929,
-      "lon": -76.2631276161144,
-      "distancia_bogota": 369.0,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uggynf": {
