@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-13T12:05:27.721888-05:00",
+  "actualizado": "2026-11-13T12:10:32.500797-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2632,
+    "total_eventos": 2633,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -74980,6 +74980,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-13T12:05:15.770650-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wittpc": {
+      "id": "SGC2026wittpc",
+      "magnitud": 1.8,
+      "profundidad": 0.0,
+      "latitud": 7.027333333333333,
+      "longitud": -76.205,
+      "distancia_km": 349.27342342394036,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-11-13 04:11:45",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-13 04:11:45",
+      "lat": 7.027333333333333,
+      "lon": -76.205,
+      "distancia_bogota": 349.3,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-13T12:10:20.625396-05:00",
       "alerta_enviada": false
     }
   }
