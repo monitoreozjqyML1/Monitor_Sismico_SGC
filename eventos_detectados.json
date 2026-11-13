@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T13:00:31.317071-05:00",
+  "actualizado": "2026-11-13T13:05:29.213519-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2640,
@@ -2164,34 +2164,6 @@
       "fecha_deteccion": "2026-10-13T16:30:17.551092-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
-    },
-    "SGC2026ugjqvh": {
-      "id": "SGC2026ugjqvh",
-      "magnitud": 2.7,
-      "profundidad": 37.0,
-      "latitud": 4.593834021135982,
-      "longitud": -76.65062258910868,
-      "distancia_km": 286.0705304165143,
-      "lugar": "Sipí - Chocó, Colombia",
-      "hora_local": "2026-10-14 13:05:13",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-14 13:05:13",
-      "lat": 4.671,
-      "lon": -76.891,
-      "distancia_bogota": 312.4,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-14T13:10:16.644057-05:00",
-      "alerta_enviada": false
     },
     "SGC2026ugllpd": {
       "id": "SGC2026ugllpd",
@@ -75204,6 +75176,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-13T13:00:18.300976-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wiylqr": {
+      "id": "SGC2026wiylqr",
+      "magnitud": 1.9,
+      "profundidad": 127.0,
+      "latitud": 5.385920368268112,
+      "longitud": -73.79400924551437,
+      "distancia_km": 81.12294496244223,
+      "lugar": "Fúquene - Cundinamarca, Colombia",
+      "hora_local": "2026-11-13 06:33:24",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-13 06:33:24",
+      "lat": 5.385920368268112,
+      "lon": -73.79400924551437,
+      "distancia_bogota": 81.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-13T13:05:17.015413-05:00",
       "alerta_enviada": false
     }
   }
