@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-13T12:55:38.721842-05:00",
+  "actualizado": "2026-11-13T13:00:31.317071-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2638,
+    "total_eventos": 2640,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -75148,6 +75148,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-13T12:55:26.489625-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wixges": {
+      "id": "SGC2026wixges",
+      "magnitud": 2.3,
+      "profundidad": 100.0,
+      "latitud": 3.95826139813677,
+      "longitud": -76.73811895001867,
+      "distancia_km": 307.21930532705886,
+      "lugar": "Calima (El Darién) - Valle del Cauca, Colombia",
+      "hora_local": "2026-11-13 05:56:54",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-13 05:56:54",
+      "lat": 3.95826139813677,
+      "lon": -76.73811895001867,
+      "distancia_bogota": 307.2,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-13T13:00:18.300976-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wiyakn": {
+      "id": "SGC2026wiyakn",
+      "magnitud": 1.4,
+      "profundidad": 56.0,
+      "latitud": 5.316166666666667,
+      "longitud": -76.49566666666666,
+      "distancia_km": 276.7610386947196,
+      "lugar": "Tadó - Chocó, Colombia",
+      "hora_local": "2026-11-13 06:20:22",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-13 06:20:22",
+      "lat": 5.316166666666667,
+      "lon": -76.49566666666666,
+      "distancia_bogota": 276.8,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-13T13:00:18.300976-05:00",
       "alerta_enviada": false
     }
   }
