@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-13T11:45:31.198107-05:00",
+  "actualizado": "2026-11-13T11:50:27.324545-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2630,
+    "total_eventos": 2631,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -74924,6 +74924,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-13T11:45:19.418952-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wizwcd": {
+      "id": "SGC2026wizwcd",
+      "magnitud": 2.1,
+      "profundidad": 14.0,
+      "latitud": 3.8683717592766484,
+      "longitud": -75.55891531067277,
+      "distancia_km": 189.6267333856035,
+      "lugar": "San Antonio - Tolima, Colombia",
+      "hora_local": "2026-11-13 07:15:40",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-13 07:15:40",
+      "lat": 3.8683717592766484,
+      "lon": -75.55891531067277,
+      "distancia_bogota": 189.6,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-13T11:50:15.323600-05:00",
       "alerta_enviada": false
     }
   }
