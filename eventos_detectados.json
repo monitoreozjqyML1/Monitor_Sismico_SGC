@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-13T17:15:30.045088-05:00",
+  "actualizado": "2026-11-13T17:20:26.325133-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2628,
+    "total_eventos": 2626,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -10390,62 +10390,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ugrxxx": {
-      "id": "SGC2026ugrxxx",
-      "magnitud": 1.3,
-      "profundidad": 16.0,
-      "latitud": 7.454439587213969,
-      "longitud": -76.45882789987088,
-      "distancia_km": 403.34565317051954,
-      "lugar": "Mutatá - Antioquia, Colombia",
-      "hora_local": "2026-10-14 17:15:44",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-14 17:15:44",
-      "lat": 7.454439587213969,
-      "lon": -76.45882789987088,
-      "distancia_bogota": 403.3,
-      "tipo_magnitud": "MLr_4",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ugsacl": {
-      "id": "SGC2026ugsacl",
-      "magnitud": 1.4,
-      "profundidad": 21.0,
-      "latitud": 6.994416141282757,
-      "longitud": -76.27441144882954,
-      "distancia_km": 351.85895593889063,
-      "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-10-14 17:17:16",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-14 17:17:16",
-      "lat": 6.994416141282757,
-      "lon": -76.27441144882954,
-      "distancia_bogota": 351.9,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ugsydb": {
