@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T15:15:28.528969-05:00",
+  "actualizado": "2026-11-13T15:20:37.112210-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2635,
@@ -75076,21 +75076,36 @@
       "hora_local": "2026-11-13 15:01:39",
       "candidato_acelerografico": true,
       "acelerografia_bogota": {
-        "estado": "NO DISPONIBLE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
+        "estado": "OK",
+        "estaciones": [
+          {
+            "descripcion": "Bogota, SGC",
+            "stationCode": "BOG",
+            "locationCode": "11",
+            "networkCode": "CM",
+            "latitude": 4.64,
+            "longitude": -74.08,
+            "elevation": 2584.0,
+            "distanceEpicentral": 191.0,
+            "distanceHipocentral": 191.0,
+            "pgaE": 0.21881,
+            "pgaN": 0.353295,
+            "pgaZ": 0.091407
+          }
+        ],
+        "pga_maximo_cm_s2": 0.353295,
+        "estacion_critica": "BOG.11",
+        "componente_critica": "NS"
       },
       "fecha_local": "2026-11-13 15:01:39",
       "alerta_pga": {
-        "estado": "SIN_DATOS",
-        "porcentaje_ns": null,
-        "porcentaje_ew": null,
-        "porcentaje_maximo": null,
-        "componente_critica": null,
-        "pga_ns_m_s2": null,
-        "pga_ew_m_s2": null,
+        "estado": "VERDE",
+        "porcentaje_ns": 6.308839285714287,
+        "porcentaje_ew": 5.913783783783785,
+        "porcentaje_maximo": 6.308839285714287,
+        "componente_critica": "NS",
+        "pga_ns_m_s2": 0.0035329500000000004,
+        "pga_ew_m_s2": 0.0021881,
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       },
@@ -75102,7 +75117,8 @@
       "alertas": [],
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-11-13T15:10:17.960362-05:00",
-      "alerta_enviada": true
+      "alerta_enviada": true,
+      "reporte_pga_actualizado_enviado": true
     }
   }
 }
