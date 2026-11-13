@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-13T12:00:32.038020-05:00",
+  "actualizado": "2026-11-13T12:05:27.721888-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2631,
+    "total_eventos": 2632,
     "eventos_m4_o_mayores": 55,
     "candidatos_acelerograficos": 55,
     "alertas_telegram": 45,
@@ -74952,6 +74952,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-13T12:00:19.951403-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wiruun": {
+      "id": "SGC2026wiruun",
+      "magnitud": 1.5,
+      "profundidad": 16.0,
+      "latitud": 0.7994337360757928,
+      "longitud": -77.28739833586194,
+      "distancia_km": 562.7228601860174,
+      "lugar": "Puerres - Nariño, Colombia",
+      "hora_local": "2026-11-13 03:12:48",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-13 03:12:48",
+      "lat": 0.7994337360757928,
+      "lon": -77.28739833586194,
+      "distancia_bogota": 562.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-13T12:05:15.770650-05:00",
       "alerta_enviada": false
     }
   }
