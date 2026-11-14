@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T11:40:26.630860-05:00",
+  "actualizado": "2026-11-14T11:45:30.697878-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2639,
+    "total_eventos": 2641,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75230,6 +75230,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-14T11:35:15.640809-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wkqcgr": {
+      "id": "SGC2026wkqcgr",
+      "magnitud": 1.6,
+      "profundidad": 48.0,
+      "latitud": 5.25372972288558,
+      "longitud": -74.49907166339844,
+      "distancia_km": 76.67483883562723,
+      "lugar": "Caparrapí - Cundinamarca, Colombia",
+      "hora_local": "2026-11-14 04:30:03",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-14 04:30:03",
+      "lat": 5.25372972288558,
+      "lon": -74.49907166339844,
+      "distancia_bogota": 76.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-14T11:45:18.946240-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wkqlxk": {
+      "id": "SGC2026wkqlxk",
+      "magnitud": 1.3,
+      "profundidad": 21.0,
+      "latitud": 5.306605981038592,
+      "longitud": -74.80863221381641,
+      "distancia_km": 105.08279103628816,
+      "lugar": "Victoria - Caldas, Colombia",
+      "hora_local": "2026-11-14 04:41:17",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-14 04:41:17",
+      "lat": 5.306605981038592,
+      "lon": -74.80863221381641,
+      "distancia_bogota": 105.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-14T11:45:18.946240-05:00",
       "alerta_enviada": false
     }
   }
