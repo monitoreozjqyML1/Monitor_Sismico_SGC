@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T14:50:33.985483-05:00",
+  "actualizado": "2026-11-14T14:55:27.527037-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2629,
+    "total_eventos": 2628,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -9214,34 +9214,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uiizms": {
-      "id": "SGC2026uiizms",
-      "magnitud": 1.0,
-      "profundidad": 14.0,
-      "latitud": 5.771917052785104,
-      "longitud": -74.81646436253428,
-      "distancia_km": 143.90974098734225,
-      "lugar": "Sonsón - Antioquia, Colombia",
-      "hora_local": "2026-10-15 14:53:59",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 14:53:59",
-      "lat": 5.771917052785104,
-      "lon": -74.81646436253428,
-      "distancia_bogota": 143.9,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uijvvb": {
