@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T07:55:30.926442-05:00",
+  "actualizado": "2026-11-14T08:00:28.005887-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2623,
+    "total_eventos": 2622,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -10,7 +10,7 @@
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
-    "porcentaje_alertas": 0.3
+    "porcentaje_alertas": 0.31
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -2306,34 +2306,6 @@
       "categoria": "SISMO CANDIDATO ACELEROGRAFICO (M >= 4.0)",
       "fecha_deteccion": "2026-09-14T07:15:24.837516-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uhvcxp": {
-      "id": "SGC2026uhvcxp",
-      "magnitud": 3.2,
-      "profundidad": 25.0,
-      "latitud": 6.859052920411044,
-      "longitud": -77.46769762057748,
-      "distancia_km": 445.1361953371647,
-      "lugar": "Riosucio - Chocó, Colombia",
-      "hora_local": "2026-10-15 07:55:31",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 07:55:31",
-      "lat": 6.859,
-      "lon": -77.468,
-      "distancia_bogota": 445.2,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-15T08:10:17.484217-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uhyekx": {
       "id": "SGC2026uhyekx",
