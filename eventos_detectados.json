@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T10:30:29.324821-05:00",
+  "actualizado": "2026-11-14T10:35:25.611205-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2634,
+    "total_eventos": 2635,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75090,6 +75090,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-14T10:30:17.248702-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wkleby": {
+      "id": "SGC2026wkleby",
+      "magnitud": 1.0,
+      "profundidad": 10.0,
+      "latitud": 5.5795,
+      "longitud": -74.89416666666666,
+      "distancia_km": 132.72023693980125,
+      "lugar": "Norcasia - Caldas, Colombia",
+      "hora_local": "2026-11-14 02:01:20",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-14 02:01:20",
+      "lat": 5.5795,
+      "lon": -74.89416666666666,
+      "distancia_bogota": 132.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-14T10:35:14.382052-05:00",
       "alerta_enviada": false
     }
   }
