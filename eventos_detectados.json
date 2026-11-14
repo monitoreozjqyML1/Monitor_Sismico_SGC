@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T13:35:28.890181-05:00",
+  "actualizado": "2026-11-14T13:40:25.593620-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2631,
+    "total_eventos": 2630,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -9214,34 +9214,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uigmvw": {
-      "id": "SGC2026uigmvw",
-      "magnitud": 1.6,
-      "profundidad": 11.0,
-      "latitud": 7.869518213715118,
-      "longitud": -72.55870286738109,
-      "distancia_km": 388.9998046010978,
-      "lugar": "San Cayetano - Norte de Santander, Colombia",
-      "hora_local": "2026-10-15 13:38:58",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 13:38:58",
-      "lat": 7.869518213715118,
-      "lon": -72.55870286738109,
-      "distancia_bogota": 389.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uiibcf": {
