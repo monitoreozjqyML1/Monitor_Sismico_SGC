@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T16:10:32.824352-05:00",
+  "actualizado": "2026-11-14T16:15:26.824432-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2629,
+    "total_eventos": 2630,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -9158,34 +9158,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uilpja": {
-      "id": "SGC2026uilpja",
-      "magnitud": 1.7,
-      "profundidad": 43.0,
-      "latitud": 4.510289533254221,
-      "longitud": -76.80259912595636,
-      "distancia_km": 303.45659957721114,
-      "lugar": "Istmina - Chocó, Colombia",
-      "hora_local": "2026-10-15 16:12:43",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 16:12:43",
-      "lat": 4.510289533254221,
-      "lon": -76.80259912595636,
-      "distancia_bogota": 303.5,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uimfes": {
@@ -74950,6 +74922,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-14T16:10:19.964011-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wlbmrt": {
+      "id": "SGC2026wlbmrt",
+      "magnitud": 2.0,
+      "profundidad": 148.0,
+      "latitud": 6.8215,
+      "longitud": -73.07383333333334,
+      "distancia_km": 259.36254354829106,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-11-14 10:14:05",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-14 10:14:05",
+      "lat": 6.8215,
+      "lon": -73.07383333333334,
+      "distancia_bogota": 259.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-14T16:15:14.116957-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wlbpbg": {
+      "id": "SGC2026wlbpbg",
+      "magnitud": 2.3,
+      "profundidad": 85.0,
+      "latitud": 4.585373819831499,
+      "longitud": -76.48004370817652,
+      "distancia_km": 267.23567234451474,
+      "lugar": "Sipí - Chocó, Colombia",
+      "hora_local": "2026-11-14 10:16:49",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-14 10:16:49",
+      "lat": 4.585373819831499,
+      "lon": -76.48004370817652,
+      "distancia_bogota": 267.2,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-14T16:15:14.116957-05:00",
       "alerta_enviada": false
     }
   }
