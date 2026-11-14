@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T08:50:24.812243-05:00",
+  "actualizado": "2026-11-14T08:55:28.424973-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2623,
@@ -74730,13 +74730,13 @@
     },
     "SGC2026wkjqik": {
       "id": "SGC2026wkjqik",
-      "magnitud": 3.4,
-      "profundidad": 100.0,
-      "latitud": 4.418833333333334,
-      "longitud": -76.81783333333334,
-      "distancia_km": 306.0716325415649,
+      "magnitud": 3.5,
+      "profundidad": 53.0,
+      "latitud": 4.401364441459015,
+      "longitud": -76.72424859341474,
+      "distancia_km": 295.982348765212,
       "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
-      "hora_local": "2026-11-14 01:15:13",
+      "hora_local": "2026-11-14 01:15:14",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -74745,7 +74745,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-14 01:15:13",
+      "fecha_local": "2026-11-14 01:15:14",
       "lat": 4.418833333333334,
       "lon": -76.81783333333334,
       "distancia_bogota": 306.1,
