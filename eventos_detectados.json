@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T11:25:29.412249-05:00",
+  "actualizado": "2026-11-14T11:30:26.099138-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2638,
+    "total_eventos": 2639,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75202,6 +75202,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-14T11:25:17.598358-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wkpprs": {
+      "id": "SGC2026wkpprs",
+      "magnitud": 1.7,
+      "profundidad": 2.0,
+      "latitud": 3.376166666666667,
+      "longitud": -71.85483333333333,
+      "distancia_km": 287.2485476923141,
+      "lugar": "Mapiripán - Meta, Colombia",
+      "hora_local": "2026-11-14 04:15:30",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-14 04:15:30",
+      "lat": 3.376166666666667,
+      "lon": -71.85483333333333,
+      "distancia_bogota": 287.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-14T11:30:14.845093-05:00",
       "alerta_enviada": false
     }
   }
