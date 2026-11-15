@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-15T10:05:28.107310-05:00",
+  "actualizado": "2026-11-15T10:10:26.906519-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2632,
+    "total_eventos": 2633,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.17,
+    "porcentaje_m4_o_mayores": 2.16,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -8234,34 +8234,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ujvhpr": {
-      "id": "SGC2026ujvhpr",
-      "magnitud": 1.4,
-      "profundidad": 85.0,
-      "latitud": 6.710833333333333,
-      "longitud": -74.0225,
-      "distancia_km": 222.4390211867111,
-      "lugar": "Puerto Parra - Santander, Colombia",
-      "hora_local": "2026-10-16 10:09:57",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-16 10:09:57",
-      "lat": 6.710833333333333,
-      "lon": -74.0225,
-      "distancia_bogota": 222.4,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ujvskc": {
@@ -75034,6 +75006,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T10:05:16.288511-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wmmylw": {
+      "id": "SGC2026wmmylw",
+      "magnitud": 1.4,
+      "profundidad": 12.0,
+      "latitud": 3.287,
+      "longitud": -74.4895,
+      "distancia_km": 164.97154386671804,
+      "lugar": "Uribe - Meta, Colombia",
+      "hora_local": "2026-11-15 05:04:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 05:04:07",
+      "lat": 3.287,
+      "lon": -74.4895,
+      "distancia_bogota": 165.0,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T10:10:15.639384-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wmsdip": {
+      "id": "SGC2026wmsdip",
+      "magnitud": 2.3,
+      "profundidad": 44.0,
+      "latitud": 8.858,
+      "longitud": -75.37316666666666,
+      "distancia_km": 482.9752435597251,
+      "lugar": "La Unión - Sucre, Colombia",
+      "hora_local": "2026-11-15 07:40:37",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 07:40:37",
+      "lat": 8.858,
+      "lon": -75.37316666666666,
+      "distancia_bogota": 483.0,
+      "tipo_magnitud": "MLr_4",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T10:10:15.639384-05:00",
       "alerta_enviada": false
     }
   }
