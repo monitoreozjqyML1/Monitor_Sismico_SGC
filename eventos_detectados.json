@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T16:35:24.899372-05:00",
+  "actualizado": "2026-11-15T16:40:25.630824-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2648,
+    "total_eventos": 2649,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75459,10 +75459,10 @@
     "SGC2026wnazic": {
       "id": "SGC2026wnazic",
       "magnitud": 2.0,
-      "profundidad": 146.0,
-      "latitud": 6.768,
-      "longitud": -73.04716666666667,
-      "distancia_km": 255.29144097340938,
+      "profundidad": 136.0,
+      "latitud": 6.735322476332994,
+      "longitud": -73.08135790419333,
+      "distancia_km": 250.36361400411013,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-11-15 12:07:31",
       "candidato_acelerografico": false,
@@ -75482,6 +75482,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T16:35:13.351968-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wnbctr": {
+      "id": "SGC2026wnbctr",
+      "magnitud": 1.6,
+      "profundidad": 119.0,
+      "latitud": 6.368666666666667,
+      "longitud": -73.56016666666666,
+      "distancia_km": 192.83500521581254,
+      "lugar": "Santa Helena del Opón - Santander, Colombia",
+      "hora_local": "2026-11-15 12:10:54",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 12:10:54",
+      "lat": 6.368666666666667,
+      "lon": -73.56016666666666,
+      "distancia_bogota": 192.8,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T16:40:13.694818-05:00",
       "alerta_enviada": false
     }
   }
