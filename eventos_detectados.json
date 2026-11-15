@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T01:35:25.689548-05:00",
+  "actualizado": "2026-11-15T01:40:23.080770-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2645,
+    "total_eventos": 2644,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -8598,34 +8598,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ujegdf": {
-      "id": "SGC2026ujegdf",
-      "magnitud": 1.7,
-      "profundidad": 13.0,
-      "latitud": 5.976019409255733,
-      "longitud": -72.49797808547679,
-      "distancia_km": 223.95609818270276,
-      "lugar": "Chita - Boyacá, Colombia",
-      "hora_local": "2026-10-16 01:35:16",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-16 01:35:16",
-      "lat": 5.976019409255733,
-      "lon": -72.49797808547679,
-      "distancia_bogota": 224.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ujfdxr": {
