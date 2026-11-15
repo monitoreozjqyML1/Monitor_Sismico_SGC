@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-15T10:40:27.010593-05:00",
+  "actualizado": "2026-11-15T10:45:29.835054-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2636,
@@ -2651,34 +2651,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-16T16:00:19.439133-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ujwmfm": {
-      "id": "SGC2026ujwmfm",
-      "magnitud": 2.1,
-      "profundidad": 138.0,
-      "latitud": 6.765990706061743,
-      "longitud": -73.1402068564791,
-      "distancia_km": 250.68560879853678,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-16 10:45:15",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-16 10:45:15",
-      "lat": 6.766,
-      "lon": -73.14,
-      "distancia_bogota": 250.7,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-16T16:50:15.539419-05:00",
       "alerta_enviada": false
     },
     "SGC2026ujwvhr": {
@@ -75122,7 +75094,7 @@
     },
     "SGC2026wmqfve": {
       "id": "SGC2026wmqfve",
-      "magnitud": 2.1,
+      "magnitud": 1.8,
       "profundidad": 147.0,
       "latitud": 6.809166666666666,
       "longitud": -72.95583333333333,
@@ -75146,6 +75118,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T10:40:15.287396-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wmqqgh": {
+      "id": "SGC2026wmqqgh",
+      "magnitud": 1.3,
+      "profundidad": 10.0,
+      "latitud": 3.153,
+      "longitud": -74.7915,
+      "distancia_km": 190.73850792867137,
+      "lugar": "Colombia - Huila, Colombia",
+      "hora_local": "2026-11-15 06:55:16",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 06:55:16",
+      "lat": 3.153,
+      "lon": -74.7915,
+      "distancia_bogota": 190.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T10:45:17.794903-05:00",
       "alerta_enviada": false
     }
   }
