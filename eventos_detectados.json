@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T08:35:27.830336-05:00",
+  "actualizado": "2026-11-15T08:40:30.149762-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2624,
+    "total_eventos": 2623,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2509,34 +2509,6 @@
       "fecha_deteccion": "2026-10-16T08:15:17.401266-05:00",
       "alerta_enviada": true,
       "reporte_pga_actualizado_enviado": true
-    },
-    "SGC2026ujseji": {
-      "id": "SGC2026ujseji",
-      "magnitud": 3.0,
-      "profundidad": 13.0,
-      "latitud": 3.817081788868226,
-      "longitud": -74.06005798965914,
-      "distancia_km": 99.40813839712239,
-      "lugar": "Cubarral - Meta, Colombia",
-      "hora_local": "2026-10-16 08:35:23",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-16 08:35:23",
-      "lat": 4.859,
-      "lon": -73.958,
-      "distancia_bogota": 20.8,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-16T08:40:15.915126-05:00",
-      "alerta_enviada": false
     },
     "SGC2026ujtllt": {
       "id": "SGC2026ujtllt",
@@ -74787,12 +74759,12 @@
     "SGC2026wmeqxt": {
       "id": "SGC2026wmeqxt",
       "magnitud": 1.4,
-      "profundidad": 3.0,
-      "latitud": 3.8051666666666666,
-      "longitud": -75.675,
-      "distancia_km": 204.296374543132,
+      "profundidad": 13.0,
+      "latitud": 3.8387610547109614,
+      "longitud": -75.66530874820202,
+      "distancia_km": 201.53479778239267,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-11-15 00:53:59",
+      "hora_local": "2026-11-15 00:53:58",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -74801,7 +74773,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-15 00:53:59",
+      "fecha_local": "2026-11-15 00:53:58",
       "lat": 3.8051666666666666,
       "lon": -75.675,
       "distancia_bogota": 204.3,
