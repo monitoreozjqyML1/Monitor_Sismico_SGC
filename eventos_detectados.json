@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T17:10:25.817599-05:00",
+  "actualizado": "2026-11-15T17:15:29.607293-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2647,
+    "total_eventos": 2648,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75454,6 +75454,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T17:10:13.763444-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wndsmw": {
+      "id": "SGC2026wndsmw",
+      "magnitud": 1.6,
+      "profundidad": 111.0,
+      "latitud": 6.481333333333334,
+      "longitud": -73.66516666666666,
+      "distancia_km": 201.93704978525787,
+      "lugar": "Santa Helena del Opón - Santander, Colombia",
+      "hora_local": "2026-11-15 13:30:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 13:30:07",
+      "lat": 6.481333333333334,
+      "lon": -73.66516666666666,
+      "distancia_bogota": 201.9,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T17:15:18.165499-05:00",
       "alerta_enviada": false
     }
   }
