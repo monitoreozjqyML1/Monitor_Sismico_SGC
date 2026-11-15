@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T23:15:32.281853-05:00",
+  "actualizado": "2026-11-14T23:20:24.792214-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2649,
+    "total_eventos": 2650,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75510,6 +75510,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-14T23:10:15.158967-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wlzdzk": {
+      "id": "SGC2026wlzdzk",
+      "magnitud": 1.6,
+      "profundidad": 3.0,
+      "latitud": 1.2305,
+      "longitud": -76.92866666666667,
+      "distancia_km": 500.3698627011881,
+      "lugar": "Sibundoy - Putumayo, Colombia",
+      "hora_local": "2026-11-14 22:08:06",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-14 22:08:06",
+      "lat": 1.2305,
+      "lon": -76.92866666666667,
+      "distancia_bogota": 500.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-14T23:20:13.140522-05:00",
       "alerta_enviada": false
     }
   }
