@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T17:15:29.607293-05:00",
+  "actualizado": "2026-11-15T17:20:33.626235-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2648,
+    "total_eventos": 2649,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75482,6 +75482,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T17:15:18.165499-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wnitne": {
+      "id": "SGC2026wnitne",
+      "magnitud": 2.5,
+      "profundidad": 0.0,
+      "latitud": 5.0915,
+      "longitud": -72.33916666666667,
+      "distancia_km": 196.5951370327721,
+      "lugar": "Yopal - Casanare, Colombia",
+      "hora_local": "2026-11-15 16:02:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 16:02:09",
+      "lat": 5.0915,
+      "lon": -72.33916666666667,
+      "distancia_bogota": 196.6,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T17:20:21.089852-05:00",
       "alerta_enviada": false
     }
   }
