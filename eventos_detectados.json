@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T09:00:24.883549-05:00",
+  "actualizado": "2026-11-15T09:05:27.427937-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2622,
+    "total_eventos": 2623,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -10,7 +10,7 @@
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
-    "porcentaje_alertas": 0.31
+    "porcentaje_alertas": 0.3
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -74754,6 +74754,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T08:20:17.246487-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wmhdzh": {
+      "id": "SGC2026wmhdzh",
+      "magnitud": 1.9,
+      "profundidad": 107.0,
+      "latitud": 7.662333333333334,
+      "longitud": -73.53483333333334,
+      "distancia_km": 333.50334106707504,
+      "lugar": "La Esperanza - Norte de Santander, Colombia",
+      "hora_local": "2026-11-15 02:09:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 02:09:29",
+      "lat": 7.662333333333334,
+      "lon": -73.53483333333334,
+      "distancia_bogota": 333.5,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T09:05:15.726984-05:00",
       "alerta_enviada": false
     }
   }
