@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T08:00:28.794981-05:00",
+  "actualizado": "2026-11-15T08:05:29.421200-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2623,
+    "total_eventos": 2624,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -74782,6 +74782,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T08:00:17.284243-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wmdnys": {
+      "id": "SGC2026wmdnys",
+      "magnitud": 1.9,
+      "profundidad": 101.0,
+      "latitud": 5.587907674412619,
+      "longitud": -73.95974206138969,
+      "distancia_km": 98.29841744423696,
+      "lugar": "Maripí - Boyacá, Colombia",
+      "hora_local": "2026-11-15 00:20:22",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 00:20:22",
+      "lat": 5.587907674412619,
+      "lon": -73.95974206138969,
+      "distancia_bogota": 98.3,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T08:05:17.299650-05:00",
       "alerta_enviada": false
     }
   }
