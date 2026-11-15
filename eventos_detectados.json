@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T21:40:30.096532-05:00",
+  "actualizado": "2026-11-14T21:45:29.587273-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2650,
+    "total_eventos": 2648,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2454,34 +2454,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026uiwnog": {
-      "id": "SGC2026uiwnog",
-      "magnitud": 2.0,
-      "profundidad": 52.0,
-      "latitud": 4.372333333333334,
-      "longitud": -76.69866666666667,
-      "distancia_km": 293.56857073636456,
-      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
-      "hora_local": "2026-10-15 21:42:33",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 21:42:33",
-      "lat": 4.372,
-      "lon": -76.699,
-      "distancia_bogota": 293.6,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-16T03:29:43.421172-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uixxnv": {
       "id": "SGC2026uixxnv",
@@ -8822,34 +8794,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uiwnvo": {
-      "id": "SGC2026uiwnvo",
-      "magnitud": 1.4,
-      "profundidad": 150.0,
-      "latitud": 6.7975,
-      "longitud": -73.15916666666666,
-      "distancia_km": 253.03766333917133,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-15 21:42:52",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 21:42:52",
-      "lat": 6.7975,
-      "lon": -73.15916666666666,
-      "distancia_bogota": 253.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uiwucp": {
