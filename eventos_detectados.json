@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T10:35:35.227791-05:00",
+  "actualizado": "2026-11-15T10:40:27.010593-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2635,
+    "total_eventos": 2636,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2735,34 +2735,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-16T17:15:16.804975-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ujwgsl": {
-      "id": "SGC2026ujwgsl",
-      "magnitud": 2.5,
-      "profundidad": 68.0,
-      "latitud": 7.172333333333333,
-      "longitud": -77.50183333333334,
-      "distancia_km": 467.72371423725076,
-      "lugar": "Riosucio - Chocó, Colombia",
-      "hora_local": "2026-10-16 10:39:05",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-16 10:39:05",
-      "lat": 7.172,
-      "lon": -77.502,
-      "distancia_bogota": 467.7,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-16T17:45:16.280172-05:00",
       "alerta_enviada": false
     },
     "SGC2026ukemhz": {
@@ -75118,6 +75090,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-15T10:30:14.747394-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wmqeik": {
+      "id": "SGC2026wmqeik",
+      "magnitud": 1.2,
+      "profundidad": 16.0,
+      "latitud": 1.895029805006215,
+      "longitud": -76.77270038933906,
+      "distancia_km": 433.4782300911602,
+      "lugar": "Almaguer - Cauca, Colombia",
+      "hora_local": "2026-11-15 06:41:25",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 06:41:25",
+      "lat": 1.895029805006215,
+      "lon": -76.77270038933906,
+      "distancia_bogota": 433.5,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T10:40:15.287396-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wmqfve": {
+      "id": "SGC2026wmqfve",
+      "magnitud": 2.1,
+      "profundidad": 147.0,
+      "latitud": 6.809166666666666,
+      "longitud": -72.95583333333333,
+      "distancia_km": 263.97172066700415,
+      "lugar": "Piedecuesta - Santander, Colombia",
+      "hora_local": "2026-11-15 06:43:10",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 06:43:10",
+      "lat": 6.809166666666666,
+      "lon": -72.95583333333333,
+      "distancia_bogota": 264.0,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-15T10:40:15.287396-05:00",
       "alerta_enviada": false
     }
   }
