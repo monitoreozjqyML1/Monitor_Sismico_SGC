@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-14T23:20:24.792214-05:00",
+  "actualizado": "2026-11-14T23:25:32.383530-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2650,
+    "total_eventos": 2648,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2454,34 +2454,6 @@
         "pga_ns_critico_m_s2": 0.056,
         "pga_ew_critico_m_s2": 0.037
       }
-    },
-    "SGC2026uizxah": {
-      "id": "SGC2026uizxah",
-      "magnitud": 2.1,
-      "profundidad": 14.0,
-      "latitud": 3.8287145656618886,
-      "longitud": -75.63812470843502,
-      "distancia_km": 199.4458947628148,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-15 23:24:00",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 23:24:00",
-      "lat": 3.841,
-      "lon": -75.638,
-      "distancia_bogota": 198.8,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-16T03:29:43.421172-05:00",
-      "alerta_enviada": false
     },
     "SGC2026ujeyog": {
       "id": "SGC2026ujeyog",
@@ -8654,34 +8626,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uizumd": {
-      "id": "SGC2026uizumd",
-      "magnitud": 2.0,
-      "profundidad": 139.0,
-      "latitud": 6.742725152474417,
-      "longitud": -73.12522241301347,
-      "distancia_km": 249.0235332153439,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-15 23:20:30",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-15 23:20:30",
-      "lat": 6.742725152474417,
-      "lon": -73.12522241301347,
-      "distancia_bogota": 249.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ujaivv": {
@@ -75514,13 +75458,13 @@
     },
     "SGC2026wlzdzk": {
       "id": "SGC2026wlzdzk",
-      "magnitud": 1.6,
-      "profundidad": 3.0,
-      "latitud": 1.2305,
-      "longitud": -76.92866666666667,
-      "distancia_km": 500.3698627011881,
+      "magnitud": 1.4,
+      "profundidad": 10.0,
+      "latitud": 1.2583996568439413,
+      "longitud": -76.90969669819495,
+      "distancia_km": 496.6334298759972,
       "lugar": "Sibundoy - Putumayo, Colombia",
-      "hora_local": "2026-11-14 22:08:06",
+      "hora_local": "2026-11-14 22:08:05",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75529,7 +75473,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-14 22:08:06",
+      "fecha_local": "2026-11-14 22:08:05",
       "lat": 1.2305,
       "lon": -76.92866666666667,
       "distancia_bogota": 500.4,
