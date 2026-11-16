@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T00:25:26.317269-05:00",
+  "actualizado": "2026-11-16T00:30:29.404682-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2645,
@@ -7814,34 +7814,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ukxsrd": {
-      "id": "SGC2026ukxsrd",
-      "magnitud": 1.6,
-      "profundidad": 16.0,
-      "latitud": 6.969564299950841,
-      "longitud": -76.27049131196772,
-      "distancia_km": 349.57235600683623,
-      "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-10-17 00:27:35",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 00:27:35",
-      "lat": 6.969564299950841,
-      "lon": -76.27049131196772,
-      "distancia_bogota": 349.6,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ukxxei": {
@@ -75398,6 +75370,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-16T00:25:15.378842-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wntkcf": {
+      "id": "SGC2026wntkcf",
+      "magnitud": 1.8,
+      "profundidad": 136.0,
+      "latitud": 6.684561268506103,
+      "longitud": -73.05567643409086,
+      "distancia_km": 246.58646038691683,
+      "lugar": "Aratoca - Santander, Colombia",
+      "hora_local": "2026-11-15 21:23:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 21:23:07",
+      "lat": 6.684561268506103,
+      "lon": -73.05567643409086,
+      "distancia_bogota": 246.6,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-16T00:30:17.659826-05:00",
       "alerta_enviada": false
     }
   }
