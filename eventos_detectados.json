@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T13:15:27.394699-05:00",
+  "actualizado": "2026-11-16T13:20:28.532093-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2640,
+    "total_eventos": 2638,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026ulxglo": {
-      "id": "SGC2026ulxglo",
-      "magnitud": 2.1,
-      "profundidad": 16.0,
-      "latitud": 7.250337230743339,
-      "longitud": -76.29337548405915,
-      "distancia_km": 374.2481861426899,
-      "lugar": "Mutatá - Antioquia, Colombia",
-      "hora_local": "2026-10-17 13:17:49",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 13:17:49",
-      "lat": 7.25,
-      "lon": -76.293,
-      "distancia_bogota": 374.2,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-17T15:55:42.346742-05:00",
-      "alerta_enviada": false
     },
     "SGC2026ulycyd": {
       "id": "SGC2026ulycyd",
@@ -7422,34 +7394,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ulxfbk": {
-      "id": "SGC2026ulxfbk",
-      "magnitud": 1.3,
-      "profundidad": 129.0,
-      "latitud": 6.568833333333333,
-      "longitud": -73.474,
-      "distancia_km": 216.92364312615297,
-      "lugar": "El Carmen - Santander, Colombia",
-      "hora_local": "2026-10-17 13:16:17",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 13:16:17",
-      "lat": 6.568833333333333,
-      "lon": -73.474,
-      "distancia_bogota": 216.9,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026umbxtr": {
