@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T16:50:29.908784-05:00",
+  "actualizado": "2026-11-16T16:55:34.035943-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2647,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026umellm": {
-      "id": "SGC2026umellm",
-      "magnitud": 2.0,
-      "profundidad": 15.0,
-      "latitud": 3.8435199179447324,
-      "longitud": -75.65627254731332,
-      "distancia_km": 200.40136424879887,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-17 16:54:58",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 16:54:58",
-      "lat": 3.827,
-      "lon": -75.687,
-      "distancia_bogota": 204.3,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-17T19:37:29.565858-05:00",
-      "alerta_enviada": false
     },
     "SGC2026umfbso": {
       "id": "SGC2026umfbso",
@@ -75430,13 +75402,13 @@
     },
     "SGC2026woxojd": {
       "id": "SGC2026woxojd",
-      "magnitud": 2.0,
-      "profundidad": 4.0,
-      "latitud": 3.8315,
-      "longitud": -75.67816666666667,
-      "distancia_km": 203.17385257641206,
+      "magnitud": 1.9,
+      "profundidad": 18.0,
+      "latitud": 3.848807543760034,
+      "longitud": -75.65841870320641,
+      "distancia_km": 200.32743154870928,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-11-16 12:33:14",
+      "hora_local": "2026-11-16 12:33:12",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75445,7 +75417,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-16 12:33:14",
+      "fecha_local": "2026-11-16 12:33:12",
       "lat": 3.8315,
       "lon": -75.67816666666667,
       "distancia_bogota": 203.2,
@@ -75454,6 +75426,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-16T16:50:18.303533-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026woxqxi": {
+      "id": "SGC2026woxqxi",
+      "magnitud": 1.7,
+      "profundidad": 125.0,
+      "latitud": 5.58896519957568,
+      "longitud": -73.6576382161774,
+      "distancia_km": 107.87707185204918,
+      "lugar": "Tinjacá - Boyacá, Colombia",
+      "hora_local": "2026-11-16 12:36:12",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-16 12:36:12",
+      "lat": 5.58896519957568,
+      "lon": -73.6576382161774,
+      "distancia_bogota": 107.9,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-16T16:55:17.793398-05:00",
       "alerta_enviada": false
     }
   }
