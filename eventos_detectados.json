@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T17:40:36.033129-05:00",
+  "actualizado": "2026-11-16T17:45:27.407864-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2647,
+    "total_eventos": 2646,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -7170,34 +7170,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026umfzxv": {
-      "id": "SGC2026umfzxv",
-      "magnitud": 1.9,
-      "profundidad": 127.0,
-      "latitud": 6.862166666666667,
-      "longitud": -73.355,
-      "distancia_km": 252.00954279484307,
-      "lugar": "San Vicente de Chucurí - Santander, Colombia",
-      "hora_local": "2026-10-17 17:41:52",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 17:41:52",
-      "lat": 6.862166666666667,
-      "lon": -73.355,
-      "distancia_bogota": 252.0,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026umgkoj": {
