@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T14:20:24.998188-05:00",
+  "actualizado": "2026-11-16T14:25:27.323758-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2636,
+    "total_eventos": 2635,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2634,34 +2634,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-17T15:55:42.346742-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ulzlzi": {
-      "id": "SGC2026ulzlzi",
-      "magnitud": 2.2,
-      "profundidad": 133.0,
-      "latitud": 3.908557715472938,
-      "longitud": -76.28317813871801,
-      "distancia_km": 260.8957808819004,
-      "lugar": "Buga - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-17 14:24:39",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 14:24:39",
-      "lat": 3.909,
-      "lon": -76.283,
-      "distancia_bogota": 260.9,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-17T17:54:52.092968-05:00",
       "alerta_enviada": false
     },
     "SGC2026umbqos": {
