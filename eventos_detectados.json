@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T18:30:34.705054-05:00",
+  "actualizado": "2026-11-16T18:35:29.610003-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2652,
@@ -75571,10 +75571,10 @@
     "SGC2026wpbrfn": {
       "id": "SGC2026wpbrfn",
       "magnitud": 1.2,
-      "profundidad": 13.0,
-      "latitud": 5.280333333333333,
-      "longitud": -76.09833333333333,
-      "distancia_km": 233.20711154239027,
+      "profundidad": 20.0,
+      "latitud": 5.276995276472905,
+      "longitud": -76.05902065286625,
+      "distancia_km": 228.91717014450487,
       "lugar": "Pueblo Rico - Risaralda, Colombia",
       "hora_local": "2026-11-16 14:37:14",
       "candidato_acelerografico": false,
