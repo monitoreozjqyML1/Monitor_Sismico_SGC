@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T08:55:39.437287-05:00",
+  "actualizado": "2026-11-16T09:00:32.932863-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2630,
+    "total_eventos": 2629,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026ulooka": {
-      "id": "SGC2026ulooka",
-      "magnitud": 2.3,
-      "profundidad": 20.0,
-      "latitud": 6.041,
-      "longitud": -70.05683333333333,
-      "distancia_km": 468.45868583793236,
-      "lugar": "Paz de Ariporo - Casanare, Colombia",
-      "hora_local": "2026-10-17 08:55:34",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 08:55:34",
-      "lat": 6.041,
-      "lon": -70.057,
-      "distancia_bogota": 468.4,
-      "tipo_magnitud": "MLr_5",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-17T11:18:50.467926-05:00",
-      "alerta_enviada": false
     },
     "SGC2026ulvnlu": {
       "id": "SGC2026ulvnlu",
