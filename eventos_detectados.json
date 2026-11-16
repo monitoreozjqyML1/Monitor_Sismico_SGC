@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T09:25:24.706063-05:00",
+  "actualizado": "2026-11-16T09:30:29.840442-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2633,
+    "total_eventos": 2634,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75062,6 +75062,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-16T09:25:13.642625-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wocmsj": {
+      "id": "SGC2026wocmsj",
+      "magnitud": 1.5,
+      "profundidad": 2.0,
+      "latitud": 4.140684488764663,
+      "longitud": -73.67593132879081,
+      "distancia_km": 77.14022888071835,
+      "lugar": "Villavicencio - Meta, Colombia",
+      "hora_local": "2026-11-16 01:57:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-16 01:57:42",
+      "lat": 4.140684488764663,
+      "lon": -73.67593132879081,
+      "distancia_bogota": 77.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-16T09:30:17.739271-05:00",
       "alerta_enviada": false
     }
   }
