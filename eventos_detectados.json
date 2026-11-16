@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T01:35:24.297582-05:00",
+  "actualizado": "2026-11-16T01:40:28.033309-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2642,
+    "total_eventos": 2641,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -7758,34 +7758,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ulabll": {
-      "id": "SGC2026ulabll",
-      "magnitud": 1.5,
-      "profundidad": 26.0,
-      "latitud": 3.3554720551924246,
-      "longitud": -76.20134745086247,
-      "distancia_km": 280.1694313454088,
-      "lugar": "Pradera - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-17 01:38:07",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 01:38:07",
-      "lat": 3.3554720551924246,
-      "lon": -76.20134745086247,
-      "distancia_bogota": 280.2,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ulbnta": {
