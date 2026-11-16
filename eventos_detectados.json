@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T04:30:37.914245-05:00",
+  "actualizado": "2026-11-16T04:35:30.285778-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2627,
+    "total_eventos": 2626,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -7590,34 +7590,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ulfwkj": {
-      "id": "SGC2026ulfwkj",
-      "magnitud": 0.8,
-      "profundidad": 2.0,
-      "latitud": 4.916833333333333,
-      "longitud": -75.29133333333333,
-      "distancia_km": 137.01932798675105,
-      "lugar": "Villahermosa - Tolima, Colombia",
-      "hora_local": "2026-10-17 04:33:19",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 04:33:19",
-      "lat": 4.916833333333333,
-      "lon": -75.29133333333333,
-      "distancia_bogota": 137.0,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ulgcgu": {
