@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-15T23:10:26.188606-05:00",
+  "actualizado": "2026-11-15T23:15:26.011041-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2648,
+    "total_eventos": 2647,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -7842,34 +7842,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ukvfyj": {
-      "id": "SGC2026ukvfyj",
-      "magnitud": 1.5,
-      "profundidad": 110.0,
-      "latitud": 4.552590539776632,
-      "longitud": -76.15907914307958,
-      "distancia_km": 231.97319009041468,
-      "lugar": "La Unión - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-16 23:12:30",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-16 23:12:30",
-      "lat": 4.552590539776632,
-      "lon": -76.15907914307958,
-      "distancia_bogota": 232.0,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ukvlay": {
