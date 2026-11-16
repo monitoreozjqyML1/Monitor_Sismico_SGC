@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T10:15:28.347399-05:00",
+  "actualizado": "2026-11-16T10:20:29.915189-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2640,
+    "total_eventos": 2639,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -7506,34 +7506,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ulrhwg": {
-      "id": "SGC2026ulrhwg",
-      "magnitud": 1.4,
-      "profundidad": 20.0,
-      "latitud": 7.912666666666667,
-      "longitud": -74.31766666666667,
-      "distancia_km": 357.0418274612187,
-      "lugar": "Santa Rosa del Sur - Bolívar, Colombia",
-      "hora_local": "2026-10-17 10:18:30",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 10:18:30",
-      "lat": 7.912666666666667,
-      "lon": -74.31766666666667,
-      "distancia_bogota": 357.0,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ultxcg": {
