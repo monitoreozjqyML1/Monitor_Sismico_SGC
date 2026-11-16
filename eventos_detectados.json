@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T07:30:28.117790-05:00",
+  "actualizado": "2026-11-16T07:35:24.689213-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2618,
+    "total_eventos": 2619,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -74642,6 +74642,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-16T07:30:16.687921-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wnyuyn": {
+      "id": "SGC2026wnyuyn",
+      "magnitud": 1.1,
+      "profundidad": 19.0,
+      "latitud": 2.4724385440371126,
+      "longitud": -76.32325779959012,
+      "distancia_km": 352.6532332751838,
+      "lugar": "Totoró - Cauca, Colombia",
+      "hora_local": "2026-11-16 00:06:34",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-16 00:06:34",
+      "lat": 2.4724385440371126,
+      "lon": -76.32325779959012,
+      "distancia_bogota": 352.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-16T07:35:13.626903-05:00",
       "alerta_enviada": false
     }
   }
