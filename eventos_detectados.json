@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T00:35:25.105687-05:00",
+  "actualizado": "2026-11-16T00:40:34.515086-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2644,
+    "total_eventos": 2645,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75346,13 +75346,13 @@
     },
     "SGC2026wnuaii": {
       "id": "SGC2026wnuaii",
-      "magnitud": 1.5,
-      "profundidad": 19.0,
-      "latitud": 3.8185,
-      "longitud": -75.68016666666666,
-      "distancia_km": 204.0686079884756,
+      "magnitud": 1.1,
+      "profundidad": 1.0,
+      "latitud": 3.841404867618612,
+      "longitud": -75.61686730875118,
+      "distancia_km": 196.69835849402992,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-11-15 21:41:57",
+      "hora_local": "2026-11-15 21:41:59",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75361,7 +75361,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-15 21:41:57",
+      "fecha_local": "2026-11-15 21:41:59",
       "lat": 3.8185,
       "lon": -75.68016666666666,
       "distancia_bogota": 204.1,
@@ -75370,6 +75370,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-16T00:35:13.931220-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wnudpy": {
+      "id": "SGC2026wnudpy",
+      "magnitud": 1.6,
+      "profundidad": 9.0,
+      "latitud": 3.8287145656618886,
+      "longitud": -75.62321733143109,
+      "distancia_km": 198.00836308280392,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-15 21:45:47",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-15 21:45:47",
+      "lat": 3.8287145656618886,
+      "lon": -75.62321733143109,
+      "distancia_bogota": 198.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-16T00:40:21.951826-05:00",
       "alerta_enviada": false
     }
   }
