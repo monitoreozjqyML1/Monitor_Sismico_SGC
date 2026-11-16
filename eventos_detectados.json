@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T10:40:29.082316-05:00",
+  "actualizado": "2026-11-16T10:45:26.601730-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2644,
@@ -75319,12 +75319,12 @@
     "SGC2026woicus": {
       "id": "SGC2026woicus",
       "magnitud": 1.7,
-      "profundidad": 144.0,
-      "latitud": 6.747166666666667,
-      "longitud": -73.09333333333333,
-      "distancia_km": 250.973366553583,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-11-16 04:47:14",
+      "profundidad": 131.0,
+      "latitud": 6.667640865897138,
+      "longitud": -73.11129739961798,
+      "distancia_km": 242.15031158477115,
+      "lugar": "Curití - Santander, Colombia",
+      "hora_local": "2026-11-16 04:47:15",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75333,7 +75333,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-16 04:47:14",
+      "fecha_local": "2026-11-16 04:47:15",
       "lat": 6.747166666666667,
       "lon": -73.09333333333333,
       "distancia_bogota": 251.0,
