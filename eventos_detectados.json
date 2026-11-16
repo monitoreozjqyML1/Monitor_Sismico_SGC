@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-16T00:50:26.393502-05:00",
+  "actualizado": "2026-11-16T00:55:27.398107-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2645,
+    "total_eventos": 2644,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -7786,34 +7786,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026ukymta": {
-      "id": "SGC2026ukymta",
-      "magnitud": 1.5,
-      "profundidad": 41.0,
-      "latitud": 8.575166666666666,
-      "longitud": -74.21766666666667,
-      "distancia_km": 429.9763009865482,
-      "lugar": "Tiquisio (Puerto Rico) - Bolívar, Colombia",
-      "hora_local": "2026-10-17 00:50:53",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-17 00:50:53",
-      "lat": 8.575166666666666,
-      "lon": -74.21766666666667,
-      "distancia_bogota": 430.0,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ukyqoe": {
