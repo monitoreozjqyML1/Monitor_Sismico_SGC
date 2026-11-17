@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T12:50:31.036334-05:00",
+  "actualizado": "2026-11-17T12:55:27.683606-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2671,
@@ -76102,12 +76102,12 @@
     },
     "SGC2026wqhewz": {
       "id": "SGC2026wqhewz",
-      "magnitud": 2.2,
-      "profundidad": 142.0,
-      "latitud": 6.781666666666666,
-      "longitud": -73.1,
-      "distancia_km": 254.12506157942443,
-      "lugar": "Los Santos - Santander, Colombia",
+      "magnitud": 2.0,
+      "profundidad": 132.0,
+      "latitud": 6.676101067201621,
+      "longitud": -73.09418429098994,
+      "distancia_km": 243.82979237697407,
+      "lugar": "Curití - Santander, Colombia",
       "hora_local": "2026-11-17 06:28:26",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
