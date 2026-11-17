@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T12:20:29.922674-05:00",
+  "actualizado": "2026-11-17T12:25:29.026607-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2668,
@@ -76018,11 +76018,11 @@
     },
     "SGC2026wqedaj": {
       "id": "SGC2026wqedaj",
-      "magnitud": 1.8,
-      "profundidad": 142.0,
-      "latitud": 6.744166666666667,
-      "longitud": -73.04116666666667,
-      "distancia_km": 253.21921138480405,
+      "magnitud": 1.7,
+      "profundidad": 134.0,
+      "latitud": 6.678216117527741,
+      "longitud": -73.0706514286659,
+      "distancia_km": 245.20595234014132,
       "lugar": "Aratoca - Santander, Colombia",
       "hora_local": "2026-11-17 04:55:45",
       "candidato_acelerografico": false,
