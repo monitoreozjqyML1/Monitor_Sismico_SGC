@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T00:40:34.605262-05:00",
+  "actualizado": "2026-11-17T00:45:27.918889-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2644,
+    "total_eventos": 2643,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -6694,34 +6694,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026umtxxi": {
-      "id": "SGC2026umtxxi",
-      "magnitud": 1.0,
-      "profundidad": 29.0,
-      "latitud": 7.171833333333334,
-      "longitud": -74.1425,
-      "distancia_km": 273.7429164647512,
-      "lugar": "Cantagallo - Bolívar, Colombia",
-      "hora_local": "2026-10-18 00:40:46",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-18 00:40:46",
-      "lat": 7.171833333333334,
-      "lon": -74.1425,
-      "distancia_bogota": 273.7,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026umucrk": {
