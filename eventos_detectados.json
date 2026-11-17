@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T09:45:28.925607-05:00",
+  "actualizado": "2026-11-17T09:50:29.555405-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2647,
+    "total_eventos": 2648,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75454,6 +75454,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-17T09:40:15.558025-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wpvxnp": {
+      "id": "SGC2026wpvxnp",
+      "magnitud": 1.7,
+      "profundidad": 96.0,
+      "latitud": 9.635,
+      "longitud": -73.53716666666666,
+      "distancia_km": 550.693213259632,
+      "lugar": "El Paso - Cesar, Colombia",
+      "hora_local": "2026-11-17 00:48:00",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 00:48:00",
+      "lat": 9.635,
+      "lon": -73.53716666666666,
+      "distancia_bogota": 550.7,
+      "tipo_magnitud": "MLr_4",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-17T09:50:17.116321-05:00",
       "alerta_enviada": false
     }
   }
