@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T12:15:32.427681-05:00",
+  "actualizado": "2026-11-17T12:20:29.922674-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2667,
+    "total_eventos": 2668,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76014,6 +76014,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-17T12:15:20.093613-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wqedaj": {
+      "id": "SGC2026wqedaj",
+      "magnitud": 1.8,
+      "profundidad": 142.0,
+      "latitud": 6.744166666666667,
+      "longitud": -73.04116666666667,
+      "distancia_km": 253.21921138480405,
+      "lugar": "Aratoca - Santander, Colombia",
+      "hora_local": "2026-11-17 04:55:45",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 04:55:45",
+      "lat": 6.744166666666667,
+      "lon": -73.04116666666667,
+      "distancia_bogota": 253.2,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-17T12:20:18.584155-05:00",
       "alerta_enviada": false
     }
   }
