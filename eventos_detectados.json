@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T11:35:33.419617-05:00",
+  "actualizado": "2026-11-17T11:40:29.610115-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2660,
+    "total_eventos": 2661,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -6358,34 +6358,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026unppxn": {
-      "id": "SGC2026unppxn",
-      "magnitud": 1.7,
-      "profundidad": 140.0,
-      "latitud": 6.811464288073333,
-      "longitud": -73.11989032593597,
-      "distancia_km": 256.21716937622045,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-18 11:35:28",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-18 11:35:28",
-      "lat": 6.811464288073333,
-      "lon": -73.11989032593597,
-      "distancia_bogota": 256.2,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026unsjfy": {
@@ -75818,6 +75790,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-17T11:30:14.482259-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wqbrcw": {
+      "id": "SGC2026wqbrcw",
+      "magnitud": 1.9,
+      "profundidad": 127.0,
+      "latitud": 5.6135,
+      "longitud": -73.70216666666667,
+      "distancia_km": 108.39344714933087,
+      "lugar": "Chiquinquirá - Boyacá, Colombia",
+      "hora_local": "2026-11-17 03:41:36",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 03:41:36",
+      "lat": 5.6135,
+      "lon": -73.70216666666667,
+      "distancia_bogota": 108.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-17T11:40:17.182595-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wqiinc": {
+      "id": "SGC2026wqiinc",
+      "magnitud": 2.0,
+      "profundidad": 7.0,
+      "latitud": 3.760504192644502,
+      "longitud": -74.02751444980143,
+      "distancia_km": 105.80588814150693,
+      "lugar": "Cubarral - Meta, Colombia",
+      "hora_local": "2026-11-17 07:02:47",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 07:02:47",
+      "lat": 3.760504192644502,
+      "lon": -74.02751444980143,
+      "distancia_bogota": 105.8,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-17T11:40:17.182595-05:00",
       "alerta_enviada": false
     }
   }
