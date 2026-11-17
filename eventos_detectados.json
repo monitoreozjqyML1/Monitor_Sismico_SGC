@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T08:30:25.599403-05:00",
+  "actualizado": "2026-11-17T08:35:29.139724-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2638,
@@ -75094,13 +75094,13 @@
     },
     "SGC2026wqgpyl": {
       "id": "SGC2026wqgpyl",
-      "magnitud": 2.3,
-      "profundidad": 0.0,
-      "latitud": 6.621,
-      "longitud": -73.06933333333333,
-      "distancia_km": 239.61782563506296,
+      "magnitud": 2.4,
+      "profundidad": 14.0,
+      "latitud": 6.571406076058655,
+      "longitud": -73.06101097108018,
+      "distancia_km": 235.18297111976597,
       "lugar": "Curití - Santander, Colombia",
-      "hora_local": "2026-11-17 06:11:06",
+      "hora_local": "2026-11-17 06:11:04",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75109,7 +75109,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-17 06:11:06",
+      "fecha_local": "2026-11-17 06:11:04",
       "lat": 6.621,
       "lon": -73.06933333333333,
       "distancia_bogota": 239.6,
