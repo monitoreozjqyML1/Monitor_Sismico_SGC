@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T11:40:29.610115-05:00",
+  "actualizado": "2026-11-17T11:45:30.300566-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2661,
@@ -75795,12 +75795,12 @@
     "SGC2026wqbrcw": {
       "id": "SGC2026wqbrcw",
       "magnitud": 1.9,
-      "profundidad": 127.0,
-      "latitud": 5.6135,
-      "longitud": -73.70216666666667,
-      "distancia_km": 108.39344714933087,
+      "profundidad": 119.0,
+      "latitud": 5.611173227999945,
+      "longitud": -73.71210833433751,
+      "distancia_km": 107.74176962148918,
       "lugar": "Chiquinquirá - Boyacá, Colombia",
-      "hora_local": "2026-11-17 03:41:36",
+      "hora_local": "2026-11-17 03:41:35",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75809,7 +75809,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-17 03:41:36",
+      "fecha_local": "2026-11-17 03:41:35",
       "lat": 5.6135,
       "lon": -73.70216666666667,
       "distancia_bogota": 108.4,
