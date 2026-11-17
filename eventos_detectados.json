@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T12:00:27.198288-05:00",
+  "actualizado": "2026-11-17T12:05:32.396697-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2664,
+    "total_eventos": 2665,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75930,6 +75930,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-17T12:00:15.463717-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wqcyvu": {
+      "id": "SGC2026wqcyvu",
+      "magnitud": 1.5,
+      "profundidad": 40.0,
+      "latitud": 3.3565295803554855,
+      "longitud": -74.84654561778179,
+      "distancia_km": 173.38423643153342,
+      "lugar": "Alpujarra - Tolima, Colombia",
+      "hora_local": "2026-11-17 04:20:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 04:20:42",
+      "lat": 3.3565295803554855,
+      "lon": -74.84654561778179,
+      "distancia_bogota": 173.4,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-17T12:05:21.202458-05:00",
       "alerta_enviada": false
     }
   }
