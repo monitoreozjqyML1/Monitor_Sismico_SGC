@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T08:35:29.139724-05:00",
+  "actualizado": "2026-11-17T08:40:36.810067-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2638,
+    "total_eventos": 2637,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -6442,34 +6442,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026unjscc": {
-      "id": "SGC2026unjscc",
-      "magnitud": 1.5,
-      "profundidad": 26.0,
-      "latitud": 6.46565355975263,
-      "longitud": -74.7995774020393,
-      "distancia_km": 211.06459968880907,
-      "lugar": "Maceo - Antioquia, Colombia",
-      "hora_local": "2026-10-18 08:37:57",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-18 08:37:57",
-      "lat": 6.46565355975263,
-      "lon": -74.7995774020393,
-      "distancia_bogota": 211.1,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026unmegk": {
