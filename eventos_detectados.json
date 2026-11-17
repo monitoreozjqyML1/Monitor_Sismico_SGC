@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T00:50:27.205772-05:00",
+  "actualizado": "2026-11-17T00:55:35.340675-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2644,
+    "total_eventos": 2642,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -6694,62 +6694,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026umugwy": {
-      "id": "SGC2026umugwy",
-      "magnitud": 1.1,
-      "profundidad": 13.0,
-      "latitud": 4.800580190514261,
-      "longitud": -75.18091497481745,
-      "distancia_km": 123.27318008859834,
-      "lugar": "Murillo - Tolima, Colombia",
-      "hora_local": "2026-10-18 00:52:21",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-18 00:52:21",
-      "lat": 4.800580190514261,
-      "lon": -75.18091497481745,
-      "distancia_bogota": 123.3,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026umuiku": {
-      "id": "SGC2026umuiku",
-      "magnitud": 1.5,
-      "profundidad": 150.0,
-      "latitud": 7.473,
-      "longitud": -73.19033333333333,
-      "distancia_km": 322.22067173257994,
-      "lugar": "El Playón - Santander, Colombia",
-      "hora_local": "2026-10-18 00:54:08",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-18 00:54:08",
-      "lat": 7.473,
-      "lon": -73.19033333333333,
-      "distancia_bogota": 322.2,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026umuyfs": {
