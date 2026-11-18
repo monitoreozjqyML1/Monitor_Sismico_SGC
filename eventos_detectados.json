@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-18T12:35:29.064520-05:00",
+  "actualizado": "2026-11-18T12:40:32.000235-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2673,
+    "total_eventos": 2674,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76182,6 +76182,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-18T12:25:18.092603-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wsfqek": {
+      "id": "SGC2026wsfqek",
+      "magnitud": 0.7,
+      "profundidad": 0.0,
+      "latitud": 5.582620048597319,
+      "longitud": -75.51721490222631,
+      "distancia_km": 187.09948825216563,
+      "lugar": "Pácora - Caldas, Colombia",
+      "hora_local": "2026-11-18 07:50:10",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-18 07:50:10",
+      "lat": 5.582620048597319,
+      "lon": -75.51721490222631,
+      "distancia_bogota": 187.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-18T12:40:19.350825-05:00",
       "alerta_enviada": false
     }
   }
