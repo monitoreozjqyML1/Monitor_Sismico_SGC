@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T05:15:26.800894-05:00",
+  "actualizado": "2026-11-18T05:20:25.103378-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2660,
@@ -48384,13 +48384,13 @@
     },
     "SGC2026vyojmo": {
       "id": "SGC2026vyojmo",
-      "magnitud": 2.1,
-      "profundidad": 26.0,
-      "latitud": 6.446618106817546,
-      "longitud": -73.47370576232235,
-      "distancia_km": 204.03689951080176,
-      "lugar": "Santa Helena del Opón - Santander, Colombia",
-      "hora_local": "2026-11-07 14:44:24",
+      "magnitud": 2.0,
+      "profundidad": 0.0,
+      "latitud": 6.491166666666667,
+      "longitud": -73.51916666666666,
+      "distancia_km": 207.18664808633113,
+      "lugar": "Simacota - Santander, Colombia",
+      "hora_local": "2026-11-07 14:44:26",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -48399,7 +48399,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-07 14:44:24",
+      "fecha_local": "2026-11-07 14:44:26",
       "lat": 6.446618106817546,
       "lon": -73.47370576232235,
       "distancia_bogota": 204.0,
