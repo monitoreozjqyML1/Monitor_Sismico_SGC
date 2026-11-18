@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T21:50:25.105282-05:00",
+  "actualizado": "2026-11-17T21:55:29.212974-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2665,
+    "total_eventos": 2666,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75958,6 +75958,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-17T20:50:15.716275-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026saepjj": {
+      "id": "SGC2026saepjj",
+      "magnitud": 1.9,
+      "profundidad": 60.0,
+      "latitud": -2.79,
+      "longitud": -69.87,
+      "distancia_km": 955.8394912429374,
+      "lugar": "Tarapacá - Amazonas, Colombia",
+      "hora_local": "2026-11-17 21:50:57",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 21:50:57",
+      "lat": -2.79,
+      "lon": -69.87,
+      "distancia_bogota": 955.8,
+      "tipo_magnitud": "ML",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-17T21:55:17.737143-05:00",
       "alerta_enviada": false
     }
   }
