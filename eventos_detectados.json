@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-17T23:05:35.395277-05:00",
+  "actualizado": "2026-11-17T23:10:25.893964-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2659,
+    "total_eventos": 2660,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75790,6 +75790,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-17T21:55:17.737143-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wrgdwe": {
+      "id": "SGC2026wrgdwe",
+      "magnitud": 0.7,
+      "profundidad": 19.0,
+      "latitud": 5.25478724804864,
+      "longitud": -74.58762857503605,
+      "distancia_km": 83.17106833870783,
+      "lugar": "Caparrapí - Cundinamarca, Colombia",
+      "hora_local": "2026-11-17 19:01:31",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 19:01:31",
+      "lat": 5.25478724804864,
+      "lon": -74.58762857503605,
+      "distancia_bogota": 83.2,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-17T23:10:15.122288-05:00",
       "alerta_enviada": false
     }
   }
