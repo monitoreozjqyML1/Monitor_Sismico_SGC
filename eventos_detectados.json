@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T19:20:28.631565-05:00",
+  "actualizado": "2026-11-17T19:25:28.444277-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2669,
@@ -75710,13 +75710,13 @@
     },
     "SGC2026wqxpgo": {
       "id": "SGC2026wqxpgo",
-      "magnitud": 1.9,
-      "profundidad": 85.0,
-      "latitud": 5.132114329133651,
-      "longitud": -75.96551217032602,
-      "distancia_km": 214.92405010151384,
+      "magnitud": 2.1,
+      "profundidad": 93.0,
+      "latitud": 5.124711652992229,
+      "longitud": -75.992145286779,
+      "distancia_km": 217.63034934843463,
       "lugar": "Apía - Risaralda, Colombia",
-      "hora_local": "2026-11-17 14:43:12",
+      "hora_local": "2026-11-17 14:43:11",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75725,7 +75725,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-17 14:43:12",
+      "fecha_local": "2026-11-17 14:43:11",
       "lat": 5.132114329133651,
       "lon": -75.96551217032602,
       "distancia_bogota": 214.9,
