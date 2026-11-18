@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-18T05:20:25.103378-05:00",
+  "actualizado": "2026-11-18T05:25:28.900914-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2660,
+    "total_eventos": 2659,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -5714,34 +5714,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uoyyov": {
-      "id": "SGC2026uoyyov",
-      "magnitud": 1.5,
-      "profundidad": 106.0,
-      "latitud": 8.370333333333333,
-      "longitud": -73.55316666666667,
-      "distancia_km": 410.9163975871071,
-      "lugar": "Aguachica - Cesar, Colombia",
-      "hora_local": "2026-10-19 05:22:32",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-19 05:22:32",
-      "lat": 8.370333333333333,
-      "lon": -73.55316666666667,
-      "distancia_bogota": 410.9,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uozokr": {
@@ -31193,10 +31165,10 @@
     "SGC2026vjdvgx": {
       "id": "SGC2026vjdvgx",
       "magnitud": 1.4,
-      "profundidad": 166.0,
-      "latitud": 6.848833333333333,
-      "longitud": -73.26666666666667,
-      "distancia_km": 253.8655414754069,
+      "profundidad": 171.0,
+      "latitud": 6.8505,
+      "longitud": -73.25866666666667,
+      "distancia_km": 254.35077732126825,
       "lugar": "Zapatoca - Santander, Colombia",
       "hora_local": "2026-10-30 05:19:04",
       "candidato_acelerografico": false,
