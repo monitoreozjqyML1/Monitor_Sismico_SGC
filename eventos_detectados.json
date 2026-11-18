@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-18T14:50:36.564067-05:00",
+  "actualizado": "2026-11-18T15:00:30.562509-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2671,
+    "total_eventos": 2669,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.13,
+    "porcentaje_m4_o_mayores": 2.14,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -2664,34 +2664,6 @@
       "fecha_deteccion": "2026-10-19T16:20:17.328884-05:00",
       "alerta_enviada": false
     },
-    "SGC2026uprwtg": {
-      "id": "SGC2026uprwtg",
-      "magnitud": 2.1,
-      "profundidad": 138.0,
-      "latitud": 6.789256259649068,
-      "longitud": -73.15947252232833,
-      "distancia_km": 252.1842113945858,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-19 14:53:40",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-19 14:53:40",
-      "lat": 6.789,
-      "lon": -73.159,
-      "distancia_bogota": 252.2,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-19T20:48:39.735025-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026upsqcd": {
       "id": "SGC2026upsqcd",
       "magnitud": 2.1,
@@ -5322,34 +5294,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026upschd": {
-      "id": "SGC2026upschd",
-      "magnitud": 1.9,
-      "profundidad": 42.0,
-      "latitud": 7.149872340252615,
-      "longitud": -76.02816772246454,
-      "distancia_km": 346.9007224374796,
-      "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-10-19 15:00:03",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-19 15:00:03",
-      "lat": 7.149872340252615,
-      "lon": -76.02816772246454,
-      "distancia_bogota": 346.9,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026upubxc": {
