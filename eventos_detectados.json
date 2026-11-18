@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-18T01:15:30.219852-05:00",
+  "actualizado": "2026-11-18T01:20:30.830682-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2662,
+    "total_eventos": 2661,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2802,34 +2802,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-19T10:30:17.420437-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uoqupe": {
-      "id": "SGC2026uoqupe",
-      "magnitud": 2.7,
-      "profundidad": 25.0,
-      "latitud": 5.968616733114311,
-      "longitud": -71.37314186501767,
-      "distancia_km": 329.9057839477768,
-      "lugar": "Hato Corozal - Casanare, Colombia",
-      "hora_local": "2026-10-19 01:16:31",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-19 01:16:31",
-      "lat": 5.984,
-      "lon": -71.316,
-      "distancia_bogota": 336.4,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-19T10:55:15.862302-05:00",
       "alerta_enviada": false
     },
     "SGC2026uowzib": {
