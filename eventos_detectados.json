@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-18T00:10:30.896214-05:00",
+  "actualizado": "2026-11-18T00:15:26.001558-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2663,
+    "total_eventos": 2662,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -5910,34 +5910,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uoosej": {
-      "id": "SGC2026uoosej",
-      "magnitud": 1.6,
-      "profundidad": 53.0,
-      "latitud": 7.891197479557852,
-      "longitud": -74.49631894697868,
-      "distancia_km": 356.71572695062736,
-      "lugar": "Montecristo - Bolívar, Colombia",
-      "hora_local": "2026-10-19 00:13:21",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-19 00:13:21",
-      "lat": 7.891197479557852,
-      "lon": -74.49631894697868,
-      "distancia_bogota": 356.7,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uoozfb": {
