@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T05:10:27.583192-05:00",
+  "actualizado": "2026-11-18T05:15:26.800894-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2660,
@@ -54768,7 +54768,7 @@
     },
     "SGC2026wdwlfl": {
       "id": "SGC2026wdwlfl",
-      "magnitud": 2.3,
+      "magnitud": 2.5,
       "profundidad": 36.0,
       "latitud": 5.913625424635178,
       "longitud": -76.45542067399481,
@@ -54964,13 +54964,13 @@
     },
     "SGC2026wdzzug": {
       "id": "SGC2026wdzzug",
-      "magnitud": 1.1,
-      "profundidad": 0.0,
-      "latitud": 6.000833333333333,
-      "longitud": -74.7475,
-      "distancia_km": 161.7433725137316,
+      "magnitud": 1.2,
+      "profundidad": 3.0,
+      "latitud": 5.995833333333334,
+      "longitud": -74.73683333333334,
+      "distancia_km": 160.7065571800752,
       "lugar": "Puerto Nare - Antioquia, Colombia",
-      "hora_local": "2026-11-10 13:57:36",
+      "hora_local": "2026-11-10 13:57:37",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -54979,7 +54979,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-10 13:57:36",
+      "fecha_local": "2026-11-10 13:57:37",
       "lat": 6.000833333333333,
       "lon": -74.7475,
       "distancia_bogota": 161.7,
