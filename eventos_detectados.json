@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-18T18:45:29.654928-05:00",
+  "actualizado": "2026-11-18T18:50:30.259925-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2652,
+    "total_eventos": 2653,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75594,6 +75594,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-18T18:45:18.418267-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wslvih": {
+      "id": "SGC2026wslvih",
+      "magnitud": 0.8,
+      "profundidad": 12.0,
+      "latitud": 5.963666666666667,
+      "longitud": -74.83483333333334,
+      "distancia_km": 162.8874175407232,
+      "lugar": "San Luis - Antioquia, Colombia",
+      "hora_local": "2026-11-18 10:57:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-18 10:57:09",
+      "lat": 5.963666666666667,
+      "lon": -74.83483333333334,
+      "distancia_bogota": 162.9,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-18T18:50:19.337708-05:00",
       "alerta_enviada": false
     }
   }
