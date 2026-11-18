@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-17T21:05:25.204311-05:00",
+  "actualizado": "2026-11-17T21:10:33.513175-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2670,
+    "total_eventos": 2669,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.13,
+    "porcentaje_m4_o_mayores": 2.14,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -6050,34 +6050,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uoioxo": {
-      "id": "SGC2026uoioxo",
-      "magnitud": 1.1,
-      "profundidad": 118.0,
-      "latitud": 6.517166666666666,
-      "longitud": -73.63983333333333,
-      "distancia_km": 206.45423061801947,
-      "lugar": "Simacota - Santander, Colombia",
-      "hora_local": "2026-10-18 21:08:34",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-18 21:08:34",
-      "lat": 6.517166666666666,
-      "lon": -73.63983333333333,
-      "distancia_bogota": 206.5,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uojbmv": {
