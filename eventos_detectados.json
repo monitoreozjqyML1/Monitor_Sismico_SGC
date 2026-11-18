@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-18T04:05:27.526200-05:00",
+  "actualizado": "2026-11-18T04:10:35.710548-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2660,
+    "total_eventos": 2661,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75818,6 +75818,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-18T04:05:16.196300-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wrprzg": {
+      "id": "SGC2026wrprzg",
+      "magnitud": 2.0,
+      "profundidad": 139.0,
+      "latitud": 5.260074873863941,
+      "longitud": -73.72022866111048,
+      "distancia_km": 72.43567382053861,
+      "lugar": "Lenguazaque - Cundinamarca, Colombia",
+      "hora_local": "2026-11-17 23:49:27",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-17 23:49:27",
+      "lat": 5.260074873863941,
+      "lon": -73.72022866111048,
+      "distancia_bogota": 72.4,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-18T04:10:23.196726-05:00",
       "alerta_enviada": false
     }
   }
