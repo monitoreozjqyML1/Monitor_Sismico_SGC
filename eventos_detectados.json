@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T06:40:26.072347-05:00",
+  "actualizado": "2026-11-19T06:45:30.592185-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2663,
+    "total_eventos": 2662,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -4622,34 +4622,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqxkme": {
-      "id": "SGC2026uqxkme",
-      "magnitud": 1.8,
-      "profundidad": 138.0,
-      "latitud": 7.427166666666666,
-      "longitud": -73.235,
-      "distancia_km": 315.8861833858293,
-      "lugar": "Rionegro - Santander, Colombia",
-      "hora_local": "2026-10-20 06:44:57",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 06:44:57",
-      "lat": 7.427166666666666,
-      "lon": -73.235,
-      "distancia_bogota": 315.9,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uqydwk": {
@@ -70615,12 +70587,12 @@
     "SGC2026wqtyak": {
       "id": "SGC2026wqtyak",
       "magnitud": 2.3,
-      "profundidad": 93.0,
-      "latitud": 4.779333333333334,
-      "longitud": -76.1955,
-      "distancia_km": 235.42457536861772,
+      "profundidad": 84.0,
+      "latitud": 4.718621990377092,
+      "longitud": -76.20139742138971,
+      "distancia_km": 235.96732172758087,
       "lugar": "El Cairo - Valle del Cauca, Colombia",
-      "hora_local": "2026-11-17 12:52:43",
+      "hora_local": "2026-11-17 12:52:42",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -70629,7 +70601,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-17 12:52:43",
+      "fecha_local": "2026-11-17 12:52:42",
       "lat": 4.71333436456179,
       "lon": -76.21096741891608,
       "distancia_bogota": 237.0,
