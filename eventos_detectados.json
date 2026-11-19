@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-19T05:20:30.286089-05:00",
+  "actualizado": "2026-11-19T05:25:27.474438-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2658,
+    "total_eventos": 2657,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.14,
+    "porcentaje_m4_o_mayores": 2.15,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -2746,34 +2746,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-20T10:20:21.515127-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uquqeb": {
-      "id": "SGC2026uquqeb",
-      "magnitud": 3.0,
-      "profundidad": 51.0,
-      "latitud": 4.266001220587302,
-      "longitud": -76.73849730556434,
-      "distancia_km": 299.69274094052935,
-      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
-      "hora_local": "2026-10-20 05:21:00",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 05:21:00",
-      "lat": 4.266,
-      "lon": -76.738,
-      "distancia_bogota": 299.6,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-20T13:45:17.384912-05:00",
       "alerta_enviada": false
     },
     "SGC2026uquuoa": {
