@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T10:45:34.312100-05:00",
+  "actualizado": "2026-11-19T10:50:35.265639-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2664,
+    "total_eventos": 2665,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75930,6 +75930,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T10:40:17.059757-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wtoneh": {
+      "id": "SGC2026wtoneh",
+      "magnitud": 2.0,
+      "profundidad": 142.0,
+      "latitud": 7.444833333333333,
+      "longitud": -73.168,
+      "distancia_km": 320.0003587832205,
+      "lugar": "El Playón - Santander, Colombia",
+      "hora_local": "2026-11-19 01:22:41",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 01:22:41",
+      "lat": 7.444833333333333,
+      "lon": -73.168,
+      "distancia_bogota": 320.0,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T10:50:23.567486-05:00",
       "alerta_enviada": false
     }
   }
