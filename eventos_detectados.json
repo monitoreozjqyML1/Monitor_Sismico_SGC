@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T17:35:29.712877-05:00",
+  "actualizado": "2026-11-19T17:40:26.776830-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2702,
+    "total_eventos": 2703,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76994,6 +76994,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T17:35:17.153856-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wuovkc": {
+      "id": "SGC2026wuovkc",
+      "magnitud": 1.1,
+      "profundidad": 22.0,
+      "latitud": 5.027419337990686,
+      "longitud": -74.73317771445231,
+      "distancia_km": 81.25565616883179,
+      "lugar": "Guaduas - Cundinamarca, Colombia",
+      "hora_local": "2026-11-19 14:36:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 14:36:42",
+      "lat": 5.027419337990686,
+      "lon": -74.73317771445231,
+      "distancia_bogota": 81.3,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T17:40:14.640388-05:00",
       "alerta_enviada": false
     }
   }
