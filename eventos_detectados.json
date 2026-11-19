@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T15:15:30.772241-05:00",
+  "actualizado": "2026-11-19T15:20:30.773770-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2687,
+    "total_eventos": 2688,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -14650,11 +14650,11 @@
     },
     "SGC2026uzuxng": {
       "id": "SGC2026uzuxng",
-      "magnitud": 1.3,
+      "magnitud": 1.5,
       "profundidad": 155.0,
-      "latitud": 6.868666666666667,
-      "longitud": -73.255,
-      "distancia_km": 256.38335339954966,
+      "latitud": 6.857166666666666,
+      "longitud": -73.22183333333334,
+      "distancia_km": 256.50998562008084,
       "lugar": "Zapatoca - Santander, Colombia",
       "hora_local": "2026-10-25 03:09:51",
       "candidato_acelerografico": false,
@@ -19884,13 +19884,13 @@
     },
     "SGC2026vdlhkw": {
       "id": "SGC2026vdlhkw",
-      "magnitud": 1.5,
-      "profundidad": 141.0,
-      "latitud": 6.847333333333333,
-      "longitud": -73.26283333333333,
-      "distancia_km": 253.85864364578302,
+      "magnitud": 1.3,
+      "profundidad": 147.0,
+      "latitud": 6.8315,
+      "longitud": -73.26716666666667,
+      "distancia_km": 252.04264361201984,
       "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "2026-10-27 02:37:32",
+      "hora_local": "2026-10-27 02:37:31",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -19899,7 +19899,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-27 02:37:32",
+      "fecha_local": "2026-10-27 02:37:31",
       "lat": 6.847333333333333,
       "lon": -73.26283333333333,
       "distancia_bogota": 253.9,
@@ -33432,7 +33432,7 @@
     },
     "SGC2026vpdnos": {
       "id": "SGC2026vpdnos",
-      "magnitud": 1.7,
+      "magnitud": 1.5,
       "profundidad": 22.0,
       "latitud": 7.161333333333333,
       "longitud": -75.84566666666667,
@@ -76574,6 +76574,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T15:15:19.295075-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wuljcz": {
+      "id": "SGC2026wuljcz",
+      "magnitud": 2.6,
+      "profundidad": 135.0,
+      "latitud": 6.816751913888634,
+      "longitud": -73.15092165131327,
+      "distancia_km": 255.36380045508645,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-11-19 12:51:56",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 12:51:56",
+      "lat": 6.816751913888634,
+      "lon": -73.15092165131327,
+      "distancia_bogota": 255.4,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T15:20:18.394969-05:00",
       "alerta_enviada": false
     }
   }
