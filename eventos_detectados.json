@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-19T17:10:27.597704-05:00",
+  "actualizado": "2026-11-19T17:15:28.838434-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2695,
+    "total_eventos": 2696,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.12,
+    "porcentaje_m4_o_mayores": 2.11,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -76798,6 +76798,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T17:00:15.568046-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wulwwa": {
+      "id": "SGC2026wulwwa",
+      "magnitud": 1.3,
+      "profundidad": 16.0,
+      "latitud": 3.1302191954605907,
+      "longitud": -75.87397917787764,
+      "distancia_km": 266.17772391237537,
+      "lugar": "Planadas - Tolima, Colombia",
+      "hora_local": "2026-11-19 13:07:51",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 13:07:51",
+      "lat": 3.1302191954605907,
+      "lon": -75.87397917787764,
+      "distancia_bogota": 266.2,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T17:15:16.842880-05:00",
       "alerta_enviada": false
     }
   }
