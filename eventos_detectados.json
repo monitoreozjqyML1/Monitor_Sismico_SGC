@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T18:00:30.567055-05:00",
+  "actualizado": "2026-11-19T18:05:46.891757-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2709,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026urtunx": {
-      "id": "SGC2026urtunx",
-      "magnitud": 2.8,
-      "profundidad": 137.0,
-      "latitud": 5.289685578429628,
-      "longitud": -73.71812906678586,
-      "distancia_km": 75.35205622744475,
-      "lugar": "Lenguazaque - Cundinamarca, Colombia",
-      "hora_local": "2026-10-20 18:00:25",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 18:00:25",
-      "lat": 5.258,
-      "lon": -73.663,
-      "distancia_bogota": 75.8,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-20T18:10:17.872892-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uruplb": {
       "id": "SGC2026uruplb",
@@ -69438,7 +69410,7 @@
     },
     "SGC2026wqiinc": {
       "id": "SGC2026wqiinc",
-      "magnitud": 2.0,
+      "magnitud": 2.1,
       "profundidad": 7.0,
       "latitud": 3.760504192644502,
       "longitud": -74.02751444980143,
@@ -73135,12 +73107,12 @@
     "SGC2026wspqqb": {
       "id": "SGC2026wspqqb",
       "magnitud": 2.0,
-      "profundidad": 26.0,
-      "latitud": 9.368166666666667,
-      "longitud": -74.90066666666667,
-      "distancia_km": 525.8594083824217,
+      "profundidad": 22.0,
+      "latitud": 9.328666666666667,
+      "longitud": -74.855,
+      "distancia_km": 520.6758837259936,
       "lugar": "Magangué - Bolívar, Colombia",
-      "hora_local": "2026-11-18 12:52:23",
+      "hora_local": "2026-11-18 12:52:22",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -73149,7 +73121,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-18 12:52:23",
+      "fecha_local": "2026-11-18 12:52:22",
       "lat": 9.368166666666667,
       "lon": -74.90066666666667,
       "distancia_bogota": 525.9,
@@ -76718,11 +76690,11 @@
     },
     "SGC2026wulmzh": {
       "id": "SGC2026wulmzh",
-      "magnitud": 2.1,
-      "profundidad": 122.0,
-      "latitud": 6.812833333333334,
-      "longitud": -73.28,
-      "distancia_km": 249.60053761420718,
+      "magnitud": 2.2,
+      "profundidad": 123.0,
+      "latitud": 6.813166666666667,
+      "longitud": -73.251,
+      "distancia_km": 250.77936587317214,
       "lugar": "Zapatoca - Santander, Colombia",
       "hora_local": "2026-11-19 12:56:25",
       "candidato_acelerografico": false,
@@ -77190,6 +77162,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T18:00:19.028069-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wufaom": {
+      "id": "SGC2026wufaom",
+      "magnitud": 1.2,
+      "profundidad": 10.0,
+      "latitud": 3.7416666666666667,
+      "longitud": -75.6305,
+      "distancia_km": 203.6709873678526,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-19 09:40:58",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 09:40:58",
+      "lat": 3.7416666666666667,
+      "lon": -75.6305,
+      "distancia_bogota": 203.7,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T18:05:33.822177-05:00",
       "alerta_enviada": false
     }
   }
