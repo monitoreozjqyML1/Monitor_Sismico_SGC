@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T05:00:34.396599-05:00",
+  "actualizado": "2026-11-19T05:05:26.972551-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2659,
+    "total_eventos": 2660,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75790,6 +75790,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T05:00:22.652134-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wtgqmh": {
+      "id": "SGC2026wtgqmh",
+      "magnitud": 1.3,
+      "profundidad": 75.0,
+      "latitud": 5.823833333333333,
+      "longitud": -74.276,
+      "distancia_km": 125.78409771016861,
+      "lugar": "Puerto Boyacá - Boyacá, Colombia",
+      "hora_local": "2026-11-18 21:24:59",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-18 21:24:59",
+      "lat": 5.823833333333333,
+      "lon": -74.276,
+      "distancia_bogota": 125.8,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T05:05:16.126851-05:00",
       "alerta_enviada": false
     }
   }
