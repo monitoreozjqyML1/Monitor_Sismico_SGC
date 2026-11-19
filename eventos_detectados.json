@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T15:10:36.174550-05:00",
+  "actualizado": "2026-11-19T15:15:30.772241-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2686,
+    "total_eventos": 2687,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -9414,7 +9414,7 @@
     },
     "SGC2026uvxylp": {
       "id": "SGC2026uvxylp",
-      "magnitud": 1.2,
+      "magnitud": 1.1,
       "profundidad": 37.0,
       "latitud": 7.284178035961267,
       "longitud": -75.91660328832774,
@@ -12690,13 +12690,13 @@
     },
     "SGC2026uyiqhp": {
       "id": "SGC2026uyiqhp",
-      "magnitud": 2.8,
-      "profundidad": 0.0,
-      "latitud": 6.236,
-      "longitud": -75.77283333333334,
-      "distancia_km": 253.35919869493804,
+      "magnitud": 2.6,
+      "profundidad": 13.0,
+      "latitud": 6.220836484504183,
+      "longitud": -75.76859456518633,
+      "distancia_km": 251.88571424002478,
       "lugar": "Heliconia - Antioquia, Colombia",
-      "hora_local": "2026-10-24 07:55:04",
+      "hora_local": "2026-10-24 07:55:03",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -12705,7 +12705,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-10-24 07:55:04",
+      "fecha_local": "2026-10-24 07:55:03",
       "lat": 6.236,
       "lon": -75.77283333333334,
       "distancia_bogota": 253.4,
@@ -14622,11 +14622,11 @@
     },
     "SGC2026uzuadw": {
       "id": "SGC2026uzuadw",
-      "magnitud": 1.3,
+      "magnitud": 1.5,
       "profundidad": 155.0,
-      "latitud": 6.873,
-      "longitud": -73.25483333333334,
-      "distancia_km": 256.84067537023174,
+      "latitud": 6.8645,
+      "longitud": -73.2275,
+      "distancia_km": 257.0400366414057,
       "lugar": "Zapatoca - Santander, Colombia",
       "hora_local": "2026-10-25 02:42:44",
       "candidato_acelerografico": false,
@@ -76546,6 +76546,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T14:05:22.172599-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026uxtpdf": {
+      "id": "SGC2026uxtpdf",
+      "magnitud": 1.1,
+      "profundidad": 13.0,
+      "latitud": 7.097333333333333,
+      "longitud": -75.3175,
+      "distancia_km": 298.9668837872834,
+      "lugar": "Campamento - Antioquia, Colombia",
+      "hora_local": "2026-10-24 00:20:27",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-10-24 00:20:27",
+      "lat": 7.097333333333333,
+      "lon": -75.3175,
+      "distancia_bogota": 299.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T15:15:19.295075-05:00",
       "alerta_enviada": false
     }
   }
