@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T06:25:25.111622-05:00",
+  "actualizado": "2026-11-19T06:30:27.687578-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2663,
@@ -75374,7 +75374,7 @@
     },
     "SGC2026wtjpuq": {
       "id": "SGC2026wtjpuq",
-      "magnitud": 1.9,
+      "magnitud": 1.8,
       "profundidad": 16.0,
       "latitud": 3.800161386259262,
       "longitud": -75.65720304550298,
@@ -75626,7 +75626,7 @@
     },
     "SGC2026wtldhu": {
       "id": "SGC2026wtldhu",
-      "magnitud": 2.3,
+      "magnitud": 2.1,
       "profundidad": 14.0,
       "latitud": 3.8191968391943467,
       "longitud": -75.65406742940296,
@@ -75683,12 +75683,12 @@
     "SGC2026wtkjcz": {
       "id": "SGC2026wtkjcz",
       "magnitud": 2.0,
-      "profundidad": 25.0,
-      "latitud": 7.056810125903312,
-      "longitud": -76.31446110843386,
-      "distancia_km": 359.92552096859936,
+      "profundidad": 0.0,
+      "latitud": 7.028833333333333,
+      "longitud": -76.26983333333334,
+      "distancia_km": 354.27733596633567,
       "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-11-18 23:17:15",
+      "hora_local": "2026-11-18 23:17:17",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75697,7 +75697,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-18 23:17:15",
+      "fecha_local": "2026-11-18 23:17:17",
       "lat": 7.056810125903312,
       "lon": -76.31446110843386,
       "distancia_bogota": 359.9,
