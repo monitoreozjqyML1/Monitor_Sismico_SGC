@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-19T05:55:29.753681-05:00",
+  "actualizado": "2026-11-19T06:00:30.289576-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2658,
+    "total_eventos": 2656,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.14,
+    "porcentaje_m4_o_mayores": 2.15,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -2608,34 +2608,6 @@
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
     },
-    "SGC2026uqvxbc": {
-      "id": "SGC2026uqvxbc",
-      "magnitud": 2.4,
-      "profundidad": 26.0,
-      "latitud": 2.221276317810303,
-      "longitud": -75.53108232487196,
-      "distancia_km": 320.7204609245048,
-      "lugar": "Garzón - Huila, Colombia",
-      "hora_local": "2026-10-20 05:59:11",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 05:59:11",
-      "lat": 2.211,
-      "lon": -75.631,
-      "distancia_bogota": 327.4,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-20T07:16:32.317936-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026uqyvfo": {
       "id": "SGC2026uqyvfo",
       "magnitud": 2.0,
@@ -4650,34 +4622,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqvuhu": {
-      "id": "SGC2026uqvuhu",
-      "magnitud": 1.6,
-      "profundidad": 138.0,
-      "latitud": 6.764933180898682,
-      "longitud": -73.17551275061267,
-      "distancia_km": 248.99687306011464,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-20 05:56:01",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 05:56:01",
-      "lat": 6.764933180898682,
-      "lon": -73.17551275061267,
-      "distancia_bogota": 249.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uqwtdc": {
