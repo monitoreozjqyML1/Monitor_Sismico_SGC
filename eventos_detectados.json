@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T15:25:37.456914-05:00",
+  "actualizado": "2026-11-19T15:30:29.963286-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2688,
@@ -76383,10 +76383,10 @@
     "SGC2026wumcim": {
       "id": "SGC2026wumcim",
       "magnitud": 3.1,
-      "profundidad": 148.0,
-      "latitud": 6.811666666666667,
-      "longitud": -73.15816666666667,
-      "distancia_km": 254.52617788393212,
+      "profundidad": 144.0,
+      "latitud": 6.772335857040104,
+      "longitud": -73.11881067372036,
+      "distancia_km": 252.30886898990428,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-11-19 13:14:18",
       "candidato_acelerografico": false,
