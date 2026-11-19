@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T08:20:26.367191-05:00",
+  "actualizado": "2026-11-19T08:25:25.863615-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2659,
@@ -75766,11 +75766,11 @@
     },
     "SGC2026wtmfzq": {
       "id": "SGC2026wtmfzq",
-      "magnitud": 1.2,
-      "profundidad": 0.0,
-      "latitud": 1.965,
-      "longitud": -75.90533333333333,
-      "distancia_km": 366.9300813597887,
+      "magnitud": 1.0,
+      "profundidad": 19.0,
+      "latitud": 1.964826465768191,
+      "longitud": -75.89476676093103,
+      "distancia_km": 366.297077786469,
       "lugar": "Timaná - Huila, Colombia",
       "hora_local": "2026-11-19 00:14:00",
       "candidato_acelerografico": false,
