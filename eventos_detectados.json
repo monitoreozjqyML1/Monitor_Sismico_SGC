@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T03:45:37.394572-05:00",
+  "actualizado": "2026-11-19T03:50:28.065233-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2650,
+    "total_eventos": 2651,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -75538,6 +75538,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T03:30:16.801600-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wtfnkk": {
+      "id": "SGC2026wtfnkk",
+      "magnitud": 0.6,
+      "profundidad": 1.0,
+      "latitud": 4.919,
+      "longitud": -74.77266666666667,
+      "distancia_km": 80.99686640158053,
+      "lugar": "Ambalema - Tolima, Colombia",
+      "hora_local": "2026-11-18 20:51:24",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-18 20:51:24",
+      "lat": 4.919,
+      "lon": -74.77266666666667,
+      "distancia_bogota": 81.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T03:50:16.508956-05:00",
       "alerta_enviada": false
     }
   }
