@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T05:30:30.378096-05:00",
+  "actualizado": "2026-11-19T05:35:26.863671-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2657,
+    "total_eventos": 2656,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -4706,34 +4706,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqvbli": {
-      "id": "SGC2026uqvbli",
-      "magnitud": 1.4,
-      "profundidad": 146.0,
-      "latitud": 6.797666666666666,
-      "longitud": -73.13533333333334,
-      "distancia_km": 254.11845492539192,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-20 05:34:07",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 05:34:07",
-      "lat": 6.797666666666666,
-      "lon": -73.13533333333334,
-      "distancia_bogota": 254.1,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uqvuhu": {
@@ -75711,12 +75683,12 @@
     "SGC2026wtkhdm": {
       "id": "SGC2026wtkhdm",
       "magnitud": 0.9,
-      "profundidad": 2.0,
-      "latitud": 3.8,
-      "longitud": -75.67866666666667,
-      "distancia_km": 204.93407696526344,
+      "profundidad": 19.0,
+      "latitud": 3.822898177265057,
+      "longitud": -75.64715764546939,
+      "distancia_km": 200.63666069352175,
       "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-11-18 23:15:00",
+      "hora_local": "2026-11-18 23:14:59",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -75725,7 +75697,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-18 23:15:00",
+      "fecha_local": "2026-11-18 23:14:59",
       "lat": 3.8,
       "lon": -75.67866666666667,
       "distancia_bogota": 204.9,
