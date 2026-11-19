@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T23:25:28.879788-05:00",
+  "actualizado": "2026-11-18T23:30:29.469805-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2668,
@@ -76018,7 +76018,7 @@
     },
     "SGC2026wshctv": {
       "id": "SGC2026wshctv",
-      "magnitud": 1.9,
+      "magnitud": 1.8,
       "profundidad": 14.0,
       "latitud": 3.817081788868226,
       "longitud": -75.66151447822249,
