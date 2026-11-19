@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T12:00:30.464177-05:00",
+  "actualizado": "2026-11-19T12:05:30.291442-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2672,
+    "total_eventos": 2674,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76154,6 +76154,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T12:00:19.098686-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wtquak": {
+      "id": "SGC2026wtquak",
+      "magnitud": 1.8,
+      "profundidad": 144.0,
+      "latitud": 7.359166666666667,
+      "longitud": -73.12866666666666,
+      "distancia_km": 312.393479411599,
+      "lugar": "Rionegro - Santander, Colombia",
+      "hora_local": "2026-11-19 02:30:58",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 02:30:58",
+      "lat": 7.359166666666667,
+      "lon": -73.12866666666666,
+      "distancia_bogota": 312.4,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T12:05:17.939557-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wucdpd": {
+      "id": "SGC2026wucdpd",
+      "magnitud": 1.5,
+      "profundidad": 9.0,
+      "latitud": 2.9144840621962986,
+      "longitud": -76.00532058040831,
+      "distancia_km": 293.0988478189241,
+      "lugar": "Páez (Belalcázar) - Cauca, Colombia",
+      "hora_local": "2026-11-19 08:13:56",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 08:13:56",
+      "lat": 2.9144840621962986,
+      "lon": -76.00532058040831,
+      "distancia_bogota": 293.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T12:05:17.939557-05:00",
       "alerta_enviada": false
     }
   }
