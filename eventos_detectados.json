@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T13:05:27.173914-05:00",
+  "actualizado": "2026-11-19T13:10:29.253596-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2685,
@@ -76494,13 +76494,13 @@
     },
     "SGC2026wtsvjq": {
       "id": "SGC2026wtsvjq",
-      "magnitud": 2.5,
-      "profundidad": 10.0,
+      "magnitud": 2.6,
+      "profundidad": 25.0,
       "latitud": 7.342341919929581,
       "longitud": -77.17138171893241,
       "distancia_km": 450.6053148705839,
       "lugar": "Riosucio - Chocó, Colombia",
-      "hora_local": "2026-11-19 03:32:52",
+      "hora_local": "2026-11-19 03:32:53",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76509,7 +76509,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-19 03:32:52",
+      "fecha_local": "2026-11-19 03:32:53",
       "lat": 7.342341919929581,
       "lon": -77.17138171893241,
       "distancia_bogota": 450.6,
