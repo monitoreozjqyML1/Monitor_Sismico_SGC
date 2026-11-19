@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T19:00:31.461092-05:00",
+  "actualizado": "2026-11-18T19:10:29.872367-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2653,
@@ -5098,34 +5098,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqaivn": {
-      "id": "SGC2026uqaivn",
-      "magnitud": 1.8,
-      "profundidad": 145.0,
-      "latitud": 8.854333333333333,
-      "longitud": -73.03166666666667,
-      "distancia_km": 474.8183263189066,
-      "lugar": "El Tarra - Norte de Santander, Colombia",
-      "hora_local": "2026-10-19 19:09:05",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-19 19:09:05",
-      "lat": 8.854333333333333,
-      "lon": -73.03166666666667,
-      "distancia_bogota": 474.8,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uqammj": {
@@ -75622,6 +75594,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-18T18:55:20.807660-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wsnlaf": {
+      "id": "SGC2026wsnlaf",
+      "magnitud": 2.2,
+      "profundidad": 132.0,
+      "latitud": 6.7564729795942,
+      "longitud": -73.17550967837842,
+      "distancia_km": 248.1347386446732,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-11-18 11:45:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-18 11:45:32",
+      "lat": 6.7564729795942,
+      "lon": -73.17550967837842,
+      "distancia_bogota": 248.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-18T19:10:18.865314-05:00",
       "alerta_enviada": false
     }
   }
