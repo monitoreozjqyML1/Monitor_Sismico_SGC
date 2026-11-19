@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T02:25:31.763250-05:00",
+  "actualizado": "2026-11-19T02:30:28.991204-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2652,
+    "total_eventos": 2650,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -4790,62 +4790,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqoxxa": {
-      "id": "SGC2026uqoxxa",
-      "magnitud": 1.5,
-      "profundidad": 11.0,
-      "latitud": 10.800833333333333,
-      "longitud": -74.0455,
-      "distancia_km": 677.1649065043939,
-      "lugar": "Ciénaga - Magdalena, Colombia",
-      "hora_local": "2026-10-20 02:28:58",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 02:28:58",
-      "lat": 10.800833333333333,
-      "lon": -74.0455,
-      "distancia_bogota": 677.2,
-      "tipo_magnitud": "MLr_4",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqoyoa": {
-      "id": "SGC2026uqoyoa",
-      "magnitud": 1.3,
-      "profundidad": 0.0,
-      "latitud": 4.226666666666667,
-      "longitud": -76.5695,
-      "distancia_km": 282.0425272910751,
-      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
-      "hora_local": "2026-10-20 02:29:44",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 02:29:44",
-      "lat": 4.226666666666667,
-      "lon": -76.5695,
-      "distancia_bogota": 282.0,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uqpatl": {
