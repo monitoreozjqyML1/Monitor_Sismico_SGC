@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T07:25:25.069888-05:00",
+  "actualizado": "2026-11-19T07:30:30.587515-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2661,
+    "total_eventos": 2658,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2608,34 +2608,6 @@
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
     },
-    "SGC2026uqyvfo": {
-      "id": "SGC2026uqyvfo",
-      "magnitud": 2.0,
-      "profundidad": 49.0,
-      "latitud": 4.324165104555616,
-      "longitud": -76.73345500167237,
-      "distancia_km": 298.1284116589318,
-      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
-      "hora_local": "2026-10-20 07:27:36",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 07:27:36",
-      "lat": 4.324,
-      "lon": -76.733,
-      "distancia_bogota": 298.1,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-20T09:20:23.749852-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026urejld": {
       "id": "SGC2026urejld",
       "magnitud": 2.5,
@@ -4622,62 +4594,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqytpb": {
-      "id": "SGC2026uqytpb",
-      "magnitud": 1.8,
-      "profundidad": 137.0,
-      "latitud": 6.803004086768851,
-      "longitud": -73.1626869909127,
-      "distancia_km": 253.4438913492045,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-20 07:25:42",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 07:25:42",
-      "lat": 6.803004086768851,
-      "lon": -73.1626869909127,
-      "distancia_bogota": 253.4,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uqyuoy": {
-      "id": "SGC2026uqyuoy",
-      "magnitud": 1.4,
-      "profundidad": 18.0,
-      "latitud": 3.5701496632936567,
-      "longitud": -74.29555029337156,
-      "distancia_km": 129.25459902059833,
-      "lugar": "Uribe - Meta, Colombia",
-      "hora_local": "2026-10-20 07:26:50",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 07:26:50",
-      "lat": 3.5701496632936567,
-      "lon": -74.29555029337156,
-      "distancia_bogota": 129.3,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uqyzvh": {
