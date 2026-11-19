@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T14:40:37.685075-05:00",
+  "actualizado": "2026-11-19T14:45:27.151976-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2686,
@@ -76074,13 +76074,13 @@
     },
     "SGC2026wujuqs": {
       "id": "SGC2026wujuqs",
-      "magnitud": 1.4,
-      "profundidad": 4.0,
-      "latitud": 5.828833333333334,
-      "longitud": -74.91,
-      "distancia_km": 155.1032636542305,
+      "magnitud": 1.5,
+      "profundidad": 11.0,
+      "latitud": 5.767686952132864,
+      "longitud": -74.81858649583567,
+      "distancia_km": 143.6596544008163,
       "lugar": "Sonsón - Antioquia, Colombia",
-      "hora_local": "2026-11-19 12:04:58",
+      "hora_local": "2026-11-19 12:04:57",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76089,7 +76089,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-19 12:04:58",
+      "fecha_local": "2026-11-19 12:04:57",
       "lat": 5.828833333333334,
       "lon": -74.91,
       "distancia_bogota": 155.1,
