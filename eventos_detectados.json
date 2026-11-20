@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T13:25:27.767916-05:00",
+  "actualizado": "2026-11-20T13:30:30.857210-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2683,
+    "total_eventos": 2684,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76462,6 +76462,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T13:20:19.655864-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wvuorm": {
+      "id": "SGC2026wvuorm",
+      "magnitud": 1.6,
+      "profundidad": 22.0,
+      "latitud": 2.3603408767527263,
+      "longitud": -75.50208628663017,
+      "distancia_km": 305.7838789248065,
+      "lugar": "Gigante - Huila, Colombia",
+      "hora_local": "2026-11-20 06:34:23",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 06:34:23",
+      "lat": 2.3603408767527263,
+      "lon": -75.50208628663017,
+      "distancia_bogota": 305.8,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T13:30:19.904544-05:00",
       "alerta_enviada": false
     }
   }
