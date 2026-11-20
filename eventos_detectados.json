@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T00:15:29.190642-05:00",
+  "actualizado": "2026-11-20T00:20:26.860206-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2698,
+    "total_eventos": 2697,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -4062,34 +4062,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026usgjck": {
-      "id": "SGC2026usgjck",
-      "magnitud": 1.5,
-      "profundidad": 6.0,
-      "latitud": 4.357477147192014,
-      "longitud": -73.86045565573133,
-      "distancia_km": 45.778243459056334,
-      "lugar": "Quetame - Cundinamarca, Colombia",
-      "hora_local": "2026-10-21 00:19:21",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 00:19:21",
-      "lat": 4.357477147192014,
-      "lon": -73.86045565573133,
-      "distancia_bogota": 45.8,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026ushadf": {
