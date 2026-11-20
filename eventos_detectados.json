@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T11:50:32.592764-05:00",
+  "actualizado": "2026-11-20T11:55:31.251526-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2679,
+    "total_eventos": 2678,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2690,34 +2690,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-21T18:46:54.978054-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026utdkjm": {
-      "id": "SGC2026utdkjm",
-      "magnitud": 2.8,
-      "profundidad": 79.0,
-      "latitud": 11.688666666666666,
-      "longitud": -72.26216666666667,
-      "distancia_km": 801.0113328071272,
-      "lugar": "Uribia - la Guajira, Colombia",
-      "hora_local": "2026-10-21 11:54:49",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 11:54:49",
-      "lat": 11.689,
-      "lon": -72.262,
-      "distancia_bogota": 801.1,
-      "tipo_magnitud": "MLr_4",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-21T20:58:10.792722-05:00",
       "alerta_enviada": false
     },
     "SGC2026uttamm": {
