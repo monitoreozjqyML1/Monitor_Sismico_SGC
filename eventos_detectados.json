@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T20:40:30.645487-05:00",
+  "actualizado": "2026-11-19T20:45:37.183462-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2705,
+    "total_eventos": 2704,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -4230,34 +4230,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026urzdya": {
-      "id": "SGC2026urzdya",
-      "magnitud": 1.0,
-      "profundidad": 27.0,
-      "latitud": 6.00245753833224,
-      "longitud": -75.86200885029722,
-      "distancia_km": 244.7191367782664,
-      "lugar": "Concordia - Antioquia, Colombia",
-      "hora_local": "2026-10-20 20:42:09",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 20:42:09",
-      "lat": 6.00245753833224,
-      "lon": -75.86200885029722,
-      "distancia_bogota": 244.7,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026urzyki": {
