@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-20T05:45:28.869256-05:00",
+  "actualizado": "2026-11-20T05:50:25.068582-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2696,
+    "total_eventos": 2695,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.11,
+    "porcentaje_m4_o_mayores": 2.12,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -3894,62 +3894,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026usrekb": {
-      "id": "SGC2026usrekb",
-      "magnitud": 1.5,
-      "profundidad": 129.0,
-      "latitud": 6.786083684159887,
-      "longitud": -73.17552044841206,
-      "distancia_km": 251.15467547710327,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-21 05:45:49",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 05:45:49",
-      "lat": 6.786083684159887,
-      "lon": -73.17552044841206,
-      "distancia_bogota": 251.2,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026usrhks": {
-      "id": "SGC2026usrhks",
-      "magnitud": 1.4,
-      "profundidad": 120.0,
-      "latitud": 6.571833333333333,
-      "longitud": -73.74816666666666,
-      "distancia_km": 209.99685460206797,
-      "lugar": "Simacota - Santander, Colombia",
-      "hora_local": "2026-10-21 05:49:19",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 05:49:19",
-      "lat": 6.571833333333333,
-      "lon": -73.74816666666666,
-      "distancia_bogota": 210.0,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026usrnwo": {
@@ -76826,6 +76770,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T05:05:16.205353-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wuxsbt": {
+      "id": "SGC2026wuxsbt",
+      "magnitud": 1.6,
+      "profundidad": 3.0,
+      "latitud": 6.621666666666666,
+      "longitud": -71.69683333333333,
+      "distancia_km": 337.9483910656862,
+      "lugar": "Tame - Arauca, Colombia",
+      "hora_local": "2026-11-19 19:04:24",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 19:04:24",
+      "lat": 6.621666666666666,
+      "lon": -71.69683333333333,
+      "distancia_bogota": 337.9,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T05:50:14.071883-05:00",
       "alerta_enviada": false
     }
   }
