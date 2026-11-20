@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T20:05:28.250190-05:00",
+  "actualizado": "2026-11-19T20:10:37.484329-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2705,
+    "total_eventos": 2704,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -4258,34 +4258,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026urycoa": {
-      "id": "SGC2026urycoa",
-      "magnitud": 1.8,
-      "profundidad": 143.0,
-      "latitud": 8.509666666666666,
-      "longitud": -73.14916666666667,
-      "distancia_km": 434.51565518610755,
-      "lugar": "San Calixto - Norte de Santander, Colombia",
-      "hora_local": "2026-10-20 20:10:23",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-20 20:10:23",
-      "lat": 8.509666666666666,
-      "lon": -73.14916666666667,
-      "distancia_bogota": 434.5,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uryktt": {
