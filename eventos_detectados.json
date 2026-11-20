@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T17:10:38.784053-05:00",
+  "actualizado": "2026-11-20T17:20:39.283990-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2680,
+    "total_eventos": 2681,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -74591,10 +74591,10 @@
     "SGC2026wvahao": {
       "id": "SGC2026wvahao",
       "magnitud": 2.8,
-      "profundidad": 146.0,
-      "latitud": 6.742725152474417,
-      "longitud": -73.09740668289128,
-      "distancia_km": 250.33365707115203,
+      "profundidad": 156.0,
+      "latitud": 6.8245,
+      "longitud": -73.118,
+      "distancia_km": 257.62426878645863,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-11-19 20:22:05",
       "candidato_acelerografico": false,
@@ -76378,6 +76378,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T17:00:28.837339-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwcpnd": {
+      "id": "SGC2026wwcpnd",
+      "magnitud": 2.0,
+      "profundidad": 126.0,
+      "latitud": 6.693021469810585,
+      "longitud": -73.12413989180847,
+      "distancia_km": 244.0741358353514,
+      "lugar": "Villanueva - Santander, Colombia",
+      "hora_local": "2026-11-20 10:36:46",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 10:36:46",
+      "lat": 6.693021469810585,
+      "lon": -73.12413989180847,
+      "distancia_bogota": 244.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T17:20:26.855547-05:00",
       "alerta_enviada": false
     }
   }
