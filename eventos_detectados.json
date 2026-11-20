@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T12:55:27.873969-05:00",
+  "actualizado": "2026-11-20T13:00:30.960556-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2679,
+    "total_eventos": 2680,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76350,6 +76350,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T12:55:16.338696-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wvxuty": {
+      "id": "SGC2026wvxuty",
+      "magnitud": 2.0,
+      "profundidad": 146.0,
+      "latitud": 4.082666666666666,
+      "longitud": -76.11566666666667,
+      "distancia_km": 237.0924539417099,
+      "lugar": "Andalucía - Valle del Cauca, Colombia",
+      "hora_local": "2026-11-20 08:12:00",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 08:12:00",
+      "lat": 4.082666666666666,
+      "lon": -76.11566666666667,
+      "distancia_bogota": 237.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T13:00:18.913460-05:00",
       "alerta_enviada": false
     }
   }
