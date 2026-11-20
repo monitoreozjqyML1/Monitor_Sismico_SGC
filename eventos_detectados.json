@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T04:45:28.569023-05:00",
+  "actualizado": "2026-11-20T04:50:37.668755-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2695,
+    "total_eventos": 2694,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3894,62 +3894,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uspfai": {
-      "id": "SGC2026uspfai",
-      "magnitud": 1.6,
-      "profundidad": 173.0,
-      "latitud": 6.737333333333334,
-      "longitud": -73.32066666666667,
-      "distancia_km": 240.1656382919051,
-      "lugar": "Galán - Santander, Colombia",
-      "hora_local": "2026-10-21 04:46:12",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 04:46:12",
-      "lat": 6.737333333333334,
-      "lon": -73.32066666666667,
-      "distancia_bogota": 240.2,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uspfum": {
-      "id": "SGC2026uspfum",
-      "magnitud": 1.7,
-      "profundidad": 137.0,
-      "latitud": 6.774450907366225,
-      "longitud": -73.14234912619766,
-      "distancia_km": 251.44602455077066,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-21 04:46:25",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 04:46:25",
-      "lat": 6.774450907366225,
-      "lon": -73.14234912619766,
-      "distancia_bogota": 251.4,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026usrekb": {
@@ -76798,6 +76742,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T04:35:24.638981-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wvglqc": {
+      "id": "SGC2026wvglqc",
+      "magnitud": 2.0,
+      "profundidad": 136.0,
+      "latitud": 6.718402073724031,
+      "longitud": -73.13270461489935,
+      "distancia_km": 246.22294920225238,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-19 23:28:28",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 23:28:28",
+      "lat": 6.718402073724031,
+      "lon": -73.13270461489935,
+      "distancia_bogota": 246.2,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T04:50:25.930934-05:00",
       "alerta_enviada": false
     }
   }
