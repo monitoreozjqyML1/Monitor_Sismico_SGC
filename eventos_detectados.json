@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T22:30:31.297036-05:00",
+  "actualizado": "2026-11-19T22:35:24.532140-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2705,
+    "total_eventos": 2706,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -77078,6 +77078,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T22:30:19.529957-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wtzmfw": {
+      "id": "SGC2026wtzmfw",
+      "magnitud": 1.9,
+      "profundidad": 97.0,
+      "latitud": 4.882166666666667,
+      "longitud": -76.46,
+      "distancia_km": 265.27589167271026,
+      "lugar": "San José del Palmar - Chocó, Colombia",
+      "hora_local": "2026-11-19 06:53:29",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 06:53:29",
+      "lat": 4.882166666666667,
+      "lon": -76.46,
+      "distancia_bogota": 265.3,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T22:35:13.542382-05:00",
       "alerta_enviada": false
     }
   }
