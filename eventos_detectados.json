@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T03:35:26.063321-05:00",
+  "actualizado": "2026-11-20T03:40:36.164516-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2690,
+    "total_eventos": 2691,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76658,6 +76658,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T03:35:15.071801-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wvagqy": {
+      "id": "SGC2026wvagqy",
+      "magnitud": 2.0,
+      "profundidad": 139.0,
+      "latitud": 6.752242878941959,
+      "longitud": -73.179787570938,
+      "distancia_km": 247.5146754024479,
+      "lugar": "Villanueva - Santander, Colombia",
+      "hora_local": "2026-11-19 20:21:40",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 20:21:40",
+      "lat": 6.752242878941959,
+      "lon": -73.179787570938,
+      "distancia_bogota": 247.5,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T03:40:24.365217-05:00",
       "alerta_enviada": false
     }
   }
