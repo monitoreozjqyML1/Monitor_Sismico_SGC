@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T12:30:27.184555-05:00",
+  "actualizado": "2026-11-20T12:35:33.003584-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2680,
+    "total_eventos": 2679,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uterck": {
-      "id": "SGC2026uterck",
-      "magnitud": 2.5,
-      "profundidad": 16.0,
-      "latitud": 3.8361172418033105,
-      "longitud": -75.65092540367583,
-      "distancia_km": 200.28110032133583,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-21 12:32:46",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 12:32:46",
-      "lat": 3.854,
-      "lon": -75.64,
-      "distancia_bogota": 198.3,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-21T14:30:23.821411-05:00",
-      "alerta_enviada": false
     },
     "SGC2026utndhx": {
       "id": "SGC2026utndhx",
@@ -76355,10 +76327,10 @@
     "SGC2026wvqopy": {
       "id": "SGC2026wvqopy",
       "magnitud": 1.6,
-      "profundidad": 68.0,
-      "latitud": 6.446833333333333,
-      "longitud": -74.196,
-      "distancia_km": 193.50224997542514,
+      "profundidad": 76.0,
+      "latitud": 6.442333333333333,
+      "longitud": -74.19333333333333,
+      "distancia_km": 192.98239744005278,
       "lugar": "Cimitarra - Santander, Colombia",
       "hora_local": "2026-11-20 04:33:39",
       "candidato_acelerografico": false,
