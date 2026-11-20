@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T16:40:29.288289-05:00",
+  "actualizado": "2026-11-20T16:50:31.867941-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2680,
+    "total_eventos": 2679,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026utndhx": {
-      "id": "SGC2026utndhx",
-      "magnitud": 1.8,
-      "profundidad": 89.0,
-      "latitud": 4.490196555156077,
-      "longitud": -76.0383822182954,
-      "distancia_km": 219.31459093751474,
-      "lugar": "La Victoria - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-21 16:48:34",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 16:48:34",
-      "lat": 4.634,
-      "lon": -75.71,
-      "distancia_bogota": 181.7,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-21T16:55:16.101954-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uttamm": {
       "id": "SGC2026uttamm",
