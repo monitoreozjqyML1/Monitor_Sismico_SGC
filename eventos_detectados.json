@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T16:10:30.077690-05:00",
+  "actualizado": "2026-11-20T16:17:26.767664-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2680,
@@ -37744,13 +37744,13 @@
     },
     "SGC2026vvjkms": {
       "id": "SGC2026vvjkms",
-      "magnitud": 1.9,
-      "profundidad": 138.0,
-      "latitud": 6.760703080246441,
-      "longitud": -73.12415718923627,
-      "distancia_km": 250.8870196110874,
+      "magnitud": 1.7,
+      "profundidad": 135.0,
+      "latitud": 6.771,
+      "longitud": -73.15683333333334,
+      "distancia_km": 250.44391612408342,
       "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-11-05 21:01:18",
+      "hora_local": "2026-11-05 21:01:19",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -37759,7 +37759,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-05 21:01:18",
+      "fecha_local": "2026-11-05 21:01:19",
       "lat": 6.760703080246441,
       "lon": -73.12415718923627,
       "distancia_bogota": 250.9,
@@ -42560,12 +42560,12 @@
     },
     "SGC2026vznaza": {
       "id": "SGC2026vznaza",
-      "magnitud": 1.8,
-      "profundidad": 134.0,
-      "latitud": 6.722632174376272,
-      "longitud": -73.03856411876706,
-      "distancia_km": 251.215624021698,
-      "lugar": "Aratoca - Santander, Colombia",
+      "magnitud": 1.7,
+      "profundidad": 136.0,
+      "latitud": 6.765333333333333,
+      "longitud": -73.12683333333334,
+      "distancia_km": 251.23126149335138,
+      "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-11-08 03:08:50",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
