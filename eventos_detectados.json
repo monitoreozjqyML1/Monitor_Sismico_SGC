@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T20:00:25.080837-05:00",
+  "actualizado": "2026-11-19T20:05:28.250190-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2705,
@@ -77054,12 +77054,12 @@
     },
     "SGC2026wuvuih": {
       "id": "SGC2026wuvuih",
-      "magnitud": 1.7,
-      "profundidad": 121.0,
-      "latitud": 5.871833333333333,
-      "longitud": -73.48783333333333,
-      "distancia_km": 144.3816520843331,
-      "lugar": "Togüí - Boyacá, Colombia",
+      "magnitud": 1.4,
+      "profundidad": 106.0,
+      "latitud": 5.821620735448936,
+      "longitud": -73.5254800016758,
+      "distancia_km": 137.5290715815685,
+      "lugar": "Moniquirá - Boyacá, Colombia",
       "hora_local": "2026-11-19 18:06:40",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
