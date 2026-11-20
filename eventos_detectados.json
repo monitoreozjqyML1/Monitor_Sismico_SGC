@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T05:15:35.979376-05:00",
+  "actualizado": "2026-11-20T05:20:29.660294-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2696,
@@ -75851,10 +75851,10 @@
     "SGC2026wvahao": {
       "id": "SGC2026wvahao",
       "magnitud": 2.8,
-      "profundidad": 155.0,
-      "latitud": 6.834833333333333,
-      "longitud": -73.11333333333333,
-      "distancia_km": 258.88351047583774,
+      "profundidad": 146.0,
+      "latitud": 6.742725152474417,
+      "longitud": -73.09740668289128,
+      "distancia_km": 250.33365707115203,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-11-19 20:22:05",
       "candidato_acelerografico": false,
