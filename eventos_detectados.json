@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T22:20:32.177389-05:00",
+  "actualizado": "2026-11-19T22:25:28.967856-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2704,
+    "total_eventos": 2705,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -77050,6 +77050,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T22:20:20.670053-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wtyxpz": {
+      "id": "SGC2026wtyxpz",
+      "magnitud": 1.6,
+      "profundidad": 8.0,
+      "latitud": 2.901793760239576,
+      "longitud": -75.99677636466004,
+      "distancia_km": 293.3727852288008,
+      "lugar": "Páez (Belalcázar) - Cauca, Colombia",
+      "hora_local": "2026-11-19 06:36:30",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 06:36:30",
+      "lat": 2.901793760239576,
+      "lon": -75.99677636466004,
+      "distancia_bogota": 293.4,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T22:25:18.098048-05:00",
       "alerta_enviada": false
     }
   }
