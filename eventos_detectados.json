@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T16:00:35.256669-05:00",
+  "actualizado": "2026-11-20T16:05:36.881902-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2681,
@@ -54572,11 +54572,11 @@
     },
     "SGC2026wiwzuq": {
       "id": "SGC2026wiwzuq",
-      "magnitud": 1.6,
-      "profundidad": 20.0,
-      "latitud": 3.6145657201421875,
-      "longitud": -74.47020016996291,
-      "distancia_km": 129.6654846539338,
+      "magnitud": 1.5,
+      "profundidad": 19.0,
+      "latitud": 3.62514097177279,
+      "longitud": -74.46808820447849,
+      "distancia_km": 128.48011403815278,
       "lugar": "Uribe - Meta, Colombia",
       "hora_local": "2026-11-13 05:49:28",
       "candidato_acelerografico": false,
