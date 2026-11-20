@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T11:15:29.785388-05:00",
+  "actualizado": "2026-11-20T11:20:36.394499-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2678,
+    "total_eventos": 2677,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3726,34 +3726,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026utcedj": {
-      "id": "SGC2026utcedj",
-      "magnitud": 1.9,
-      "profundidad": 134.0,
-      "latitud": 6.789256259649068,
-      "longitud": -73.14235350059516,
-      "distancia_km": 252.94838232590328,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-21 11:17:24",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 11:17:24",
-      "lat": 6.789256259649068,
-      "lon": -73.14235350059516,
-      "distancia_bogota": 252.9,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026utcxqy": {
@@ -76298,11 +76270,11 @@
     },
     "SGC2026wvvxvc": {
       "id": "SGC2026wvvxvc",
-      "magnitud": 1.6,
-      "profundidad": 2.0,
-      "latitud": 3.845,
-      "longitud": -75.65633333333334,
-      "distancia_km": 200.32796656262053,
+      "magnitud": 1.5,
+      "profundidad": 15.0,
+      "latitud": 3.9016838019130464,
+      "longitud": -75.62024834325125,
+      "distancia_km": 193.8176066903071,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-11-20 07:15:11",
       "candidato_acelerografico": false,
