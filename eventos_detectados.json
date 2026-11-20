@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-19T19:55:27.170599-05:00",
+  "actualizado": "2026-11-19T20:00:25.080837-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2704,
+    "total_eventos": 2705,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -77050,6 +77050,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-19T19:35:27.285010-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wuvuih": {
+      "id": "SGC2026wuvuih",
+      "magnitud": 1.7,
+      "profundidad": 121.0,
+      "latitud": 5.871833333333333,
+      "longitud": -73.48783333333333,
+      "distancia_km": 144.3816520843331,
+      "lugar": "Togüí - Boyacá, Colombia",
+      "hora_local": "2026-11-19 18:06:40",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-19 18:06:40",
+      "lat": 5.871833333333333,
+      "lon": -73.48783333333333,
+      "distancia_bogota": 144.4,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-19T20:00:13.113466-05:00",
       "alerta_enviada": false
     }
   }
