@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T12:25:30.761813-05:00",
+  "actualizado": "2026-11-20T12:30:27.184555-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2679,
+    "total_eventos": 2680,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -76327,10 +76327,10 @@
     "SGC2026wvwfop": {
       "id": "SGC2026wvwfop",
       "magnitud": 2.1,
-      "profundidad": 143.0,
-      "latitud": 6.789333333333333,
-      "longitud": -73.09016666666666,
-      "distancia_km": 255.35826279848598,
+      "profundidad": 132.0,
+      "latitud": 6.748012778289718,
+      "longitud": -73.17122722027209,
+      "distancia_km": 247.4634778015152,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-11-20 07:24:11",
       "candidato_acelerografico": false,
@@ -76350,6 +76350,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T12:25:19.637249-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wvqopy": {
+      "id": "SGC2026wvqopy",
+      "magnitud": 1.6,
+      "profundidad": 68.0,
+      "latitud": 6.446833333333333,
+      "longitud": -74.196,
+      "distancia_km": 193.50224997542514,
+      "lugar": "Cimitarra - Santander, Colombia",
+      "hora_local": "2026-11-20 04:33:39",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 04:33:39",
+      "lat": 6.446833333333333,
+      "lon": -74.196,
+      "distancia_bogota": 193.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T12:30:15.775091-05:00",
       "alerta_enviada": false
     }
   }
