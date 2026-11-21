@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T18:50:38.281427-05:00",
+  "actualizado": "2026-11-20T19:00:35.345842-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2684,
+    "total_eventos": 2685,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3614,34 +3614,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026utrjmi": {
-      "id": "SGC2026utrjmi",
-      "magnitud": 1.5,
-      "profundidad": 157.0,
-      "latitud": 6.721333333333334,
-      "longitud": -73.32316666666667,
-      "distancia_km": 238.40146107758505,
-      "lugar": "Galán - Santander, Colombia",
-      "hora_local": "2026-10-21 18:56:11",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 18:56:11",
-      "lat": 6.721333333333334,
-      "lon": -73.32316666666667,
-      "distancia_bogota": 238.4,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026utsyah": {
@@ -76490,6 +76462,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-20T18:00:17.642138-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwadvq": {
+      "id": "SGC2026wwadvq",
+      "magnitud": 1.1,
+      "profundidad": 3.0,
+      "latitud": 3.7973333333333334,
+      "longitud": -75.61283333333333,
+      "distancia_km": 198.77259996070183,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-20 09:22:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 09:22:52",
+      "lat": 3.7973333333333334,
+      "lon": -75.61283333333333,
+      "distancia_bogota": 198.8,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T19:00:23.938278-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwgsqr": {
+      "id": "SGC2026wwgsqr",
+      "magnitud": 2.1,
+      "profundidad": 84.0,
+      "latitud": 4.397166666666666,
+      "longitud": -76.85683333333333,
+      "distancia_km": 310.6363793759538,
+      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
+      "hora_local": "2026-11-20 12:41:05",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 12:41:05",
+      "lat": 4.397166666666666,
+      "lon": -76.85683333333333,
+      "distancia_bogota": 310.6,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-20T19:00:23.938278-05:00",
       "alerta_enviada": false
     }
   }
