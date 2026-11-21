@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T12:30:32.660498-05:00",
+  "actualizado": "2026-11-21T12:38:59.194598-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2693,
+    "total_eventos": 2692,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2802,34 +2802,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-22T19:01:52.548485-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uvamqr": {
-      "id": "SGC2026uvamqr",
-      "magnitud": 2.3,
-      "profundidad": 128.0,
-      "latitud": 4.105257395802144,
-      "longitud": -76.22644863674162,
-      "distancia_km": 248.15850485584298,
-      "lugar": "Tuluá - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-22 12:35:53",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 12:35:53",
-      "lat": 4.105,
-      "lon": -76.226,
-      "distancia_bogota": 248.1,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-22T23:35:57.431989-05:00",
       "alerta_enviada": false
     },
     "SGC2026uvaqjd": {
