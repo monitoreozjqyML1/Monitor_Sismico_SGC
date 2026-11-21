@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T06:40:31.765957-05:00",
+  "actualizado": "2026-11-21T06:50:30.789977-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2694,
+    "total_eventos": 2692,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3418,62 +3418,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uuovue": {
-      "id": "SGC2026uuovue",
-      "magnitud": 1.7,
-      "profundidad": 46.0,
-      "latitud": 3.8078333333333334,
-      "longitud": -77.05866666666667,
-      "distancia_km": 346.06263630565167,
-      "lugar": "Buenaventura - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-22 06:44:25",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 06:44:25",
-      "lat": 3.8078333333333334,
-      "lon": -77.05866666666667,
-      "distancia_bogota": 346.1,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uuowvd": {
-      "id": "SGC2026uuowvd",
-      "magnitud": 1.0,
-      "profundidad": 93.0,
-      "latitud": 8.739666666666666,
-      "longitud": -73.78666666666666,
-      "distancia_km": 449.0743841260511,
-      "lugar": "La Gloria - Cesar, Colombia",
-      "hora_local": "2026-10-22 06:45:37",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 06:45:37",
-      "lat": 8.739666666666666,
-      "lon": -73.78666666666666,
-      "distancia_bogota": 449.1,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uupnpn": {
