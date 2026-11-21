@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-20T23:00:29.167618-05:00",
+  "actualizado": "2026-11-20T23:10:25.160140-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2681,
+    "total_eventos": 2679,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3502,62 +3502,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026utzpnc": {
-      "id": "SGC2026utzpnc",
-      "magnitud": 1.5,
-      "profundidad": 154.0,
-      "latitud": 6.8455,
-      "longitud": -73.1395,
-      "distancia_km": 258.79802366396825,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-21 23:04:34",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 23:04:34",
-      "lat": 6.8455,
-      "lon": -73.1395,
-      "distancia_bogota": 258.8,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026utzruw": {
-      "id": "SGC2026utzruw",
-      "magnitud": 1.8,
-      "profundidad": 136.0,
-      "latitud": 6.79560141062743,
-      "longitud": -73.17231406153117,
-      "distancia_km": 252.26672644433324,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-21 23:07:14",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-21 23:07:14",
-      "lat": 6.79560141062743,
-      "lon": -73.17231406153117,
-      "distancia_bogota": 252.3,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uuabwg": {
