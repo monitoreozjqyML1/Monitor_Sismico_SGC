@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T03:30:29.593534-05:00",
+  "actualizado": "2026-11-21T03:40:25.248086-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2676,
+    "total_eventos": 2677,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3446,34 +3446,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uuiqpl": {
-      "id": "SGC2026uuiqpl",
-      "magnitud": 1.0,
-      "profundidad": 22.0,
-      "latitud": 6.651166666666667,
-      "longitud": -74.418,
-      "distancia_km": 219.10506435384178,
-      "lugar": "Puerto Berrío - Antioquia, Colombia",
-      "hora_local": "2026-10-22 03:37:23",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 03:37:23",
-      "lat": 6.651166666666667,
-      "lon": -74.418,
-      "distancia_bogota": 219.1,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uuixra": {
@@ -76266,6 +76238,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T03:30:17.721542-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwxxrx": {
+      "id": "SGC2026wwxxrx",
+      "magnitud": 1.9,
+      "profundidad": 3.0,
+      "latitud": 6.987166666666667,
+      "longitud": -76.192,
+      "distancia_km": 345.0203261914564,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-11-20 21:19:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 21:19:52",
+      "lat": 6.987166666666667,
+      "lon": -76.192,
+      "distancia_bogota": 345.0,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T03:40:13.828031-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwyias": {
+      "id": "SGC2026wwyias",
+      "magnitud": 1.6,
+      "profundidad": 0.0,
+      "latitud": 5.027833333333334,
+      "longitud": -73.37483333333333,
+      "distancia_km": 84.90660688196283,
+      "lugar": "Garagoa - Boyacá, Colombia",
+      "hora_local": "2026-11-20 21:31:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 21:31:52",
+      "lat": 5.027833333333334,
+      "lon": -73.37483333333333,
+      "distancia_bogota": 84.9,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T03:40:13.828031-05:00",
       "alerta_enviada": false
     }
   }
