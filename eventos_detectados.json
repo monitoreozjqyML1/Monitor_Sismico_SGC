@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-21T04:40:26.668057-05:00",
+  "actualizado": "2026-11-21T04:50:27.509839-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2682,
+    "total_eventos": 2683,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.13,
+    "porcentaje_m4_o_mayores": 2.12,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -3418,34 +3418,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uukveg": {
-      "id": "SGC2026uukveg",
-      "magnitud": 1.2,
-      "profundidad": 11.0,
-      "latitud": 7.7516041580339,
-      "longitud": -72.87245588967573,
-      "distancia_km": 363.1687934438154,
-      "lugar": "Salazar - Norte de Santander, Colombia",
-      "hora_local": "2026-10-22 04:43:00",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 04:43:00",
-      "lat": 7.7516041580339,
-      "lon": -72.87245588967573,
-      "distancia_bogota": 363.2,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uulcaq": {
@@ -76434,6 +76406,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T04:40:15.704217-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwwdpk": {
+      "id": "SGC2026wwwdpk",
+      "magnitud": 1.2,
+      "profundidad": 11.0,
+      "latitud": 3.836646004384841,
+      "longitud": -75.63974640776796,
+      "distancia_km": 199.16972559175406,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-20 20:26:22",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 20:26:22",
+      "lat": 3.836646004384841,
+      "lon": -75.63974640776796,
+      "distancia_bogota": 199.2,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T04:50:16.314266-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwwkxx": {
+      "id": "SGC2026wwwkxx",
+      "magnitud": 1.2,
+      "profundidad": 12.0,
+      "latitud": 3.825541990172708,
+      "longitud": -75.59445777983812,
+      "distancia_km": 195.42248057365222,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-20 20:34:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 20:34:52",
+      "lat": 3.825541990172708,
+      "lon": -75.59445777983812,
+      "distancia_bogota": 195.4,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T04:50:16.314266-05:00",
       "alerta_enviada": false
     }
   }
