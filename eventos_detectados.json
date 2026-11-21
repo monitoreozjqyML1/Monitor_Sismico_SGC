@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T02:40:32.481462-05:00",
+  "actualizado": "2026-11-21T02:50:26.045559-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2677,
+    "total_eventos": 2676,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3446,62 +3446,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uuguye": {
-      "id": "SGC2026uuguye",
-      "magnitud": 1.5,
-      "profundidad": 15.0,
-      "latitud": 6.978024501255323,
-      "longitud": -76.26840965386752,
-      "distancia_km": 350.08763537965774,
-      "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-10-22 02:42:02",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 02:42:02",
-      "lat": 6.978024501255323,
-      "lon": -76.26840965386752,
-      "distancia_bogota": 350.1,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uuhaai": {
-      "id": "SGC2026uuhaai",
-      "magnitud": 1.4,
-      "profundidad": 122.0,
-      "latitud": 7.87744965243807,
-      "longitud": -73.20169253598812,
-      "distancia_km": 364.9956947695915,
-      "lugar": "Ábrego - Norte de Santander, Colombia",
-      "hora_local": "2026-10-22 02:47:59",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 02:47:59",
-      "lat": 7.87744965243807,
-      "lon": -73.20169253598812,
-      "distancia_bogota": 365.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uuhgyz": {
@@ -75710,12 +75654,12 @@
     },
     "SGC2026wwubtk": {
       "id": "SGC2026wwubtk",
-      "magnitud": 1.3,
-      "profundidad": 88.0,
-      "latitud": 7.811833333333333,
-      "longitud": -73.64883333333333,
-      "distancia_km": 347.9556691146223,
-      "lugar": "San Alberto - Cesar, Colombia",
+      "magnitud": 2.5,
+      "profundidad": 97.0,
+      "latitud": 7.834,
+      "longitud": -73.57983333333334,
+      "distancia_km": 351.49737026382644,
+      "lugar": "San Martín - Cesar, Colombia",
       "hora_local": "2026-11-20 19:23:53",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
@@ -76294,6 +76238,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T02:40:20.243641-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wxblfg": {
+      "id": "SGC2026wxblfg",
+      "magnitud": 1.9,
+      "profundidad": 135.0,
+      "latitud": 6.67187096654938,
+      "longitud": -73.11129836050034,
+      "distancia_km": 242.57278815448143,
+      "lugar": "Curití - Santander, Colombia",
+      "hora_local": "2026-11-20 23:06:05",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 23:06:05",
+      "lat": 6.67187096654938,
+      "lon": -73.11129836050034,
+      "distancia_bogota": 242.6,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T02:50:14.845613-05:00",
       "alerta_enviada": false
     }
   }
