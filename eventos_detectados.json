@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T10:00:34.178661-05:00",
+  "actualizado": "2026-11-21T10:10:33.016590-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2678,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uuvlbq": {
-      "id": "SGC2026uuvlbq",
-      "magnitud": 2.5,
-      "profundidad": 139.0,
-      "latitud": 5.267477550005363,
-      "longitud": -73.72557194344796,
-      "distancia_km": 72.81695123160627,
-      "lugar": "Lenguazaque - Cundinamarca, Colombia",
-      "hora_local": "2026-10-22 10:03:09",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 10:03:09",
-      "lat": 5.399,
-      "lon": -73.655,
-      "distancia_bogota": 89.4,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-22T10:10:16.875972-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uveejh": {
       "id": "SGC2026uveejh",
@@ -76243,10 +76215,10 @@
     "SGC2026wxepwf": {
       "id": "SGC2026wxepwf",
       "magnitud": 0.7,
-      "profundidad": 1.0,
-      "latitud": 3.8248333333333333,
-      "longitud": -75.65133333333333,
-      "distancia_km": 200.93404857319211,
+      "profundidad": 9.0,
+      "latitud": 3.841404867618612,
+      "longitud": -75.62325627946841,
+      "distancia_km": 197.3155917936349,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-11-21 00:41:59",
       "candidato_acelerografico": false,
@@ -76322,6 +76294,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T10:00:22.007411-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wxfclg": {
+      "id": "SGC2026wxfclg",
+      "magnitud": 1.7,
+      "profundidad": 30.0,
+      "latitud": 4.499714281623619,
+      "longitud": -76.74073201146994,
+      "distancia_km": 296.7115379140143,
+      "lugar": "Istmina - Chocó, Colombia",
+      "hora_local": "2026-11-21 00:56:35",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-21 00:56:35",
+      "lat": 4.499714281623619,
+      "lon": -76.74073201146994,
+      "distancia_bogota": 296.7,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T10:10:20.758540-05:00",
       "alerta_enviada": false
     }
   }
