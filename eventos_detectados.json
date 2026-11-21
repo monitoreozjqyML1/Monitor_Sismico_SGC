@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T03:50:27.291178-05:00",
+  "actualizado": "2026-11-21T04:00:28.664211-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2677,
+    "total_eventos": 2678,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -3446,34 +3446,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uujchp": {
-      "id": "SGC2026uujchp",
-      "magnitud": 1.4,
-      "profundidad": 144.0,
-      "latitud": 8.252333333333333,
-      "longitud": -73.074,
-      "distancia_km": 408.9226514925522,
-      "lugar": "La Playa - Norte de Santander, Colombia",
-      "hora_local": "2026-10-22 03:50:57",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 03:50:57",
-      "lat": 8.252333333333333,
-      "lon": -73.074,
-      "distancia_bogota": 408.9,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uujogb": {
@@ -76294,6 +76266,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T03:50:15.702237-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wxafqq": {
+      "id": "SGC2026wxafqq",
+      "magnitud": 1.9,
+      "profundidad": 133.0,
+      "latitud": 6.680331167853861,
+      "longitud": -73.04711836300788,
+      "distancia_km": 246.60214935104582,
+      "lugar": "Aratoca - Santander, Colombia",
+      "hora_local": "2026-11-20 22:29:27",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 22:29:27",
+      "lat": 6.680331167853861,
+      "lon": -73.04711836300788,
+      "distancia_bogota": 246.6,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T04:00:17.343405-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wxahdl": {
+      "id": "SGC2026wxahdl",
+      "magnitud": 1.7,
+      "profundidad": 121.0,
+      "latitud": 8.059666666666667,
+      "longitud": -73.27066666666667,
+      "distancia_km": 382.7388815497797,
+      "lugar": "Ábrego - Norte de Santander, Colombia",
+      "hora_local": "2026-11-20 22:31:10",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 22:31:10",
+      "lat": 8.059666666666667,
+      "lon": -73.27066666666667,
+      "distancia_bogota": 382.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T04:00:17.343405-05:00",
       "alerta_enviada": false
     }
   }
