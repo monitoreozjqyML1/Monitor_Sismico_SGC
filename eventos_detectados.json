@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-21T01:20:27.777274-05:00",
+  "actualizado": "2026-11-21T01:30:36.794938-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2682,
+    "total_eventos": 2683,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.13,
+    "porcentaje_m4_o_mayores": 2.12,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -3446,34 +3446,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uuejlo": {
-      "id": "SGC2026uuejlo",
-      "magnitud": 1.0,
-      "profundidad": 23.0,
-      "latitud": 2.5263723273531866,
-      "longitud": -75.47580894554794,
-      "distancia_km": 288.5697203048632,
-      "lugar": "Hobo - Huila, Colombia",
-      "hora_local": "2026-10-22 01:28:22",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 01:28:22",
-      "lat": 2.5263723273531866,
-      "lon": -75.47580894554794,
-      "distancia_bogota": 288.6,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uuenri": {
@@ -76434,6 +76406,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T01:20:16.058721-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwpmwy": {
+      "id": "SGC2026wwpmwy",
+      "magnitud": 2.5,
+      "profundidad": 137.0,
+      "latitud": 6.723689699539332,
+      "longitud": -73.11024038808678,
+      "distancia_km": 247.81292519414404,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-20 17:05:56",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 17:05:56",
+      "lat": 6.723689699539332,
+      "lon": -73.11024038808678,
+      "distancia_bogota": 247.8,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T01:30:24.989315-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wwszhz": {
+      "id": "SGC2026wwszhz",
+      "magnitud": 1.5,
+      "profundidad": 149.0,
+      "latitud": 5.219833333333334,
+      "longitud": -73.729,
+      "distancia_km": 68.16042952072802,
+      "lugar": "Cucunubá - Cundinamarca, Colombia",
+      "hora_local": "2026-11-20 18:51:00",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 18:51:00",
+      "lat": 5.219833333333334,
+      "lon": -73.729,
+      "distancia_bogota": 68.2,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T01:30:24.989315-05:00",
       "alerta_enviada": false
     }
   }
