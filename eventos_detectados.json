@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T18:10:26.059608-05:00",
+  "actualizado": "2026-11-21T18:20:26.452030-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2723,
+    "total_eventos": 2724,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -77582,6 +77582,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T18:10:14.684033-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wyfopn": {
+      "id": "SGC2026wyfopn",
+      "magnitud": 1.7,
+      "profundidad": 101.0,
+      "latitud": 3.9566666666666666,
+      "longitud": -76.41016666666667,
+      "distancia_km": 272.4678203219615,
+      "lugar": "Yotoco - Valle del Cauca, Colombia",
+      "hora_local": "2026-11-21 14:15:10",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-21 14:15:10",
+      "lat": 3.9566666666666666,
+      "lon": -76.41016666666667,
+      "distancia_bogota": 272.5,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T18:20:15.014318-05:00",
       "alerta_enviada": false
     }
   }
