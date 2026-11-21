@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T04:10:27.396254-05:00",
+  "actualizado": "2026-11-21T04:20:27.070362-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2677,
@@ -3418,34 +3418,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uukbjf": {
-      "id": "SGC2026uukbjf",
-      "magnitud": 1.4,
-      "profundidad": 127.0,
-      "latitud": 6.811464288073333,
-      "longitud": -73.12417027918994,
-      "distancia_km": 256.0228696908597,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-22 04:20:03",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 04:20:03",
-      "lat": 6.811464288073333,
-      "lon": -73.12417027918994,
-      "distancia_bogota": 256.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uukveg": {
@@ -75990,13 +75962,13 @@
     },
     "SGC2026wxblfg": {
       "id": "SGC2026wxblfg",
-      "magnitud": 1.9,
-      "profundidad": 135.0,
-      "latitud": 6.67187096654938,
-      "longitud": -73.11129836050034,
-      "distancia_km": 242.57278815448143,
-      "lugar": "Curití - Santander, Colombia",
-      "hora_local": "2026-11-20 23:06:05",
+      "magnitud": 2.0,
+      "profundidad": 136.0,
+      "latitud": 6.71417197307179,
+      "longitud": -73.12414527812838,
+      "distancia_km": 246.19870463044154,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-20 23:06:04",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -76005,7 +75977,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-20 23:06:05",
+      "fecha_local": "2026-11-20 23:06:04",
       "lat": 6.67187096654938,
       "lon": -73.11129836050034,
       "distancia_bogota": 242.6,
@@ -76294,6 +76266,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-21T04:10:14.834542-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wxcdvi": {
+      "id": "SGC2026wxcdvi",
+      "magnitud": 1.5,
+      "profundidad": 134.0,
+      "latitud": 7.454,
+      "longitud": -73.313,
+      "distancia_km": 316.3432046937935,
+      "lugar": "Rionegro - Santander, Colombia",
+      "hora_local": "2026-11-20 23:27:40",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-20 23:27:40",
+      "lat": 7.454,
+      "lon": -73.313,
+      "distancia_bogota": 316.3,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-21T04:20:15.661121-05:00",
       "alerta_enviada": false
     }
   }
