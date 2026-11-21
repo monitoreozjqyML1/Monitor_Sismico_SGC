@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T14:20:26.173736-05:00",
+  "actualizado": "2026-11-21T14:30:28.447737-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2703,
+    "total_eventos": 2701,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2608,34 +2608,6 @@
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
     },
-    "SGC2026uveejh": {
-      "id": "SGC2026uveejh",
-      "magnitud": 3.0,
-      "profundidad": 16.0,
-      "latitud": 3.8202543643574067,
-      "longitud": -75.59657138489142,
-      "distancia_km": 195.92202798162796,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-22 14:26:58",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 14:26:58",
-      "lat": 3.82,
-      "lon": -75.597,
-      "distancia_bogota": 196.0,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-22T14:45:17.368702-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026uvekvh": {
       "id": "SGC2026uvekvh",
       "magnitud": 2.8,
@@ -3110,34 +3082,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uvecyb": {
-      "id": "SGC2026uvecyb",
-      "magnitud": 1.2,
-      "profundidad": 160.0,
-      "latitud": 6.899166666666667,
-      "longitud": -73.29066666666667,
-      "distancia_km": 258.2114902901394,
-      "lugar": "Betulia - Santander, Colombia",
-      "hora_local": "2026-10-22 14:25:17",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 14:25:17",
-      "lat": 6.899166666666667,
-      "lon": -73.29066666666667,
-      "distancia_bogota": 258.2,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uvesmf": {
