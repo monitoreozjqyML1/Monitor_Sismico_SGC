@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T12:54:38.365246-05:00",
+  "actualizado": "2026-11-22T13:00:36.057720-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2735,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uwxacg": {
-      "id": "SGC2026uwxacg",
-      "magnitud": 1.5,
-      "profundidad": 155.0,
-      "latitud": 6.7955,
-      "longitud": -73.15633333333334,
-      "distancia_km": 252.95921905213373,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-23 12:59:45",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 12:59:45",
-      "lat": 6.7955,
-      "lon": -73.15633333333334,
-      "distancia_bogota": 253.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uwxhcg": {
       "id": "SGC2026uwxhcg",
@@ -76830,12 +76802,12 @@
     },
     "SGC2026wzhegk": {
       "id": "SGC2026wzhegk",
-      "magnitud": 2.9,
-      "profundidad": 143.0,
-      "latitud": 6.808333333333334,
-      "longitud": -73.14383333333333,
-      "distancia_km": 254.82106204341463,
-      "lugar": "Los Santos - Santander, Colombia",
+      "magnitud": 3.0,
+      "profundidad": 134.0,
+      "latitud": 6.67504354203856,
+      "longitud": -73.13162313699742,
+      "distancia_km": 241.91405027582988,
+      "lugar": "Villanueva - Santander, Colombia",
       "hora_local": "2026-11-22 04:07:58",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
@@ -77918,6 +77890,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T12:54:26.925250-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzhgfd": {
+      "id": "SGC2026wzhgfd",
+      "magnitud": 2.0,
+      "profundidad": 133.0,
+      "latitud": 6.701481671115067,
+      "longitud": -73.10274714404919,
+      "distancia_km": 245.94639639361287,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-22 04:10:15",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 04:10:15",
+      "lat": 6.701481671115067,
+      "lon": -73.10274714404919,
+      "distancia_bogota": 245.9,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T13:00:24.637759-05:00",
       "alerta_enviada": false
     }
   }
