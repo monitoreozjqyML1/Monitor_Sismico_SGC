@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T06:00:28.847675-05:00",
+  "actualizado": "2026-11-22T06:10:24.654304-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2718,
+    "total_eventos": 2717,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2634,34 +2634,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uwjkhv": {
-      "id": "SGC2026uwjkhv",
-      "magnitud": 1.6,
-      "profundidad": 135.0,
-      "latitud": 7.418333333333333,
-      "longitud": -73.24683333333333,
-      "distancia_km": 314.5654565321787,
-      "lugar": "Rionegro - Santander, Colombia",
-      "hora_local": "2026-10-23 06:09:11",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 06:09:11",
-      "lat": 7.418333333333333,
-      "lon": -73.24683333333333,
-      "distancia_bogota": 314.6,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uwjuiw": {
