@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T12:30:25.862007-05:00",
+  "actualizado": "2026-11-22T12:40:26.762900-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2731,
+    "total_eventos": 2733,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -77806,6 +77806,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T12:20:17.660186-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzgjew": {
+      "id": "SGC2026wzgjew",
+      "magnitud": 1.1,
+      "profundidad": 3.0,
+      "latitud": 3.924333333333333,
+      "longitud": -75.5695,
+      "distancia_km": 187.66284485121605,
+      "lugar": "San Antonio - Tolima, Colombia",
+      "hora_local": "2026-11-22 03:43:32",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 03:43:32",
+      "lat": 3.924333333333333,
+      "lon": -75.5695,
+      "distancia_bogota": 187.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T12:40:15.475132-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzqpqm": {
+      "id": "SGC2026wzqpqm",
+      "magnitud": 2.3,
+      "profundidad": 0.0,
+      "latitud": 3.8321666666666667,
+      "longitud": -71.31383333333333,
+      "distancia_km": 321.08226915087204,
+      "lugar": "Puerto Gaitán - Meta, Colombia",
+      "hora_local": "2026-11-22 08:53:50",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 08:53:50",
+      "lat": 3.8321666666666667,
+      "lon": -71.31383333333333,
+      "distancia_bogota": 321.1,
+      "tipo_magnitud": "MLr_PtoGtn",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T12:40:15.475132-05:00",
       "alerta_enviada": false
     }
   }
