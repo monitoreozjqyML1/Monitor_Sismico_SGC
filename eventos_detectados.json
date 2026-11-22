@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T10:10:26.697399-05:00",
+  "actualizado": "2026-11-22T10:20:27.196805-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2711,
+    "total_eventos": 2713,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -10,7 +10,7 @@
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
-    "porcentaje_alertas": 0.3
+    "porcentaje_alertas": 0.29
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -77246,6 +77246,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T10:00:17.678010-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzbaxr": {
+      "id": "SGC2026wzbaxr",
+      "magnitud": 2.0,
+      "profundidad": 2.0,
+      "latitud": 3.832333333333333,
+      "longitud": -75.5765,
+      "distancia_km": 193.3216564669123,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-22 01:03:04",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 01:03:04",
+      "lat": 3.832333333333333,
+      "lon": -75.5765,
+      "distancia_bogota": 193.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T10:20:15.197696-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzoeby": {
+      "id": "SGC2026wzoeby",
+      "magnitud": 1.7,
+      "profundidad": 0.0,
+      "latitud": 3.691333333333333,
+      "longitud": -71.367,
+      "distancia_km": 320.69302501013556,
+      "lugar": "Puerto Gaitán - Meta, Colombia",
+      "hora_local": "2026-11-22 07:38:59",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 07:38:59",
+      "lat": 3.691333333333333,
+      "lon": -71.367,
+      "distancia_bogota": 320.7,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T10:20:15.197696-05:00",
       "alerta_enviada": false
     }
   }
