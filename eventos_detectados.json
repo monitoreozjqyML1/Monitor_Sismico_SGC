@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T11:40:28.485257-05:00",
+  "actualizado": "2026-11-22T11:50:38.495500-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2723,
+    "total_eventos": 2724,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uwukqw": {
-      "id": "SGC2026uwukqw",
-      "magnitud": 1.7,
-      "profundidad": 137.0,
-      "latitud": 6.79877398611661,
-      "longitud": -73.20120411969275,
-      "distancia_km": 251.3484527188934,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "2026-10-23 11:41:30",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 11:41:30",
-      "lat": 6.79877398611661,
-      "lon": -73.20120411969275,
-      "distancia_bogota": 251.3,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uwwmmc": {
       "id": "SGC2026uwwmmc",
@@ -77559,11 +77531,11 @@
     "SGC2026wzqgal": {
       "id": "SGC2026wzqgal",
       "magnitud": 0.9,
-      "profundidad": 16.0,
-      "latitud": 3.861,
-      "longitud": -75.58816666666667,
-      "distancia_km": 192.8543573542663,
-      "lugar": "Chaparral - Tolima, Colombia",
+      "profundidad": 14.0,
+      "latitud": 3.8773607231626603,
+      "longitud": -75.56586416662262,
+      "distancia_km": 189.8060289242694,
+      "lugar": "San Antonio - Tolima, Colombia",
       "hora_local": "2026-11-22 08:41:35",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
@@ -77582,6 +77554,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T11:40:17.192620-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzehuu": {
+      "id": "SGC2026wzehuu",
+      "magnitud": 0.6,
+      "profundidad": 10.0,
+      "latitud": 3.8548333333333336,
+      "longitud": -75.66916666666667,
+      "distancia_km": 201.05594909823128,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-22 02:41:35",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 02:41:35",
+      "lat": 3.8548333333333336,
+      "lon": -75.66916666666667,
+      "distancia_bogota": 201.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T11:50:25.327218-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzqism": {
+      "id": "SGC2026wzqism",
+      "magnitud": 1.5,
+      "profundidad": 88.0,
+      "latitud": 4.537785187493788,
+      "longitud": -76.33593322099858,
+      "distancia_km": 251.6452792668162,
+      "lugar": "El Dovio - Valle del Cauca, Colombia",
+      "hora_local": "2026-11-22 08:44:48",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 08:44:48",
+      "lat": 4.537785187493788,
+      "lon": -76.33593322099858,
+      "distancia_bogota": 251.6,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T11:50:25.327218-05:00",
       "alerta_enviada": false
     }
   }
