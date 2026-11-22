@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T14:10:30.079499-05:00",
+  "actualizado": "2026-11-22T14:20:25.573997-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2736,
+    "total_eventos": 2735,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uwzkpo": {
-      "id": "SGC2026uwzkpo",
-      "magnitud": 1.5,
-      "profundidad": 27.0,
-      "latitud": 9.086333333333334,
-      "longitud": -73.79283333333333,
-      "distancia_km": 487.4901173849085,
-      "lugar": "Chimichagua - Cesar, Colombia",
-      "hora_local": "2026-10-23 14:12:17",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 14:12:17",
-      "lat": 9.086333333333334,
-      "lon": -73.79283333333333,
-      "distancia_bogota": 487.5,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uwztou": {
       "id": "SGC2026uwztou",
