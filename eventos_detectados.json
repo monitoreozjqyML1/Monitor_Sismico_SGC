@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T17:00:32.062114-05:00",
+  "actualizado": "2026-11-22T17:10:28.172216-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2731,
@@ -77782,13 +77782,13 @@
     },
     "SGC2026wzwvsk": {
       "id": "SGC2026wzwvsk",
-      "magnitud": 2.6,
-      "profundidad": 15.0,
-      "latitud": 3.8863333333333334,
-      "longitud": -75.53133333333334,
-      "distancia_km": 185.979481907361,
+      "magnitud": 2.8,
+      "profundidad": 18.0,
+      "latitud": 3.895867413516215,
+      "longitud": -75.52918153023526,
+      "distancia_km": 185.25008847202506,
       "lugar": "San Antonio - Tolima, Colombia",
-      "hora_local": "2026-11-22 12:00:49",
+      "hora_local": "2026-11-22 12:00:48",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -77797,7 +77797,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-22 12:00:49",
+      "fecha_local": "2026-11-22 12:00:48",
       "lat": 3.8863333333333334,
       "lon": -75.53133333333334,
       "distancia_bogota": 186.0,
