@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T18:40:27.350842-05:00",
+  "actualizado": "2026-11-22T18:50:27.758173-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2751,
+    "total_eventos": 2753,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -78366,6 +78366,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T18:40:16.073889-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xaftok": {
+      "id": "SGC2026xaftok",
+      "magnitud": 1.8,
+      "profundidad": 90.0,
+      "latitud": 4.996,
+      "longitud": -76.23216666666667,
+      "distancia_km": 241.41589578507845,
+      "lugar": "San José del Palmar - Chocó, Colombia",
+      "hora_local": "2026-11-22 16:29:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 16:29:52",
+      "lat": 4.996,
+      "lon": -76.23216666666667,
+      "distancia_bogota": 241.4,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T18:50:16.168169-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xagino": {
+      "id": "SGC2026xagino",
+      "magnitud": 2.1,
+      "profundidad": 120.0,
+      "latitud": 6.011833333333334,
+      "longitud": -73.649,
+      "distancia_km": 152.04092789180112,
+      "lugar": "Vélez - Santander, Colombia",
+      "hora_local": "2026-11-22 16:47:15",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 16:47:15",
+      "lat": 6.011833333333334,
+      "lon": -73.649,
+      "distancia_bogota": 152.0,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T18:50:16.168169-05:00",
       "alerta_enviada": false
     }
   }
