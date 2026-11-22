@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T11:00:23.759075-05:00",
+  "actualizado": "2026-11-22T11:10:28.962028-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2719,
+    "total_eventos": 2720,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uwtfnp": {
-      "id": "SGC2026uwtfnp",
-      "magnitud": 1.5,
-      "profundidad": 40.0,
-      "latitud": 5.285455477777387,
-      "longitud": -76.37061845319867,
-      "distancia_km": 262.5008790005853,
-      "lugar": "Tadó - Chocó, Colombia",
-      "hora_local": "2026-10-23 11:04:22",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 11:04:22",
-      "lat": 5.285455477777387,
-      "lon": -76.37061845319867,
-      "distancia_bogota": 262.5,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uwtqfv": {
       "id": "SGC2026uwtqfv",
@@ -77470,6 +77442,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T10:50:21.474652-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzcqwm": {
+      "id": "SGC2026wzcqwm",
+      "magnitud": 1.3,
+      "profundidad": 11.0,
+      "latitud": 3.814966738542106,
+      "longitud": -75.64127680902547,
+      "distancia_km": 200.50680992511974,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-22 01:51:44",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 01:51:44",
+      "lat": 3.814966738542106,
+      "lon": -75.64127680902547,
+      "distancia_bogota": 200.5,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T11:10:17.087358-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzphdn": {
+      "id": "SGC2026wzphdn",
+      "magnitud": 1.4,
+      "profundidad": 34.0,
+      "latitud": 5.890359871047853,
+      "longitud": -76.43391412137164,
+      "distancia_km": 292.5344258385085,
+      "lugar": "Quibdó - Chocó, Colombia",
+      "hora_local": "2026-11-22 08:12:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 08:12:42",
+      "lat": 5.890359871047853,
+      "lon": -76.43391412137164,
+      "distancia_bogota": 292.5,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T11:10:17.087358-05:00",
       "alerta_enviada": false
     }
   }
