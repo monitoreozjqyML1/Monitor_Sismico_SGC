@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T08:20:29.388422-05:00",
+  "actualizado": "2026-11-22T08:30:26.744852-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2707,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uwoaot": {
-      "id": "SGC2026uwoaot",
-      "magnitud": 1.4,
-      "profundidad": 162.0,
-      "latitud": 6.856,
-      "longitud": -73.2575,
-      "distancia_km": 254.96831030233844,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "2026-10-23 08:28:45",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 08:28:45",
-      "lat": 6.856,
-      "lon": -73.2575,
-      "distancia_bogota": 255.0,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uwohcl": {
       "id": "SGC2026uwohcl",
@@ -77134,6 +77106,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T08:20:17.550477-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wznfhi": {
+      "id": "SGC2026wznfhi",
+      "magnitud": 1.8,
+      "profundidad": 148.0,
+      "latitud": 6.959333333333333,
+      "longitud": -73.16683333333333,
+      "distancia_km": 269.310633239493,
+      "lugar": "Girón - Santander, Colombia",
+      "hora_local": "2026-11-22 07:10:13",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 07:10:13",
+      "lat": 6.959333333333333,
+      "lon": -73.16683333333333,
+      "distancia_bogota": 269.3,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T08:30:15.850198-05:00",
       "alerta_enviada": false
     }
   }
