@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T07:10:28.293528-05:00",
+  "actualizado": "2026-11-22T07:20:31.758132-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2712,
+    "total_eventos": 2711,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -10,7 +10,7 @@
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
-    "porcentaje_alertas": 0.29
+    "porcentaje_alertas": 0.3
   },
   "eventos": {
     "SGC2026sdbqkz": {
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uwlshp": {
-      "id": "SGC2026uwlshp",
-      "magnitud": 3.1,
-      "profundidad": 50.0,
-      "latitud": 4.386559089176171,
-      "longitud": -76.70499461329442,
-      "distancia_km": 294.0631422776284,
-      "lugar": "Istmina - Chocó, Colombia",
-      "hora_local": "2026-10-23 07:18:52",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 07:18:52",
-      "lat": 4.36,
-      "lon": -76.795,
-      "distancia_bogota": 304.3,
-      "tipo_magnitud": "M",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uwmfvm": {
       "id": "SGC2026uwmfvm",
