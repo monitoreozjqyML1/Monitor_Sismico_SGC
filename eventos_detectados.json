@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-22T05:20:31.263280-05:00",
+  "actualizado": "2026-11-22T05:30:29.790802-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2721,
+    "total_eventos": 2719,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.09,
+    "porcentaje_m4_o_mayores": 2.1,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -2608,34 +2608,6 @@
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
     },
-    "SGC2026uwhwjr": {
-      "id": "SGC2026uwhwjr",
-      "magnitud": 2.4,
-      "profundidad": 19.0,
-      "latitud": 3.504583103183921,
-      "longitud": -74.36145310323896,
-      "distancia_km": 137.93255350648082,
-      "lugar": "Uribe - Meta, Colombia",
-      "hora_local": "2026-10-23 05:22:53",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 05:22:53",
-      "lat": 3.466,
-      "lon": -74.337,
-      "distancia_bogota": 141.5,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-23T07:05:28.224891-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026uwlshp": {
       "id": "SGC2026uwlshp",
       "magnitud": 3.1,
@@ -2662,34 +2634,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uwiaam": {
-      "id": "SGC2026uwiaam",
-      "magnitud": 1.5,
-      "profundidad": 17.0,
-      "latitud": 5.541905329819499,
-      "longitud": -74.83655698848897,
-      "distancia_km": 125.31632610396538,
-      "lugar": "Victoria - Caldas, Colombia",
-      "hora_local": "2026-10-23 05:27:04",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 05:27:04",
-      "lat": 5.541905329819499,
-      "lon": -74.83655698848897,
-      "distancia_bogota": 125.3,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uwimxc": {
