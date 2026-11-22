@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T23:50:27.857525-05:00",
+  "actualizado": "2026-11-22T00:00:29.778509-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2732,
+    "total_eventos": 2731,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uvxdlu": {
-      "id": "SGC2026uvxdlu",
-      "magnitud": 2.5,
-      "profundidad": 49.0,
-      "latitud": 4.274461421891785,
-      "longitud": -76.72788452824057,
-      "distancia_km": 298.37634754582734,
-      "lugar": "El Litoral del San Juán (Docordó) - Chocó, Colombia",
-      "hora_local": "2026-10-22 23:59:06",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 23:59:06",
-      "lat": 4.274,
-      "lon": -76.728,
-      "distancia_bogota": 298.4,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-23T04:33:13.214850-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uvxvyn": {
       "id": "SGC2026uvxvyn",
@@ -77810,13 +77782,13 @@
     },
     "SGC2026wysluz": {
       "id": "SGC2026wysluz",
-      "magnitud": 2.2,
-      "profundidad": 142.0,
-      "latitud": 6.798833333333334,
-      "longitud": -73.13716666666667,
-      "distancia_km": 254.15425807475384,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-11-21 20:44:12",
+      "magnitud": 2.0,
+      "profundidad": 133.0,
+      "latitud": 6.685618793669163,
+      "longitud": -73.1123711979251,
+      "distancia_km": 243.89549658716763,
+      "lugar": "Curití - Santander, Colombia",
+      "hora_local": "2026-11-21 20:44:11",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -77825,7 +77797,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-21 20:44:12",
+      "fecha_local": "2026-11-21 20:44:11",
       "lat": 6.798833333333334,
       "lon": -73.13716666666667,
       "distancia_bogota": 254.2,
