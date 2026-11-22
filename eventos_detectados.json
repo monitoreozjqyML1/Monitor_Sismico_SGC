@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-21T20:30:26.873492-05:00",
+  "actualizado": "2026-11-21T20:40:37.091824-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2733,
+    "total_eventos": 2731,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2608,34 +2608,6 @@
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
     },
-    "SGC2026uvqfzj": {
-      "id": "SGC2026uvqfzj",
-      "magnitud": 3.3,
-      "profundidad": 15.0,
-      "latitud": 3.816817407577461,
-      "longitud": -75.59256799682194,
-      "distancia_km": 195.73331468497463,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-22 20:31:23",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 20:31:23",
-      "lat": 3.817,
-      "lon": -75.593,
-      "distancia_bogota": 195.8,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-10-23T04:33:13.214850-05:00",
-      "alerta_enviada": false
-    },
     "SGC2026uvrpmm": {
       "id": "SGC2026uvrpmm",
       "magnitud": 3.5,
@@ -2914,34 +2886,6 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-10-23T07:25:21.868520-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uvqnqu": {
-      "id": "SGC2026uvqnqu",
-      "magnitud": 1.5,
-      "profundidad": 161.0,
-      "latitud": 6.662833333333333,
-      "longitud": -73.17316666666666,
-      "distancia_km": 238.7383777074091,
-      "lugar": "Villanueva - Santander, Colombia",
-      "hora_local": "2026-10-22 20:39:49",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-22 20:39:49",
-      "lat": 6.662833333333333,
-      "lon": -73.17316666666666,
-      "distancia_bogota": 238.7,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": false
     },
     "SGC2026uvsord": {
