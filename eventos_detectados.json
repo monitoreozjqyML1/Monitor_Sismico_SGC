@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T18:10:30.929734-05:00",
+  "actualizado": "2026-11-23T18:20:37.599201-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2767,
+    "total_eventos": 2768,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uzdfvw": {
-      "id": "SGC2026uzdfvw",
-      "magnitud": 1.2,
-      "profundidad": 25.0,
-      "latitud": 5.202968515058688,
-      "longitud": -74.61843529868776,
-      "distancia_km": 81.58137989161823,
-      "lugar": "Guaduas - Cundinamarca, Colombia",
-      "hora_local": "2026-10-24 18:16:24",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 18:16:24",
-      "lat": 5.202968515058688,
-      "lon": -74.61843529868776,
-      "distancia_bogota": 81.6,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uzfdmk": {
       "id": "SGC2026uzfdmk",
@@ -78814,6 +78786,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T18:00:15.770332-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xbohla": {
+      "id": "SGC2026xbohla",
+      "magnitud": 1.8,
+      "profundidad": 15.0,
+      "latitud": 3.8392898172924914,
+      "longitud": -75.65093525028244,
+      "distancia_km": 200.1106340653747,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-23 09:51:48",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 09:51:48",
+      "lat": 3.8392898172924914,
+      "lon": -75.65093525028244,
+      "distancia_bogota": 200.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T18:20:24.782460-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xbpbjz": {
+      "id": "SGC2026xbpbjz",
+      "magnitud": 2.1,
+      "profundidad": 0.0,
+      "latitud": 6.8945,
+      "longitud": -76.3335,
+      "distancia_km": 348.6043263110181,
+      "lugar": "Dabeiba - Antioquia, Colombia",
+      "hora_local": "2026-11-23 10:14:59",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 10:14:59",
+      "lat": 6.8945,
+      "lon": -76.3335,
+      "distancia_bogota": 348.6,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T18:20:24.782460-05:00",
       "alerta_enviada": false
     }
   }
