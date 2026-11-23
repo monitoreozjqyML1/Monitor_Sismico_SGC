@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T13:30:35.131244-05:00",
+  "actualizado": "2026-11-23T13:40:27.960822-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2764,
+    "total_eventos": 2765,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -78730,6 +78730,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T13:30:22.545158-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xaxibp": {
+      "id": "SGC2026xaxibp",
+      "magnitud": 1.3,
+      "profundidad": 28.0,
+      "latitud": 6.609833333333333,
+      "longitud": -73.29333333333334,
+      "distancia_km": 228.0469112149562,
+      "lugar": "Galán - Santander, Colombia",
+      "hora_local": "2026-11-23 01:19:38",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 01:19:38",
+      "lat": 6.609833333333333,
+      "lon": -73.29333333333334,
+      "distancia_bogota": 228.0,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T13:40:15.951270-05:00",
       "alerta_enviada": false
     }
   }
