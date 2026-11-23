@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T16:10:29.184800-05:00",
+  "actualizado": "2026-11-23T16:20:35.260457-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2766,
@@ -78204,9 +78204,9 @@
       "id": "SGC2026xbrucf",
       "magnitud": 3.0,
       "profundidad": 20.0,
-      "latitud": 7.04940744976189,
-      "longitud": -76.33474816852323,
-      "distancia_km": 360.88295443158836,
+      "latitud": 7.030371996826807,
+      "longitud": -76.3260474770975,
+      "distancia_km": 358.6945833498276,
       "lugar": "Dabeiba - Antioquia, Colombia",
       "hora_local": "2026-11-23 11:36:47",
       "candidato_acelerografico": false,
