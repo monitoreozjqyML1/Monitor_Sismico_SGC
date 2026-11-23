@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T16:40:29.184653-05:00",
+  "actualizado": "2026-11-23T16:50:37.186881-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2765,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uzagwb": {
-      "id": "SGC2026uzagwb",
-      "magnitud": 1.4,
-      "profundidad": 3.0,
-      "latitud": 6.946827508945046,
-      "longitud": -72.16522285126689,
-      "distancia_km": 326.033059161806,
-      "lugar": "Cubará - Boyacá, Colombia",
-      "hora_local": "2026-10-24 16:47:01",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 16:47:01",
-      "lat": 6.946827508945046,
-      "lon": -72.16522285126689,
-      "distancia_bogota": 326.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uzaysj": {
       "id": "SGC2026uzaysj",
@@ -78539,12 +78511,12 @@
     "SGC2026xbuspx": {
       "id": "SGC2026xbuspx",
       "magnitud": 3.4,
-      "profundidad": 116.0,
-      "latitud": 6.600333333333333,
-      "longitud": -73.50983333333333,
-      "distancia_km": 219.10267222348818,
+      "profundidad": 112.0,
+      "latitud": 6.556600723775812,
+      "longitud": -73.52086435209577,
+      "distancia_km": 214.0942034391462,
       "lugar": "El Carmen - Santander, Colombia",
-      "hora_local": "2026-11-23 13:05:50",
+      "hora_local": "2026-11-23 13:05:49",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -78553,7 +78525,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-23 13:05:50",
+      "fecha_local": "2026-11-23 13:05:49",
       "lat": 6.600333333333333,
       "lon": -73.50983333333333,
       "distancia_bogota": 219.1,
@@ -78758,6 +78730,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T15:40:23.439039-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xcbnnh": {
+      "id": "SGC2026xcbnnh",
+      "magnitud": 2.0,
+      "profundidad": 143.0,
+      "latitud": 6.785666666666667,
+      "longitud": -73.13083333333333,
+      "distancia_km": 253.105587121266,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-11-23 16:31:07",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 16:31:07",
+      "lat": 6.785666666666667,
+      "lon": -73.13083333333333,
+      "distancia_bogota": 253.1,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T16:50:25.220817-05:00",
       "alerta_enviada": false
     }
   }
