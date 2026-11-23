@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T03:40:29.377435-05:00",
+  "actualizado": "2026-11-23T03:50:27.174238-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2748,
+    "total_eventos": 2747,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uyaket": {
-      "id": "SGC2026uyaket",
-      "magnitud": 3.4,
-      "profundidad": 87.0,
-      "latitud": 5.188691925357374,
-      "longitud": -76.2767510603867,
-      "distancia_km": 249.94030323081589,
-      "lugar": "Tadó - Chocó, Colombia",
-      "hora_local": "2026-10-24 03:46:32",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 03:46:32",
-      "lat": 5.188691925357374,
-      "lon": -76.2767510603867,
-      "distancia_bogota": 249.9,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uyapnk": {
       "id": "SGC2026uyapnk",
