@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T19:20:28.985977-05:00",
+  "actualizado": "2026-11-22T19:30:27.961895-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2750,
@@ -77670,11 +77670,11 @@
     },
     "SGC2026wzrgcv": {
       "id": "SGC2026wzrgcv",
-      "magnitud": 1.8,
-      "profundidad": 98.0,
-      "latitud": 4.757666666666667,
-      "longitud": -76.35016666666667,
-      "distancia_km": 252.498397160487,
+      "magnitud": 1.9,
+      "profundidad": 94.0,
+      "latitud": 4.784166666666667,
+      "longitud": -76.379,
+      "distancia_km": 255.76476407126236,
       "lugar": "San José del Palmar - Chocó, Colombia",
       "hora_local": "2026-11-22 09:11:51",
       "candidato_acelerografico": false,
