@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T01:30:29.176548-05:00",
+  "actualizado": "2026-11-23T01:40:33.857486-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2763,
+    "total_eventos": 2762,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,62 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uxwanm": {
-      "id": "SGC2026uxwanm",
-      "magnitud": 2.1,
-      "profundidad": 139.0,
-      "latitud": 6.768105756387863,
-      "longitud": -73.13806768680035,
-      "distancia_km": 250.9972552155744,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-24 01:34:40",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 01:34:40",
-      "lat": 6.768105756387863,
-      "lon": -73.13806768680035,
-      "distancia_bogota": 251.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uxwfah": {
-      "id": "SGC2026uxwfah",
-      "magnitud": 1.7,
-      "profundidad": 13.0,
-      "latitud": 3.818139314031286,
-      "longitud": -75.64980496163199,
-      "distancia_km": 201.15334461779517,
-      "lugar": "Chaparral - Tolima, Colombia",
-      "hora_local": "2026-10-24 01:39:44",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 01:39:44",
-      "lat": 3.818139314031286,
-      "lon": -75.64980496163199,
-      "distancia_bogota": 201.2,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uxwqej": {
       "id": "SGC2026uxwqej",
@@ -78702,6 +78646,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T01:20:17.581390-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xatiho": {
+      "id": "SGC2026xatiho",
+      "magnitud": 1.9,
+      "profundidad": 115.0,
+      "latitud": 6.416166666666666,
+      "longitud": -73.6375,
+      "distancia_km": 195.61083900554098,
+      "lugar": "Santa Helena del Opón - Santander, Colombia",
+      "hora_local": "2026-11-22 23:19:13",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 23:19:13",
+      "lat": 6.416166666666666,
+      "lon": -73.6375,
+      "distancia_bogota": 195.6,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T01:40:22.373463-05:00",
       "alerta_enviada": false
     }
   }
