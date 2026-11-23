@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T13:40:27.960822-05:00",
+  "actualizado": "2026-11-23T13:50:31.539033-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2765,
@@ -78735,11 +78735,11 @@
     "SGC2026xaxibp": {
       "id": "SGC2026xaxibp",
       "magnitud": 1.3,
-      "profundidad": 28.0,
-      "latitud": 6.609833333333333,
-      "longitud": -73.29333333333334,
-      "distancia_km": 228.0469112149562,
-      "lugar": "Galán - Santander, Colombia",
+      "profundidad": 31.0,
+      "latitud": 6.58832647866762,
+      "longitud": -73.14443396482727,
+      "distancia_km": 232.62074700909784,
+      "lugar": "San Gil - Santander, Colombia",
       "hora_local": "2026-11-23 01:19:38",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
