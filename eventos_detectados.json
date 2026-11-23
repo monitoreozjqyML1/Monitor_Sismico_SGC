@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T19:00:27.950237-05:00",
+  "actualizado": "2026-11-22T19:10:28.853287-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2753,
+    "total_eventos": 2752,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uxjblj": {
-      "id": "SGC2026uxjblj",
-      "magnitud": 1.7,
-      "profundidad": 7.0,
-      "latitud": 7.0385,
-      "longitud": -72.09883333333333,
-      "distancia_km": 338.54599140476324,
-      "lugar": "Toledo - Norte de Santander, Colombia",
-      "hora_local": "2026-10-23 19:03:23",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 19:03:23",
-      "lat": 7.0385,
-      "lon": -72.09883333333333,
-      "distancia_bogota": 338.5,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uxjlna": {
       "id": "SGC2026uxjlna",
