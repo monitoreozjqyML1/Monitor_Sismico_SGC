@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T01:40:33.857486-05:00",
+  "actualizado": "2026-11-23T01:50:26.777858-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2762,
+    "total_eventos": 2763,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -78315,12 +78315,12 @@
     "SGC2026xaomup": {
       "id": "SGC2026xaomup",
       "magnitud": 1.7,
-      "profundidad": 34.0,
-      "latitud": 8.193666666666667,
-      "longitud": -75.764,
-      "distancia_km": 430.00153620778593,
+      "profundidad": 30.0,
+      "latitud": 8.237008207878556,
+      "longitud": -75.61512353569677,
+      "distancia_km": 427.52409282396155,
       "lugar": "Planeta Rica - Córdoba, Colombia",
-      "hora_local": "2026-11-22 20:53:34",
+      "hora_local": "2026-11-22 20:53:33",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -78329,7 +78329,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-22 20:53:34",
+      "fecha_local": "2026-11-22 20:53:33",
       "lat": 8.193666666666667,
       "lon": -75.764,
       "distancia_bogota": 430.0,
@@ -78538,7 +78538,7 @@
     },
     "SGC2026xaqmxn": {
       "id": "SGC2026xaqmxn",
-      "magnitud": 1.8,
+      "magnitud": 1.9,
       "profundidad": 40.0,
       "latitud": 4.209952386945109,
       "longitud": -76.70307106502878,
@@ -78622,7 +78622,7 @@
     },
     "SGC2026xasckc": {
       "id": "SGC2026xasckc",
-      "magnitud": 1.7,
+      "magnitud": 1.8,
       "profundidad": 113.0,
       "latitud": 6.743782677637477,
       "longitud": -73.23969536392534,
@@ -78674,6 +78674,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T01:40:22.373463-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xaufgi": {
+      "id": "SGC2026xaufgi",
+      "magnitud": 2.0,
+      "profundidad": 138.0,
+      "latitud": 6.697251570462826,
+      "longitud": -73.11130413888391,
+      "distancia_km": 245.1113084841378,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-22 23:45:50",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 23:45:50",
+      "lat": 6.697251570462826,
+      "lon": -73.11130413888391,
+      "distancia_bogota": 245.1,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T01:50:15.442787-05:00",
       "alerta_enviada": false
     }
   }
