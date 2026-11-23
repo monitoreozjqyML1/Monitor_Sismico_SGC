@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T17:10:28.659051-05:00",
+  "actualizado": "2026-11-23T17:20:38.100286-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2767,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uzbdkz": {
-      "id": "SGC2026uzbdkz",
-      "magnitud": 2.4,
-      "profundidad": 143.0,
-      "latitud": 6.774450907366225,
-      "longitud": -73.14448893815775,
-      "distancia_km": 251.34927875483547,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-24 17:13:19",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 17:13:19",
-      "lat": 6.774450907366225,
-      "lon": -73.14448893815775,
-      "distancia_bogota": 251.3,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uzbxjd": {
       "id": "SGC2026uzbxjd",
@@ -78706,12 +78678,12 @@
     },
     "SGC2026xcbnnh": {
       "id": "SGC2026xcbnnh",
-      "magnitud": 2.0,
-      "profundidad": 143.0,
-      "latitud": 6.785666666666667,
-      "longitud": -73.13083333333333,
-      "distancia_km": 253.105587121266,
-      "lugar": "Los Santos - Santander, Colombia",
+      "magnitud": 1.9,
+      "profundidad": 132.0,
+      "latitud": 6.709941872419549,
+      "longitud": -73.10274892783677,
+      "distancia_km": 246.7928676253127,
+      "lugar": "Jordán - Santander, Colombia",
       "hora_local": "2026-11-23 16:31:07",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
@@ -78814,6 +78786,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T17:10:16.774212-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xcbufl": {
+      "id": "SGC2026xcbufl",
+      "magnitud": 2.1,
+      "profundidad": 69.0,
+      "latitud": 4.540833333333333,
+      "longitud": -76.88433333333333,
+      "distancia_km": 312.2609319463905,
+      "lugar": "Istmina - Chocó, Colombia",
+      "hora_local": "2026-11-23 16:38:54",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 16:38:54",
+      "lat": 4.540833333333333,
+      "lon": -76.88433333333333,
+      "distancia_bogota": 312.3,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T17:20:26.320592-05:00",
       "alerta_enviada": false
     }
   }
