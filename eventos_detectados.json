@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T16:20:35.260457-05:00",
+  "actualizado": "2026-11-23T16:30:28.989630-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2766,
+    "total_eventos": 2765,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uyzpum": {
-      "id": "SGC2026uyzpum",
-      "magnitud": 2.0,
-      "profundidad": 142.0,
-      "latitud": 6.801946561605791,
-      "longitud": -73.17659620500014,
-      "distancia_km": 252.7288742726517,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-24 16:28:25",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 16:28:25",
-      "lat": 6.801946561605791,
-      "lon": -73.17659620500014,
-      "distancia_bogota": 252.7,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uzagwb": {
       "id": "SGC2026uzagwb",
@@ -78511,12 +78483,12 @@
     "SGC2026xbtogn": {
       "id": "SGC2026xbtogn",
       "magnitud": 2.6,
-      "profundidad": 0.0,
-      "latitud": 6.895333333333333,
-      "longitud": -76.259,
-      "distancia_km": 342.80428450270347,
+      "profundidad": 17.0,
+      "latitud": 6.950000084434227,
+      "longitud": -76.2741010437109,
+      "distancia_km": 348.2950267388612,
       "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-11-23 12:30:35",
+      "hora_local": "2026-11-23 12:30:33",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -78525,7 +78497,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-23 12:30:35",
+      "fecha_local": "2026-11-23 12:30:33",
       "lat": 6.895333333333333,
       "lon": -76.259,
       "distancia_bogota": 342.8,
