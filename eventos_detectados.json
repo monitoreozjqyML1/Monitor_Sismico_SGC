@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-22T23:40:33.188204-05:00",
+  "actualizado": "2026-11-22T23:50:30.771873-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2755,
+    "total_eventos": 2754,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,62 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uxslnn": {
-      "id": "SGC2026uxslnn",
-      "magnitud": 1.4,
-      "profundidad": 5.0,
-      "latitud": 0.8449073180873832,
-      "longitud": -77.68165382824058,
-      "distancia_km": 587.7571815802995,
-      "lugar": "Aldana - Nariño, Colombia",
-      "hora_local": "2026-10-23 23:46:38",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 23:46:38",
-      "lat": 0.8449073180873832,
-      "lon": -77.68165382824058,
-      "distancia_bogota": 587.8,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uxsmuz": {
-      "id": "SGC2026uxsmuz",
-      "magnitud": 1.1,
-      "profundidad": 19.0,
-      "latitud": 3.963549023952071,
-      "longitud": -74.01924042788374,
-      "distancia_km": 83.31914391469181,
-      "lugar": "Guamal - Meta, Colombia",
-      "hora_local": "2026-10-23 23:48:07",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-23 23:48:07",
-      "lat": 3.963549023952071,
-      "lon": -74.01924042788374,
-      "distancia_bogota": 83.3,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uxtcrs": {
       "id": "SGC2026uxtcrs",
@@ -78478,6 +78422,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-22T23:40:21.337443-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xandrt": {
+      "id": "SGC2026xandrt",
+      "magnitud": 0.7,
+      "profundidad": 2.0,
+      "latitud": 3.8308296159880095,
+      "longitud": -75.61470529155831,
+      "distancia_km": 197.07195388434826,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-22 20:12:50",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 20:12:50",
+      "lat": 3.8308296159880095,
+      "lon": -75.61470529155831,
+      "distancia_bogota": 197.1,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-22T23:50:19.309113-05:00",
       "alerta_enviada": false
     }
   }
