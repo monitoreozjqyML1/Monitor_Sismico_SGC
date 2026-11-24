@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T00:40:32.778435-05:00",
+  "actualizado": "2026-11-24T00:50:31.212557-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2784,
+    "total_eventos": 2783,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uzqaqb": {
-      "id": "SGC2026uzqaqb",
-      "magnitud": 1.4,
-      "profundidad": 165.0,
-      "latitud": 7.911833333333333,
-      "longitud": -72.94816666666667,
-      "distancia_km": 376.9648552363963,
-      "lugar": "Villa Caro - Norte de Santander, Colombia",
-      "hora_local": "2026-10-25 00:42:36",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 00:42:36",
-      "lat": 7.911833333333333,
-      "lon": -72.94816666666667,
-      "distancia_bogota": 377.0,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uzqkwo": {
       "id": "SGC2026uzqkwo",
@@ -78902,13 +78874,13 @@
     },
     "SGC2026xciybx": {
       "id": "SGC2026xciybx",
-      "magnitud": 1.6,
-      "profundidad": 150.0,
+      "magnitud": 1.5,
+      "profundidad": 112.0,
       "latitud": 6.251833333333333,
-      "longitud": -73.6275,
-      "distancia_km": 178.2597468425594,
-      "lugar": "La Paz - Santander, Colombia",
-      "hora_local": "2026-11-23 20:14:30",
+      "longitud": -73.86583333333333,
+      "distancia_km": 172.84722802725432,
+      "lugar": "Landázuri - Santander, Colombia",
+      "hora_local": "2026-11-23 20:14:34",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -78917,7 +78889,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-23 20:14:30",
+      "fecha_local": "2026-11-23 20:14:34",
       "lat": 6.251833333333333,
       "lon": -73.6275,
       "distancia_bogota": 178.3,
