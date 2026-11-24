@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T19:30:29.570710-05:00",
+  "actualizado": "2026-11-23T19:40:26.584291-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2774,
+    "total_eventos": 2775,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -79010,6 +79010,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T19:10:12.476115-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xbuzrl": {
+      "id": "SGC2026xbuzrl",
+      "magnitud": 1.7,
+      "profundidad": 117.0,
+      "latitud": 6.580666666666667,
+      "longitud": -73.564,
+      "distancia_km": 215.36528511674297,
+      "lugar": "El Carmen - Santander, Colombia",
+      "hora_local": "2026-11-23 13:14:01",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 13:14:01",
+      "lat": 6.580666666666667,
+      "lon": -73.564,
+      "distancia_bogota": 215.4,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T19:40:14.692133-05:00",
       "alerta_enviada": false
     }
   }
