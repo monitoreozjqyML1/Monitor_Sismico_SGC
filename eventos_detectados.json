@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T20:20:29.207308-05:00",
+  "actualizado": "2026-11-23T20:30:26.172469-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2777,
@@ -78482,11 +78482,11 @@
     },
     "SGC2026xbxfkr": {
       "id": "SGC2026xbxfkr",
-      "magnitud": 1.8,
-      "profundidad": 15.0,
-      "latitud": 3.8392898172924914,
-      "longitud": -75.6520000760967,
-      "distancia_km": 200.2139388700459,
+      "magnitud": 1.7,
+      "profundidad": 19.0,
+      "latitud": 3.841404867618612,
+      "longitud": -75.64668250543154,
+      "distancia_km": 199.58396342683494,
       "lugar": "Chaparral - Tolima, Colombia",
       "hora_local": "2026-11-23 14:21:01",
       "candidato_acelerografico": false,
