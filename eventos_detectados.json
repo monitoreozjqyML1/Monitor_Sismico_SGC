@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-24T08:10:27.190429-05:00",
+  "actualizado": "2026-11-24T08:20:28.568046-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2741,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vaezpt": {
-      "id": "SGC2026vaezpt",
-      "magnitud": 1.3,
-      "profundidad": 8.0,
-      "latitud": 3.62566973435432,
-      "longitud": -73.93740248689632,
-      "distancia_km": 121.60418703948939,
-      "lugar": "El Castillo - Meta, Colombia",
-      "hora_local": "2026-10-25 08:14:00",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 08:14:00",
-      "lat": 3.62566973435432,
-      "lon": -73.93740248689632,
-      "distancia_bogota": 121.6,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vagdxc": {
       "id": "SGC2026vagdxc",
@@ -78086,6 +78058,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-24T04:20:14.859559-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xcvjlh": {
+      "id": "SGC2026xcvjlh",
+      "magnitud": 1.3,
+      "profundidad": 2.0,
+      "latitud": 5.987666666666667,
+      "longitud": -74.2905,
+      "distancia_km": 144.00321546897115,
+      "lugar": "Puerto Boyacá - Boyacá, Colombia",
+      "hora_local": "2026-11-24 02:29:51",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-24 02:29:51",
+      "lat": 5.987666666666667,
+      "lon": -74.2905,
+      "distancia_bogota": 144.0,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-24T08:20:15.303881-05:00",
       "alerta_enviada": false
     }
   }
