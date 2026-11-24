@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T18:10:36.111173-05:00",
+  "actualizado": "2026-11-24T18:20:26.995582-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2753,
+    "total_eventos": 2754,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -78422,6 +78422,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-24T18:00:17.515414-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xealdl": {
+      "id": "SGC2026xealdl",
+      "magnitud": 2.9,
+      "profundidad": 150.0,
+      "latitud": 5.245833333333334,
+      "longitud": -73.70983333333334,
+      "distancia_km": 71.74395715258196,
+      "lugar": "Cucunubá - Cundinamarca, Colombia",
+      "hora_local": "2026-11-24 18:07:09",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-24 18:07:09",
+      "lat": 5.245833333333334,
+      "lon": -73.70983333333334,
+      "distancia_bogota": 71.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-24T18:20:15.237085-05:00",
       "alerta_enviada": false
     }
   }
