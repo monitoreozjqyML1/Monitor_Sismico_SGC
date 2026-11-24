@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T11:30:29.297799-05:00",
+  "actualizado": "2026-11-24T11:40:30.088037-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2753,
+    "total_eventos": 2752,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,62 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026valqvk": {
-      "id": "SGC2026valqvk",
-      "magnitud": 1.4,
-      "profundidad": 148.0,
-      "latitud": 6.834666666666667,
-      "longitud": -73.02866666666667,
-      "distancia_km": 262.84304099139683,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-25 11:35:01",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 11:35:01",
-      "lat": 6.834666666666667,
-      "lon": -73.02866666666667,
-      "distancia_bogota": 262.8,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026valung": {
-      "id": "SGC2026valung",
-      "magnitud": 1.0,
-      "profundidad": 85.0,
-      "latitud": 8.740833333333333,
-      "longitud": -73.71966666666667,
-      "distancia_km": 449.7832657965211,
-      "lugar": "Pelaya - Cesar, Colombia",
-      "hora_local": "2026-10-25 11:39:17",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 11:39:17",
-      "lat": 8.740833333333333,
-      "lon": -73.71966666666667,
-      "distancia_bogota": 449.8,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026valzbj": {
       "id": "SGC2026valzbj",
@@ -78422,6 +78366,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-24T11:30:17.319359-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xcxpfg": {
+      "id": "SGC2026xcxpfg",
+      "magnitud": 1.8,
+      "profundidad": 132.0,
+      "latitud": 5.275937751309844,
+      "longitud": -73.75545660765987,
+      "distancia_km": 71.94726335378465,
+      "lugar": "Cucunubá - Cundinamarca, Colombia",
+      "hora_local": "2026-11-24 03:36:52",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-24 03:36:52",
+      "lat": 5.275937751309844,
+      "lon": -73.75545660765987,
+      "distancia_bogota": 71.9,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-24T11:40:18.021903-05:00",
       "alerta_enviada": false
     }
   }
