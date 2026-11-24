@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T00:50:31.212557-05:00",
+  "actualizado": "2026-11-24T01:00:35.959251-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2783,
+    "total_eventos": 2781,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,62 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uzqkwo": {
-      "id": "SGC2026uzqkwo",
-      "magnitud": 1.5,
-      "profundidad": 55.0,
-      "latitud": 4.481736353851595,
-      "longitud": -74.79361560938092,
-      "distancia_km": 83.9358045540103,
-      "lugar": "Guataquí - Cundinamarca, Colombia",
-      "hora_local": "2026-10-25 00:54:27",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 00:54:27",
-      "lat": 4.481736353851595,
-      "lon": -74.79361560938092,
-      "distancia_bogota": 83.9,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uzqnnl": {
-      "id": "SGC2026uzqnnl",
-      "magnitud": 1.7,
-      "profundidad": 19.0,
-      "latitud": 3.5029968154393307,
-      "longitud": -74.52058231576066,
-      "distancia_km": 143.23740356081285,
-      "lugar": "Uribe - Meta, Colombia",
-      "hora_local": "2026-10-25 00:57:32",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 00:57:32",
-      "lat": 3.5029968154393307,
-      "lon": -74.52058231576066,
-      "distancia_bogota": 143.2,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uzrcnv": {
       "id": "SGC2026uzrcnv",
