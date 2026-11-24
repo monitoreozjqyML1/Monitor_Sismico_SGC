@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T19:50:28.269932-05:00",
+  "actualizado": "2026-11-23T20:00:28.430476-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2776,
@@ -2607,62 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026uzgjcb": {
-      "id": "SGC2026uzgjcb",
-      "magnitud": 1.7,
-      "profundidad": 43.0,
-      "latitud": 4.534612612004607,
-      "longitud": -76.63753211210707,
-      "distancia_km": 285.01043264375926,
-      "lugar": "Sipí - Chocó, Colombia",
-      "hora_local": "2026-10-24 19:50:39",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 19:50:39",
-      "lat": 4.534612612004607,
-      "lon": -76.63753211210707,
-      "distancia_bogota": 285.0,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026uzgmdr": {
-      "id": "SGC2026uzgmdr",
-      "magnitud": 1.6,
-      "profundidad": 132.0,
-      "latitud": 6.887606099813672,
-      "longitud": -73.1969609229009,
-      "distancia_km": 260.6701500067247,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "2026-10-24 19:54:15",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-24 19:54:15",
-      "lat": 6.887606099813672,
-      "lon": -73.1969609229009,
-      "distancia_bogota": 260.7,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026uzgvnd": {
       "id": "SGC2026uzgvnd",
@@ -79066,6 +79010,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T19:50:16.710500-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xbyrcq": {
+      "id": "SGC2026xbyrcq",
+      "magnitud": 1.7,
+      "profundidad": 113.0,
+      "latitud": 6.5935,
+      "longitud": -73.369,
+      "distancia_km": 223.3140502496811,
+      "lugar": "Hato - Santander, Colombia",
+      "hora_local": "2026-11-23 15:04:46",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 15:04:46",
+      "lat": 6.5935,
+      "lon": -73.369,
+      "distancia_bogota": 223.3,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T20:00:15.809048-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xbzzea": {
+      "id": "SGC2026xbzzea",
+      "magnitud": 1.1,
+      "profundidad": 0.0,
+      "latitud": 4.093624619008481,
+      "longitud": -75.78436293938177,
+      "distancia_km": 201.86373569360765,
+      "lugar": "Génova - Quindío, Colombia",
+      "hora_local": "2026-11-23 15:44:19",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 15:44:19",
+      "lat": 4.093624619008481,
+      "lon": -75.78436293938177,
+      "distancia_bogota": 201.9,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T20:00:15.809048-05:00",
       "alerta_enviada": false
     }
   }
