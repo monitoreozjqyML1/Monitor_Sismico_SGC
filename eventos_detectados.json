@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T00:10:27.471526-05:00",
+  "actualizado": "2026-11-24T00:20:26.681189-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2781,
+    "total_eventos": 2783,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -79206,6 +79206,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-24T00:10:15.553980-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xcouab": {
+      "id": "SGC2026xcouab",
+      "magnitud": 1.1,
+      "profundidad": 10.0,
+      "latitud": 3.477087448944354,
+      "longitud": -74.08467041038568,
+      "distancia_km": 137.2118986774654,
+      "lugar": "Lejanías - Meta, Colombia",
+      "hora_local": "2026-11-23 23:10:54",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 23:10:54",
+      "lat": 3.477087448944354,
+      "lon": -74.08467041038568,
+      "distancia_bogota": 137.2,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-24T00:20:15.213925-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xcpbiz": {
+      "id": "SGC2026xcpbiz",
+      "magnitud": 1.9,
+      "profundidad": 136.0,
+      "latitud": 6.697251570462826,
+      "longitud": -73.09846731008606,
+      "distancia_km": 245.73058154791627,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-23 23:19:24",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 23:19:24",
+      "lat": 6.697251570462826,
+      "lon": -73.09846731008606,
+      "distancia_bogota": 245.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-24T00:20:15.213925-05:00",
       "alerta_enviada": false
     }
   }
