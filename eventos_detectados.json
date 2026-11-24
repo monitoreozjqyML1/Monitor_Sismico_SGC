@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-23T22:00:27.083667-05:00",
+  "actualizado": "2026-11-23T22:10:26.186269-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2778,
+    "total_eventos": 2779,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -79122,6 +79122,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-23T22:00:14.890738-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xcjefr": {
+      "id": "SGC2026xcjefr",
+      "magnitud": 1.3,
+      "profundidad": 126.0,
+      "latitud": 6.013666666666666,
+      "longitud": -73.73416666666667,
+      "distancia_km": 149.6031355517759,
+      "lugar": "Bolivar - Santander, Colombia",
+      "hora_local": "2026-11-23 20:21:42",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-23 20:21:42",
+      "lat": 6.013666666666666,
+      "lon": -73.73416666666667,
+      "distancia_bogota": 149.6,
+      "tipo_magnitud": "MLr_vmm",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-23T22:10:14.759036-05:00",
       "alerta_enviada": false
     }
   }
