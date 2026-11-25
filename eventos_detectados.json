@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T14:40:25.041771-05:00",
+  "actualizado": "2026-11-25T14:50:31.068019-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2757,
+    "total_eventos": 2756,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vcnpfm": {
-      "id": "SGC2026vcnpfm",
-      "magnitud": 1.6,
-      "profundidad": 35.0,
-      "latitud": 11.011666666666667,
-      "longitud": -73.875,
-      "distancia_km": 700.9381165011354,
-      "lugar": "Santa Marta - Magdalena, Colombia",
-      "hora_local": "2026-10-26 14:42:25",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 14:42:25",
-      "lat": 11.011666666666667,
-      "lon": -73.875,
-      "distancia_bogota": 700.9,
-      "tipo_magnitud": "MLr_4",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vcocca": {
       "id": "SGC2026vcocca",
