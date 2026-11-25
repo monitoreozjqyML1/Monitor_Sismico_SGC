@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T01:50:28.999222-05:00",
+  "actualizado": "2026-11-25T02:00:30.881920-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2765,
+    "total_eventos": 2764,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbobga": {
-      "id": "SGC2026vbobga",
-      "magnitud": 1.1,
-      "profundidad": 87.0,
-      "latitud": 5.75393912501308,
-      "longitud": -74.08922402728382,
-      "distancia_km": 115.98503977701414,
-      "lugar": "Pauna - Boyacá, Colombia",
-      "hora_local": "2026-10-26 01:51:55",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 01:51:55",
-      "lat": 5.75393912501308,
-      "lon": -74.08922402728382,
-      "distancia_bogota": 116.0,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbomfa": {
       "id": "SGC2026vbomfa",
