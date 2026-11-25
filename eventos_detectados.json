@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T09:40:33.309810-05:00",
+  "actualizado": "2026-11-25T09:50:27.481806-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2757,
+    "total_eventos": 2758,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vcduix": {
-      "id": "SGC2026vcduix",
-      "magnitud": 1.3,
-      "profundidad": 151.0,
-      "latitud": 6.8255,
-      "longitud": -73.1355,
-      "distancia_km": 256.93889976974964,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-26 09:46:40",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 09:46:40",
-      "lat": 6.8255,
-      "lon": -73.1355,
-      "distancia_bogota": 256.9,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vcdzsh": {
       "id": "SGC2026vcdzsh",
@@ -78534,6 +78506,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-25T09:20:18.096859-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xengjg": {
+      "id": "SGC2026xengjg",
+      "magnitud": 1.0,
+      "profundidad": 7.0,
+      "latitud": 3.849336306341564,
+      "longitud": -75.48644895857772,
+      "distancia_km": 183.78022651983423,
+      "lugar": "San Antonio - Tolima, Colombia",
+      "hora_local": "2026-11-25 00:33:50",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-25 00:33:50",
+      "lat": 3.849336306341564,
+      "lon": -75.48644895857772,
+      "distancia_bogota": 183.8,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-25T09:50:15.985208-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xeyzlj": {
+      "id": "SGC2026xeyzlj",
+      "magnitud": 1.5,
+      "profundidad": 120.0,
+      "latitud": 5.447256827725606,
+      "longitud": -73.74072705513099,
+      "distancia_km": 89.71852441313122,
+      "lugar": "Fúquene - Cundinamarca, Colombia",
+      "hora_local": "2026-11-25 06:27:53",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-25 06:27:53",
+      "lat": 5.447256827725606,
+      "lon": -73.74072705513099,
+      "distancia_bogota": 89.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-25T09:50:15.985208-05:00",
       "alerta_enviada": false
     }
   }
