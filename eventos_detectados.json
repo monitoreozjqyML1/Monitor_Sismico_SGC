@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T04:30:30.404492-05:00",
+  "actualizado": "2026-11-25T04:40:31.582465-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2755,
+    "total_eventos": 2754,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbtkoj": {
-      "id": "SGC2026vbtkoj",
-      "magnitud": 1.9,
-      "profundidad": 136.0,
-      "latitud": 6.751185353778899,
-      "longitud": -73.12736430941337,
-      "distancia_km": 249.7776956768752,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-26 04:33:35",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 04:33:35",
-      "lat": 6.751185353778899,
-      "lon": -73.12736430941337,
-      "distancia_bogota": 249.8,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbtyrc": {
       "id": "SGC2026vbtyrc",
@@ -70866,11 +70838,11 @@
     },
     "SGC2026wzgzto": {
       "id": "SGC2026wzgzto",
-      "magnitud": 1.7,
+      "magnitud": 1.8,
       "profundidad": 2.0,
-      "latitud": 6.952666666666667,
-      "longitud": -76.33916666666667,
-      "distancia_km": 353.5740165613373,
+      "latitud": 6.948,
+      "longitud": -76.36116666666666,
+      "distancia_km": 354.94099512244696,
       "lugar": "Dabeiba - Antioquia, Colombia",
       "hora_local": "2026-11-22 04:02:46",
       "candidato_acelerografico": false,
