@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-25T02:30:34.393564-05:00",
+  "actualizado": "2026-11-25T02:40:35.600610-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2761,
+    "total_eventos": 2760,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
-    "porcentaje_m4_o_mayores": 2.06,
+    "porcentaje_m4_o_mayores": 2.07,
     "eventos_mayor_igual_4": 57,
     "total_candidatos_acelerograficos": 57,
     "total_alertas": 8,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbppjp": {
-      "id": "SGC2026vbppjp",
-      "magnitud": 1.2,
-      "profundidad": 0.0,
-      "latitud": 2.33390274767622,
-      "longitud": -76.05177445811587,
-      "distancia_km": 343.7045872633768,
-      "lugar": "La Plata - Huila, Colombia",
-      "hora_local": "2026-10-26 02:38:29",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 02:38:29",
-      "lat": 2.33390274767622,
-      "lon": -76.05177445811587,
-      "distancia_bogota": 343.7,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbqdnd": {
       "id": "SGC2026vbqdnd",
