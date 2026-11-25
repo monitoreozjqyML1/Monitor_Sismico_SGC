@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T00:40:32.353326-05:00",
+  "actualizado": "2026-11-25T00:50:28.381382-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2771,
+    "total_eventos": 2769,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,62 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vblrxk": {
-      "id": "SGC2026vblrxk",
-      "magnitud": 0.8,
-      "profundidad": 9.0,
-      "latitud": 7.478762665964354,
-      "longitud": -72.49749399979508,
-      "distancia_km": 353.58323787855977,
-      "lugar": "Herrán - Norte de Santander, Colombia",
-      "hora_local": "2026-10-26 00:40:44",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 00:40:44",
-      "lat": 7.478762665964354,
-      "lon": -72.49749399979508,
-      "distancia_bogota": 353.6,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026vblzgo": {
-      "id": "SGC2026vblzgo",
-      "magnitud": 1.3,
-      "profundidad": 18.0,
-      "latitud": 4.435205246676944,
-      "longitud": -76.17242365852088,
-      "distancia_km": 234.81270768476438,
-      "lugar": "Roldanillo - Valle del Cauca, Colombia",
-      "hora_local": "2026-10-26 00:49:15",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 00:49:15",
-      "lat": 4.435205246676944,
-      "lon": -76.17242365852088,
-      "distancia_bogota": 234.8,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbmizg": {
       "id": "SGC2026vbmizg",
