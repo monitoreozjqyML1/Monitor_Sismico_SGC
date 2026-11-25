@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T23:20:39.602196-05:00",
+  "actualizado": "2026-11-24T23:30:25.993724-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2759,
+    "total_eventos": 2760,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -78590,6 +78590,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-24T23:20:26.316961-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xehqfb": {
+      "id": "SGC2026xehqfb",
+      "magnitud": 1.1,
+      "profundidad": 18.0,
+      "latitud": 4.595666666666666,
+      "longitud": -76.21533333333333,
+      "distancia_km": 237.87695028178578,
+      "lugar": "Versalles - Valle del Cauca, Colombia",
+      "hora_local": "2026-11-24 21:44:13",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-24 21:44:13",
+      "lat": 4.595666666666666,
+      "lon": -76.21533333333333,
+      "distancia_bogota": 237.9,
+      "tipo_magnitud": "MLr_1",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-24T23:30:14.584690-05:00",
       "alerta_enviada": false
     }
   }
