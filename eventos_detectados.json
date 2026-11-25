@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T05:10:29.711856-05:00",
+  "actualizado": "2026-11-25T05:20:25.974516-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2758,
+    "total_eventos": 2757,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbusuf": {
-      "id": "SGC2026vbusuf",
-      "magnitud": 0.7,
-      "profundidad": 3.0,
-      "latitud": 2.1121666666666665,
-      "longitud": -76.16516666666666,
-      "distancia_km": 370.7744889650621,
-      "lugar": "La Argentina - Huila, Colombia",
-      "hora_local": "2026-10-26 05:13:18",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 05:13:18",
-      "lat": 2.1121666666666665,
-      "lon": -76.16516666666666,
-      "distancia_bogota": 370.8,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbvhvu": {
       "id": "SGC2026vbvhvu",
