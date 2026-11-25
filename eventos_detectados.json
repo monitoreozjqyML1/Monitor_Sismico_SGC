@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T19:30:26.692095-05:00",
+  "actualizado": "2026-11-24T19:40:29.881158-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2754,
+    "total_eventos": 2753,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbbqzo": {
-      "id": "SGC2026vbbqzo",
-      "magnitud": 1.9,
-      "profundidad": 155.0,
-      "latitud": 5.924200676265781,
-      "longitud": -73.30447165266315,
-      "distancia_km": 159.44071588861138,
-      "lugar": "Gámbita - Santander, Colombia",
-      "hora_local": "2026-10-25 19:37:57",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 19:37:57",
-      "lat": 5.924200676265781,
-      "lon": -73.30447165266315,
-      "distancia_bogota": 159.4,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbcekj": {
       "id": "SGC2026vbcekj",
