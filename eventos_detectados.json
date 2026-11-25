@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T18:30:27.049374-05:00",
+  "actualizado": "2026-11-25T18:32:13.373883-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2754,
+    "total_eventos": 2755,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -78450,6 +78450,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-25T18:20:16.432497-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xfgwlt": {
+      "id": "SGC2026xfgwlt",
+      "magnitud": 1.3,
+      "profundidad": 3.0,
+      "latitud": 4.241666666666666,
+      "longitud": -75.675,
+      "distancia_km": 185.19534615605482,
+      "lugar": "Pijao - Quindío, Colombia",
+      "hora_local": "2026-11-25 10:25:47",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-25 10:25:47",
+      "lat": 4.241666666666666,
+      "lon": -75.675,
+      "distancia_bogota": 185.2,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-25T18:32:00.777081-05:00",
       "alerta_enviada": false
     }
   }
