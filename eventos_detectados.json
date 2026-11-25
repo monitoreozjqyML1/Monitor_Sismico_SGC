@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T05:40:28.688836-05:00",
+  "actualizado": "2026-11-25T05:50:28.403818-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2757,
+    "total_eventos": 2756,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,62 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbvtgl": {
-      "id": "SGC2026vbvtgl",
-      "magnitud": 1.9,
-      "profundidad": 139.0,
-      "latitud": 6.727919800191573,
-      "longitud": -73.11024134791516,
-      "distancia_km": 248.23757223824936,
-      "lugar": "Jordán - Santander, Colombia",
-      "hora_local": "2026-10-26 05:44:01",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 05:44:01",
-      "lat": 6.727919800191573,
-      "lon": -73.11024134791516,
-      "distancia_bogota": 248.2,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026vbvyiy": {
-      "id": "SGC2026vbvyiy",
-      "magnitud": 1.6,
-      "profundidad": 143.0,
-      "latitud": 6.815694388725574,
-      "longitud": -73.18837123967974,
-      "distancia_km": 253.63047893278448,
-      "lugar": "Zapatoca - Santander, Colombia",
-      "hora_local": "2026-10-26 05:49:56",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 05:49:56",
-      "lat": 6.815694388725574,
-      "lon": -73.18837123967974,
-      "distancia_bogota": 253.6,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbwtev": {
       "id": "SGC2026vbwtev",
@@ -70894,12 +70838,12 @@
     },
     "SGC2026wzkjor": {
       "id": "SGC2026wzkjor",
-      "magnitud": 1.7,
-      "profundidad": 150.0,
-      "latitud": 5.1665,
-      "longitud": -73.7185,
-      "distancia_km": 64.02992046478539,
-      "lugar": "Chocontá - Cundinamarca, Colombia",
+      "magnitud": 2.0,
+      "profundidad": 138.0,
+      "latitud": 5.208256140873988,
+      "longitud": -73.75110737353621,
+      "distancia_km": 65.73954260890682,
+      "lugar": "Suesca - Cundinamarca, Colombia",
       "hora_local": "2026-11-22 05:44:40",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
@@ -78534,6 +78478,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-25T05:40:16.900885-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026wzkljf": {
+      "id": "SGC2026wzkljf",
+      "magnitud": 1.7,
+      "profundidad": 15.0,
+      "latitud": 3.8392898172924914,
+      "longitud": -75.62324977911183,
+      "distancia_km": 197.4305214030863,
+      "lugar": "Chaparral - Tolima, Colombia",
+      "hora_local": "2026-11-22 05:46:43",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-22 05:46:43",
+      "lat": 3.8392898172924914,
+      "lon": -75.62324977911183,
+      "distancia_bogota": 197.4,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-25T05:50:15.974565-05:00",
       "alerta_enviada": false
     }
   }
