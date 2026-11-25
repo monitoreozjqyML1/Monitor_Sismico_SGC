@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T13:20:28.445548-05:00",
+  "actualizado": "2026-11-25T13:30:30.569583-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2763,
+    "total_eventos": 2762,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,62 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vckxdl": {
-      "id": "SGC2026vckxdl",
-      "magnitud": 1.6,
-      "profundidad": 136.0,
-      "latitud": 6.79454388546437,
-      "longitud": -73.14128511463039,
-      "distancia_km": 253.53342433578385,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-26 13:21:08",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 13:21:08",
-      "lat": 6.79454388546437,
-      "lon": -73.14128511463039,
-      "distancia_bogota": 253.5,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
-    },
-    "SGC2026vclato": {
-      "id": "SGC2026vclato",
-      "magnitud": 0.8,
-      "profundidad": 0.0,
-      "latitud": 2.4618632924065116,
-      "longitud": -76.31047035971638,
-      "distancia_km": 352.4837331912852,
-      "lugar": "Totoró - Cauca, Colombia",
-      "hora_local": "2026-10-26 13:25:19",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 13:25:19",
-      "lat": 2.4618632924065116,
-      "lon": -76.31047035971638,
-      "distancia_bogota": 352.5,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vclksx": {
       "id": "SGC2026vclksx",
@@ -78702,6 +78646,34 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-25T13:10:18.046798-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xfmrpf": {
+      "id": "SGC2026xfmrpf",
+      "magnitud": 2.6,
+      "profundidad": 14.0,
+      "latitud": 2.466,
+      "longitud": -75.4945,
+      "distancia_km": 295.3488681200525,
+      "lugar": "Gigante - Huila, Colombia",
+      "hora_local": "2026-11-25 13:21:11",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-25 13:21:11",
+      "lat": 2.466,
+      "lon": -75.4945,
+      "distancia_bogota": 295.3,
+      "tipo_magnitud": "M",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-25T13:30:17.420704-05:00",
       "alerta_enviada": false
     }
   }
