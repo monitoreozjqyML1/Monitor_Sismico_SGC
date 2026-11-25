@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-24T19:50:35.176077-05:00",
+  "actualizado": "2026-11-24T20:00:30.902026-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2756,
+    "total_eventos": 2755,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2607,34 +2607,6 @@
       "categoria": "CANDIDATO M >= 4.0 - PGA SIN DATOS",
       "fecha_deteccion": "2026-10-17T04:15:36.780711-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbcekj": {
-      "id": "SGC2026vbcekj",
-      "magnitud": 1.2,
-      "profundidad": 13.0,
-      "latitud": 7.368780049006087,
-      "longitud": -74.73231734577868,
-      "distancia_km": 304.4137733213713,
-      "lugar": "Zaragoza - Antioquia, Colombia",
-      "hora_local": "2026-10-25 19:53:31",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-25 19:53:31",
-      "lat": 7.368780049006087,
-      "lon": -74.73231734577868,
-      "distancia_bogota": 304.4,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbcylk": {
       "id": "SGC2026vbcylk",
