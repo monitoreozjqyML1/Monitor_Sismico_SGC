@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T01:20:27.797546-05:00",
+  "actualizado": "2026-11-25T01:30:27.897215-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2768,
+    "total_eventos": 2767,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vbnarq": {
-      "id": "SGC2026vbnarq",
-      "magnitud": 0.9,
-      "profundidad": 25.0,
-      "latitud": 2.0896144350093016,
-      "longitud": -75.74614990086125,
-      "distancia_km": 345.66698252948044,
-      "lugar": "Altamira - Huila, Colombia",
-      "hora_local": "2026-10-26 01:21:05",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 01:21:05",
-      "lat": 2.0896144350093016,
-      "lon": -75.74614990086125,
-      "distancia_bogota": 345.7,
-      "tipo_magnitud": "MLr_2",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vbnwbl": {
       "id": "SGC2026vbnwbl",
