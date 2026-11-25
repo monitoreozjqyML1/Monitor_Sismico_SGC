@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T16:00:28.410125-05:00",
+  "actualizado": "2026-11-25T16:10:30.672433-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2754,
+    "total_eventos": 2753,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vcqjsj": {
-      "id": "SGC2026vcqjsj",
-      "magnitud": 2.4,
-      "profundidad": 18.0,
-      "latitud": 6.981725839326034,
-      "longitud": -76.26147807927393,
-      "distancia_km": 349.85237359508864,
-      "lugar": "Dabeiba - Antioquia, Colombia",
-      "hora_local": "2026-10-26 16:06:32",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 16:06:32",
-      "lat": 6.981725839326034,
-      "lon": -76.26147807927393,
-      "distancia_bogota": 349.9,
-      "tipo_magnitud": "MLr_1",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vcqukv": {
       "id": "SGC2026vcqukv",
