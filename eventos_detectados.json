@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T08:10:28.571353-05:00",
+  "actualizado": "2026-11-26T08:20:33.377082-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2751,
@@ -78342,13 +78342,13 @@
     },
     "SGC2026xghwqa": {
       "id": "SGC2026xghwqa",
-      "magnitud": 2.1,
-      "profundidad": 149.0,
-      "latitud": 6.81,
-      "longitud": -73.095,
-      "distancia_km": 257.2137947287775,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-11-26 00:00:37",
+      "magnitud": 1.1,
+      "profundidad": 136.0,
+      "latitud": 6.726862275028513,
+      "longitud": -73.0984732991296,
+      "distancia_km": 248.6925368041279,
+      "lugar": "Jordán - Santander, Colombia",
+      "hora_local": "2026-11-26 00:00:38",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -78357,7 +78357,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-26 00:00:37",
+      "fecha_local": "2026-11-26 00:00:38",
       "lat": 6.81,
       "lon": -73.095,
       "distancia_bogota": 257.2,
