@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-26T12:50:27.680493-05:00",
+  "actualizado": "2026-11-26T13:00:30.477924-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2781,
+    "total_eventos": 2783,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -79206,6 +79206,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-26T12:40:14.687904-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xgiaus": {
+      "id": "SGC2026xgiaus",
+      "magnitud": 1.4,
+      "profundidad": 33.0,
+      "latitud": 3.463,
+      "longitud": -74.04166666666667,
+      "distancia_km": 138.81231211705284,
+      "lugar": "San Juan de Arama - Meta, Colombia",
+      "hora_local": "2026-11-26 00:05:25",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-26 00:05:25",
+      "lat": 3.463,
+      "lon": -74.04166666666667,
+      "distancia_bogota": 138.8,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-26T13:00:17.875385-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xglzoj": {
+      "id": "SGC2026xglzoj",
+      "magnitud": 1.7,
+      "profundidad": 12.0,
+      "latitud": 5.718666666666667,
+      "longitud": -72.76833333333333,
+      "distancia_km": 182.74953927626945,
+      "lugar": "Mongua - Boyacá, Colombia",
+      "hora_local": "2026-11-26 02:04:43",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-26 02:04:43",
+      "lat": 5.718666666666667,
+      "lon": -72.76833333333333,
+      "distancia_bogota": 182.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-26T13:00:17.875385-05:00",
       "alerta_enviada": false
     }
   }
