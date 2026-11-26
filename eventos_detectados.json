@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-26T17:10:24.250025-05:00",
+  "actualizado": "2026-11-26T17:20:29.865405-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2798,
+    "total_eventos": 2800,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -79658,7 +79658,7 @@
     },
     "SGC2026xdficb": {
       "id": "SGC2026xdficb",
-      "magnitud": 2.1,
+      "magnitud": 2.2,
       "profundidad": 146.0,
       "latitud": 6.8075,
       "longitud": -73.22816666666667,
@@ -79682,6 +79682,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-26T17:10:13.170963-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xdfyrz": {
+      "id": "SGC2026xdfyrz",
+      "magnitud": 2.4,
+      "profundidad": 136.0,
+      "latitud": 6.696194045299766,
+      "longitud": -73.0845605622983,
+      "distancia_km": 246.30360458326516,
+      "lugar": "Aratoca - Santander, Colombia",
+      "hora_local": "2026-11-24 07:49:15",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-24 07:49:15",
+      "lat": 6.696194045299766,
+      "lon": -73.0845605622983,
+      "distancia_bogota": 246.3,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-26T17:20:18.308214-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xdgapb": {
+      "id": "SGC2026xdgapb",
+      "magnitud": 1.8,
+      "profundidad": 23.0,
+      "latitud": 2.0193333333333334,
+      "longitud": -75.8905,
+      "distancia_km": 360.99226072894436,
+      "lugar": "Elías - Huila, Colombia",
+      "hora_local": "2026-11-24 07:51:27",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-24 07:51:27",
+      "lat": 2.0193333333333334,
+      "lon": -75.8905,
+      "distancia_bogota": 361.0,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-26T17:20:18.308214-05:00",
       "alerta_enviada": false
     }
   }
