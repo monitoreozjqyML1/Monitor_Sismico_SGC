@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-25T23:20:28.472942-05:00",
+  "actualizado": "2026-11-25T23:30:26.835454-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2756,
+    "total_eventos": 2755,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vdezsb": {
-      "id": "SGC2026vdezsb",
-      "magnitud": 1.8,
-      "profundidad": 143.0,
-      "latitud": 6.786083684159887,
-      "longitud": -73.12416372168596,
-      "distancia_km": 253.45224289996415,
-      "lugar": "Los Santos - Santander, Colombia",
-      "hora_local": "2026-10-26 23:27:32",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-26 23:27:32",
-      "lat": 6.786083684159887,
-      "lon": -73.12416372168596,
-      "distancia_bogota": 253.5,
-      "tipo_magnitud": "MLr_3",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vdfujd": {
       "id": "SGC2026vdfujd",
@@ -78483,10 +78455,10 @@
     "SGC2026xgghvs": {
       "id": "SGC2026xgghvs",
       "magnitud": 2.5,
-      "profundidad": 153.0,
-      "latitud": 6.868333333333333,
-      "longitud": -73.10733333333333,
-      "distancia_km": 262.5537496682386,
+      "profundidad": 143.0,
+      "latitud": 6.777623482855405,
+      "longitud": -73.12416154141924,
+      "distancia_km": 252.59655994448696,
       "lugar": "Los Santos - Santander, Colombia",
       "hora_local": "2026-11-25 23:13:19",
       "candidato_acelerografico": false,
