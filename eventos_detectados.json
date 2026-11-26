@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-26T02:50:25.856320-05:00",
+  "actualizado": "2026-11-26T03:00:29.748689-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2746,
+    "total_eventos": 2745,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -2661,34 +2661,6 @@
       "categoria": "PGA BOG.11 - NIVEL VERDE",
       "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
       "alerta_enviada": true
-    },
-    "SGC2026vdlwin": {
-      "id": "SGC2026vdlwin",
-      "magnitud": 1.2,
-      "profundidad": 84.0,
-      "latitud": 8.414,
-      "longitud": -73.80566666666667,
-      "distancia_km": 412.80497892448767,
-      "lugar": "Rioviejo - Bolívar, Colombia",
-      "hora_local": "2026-10-27 02:54:49",
-      "candidato_acelerografico": false,
-      "acelerografia_bogota": {
-        "estado": "PENDIENTE",
-        "estaciones": [],
-        "pga_maximo_cm_s2": null,
-        "estacion_critica": null,
-        "componente_critica": null
-      },
-      "fecha_local": "2026-10-27 02:54:49",
-      "lat": 8.414,
-      "lon": -73.80566666666667,
-      "distancia_bogota": 412.8,
-      "tipo_magnitud": "MLr_vmm",
-      "agencia": "SGC",
-      "alertas": [],
-      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
-      "fecha_deteccion": "2026-11-03T15:20:19.240606-05:00",
-      "alerta_enviada": false
     },
     "SGC2026vdmdws": {
       "id": "SGC2026vdmdws",
