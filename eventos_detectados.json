@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-11-26T09:00:30.456915-05:00",
+  "actualizado": "2026-11-26T09:10:28.555894-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
-    "total_eventos": 2751,
+    "total_eventos": 2753,
     "eventos_m4_o_mayores": 57,
     "candidatos_acelerograficos": 57,
     "alertas_telegram": 47,
@@ -71734,13 +71734,13 @@
     },
     "SGC2026xaxkup": {
       "id": "SGC2026xaxkup",
-      "magnitud": 1.3,
+      "magnitud": 1.4,
       "profundidad": 25.0,
-      "latitud": 5.92,
-      "longitud": -76.80583333333334,
-      "distancia_km": 331.1770184681889,
+      "latitud": 5.890833333333333,
+      "longitud": -76.78666666666666,
+      "distancia_km": 327.9346907123719,
       "lugar": "Medio Atrato (Beté) - Chocó, Colombia",
-      "hora_local": "2026-11-23 01:22:48",
+      "hora_local": "2026-11-23 01:22:49",
       "candidato_acelerografico": false,
       "acelerografia_bogota": {
         "estado": "PENDIENTE",
@@ -71749,7 +71749,7 @@
         "estacion_critica": null,
         "componente_critica": null
       },
-      "fecha_local": "2026-11-23 01:22:48",
+      "fecha_local": "2026-11-23 01:22:49",
       "lat": 5.92,
       "lon": -76.80583333333334,
       "distancia_bogota": 331.2,
@@ -78366,6 +78366,62 @@
       "alertas": [],
       "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
       "fecha_deteccion": "2026-11-26T08:30:16.391951-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xgiars": {
+      "id": "SGC2026xgiars",
+      "magnitud": 1.5,
+      "profundidad": 28.0,
+      "latitud": 8.296333333333333,
+      "longitud": -74.26483333333333,
+      "distancia_km": 399.23891156046386,
+      "lugar": "Rioviejo - Bolívar, Colombia",
+      "hora_local": "2026-11-26 00:05:27",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-26 00:05:27",
+      "lat": 8.296333333333333,
+      "lon": -74.26483333333333,
+      "distancia_bogota": 399.2,
+      "tipo_magnitud": "MLr_2",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-26T09:10:15.498483-05:00",
+      "alerta_enviada": false
+    },
+    "SGC2026xgsbnz": {
+      "id": "SGC2026xgsbnz",
+      "magnitud": 1.7,
+      "profundidad": 160.0,
+      "latitud": 6.822666666666667,
+      "longitud": -73.18033333333334,
+      "distancia_km": 254.68888672171795,
+      "lugar": "Los Santos - Santander, Colombia",
+      "hora_local": "2026-11-26 05:08:03",
+      "candidato_acelerografico": false,
+      "acelerografia_bogota": {
+        "estado": "PENDIENTE",
+        "estaciones": [],
+        "pga_maximo_cm_s2": null,
+        "estacion_critica": null,
+        "componente_critica": null
+      },
+      "fecha_local": "2026-11-26 05:08:03",
+      "lat": 6.822666666666667,
+      "lon": -73.18033333333334,
+      "distancia_bogota": 254.7,
+      "tipo_magnitud": "MLr_3",
+      "agencia": "SGC",
+      "alertas": [],
+      "categoria": "SISMO SIN CRITERIO DE MAGNITUD",
+      "fecha_deteccion": "2026-11-26T09:10:15.498483-05:00",
       "alerta_enviada": false
     }
   }
