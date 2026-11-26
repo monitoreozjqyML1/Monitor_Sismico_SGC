@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T14:40:25.445615-05:00",
+  "actualizado": "2026-11-26T14:50:30.645162-05:00",
   "periodo_retencion_dias": 30,
   "resumen": {
     "total_eventos": 2787,
@@ -79350,7 +79350,7 @@
     },
     "SGC2026xcewgi": {
       "id": "SGC2026xcewgi",
-      "magnitud": 1.1,
+      "magnitud": 1.0,
       "profundidad": 15.0,
       "latitud": 5.112833333333334,
       "longitud": -74.79216666666667,
